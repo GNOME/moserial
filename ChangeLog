@@ -1,0 +1,1476 @@
+2009-03-06  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* configure.ac:
+	Post-release version bump to 1.0.4.
+
+2009-03-06  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	[ moserial 1.0.3 released ]
+
+2009-03-06  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/MainWindow.vala:
+	Set cursor at end of line after pasting into an unfocused
+	entry box.
+
+2009-03-06  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/MainWindow.vala:
+	Move focus to the entry box after a paste.
+
+2009-03-06  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* configure.ac:
+	Post-release version bump to 1.0.3.
+
+2009-03-06  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	[ moserial 1.0.2 released ]
+
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	UI tweaks.
+
+	* src/MainWindow.vala:
+	Reworked timeouts. Cancel old timeout and add a new one every
+	time.
+
+	* src/Preferences.vala:
+	Changed timeout default settings.
+
+2009-03-06  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/MoUtils.vala:
+	* src/Preferences.vala:
+	* src/Settings.vala:
+	Fixed handling of default setttings.
+
+2009-03-06  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* doc/C/moserial.xml:
+	Add echo docs.
+
+2009-03-06  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	* src/Settings.vala:
+	Disable echo by default. Tidy up settings UI.
+
+2009-03-06  Marlodavampire  <Rentacoder.com>
+
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	* src/MainWindow.vala:
+	Add code for cut, copy, paste and clear	
+
+2009-03-06  Marlodavampire  <Rentacoder.com>
+
+	* data/glade/moserial.glade:
+	Readd edit menu
+
+2009-03-06  Marlodavampire  <Rentacoder.com>
+
+	* src/MainWindow.vala:
+	* src/PreferencesDialog.vala:
+	Enable recording timeout Bug:2569563
+	Disable timeout changes in GUI when recording is in progress
+
+2009-03-06  Marlodavampire  <Rentacoder.com>
+
+	* src/SerialConnection.vala:
+	Enable local echo
+
+2009-03-05  Marlodavampire  <Rentacoder.com>
+
+	* src/Preferences.vala:
+	* src/PreferencesDialog.vala:
+	* src/Settings.vala:
+	* src/SettingsDialog.vala:
+	Add GUI and Profile code for record timeout and local echo
+
+2009-03-05  Marlodavampire  <Rentacoder.com>
+
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	Add gui for local echo and file recording timeout
+
+2009-03-04  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/RecordDialog.vala:
+	Enable remote filesystems for Record dialog.
+
+2009-02-28  Marlodavampire  <Rentacoder.com>
+
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	* src/MainWindow.vala:
+	Enable remote filesystems for all file chooser dialogs
+
+2009-02-26  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* configure.ac:
+	Post-release version bump to 1.0.2.
+
+2009-02-26  Michael J. Chudobiak  <mjc@svn.gnome.org>
+	
+	[ moserial 1.0.1 released ]
+
+	* configure.ac:
+	Removed gconf version requirement.
+	Added gio-2.0 library check.
+
+2009-02-26  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* configure.ac:
+	Post-release version bump to 1.0.1.
+
+2009-02-26  Michael J. Chudobiak  <mjc@svn.gnome.org>
+	[ moserial 1.0.0 released ]
+
+2009-02-26  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* configure.ac:
+	* doc/C/moserial.xml:
+	Bump version to 1.0.0.
+
+	* po/POTFILES.in:
+	* po/POTFILES.skip:
+	* src/MoUtils.vala:
+	Minor translation fixes.
+
+2009-02-26  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* doc/C/moserial.xml:
+	Minor doc updates.
+
+2009-02-26  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	Removed the Edit menu, for now. It can be re-added once the
+	functionality is added.
+
+2009-02-26  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	Removed the unused View menu.
+
+2009-02-26  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/MoUtils.vala:
+	Removed a debugging printf.
+
+2009-02-26  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/MoUtils.vala:
+	* src/Rzwrapper.vala:
+	* src/Szwrapper.vala:
+	Put rz/sz status message splitting code in MoUtils, to
+	reduce code duplication.
+
+2009-02-26  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/MainWindow.vala:
+	* src/Profile.vala:
+	Fixed writing of UTF-8 data to profiles.
+
+2009-02-26  Marlodavampire  <Rentacoder.com>
+
+	* src/DefaultPaths.vala:
+	Remove warnings if default paths aren't in profile file
+2009-02-26  Marlodavampire  <Rentacoder.com>
+
+	* src/DefaultPaths.vala:
+	Formatting
+
+2009-02-26  Marlodavampire  <Rentacoder.com>
+
+	* src/InputParser.vala:
+	* src/MainWindow.vala:
+	bug:2634810 parseHex should validate input
+
+2009-02-25  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/MainWindow.vala:
+	* src/MoUtils.vala:
+	Add a gfile-based function to get the parent folder.
+
+2009-02-25  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/MoUtils.vala:
+	* src/Preferences.vala:
+	* src/Settings.vala:
+	Some refactoring to reduce code duplication.
+
+2009-02-25  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* Makefile.am:
+	* src/MoUtils.vala:
+	Added the MoUtils library file for utility functions.
+
+	* src/DefaultPaths.vala:
+	* src/ReceiveChooserDialog.vala:
+	* src/RecordDialog.vala:
+	* src/SendChooserDialog.vala:
+	* src/SerialStreamRecorder.vala:
+	Use gfile-based functions (in MoUtils) to test for file
+	size and existence.
+
+2009-02-25  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* po/POTFILES.in:
+	* po/POTFILES.skip:
+	* src/Main.vala:
+	* src/MainWindow.vala:
+	* src/Preferences.vala:
+	* src/Profile.vala:
+	* src/SendProgressDialog.vala:
+	* src/SerialConnection.vala:
+	* src/SerialStreamRecorder.vala:
+	* src/Szwrapper.vala:
+	Checked for translateable strings.
+
+2009-02-25  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/ReceiveChooserDialog.vala:
+	* src/RecordDialog.vala:
+	* src/SendChooserDialog.vala:
+	Remove nuisance errors by checking for folder existence.
+
+2009-02-25  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* Makefile.am:
+	* src/DefaultPaths.vala:
+	* src/MainWindow.vala:
+	* src/Preferences.vala:
+	* src/ReceiveChooserDialog.vala:
+	* src/RecordDialog.vala:
+	* src/SendChooserDialog.vala:
+	* src/Settings.vala:
+	Save last-used-folders to profiles.
+	Break up profile loading try-catch blocks, so that a single
+	missing keyfile entry does not abort the whole profile load
+	process.
+
+2009-02-25  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/Main.vala:
+	Added -p short option. Added more useful error messages. Corrected
+	cut-and-pasted description text. Ran astyle.
+
+2009-02-25  Marlodavampire  <Rentacoder.com>
+
+	* src/Main.vala:
+	* src/MainWindow.vala:
+	Load profile from commandline
+
+2009-02-25  Marlodavampire  <Rentacoder.com>
+
+	* src/MainWindow.vala:
+	Offer to save changed profile
+
+2009-02-24  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* doc/C/moserial.xml:
+	Document the profiles feature.
+
+2009-02-24  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/MainWindow.vala:
+	* src/Profile.vala:
+	Add an error dialog if we can't save the profile.
+
+2009-02-24  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/MainWindow.vala:
+	* src/Profile.vala:
+	Add an error dialog if we can't load the profile.
+	astyle formatting update.
+
+2009-02-24  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/MainWindow.vala:
+	* src/Profile.vala:
+	Show profile filename in window title.
+
+2009-02-24  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/MainWindow.vala:
+	* src/Profile.vala:
+	* src/ReceiveChooserDialog.vala:
+	* src/Rzwrapper.vala:
+	* src/SendChooserDialog.vala:
+	* src/SerialConnection.vala:
+	* src/SerialStreamRecorder.vala:
+	* src/Szwrapper.vala:
+	Deleted some debugging printfs.
+
+2009-02-24  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/MainWindow.vala:
+	Disconnect before loading profile.
+	Update statusbar after loading profile.
+
+2009-02-24  Marlodavampire  <Rentacoder.com>
+
+	* src/MainWindow.vala:
+	Fix saving profile	
+	Add loading profile
+
+2009-02-24  Marlodavampire  <Rentacoder.com>
+
+	* src/MainWindow.vala:
+	Add profile saving
+
+2009-02-22  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* doc/C/moserial.xml:
+	Documentation tweaks.
+
+2009-02-22  Marlodavampire  <Rentacoder.com>
+
+	* src/MainWindow.vala:
+	* src/Settings.vala:
+	Load and save settings to profiles	
+
+2009-02-22  Marlodavampire  <Rentacoder.com>
+
+	* src/MainWindow.vala:
+	Another fix for useSystemMonospaceFont
+
+2009-02-22  Marlodavampire  <Rentacoder.com>
+
+	* src/MainWindow.vala:
+	* src/Preferences.vala:
+	* src/Profile.vala:
+	Load and save preferences to profiles
+
+2009-02-22  Marlodavampire  <Rentacoder.com>
+
+	* src/Profile.vala:
+	Remove console warnings if default profile dosen't exist
+
+2009-02-22  Marlodavampire  <Rentacoder.com>
+
+	* src/MainWindow.vala:
+	Use default system font if option selected
+
+2009-02-19  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/MainWindow.vala: Removed gconf bits. Also, set paned position
+	to -1 if no valid position has been saved. This gives a 50/50 split.
+
+2009-02-19  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/Profile.vala:
+	Should use get_user_config_dir instead of get_user_data_dir.
+	Changed default profile name, for consistency with other apps.
+
+2009-02-20  Marlodavampire  <Rentacoder.com>
+
+	* Makefile.am:
+	* src/MainWindow.vala:
+	* src/Profile.vala:
+	Remove existing GConf stuff and replace it with KeyFile (part of
+	bug:2569589)
+
+2009-02-19  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* doc/C/moserial.xml:
+	* doc/Makefile.am:
+	More docs.
+
+2009-02-18  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* doc/C/moserial.xml:
+	* doc/Makefile.am:
+	More docs.
+
+2009-02-18  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	* doc/C/moserial.xml:
+	Added a tooltip, and updated docs.
+
+2009-02-18  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/MainWindow.vala:
+	Removed hard-coded echoTag default color. Now initialized
+	from preferences.
+
+2009-02-19  Marlodavampire  <Rentacoder.com>
+
+	* src/Preferences.vala:
+	add missing Preferences.vala
+
+2009-02-19  Marlodavampire  <Rentacoder.com>
+
+	* Makefile.am:
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	* src/HexTextBuffer.vala:
+	* src/MainWindow.vala:
+	* src/PreferencesDialog.vala:
+	* src/SerialStreamRecorder.vala:
+	Preferences work
+
+2009-02-18  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* doc/C/moserial.xml:
+	Minor doc change.
+
+2009-02-18  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/MainWindow.vala:
+	Removed second (null) argument from set_url_hook,
+	because the latest vala package from Fedora 10 seems
+	to have an API change.
+
+2009-02-18  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* doc/C/moserial.xml:
+	* doc/Makefile.am:
+	More docs.
+
+2009-02-18  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	* doc/C/moserial.xml:
+	* doc/Makefile.am:
+	* src/MainWindow.vala:
+	More docs.
+
+2009-02-18  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* doc/C/moserial.xml:
+	More docs.
+
+2009-02-18  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	* doc/C/moserial.xml:
+	* doc/Makefile.am:
+	More docs.
+
+2009-02-17  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* doc/C/moserial.xml:
+	* doc/Makefile.am:
+	More docs.
+
+2009-02-17  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* doc/C/moserial.xml:
+	Minor documentation correction.
+
+2009-02-17  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	* doc/C/moserial.xml:
+	* doc/Makefile.am:
+	Documentation updates. Minor UI changes.
+
+2009-02-18  Marlodavampire  <Rentacoder.com>
+
+	* src/AutoScroll.vala:
+	More cleanup for AutoScroll
+
+2009-02-17  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	UI updates to advise the user to use Record for straight binary
+	receives.
+
+2009-02-17  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/AutoScroll.vala:
+	Deleted unused function. Renamed some variables for clarity. 
+	Ran astyle to format code.
+
+2009-02-18  Marlodavampire  <Rentacoder.com>
+
+	* src/MainWindow.vala:
+	* src/RecordDialog.vala:
+	* src/SerialStreamRecorder.vala:
+	Bug:2572675 outgoing logging doesn't work
+
+2009-02-17  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/AutoScroll.vala:
+	Spelling correction.
+
+2009-02-18  Marlodavampire  <Rentacoder.com>
+
+	* Makefile.am:
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	* src/AutoScroll.vala:
+	* src/MainWindow.vala:
+	Bug:2565528 Autoscroll implemented 
+
+2009-02-17  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/MainWindow.vala:
+	Autoscrolling was broken after changes to rz/sz. Fixed it.
+
+2009-02-16  Marlodavampire  <Rentacoder.com>
+
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	* src/MainWindow.vala:
+	* src/Szwrapper.vala:
+	Add raw binary send option
+
+2009-02-16  Marlodavampire  <Rentacoder.com>
+
+	* src/MainWindow.vala:
+	* src/Rzwrapper.vala:
+	* src/Szwrapper.vala:
+	Add a simple error message if we cant spawn rz or sz
+
+2009-02-16  Marlodavampire  <Rentacoder.com>
+
+	* src/Rzwrapper.vala:
+	* src/Szwrapper.vala:
+	Ensure receive cancel button works even if transfer hasn't started
+	Add canceled status message
+
+2009-02-16  Marlodavampire  <Rentacoder.com>
+
+	* src/SendProgressDialog.vala:
+	Add inital waiting message to SendProgressDialog
+2009-02-16  Marlodavampire  <Rentacoder.com>
+
+	* src/InputParser.vala:
+	* src/ReceiveProgressDialog.vala:
+	* src/Rzwrapper.vala:
+	* src/SendProgressDialog.vala:
+	* src/Szwrapper.vala:
+	Fix status message splitting
+
+2009-02-14  Marlodavampire  <Rentacoder.com>
+
+	* src/MainWindow.vala:
+	* src/Rzwrapper.vala:
+	* src/SerialConnection.vala:
+	* src/Szwrapper.vala:
+	more send/receive fixes
+
+2009-02-14  Marlodavampire  <Rentacoder.com>
+
+	* src/ReceiveProgressDialog.vala:
+	* src/SendProgressDialog.vala:
+	remove isprint() check from Rz/Szwrapper, it isn't working correctly
+
+2009-02-14  Marlodavampire  <Rentacoder.com>
+
+	* src/HexTextBuffer.vala:
+	Remove some useless spaces from HexTextBuffer
+
+2009-02-13  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	Minor tooltip edit.
+
+2009-02-13  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/Szwrapper.vala:
+	Set running=false at shutdown.
+
+2009-02-12  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	* src/ReceiveProgressDialog.vala:
+	* src/Rzwrapper.vala:
+	* src/SendProgressDialog.vala:
+	* src/Szwrapper.vala:
+	Show just the last status report. Ignore everything before the
+	last linefeed or carriage return.
+
+2009-02-12  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* data/glade/moserial.glade:
+	Fixed window titles.
+
+	* src/Rzwrapper.vala:
+	* src/Szwrapper.vala:
+	Fixed crash upon transfer completion.
+
+2009-02-12  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	Better window titles in the send/receive filechoosers.
+
+	* src/ReceiveProgressDialog.vala:
+	* src/SendProgressDialog.vala:
+	Filter out unprintable status lines.
+
+2009-02-12  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* po/POTFILES.in:
+	* po/POTFILES.skip:
+	Marked additional files for translation.
+
+	* src/MainWindow.vala:
+	Removed some debugging code.
+
+	* src/Settings.vala:
+	* src/SettingsDialog.vala:
+	Removed unused functions and strings, and simplified the
+	combobox-to-enum translations.
+
+2009-02-12  Marlodavampire  <Rentacoder.com>
+
+	* src/MainWindow.vala:
+	* src/SendProgressDialog.vala:
+	* src/SerialConnection.vala:
+	* src/Szwrapper.vala:
+	Fixes for send
+	Changes to SerialConnection to try and help send
+2009-02-11  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	* src/ReceiveProgressDialog.vala:
+	* src/SendProgressDialog.vala:
+	Put the send/receive status text in a gtk.label, not a gtk.entry.
+
+2009-02-11  Marlodavampire  <Rentacoder.com>
+
+	* src/MainWindow.vala:
+	* src/SendProgressDialog.vala:
+	* src/Szwrapper.vala:
+	Fix send to work again
+	add a call to Gtk.main_iteration_do() to make GUI more responsive
+	during send
+2009-02-10  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* data/glade/Makefile.am:
+	Call gtk-builder-convert during the build process.
+
+	* po/POTFILES.in:
+	* po/POTFILES.skip:
+	Flag the translatable files.
+
+2009-02-10  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/MainWindow.vala:
+	Restore idle autoscroll, but skip it if a send or receive file is
+	in progress.
+
+2009-02-10  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	Tooltip updates to reflect echo highlighting.
+
+	* src/MainWindow.vala:
+	* src/SerialConnection.vala:
+	Identify and highlight echo in the incoming ascii view.
+
+	* src/Settings.vala:
+	Set default baud rate to 1200, for my convenience.
+
+2009-02-10  Marlodavampire  <Rentacoder.com>
+
+	* src/MainWindow.vala:
+	* src/Rzwrapper.vala:
+	More fixes for receive
+
+2009-02-10  Marlodavampire  <Rentacoder.com>
+
+	* src/MainWindow.vala:
+	* src/ReceiveProgressDialog.vala:
+	* src/Rzwrapper.vala:
+	Fix cancel button for receive
+
+2009-02-09  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/MainWindow.vala:
+	* src/SerialConnection.vala:
+	Don't advance ASCII textboxes by two lines for CRLF terminators.
+	Just advance by one line, as for other terminators.
+
+2009-02-09  Marlodavampire  <Rentacoder.com>
+
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	Remove resize grip for statusbar	
+
+2009-02-08  Marlodavampire  <Rentacoder.com>
+
+	* Makefile.am:
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	* src/MainWindow.vala:
+	* src/ReceiveChooserDialog.vala:
+	* src/ReceiveProgressDialog.vala:
+	* src/Rzwrapper.vala:
+	* src/SendChooserDialog.vala:
+	* src/SendProgressDialog.vala:
+	* src/SerialConnection.vala:
+	* src/Szwrapper.vala:
+	* src/XmodemFilenameDialog.vala:
+	Initial commit for x/y/zmodem send and receive
+
+2009-02-07  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	* src/SerialConnection.vala:
+	Added a tab termination mode.
+
+2009-02-06  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	More tooltip updates. Wrapping changes also.
+
+	* src/MainWindow.vala:
+	* src/SerialConnection.vala:
+	Switch to hex view for incoming binary data.
+
+2009-02-06  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/MainWindow.vala:
+	Forgot to clear one buffer upon connect. Fixed.
+	
+2009-02-06  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/MainWindow.vala:
+	Try to auto-connect when Outgoing data is entered instead of
+	greying out the entry box and send button.
+
+2009-02-06  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/MainWindow.vala:
+	Grey out the send button when not connected.
+
+2009-02-06  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	Added more tooltips.
+
+2009-02-06  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/MainWindow.vala:
+	Rely on idle_add to autoscroll, rather than explicit calls.
+
+2009-02-06  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	Minor glade tweaks.
+
+2009-02-06  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	* src/MainWindow.vala:
+	* src/SerialConnection.vala:
+	Added selectable termination method.
+
+2009-02-06  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/MainWindow.vala:
+	Refactor ASCII buffer code a bit, to reduce code duplication.
+
+2009-02-06  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/MainWindow.vala:
+	Insert ASCII text at end iter, not at cursor.
+
+2009-02-06  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	Added border=4 to gtknotebooks.
+
+2009-02-06  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	* src/MainWindow.vala:
+	Added ASCII views.
+
+2009-02-06  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	Moved port setup button. Added bytecount statusbar.
+
+	* src/MainWindow.vala:
+	* src/SerialConnection.vala:
+	Added bytecount statusbar.
+
+2009-02-05  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/SerialStreamRecorder.vala:
+	Launch file when done recording. TODO: add pref to enable/disable
+	this feature.
+
+2009-02-05  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	UI tweaks.
+
+	* src/MainWindow.vala:
+	Turn off recording upon disconnect.
+
+2009-02-05  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/MainWindow.vala:
+	Fixed the auto-connect-on-record feature, so that it did not
+	open the serial port twice, and so that it did not open the
+	port until the file was ready.
+
+2009-02-05  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/MainWindow.vala:
+	Tidy up with astyle --style=linux.
+
+2009-02-05  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/MainWindow.vala:
+	Auto-connect on send, receive, or record. Disable entry field if
+	not connected.
+
+2009-02-04  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	Minor border-size tweaks.
+
+2009-02-04  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/Settings.vala:
+	Made hardware handshaking the default.
+
+2009-02-04  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	Added some tooltips.
+
+2009-02-04  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	Labeled the input/output areas, and added some border spacing.
+
+2009-02-04  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/MainWindow.vala:
+	Make ASCII the default input mode.
+
+2009-02-04  Marlodavampire  <Rentacoder.com>
+
+	* src/InputParser.vala:
+	* src/MainWindow.vala:
+
+2009-02-02  Marlodavampire  <Rentacoder.com>
+
+	* src/MainWindow.vala:
+	Add outgoingHexTextBuffer
+
+2009-02-02  Marlodavampire  <Rentacoder.com>
+
+	* Makefile.am:
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	* src/MainWindow.vala:
+	* src/ReceiveChooserDialog.vala:
+	add ReceiveChooserDialog
+
+2009-02-01  Marlodavampire  <Rentacoder.com>
+
+	* src/HexTextBuffer.vala:
+	* src/MainWindow.vala:
+	* src/SerialConnection.vala:
+	Fix disconnect code to actually work
+	Clear the incoming textbox on connect
+2009-02-01  Marlodavampire  <Rentacoder.com>
+
+	* Makefile.am:
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	* src/InputParser.vala:
+	* src/MainWindow.vala:
+	* src/SerialConnection.vala:
+	Input box GUI changes for HEX input in Glade and MainWindow
+	sendByte() and sendLineEnd() added to SerialConnection
+
+2009-01-31  Marlodavampire  <Rentacoder.com>
+
+	* Makefile.am:
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	* src/MainWindow.vala:
+	* src/RecordDialog.vala:
+	* src/SerialStreamRecorder.vala:
+	Add SerialStreamRecorderClass
+	Changes to .glade for Record button and dialog
+
+2009-01-30  Marlodavampire  <Rentacoder.com>
+
+	* src/MainWindow.vala:
+	Autoscroll
+
+2009-01-30  Marlodavampire  <Rentacoder.com>
+
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	Add toobar_autoscoll togglebutton
+
+2009-01-29  Marlodavampire  <Rentacoder.com>
+
+	* src/MainWindow.vala:
+	* src/RecordDialog.vala:
+	RecordDialog fixes	
+
+2009-01-29  Marlodavampire  <Rentacoder.com>
+
+	* Makefile.am:
+	* src/LoggingDialog.vala:
+	* src/MainWindow.vala:
+	* src/RecordDialog.vala:
+	Rename LoggingDialog->RecordDialog
+
+2009-01-29  Marlodavampire  <Rentacoder.com>
+
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	* src/LoggingDialog.vala:
+	Change the glade Record dialog to use FileChooserDialog
+
+2009-01-28  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* doc/C/moserial.xml:
+	Added something about basic port permissions to the docs.
+
+2009-01-29  Marlodavampire  <Rentacoder.com>
+
+	* src/MainWindow.vala:
+	Fix a warning
+
+2009-01-28  Marlodavampire  <Rentacoder.com>
+
+	* Makefile.am:
+	* src/HexTextBuffer.vala:
+	* src/MainWindow.vala:
+	Move the HexTextBuffer stuff into its own class
+	Add char output to the HextTextBuffer
+
+2009-01-26  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/SettingsDialog.vala:
+	Populate device list with existing devices only.
+
+2009-01-26  Marlodavampire  <Rentacoder.com>
+
+	* src/MainWindow.vala:
+	* src/SerialConnection.vala:
+	Fix GUI on device open fail (bug: 2531071)
+
+2009-01-24  Marlodavampire  <Rentacoder.com>
+
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	* src/MainWindow.vala:
+	Updates for the hex output TextView/Buffer
+	
+2009-01-23  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/MainWindow.vala:
+	Made the About dialog web link clickable.
+
+2009-01-23  Marlodavampire  <Rentacoder.com>
+
+	* src/SerialConnection.vala:
+	Added some port settings to SerialConnection from Minicom
+
+2009-01-22  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	* src/MainWindow.vala:
+	Use show_about_dialog instead of glade equivalent.
+	Simplified signal callback parameters.
+
+2009-01-22  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/MainWindow.vala:
+	Removed an unused variable.
+
+2009-01-22  Marlodavampire  <Rentacoder.com>
+
+	* src/SettingsDialog.vala:
+	Fixes for settings/device combobox
+
+2009-01-22  Marlodavampire  <Rentacoder.com>
+
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	* src/SettingsDialog.vala:
+	Change device widget to ComboboxEntry
+
+2009-01-21  Marlodavampire  <Rentacoder.com>
+
+	* src/MainWindow.vala:
+	Fixed typo for saving paned
+
+2009-01-21  Marlodavampire  <Rentacoder.com>
+
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	* src/MainWindow.vala:
+	Save paned position in GConf
+
+2009-01-21  Marlodavampire  <Rentacoder.com>
+
+	* src/MainWindow.vala:
+	Change to hex output
+
+2009-01-21  Marlodavampire  <Rentacoder.com>
+
+	* src/LoggingDialog.vala:
+	* src/PreferencesDialog.vala:
+	* src/ReceiveProgressDialog.vala:
+	* src/SendProgressDialog.vala:
+	* src/Settings.vala:
+	* src/SettingsDialog.vala:
+	Formating
+2009-01-21  Marlodavampire  <Rentacoder.com>
+
+	* src/LoggingDialog.vala:
+	* src/PreferencesDialog.vala:
+	* src/ReceiveProgressDialog.vala:
+	* src/SendProgressDialog.vala:
+	* src/Settings.vala:
+	* src/SettingsDialog.vala:
+
+2009-01-20  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/LoggingDialog.vala:
+	* src/Main.vala:
+	* src/MainWindow.vala:
+	* src/PreferencesDialog.vala:
+	* src/ReceiveProgressDialog.vala:
+	* src/SendProgressDialog.vala:
+	* src/SerialConnection.vala:
+	* src/Settings.vala:
+	* src/SettingsDialog.vala:
+	Reformat with "astyle --style=linux"
+
+2009-01-20  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/MainWindow.vala: Add try/catches as needed.
+
+2009-01-20  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* data/icons/Makefile.in:
+	Delete this generated file from svn.
+
+2009-01-20  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* Makefile.am:
+	* configure.ac:
+	* src/MainWindow.vala:
+	Added window-size saving. Need to add schema files still.
+
+2009-01-20  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/MainWindow.vala:
+	Added quit function.
+
+	* src/SerialConnection.vala:
+	Fixed the hard-coding of the device to /dev/ttyS0, instead of the
+	requested device.
+
+2009-01-20  Marlodavampire  <Rentacoder.com>
+
+	* src/MainWindow.vala:
+	Add show_uri call to Help->Contents MenuItem
+
+2009-01-20  Marlodavampire  <Rentacoder.com>
+
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	* src/MainWindow.vala:
+	Change connectButton label to 'Disconnect' once connected
+
+2009-01-20  Marlodavampire  <Rentacoder.com>
+
+	* src/MainWindow.vala:
+	* src/SerialConnection.vala:
+	* src/posix.vapi:
+	Changes to SerialConnection to match cutecom
+
+2009-01-19  mjclab  <set EMAIL_ADDRESS environment variable>
+
+	* src/Settings.vala:
+	Parity = 0/none is a valid setting, so do not override it with a 
+	default setting of 1/odd.
+
+2009-01-19  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* Makefile.am:
+	* configure.ac:
+	* data/icons/Makefile.in:
+	* doc/C/legal.xml:
+	* doc/C/moserial.xml:
+	* doc/Makefile.am:
+	* doc/moserial.omf.in:
+	* gnome-doc-utils.make:
+	* omf.make:
+	* xmldocs.make:
+	Added a very basic help file, accessible using
+	"yelp ghelp:moserial".
+
+2009-01-19  Marlodavampire  <Rentacoder.com>
+
+	* Makefile.am:
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	* src/MainWindow.vala:
+	* src/SerialConnection.vala:
+	* src/posix.vapi:
+	Added SerialConnection.vala
+	Renamed the TextViews
+	Added MainWindow.updateIncoming() to update the incoming textview with
+	the serial data.
+
+2009-01-18  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* Makefile.am:
+	* configure.ac:
+	* data/Makefile.am:
+	* moserial.glade:
+	* moserial.ui:
+	* src/Config.vapi:
+	* src/Main.vala:
+	Move the glade/ui files and install them in a system datadir,
+	so the the app can be launched from any directory.
+
+2009-01-18  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* data/Makefile.am:
+	* data/icons/48x48/Makefile.am:
+	* data/icons/48x48/apps/Makefile.am:
+	* data/icons/Makefile.am:
+	* data/icons/Makefile.in:
+	* data/moserial.desktop.in:
+	Added the new icon / desktop entry build files.
+
+2009-01-18  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* Makefile.am:
+	* configure.ac:
+	* moserial.glade:
+	* moserial.ui:
+	Added support for the moserial icon and the desktop entry file.
+
+2009-01-18  Marlodavampire  <Rentacoder.com>
+
+	* Makefile.am:
+	* moserial.glade:
+	* moserial.ui:
+	* src/MainWindow.vala:
+	* src/posix.vapi:
+	Updated connect button
+	Added posix.vapi
+
+2009-01-18  Marlodavampire  <Rentacoder.com>
+
+	* Makefile.am:
+	* src/Config.vapi:
+	Added a simple Config.vapi
+
+2009-01-17  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* moserial.glade:
+	* moserial.ui:
+	Added Help->Contents menu item.
+
+2009-01-17  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* moserial.glade:
+	* moserial.ui:
+	Minor updates to the About dialog.
+	Make the About menu item a stock item.
+
+2009-01-17  Marlodavampire  <Rentacoder.com>
+
+	* Makefile.am:
+	* moserial.glade:
+	* moserial.ui:
+	* src/LoggingDialog.vala:
+	* src/MainWindow.vala:
+	* src/PreferencesDialog.vala:
+	* src/ReceiveProgressDialog.vala:
+	* src/SendProgressDialog.vala:
+	Added placeholder classes for the rest of the dialogs
+	Added AboutDialog
+
+2009-01-17  Marlodavampire  <Rentacoder.com>
+
+	* moserial.glade:
+	* moserial.ui:
+	* src/MainWindow.vala:
+	* src/Settings.vala:
+	* src/SettingsDialog.vala:
+	Added handshake and access mode to the port settings
+
+2009-01-17  Marlodavampire  <Rentacoder.com>
+
+	* moserial.glade:
+	* moserial.ui:
+	* src/MainWindow.vala:
+	Add an about dialog
+	Rename some GUI elements
+	Change some menu items
+
+2009-01-17  Marlodavampire  <Rentacoder.com>
+
+	* moserial.glade:
+	Added preferences button to GUI
+
+2009-01-16  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* moserial.glade:
+	* moserial.ui:
+	Change "cutecomgtk" to "moserial".
+
+2009-01-16  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* moserial.glade:
+	* moserial.ui:
+	Added /dev/ttyUSB0-3 as device options.
+	Added 300 as a buad rate choice.
+
+2009-01-14  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* AUTHORS:
+	* COPYING:
+	* MAINTAINERS:
+	* ChangeLog:
+	Initial files added.
+	
+2009-01-20  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/LoggingDialog.vala:
+	* src/Main.vala:
+	* src/MainWindow.vala:
+	* src/PreferencesDialog.vala:
+	* src/ReceiveProgressDialog.vala:
+	* src/SendProgressDialog.vala:
+	* src/SerialConnection.vala:
+	* src/Settings.vala:
+	* src/SettingsDialog.vala:
+	Reformat with "astyle --style=linux"
+
+2009-01-20  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/MainWindow.vala: Add try/catches as needed.
+
+2009-01-20  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* data/icons/Makefile.in:
+	Delete this generated file from svn.
+
+2009-01-20  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* Makefile.am:
+	* configure.ac:
+	* src/MainWindow.vala:
+	Added window-size saving. Need to add schema files still.
+
+2009-01-20  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/MainWindow.vala:
+	Added quit function.
+
+	* src/SerialConnection.vala:
+	Fixed the hard-coding of the device to /dev/ttyS0, instead of the
+	requested device.
+
+2009-01-20  Marlodavampire  <Rentacoder.com>
+
+	* src/MainWindow.vala:
+	Add show_uri call to Help->Contents MenuItem
+
+2009-01-20  Marlodavampire  <Rentacoder.com>
+
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	* src/MainWindow.vala:
+	Change connectButton label to 'Disconnect' once connected
+
+2009-01-20  Marlodavampire  <Rentacoder.com>
+
+	* src/MainWindow.vala:
+	* src/SerialConnection.vala:
+	* src/posix.vapi:
+	Changes to SerialConnection to match cutecom
+
+2009-01-19  mjclab  <set EMAIL_ADDRESS environment variable>
+
+	* src/Settings.vala:
+	Parity = 0/none is a valid setting, so do not override it with a 
+	default setting of 1/odd.
+
+2009-01-19  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* Makefile.am:
+	* configure.ac:
+	* data/icons/Makefile.in:
+	* doc/C/legal.xml:
+	* doc/C/moserial.xml:
+	* doc/Makefile.am:
+	* doc/moserial.omf.in:
+	* gnome-doc-utils.make:
+	* omf.make:
+	* xmldocs.make:
+	Added a very basic help file, accessible using
+	"yelp ghelp:moserial".
+
+2009-01-19  Marlodavampire  <Rentacoder.com>
+
+	* Makefile.am:
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	* src/MainWindow.vala:
+	* src/SerialConnection.vala:
+	* src/posix.vapi:
+	Added SerialConnection.vala
+	Renamed the TextViews
+	Added MainWindow.updateIncoming() to update the incoming textview with
+	the serial data.
+
+2009-01-18  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* Makefile.am:
+	* configure.ac:
+	* data/Makefile.am:
+	* moserial.glade:
+	* moserial.ui:
+	* src/Config.vapi:
+	* src/Main.vala:
+	Move the glade/ui files and install them in a system datadir,
+	so the the app can be launched from any directory.
+
+2009-01-18  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* data/Makefile.am:
+	* data/icons/48x48/Makefile.am:
+	* data/icons/48x48/apps/Makefile.am:
+	* data/icons/Makefile.am:
+	* data/icons/Makefile.in:
+	* data/moserial.desktop.in:
+	Added the new icon / desktop entry build files.
+
+2009-01-18  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* Makefile.am:
+	* configure.ac:
+	* moserial.glade:
+	* moserial.ui:
+	Added support for the moserial icon and the desktop entry file.
+
+2009-01-18  Marlodavampire  <Rentacoder.com>
+
+	* Makefile.am:
+	* moserial.glade:
+	* moserial.ui:
+	* src/MainWindow.vala:
+	* src/posix.vapi:
+	Updated connect button
+	Added posix.vapi
+
+2009-01-18  Marlodavampire  <Rentacoder.com>
+
+	* Makefile.am:
+	* src/Config.vapi:
+	Added a simple Config.vapi
+
+2009-01-17  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* moserial.glade:
+	* moserial.ui:
+	Added Help->Contents menu item.
+
+2009-01-17  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* moserial.glade:
+	* moserial.ui:
+	Minor updates to the About dialog.
+	Make the About menu item a stock item.
+
+2009-01-17  Marlodavampire  <Rentacoder.com>
+
+	* Makefile.am:
+	* moserial.glade:
+	* moserial.ui:
+	* src/LoggingDialog.vala:
+	* src/MainWindow.vala:
+	* src/PreferencesDialog.vala:
+	* src/ReceiveProgressDialog.vala:
+	* src/SendProgressDialog.vala:
+	Added placeholder classes for the rest of the dialogs
+	Added AboutDialog
+
+2009-01-17  Marlodavampire  <Rentacoder.com>
+
+	* moserial.glade:
+	* moserial.ui:
+	* src/MainWindow.vala:
+	* src/Settings.vala:
+	* src/SettingsDialog.vala:
+	Added handshake and access mode to the port settings
+
+2009-01-17  Marlodavampire  <Rentacoder.com>
+
+	* moserial.glade:
+	* moserial.ui:
+	* src/MainWindow.vala:
+	Add an about dialog
+	Rename some GUI elements
+	Change some menu items
+
+2009-01-17  Marlodavampire  <Rentacoder.com>
+
+	* moserial.glade:
+	Added preferences button to GUI
+
+2009-01-16  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* moserial.glade:
+	* moserial.ui:
+	Change "cutecomgtk" to "moserial".
+
+2009-01-16  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* moserial.glade:
+	* moserial.ui:
+	Added /dev/ttyUSB0-3 as device options.
+	Added 300 as a buad rate choice.
+
+2009-01-14  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* AUTHORS:
+	* COPYING:
+	* MAINTAINERS:
+	* ChangeLog:
+	Initial files added.

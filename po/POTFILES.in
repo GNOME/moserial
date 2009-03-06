@@ -1,0 +1,14 @@
+[encoding: UTF-8]
+# List of source files which contain translatable strings.
+data/glade/moserial.glade
+data/moserial.desktop.in
+src/MainWindow.vala
+src/Settings.vala
+src/Main.vala
+src/Preferences.vala
+src/Profile.vala
+src/SendProgressDialog.vala
+src/SerialConnection.vala
+src/SerialStreamRecorder.vala
+src/Szwrapper.vala
+src/InputParser.vala

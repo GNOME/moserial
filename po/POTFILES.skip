@@ -1,0 +1,11 @@
+data/glade/moserial.ui
+src/MainWindow.c
+src/Settings.c
+src/Main.c
+src/Preferences.c
+src/Profile.c
+src/SendProgressDialog.c
+src/SerialConnection.c
+src/SerialStreamRecorder.c
+src/Szwrapper.c
+src/InputParser.c

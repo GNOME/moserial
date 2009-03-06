@@ -1,0 +1,427 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
+"http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd"[
+  <!ENTITY legal SYSTEM "legal.xml">
+  <!ENTITY appversion "1.0.0">
+  <!ENTITY manualversion "1.0.0">
+  <!ENTITY date "February 2009">
+  <!ENTITY appname "moserial">
+  <!ENTITY app "<application>moserial</application>">
+<!-- replace version above with actual application version number -->
+<!--  Template Version: 1.0.1  (do not remove this line) -->
+]>
+
+<!-- =============Document Header ============================= -->
+
+<article id="index" lang="en"> <!-- please do not change the id -->
+
+  <articleinfo>
+    <title>&app; Manual V&manualversion;</title>
+    <copyright>
+      <year>2009</year>
+      <holder>Michael J. Chudobiak</holder>
+    </copyright>
+
+    <!-- translators: uncomment this:
+
+    <copyright>
+     <year>2000</year>
+     <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+    </copyright>
+
+    -->
+
+    <!-- An address can be added to the publisher information.  If a role is
+     not specified, the publisher/author is the same for all versions of the
+     document.  -->
+    <publisher>
+      <publishername> GNOME Documentation Project </publishername>
+    </publisher>
+
+    &legal;
+
+    <authorgroup>
+      <author role="maintainer">
+        <firstname>Michael</firstname>
+	<surname>Chudobiak</surname>
+	<affiliation>
+	  <address> <email>mjc@svn.gnome.org</email> </address>
+        </affiliation>
+      </author>
+    </authorgroup>
+    <!-- do not put authorname in the header except in copyright - use
+         section "authors" below -->
+    <revhistory>
+      <revision>
+	<revnumber>&manualversion;</revnumber>
+	<date>&date;</date>
+	<revdescription>
+	  <para role="author">Michael J. Chudobiak</para>
+	  <para role="publisher">GNOME Documentation Project</para>
+	</revdescription>
+      </revision>
+    </revhistory>
+
+
+    <!-- this is version of manual, not application -->
+    <releaseinfo>
+      This is manual describes version &appversion; of &appname;
+    </releaseinfo>
+    <abstract role="description"><para>&app; is a serial terminal for the GNOME desktop, optimized for logging and file capture.</para></abstract>
+  </articleinfo>
+
+  <indexterm>
+    <primary>&appname;</primary>
+  </indexterm>
+  <indexterm>
+    <primary>serial</primary>
+  </indexterm>
+  <indexterm>
+    <secondary>terminal</secondary>
+  </indexterm>
+
+  <!-- ============= Document Body ============================= -->
+
+  <!-- ============= Introduction ============================== -->
+
+  <sect1 id="intro">
+    <title>Introduction</title>
+    <para>
+      &app; is a serial terminal for the GNOME desktop, optimized for logging 
+      and file capture. &app; is primarily intended for technical users
+      who need to communicate with embedded systems, consoles, and electronic
+      test equipment. 
+    </para>
+    <para>
+      Despite the technical orientation of the intended audience, &app; is
+      designed to be user-friendly. Care has been taken to ensure that
+      operations are simple to execute, by minimizing the number of
+      clicks needed. The number of configuration options has also been
+      kept small.
+    </para>
+    <para>
+      To further improve efficiency, &app; also supports profile files
+      to store frequently-used configurations.
+    </para>
+  </sect1>
+
+  <sect1 id="ports">
+    <title>System Port Permissions</title>
+    <para>
+      Before using &app; with a serial port, you need to make sure that
+      you actually have permission to read and/or write to the port.
+    </para>
+    <para>
+      There are a number of ways this is done on a Linux system.
+      On Fedora 10, you may need to use the PolicyKit tool, invoked using
+      <menuchoice><guisubmenu>System</guisubmenu>
+                  <guisubmenu>Preferences</guisubmenu>
+		  <guisubmenu>System</guisubmenu>
+                  <guimenuitem>Authorizations</guimenuitem></menuchoice>. 
+      Then, navigate to the
+      <menuchoice><guisubmenu>org</guisubmenu>
+                  <guisubmenu>freedesktop</guisubmenu>
+                  <guisubmenu>device-access</guisubmenu>
+                  <guimenuitem>Directly access serial modem devices</guimenuitem></menuchoice>,
+      and click <guilabel>edit</guilabel>. Set <guilabel>Anyone:</guilabel> to "Yes".
+    </para>
+    <figure id="authorizations-fig">
+    <title>Serial Port Authorizations on Fedora 10</title>
+      <graphic format="PNG" fileref="figures/authorizations.png"/>
+    </figure>
+    <para>
+      On some systems, you may need to do something like "sudo chmod o+rw /dev/ttyS*" and
+      "sudo chmod o+rw /dev/ttyUSB*" to obtain read/write permissions (for all users) on the serial ports.
+    </para>
+    <para>
+      Alternatively, you can see what group the devices belong to, and make your account a member of
+      that group.
+    </para>
+  </sect1>
+
+  <sect1 id="basic-usage">
+    <title>Basic Usage</title>
+    <sect2 id="main-toolbar">
+      <title>The Main Toolbar</title>
+      <para>
+        Most &app; functions are accessed through the main toolbar, shown below:
+      </para>
+      <para>
+        <graphic format="PNG" fileref="figures/main-toolbar.png"/>
+      </para>
+    </sect2>
+    <sect2 id="port-setup">
+      <title>Port Setup</title>
+      <para>
+        The first step in using &app; is to configure the serial port parameters. Click
+        <guibutton>Port Setup</guibutton> to do this. In the port setup dialog, you will
+        set the port to use, whether the port should be open for reads, writes, or both,
+        its baud rate, its parity, the number of data and stop bits, and the 
+        handshaking method. The settings specified in this dialog will override
+        any system default settings for the port.
+      </para>
+      <para>
+        The &app; port setup dialog will only list the /dev/ttySnn and /dev/ttyUSBnn ports
+        that actually exist on the system, for values of "nn" between 0 and 31.
+      </para>
+      <para>
+        A local echo can be enabled from this dialog. If enabled, all data that &app;
+        receives will be echoed back to the sending device. This should normally be
+        disabled, as it can cause unexpected behaviour, especially if the remote device
+        also has echo enabled. (This would cause an infinite loop of echoes!) 
+      </para>
+      <para>
+        <graphic format="PNG" fileref="figures/port-setup.png"/>
+      </para>
+    </sect2>
+    <sect2 id="connect">
+      <title>Open the Connection</title>
+      <para>
+        The next step in communicating with your remote device is to click 
+        <guibutton>Connect</guibutton>. This opens the port. If you do not
+        have the necessary privileges to open the port, an error will be reported.
+      </para>
+      <para>
+	<graphic format="PNG" fileref="figures/connect.png"/>
+      </para>
+      <para>
+        This step is optional. If you skip it, &app; will try to connect
+        automatically when needed.
+      </para>
+      <para>
+        Once you have connected, the <guibutton>Connect</guibutton> button will
+        change into a <guibutton>Disconnect</guibutton> button. 
+        Clicking <guibutton>Disconnect</guibutton> closes the port, and resets the
+        TX and RX counters.
+      </para>
+      <para>
+         <graphic format="PNG" fileref="figures/disconnect.png"/>
+      </para>
+    </sect2>
+    <sect2 id="basic-io">
+      <title>Basic Input and Output</title>
+      <para>
+        Once the port has been opened, any text received from the remote
+        device will be displayed in the <guilabel>Received ASCII</guilabel>
+        text area. If &app; detects a large number of unprintable characters,
+        it will switch automatically to the <guilabel>Received HEX</guilabel>
+        view.
+      </para>
+      <para>
+        <graphic format="PNG" fileref="figures/received-tabs.png"/>
+      </para>
+      <para>
+        To switch between HEX and ASCII views, simply click on the 
+        appropriate tabs.
+      </para>
+      <para>
+        To send data to the remote device, you can type text into the
+        <guilabel>Outgoing</guilabel> single-line text box, and click
+        the <guibutton>Send</guibutton> button. Your line of text will
+	be terminated with the sequence selected in the area to the
+        right of the <guibutton>Send</guibutton> button. If you aren't
+        sure which termination sequence is best, start with "CR+LF end".
+        The <guibutton>ASCII/HEX</guibutton> button should be set to
+        ASCII to send text.
+      </para>
+      <para>
+        <graphic format="PNG" fileref="figures/outgoing.png"/>
+      </para>
+      <para>
+        If the <guibutton>ASCII/HEX</guibutton> button is set to HEX,
+        do not enter text in the <guilabel>Outgoing</guilabel> area.
+        Instead, enter hexadecimal numbers in the form "1234ABCD....".
+      </para>
+      <para>
+        Once your data has been transmitted, a record of it will exist
+        in the <guilabel>Sent ASCII</guilabel> and <guilabel>Sent HEX</guilabel>
+        text areas. These text areas are not editable.
+      </para>
+      <para>
+        <graphic format="PNG" fileref="figures/sent-tabs.png"/>
+      </para>
+      <para>
+        The remote device may echo your sent data. If &app; detects
+        echoed text in the <guilabel>Received ASCII</guilabel> text area,
+        it will highlight the echoed text (using the highlight color defined
+        in the preferences dialog).
+      </para>
+      <para>
+        The statusbar at the bottom of the main window shows the state of
+        port, and a count of the sent (TX) and received (RX) bytes.
+        If some of the received data is unprintable, a count of these
+        items is shown as well.
+      </para>
+      <para>
+        <graphic format="PNG" fileref="figures/statusbar.png"/>
+      </para>
+    </sect2>
+  </sect1>
+  <sect1 id="recording">
+    <title>Recording Input and Output</title>
+    <para>
+      &app; can be used to record your sent and received data to a file.
+      This function is also useful for receiving and storing straight
+      binary data dumped from a remote device. For instance, some oscilloscopes
+      will dump screenshots to a serial port, without using any error
+      correction protocols (like the Tektronic 11801).
+    </para>
+    <para>
+      <graphic format="PNG" fileref="figures/record.png"/>
+    </para>
+    <para>
+      When you are ready to record to a file, simply click <guibutton>Record</guibutton>,
+      select the desired data to record (Incoming and/or Outgoing) in 
+      the <guilabel>Stream to Record</guilabel> selection box, and enter the
+      filename in the filechooser area.
+    </para>
+    <para>
+      <graphic format="PNG" fileref="figures/record-dialog.png"/>
+    </para>
+    <para>
+      When recording begins, the <guibutton>Record</guibutton> button will
+      change into a <guibutton>Stop Recording</guibutton> button. You will need
+      to click this when you wish to stop recording, or you have received
+      the entire binary file that you wanted to download.
+    </para>
+    <para>
+      <graphic format="PNG" fileref="figures/stop-recording.png"/>
+    </para>
+    <para>
+      &app; can optionally launch the recorded file with the default application
+      for its file type, when recording has finished. Use the 
+      <link linkend="preferences">Preferences</link> dialog to enable or
+      disable this feature.
+    </para>
+    <para>
+      Note that if you wish to receive files using an error correction protocol
+      (xmodem, ymodem, or zmodem), you will need to use the 
+       <link linkend="receiving">Receive File</link>
+      function instead. Unlike the <guibutton>Record</guibutton> function, the
+      <guibutton>Receive File</guibutton> function can automatically determine when
+      the file download is complete.
+    </para>
+    <para>
+      <graphic format="PNG" fileref="figures/receive-file.png"/>
+    </para>
+  </sect1>
+  <sect1 id="sending">
+    <title>Sending Files</title>
+    <para>
+      &app; can transmit files in a straight binary data stream, and it can
+      also send files using the xmodem, ymodem, and zmodem error correction
+      protocols. During file transmission, the sent data is not logged to the
+      <guilabel>Sent ASCII</guilabel> or <guilabel>Sent HEX</guilabel>
+      text areas. 
+    </para>
+    <para>
+      <graphic format="PNG" fileref="figures/send-file.png"/>
+    </para>
+    <para>
+      When you are ready to send a file, simply click <guibutton>Send File</guibutton>,
+      select the desired file to send. You will also need to select the 
+      appropriate protocol below.
+    </para>
+    <para>
+      <graphic format="PNG" fileref="figures/send-file-dialog.png"/>
+    </para>
+    <para>
+      When recording begins, a progress bar will display the status of the file
+      transmission. 
+    </para>
+    <para>
+      <graphic format="PNG" fileref="figures/send-progress.png"/>
+    </para>
+    <para>
+      moserial does not implement the xmodem, ymodem, or zmodem protocols directly.
+      It relies on the standard rz and sz utilities to send and receive data.
+      These utilities, part of the lrzsz package, must be installed on your
+      system.
+    </para>
+  </sect1>
+
+  <sect1 id="receiving">
+    <title>Receiving Files</title>
+    <para>
+      &app; can receive files sent in a straight binary data stream, and it can
+      also receive files using the xmodem, ymodem, and zmodem error correction
+      protocols. During file transmission, the received data is not logged to the
+      <guilabel>Sent ASCII</guilabel> or <guilabel>Sent HEX</guilabel>
+      text areas.
+    </para>
+    <para>
+      To receive straight binary data streams, use the <link linkend="recording">Record</link>
+      function instead of the <guibutton>Receive File</guibutton> function.
+    </para>
+    <para>
+      To receive files sent with the xmodem, ymodem, or zmodem error correction
+      protocols, using the <guibutton>Receive File</guibutton> function.
+    </para>
+    <para>
+      <graphic format="PNG" fileref="figures/receive-file.png"/>
+    </para>
+    <para>
+      When you are ready to receive a file, simply click <guibutton>Receive File</guibutton>,
+      select a folder to store the received file. You will also need to select the
+      appropriate protocol below.
+    </para>
+    <para>
+      <graphic format="PNG" fileref="figures/receive-file-dialog.png"/>
+    </para>
+    <para>
+      When recording begins, a progress bar will display the status of the file
+      reception.
+    </para>
+    <para>
+      <graphic format="PNG" fileref="figures/receive-progress.png"/>
+    </para>
+    <para>
+      moserial does not implement the xmodem, ymodem, or zmodem protocols directly.
+      It relies on the standard rz and sz utilities to send and receive data.
+      These utilities, part of the lrzsz package, must be installed on your
+      system.
+    </para>
+  </sect1>
+
+  <sect1 id="preferences">
+    <title>Other Preferences</title>
+    <para>
+      &app; has several options that can be configured from the
+      <guilabel>Preferences</guilabel> dialog.
+    </para>
+    <para>
+      <graphic format="PNG" fileref="figures/preferences.png"/>
+    </para>
+    <para>
+      The color of the text area foreground, background, and highlighting
+      can be configured, as can the font type and size.
+    </para>
+    <para>
+      If <guilabel>Launch recorded files</guilabel> is enabled, a recorded file
+      will be opened immediately after it is saved, using the default application
+      for the file type. The default application is defined by the desktop environment.
+    </para>
+  </sect1>
+
+  <sect1 id="profiles">
+    <title>Using Profiles</title>
+    <para>
+      &app; can load and save its settings from profile files, so that you can
+      store and recall commonly used configurations. To save a profile, simply
+      use the <menuchoice><guisubmenu>File</guisubmenu><guimenuitem>Save</guimenuitem></menuchoice>
+      or <menuchoice><guisubmenu>File</guisubmenu><guimenuitem>Save As</guimenuitem></menuchoice>
+      dialogs. To load a profile, use the
+      <menuchoice><guisubmenu>File</guisubmenu><guimenuitem>Open</guimenuitem></menuchoice>
+      dialog.
+    </para>
+    <para>
+      Loading a profile will automatically disconnect any connected port.
+    </para>
+    <para>
+      When you quit &app;, the settings currently in use are stored in a 
+      default profile file. These settings will automatically be recalled
+      the next time you launch &app;.
+    </para>
+  </sect1>
+
+</article>
