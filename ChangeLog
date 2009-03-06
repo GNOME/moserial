@@ -1,5 +1,10 @@
 2009-03-06  Michael J. Chudobiak  <mjc@svn.gnome.org>
 
+	* doc/C/moserial.xml:
+	Document the timeout feature.
+
+2009-03-06  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
 	* configure.ac:
 	Post-release version bump to 1.0.4.
 

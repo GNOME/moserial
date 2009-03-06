@@ -289,9 +289,10 @@
     </para>
     <para>
       &app; can optionally launch the recorded file with the default application
-      for its file type, when recording has finished. Use the 
+      for its file type, when recording has finished. It can also terminate
+      recording after a period of inactivity. Use the 
       <link linkend="preferences">Preferences</link> dialog to enable or
-      disable this feature.
+      disable these features.
     </para>
     <para>
       Note that if you wish to receive files using an error correction protocol
@@ -400,6 +401,12 @@
       If <guilabel>Launch recorded files</guilabel> is enabled, a recorded file
       will be opened immediately after it is saved, using the default application
       for the file type. The default application is defined by the desktop environment.
+    </para>
+    <para>
+      If <guilabel>Enable timeout</guilabel> is enabled, recording will be
+      automatically stopped after an adjustable period of inactivity after 
+      receiving some data. That is, moserial will wait indefinitely to record
+      the first data byte before activating the inactivity timer.
     </para>
   </sect1>
 
