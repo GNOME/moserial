@@ -633,7 +633,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                                    "logo-icon-name", "moserial",
                                    "wrap-license", true,
                                    "license", license_trans,
-                                   "website", "http://sf.net/projects/moserial",
+                                   "website", "http://live.gnome.org/moserial",
                                    null);
         }
 
