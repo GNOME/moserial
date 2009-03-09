@@ -1,5 +1,7 @@
 2009-03-09  Michael J. Chudobiak  <mjc@svn.gnome.org>
 
+	[ moserial 1.0.4 released ]
+
 	* NEWS:
 	* data/glade/moserial.glade:
 	* data/glade/moserial.ui:
