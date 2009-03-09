@@ -3,8 +3,8 @@ public class moserial.PreferencesDialog : GLib.Object
 {
         public Builder builder {get; construct;}
         private Dialog dialog;
-        private Button discardButton;
-        private Button applyButton;
+        private Button cancelButton;
+        private Button okButton;
         private CheckButton systemFont;
         private FontButton fontButton;
         private ColorButton fontColorButton;
@@ -19,8 +19,8 @@ public class moserial.PreferencesDialog : GLib.Object
         }
         construct {
                 dialog = (Dialog)builder.get_object("preferences_dialog");
-                applyButton = (Button)builder.get_object("preferences_apply");
-                discardButton = (Button)builder.get_object("preferences_discard");
+                okButton = (Button)builder.get_object("preferences_ok");
+                cancelButton = (Button)builder.get_object("preferences_cancel");
                 systemFont = (CheckButton)builder.get_object("preferences_use_system_font");
                 fontButton = (FontButton)builder.get_object("preferences_font_button");
                 fontColorButton = (ColorButton)builder.get_object("preferences_font_color_button");
@@ -31,11 +31,11 @@ public class moserial.PreferencesDialog : GLib.Object
                 timeout = (SpinButton)builder.get_object("preferences_record_timeout");
                 systemFont.toggled += this.systemFontToggled;
                 enableTimeout.toggled += this.enableTimeoutToggled;
-                applyButton.clicked += apply;
-                discardButton.clicked += discard;
+                okButton.clicked += ok;
+                cancelButton.clicked += cancel;
                 dialog.delete_event += hide;
         }
-        public void apply(Button button) {
+        public void ok(Button button) {
         	hide(button);
         	bool pSystemFont;
         	string pFont;
@@ -104,7 +104,7 @@ public class moserial.PreferencesDialog : GLib.Object
 	        timeout.set_value(preferences.timeout); 		
                 dialog.show_all();
         }
-        public void discard(Widget w) {
+        public void cancel(Widget w) {
                 //currentPreferences=null;
                 hide(w);
         }

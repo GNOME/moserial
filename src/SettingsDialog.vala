@@ -9,8 +9,8 @@ public class moserial.SettingsDialog : GLib.Object
         public Builder builder {get; construct;}
         private Settings currentSettings;
         private Dialog dialog;
-        private Button discardButton;
-        private Button applyButton;
+        private Button cancelButton;
+        private Button okButton;
         private Settings settings;
         private ComboBoxEntry deviceCombo;
         private ComboBox baudRateCombo;
@@ -28,8 +28,8 @@ public class moserial.SettingsDialog : GLib.Object
 
         construct {
                 dialog = (Dialog)builder.get_object("settings_dialog");
-                discardButton = (Button)builder.get_object("settings_discard_button");
-                applyButton = (Button)builder.get_object("settings_apply_button");
+                cancelButton = (Button)builder.get_object("settings_cancel_button");
+                okButton = (Button)builder.get_object("settings_ok_button");
 
                 deviceCombo = (ComboBoxEntry)builder.get_object("settings_device");
                 baudRateCombo = (ComboBox)builder.get_object("settings_baud_rate");
@@ -41,8 +41,8 @@ public class moserial.SettingsDialog : GLib.Object
                 accessModeCombo = (ComboBox)builder.get_object("settings_open_for");
                 localEcho = (CheckButton)builder.get_object("settings_local_echo");
                 dialog.delete_event += hide;
-                discardButton.clicked += this.discard;
-                applyButton.clicked += this.apply;
+                cancelButton.clicked += this.cancel;
+                okButton.clicked += this.ok;
                 
 		populateDevices();
 
@@ -149,12 +149,12 @@ public class moserial.SettingsDialog : GLib.Object
                 return true;
         }
 
-        public void discard(Widget w) {
+        public void cancel(Widget w) {
                 currentSettings=null;
                 hide(w);
         }
 
-        public void apply(Widget w) {
+        public void ok(Widget w) {
 
                 string device;
                 int baudRate;

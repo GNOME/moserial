@@ -1,3 +1,13 @@
+2009-03-09  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* NEWS:
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	* src/PreferencesDialog.vala:
+	* src/SettingsDialog.vala:
+	Make Settings and Preferences dialogs HIG compliant by changing
+	stock buttons and ordering from Apply/Discard to Cancel/OK.
+
 2009-03-06  Michael J. Chudobiak  <mjc@svn.gnome.org>
 
 	* src/MainWindow.vala:
