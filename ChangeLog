@@ -1,3 +1,8 @@
+2009-03-12  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/InputParser.vala:
+	Fixed HEX entry.
+
 2009-03-09  Michael J. Chudobiak  <mjc@svn.gnome.org>
 
 	* configure.ac:

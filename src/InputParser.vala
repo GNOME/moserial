@@ -15,10 +15,11 @@ public class InputParser : GLib.Object
 		uchar[] r=new uchar[(len+1)/2];
         	for(int x=0; x<(len+1)/2; x++) {
         		unichar c;
-        		char i;
-        		char temp;
+        		int i;
+        		int temp;
 
 	       		c=s.get_char();
+
 	       		if(len>1) {
 		       		i=xtoi(c)*16;
 	       			if(i<0)
@@ -38,7 +39,7 @@ public class InputParser : GLib.Object
 	       				throw new HexParseError.INVALID_INPUT(_("Invalid Input"));
 		       	}
 	       		s=s.next_char();
-	       		r[x]=i;
+	       		r[x]=(uchar)i;
         	}
         	
 		return r;
