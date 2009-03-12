@@ -1,3 +1,10 @@
+Version 1.0.5
+-------------
+	
+	* Fixed HEX input entry.
+	* Validate all characters shown in the text views.
+	* Switch to HEX views when HEX input mode is set.
+
 Version 1.0.4
 -------------
 
