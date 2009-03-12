@@ -1,5 +1,12 @@
 2009-03-12  Michael J. Chudobiak  <mjc@svn.gnome.org>
 
+	[ moserial 1.0.5 released ]
+
+	* src/MainWindow.vala:
+	Switch outgoing view to HEX when send mode is HEX.
+
+2009-03-12  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
 	* src/MainWindow.vala: 
 	Validate all characters appended to text buffers.
 

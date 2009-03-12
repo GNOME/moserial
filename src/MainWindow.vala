@@ -49,6 +49,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
         private Label stopRecordingLabel;
         private Paned paned;
         private Notebook incoming_notebook;
+        private Notebook outgoing_notebook;
         private HexTextBuffer incomingHexTextBuffer;
         private HexTextBuffer outgoingHexTextBuffer;
         private TextBuffer incomingAsciiTextBuffer;
@@ -188,6 +189,9 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 //setup incoming notebook
                 incoming_notebook = (Notebook)builder.get_object("incoming_notebook");
 
+                //setup outgoing notebook
+                outgoing_notebook = (Notebook)builder.get_object("outgoing_notebook");
+
                 //setup textBuffers;
                 incomingHexTextBuffer = new HexTextBuffer();
                 incomingAsciiTextBuffer = new TextBuffer(new TextTagTable());
@@ -230,6 +234,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 entry.activate += sendString;
                 inputMode = (ComboBox)builder.get_object("input_mode");
                 inputMode.set_active(0);
+		inputMode.changed += inputModeChanged;
                 terminationMode = (ComboBox)builder.get_object("termination_mode");
                 terminationMode.set_active(0);
                 
@@ -330,6 +335,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                         return;
                 sendChooserDialog.show(currentPaths.sendFrom);
         }
+
         private void doSend(SendChooserDialog dialog) {
                 Szwrapper.Protocol protocol;
                 string filename;
@@ -406,6 +412,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 receiveProgressDialog.transferCanceled-=rz.transferCanceled;
                 receiveProgressDialog.hide(receiveProgressDialog);
         }
+
         public void record(ToggleToolButton button) {
                 if (button.get_active()) {
                         button.set_label_widget(stopRecordingLabel);
@@ -611,6 +618,13 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                         }
                 }
         }
+
+	private void inputModeChanged (ComboBox inputMode) {
+		if (inputMode.get_active()==1)
+			outgoing_notebook.set_current_page(1); // HEX
+		else
+			outgoing_notebook.set_current_page(0); // ASCII
+	}
 
 	private void showHelpButton (ToolButton button) {
 		showHelp ();
