@@ -1,5 +1,10 @@
 2009-03-12  Michael J. Chudobiak  <mjc@svn.gnome.org>
 
+	* src/MainWindow.vala: 
+	Validate all characters appended to text buffers.
+
+2009-03-12  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
 	* src/InputParser.vala:
 	Fixed HEX entry.
 

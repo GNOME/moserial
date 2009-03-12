@@ -244,11 +244,20 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
         }
 	
 
-
         private void insertBufferEnd (TextBuffer buf, string s) {
                 TextIter iter;
+		int i;
+		var builder = new StringBuilder();
+
+		for (i=0;i<s.length;i++) {
+			unichar c = s.get_char();
+			if (c.isprint() || c.isspace())
+				builder.append_unichar(c);	
+			s=s.next_char();
+		}
+
                 buf.get_end_iter(out iter);
-                buf.insert(iter, s, (int)s.length);
+                buf.insert(iter, builder.str, (int)builder.str.length);
         }
 
         public void sendString(Widget w) {
