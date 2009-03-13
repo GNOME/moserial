@@ -264,7 +264,7 @@
       This function is also useful for receiving and storing straight
       binary data dumped from a remote device. For instance, some oscilloscopes
       will dump screenshots to a serial port, without using any error
-      correction protocols (like the Tektronic 11801).
+      correction protocols (like the Tektronix 11801).
     </para>
     <para>
       <graphic format="PNG" fileref="figures/record.png"/>
