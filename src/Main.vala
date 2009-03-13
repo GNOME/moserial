@@ -18,7 +18,7 @@ class moserial.Main : GLib.Object
                         msg.run ();
                 }
                 mainWindow = new moserial.MainWindow(builder, profileFilename);
-                mainWindow.show();
+                mainWindow.showWindow();
         }
         public static int main (string[] args) {
                 Gtk.init (ref args);

@@ -1,3 +1,9 @@
+Version 1.0.6
+-------------
+
+	* Re-added missing disconnect and stop-recording button labels
+	* Fixed some nuisance compiler warnings
+
 Version 1.0.5
 -------------
 	

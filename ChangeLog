@@ -1,3 +1,17 @@
+2009-03-13  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	[ moserial 1.0.6 released ]
+
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	Re-added missing disconnect and stop-recording button labels
+	
+	* src/Main.vala:
+	* src/MainWindow.vala:
+	* src/SerialConnection.vala:
+	Fixed some nuisance compiler warnings, by renaming variables
+	that conflicted with inherited field names.
+
 2009-03-12  Michael J. Chudobiak  <mjc@svn.gnome.org>
 
 	* configure.ac:

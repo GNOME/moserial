@@ -16,7 +16,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
         };
 
         public Builder builder {get; construct; }
-        private Gtk.Window window;
+        private Gtk.Window gtkWindow;
         private SettingsDialog settingsDialog;
         private ToolButton settingsButton;
         private ToggleToolButton recordButton;
@@ -76,19 +76,19 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
         }
         construct {
                 //setup window
-                window = (Gtk.Window)builder.get_object("window");
-                window.destroy += quitSave;
-                window.delete_event += deleteSaveSize;
+                gtkWindow = (Gtk.Window)builder.get_object("window");
+                gtkWindow.destroy += quitSave;
+                gtkWindow.delete_event += deleteSaveSize;
 
 		//load defaults
                 profile=new Profile();
-                profile.load(null, window);
+                profile.load(null, gtkWindow);
 		currentSettings=Settings.loadFromProfile(profile);
                 int width = profile.getWindowWidth();
                 int height = profile.getWindowHeight();
                 int panedPosition = profile.getWindowPanedPosition();
                 if ((width>0) && (height>0))
-                        window.resize (width, height);
+                        gtkWindow.resize (width, height);
 
                 //setup paned
                 paned = (Paned)builder.get_object("vpaned");
@@ -178,7 +178,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 
                 //setup connectbutton
                 connectButton = (ToggleToolButton)builder.get_object("toolbar_connect");
-                connectButton.clicked += this.connect;
+                connectButton.clicked += this.doConnect;
                 disconnectLabel = (Label)builder.get_object("disconnect_label");
                 connectLabel = (Label)builder.get_object("connect_label");
 
@@ -314,7 +314,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 		                }
 			}
 			catch (HexParseError e) {
-	                        var errorDialog = new MessageDialog (window, DialogFlags.DESTROY_WITH_PARENT, MessageType.ERROR, ButtonsType.CLOSE, e.message);
+	                        var errorDialog = new MessageDialog (gtkWindow, DialogFlags.DESTROY_WITH_PARENT, MessageType.ERROR, ButtonsType.CLOSE, e.message);
 				errorDialog.run();
 				errorDialog.destroy();
 			}
@@ -439,7 +439,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                                 stopRecording(dialog);
                 } catch (GLib.Error e) {
                         warning(_("Error: Could not open %s\n"), filename);
-                        var errorDialog = new MessageDialog (window, DialogFlags.DESTROY_WITH_PARENT, MessageType.ERROR, ButtonsType.CLOSE, "%s: %s\n%s".printf(_("Error: Could not open file"), filename, e.message));
+                        var errorDialog = new MessageDialog (gtkWindow, DialogFlags.DESTROY_WITH_PARENT, MessageType.ERROR, ButtonsType.CLOSE, "%s: %s\n%s".printf(_("Error: Could not open file"), filename, e.message));
                         errorDialog.run();
                         errorDialog.destroy();
                         stopRecording(dialog);
@@ -451,8 +451,8 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 		return false;
 	}
 
-        public void show() {
-                window.show_all();
+        public void showWindow() {
+                gtkWindow.show_all();
         }
 
         private void updateSettings(SettingsDialog d, Settings newSettings) {
@@ -513,10 +513,10 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
         }
 
         private bool startConnection() {
-                if (!(serialConnection.connect(currentSettings))) {
+                if (!(serialConnection.doConnect(currentSettings))) {
                         connectButton.set_active(false);
                         warning(_("Error: Could not open %s\n"), currentSettings.device);
-                        var dialog = new MessageDialog (window, DialogFlags.DESTROY_WITH_PARENT, MessageType.ERROR, ButtonsType.CLOSE, "%s: %s".printf(_("Error: Could not open device"), currentSettings.device));
+                        var dialog = new MessageDialog (gtkWindow, DialogFlags.DESTROY_WITH_PARENT, MessageType.ERROR, ButtonsType.CLOSE, "%s: %s".printf(_("Error: Could not open device"), currentSettings.device));
                         dialog.run();
                         dialog.destroy();
                         return false;
@@ -534,12 +534,12 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 return true;
         }
 
-        private void connect(ToggleToolButton button) {
+        private void doConnect(ToggleToolButton button) {
                 if (button.get_active()) {
                         startConnection();
                 } else {
                         settingsButton.set_sensitive(true);
-                        serialConnection.disconnect();
+                        serialConnection.doDisconnect();
                         serialConnection.newData -= this.updateIncoming;
                         bytecountbar.pop(bytecountbarContext);
                         bytecountbar.push(bytecountbarContext, serialConnection.getBytecountbarString());
@@ -647,7 +647,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 string license_trans = license[0] + "\n" + license[1] + "\n" + license[2];
 
                 AboutDialog.set_url_hook (url_hook);
-                show_about_dialog (window,
+                show_about_dialog (gtkWindow,
                                    "version", Config.VERSION,
                                    "copyright", "Copyright © 2009\nMichael J. Chudobiak\n<mjc@svn.gnome.org>",
                                    "comments", _("A serial terminal for the GNOME desktop, optimized for logging and file capture."),
@@ -685,7 +685,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 int height = 0;
 
                 int pos = paned.get_position();
-                window.get_size (out width, out height);
+                gtkWindow.get_size (out width, out height);
                 profile.saveWindowSize(width, height);
                 profile.saveWindowPanedPosition(pos);
         }
@@ -696,7 +696,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 		currentPaths.saveToProfile(profile);
 		if (profileFilename != null) {
 			if (profileChanged) {
-                		var dialog = new MessageDialog (window, DialogFlags.DESTROY_WITH_PARENT, MessageType.QUESTION, ButtonsType.YES_NO, _("You have changed your setting or preferences. Do you want to save these changes to the loaded profile?"));
+                		var dialog = new MessageDialog (gtkWindow, DialogFlags.DESTROY_WITH_PARENT, MessageType.QUESTION, ButtonsType.YES_NO, _("You have changed your setting or preferences. Do you want to save these changes to the loaded profile?"));
 	                	int response = dialog.run();
         	        	if(response == Gtk.ResponseType.YES)
 	        	        	saveProfile();
@@ -707,7 +707,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 				saveProfile();
 			}
                 }
-                profile.save(null, window);
+                profile.save(null, gtkWindow);
                 Gtk.main_quit ();
         }
 	private void saveProfile () {
@@ -718,11 +718,11 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 			saveProfileAs();
 		if(profileFilename==null)
 			return;
-		profile.save(profileFilename, window);
+		profile.save(profileFilename, gtkWindow);
 		profileChanged=false;
 	}	
 	private void saveProfileAs () {
-                var dialog = new FileChooserDialog (null, window, Gtk.FileChooserAction.SAVE);
+                var dialog = new FileChooserDialog (null, gtkWindow, Gtk.FileChooserAction.SAVE);
                 dialog.add_buttons(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL, Gtk.STOCK_SAVE, Gtk.ResponseType.ACCEPT, null);
                 dialog.set_do_overwrite_confirmation(true);
                 dialog.set_local_only(false);
@@ -735,7 +735,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 	saveProfile();
 	}
 	private void loadProfileOnStartup(string profileFilename) {
-	        if (profile.load(profileFilename, window)) {
+	        if (profile.load(profileFilename, gtkWindow)) {
 			ensureDisconnected();
 		        currentSettings = Settings.loadFromProfile(profile);
         	        currentPreferences = Preferences.loadFromProfile(profile);
@@ -743,19 +743,19 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 			updatePreferences(null, currentPreferences);
         		statusbar.pop(statusbarContext);
         		statusbar.push(statusbarContext, currentSettings.getStatusbarString(false));
-			window.set_title("moserial - %s".printf(GLib.Path.get_basename(profileFilename)));
+			gtkWindow.set_title("moserial - %s".printf(GLib.Path.get_basename(profileFilename)));
 			profileChanged=false;
 			this.profileFilename=profileFilename;
 		}
 	}
 	private void loadProfile() {
-                var dialog = new FileChooserDialog (null, window, Gtk.FileChooserAction.OPEN);
+                var dialog = new FileChooserDialog (null, gtkWindow, Gtk.FileChooserAction.OPEN);
                 dialog.add_buttons(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL, Gtk.STOCK_OPEN, Gtk.ResponseType.ACCEPT, null);
                 dialog.set_local_only(false);
 	        int response = dialog.run();
 	        if(response == Gtk.ResponseType.ACCEPT) {
 		        profileFilename=dialog.get_filename();
-		        if (profile.load(profileFilename, window)) {
+		        if (profile.load(profileFilename, gtkWindow)) {
 				ensureDisconnected();
 			        currentSettings = Settings.loadFromProfile(profile);
         	                currentPreferences = Preferences.loadFromProfile(profile);
@@ -763,7 +763,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 	       			updatePreferences(null, currentPreferences);
 	                	statusbar.pop(statusbarContext);
         	        	statusbar.push(statusbarContext, currentSettings.getStatusbarString(false));
-				window.set_title("moserial - %s".printf(GLib.Path.get_basename(profileFilename)));
+				gtkWindow.set_title("moserial - %s".printf(GLib.Path.get_basename(profileFilename)));
 				profileChanged=false;
 			}
 		}
@@ -771,31 +771,31 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 	}
 	
 	private void copy() {
-		if(window.get_focus()==(Gtk.Widget)outgoingAsciiTextView || window.get_focus()==(Gtk.Widget)incomingAsciiTextView || window.get_focus()==(Gtk.Widget)outgoingHexTextView || window.get_focus()==(Gtk.Widget)incomingHexTextView) {
-			TextView tv = (TextView)window.get_focus();
+		if(gtkWindow.get_focus()==(Gtk.Widget)outgoingAsciiTextView || gtkWindow.get_focus()==(Gtk.Widget)incomingAsciiTextView || gtkWindow.get_focus()==(Gtk.Widget)outgoingHexTextView || gtkWindow.get_focus()==(Gtk.Widget)incomingHexTextView) {
+			TextView tv = (TextView)gtkWindow.get_focus();
 			tv.buffer.copy_clipboard(Gtk.Clipboard.get(Gdk.SELECTION_CLIPBOARD));
 		}
-		else if(window.get_focus()==(Gtk.Widget)entry) {
+		else if(gtkWindow.get_focus()==(Gtk.Widget)entry) {
 			entry.copy_clipboard();
 		}
 	}
 	
 	private void cut() {
-		if(window.get_focus()==(Gtk.Widget)entry) {
+		if(gtkWindow.get_focus()==(Gtk.Widget)entry) {
 			entry.cut_clipboard();
 		}
 	}
 	
 	private void editMenu(Action a) {
-		if(window.get_focus()==(Gtk.Widget)outgoingAsciiTextView || window.get_focus()==(Gtk.Widget)incomingAsciiTextView || window.get_focus()==(Gtk.Widget)outgoingHexTextView || window.get_focus()==(Gtk.Widget)incomingHexTextView) {
+		if(gtkWindow.get_focus()==(Gtk.Widget)outgoingAsciiTextView || gtkWindow.get_focus()==(Gtk.Widget)incomingAsciiTextView || gtkWindow.get_focus()==(Gtk.Widget)outgoingHexTextView || gtkWindow.get_focus()==(Gtk.Widget)incomingHexTextView) {
 			cutMenuItem.set_sensitive(false);
-			TextView tv = (TextView)window.get_focus();
+			TextView tv = (TextView)gtkWindow.get_focus();
 			if(tv.buffer.has_selection)
 				copyMenuItem.set_sensitive(true);
 			else
 				copyMenuItem.set_sensitive(false);
 		}
-		else if(window.get_focus()==(Gtk.Widget)entry){
+		else if(gtkWindow.get_focus()==(Gtk.Widget)entry){
 			int s=0;
 			int e=0;
 			if(entry.get_selection_bounds(s, e)) {

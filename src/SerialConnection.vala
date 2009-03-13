@@ -19,7 +19,7 @@ public class moserial.SerialConnection : GLib.Object
 	public enum LineEnd{ CRLF, CR, LF, TAB, NONE }
 	uint? sourceId;
 	bool localEcho;
-        public bool connect (Settings settings) {
+        public bool doConnect (Settings settings) {
 
                 if (settings.accessMode==Settings.AccessMode.READWRITE)
                         flags=POSIX.File.AccessMode.RDWR;
@@ -101,7 +101,7 @@ public class moserial.SerialConnection : GLib.Object
 		return s;
 	}
 
-        public void disconnect () {
+        public void doDisconnect () {
         	if(connected) {
 	        	GLib.Source.remove(sourceId);
 	        	sourceId = null;
