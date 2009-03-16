@@ -1,5 +1,10 @@
 2009-03-16  Michael J. Chudobiak  <mjc@svn.gnome.org>
 
+	* configure.ac:
+	Post-release version bump to 1.0.8.
+
+2009-03-16  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
 	[ moserial 1.0.7 released ]
 
 	* configure.ac:
