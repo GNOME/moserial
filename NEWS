@@ -1,3 +1,11 @@
+Version 1.0.7
+-------------
+
+	* Make the entrybox grab the focus when the user presses Escape.
+	* Added link to our new bugzilla product.
+
+        Updated translations: German (de)
+
 Version 1.0.6
 -------------
 

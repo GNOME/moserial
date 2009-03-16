@@ -1,5 +1,12 @@
 2009-03-16  Michael J. Chudobiak  <mjc@svn.gnome.org>
 
+	[ moserial 1.0.7 released ]
+
+	* configure.ac:
+	Added the link to our new bugzilla product.
+
+2009-03-16  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
 	* data/glade/moserial.glade:
 	* data/glade/moserial.ui:
 	Document special keys.
