@@ -1,3 +1,12 @@
+2009-03-16  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	Document special keys.
+
+	* doc/C/moserial.xml:
+	Make the entrybox grab the focus when the user presses Escape.
+
 2009-03-13  Michael J. Chudobiak  <mjc@svn.gnome.org>
 
 	* doc/C/moserial.xml:
