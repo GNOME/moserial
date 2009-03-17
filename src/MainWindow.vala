@@ -70,6 +70,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
         private bool profileChanged=false;
         private Gtk.Action cutMenuItem;
         private Gtk.Action copyMenuItem;
+        //private Gtk.RecentChooser recentChooser;
         public MainWindow(Builder builder, string? profileFilename) {
                 this.builder=builder;
                 this.startupProfileFilename=profileFilename;
@@ -238,6 +239,26 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 terminationMode = (ComboBox)builder.get_object("termination_mode");
                 terminationMode.set_active(0);
                 
+                //setup recent chooser
+                RecentManager recentManager = RecentManager.get_default ();
+                RecentChooserMenu recentChooserMenu = new Gtk.RecentChooserMenu.for_manager(recentManager);
+                recentChooserMenu.item_activated += recentItemOpen;
+                RecentFilter filter = new RecentFilter();
+                filter.add_application(GLib.Environment.get_application_name());
+                recentChooserMenu.add_filter(filter);
+                recentChooserMenu.set_show_numbers(true);
+                /* We have to do this ugly iteration stuff because 
+		   gtk-builder-convert currently turns menuitems into actions.
+		   Hopefully this wont be need with new glade versions. */
+                MenuShell menuBar = (MenuBar)builder.get_object("menubar");
+               	GLib.List children = menuBar.get_children();
+               	MenuItem fileMenu;
+               	fileMenu = (MenuItem)children.first().data;
+               	MenuShell fileMenuShell = (MenuShell)fileMenu.get_submenu();
+                children = fileMenuShell.get_children();
+                MenuItem recentFileItem = (MenuItem)children.nth(2).data;
+               	recentFileItem.set_submenu(recentChooserMenu);
+
                 //load and apply preferences
                 currentPreferences = Preferences.loadFromProfile(profile);
        		updatePreferences(null, currentPreferences);
@@ -248,6 +269,26 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 		currentPaths = DefaultPaths.loadFromProfile(profile);
         }
 	
+	private void applyProfile (string filename) {
+		if (profile.load(filename, gtkWindow)) {
+			profileFilename = filename;
+			ensureDisconnected();
+			currentSettings = Settings.loadFromProfile(profile);
+			currentPreferences = Preferences.loadFromProfile(profile);
+			currentPaths = DefaultPaths.loadFromProfile(profile);
+			updatePreferences(null, currentPreferences);
+			statusbar.pop(statusbarContext);
+			statusbar.push(statusbarContext, currentSettings.getStatusbarString(false));
+			gtkWindow.set_title("moserial - %s".printf(GLib.Path.get_basename(filename)));
+			profileChanged=false;
+			RecentManager recentManager = RecentManager.get_default ();
+			recentManager.add_item(GLib.Filename.to_uri(filename));
+		}
+	}
+
+	private void recentItemOpen(RecentChooser r) {
+		applyProfile(GLib.Filename.from_uri(r.get_current_uri()));
+	}
 
         private void insertBufferEnd (TextBuffer buf, string s) {
                 TextIter iter;
@@ -365,11 +406,13 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 		        sz.transferComplete += this.sendComplete;
 		}
         }
+
         public void sendComplete(GLib.Object o) {
 	        sz.updateStatus-=sendProgressDialog.updateStatus;
         	sendProgressDialog.transferCanceled-=sz.transferCanceled;
                 sendProgressDialog.hide(sendProgressDialog);
         }
+
         private void doReceiveChooser(ToolButton button) {
                 if (!ensureConnected())
                         return;
@@ -710,6 +753,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 profile.save(null, gtkWindow);
                 Gtk.main_quit ();
         }
+
 	private void saveProfile () {
                 currentPreferences.saveToProfile(profile);
                 currentSettings.saveToProfile(profile);
@@ -720,7 +764,10 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 			return;
 		profile.save(profileFilename, gtkWindow);
 		profileChanged=false;
+		RecentManager recentManager = RecentManager.get_default ();
+		recentManager.add_item(GLib.Filename.to_uri(profileFilename));
 	}	
+
 	private void saveProfileAs () {
                 var dialog = new FileChooserDialog (null, gtkWindow, Gtk.FileChooserAction.SAVE);
                 dialog.add_buttons(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL, Gtk.STOCK_SAVE, Gtk.ResponseType.ACCEPT, null);
@@ -734,38 +781,18 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 if(response == Gtk.ResponseType.ACCEPT)
                 	saveProfile();
 	}
+
 	private void loadProfileOnStartup(string profileFilename) {
-	        if (profile.load(profileFilename, gtkWindow)) {
-			ensureDisconnected();
-		        currentSettings = Settings.loadFromProfile(profile);
-        	        currentPreferences = Preferences.loadFromProfile(profile);
-			currentPaths = DefaultPaths.loadFromProfile(profile);
-			updatePreferences(null, currentPreferences);
-        		statusbar.pop(statusbarContext);
-        		statusbar.push(statusbarContext, currentSettings.getStatusbarString(false));
-			gtkWindow.set_title("moserial - %s".printf(GLib.Path.get_basename(profileFilename)));
-			profileChanged=false;
-			this.profileFilename=profileFilename;
-		}
+		applyProfile(profileFilename);
 	}
+
 	private void loadProfile() {
                 var dialog = new FileChooserDialog (null, gtkWindow, Gtk.FileChooserAction.OPEN);
                 dialog.add_buttons(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL, Gtk.STOCK_OPEN, Gtk.ResponseType.ACCEPT, null);
                 dialog.set_local_only(false);
 	        int response = dialog.run();
 	        if(response == Gtk.ResponseType.ACCEPT) {
-		        profileFilename=dialog.get_filename();
-		        if (profile.load(profileFilename, gtkWindow)) {
-				ensureDisconnected();
-			        currentSettings = Settings.loadFromProfile(profile);
-        	                currentPreferences = Preferences.loadFromProfile(profile);
-				currentPaths = DefaultPaths.loadFromProfile(profile);
-	       			updatePreferences(null, currentPreferences);
-	                	statusbar.pop(statusbarContext);
-        	        	statusbar.push(statusbarContext, currentSettings.getStatusbarString(false));
-				gtkWindow.set_title("moserial - %s".printf(GLib.Path.get_basename(profileFilename)));
-				profileChanged=false;
-			}
+		        applyProfile(dialog.get_filename());
 		}
                 dialog.destroy();
 	}

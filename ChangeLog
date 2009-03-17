@@ -1,3 +1,16 @@
+2009-03-17  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	Added a recent files submenu.
+
+	* src/Main.vala:
+	Mangle command-line filename argument appropriately.
+
+	* src/MainWindow.vala:
+	Added recent files support.
+	Refactored profile loading, to reduce duplicated code.
+
 2009-03-16  Michael J. Chudobiak  <mjc@svn.gnome.org>
 
 	* configure.ac:

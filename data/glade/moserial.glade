@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE glade-interface SYSTEM "glade-2.0.dtd">
-<!--Generated with glade3 3.4.5 on Mon Mar 16 13:37:24 2009 -->
+<!--Generated with glade3 3.4.5 on Tue Mar 17 08:32:06 2009 -->
 <glade-interface>
   <widget class="GtkWindow" id="window">
     <property name="title" translatable="yes">moserial</property>
@@ -11,7 +11,7 @@
       <widget class="GtkVBox" id="vbox1">
         <property name="visible">True</property>
         <child>
-          <widget class="GtkMenuBar" id="menubar1">
+          <widget class="GtkMenuBar" id="menubar">
             <property name="visible">True</property>
             <child>
               <widget class="GtkMenuItem" id="menuitem1">
@@ -32,6 +32,13 @@
                             <property name="stock">gtk-open</property>
                           </widget>
                         </child>
+                      </widget>
+                    </child>
+                    <child>
+                      <widget class="GtkMenuItem" id="menubar_open_recent">
+                        <property name="visible">True</property>
+                        <property name="label" translatable="yes">Open _Recent</property>
+                        <property name="use_underline">True</property>
                       </widget>
                     </child>
                     <child>
@@ -591,213 +598,17 @@ No end</property>
                 <property name="n_rows">8</property>
                 <property name="n_columns">2</property>
                 <child>
-                  <widget class="GtkCheckButton" id="settings_local_echo">
+                  <widget class="GtkComboBox" id="settings_open_for">
                     <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="tooltip" translatable="yes">Normally disabled</property>
-                    <property name="label" translatable="yes">Echo received data</property>
-                    <property name="response_id">0</property>
-                    <property name="draw_indicator">True</property>
+                    <property name="items" translatable="yes">Read and Write
+Read Only
+Write Only</property>
                   </widget>
                   <packing>
                     <property name="left_attach">1</property>
                     <property name="right_attach">2</property>
-                    <property name="top_attach">7</property>
-                    <property name="bottom_attach">8</property>
-                    <property name="x_padding">2</property>
-                    <property name="y_padding">2</property>
-                  </packing>
-                </child>
-                <child>
-                  <widget class="GtkLabel" id="label26">
-                    <property name="visible">True</property>
-                    <property name="xalign">1</property>
-                    <property name="label" translatable="yes">Local Echo</property>
-                  </widget>
-                  <packing>
-                    <property name="top_attach">7</property>
-                    <property name="bottom_attach">8</property>
-                    <property name="x_padding">4</property>
-                  </packing>
-                </child>
-                <child>
-                  <widget class="GtkLabel" id="label1">
-                    <property name="visible">True</property>
-                    <property name="xalign">1</property>
-                    <property name="label" translatable="yes">Device</property>
-                  </widget>
-                  <packing>
-                    <property name="x_padding">4</property>
-                  </packing>
-                </child>
-                <child>
-                  <widget class="GtkLabel" id="label2">
-                    <property name="visible">True</property>
-                    <property name="xalign">1</property>
-                    <property name="label" translatable="yes">Baud Rate</property>
-                  </widget>
-                  <packing>
-                    <property name="top_attach">1</property>
-                    <property name="bottom_attach">2</property>
-                    <property name="x_padding">4</property>
-                  </packing>
-                </child>
-                <child>
-                  <widget class="GtkLabel" id="label3">
-                    <property name="visible">True</property>
-                    <property name="xalign">1</property>
-                    <property name="label" translatable="yes">Data Bits</property>
-                  </widget>
-                  <packing>
-                    <property name="top_attach">2</property>
-                    <property name="bottom_attach">3</property>
-                    <property name="x_padding">4</property>
-                  </packing>
-                </child>
-                <child>
-                  <widget class="GtkLabel" id="label4">
-                    <property name="visible">True</property>
-                    <property name="xalign">1</property>
-                    <property name="label" translatable="yes">Stop Bits</property>
-                  </widget>
-                  <packing>
-                    <property name="top_attach">3</property>
-                    <property name="bottom_attach">4</property>
-                    <property name="x_padding">4</property>
-                  </packing>
-                </child>
-                <child>
-                  <widget class="GtkLabel" id="label5">
-                    <property name="visible">True</property>
-                    <property name="xalign">1</property>
-                    <property name="label" translatable="yes">Parity</property>
-                  </widget>
-                  <packing>
-                    <property name="top_attach">4</property>
-                    <property name="bottom_attach">5</property>
-                    <property name="x_padding">4</property>
-                  </packing>
-                </child>
-                <child>
-                  <widget class="GtkLabel" id="label7">
-                    <property name="visible">True</property>
-                    <property name="xalign">1</property>
-                    <property name="label" translatable="yes">Handshake</property>
-                  </widget>
-                  <packing>
-                    <property name="top_attach">5</property>
-                    <property name="bottom_attach">6</property>
-                    <property name="x_padding">4</property>
-                  </packing>
-                </child>
-                <child>
-                  <widget class="GtkLabel" id="label8">
-                    <property name="visible">True</property>
-                    <property name="xalign">1</property>
-                    <property name="label" translatable="yes">Access Mode</property>
-                  </widget>
-                  <packing>
                     <property name="top_attach">6</property>
                     <property name="bottom_attach">7</property>
-                    <property name="x_padding">4</property>
-                  </packing>
-                </child>
-                <child>
-                  <widget class="GtkComboBoxEntry" id="settings_device">
-                    <property name="visible">True</property>
-                    <property name="items" translatable="yes">/dev/ttyS0
-/dev/ttyS1
-/dev/ttyS2
-/dev/ttyS3
-/dev/ttyUSB0
-/dev/ttyUSB1
-/dev/ttyUSB2
-/dev/ttyUSB3</property>
-                    <child internal-child="entry">
-                      <widget class="GtkEntry" id="comboboxentry-entry1">
-                      </widget>
-                    </child>
-                  </widget>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="right_attach">2</property>
-                    <property name="y_options">GTK_EXPAND</property>
-                    <property name="y_padding">2</property>
-                  </packing>
-                </child>
-                <child>
-                  <widget class="GtkComboBox" id="settings_baud_rate">
-                    <property name="visible">True</property>
-                    <property name="items" translatable="yes">300
-600
-1200
-2400
-4800
-9600
-19200
-38400
-57600
-115200
-230400
-460800
-576000
-927600</property>
-                  </widget>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="right_attach">2</property>
-                    <property name="top_attach">1</property>
-                    <property name="bottom_attach">2</property>
-                    <property name="y_options">GTK_EXPAND</property>
-                    <property name="y_padding">2</property>
-                  </packing>
-                </child>
-                <child>
-                  <widget class="GtkComboBox" id="settings_data_bits">
-                    <property name="visible">True</property>
-                    <property name="items" translatable="yes">5
-6
-7
-8</property>
-                  </widget>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="right_attach">2</property>
-                    <property name="top_attach">2</property>
-                    <property name="bottom_attach">3</property>
-                    <property name="y_options">GTK_EXPAND</property>
-                    <property name="y_padding">2</property>
-                  </packing>
-                </child>
-                <child>
-                  <widget class="GtkComboBox" id="settings_stop_bits">
-                    <property name="visible">True</property>
-                    <property name="items" translatable="yes">1
-2</property>
-                  </widget>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="right_attach">2</property>
-                    <property name="top_attach">3</property>
-                    <property name="bottom_attach">4</property>
-                    <property name="y_options">GTK_EXPAND</property>
-                    <property name="y_padding">2</property>
-                  </packing>
-                </child>
-                <child>
-                  <widget class="GtkComboBox" id="settings_parity">
-                    <property name="visible">True</property>
-                    <property name="items" translatable="yes">None
-Odd
-Even
-Mark
-Space</property>
-                  </widget>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="right_attach">2</property>
-                    <property name="top_attach">4</property>
-                    <property name="bottom_attach">5</property>
                     <property name="y_options">GTK_EXPAND</property>
                     <property name="y_padding">2</property>
                   </packing>
@@ -841,18 +652,214 @@ Space</property>
                   </packing>
                 </child>
                 <child>
-                  <widget class="GtkComboBox" id="settings_open_for">
+                  <widget class="GtkComboBox" id="settings_parity">
                     <property name="visible">True</property>
-                    <property name="items" translatable="yes">Read and Write
-Read Only
-Write Only</property>
+                    <property name="items" translatable="yes">None
+Odd
+Even
+Mark
+Space</property>
                   </widget>
                   <packing>
                     <property name="left_attach">1</property>
                     <property name="right_attach">2</property>
+                    <property name="top_attach">4</property>
+                    <property name="bottom_attach">5</property>
+                    <property name="y_options">GTK_EXPAND</property>
+                    <property name="y_padding">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkComboBox" id="settings_stop_bits">
+                    <property name="visible">True</property>
+                    <property name="items" translatable="yes">1
+2</property>
+                  </widget>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="right_attach">2</property>
+                    <property name="top_attach">3</property>
+                    <property name="bottom_attach">4</property>
+                    <property name="y_options">GTK_EXPAND</property>
+                    <property name="y_padding">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkComboBox" id="settings_data_bits">
+                    <property name="visible">True</property>
+                    <property name="items" translatable="yes">5
+6
+7
+8</property>
+                  </widget>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="right_attach">2</property>
+                    <property name="top_attach">2</property>
+                    <property name="bottom_attach">3</property>
+                    <property name="y_options">GTK_EXPAND</property>
+                    <property name="y_padding">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkComboBox" id="settings_baud_rate">
+                    <property name="visible">True</property>
+                    <property name="items" translatable="yes">300
+600
+1200
+2400
+4800
+9600
+19200
+38400
+57600
+115200
+230400
+460800
+576000
+927600</property>
+                  </widget>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="right_attach">2</property>
+                    <property name="top_attach">1</property>
+                    <property name="bottom_attach">2</property>
+                    <property name="y_options">GTK_EXPAND</property>
+                    <property name="y_padding">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkComboBoxEntry" id="settings_device">
+                    <property name="visible">True</property>
+                    <property name="items" translatable="yes">/dev/ttyS0
+/dev/ttyS1
+/dev/ttyS2
+/dev/ttyS3
+/dev/ttyUSB0
+/dev/ttyUSB1
+/dev/ttyUSB2
+/dev/ttyUSB3</property>
+                    <child internal-child="entry">
+                      <widget class="GtkEntry" id="comboboxentry-entry1">
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="right_attach">2</property>
+                    <property name="y_options">GTK_EXPAND</property>
+                    <property name="y_padding">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkLabel" id="label8">
+                    <property name="visible">True</property>
+                    <property name="xalign">1</property>
+                    <property name="label" translatable="yes">Access Mode</property>
+                  </widget>
+                  <packing>
                     <property name="top_attach">6</property>
                     <property name="bottom_attach">7</property>
-                    <property name="y_options">GTK_EXPAND</property>
+                    <property name="x_padding">4</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkLabel" id="label7">
+                    <property name="visible">True</property>
+                    <property name="xalign">1</property>
+                    <property name="label" translatable="yes">Handshake</property>
+                  </widget>
+                  <packing>
+                    <property name="top_attach">5</property>
+                    <property name="bottom_attach">6</property>
+                    <property name="x_padding">4</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkLabel" id="label5">
+                    <property name="visible">True</property>
+                    <property name="xalign">1</property>
+                    <property name="label" translatable="yes">Parity</property>
+                  </widget>
+                  <packing>
+                    <property name="top_attach">4</property>
+                    <property name="bottom_attach">5</property>
+                    <property name="x_padding">4</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkLabel" id="label4">
+                    <property name="visible">True</property>
+                    <property name="xalign">1</property>
+                    <property name="label" translatable="yes">Stop Bits</property>
+                  </widget>
+                  <packing>
+                    <property name="top_attach">3</property>
+                    <property name="bottom_attach">4</property>
+                    <property name="x_padding">4</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkLabel" id="label3">
+                    <property name="visible">True</property>
+                    <property name="xalign">1</property>
+                    <property name="label" translatable="yes">Data Bits</property>
+                  </widget>
+                  <packing>
+                    <property name="top_attach">2</property>
+                    <property name="bottom_attach">3</property>
+                    <property name="x_padding">4</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkLabel" id="label2">
+                    <property name="visible">True</property>
+                    <property name="xalign">1</property>
+                    <property name="label" translatable="yes">Baud Rate</property>
+                  </widget>
+                  <packing>
+                    <property name="top_attach">1</property>
+                    <property name="bottom_attach">2</property>
+                    <property name="x_padding">4</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkLabel" id="label1">
+                    <property name="visible">True</property>
+                    <property name="xalign">1</property>
+                    <property name="label" translatable="yes">Device</property>
+                  </widget>
+                  <packing>
+                    <property name="x_padding">4</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkLabel" id="label26">
+                    <property name="visible">True</property>
+                    <property name="xalign">1</property>
+                    <property name="label" translatable="yes">Local Echo</property>
+                  </widget>
+                  <packing>
+                    <property name="top_attach">7</property>
+                    <property name="bottom_attach">8</property>
+                    <property name="x_padding">4</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="GtkCheckButton" id="settings_local_echo">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="tooltip" translatable="yes">Normally disabled</property>
+                    <property name="label" translatable="yes">Echo received data</property>
+                    <property name="response_id">0</property>
+                    <property name="draw_indicator">True</property>
+                  </widget>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="right_attach">2</property>
+                    <property name="top_attach">7</property>
+                    <property name="bottom_attach">8</property>
+                    <property name="x_padding">2</property>
                     <property name="y_padding">2</property>
                   </packing>
                 </child>
@@ -1051,13 +1058,19 @@ Write Only</property>
         <property name="visible">True</property>
         <property name="n_rows">4</property>
         <child>
-          <widget class="GtkLabel" id="stop_recording_label">
+          <widget class="GtkLabel" id="disconnect_label">
             <property name="visible">True</property>
-            <property name="label" translatable="yes">Stop Recording</property>
+            <property name="label" translatable="yes">Disconnect</property>
+          </widget>
+        </child>
+        <child>
+          <widget class="GtkLabel" id="connect_label">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Connect</property>
           </widget>
           <packing>
-            <property name="top_attach">3</property>
-            <property name="bottom_attach">4</property>
+            <property name="top_attach">1</property>
+            <property name="bottom_attach">2</property>
           </packing>
         </child>
         <child>
@@ -1071,20 +1084,14 @@ Write Only</property>
           </packing>
         </child>
         <child>
-          <widget class="GtkLabel" id="connect_label">
+          <widget class="GtkLabel" id="stop_recording_label">
             <property name="visible">True</property>
-            <property name="label" translatable="yes">Connect</property>
+            <property name="label" translatable="yes">Stop Recording</property>
           </widget>
           <packing>
-            <property name="top_attach">1</property>
-            <property name="bottom_attach">2</property>
+            <property name="top_attach">3</property>
+            <property name="bottom_attach">4</property>
           </packing>
-        </child>
-        <child>
-          <widget class="GtkLabel" id="disconnect_label">
-            <property name="visible">True</property>
-            <property name="label" translatable="yes">Disconnect</property>
-          </widget>
         </child>
       </widget>
     </child>
