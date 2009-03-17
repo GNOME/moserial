@@ -434,22 +434,70 @@
   <sect1 id="keys">
     <title>Special Keys</title>
     <para>
-      Text can be copied from any of the text boxes using
-      <keycombo><keycap>Ctrl</keycap><keycap>C</keycap></keycombo>.
-    </para>
-    <para>
-      Text can be cut from the <guilabel>Outgoing</guilabel> single-line text box using
-      <keycombo><keycap>Ctrl</keycap><keycap>X</keycap></keycombo>.
-    </para>
-    <para>
-      Pressing <keycombo><keycap>Ctrl</keycap><keycap>V</keycap></keycombo> will paste
-      the clipboard text into the <guilabel>Outgoing</guilabel> single-line text box,
-      and move the focus to that text box.
-    </para>
-    <para>
-      Pressing <keycap>Esc</keycap> will move the focus to the <guilabel>Outgoing</guilabel>
-      single-line text box.
-    </para>
+      <table id="moserial-TBL-keyword-shortcuts" frame="topbot">
+      <title>Special Keys</title>
+      <tgroup cols="2" colsep="1" rowsep="1">
+        <colspec colname="COLSPEC0" colwidth="50*"/>
+        <colspec colname="COLSPEC1" colwidth="50*"/>
+        <thead>
+          <row valign="top" rowsep="1">
+            <entry colname="COLSPEC0">
+                <para>Keyboard Shortcut</para></entry>
+            <entry colname="COLSPEC1">
+                <para>Description</para></entry>
+          </row>
+        </thead>
+        <tbody>
+          <row valign="top">
+            <entry>
+              <para>
+		<keycombo><keycap>Ctrl</keycap><keycap>C</keycap></keycombo>
+              </para>
+            </entry>
+            <entry>
+              <para>Copies text. This can be used in any of the text areas.</para>
+            </entry>
+          </row>
+          <row valign="top">
+            <entry>
+              <para>
+                <keycombo><keycap>Ctrl</keycap><keycap>X</keycap></keycombo>
+              </para>
+            </entry>
+            <entry>
+              <para>Cuts text. This only works in the <guilabel>Outgoing</guilabel> single-line text box.</para>
+            </entry>
+          </row>
+          <row valign="top">
+            <entry>
+              <para>
+                <keycombo><keycap>Ctrl</keycap><keycap>V</keycap></keycombo>
+              </para>
+            </entry>
+            <entry>
+              <para>
+                Pastes text into the <guilabel>Outgoing</guilabel> single-line text box,
+                and moves the focus to that text box.
+              </para>
+            </entry>
+          </row>
+          <row valign="top">
+            <entry>
+              <para>
+                <keycap>Esc</keycap>
+              </para>
+            </entry>
+            <entry>
+              <para>
+                Moves the focus to the <guilabel>Outgoing</guilabel> single-line text box.
+              </para>
+            </entry>
+          </row>
+
+        </tbody>
+      </tgroup>
+      </table>
+  </para>
   </sect1>
 
 </article>

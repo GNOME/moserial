@@ -1,5 +1,10 @@
 2009-03-17  Michael J. Chudobiak  <mjc@svn.gnome.org>
 
+	* doc/C/moserial.xml:
+	Improved formatting of the special keys docs.
+
+2009-03-17  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
 	* data/glade/moserial.glade:
 	* data/glade/moserial.ui:
 	Added a recent files submenu.
