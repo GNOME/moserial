@@ -547,9 +547,6 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 	public bool ensureConnected () {
                 if (!connectButton.get_active())
                         connectButton.set_active(true);
-
-                /* Is this a race condition? We want to know if the
-                   set_active attempt was successful. */
                 return connectButton.get_active();
         }
 
