@@ -179,7 +179,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 
                 //setup connectbutton
                 connectButton = (ToggleToolButton)builder.get_object("toolbar_connect");
-                connectButton.clicked += this.doConnect;
+                connectButton.clicked += this.connectButtonClick;
                 disconnectLabel = (Label)builder.get_object("disconnect_label");
                 connectLabel = (Label)builder.get_object("connect_label");
 
@@ -458,6 +458,10 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 
         public void record(ToggleToolButton button) {
                 if (button.get_active()) {
+			if (!ensureConnected()) {
+				button.set_active(false);
+				return;
+			}
                         button.set_label_widget(stopRecordingLabel);
                         recordDialog.show(currentPaths.recordTo);
                 } else {
@@ -481,7 +485,6 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                         if (!ensureConnected())
                                 stopRecording(dialog);
                 } catch (GLib.Error e) {
-                        warning(_("Error: Could not open %s\n"), filename);
                         var errorDialog = new MessageDialog (gtkWindow, DialogFlags.DESTROY_WITH_PARENT, MessageType.ERROR, ButtonsType.CLOSE, "%s: %s\n%s".printf(_("Error: Could not open file"), filename, e.message));
                         errorDialog.run();
                         errorDialog.destroy();
@@ -577,7 +580,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 return true;
         }
 
-        private void doConnect(ToggleToolButton button) {
+        private void connectButtonClick(ToggleToolButton button) {
                 if (button.get_active()) {
                         startConnection();
                 } else {

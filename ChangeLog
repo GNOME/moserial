@@ -1,3 +1,13 @@
+2009-03-18  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/MainWindow.vala:
+	Renamed doConnect to connectButtonClick to avoid confusion
+	with another function of the same name.
+
+	Removed one pointless warning.
+
+	Check connection status before showing record dialog.
+
 2009-03-17  Michael J. Chudobiak  <mjc@svn.gnome.org>
 
 	* doc/C/moserial.xml:
