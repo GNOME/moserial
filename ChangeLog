@@ -1,6 +1,11 @@
 2009-03-18  Michael J. Chudobiak  <mjc@svn.gnome.org>
 
 	* src/MainWindow.vala:
+	Remove another pointless warning.
+
+2009-03-18  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/MainWindow.vala:
 	Renamed doConnect to connectButtonClick to avoid confusion
 	with another function of the same name.
 

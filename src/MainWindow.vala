@@ -561,7 +561,6 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
         private bool startConnection() {
                 if (!(serialConnection.doConnect(currentSettings))) {
                         connectButton.set_active(false);
-                        warning(_("Error: Could not open %s\n"), currentSettings.device);
                         var dialog = new MessageDialog (gtkWindow, DialogFlags.DESTROY_WITH_PARENT, MessageType.ERROR, ButtonsType.CLOSE, "%s: %s".printf(_("Error: Could not open device"), currentSettings.device));
                         dialog.run();
                         dialog.destroy();
