@@ -1,5 +1,11 @@
 2009-03-18  Michael J. Chudobiak  <mjc@svn.gnome.org>
 
+	* doc/C/moserial.xml:
+	* src/SettingsDialog.vala:
+	Added support for /dev/rfcomm ports.
+
+2009-03-18  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
 	* src/MainWindow.vala:
 	Remove another pointless warning.
 

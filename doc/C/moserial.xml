@@ -161,8 +161,9 @@
         any system default settings for the port.
       </para>
       <para>
-        The &app; port setup dialog will only list the /dev/ttySnn and /dev/ttyUSBnn ports
-        that actually exist on the system, for values of "nn" between 0 and 31.
+        The &app; port setup dialog will only list the /dev/ttySnn, /dev/ttyUSBnn,
+        and /dev/rfcommnn ports that actually exist on the system, for values of "nn"
+        between 0 and 31.
       </para>
       <para>
         A local echo can be enabled from this dialog. If enabled, all data that &app;

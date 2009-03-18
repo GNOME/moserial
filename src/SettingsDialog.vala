@@ -49,28 +49,26 @@ public class moserial.SettingsDialog : GLib.Object
         }
 
         private void populateDevices(){
+		List<string> deviceTypes = new List<string> ();
+		deviceTypes.append ("/dev/ttyS");
+		deviceTypes.append ("/dev/ttyUSB");
+		deviceTypes.append ("/dev/rfcomm");
+
                 var ls = new ListStore(2, typeof(string), typeof(string));
                 
                 deviceCombo.set_model(ls);
                 deviceCombo.set_text_column(1);
                 TreeIter iter;
-	
-		for (int i = 0; i < max_devices; i++) {
-			string dev = "/dev/ttyS%d".printf(i);
-			if (FileUtils.test (dev, FileTest.EXISTS)) {
-		 		ls.append(out iter);
-        		        ls.set(iter, 0, "", 1, dev, -1);
+		
+		foreach (string devType in deviceTypes) {
+			for (int i = 0; i < max_devices; i++) {
+				string dev = "%s%d".printf(devType,i);
+				if (FileUtils.test (dev, FileTest.EXISTS)) {
+		 			ls.append(out iter);
+        		        	ls.set(iter, 0, "", 1, dev, -1);
+				}
 			}
 		}
-                
-                for (int i = 0; i < max_devices; i++) {
-                        string dev = "/dev/ttyUSB%d".printf(i);
-                        if (FileUtils.test (dev, FileTest.EXISTS)) {
-	                        ls.append(out iter);
-        	                ls.set(iter, 0, "", 1, dev, -1);
-			}
-                }
-                
         }
 
         public void show(Settings settings) {
