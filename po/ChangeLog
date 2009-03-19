@@ -1,3 +1,8 @@
+2009-03-19  Jorge Gonzalez  <jorgegonz@svn.gnome.org>
+
+	* es.po: Added Spanish translation
+	* LINGUAS: Added es
+
 2009-03-13  Hendrik Brandt <heb@gnomne-de.org>
 
 	* de.po: Added German translation.
