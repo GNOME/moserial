@@ -2,8 +2,11 @@ Version 1.0.8
 -------------
 
 	* Added a recent files chooser submenu.
+	* Show recording filename in window title.
+	* Added support for /dev/rfcomm ports.
 
-	Updates docs: Swedish (sv)
+	New translation: Spanish (es)
+	Updated docs: Swedish (sv)
 
 Version 1.0.7
 -------------

@@ -1,5 +1,11 @@
 2009-03-20  Michael J. Chudobiak  <mjc@svn.gnome.org>
 
+	[ moserial 1.0.8 released ]
+
+	* NEWS: general updates
+
+2009-03-20  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
 	* src/MainWindow.vala:
 	Update window title correctly after recording timeout.
 
