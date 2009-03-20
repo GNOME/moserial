@@ -1,3 +1,8 @@
+2009-03-20  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* src/MainWindow.vala:
+	Show recording filename in window title.
+
 2009-03-18  Michael J. Chudobiak  <mjc@svn.gnome.org>
 
 	* src/MainWindow.vala:

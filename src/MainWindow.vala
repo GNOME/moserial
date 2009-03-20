@@ -279,11 +279,28 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 			updatePreferences(null, currentPreferences);
 			statusbar.pop(statusbarContext);
 			statusbar.push(statusbarContext, currentSettings.getStatusbarString(false));
-			gtkWindow.set_title("moserial - %s".printf(GLib.Path.get_basename(filename)));
+			setWindowTitle(null);
 			profileChanged=false;
 			RecentManager recentManager = RecentManager.get_default ();
 			recentManager.add_item(GLib.Filename.to_uri(filename));
 		}
+	}
+
+	private void setWindowTitle (string? recordingFilename) {
+		var builder = new StringBuilder();
+		builder.append("moserial");
+		
+		if (profileFilename != null) {
+			builder.append(" - ");
+			builder.append(GLib.Path.get_basename(profileFilename));
+		}
+
+                if (recordingFilename != null) {
+                        builder.append(" - ");
+                        builder.append(GLib.Path.get_basename(recordingFilename));
+                }
+
+		gtkWindow.set_title(builder.str);
 	}
 
 	private void recentItemOpen(RecentChooser r) {
@@ -476,6 +493,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 
         public void stopRecording(moserial.RecordDialog dialog) {
                 recordButton.set_active(false); //this generates recordButton.clicked signal
+		setWindowTitle(null);	
         }
 
         public void startRecording(moserial.RecordDialog dialog, string filename, moserial.SerialStreamRecorder.Direction direction) {
@@ -484,6 +502,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 			currentPaths.recordTo=MoUtils.getParentFolder(filename);
                         if (!ensureConnected())
                                 stopRecording(dialog);
+			setWindowTitle(filename);
                 } catch (GLib.Error e) {
                         var errorDialog = new MessageDialog (gtkWindow, DialogFlags.DESTROY_WITH_PARENT, MessageType.ERROR, ButtonsType.CLOSE, "%s: %s\n%s".printf(_("Error: Could not open file"), filename, e.message));
                         errorDialog.run();
