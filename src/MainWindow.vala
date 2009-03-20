@@ -484,6 +484,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 } else {
                         streamRecorder.close(currentPreferences.recordLaunch);
                         button.set_label_widget(recordLabel);
+			setWindowTitle(null);
 			if (recordTimeoutID > 0) {
 				GLib.Source.remove (recordTimeoutID);
 				recordTimeoutID = 0;
@@ -493,7 +494,6 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 
         public void stopRecording(moserial.RecordDialog dialog) {
                 recordButton.set_active(false); //this generates recordButton.clicked signal
-		setWindowTitle(null);	
         }
 
         public void startRecording(moserial.RecordDialog dialog, string filename, moserial.SerialStreamRecorder.Direction direction) {
