@@ -1,3 +1,12 @@
+2009-04-03  Michael J. Chudobiak  <mjc@svn.gnome.org>
+
+	* data/glade/moserial.glade:
+	* data/glade/moserial.ui:
+	* src/MainWindow.vala:
+	Remove the Escape key definition out from glade and put it in the
+	code. Also, scroll all text boxes to the bottom after pressing
+	escape.
+
 2009-03-20  Michael J. Chudobiak  <mjc@svn.gnome.org>
 
 	* configure.ac:

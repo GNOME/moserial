@@ -70,6 +70,11 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
         private bool profileChanged=false;
         private Gtk.Action cutMenuItem;
         private Gtk.Action copyMenuItem;
+	private Adjustment va1;
+	private Adjustment va2;
+	private Adjustment va3;
+	private Adjustment va4;
+
         //private Gtk.RecentChooser recentChooser;
         public MainWindow(Builder builder, string? profileFilename) {
                 this.builder=builder;
@@ -80,6 +85,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 gtkWindow = (Gtk.Window)builder.get_object("window");
                 gtkWindow.destroy += quitSave;
                 gtkWindow.delete_event += deleteSaveSize;
+		gtkWindow.key_press_event += keyPress;
 
 		//load defaults
                 profile=new Profile();
@@ -219,13 +225,13 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 
                 //setup scrolling
                 ScrolledWindow incomingAsciiScrolledWindow = (ScrolledWindow)builder.get_object("incoming_ascii_scrolledwindow");
-                Adjustment va1 = incomingAsciiScrolledWindow.get_vadjustment();
+                va1 = incomingAsciiScrolledWindow.get_vadjustment();
                	ScrolledWindow incomingHexScrolledWindow = (ScrolledWindow)builder.get_object("incoming_hex_scrolledwindow");
-                Adjustment va2 = incomingHexScrolledWindow.get_vadjustment();
+                va2 = incomingHexScrolledWindow.get_vadjustment();
                 ScrolledWindow outgoingAsciiScrolledWindow = (ScrolledWindow)builder.get_object("outgoing_ascii_scrolledwindow");
-                Adjustment va3 = outgoingAsciiScrolledWindow.get_vadjustment();
+                va3 = outgoingAsciiScrolledWindow.get_vadjustment();
                 ScrolledWindow outgoingHexScrolledWindow = (ScrolledWindow)builder.get_object("outgoing_hex_scrolledwindow");
-                Adjustment va4 = outgoingHexScrolledWindow.get_vadjustment();
+                va4 = outgoingHexScrolledWindow.get_vadjustment();
 		AutoScroll.setup(va1, va2, va3, va4);
 		
                 //setup entry
@@ -268,7 +274,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 
 		currentPaths = DefaultPaths.loadFromProfile(profile);
         }
-	
+
 	private void applyProfile (string filename) {
 		if (profile.load(filename, gtkWindow)) {
 			profileFilename = filename;
@@ -740,6 +746,21 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 Gtk.main_quit();
                 return true;
         }
+
+	private bool keyPress(Widget widget, EventKey key) {
+		/* Bug 551184 – Need gdk/gdkkeysyms.h bindings */
+		if (key.keyval == 0xff1b) {	/* Escape */
+			AutoScroll.scroll (va1);
+                        AutoScroll.scroll (va2);
+                        AutoScroll.scroll (va3);
+                        AutoScroll.scroll (va4);
+                        entry.grab_focus();
+                        entry.set_position(-1);
+			return true;
+		}
+
+		return false;
+	}
 
         private void windowSizeSave () {
                 int width = 0;

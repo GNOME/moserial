@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!--Generated with glade3 3.4.5 on Tue Mar 17 08:32:06 2009 -->
+<!--Generated with glade3 3.4.5 on Fri Apr  3 13:21:08 2009 -->
 <interface>
   <object class="GtkAdjustment" id="adjustment1">
     <property name="upper">5000</property>
@@ -85,71 +85,32 @@
     </columns>
     <data>
       <row>
-        <col id="0">Read and Write</col>
+        <col id="0">/dev/ttyS0</col>
       </row>
       <row>
-        <col id="0">Read Only</col>
+        <col id="0">/dev/ttyS1</col>
       </row>
       <row>
-        <col id="0">Write Only</col>
+        <col id="0">/dev/ttyS2</col>
+      </row>
+      <row>
+        <col id="0">/dev/ttyS3</col>
+      </row>
+      <row>
+        <col id="0">/dev/ttyUSB0</col>
+      </row>
+      <row>
+        <col id="0">/dev/ttyUSB1</col>
+      </row>
+      <row>
+        <col id="0">/dev/ttyUSB2</col>
+      </row>
+      <row>
+        <col id="0">/dev/ttyUSB3</col>
       </row>
     </data>
   </object>
   <object class="GtkListStore" id="model4">
-    <columns>
-      <column type="gchararray"/>
-    </columns>
-    <data>
-      <row>
-        <col id="0">None</col>
-      </row>
-      <row>
-        <col id="0">Odd</col>
-      </row>
-      <row>
-        <col id="0">Even</col>
-      </row>
-      <row>
-        <col id="0">Mark</col>
-      </row>
-      <row>
-        <col id="0">Space</col>
-      </row>
-    </data>
-  </object>
-  <object class="GtkListStore" id="model5">
-    <columns>
-      <column type="gchararray"/>
-    </columns>
-    <data>
-      <row>
-        <col id="0">1</col>
-      </row>
-      <row>
-        <col id="0">2</col>
-      </row>
-    </data>
-  </object>
-  <object class="GtkListStore" id="model6">
-    <columns>
-      <column type="gchararray"/>
-    </columns>
-    <data>
-      <row>
-        <col id="0">5</col>
-      </row>
-      <row>
-        <col id="0">6</col>
-      </row>
-      <row>
-        <col id="0">7</col>
-      </row>
-      <row>
-        <col id="0">8</col>
-      </row>
-    </data>
-  </object>
-  <object class="GtkListStore" id="model7">
     <columns>
       <column type="gchararray"/>
     </columns>
@@ -198,34 +159,73 @@
       </row>
     </data>
   </object>
+  <object class="GtkListStore" id="model5">
+    <columns>
+      <column type="gchararray"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0">5</col>
+      </row>
+      <row>
+        <col id="0">6</col>
+      </row>
+      <row>
+        <col id="0">7</col>
+      </row>
+      <row>
+        <col id="0">8</col>
+      </row>
+    </data>
+  </object>
+  <object class="GtkListStore" id="model6">
+    <columns>
+      <column type="gchararray"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0">1</col>
+      </row>
+      <row>
+        <col id="0">2</col>
+      </row>
+    </data>
+  </object>
+  <object class="GtkListStore" id="model7">
+    <columns>
+      <column type="gchararray"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0">None</col>
+      </row>
+      <row>
+        <col id="0">Odd</col>
+      </row>
+      <row>
+        <col id="0">Even</col>
+      </row>
+      <row>
+        <col id="0">Mark</col>
+      </row>
+      <row>
+        <col id="0">Space</col>
+      </row>
+    </data>
+  </object>
   <object class="GtkListStore" id="model8">
     <columns>
       <column type="gchararray"/>
     </columns>
     <data>
       <row>
-        <col id="0">/dev/ttyS0</col>
+        <col id="0">Read and Write</col>
       </row>
       <row>
-        <col id="0">/dev/ttyS1</col>
+        <col id="0">Read Only</col>
       </row>
       <row>
-        <col id="0">/dev/ttyS2</col>
-      </row>
-      <row>
-        <col id="0">/dev/ttyS3</col>
-      </row>
-      <row>
-        <col id="0">/dev/ttyUSB0</col>
-      </row>
-      <row>
-        <col id="0">/dev/ttyUSB1</col>
-      </row>
-      <row>
-        <col id="0">/dev/ttyUSB2</col>
-      </row>
-      <row>
-        <col id="0">/dev/ttyUSB3</col>
+        <col id="0">Write Only</col>
       </row>
     </data>
   </object>
@@ -667,7 +667,6 @@
                     <property name="has_tooltip">True</property>
                     <property name="tooltip_markup">Enter your new outgoing data here. Data is transmitted on a character-by-character basis.</property>
                     <property name="tooltip-text" translatable="yes">Enter the data that you wish to transmit here. Press Enter or Send when you are ready to send it.</property>
-                    <accelerator key="Escape" modifiers="" signal="grab-focus"/>
                   </object>
                 </child>
                 <child>
@@ -794,8 +793,123 @@
                 <property name="n_rows">8</property>
                 <property name="n_columns">2</property>
                 <child>
-                  <object class="GtkComboBox" id="settings_open_for">
+                  <object class="GtkCheckButton" id="settings_local_echo">
                     <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="tooltip-text" translatable="yes">Normally disabled</property>
+                    <property name="label" translatable="yes">Echo received data</property>
+                    <property name="draw_indicator">True</property>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="right_attach">2</property>
+                    <property name="top_attach">7</property>
+                    <property name="bottom_attach">8</property>
+                    <property name="x_padding">2</property>
+                    <property name="y_padding">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="label26">
+                    <property name="visible">True</property>
+                    <property name="xalign">1</property>
+                    <property name="label" translatable="yes">Local Echo</property>
+                  </object>
+                  <packing>
+                    <property name="top_attach">7</property>
+                    <property name="bottom_attach">8</property>
+                    <property name="x_padding">4</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="label1">
+                    <property name="visible">True</property>
+                    <property name="xalign">1</property>
+                    <property name="label" translatable="yes">Device</property>
+                  </object>
+                  <packing>
+                    <property name="x_padding">4</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="label2">
+                    <property name="visible">True</property>
+                    <property name="xalign">1</property>
+                    <property name="label" translatable="yes">Baud Rate</property>
+                  </object>
+                  <packing>
+                    <property name="top_attach">1</property>
+                    <property name="bottom_attach">2</property>
+                    <property name="x_padding">4</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="label3">
+                    <property name="visible">True</property>
+                    <property name="xalign">1</property>
+                    <property name="label" translatable="yes">Data Bits</property>
+                  </object>
+                  <packing>
+                    <property name="top_attach">2</property>
+                    <property name="bottom_attach">3</property>
+                    <property name="x_padding">4</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="label4">
+                    <property name="visible">True</property>
+                    <property name="xalign">1</property>
+                    <property name="label" translatable="yes">Stop Bits</property>
+                  </object>
+                  <packing>
+                    <property name="top_attach">3</property>
+                    <property name="bottom_attach">4</property>
+                    <property name="x_padding">4</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="label5">
+                    <property name="visible">True</property>
+                    <property name="xalign">1</property>
+                    <property name="label" translatable="yes">Parity</property>
+                  </object>
+                  <packing>
+                    <property name="top_attach">4</property>
+                    <property name="bottom_attach">5</property>
+                    <property name="x_padding">4</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="label7">
+                    <property name="visible">True</property>
+                    <property name="xalign">1</property>
+                    <property name="label" translatable="yes">Handshake</property>
+                  </object>
+                  <packing>
+                    <property name="top_attach">5</property>
+                    <property name="bottom_attach">6</property>
+                    <property name="x_padding">4</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="label8">
+                    <property name="visible">True</property>
+                    <property name="xalign">1</property>
+                    <property name="label" translatable="yes">Access Mode</property>
+                  </object>
+                  <packing>
+                    <property name="top_attach">6</property>
+                    <property name="bottom_attach">7</property>
+                    <property name="x_padding">4</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkComboBoxEntry" id="settings_device">
+                    <property name="visible">True</property>
+                    <child internal-child="entry">
+                      <object class="GtkEntry" id="comboboxentry-entry1">
+                      </object>
+                    </child>
                     <property name="model">model3</property>
                     <child>
                       <object class="GtkCellRendererText" id="renderer3"/>
@@ -807,8 +921,86 @@
                   <packing>
                     <property name="left_attach">1</property>
                     <property name="right_attach">2</property>
-                    <property name="top_attach">6</property>
-                    <property name="bottom_attach">7</property>
+                    <property name="y_options">GTK_EXPAND</property>
+                    <property name="y_padding">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkComboBox" id="settings_baud_rate">
+                    <property name="visible">True</property>
+                    <property name="model">model4</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="renderer4"/>
+                      <attributes>
+                        <attribute name="text">0</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="right_attach">2</property>
+                    <property name="top_attach">1</property>
+                    <property name="bottom_attach">2</property>
+                    <property name="y_options">GTK_EXPAND</property>
+                    <property name="y_padding">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkComboBox" id="settings_data_bits">
+                    <property name="visible">True</property>
+                    <property name="model">model5</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="renderer5"/>
+                      <attributes>
+                        <attribute name="text">0</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="right_attach">2</property>
+                    <property name="top_attach">2</property>
+                    <property name="bottom_attach">3</property>
+                    <property name="y_options">GTK_EXPAND</property>
+                    <property name="y_padding">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkComboBox" id="settings_stop_bits">
+                    <property name="visible">True</property>
+                    <property name="model">model6</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="renderer6"/>
+                      <attributes>
+                        <attribute name="text">0</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="right_attach">2</property>
+                    <property name="top_attach">3</property>
+                    <property name="bottom_attach">4</property>
+                    <property name="y_options">GTK_EXPAND</property>
+                    <property name="y_padding">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkComboBox" id="settings_parity">
+                    <property name="visible">True</property>
+                    <property name="model">model7</property>
+                    <child>
+                      <object class="GtkCellRendererText" id="renderer7"/>
+                      <attributes>
+                        <attribute name="text">0</attribute>
+                      </attributes>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="left_attach">1</property>
+                    <property name="right_attach">2</property>
+                    <property name="top_attach">4</property>
+                    <property name="bottom_attach">5</property>
                     <property name="y_options">GTK_EXPAND</property>
                     <property name="y_padding">2</property>
                   </packing>
@@ -850,92 +1042,8 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkComboBox" id="settings_parity">
+                  <object class="GtkComboBox" id="settings_open_for">
                     <property name="visible">True</property>
-                    <property name="model">model4</property>
-                    <child>
-                      <object class="GtkCellRendererText" id="renderer4"/>
-                      <attributes>
-                        <attribute name="text">0</attribute>
-                      </attributes>
-                    </child>
-                  </object>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="right_attach">2</property>
-                    <property name="top_attach">4</property>
-                    <property name="bottom_attach">5</property>
-                    <property name="y_options">GTK_EXPAND</property>
-                    <property name="y_padding">2</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkComboBox" id="settings_stop_bits">
-                    <property name="visible">True</property>
-                    <property name="model">model5</property>
-                    <child>
-                      <object class="GtkCellRendererText" id="renderer5"/>
-                      <attributes>
-                        <attribute name="text">0</attribute>
-                      </attributes>
-                    </child>
-                  </object>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="right_attach">2</property>
-                    <property name="top_attach">3</property>
-                    <property name="bottom_attach">4</property>
-                    <property name="y_options">GTK_EXPAND</property>
-                    <property name="y_padding">2</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkComboBox" id="settings_data_bits">
-                    <property name="visible">True</property>
-                    <property name="model">model6</property>
-                    <child>
-                      <object class="GtkCellRendererText" id="renderer6"/>
-                      <attributes>
-                        <attribute name="text">0</attribute>
-                      </attributes>
-                    </child>
-                  </object>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="right_attach">2</property>
-                    <property name="top_attach">2</property>
-                    <property name="bottom_attach">3</property>
-                    <property name="y_options">GTK_EXPAND</property>
-                    <property name="y_padding">2</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkComboBox" id="settings_baud_rate">
-                    <property name="visible">True</property>
-                    <property name="model">model7</property>
-                    <child>
-                      <object class="GtkCellRendererText" id="renderer7"/>
-                      <attributes>
-                        <attribute name="text">0</attribute>
-                      </attributes>
-                    </child>
-                  </object>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="right_attach">2</property>
-                    <property name="top_attach">1</property>
-                    <property name="bottom_attach">2</property>
-                    <property name="y_options">GTK_EXPAND</property>
-                    <property name="y_padding">2</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkComboBoxEntry" id="settings_device">
-                    <property name="visible">True</property>
-                    <child internal-child="entry">
-                      <object class="GtkEntry" id="comboboxentry-entry1">
-                      </object>
-                    </child>
                     <property name="model">model8</property>
                     <child>
                       <object class="GtkCellRendererText" id="renderer8"/>
@@ -947,118 +1055,9 @@
                   <packing>
                     <property name="left_attach">1</property>
                     <property name="right_attach">2</property>
-                    <property name="y_options">GTK_EXPAND</property>
-                    <property name="y_padding">2</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="label8">
-                    <property name="visible">True</property>
-                    <property name="xalign">1</property>
-                    <property name="label" translatable="yes">Access Mode</property>
-                  </object>
-                  <packing>
                     <property name="top_attach">6</property>
                     <property name="bottom_attach">7</property>
-                    <property name="x_padding">4</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="label7">
-                    <property name="visible">True</property>
-                    <property name="xalign">1</property>
-                    <property name="label" translatable="yes">Handshake</property>
-                  </object>
-                  <packing>
-                    <property name="top_attach">5</property>
-                    <property name="bottom_attach">6</property>
-                    <property name="x_padding">4</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="label5">
-                    <property name="visible">True</property>
-                    <property name="xalign">1</property>
-                    <property name="label" translatable="yes">Parity</property>
-                  </object>
-                  <packing>
-                    <property name="top_attach">4</property>
-                    <property name="bottom_attach">5</property>
-                    <property name="x_padding">4</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="label4">
-                    <property name="visible">True</property>
-                    <property name="xalign">1</property>
-                    <property name="label" translatable="yes">Stop Bits</property>
-                  </object>
-                  <packing>
-                    <property name="top_attach">3</property>
-                    <property name="bottom_attach">4</property>
-                    <property name="x_padding">4</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="label3">
-                    <property name="visible">True</property>
-                    <property name="xalign">1</property>
-                    <property name="label" translatable="yes">Data Bits</property>
-                  </object>
-                  <packing>
-                    <property name="top_attach">2</property>
-                    <property name="bottom_attach">3</property>
-                    <property name="x_padding">4</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="label2">
-                    <property name="visible">True</property>
-                    <property name="xalign">1</property>
-                    <property name="label" translatable="yes">Baud Rate</property>
-                  </object>
-                  <packing>
-                    <property name="top_attach">1</property>
-                    <property name="bottom_attach">2</property>
-                    <property name="x_padding">4</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="label1">
-                    <property name="visible">True</property>
-                    <property name="xalign">1</property>
-                    <property name="label" translatable="yes">Device</property>
-                  </object>
-                  <packing>
-                    <property name="x_padding">4</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkLabel" id="label26">
-                    <property name="visible">True</property>
-                    <property name="xalign">1</property>
-                    <property name="label" translatable="yes">Local Echo</property>
-                  </object>
-                  <packing>
-                    <property name="top_attach">7</property>
-                    <property name="bottom_attach">8</property>
-                    <property name="x_padding">4</property>
-                  </packing>
-                </child>
-                <child>
-                  <object class="GtkCheckButton" id="settings_local_echo">
-                    <property name="visible">True</property>
-                    <property name="can_focus">True</property>
-                    <property name="tooltip-text" translatable="yes">Normally disabled</property>
-                    <property name="label" translatable="yes">Echo received data</property>
-                    <property name="draw_indicator">True</property>
-                  </object>
-                  <packing>
-                    <property name="left_attach">1</property>
-                    <property name="right_attach">2</property>
-                    <property name="top_attach">7</property>
-                    <property name="bottom_attach">8</property>
-                    <property name="x_padding">2</property>
+                    <property name="y_options">GTK_EXPAND</property>
                     <property name="y_padding">2</property>
                   </packing>
                 </child>
@@ -1108,9 +1107,9 @@
       </object>
     </child>
     <action-widgets>
+      <action-widget response="0">settings_local_echo</action-widget>
       <action-widget response="0">settings_hardware_handshake</action-widget>
       <action-widget response="0">settings_software_handshake</action-widget>
-      <action-widget response="0">settings_local_echo</action-widget>
       <action-widget response="0">settings_cancel_button</action-widget>
       <action-widget response="0">settings_ok_button</action-widget>
     </action-widgets>
@@ -1266,19 +1265,13 @@
         <property name="visible">True</property>
         <property name="n_rows">4</property>
         <child>
-          <object class="GtkLabel" id="disconnect_label">
+          <object class="GtkLabel" id="stop_recording_label">
             <property name="visible">True</property>
-            <property name="label" translatable="yes">Disconnect</property>
-          </object>
-        </child>
-        <child>
-          <object class="GtkLabel" id="connect_label">
-            <property name="visible">True</property>
-            <property name="label" translatable="yes">Connect</property>
+            <property name="label" translatable="yes">Stop Recording</property>
           </object>
           <packing>
-            <property name="top_attach">1</property>
-            <property name="bottom_attach">2</property>
+            <property name="top_attach">3</property>
+            <property name="bottom_attach">4</property>
           </packing>
         </child>
         <child>
@@ -1292,14 +1285,20 @@
           </packing>
         </child>
         <child>
-          <object class="GtkLabel" id="stop_recording_label">
+          <object class="GtkLabel" id="connect_label">
             <property name="visible">True</property>
-            <property name="label" translatable="yes">Stop Recording</property>
+            <property name="label" translatable="yes">Connect</property>
           </object>
           <packing>
-            <property name="top_attach">3</property>
-            <property name="bottom_attach">4</property>
+            <property name="top_attach">1</property>
+            <property name="bottom_attach">2</property>
           </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="disconnect_label">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Disconnect</property>
+          </object>
         </child>
       </object>
     </child>
@@ -1377,8 +1376,8 @@
     <property name="window_position">GTK_WIN_POS_CENTER_ON_PARENT</property>
     <property name="type_hint">GDK_WINDOW_TYPE_HINT_DIALOG</property>
     <property name="has_separator">False</property>
-    <property name="action">GTK_FILE_CHOOSER_ACTION_SELECT_FOLDER</property>
     <property name="local_only">False</property>
+    <property name="action">GTK_FILE_CHOOSER_ACTION_SELECT_FOLDER</property>
     <child internal-child="vbox">
       <object class="GtkVBox" id="dialog-vbox10">
         <property name="visible">True</property>
