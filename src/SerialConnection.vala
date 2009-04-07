@@ -16,7 +16,7 @@ public class moserial.SerialConnection : GLib.Object
         private GLib.IOChannel IOChannelFd;
         signal void newData(uchar[100] data, int size);
         private  int flags=0;
-	public enum LineEnd{ CRLF, CR, LF, TAB, NONE }
+	public enum LineEnd{ CRLF, CR, LF, TAB, ESC, NONE }
 	uint? sourceId;
 	bool localEcho;
         public bool doConnect (Settings settings) {
@@ -90,6 +90,10 @@ public class moserial.SerialConnection : GLib.Object
                         }
                         case LineEnd.TAB: {
                                 s = "\t";
+                                break;
+                        }
+                        case LineEnd.ESC: {
+                                s = "\x1b";
                                 break;
                         }
                         case LineEnd.NONE:

@@ -1,3 +1,10 @@
+Version 1.0.9
+-------------
+
+	* Added ESC as a termination character.
+	* Pressing the escape key now scrolls all text boxes to
+	  their end, and moves the focus to the entry box.
+
 Version 1.0.8
 -------------
 
