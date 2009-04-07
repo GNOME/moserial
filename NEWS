@@ -1,6 +1,7 @@
-Version 1.0.9
--------------
+Version 2.26.0
+--------------
 
+	* Call this 2.26.0, to align with gnome versioning.
 	* Added ESC as a termination character.
 	* Pressing the escape key now scrolls all text boxes to
 	  their end, and moves the focus to the entry box.
