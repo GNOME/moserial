@@ -4,25 +4,10 @@
          xmlns:gnome="http://api.gnome.org/doap-extensions#"
          xmlns="http://usefulinc.com/ns/doap#">
 
-  <!--
-  This is a DOAP template file.  It contains Pulse's best guesses at
-  some basic content.  You should verify the information in this file
-  and modify anything that isn't right.  Add the corrected file to your
-  source code repository to help tools better understand your project.
-  -->
-
   <name xml:lang="en">moserial</name>
-  <!-- Description, e.g.
-       "Falling blocks game"
-       "Internationalized text layout and rendering library"
   <shortdesc xml:lang="en">Serial terminal for hardware hackers</shortdesc>
-  -->
-  <!--
-  <homepage rdf:resource="http://www.gnome.org/" />
-  -->
-  <!--
+  <homepage rdf:resource="http://live.gnome.org/moserial" />
   <mailing-list rdf:resource="http://mail.gnome.org/mailman/listinfo/desktop-devel-list" />
-  -->
 
   <maintainer>
     <foaf:Person>
