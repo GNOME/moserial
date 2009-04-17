@@ -71,7 +71,12 @@ EXTRA_DIST = \
         omf.make                \
         xmldocs.make            \
         gnome-doc-utils.make	\
+	MAINTAINERS		\
+	ChangeLog.pre-git	\
 	$(NULL)
+
+CLEANFILES = \
+	ChangeLog
 
 DISTCLEANFILES = \
 	intltool-extract \
@@ -82,3 +87,14 @@ DISTCLEANFILES = \
 	$(NULL)
 
 DISTCHECK_CONFIGURE_FLAGS = --disable-scrollkeeper
+
+
+# Build ChangeLog from GIT history
+ChangeLog:
+	@if test -d $(top_srcdir)/.git; then \
+		GIT_DIR="$(top_srcdir)/.git" git log --stat > $@; \
+	fi
+
+dist: ChangeLog
+
+.PHONY: ChangeLog
