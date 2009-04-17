@@ -8,6 +8,8 @@
   <shortdesc xml:lang="en">Serial terminal for hardware hackers</shortdesc>
   <homepage rdf:resource="http://live.gnome.org/moserial" />
   <mailing-list rdf:resource="http://mail.gnome.org/mailman/listinfo/desktop-devel-list" />
+  <download-page rdf:resource="ftp://ftp.gnome.org/pub/GNOME/sources/moserial/"/>
+  <bug-database rdf:resource="http://bugzilla.gnome.org/browse.cgi?product=moserial"/>
 
   <maintainer>
     <foaf:Person>
