@@ -1,3 +1,16 @@
+Version 2.26.1
+--------------
+
+	* Actually make i18n work (bug 583046)
+	
+	Updated translations:
+	- German (de)
+	- Spanish (es)
+	- Brazilian Portuguese (pt_BR)
+
+	Updated docs:
+	- German (de)
+
 Version 2.26.0
 --------------
 
