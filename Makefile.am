@@ -9,7 +9,7 @@ SUBDIRS = \
 	$(NULL)
 
 gladedir = $(datadir)/moserial/glade
-INCLUDES = -DMOSERIAL_GLADEDIR=\""$(gladedir)"\"
+INCLUDES = -DMOSERIAL_GLADEDIR=\""$(gladedir)"\" -DPACKAGE_LOCALEDIR=\""$(datadir)/locale"\"
 
 AM_CPPFLAGS = \
 	$(MOSERIAL_CFLAGS) \

@@ -23,8 +23,14 @@ class moserial.Main : GLib.Object
                 mainWindow.showWindow();
         }
         public static int main (string[] args) {
+                OptionContext context;
                 Gtk.init (ref args);
-                OptionContext context = new OptionContext(_("- moserial serial terminal"));
+
+                Intl.bindtextdomain(Config.GETTEXT_PACKAGE, Config.PACKAGE_LOCALEDIR);
+                Intl.bind_textdomain_codeset(Config.GETTEXT_PACKAGE, "UTF-8");
+                Intl.textdomain(Config.GETTEXT_PACKAGE);
+
+                context = new OptionContext(_("- moserial serial terminal"));
                 context.add_main_entries (options, null);
                 context.add_group (Gtk.get_option_group(true));
                 try {
