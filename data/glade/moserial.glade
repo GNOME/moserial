@@ -44,7 +44,7 @@
                     <child>
                       <widget class="GtkSeparatorMenuItem" id="menuitem5">
                         <property name="visible">True</property>
-                        <property name="label" translatable="yes">menuitem5</property>
+                        <property name="label">menuitem5</property>
                         <property name="use_underline">True</property>
                       </widget>
                     </child>
@@ -82,7 +82,7 @@
                     <child>
                       <widget class="GtkImageMenuItem" id="menubar_quit">
                         <property name="visible">True</property>
-                        <property name="label" translatable="yes">gtk-quit</property>
+                        <property name="label">gtk-quit</property>
                         <property name="use_underline">True</property>
                         <property name="use_stock">True</property>
                       </widget>
@@ -102,7 +102,7 @@
                     <child>
                       <widget class="GtkImageMenuItem" id="menubar_cut">
                         <property name="visible">True</property>
-                        <property name="label" translatable="yes">gtk-cut</property>
+                        <property name="label">gtk-cut</property>
                         <property name="use_underline">True</property>
                         <property name="use_stock">True</property>
                       </widget>
@@ -110,7 +110,7 @@
                     <child>
                       <widget class="GtkImageMenuItem" id="menubar_copy">
                         <property name="visible">True</property>
-                        <property name="label" translatable="yes">gtk-copy</property>
+                        <property name="label">gtk-copy</property>
                         <property name="use_underline">True</property>
                         <property name="use_stock">True</property>
                       </widget>
@@ -118,7 +118,7 @@
                     <child>
                       <widget class="GtkImageMenuItem" id="menubar_paste">
                         <property name="visible">True</property>
-                        <property name="label" translatable="yes">gtk-paste</property>
+                        <property name="label">gtk-paste</property>
                         <property name="use_underline">True</property>
                         <property name="use_stock">True</property>
                       </widget>
@@ -126,14 +126,14 @@
                     <child>
                       <widget class="GtkSeparatorMenuItem" id="menuitem3">
                         <property name="visible">True</property>
-                        <property name="label" translatable="yes">menuitem3</property>
+                        <property name="label">menuitem3</property>
                         <property name="use_underline">True</property>
                       </widget>
                     </child>
                     <child>
                       <widget class="GtkImageMenuItem" id="menubar_clear">
                         <property name="visible">True</property>
-                        <property name="label" translatable="yes">gtk-clear</property>
+                        <property name="label">gtk-clear</property>
                         <property name="use_underline">True</property>
                         <property name="use_stock">True</property>
                       </widget>
@@ -153,7 +153,7 @@
                     <child>
                       <widget class="GtkImageMenuItem" id="menubar_about">
                         <property name="visible">True</property>
-                        <property name="label" translatable="yes">gtk-about</property>
+                        <property name="label">gtk-about</property>
                         <property name="use_underline">True</property>
                         <property name="use_stock">True</property>
                       </widget>
@@ -884,7 +884,7 @@ Space</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
-                <property name="label" translatable="yes">gtk-cancel</property>
+                <property name="label">gtk-cancel</property>
                 <property name="use_stock">True</property>
                 <property name="response_id">0</property>
               </widget>
@@ -894,7 +894,7 @@ Space</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
-                <property name="label" translatable="yes">gtk-ok</property>
+                <property name="label">gtk-ok</property>
                 <property name="use_stock">True</property>
                 <property name="response_id">0</property>
               </widget>
@@ -963,7 +963,7 @@ Space</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
-                <property name="label" translatable="yes">gtk-cancel</property>
+                <property name="label">gtk-cancel</property>
                 <property name="use_stock">True</property>
                 <property name="response_id">0</property>
               </widget>
@@ -1033,7 +1033,7 @@ Space</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
-                <property name="label" translatable="yes">gtk-cancel</property>
+                <property name="label">gtk-cancel</property>
                 <property name="use_stock">True</property>
                 <property name="response_id">0</property>
               </widget>
@@ -1270,7 +1270,7 @@ Zmodem</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
-                <property name="label" translatable="yes">gtk-ok</property>
+                <property name="label">gtk-ok</property>
                 <property name="use_stock">True</property>
                 <property name="response_id">-3</property>
               </widget>
@@ -1628,7 +1628,7 @@ None (straight binary)</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
-                <property name="label" translatable="yes">gtk-cancel</property>
+                <property name="label">gtk-cancel</property>
                 <property name="use_stock">True</property>
                 <property name="response_id">0</property>
               </widget>
@@ -1638,7 +1638,7 @@ None (straight binary)</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
-                <property name="label" translatable="yes">gtk-ok</property>
+                <property name="label">gtk-ok</property>
                 <property name="use_stock">True</property>
                 <property name="response_id">0</property>
               </widget>

@@ -286,7 +286,7 @@
         </child>
         <child>
           <object class="GtkAction" id="menubar_quit">
-            <property name="stock_id" translatable="yes">gtk-quit</property>
+            <property name="stock_id">gtk-quit</property>
             <property name="name">menubar_quit</property>
           </object>
         </child>
@@ -298,25 +298,25 @@
         </child>
         <child>
           <object class="GtkAction" id="menubar_cut">
-            <property name="stock_id" translatable="yes">gtk-cut</property>
+            <property name="stock_id">gtk-cut</property>
             <property name="name">menubar_cut</property>
           </object>
         </child>
         <child>
           <object class="GtkAction" id="menubar_copy">
-            <property name="stock_id" translatable="yes">gtk-copy</property>
+            <property name="stock_id">gtk-copy</property>
             <property name="name">menubar_copy</property>
           </object>
         </child>
         <child>
           <object class="GtkAction" id="menubar_paste">
-            <property name="stock_id" translatable="yes">gtk-paste</property>
+            <property name="stock_id">gtk-paste</property>
             <property name="name">menubar_paste</property>
           </object>
         </child>
         <child>
           <object class="GtkAction" id="menubar_clear">
-            <property name="stock_id" translatable="yes">gtk-clear</property>
+            <property name="stock_id">gtk-clear</property>
             <property name="name">menubar_clear</property>
           </object>
         </child>
@@ -328,7 +328,7 @@
         </child>
         <child>
           <object class="GtkAction" id="menubar_about">
-            <property name="stock_id" translatable="yes">gtk-about</property>
+            <property name="stock_id">gtk-about</property>
             <property name="name">menubar_about</property>
           </object>
         </child>
@@ -1085,7 +1085,7 @@
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
-                <property name="label" translatable="yes">gtk-cancel</property>
+                <property name="label">gtk-cancel</property>
                 <property name="use_stock">True</property>
               </object>
             </child>
@@ -1094,7 +1094,7 @@
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
-                <property name="label" translatable="yes">gtk-ok</property>
+                <property name="label">gtk-ok</property>
                 <property name="use_stock">True</property>
               </object>
               <packing>
@@ -1169,7 +1169,7 @@
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
-                <property name="label" translatable="yes">gtk-cancel</property>
+                <property name="label">gtk-cancel</property>
                 <property name="use_stock">True</property>
               </object>
             </child>
@@ -1241,7 +1241,7 @@
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
-                <property name="label" translatable="yes">gtk-cancel</property>
+                <property name="label">gtk-cancel</property>
                 <property name="use_stock">True</property>
               </object>
               <packing>
@@ -1488,7 +1488,7 @@
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
-                <property name="label" translatable="yes">gtk-ok</property>
+                <property name="label">gtk-ok</property>
                 <property name="use_stock">True</property>
               </object>
             </child>
@@ -1844,7 +1844,7 @@
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
-                <property name="label" translatable="yes">gtk-cancel</property>
+                <property name="label">gtk-cancel</property>
                 <property name="use_stock">True</property>
               </object>
             </child>
@@ -1853,7 +1853,7 @@
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
-                <property name="label" translatable="yes">gtk-ok</property>
+                <property name="label">gtk-ok</property>
                 <property name="use_stock">True</property>
               </object>
               <packing>
