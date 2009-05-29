@@ -1,3 +1,13 @@
+Version 2.27.1
+--------------
+
+	* Fixed a typo in the 921600 baud rate
+	* Added 1M and 2M baud rates, suitable for the Arduino board
+
+	Updated translations:
+	- French (fr)
+
+
 Version 2.26.1
 --------------
 
