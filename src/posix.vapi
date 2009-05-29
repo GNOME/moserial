@@ -683,6 +683,8 @@ namespace POSIX
 		public const uint B460800;
 		public const uint B576000;
 		public const uint B921600;
+		public const uint B1000000;
+		public const uint B2000000;
 	}
 	
 	[CCode (lower_case_cprefix = "", cheader_filename = "termios.h")]

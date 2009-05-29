@@ -185,6 +185,12 @@ public class moserial.SerialConnection : GLib.Object
                 case 921600:
                         baudRate=POSIX.BaudRate.B921600;
                         break;
+                case 1000000:
+                        baudRate=POSIX.BaudRate.B1000000;
+                        break;
+                case 2000000:
+                        baudRate=POSIX.BaudRate.B2000000;
+                        break;
                 }
 
                 newtio.set_output_speed(baudRate);

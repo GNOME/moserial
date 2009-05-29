@@ -197,7 +197,13 @@
         <col id="0">576000</col>
       </row>
       <row>
-        <col id="0">927600</col>
+        <col id="0">921600</col>
+      </row>
+      <row>
+        <col id="0">1000000</col>
+      </row>
+      <row>
+        <col id="0">2000000</col>
       </row>
     </data>
   </object>
