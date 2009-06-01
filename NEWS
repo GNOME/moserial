@@ -3,6 +3,7 @@ Version 2.27.2
 
 	* Fixed a typo in the 921600 baud rate
 	* Added 1M and 2M baud rates, suitable for the Arduino board
+	* The correct gtk requirement is 2.14.0
 
 	Updated translations:
 	- French (fr)
