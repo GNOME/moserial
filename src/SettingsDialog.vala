@@ -21,6 +21,7 @@ public class moserial.SettingsDialog : GLib.Object
         private CheckButton softwareHandshake;
         private ComboBox accessModeCombo;
         private CheckButton localEcho;
+	private ListStore ls;
         public signal void updateSettings(Settings settings);
         public SettingsDialog(Builder builder) {
                 this.builder=builder;
@@ -31,7 +32,6 @@ public class moserial.SettingsDialog : GLib.Object
                 cancelButton = (Button)builder.get_object("settings_cancel_button");
                 okButton = (Button)builder.get_object("settings_ok_button");
 
-                deviceCombo = (ComboBoxEntry)builder.get_object("settings_device");
                 baudRateCombo = (ComboBox)builder.get_object("settings_baud_rate");
                 dataBitsCombo = (ComboBox)builder.get_object("settings_data_bits");
                 stopBitsCombo = (ComboBox)builder.get_object("settings_stop_bits");
@@ -43,9 +43,11 @@ public class moserial.SettingsDialog : GLib.Object
                 dialog.delete_event += hide;
                 cancelButton.clicked += this.cancel;
                 okButton.clicked += this.ok;
-                
-		populateDevices();
 
+		ls = new ListStore(2, typeof(string), typeof(string));
+                deviceCombo = (ComboBoxEntry)builder.get_object("settings_device");	
+                deviceCombo.set_model(ls);
+                deviceCombo.set_text_column(1);
         }
 
         private void populateDevices(){
@@ -54,10 +56,7 @@ public class moserial.SettingsDialog : GLib.Object
 		deviceTypes.append ("/dev/ttyUSB");
 		deviceTypes.append ("/dev/rfcomm");
 
-                var ls = new ListStore(2, typeof(string), typeof(string));
-                
-                deviceCombo.set_model(ls);
-                deviceCombo.set_text_column(1);
+		ls.clear();
                 TreeIter iter;
 		
 		foreach (string devType in deviceTypes) {
@@ -72,6 +71,7 @@ public class moserial.SettingsDialog : GLib.Object
         }
 
         public void show(Settings settings) {
+		populateDevices();
                 this.currentSettings = settings;
                 loadSettings();
                 dialog.show_all();
