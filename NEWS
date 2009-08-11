@@ -1,3 +1,9 @@
+version 2.27.4
+--------------
+
+	* Fixed bug 591473. Re-populate port list every time the settings
+          dialog is opened.
+
 Version 2.27.3
 --------------
 
