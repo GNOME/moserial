@@ -433,7 +433,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
         public void sendComplete(GLib.Object o) {
 	        sz.updateStatus-=sendProgressDialog.updateStatus;
         	sendProgressDialog.transferCanceled-=sz.transferCanceled;
-                sendProgressDialog.hide(sendProgressDialog);
+                sendProgressDialog.hide();
         }
 
         private void doReceiveChooser(ToolButton button) {
@@ -476,7 +476,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
         public void receiveComplete(GLib.Object o) {
                 rz.updateStatus-=receiveProgressDialog.updateStatus;
                 receiveProgressDialog.transferCanceled-=rz.transferCanceled;
-                receiveProgressDialog.hide(receiveProgressDialog);
+                receiveProgressDialog.hide();
         }
 
         public void record(ToggleToolButton button) {
@@ -620,7 +620,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 }
         }
 
-	private void updateIncoming(SerialConnection sc, uchar[1000] data, int size) {
+	private void updateIncoming(SerialConnection sc, uchar[] data, int size) {
                 if (rz.running) {
                         for (int x=0; x<size; x++) {
 	                        rz.writeChar(data[x]);

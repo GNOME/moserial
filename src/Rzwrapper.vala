@@ -122,7 +122,7 @@ public class moserial.Rzwrapper: GLib.Object
 	}
 	private bool readError(GLib.IOChannel source, GLib.IOCondition condition) {
                 if(running) {
-		        char[1000] m_buf = new char[1000];
+		        char[] m_buf = new char[1000];
 			string message="";
 			string messages="";
 		        size_t bytesRead=0;
@@ -187,7 +187,7 @@ public class moserial.Rzwrapper: GLib.Object
         }
         private bool readBytes(GLib.IOChannel source, GLib.IOCondition condition) {
                 if(running) {
-		        char[1000] m_buf = new char[1000];
+		        char[] m_buf = new char[1000];
 
 		        size_t bytesRead=0;
 		        if(!(condition == IOCondition.IN))

@@ -25,17 +25,17 @@ public class moserial.ReceiveChooserDialog : GLib.Object
                 dialog.run();
         }
 
-        public bool hide(Widget w) {
+        public bool hide() {
                 dialog.hide();
                 return true;
         }
 
         private void response(Widget w, int r){
         	if(r == Gtk.ResponseType.CANCEL) {
-        		hide(w);
+        		hide();
 	        }
 	        else if(r == Gtk.ResponseType.ACCEPT) {
-		        hide(w);
+		        hide();
 		        path = dialog.get_current_folder();
 		        startTransfer();
 	        }

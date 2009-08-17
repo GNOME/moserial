@@ -31,7 +31,7 @@ public class moserial.RecordDialog : GLib.Object
                 dialog.run();
         }
 
-        public bool hide(Widget w) {
+        public bool hide() {
                 dialog.hide();
                 return true;
         }
@@ -39,7 +39,7 @@ public class moserial.RecordDialog : GLib.Object
         private void response(Widget w, int r){
         	if(r == Gtk.ResponseType.CANCEL) {
         		fileName=null;
-        		hide(w);
+        		hide();
         		stopRecording();
 	        }
 	        else if(r == Gtk.ResponseType.ACCEPT) {
@@ -57,7 +57,7 @@ public class moserial.RecordDialog : GLib.Object
 		        		direction=SerialStreamRecorder.Direction.BOTH;
 		        		break;
 		        }
-		        hide(w);
+		        hide();
 		        startRecording(this.fileName, direction);
 	        }
 	        else {

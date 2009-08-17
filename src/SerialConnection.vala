@@ -128,7 +128,7 @@ public class moserial.SerialConnection : GLib.Object
         }
 
         private bool readBytes(GLib.IOChannel source, GLib.IOCondition condition) {
-                uchar[1000] m_buf = new uchar[1000];
+                uchar[] m_buf = new uchar[1000];
                 int bytesRead=(int)POSIX.File.read(m_fd, m_buf, 1000);
 		rx += (ulong) bytesRead;
                 if (bytesRead<0)

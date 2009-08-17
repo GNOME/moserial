@@ -36,7 +36,7 @@ public class moserial.PreferencesDialog : GLib.Object
                 dialog.delete_event += hide;
         }
         public void ok(Button button) {
-        	hide(button);
+        	hide();
         	bool pSystemFont;
         	string pFont;
         	string pFontColor;
@@ -106,9 +106,9 @@ public class moserial.PreferencesDialog : GLib.Object
         }
         public void cancel(Widget w) {
                 //currentPreferences=null;
-                hide(w);
+                hide();
         }
-        public bool hide(Widget w) {
+        public bool hide() {
                 dialog.hide_all();
                 return true;
         }

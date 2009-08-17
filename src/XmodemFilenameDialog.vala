@@ -18,14 +18,14 @@ public class moserial.XmodemFilenameDialog : GLib.Object
                 dialog.run();
         }
 
-        public bool hide(Widget w) {
+        public bool hide() {
                 dialog.hide();
                 return true;
         }
         
         private void response(Widget w, int r){
         	filename = xmodemFilename.get_text();
-		hide(w);
+		hide();
 		if(filename=="")
 			filename="xmodem.file";
         }

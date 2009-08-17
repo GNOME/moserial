@@ -1,4 +1,9 @@
-version 2.27.4
+Version 2.27.5
+--------------
+
+	* Fixed bug 588022 - Fixes to compile with Vala 0.7.x
+
+Version 2.27.4
 --------------
 
 	* Fixed bug 591473. Re-populate port list every time the settings

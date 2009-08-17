@@ -114,7 +114,7 @@ public class moserial.Szwrapper: GLib.Object
         		Gtk.main_iteration_do(true);
         	if(running) {
         	
-                	char[1000] m_buf = new char[1000];
+                	char[] m_buf = new char[1000];
 			string messages="";
 			string message="";
         	        size_t bytesRead=0;
@@ -185,7 +185,7 @@ public class moserial.Szwrapper: GLib.Object
 			Gtk.main_iteration_do(true);
 	         if(running) {
 
-		        char[1024] m_buf = new char[1024];
+		        char[] m_buf = new char[1024];
 
 		        size_t bytesRead=0;
 		        if(!(condition == IOCondition.IN))

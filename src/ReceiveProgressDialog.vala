@@ -24,7 +24,7 @@ public class moserial.ReceiveProgressDialog : GLib.Object
                 status.set_text("");
         }
 
-        public bool hide(GLib.Object o) {
+        public bool hide() {
                 dialog.hide_all();
                 return true;
         }
