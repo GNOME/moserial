@@ -47,7 +47,6 @@ moserial_VALASOURCES = \
 
 moserial_SOURCES = \
 	$(moserial_VALASOURCES:.vala=.c) \
-	$(moserial_VALASOURCES:.vala=.h) \
 	$(NULL)
 
 src/moserial.vala.stamp: $(moserial_VALASOURCES)
