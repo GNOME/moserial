@@ -35,7 +35,11 @@ po/moserial.pot
 po/.intltool-merge-cache
 po/POTFILES
 po/stamp-it
+po/Makefile
+po/Makefile.in
+po/Makefile.in.in
 doc/*/.xml2po.mo
 doc/*/moserial.xml
 doc/*.omf
+gnome-doc-utils.make
 
