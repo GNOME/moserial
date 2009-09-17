@@ -3,7 +3,7 @@ public class moserial.Szwrapper: GLib.Object
 {
 	public enum Protocol {XMODEM, YMODEM, ZMODEM, RAW, NULL}
 	public Protocol protocol {get; construct;}
-	public SerialConnection? sc;
+	public SerialConnection? sc {get; construct;}
         private IOChannel IOChannelInput;
         private IOChannel IOChannelOutput;
         private IOChannel IOChannelError;
