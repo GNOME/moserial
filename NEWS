@@ -1,3 +1,12 @@
+Version 2.28.1
+--------------
+	* Added copyright notices
+	* Added a man page
+	* Updated translations:
+	- Czech (cs)
+	- German (de)
+	- Slovenian (sl)
+
 Version 2.28.0
 --------------
 

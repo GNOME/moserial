@@ -1,3 +1,21 @@
+/*
+ *  Copyright (C) 2009-2010 Michael J. Chudobiak.
+ *
+ *  This program is free software; you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation; either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program; if not, write to the Free Software
+ *  Foundation, Inc., 59 Temple Street #330, Boston, MA 02111-1307, USA.
+ */
+
 using Gtk;
 using Gdk;
 
@@ -716,7 +734,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 AboutDialog.set_url_hook (url_hook);
                 show_about_dialog (gtkWindow,
                                    "version", Config.VERSION,
-                                   "copyright", "Copyright © 2009\nMichael J. Chudobiak\n<mjc@svn.gnome.org>",
+                                   "copyright", "Copyright © 2009-2010\nMichael J. Chudobiak\n<mjc@svn.gnome.org>",
                                    "comments", _("A serial terminal for the GNOME desktop, optimized for logging and file capture."),
                                    "authors", authors,
                                    "translator-credits", translators,
