@@ -68,6 +68,7 @@ EXTRA_DIST = \
 	$(moserial_VALASOURCES) \
 	src/Config.vapi		\
 	src/moserial.vala.stamp \
+	src/posix.vapi		\
         omf.make                \
         xmldocs.make            \
         gnome-doc-utils.make	\
