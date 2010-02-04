@@ -1,3 +1,8 @@
+Version 2.28.2
+--------------
+	* Config.vapi was missing from the tar files
+	* Updated GPLv3 boilerplate text
+
 Version 2.28.1
 --------------
 	* Added copyright notices

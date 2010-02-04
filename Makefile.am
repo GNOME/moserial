@@ -66,6 +66,7 @@ EXTRA_DIST = \
 	intltool-update.in \
 	intltool-merge.in \
 	$(moserial_VALASOURCES) \
+	src/Config.vapi		\
 	src/moserial.vala.stamp \
         omf.make                \
         xmldocs.make            \
