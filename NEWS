@@ -2,7 +2,6 @@ Version 2.28.2
 --------------
 	* Config.vapi was missing from the tar files
 	* Updated GPLv3 boilerplate text
-	* Shortened some tooltips, added missing icons
 
 Version 2.28.1
 --------------
