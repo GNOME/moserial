@@ -1,15 +1,15 @@
 # Czech translation for moserial.
 # Copyright (C) 2009 moserial's COPYRIGHT HOLDER
 # This file is distributed under the same license as the moserial package.
-# Marek Černocký <marek@manet.cz>, 2009.
+# Marek Černocký <marek@manet.cz>, 2009, 2010.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: moserial master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=moserial&component=general\n"
-"POT-Creation-Date: 2009-10-16 15:59+0000\n"
-"PO-Revision-Date: 2009-10-14 10:50+0100\n"
+"POT-Creation-Date: 2010-02-05 14:21+0000\n"
+"PO-Revision-Date: 2010-02-06 12:18+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -152,78 +152,62 @@ msgstr ""
 "Bez zakončení"
 
 #: ../data/glade/moserial.glade.h:46
-msgid ""
-"Click this to transmit the data entered in the Outgoing text box. Clicking "
-"\"enter\" in that box will do the same thing."
-msgstr ""
-"Kliknutím zde odešlete data zadaná do pole „Odchozí“. Zmáčknutím „Enter“ v "
-"poli „Odchozí“ dosáhnete toho stejného."
-
-#: ../data/glade/moserial.glade.h:47
 msgid "Connect"
 msgstr "Připojit"
 
-#: ../data/glade/moserial.glade.h:48
+#: ../data/glade/moserial.glade.h:47
 msgid "Data Bits"
 msgstr "Datové bity"
 
-#: ../data/glade/moserial.glade.h:49
+#: ../data/glade/moserial.glade.h:48
 msgid "Device"
 msgstr "Zařízení"
 
-#: ../data/glade/moserial.glade.h:50
+#: ../data/glade/moserial.glade.h:49
 msgid "Disconnect"
 msgstr "Odpojit"
 
-#: ../data/glade/moserial.glade.h:51
+#: ../data/glade/moserial.glade.h:50
 msgid "Display Font"
 msgstr "Písmo zobrazení"
 
-#: ../data/glade/moserial.glade.h:52
+#: ../data/glade/moserial.glade.h:51
 msgid "Echo received data"
 msgstr "Opakovat přijatá data"
 
-#: ../data/glade/moserial.glade.h:53
+#: ../data/glade/moserial.glade.h:52
 msgid "Enable timeout after"
 msgstr "Zapnout vypršení času po"
 
-#: ../data/glade/moserial.glade.h:54
-msgid ""
-"Enter the data that you wish to transmit here. Press Enter or Send when you "
-"are ready to send it."
-msgstr ""
-"Zde zadejte data, která si přejete odeslat. Až je budete mít připravená, "
-"zmáčkněte Enter nebo tlačítko Odeslat."
-
-#: ../data/glade/moserial.glade.h:55
+#: ../data/glade/moserial.glade.h:53
 msgid "Error Correction Protocol"
 msgstr "Protokol na opravu chyb"
 
-#: ../data/glade/moserial.glade.h:56
+#: ../data/glade/moserial.glade.h:54
 msgid "Filename required for XMODEM"
 msgstr "Název souboru vyžadovaný pro XMODEM"
 
-#: ../data/glade/moserial.glade.h:57
+#: ../data/glade/moserial.glade.h:55
 msgid "Font Colour"
 msgstr "Barva písma"
 
-#: ../data/glade/moserial.glade.h:58
+#: ../data/glade/moserial.glade.h:56
 msgid "Handshake"
 msgstr "Úvodní dohoda"
 
-#: ../data/glade/moserial.glade.h:59
+#: ../data/glade/moserial.glade.h:57
 msgid "Hardware"
 msgstr "Hardwarová"
 
-#: ../data/glade/moserial.glade.h:60
+#: ../data/glade/moserial.glade.h:58
 msgid "Help"
 msgstr "Nápověda"
 
-#: ../data/glade/moserial.glade.h:61
+#: ../data/glade/moserial.glade.h:59
 msgid "Highlight Color"
 msgstr "Barva zvýraznění"
 
-#: ../data/glade/moserial.glade.h:62
+#: ../data/glade/moserial.glade.h:60
 msgid ""
 "If this option is enabled, a recorded file will be opened immediately after "
 "it is saved, using the default application for the file type. The default "
@@ -233,7 +217,7 @@ msgstr ""
 "pomocí výchozí aplikace pro daný typ souboru. Výchozí aplikace se určuje v "
 "nastavení pracovního prostředí."
 
-#: ../data/glade/moserial.glade.h:63
+#: ../data/glade/moserial.glade.h:61
 msgid ""
 "If this option is enabled, recording will be automatically stopped after an "
 "adjustable period of inactivity after receiving some data. That is, moserial "
@@ -245,7 +229,7 @@ msgstr ""
 "moserial bude nejdříve bez omezení čekat na přijetí prvních dat a teprve "
 "potom aktivuje časovač."
 
-#: ../data/glade/moserial.glade.h:64
+#: ../data/glade/moserial.glade.h:62
 msgid ""
 "Incoming\n"
 "Outgoing\n"
@@ -255,11 +239,11 @@ msgstr ""
 "Odchozí\n"
 "Příchozí a odchozí"
 
-#: ../data/glade/moserial.glade.h:67
+#: ../data/glade/moserial.glade.h:65
 msgid "Local Echo"
 msgstr "Místní odezva"
 
-#: ../data/glade/moserial.glade.h:68
+#: ../data/glade/moserial.glade.h:66
 msgid ""
 "None\n"
 "Odd\n"
@@ -273,13 +257,21 @@ msgstr ""
 "Vždy 1\n"
 "Vždy 0"
 
-#: ../data/glade/moserial.glade.h:73
+#: ../data/glade/moserial.glade.h:71
 msgid "Normally disabled"
 msgstr "Normálně vypnuto"
 
-#: ../data/glade/moserial.glade.h:74
+#: ../data/glade/moserial.glade.h:72
 msgid "Open _Recent"
 msgstr "Otevřít _nedávné"
+
+#: ../data/glade/moserial.glade.h:73
+msgid "Open/close port"
+msgstr "Otevřít/zavřít port"
+
+#: ../data/glade/moserial.glade.h:74
+msgid "Other preferences"
+msgstr "Ostatní předvolby"
 
 #: ../data/glade/moserial.glade.h:75
 msgid "Parity"
@@ -290,10 +282,14 @@ msgid "Port Setup"
 msgstr "Nastavení portu"
 
 #: ../data/glade/moserial.glade.h:77
+msgid "Port configuration"
+msgstr "Nastavení portu"
+
+#: ../data/glade/moserial.glade.h:78
 msgid "Preferences"
 msgstr "Předvolby"
 
-#: ../data/glade/moserial.glade.h:78
+#: ../data/glade/moserial.glade.h:79
 msgid ""
 "Read and Write\n"
 "Read Only\n"
@@ -303,159 +299,111 @@ msgstr ""
 "Jen čtení\n"
 "Jen zápis"
 
-#: ../data/glade/moserial.glade.h:81
+#: ../data/glade/moserial.glade.h:82
 msgid "Receive File"
 msgstr "Přijmout soubor"
 
-#: ../data/glade/moserial.glade.h:82
+#: ../data/glade/moserial.glade.h:83
 msgid "Receive File Progress"
 msgstr "Průběh příjmu souboru"
 
-#: ../data/glade/moserial.glade.h:83
+#: ../data/glade/moserial.glade.h:84
+msgid "Receive a file"
+msgstr "Přijmout soubor"
+
+#: ../data/glade/moserial.glade.h:85
 msgid "Received ASCII"
 msgstr "Přijaté ASCII"
 
-#: ../data/glade/moserial.glade.h:84
+#: ../data/glade/moserial.glade.h:86
 msgid "Received HEX"
 msgstr "Přijaté HEX"
 
-#: ../data/glade/moserial.glade.h:85
+#: ../data/glade/moserial.glade.h:87
 msgid "Record"
 msgstr "Zaznamenat"
 
-#: ../data/glade/moserial.glade.h:86
+#: ../data/glade/moserial.glade.h:88
 msgid "Record Incoming and/or Outgoing Data"
 msgstr "Záznam příchozích a/nebo odchozích dat"
 
-#: ../data/glade/moserial.glade.h:87
+#: ../data/glade/moserial.glade.h:89
+msgid "Record sent and/or received data"
+msgstr "Zaznamenat odchozí a/nebo příchozí data."
+
+#: ../data/glade/moserial.glade.h:90
 msgid "Save Settings _As"
 msgstr "Uložit nastavení _jako"
 
-#: ../data/glade/moserial.glade.h:88
+#: ../data/glade/moserial.glade.h:91
 msgid "Select File to Send"
 msgstr "Výběr souboru k odeslání"
 
-#: ../data/glade/moserial.glade.h:89
+#: ../data/glade/moserial.glade.h:92
 msgid "Select Folder for Received Files"
 msgstr "Výběr složky pro přijaté soubory"
 
-#: ../data/glade/moserial.glade.h:90
-msgid "Select the error correction protocol to use."
-msgstr "Vyberte protokole pro korekci chyb, který se má použít."
-
-#: ../data/glade/moserial.glade.h:91
-msgid ""
-"Select the error correction protocol to use. If you wish to receive a "
-"straight binary file without using error correction protocols, use the "
-"Record button instead."
-msgstr ""
-"Vyberte protokol pro korekci chyb, který se má použít. Pokus si přejete "
-"přijmout přímý binární soubor bez použití protokolu pro korekci chyb, "
-"použijte tlačítko Zaznamenat."
-
-#: ../data/glade/moserial.glade.h:92
+#: ../data/glade/moserial.glade.h:93
 msgid "Send"
 msgstr "Odeslat"
 
-#: ../data/glade/moserial.glade.h:93
+#: ../data/glade/moserial.glade.h:94
 msgid "Send File"
 msgstr "Odeslat soubor"
 
-#: ../data/glade/moserial.glade.h:94
+#: ../data/glade/moserial.glade.h:95
 msgid "Send File Progress"
 msgstr "Průběh odesílání souboru"
 
-#: ../data/glade/moserial.glade.h:95
+#: ../data/glade/moserial.glade.h:96
+msgid "Send a file"
+msgstr "Odeslat soubor"
+
+#: ../data/glade/moserial.glade.h:97
+msgid "Send the outgoing data now."
+msgstr "Nyní odeslat odchozí data."
+
+#: ../data/glade/moserial.glade.h:98
 msgid "Sent ASCII"
 msgstr "Odeslané ASCII"
 
-#: ../data/glade/moserial.glade.h:96
+#: ../data/glade/moserial.glade.h:99
 msgid "Sent HEX"
 msgstr "Odeslané HEX"
 
-#: ../data/glade/moserial.glade.h:97
+#: ../data/glade/moserial.glade.h:100
 msgid "Software"
 msgstr "Softwarová"
 
-#: ../data/glade/moserial.glade.h:98
+#: ../data/glade/moserial.glade.h:101
 msgid "Stop Bits"
 msgstr "Stop bity"
 
-#: ../data/glade/moserial.glade.h:99
+#: ../data/glade/moserial.glade.h:102
 msgid "Stop Recording"
 msgstr "Zastavit záznam"
 
-#: ../data/glade/moserial.glade.h:100
+#: ../data/glade/moserial.glade.h:103
 msgid "Stream to record"
 msgstr "Co zaznamenávat"
 
-#: ../data/glade/moserial.glade.h:101
-msgid ""
-"This determines whether the data entered in the Outgoing text box should be "
-"interpreted as normal ASCII text, or as hexadecimal codes. If this is set to "
-"HEX, the entered data should consist of only 0-9 and A-F characters."
-msgstr ""
-"Určuje, zda se data zadané do pole „Odchozí„“ mají vyhodnocovat jako "
-"normální text ASCII nebo jako šestnáctkové kódy. Pokud je nastaveno na HEX "
-"(šestnáctkové kódy), měly by zadaná data obsahovat pouze znaky 0-9 a A-F."
-
-#: ../data/glade/moserial.glade.h:102
-msgid ""
-"This selects the termination sequence that is appended to the Outgoing data "
-"in the ASCII mode when you click Send."
-msgstr ""
-"Zde se vybírá zakončovací sekvence, která se připojí na konec Odchozích dat "
-"v ASCII po kliknutí na Odeslat."
-
-#: ../data/glade/moserial.glade.h:103
-msgid "Use this to configure your serial port parameters."
-msgstr "Použijte pro nastavení parametrů svého sériového portu."
-
 #: ../data/glade/moserial.glade.h:104
-msgid ""
-"Use this to receive a file from a remote computer, using an error correction "
-"protocol. For straight binary dumps without error correction, use Record "
-"instead."
+msgid "Type outgoing data here. Press Enter or Send to send it."
 msgstr ""
-"Použijte k příjmu souboru ze vzdáleného počítače za použití protokolu pro "
-"korekci chyb. Pro přímý binární výpis bez korekce chyb použijte Zaznamenat."
+"Zde zadejte odchozí data. Odešlete je zmáčknutím klávesy Enter nebo tlačítka "
+"Odeslat."
 
 #: ../data/glade/moserial.glade.h:105
 msgid ""
-"Use this to record (or \"log\") your communications to a file. You can log "
-"the received data, the sent data, or both. This can also be used to receive "
-"files sent by a remote device without the use of error correction protocols "
-"(a straight binary dump)."
+"Xmodem\n"
+"Ymodem\n"
+"Zmodem"
 msgstr ""
-"Použijte pro záznam (nebo „evidenci“) své komunikace do souboru. Můžete "
-"evidovat přijatá data, odeslaná data nebo obojí. Lze to také využít k "
-"přijmutí souborů odeslaných vzdáleným zařízení bez použití protokolu pro "
-"korekci chyb (přímý binární výpis)."
-
-#: ../data/glade/moserial.glade.h:106
-msgid ""
-"Use this to send a file to a remote computer, with or without error "
-"correction protocols."
-msgstr ""
-"Použijte k odeslání souboru na vzdálený počítač, s nebo bez protokolu pro "
-"korekci chyb."
-
-#: ../data/glade/moserial.glade.h:107
-msgid "Use this to set font sizes and other related settings."
-msgstr ""
-"Použijte pro nastavení velikosti písma a dalších příslušných nastavení."
+"Xmodem\n"
+"Ymodem\n"
+"Zmodem"
 
 #: ../data/glade/moserial.glade.h:108
-msgid ""
-"Xmodem\n"
-"Ymodem\n"
-"Zmodem"
-msgstr ""
-"Xmodem\n"
-"Ymodem\n"
-"Zmodem"
-
-#: ../data/glade/moserial.glade.h:111
 msgid ""
 "Xmodem\n"
 "Ymodem\n"
@@ -467,53 +415,43 @@ msgstr ""
 "Zmodem\n"
 "Nic (přímý binární)"
 
-#: ../data/glade/moserial.glade.h:115
-msgid ""
-"You must connect to your port before you can send or receive data. "
-"Disconnecting and reconnecting will clear the textboxes and reset the TX / "
-"RX counters."
-msgstr ""
-"Než začnete odesílat nebo přijímat data, musíte se připojit k svému portu. "
-"Odpojením a opětovným připojením se vymažou textová pole a vynuluje "
-"počítadlo TX / RX."
-
-#: ../data/glade/moserial.glade.h:116
+#: ../data/glade/moserial.glade.h:112
 msgid "_Contents"
 msgstr "_Obsah"
 
-#: ../data/glade/moserial.glade.h:117
+#: ../data/glade/moserial.glade.h:113
 msgid "_Edit"
 msgstr "_Upravit"
 
-#: ../data/glade/moserial.glade.h:118
+#: ../data/glade/moserial.glade.h:114
 msgid "_File"
 msgstr "_Soubor"
 
-#: ../data/glade/moserial.glade.h:119
+#: ../data/glade/moserial.glade.h:115
 msgid "_Help"
 msgstr "_Nápověda"
 
-#: ../data/glade/moserial.glade.h:120
+#: ../data/glade/moserial.glade.h:116
 msgid "_Launch recorded files"
 msgstr "_Spustit zaznamenané soubory"
 
-#: ../data/glade/moserial.glade.h:121
+#: ../data/glade/moserial.glade.h:117
 msgid "_Open Settings"
 msgstr "_Otevřít nastavení"
 
-#: ../data/glade/moserial.glade.h:122
+#: ../data/glade/moserial.glade.h:118
 msgid "_Save Settings"
 msgstr "_Uložit nastavení"
 
-#: ../data/glade/moserial.glade.h:123
+#: ../data/glade/moserial.glade.h:119
 msgid "_Use the system fixed width font"
 msgstr "Po_užít systémové písmo s pevnou šířkou"
 
-#: ../data/glade/moserial.glade.h:124
+#: ../data/glade/moserial.glade.h:120
 msgid "moserial"
 msgstr "moserial"
 
-#: ../data/glade/moserial.glade.h:125
+#: ../data/glade/moserial.glade.h:121
 msgid "seconds"
 msgstr "sekund"
 
@@ -530,11 +468,11 @@ msgstr "Sériový terminál"
 msgid "moserial Terminal"
 msgstr "Terminál moserial"
 
-#: ../src/MainWindow.vala:11
+#: ../src/MainWindow.vala:30
 msgid "translator-credits"
 msgstr "Marek Černocký <marek@manet.cz>"
 
-#: ../src/MainWindow.vala:13
+#: ../src/MainWindow.vala:32
 msgid ""
 "moserial is free software: you can redistribute it and/or modify it under "
 "the terms of the GNU General Public License as published by the Free "
@@ -546,7 +484,7 @@ msgstr ""
 "Software Foundation, a to buď ve verzi 3 této licence nebo (dle vaší volby) "
 "v libovolné novější verzi.\n"
 
-#: ../src/MainWindow.vala:14
+#: ../src/MainWindow.vala:33
 msgid ""
 "moserial is distributed in the hope that it will be useful, but WITHOUT ANY "
 "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
@@ -557,7 +495,7 @@ msgstr ""
 "i bez předpokládané záruky na PRODEJNOST nebo VHODNOST PRO KONKRÉTNÍ ÚČEL. "
 "Více podrobností najdete přímo v licenci GNU General Public License.\n"
 
-#: ../src/MainWindow.vala:15
+#: ../src/MainWindow.vala:34
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "this program.  If not, see <http://www.gnu.org/licenses/>."
@@ -566,26 +504,26 @@ msgstr ""
 "License. Pokud se tak nestalo, podívejte se na <http://www.gnu.org/licenses/"
 ">."
 
-#: ../src/MainWindow.vala:147
+#: ../src/MainWindow.vala:166
 msgid "TX: 0, RX: 0"
 msgstr "TX: 0, RX: 0"
 
-#: ../src/MainWindow.vala:513 ../src/Profile.vala:57 ../src/Profile.vala:88
+#: ../src/MainWindow.vala:532 ../src/Profile.vala:76 ../src/Profile.vala:107
 #, c-format
 msgid "Error: Could not open file"
 msgstr "Chyba: Nelze otevřít soubor"
 
-#: ../src/MainWindow.vala:586
+#: ../src/MainWindow.vala:605
 #, c-format
 msgid "Error: Could not open device"
 msgstr "Chyba: Nelze otevřít zařízení"
 
-#: ../src/MainWindow.vala:708
+#: ../src/MainWindow.vala:727
 #, c-format
 msgid "Unable to display help file: %s"
 msgstr "Nelze zobrazit soubor s nápovědou: %s"
 
-#: ../src/MainWindow.vala:720
+#: ../src/MainWindow.vala:739
 msgid ""
 "A serial terminal for the GNOME desktop, optimized for logging and file "
 "capture."
@@ -593,12 +531,12 @@ msgstr ""
 "Sériový terminál pro pracovní prostředí GNOME, optimalizovaný pro ukládání "
 "záznamu a zachytávání soborů"
 
-#: ../src/MainWindow.vala:734
+#: ../src/MainWindow.vala:753
 #, c-format
 msgid "Can't display a clickable URL: %s"
 msgstr "Nelze zobrazit funkční URL: %s"
 
-#: ../src/MainWindow.vala:781
+#: ../src/MainWindow.vala:800
 msgid ""
 "You have changed your setting or preferences. Do you want to save these "
 "changes to the loaded profile?"
@@ -607,43 +545,43 @@ msgstr ""
 "načteného profilu?"
 
 #. TRANSLATORS: first letter of "None", a serial port parity setting
-#: ../src/Settings.vala:49
+#: ../src/Settings.vala:68
 msgid "N"
 msgstr "N"
 
 #. TRANSLATORS: first letter of "Odd", a serial port parity setting
-#: ../src/Settings.vala:53
+#: ../src/Settings.vala:72
 msgid "O"
 msgstr "O"
 
 #. TRANSLATORS: first letter of "Even", a serial port parity setting
-#: ../src/Settings.vala:57
+#: ../src/Settings.vala:76
 msgid "E"
 msgstr "E"
 
 #. TRANSLATORS: first letter of "Mark", a serial port parity setting
-#: ../src/Settings.vala:61
+#: ../src/Settings.vala:80
 msgid "M"
 msgstr "M"
 
 #. TRANSLATORS: first letter of "Space", a serial port parity setting
-#: ../src/Settings.vala:65
+#: ../src/Settings.vala:84
 msgid "S"
 msgstr "S"
 
-#: ../src/Settings.vala:75
+#: ../src/Settings.vala:94
 msgid "OPEN"
 msgstr "OTEVŘENO"
 
-#: ../src/Settings.vala:76
+#: ../src/Settings.vala:95
 msgid "CLOSED"
 msgstr "ZAVŘENO"
 
-#: ../src/Main.vala:7
+#: ../src/Main.vala:26
 msgid "Profile file to load"
 msgstr "Profil, který se má načíst"
 
-#: ../src/Main.vala:17
+#: ../src/Main.vala:36
 #, c-format
 msgid ""
 "Failed to load UI\n"
@@ -652,52 +590,132 @@ msgstr ""
 "Nepodařilo se načíst uživatelské rozhraní\n"
 "%s"
 
-#: ../src/Main.vala:33
+#: ../src/Main.vala:52
 msgid "- moserial serial terminal"
 msgstr "- sériový terminál moserial"
 
-#: ../src/Main.vala:38 ../src/Main.vala:46
+#: ../src/Main.vala:57 ../src/Main.vala:65
 #, c-format
 msgid "Run '%s --help' to see a full list of available command line options.\n"
 msgstr ""
 "Spuštěním „%s --help“ se zobrazí úplný seznam dostupných přepínačů "
 "příkazového řádku.\n"
 
-#: ../src/Preferences.vala:47
+#: ../src/Preferences.vala:66
 #, c-format
 msgid "Unable to retrieve gconf key: %s"
 msgstr "Nelze získat klíč gconf: %s"
 
-#: ../src/SendProgressDialog.vala:24
+#: ../src/SendProgressDialog.vala:43
 msgid "Waiting for remote host"
 msgstr "Čeká se na vzdáleného hostitele"
 
-#: ../src/SerialConnection.vala:282
+#: ../src/SerialConnection.vala:301
 #, c-format
 msgid "TX: %lu, RX: %lu (%lu unprintable)"
 msgstr "TX: %lu, RX: %lu (%lu netisknutelných)"
 
-#: ../src/SerialConnection.vala:284
+#: ../src/SerialConnection.vala:303
 #, c-format
 msgid "TX: %lu, RX: %lu"
 msgstr "TX: %lu, RX: %lu"
 
-#: ../src/SerialStreamRecorder.vala:33 ../src/SerialStreamRecorder.vala:54
+#: ../src/SerialStreamRecorder.vala:52 ../src/SerialStreamRecorder.vala:73
 #, c-format
 msgid "error: %s\n"
 msgstr "chyba: %s\n"
 
-#: ../src/SerialStreamRecorder.vala:63
+#: ../src/SerialStreamRecorder.vala:82
 #, c-format
 msgid "Unable to launch %s: %s"
 msgstr "Nelze spustit %s: %s"
 
-#: ../src/Szwrapper.vala:154
+#: ../src/Szwrapper.vala:173
 msgid "canceled"
 msgstr "zrušeno"
 
-#: ../src/InputParser.vala:26 ../src/InputParser.vala:33
-#: ../src/InputParser.vala:39
+#: ../src/InputParser.vala:45 ../src/InputParser.vala:52
+#: ../src/InputParser.vala:58
 msgid "Invalid Input"
 msgstr "Neplatný vstup"
+
+#~ msgid ""
+#~ "Click this to transmit the data entered in the Outgoing text box. "
+#~ "Clicking \"enter\" in that box will do the same thing."
+#~ msgstr ""
+#~ "Kliknutím zde odešlete data zadaná do pole „Odchozí“. Zmáčknutím „Enter“ "
+#~ "v poli „Odchozí“ dosáhnete toho stejného."
+
+#~ msgid "Select the error correction protocol to use."
+#~ msgstr "Vyberte protokole pro korekci chyb, který se má použít."
+
+#~ msgid ""
+#~ "Select the error correction protocol to use. If you wish to receive a "
+#~ "straight binary file without using error correction protocols, use the "
+#~ "Record button instead."
+#~ msgstr ""
+#~ "Vyberte protokol pro korekci chyb, který se má použít. Pokus si přejete "
+#~ "přijmout přímý binární soubor bez použití protokolu pro korekci chyb, "
+#~ "použijte tlačítko Zaznamenat."
+
+#~ msgid ""
+#~ "This determines whether the data entered in the Outgoing text box should "
+#~ "be interpreted as normal ASCII text, or as hexadecimal codes. If this is "
+#~ "set to HEX, the entered data should consist of only 0-9 and A-F "
+#~ "characters."
+#~ msgstr ""
+#~ "Určuje, zda se data zadané do pole „Odchozí„“ mají vyhodnocovat jako "
+#~ "normální text ASCII nebo jako šestnáctkové kódy. Pokud je nastaveno na "
+#~ "HEX (šestnáctkové kódy), měly by zadaná data obsahovat pouze znaky 0-9 a "
+#~ "A-F."
+
+#~ msgid ""
+#~ "This selects the termination sequence that is appended to the Outgoing "
+#~ "data in the ASCII mode when you click Send."
+#~ msgstr ""
+#~ "Zde se vybírá zakončovací sekvence, která se připojí na konec Odchozích "
+#~ "dat v ASCII po kliknutí na Odeslat."
+
+#~ msgid "Use this to configure your serial port parameters."
+#~ msgstr "Použijte pro nastavení parametrů svého sériového portu."
+
+#~ msgid ""
+#~ "Use this to receive a file from a remote computer, using an error "
+#~ "correction protocol. For straight binary dumps without error correction, "
+#~ "use Record instead."
+#~ msgstr ""
+#~ "Použijte k příjmu souboru ze vzdáleného počítače za použití protokolu pro "
+#~ "korekci chyb. Pro přímý binární výpis bez korekce chyb použijte "
+#~ "Zaznamenat."
+
+#~ msgid ""
+#~ "Use this to record (or \"log\") your communications to a file. You can "
+#~ "log the received data, the sent data, or both. This can also be used to "
+#~ "receive files sent by a remote device without the use of error correction "
+#~ "protocols (a straight binary dump)."
+#~ msgstr ""
+#~ "Použijte pro záznam (nebo „evidenci“) své komunikace do souboru. Můžete "
+#~ "evidovat přijatá data, odeslaná data nebo obojí. Lze to také využít k "
+#~ "přijmutí souborů odeslaných vzdáleným zařízení bez použití protokolu pro "
+#~ "korekci chyb (přímý binární výpis)."
+
+#~ msgid ""
+#~ "Use this to send a file to a remote computer, with or without error "
+#~ "correction protocols."
+#~ msgstr ""
+#~ "Použijte k odeslání souboru na vzdálený počítač, s nebo bez protokolu pro "
+#~ "korekci chyb."
+
+#~ msgid "Use this to set font sizes and other related settings."
+#~ msgstr ""
+#~ "Použijte pro nastavení velikosti písma a dalších příslušných nastavení."
+
+#~ msgid ""
+#~ "You must connect to your port before you can send or receive data. "
+#~ "Disconnecting and reconnecting will clear the textboxes and reset the "
+#~ "TX / RX counters."
+#~ msgstr ""
+#~ "Než začnete odesílat nebo přijímat data, musíte se připojit k svému "
+#~ "portu. Odpojením a opětovným připojením se vymažou textová pole a "
+#~ "vynuluje počítadlo TX / RX."
 
