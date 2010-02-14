@@ -1,0 +1,758 @@
+# Danish translation for moserial.
+# Copyright (C) 2010 moserial & Joe Hansen.
+# This file is distributed under the same license as the moserial package.
+# Joe Hansen <joedalton2@yahoo.dk>, 2009, 2010.
+# Korrekturlæsning Kenneth Nielsen, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: moserial master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-02-14 17:02+0100\n"
+"PO-Revision-Date: 2010-01-14 21:38+0000\n"
+"Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
+"Language-Team: Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../data/glade/moserial.glade.h:1
+msgid ""
+"/dev/ttyS0\n"
+"/dev/ttyS1\n"
+"/dev/ttyS2\n"
+"/dev/ttyS3\n"
+"/dev/ttyUSB0\n"
+"/dev/ttyUSB1\n"
+"/dev/ttyUSB2\n"
+"/dev/ttyUSB3"
+msgstr ""
+"/dev/ttyS0\n"
+"/dev/ttyS1\n"
+"/dev/ttyS2\n"
+"/dev/ttyS3\n"
+"/dev/ttyUSB0\n"
+"/dev/ttyUSB1\n"
+"/dev/ttyUSB2\n"
+"/dev/ttyUSB3"
+
+#: ../data/glade/moserial.glade.h:9
+msgid ""
+"1\n"
+"2"
+msgstr ""
+"1\n"
+"2"
+
+#: ../data/glade/moserial.glade.h:11
+msgid ""
+"300\n"
+"600\n"
+"1200\n"
+"2400\n"
+"4800\n"
+"9600\n"
+"19200\n"
+"38400\n"
+"57600\n"
+"115200\n"
+"230400\n"
+"460800\n"
+"576000\n"
+"927600"
+msgstr ""
+"300\n"
+"600\n"
+"1200\n"
+"2400\n"
+"4800\n"
+"9600\n"
+"19200\n"
+"38400\n"
+"57600\n"
+"115200\n"
+"230400\n"
+"460800\n"
+"576000\n"
+"927600"
+
+#: ../data/glade/moserial.glade.h:25
+msgid ""
+"5\n"
+"6\n"
+"7\n"
+"8"
+msgstr ""
+"5\n"
+"6\n"
+"7\n"
+"8"
+
+#: ../data/glade/moserial.glade.h:29
+msgid "<b>Font</b>"
+msgstr "<b>Skrifttype</b>"
+
+#: ../data/glade/moserial.glade.h:30
+msgid "<b>Port Settings</b>"
+msgstr "<b>Portopsætning</b>"
+
+#: ../data/glade/moserial.glade.h:31
+msgid "<b>Recording</b>"
+msgstr "<b>Optagelse</b>"
+
+#: ../data/glade/moserial.glade.h:32
+msgid "<i>Outgoing</i>"
+msgstr "<i>Udgående</i>"
+
+#: ../data/glade/moserial.glade.h:33
+msgid ""
+"ASCII\n"
+"HEX"
+msgstr ""
+"ASCII\n"
+"HEX"
+
+#: ../data/glade/moserial.glade.h:35
+msgid "Access Mode"
+msgstr "Adgangstilstand"
+
+#: ../data/glade/moserial.glade.h:36
+msgid "Also known as RTS/CTS handshaking"
+msgstr "Også kendt som RTS/CTS-håndtryk"
+
+#: ../data/glade/moserial.glade.h:37
+msgid "Also known as XON/XOFF handshaking"
+msgstr "Også kendt som XON/XOFF-håndtryk"
+
+#: ../data/glade/moserial.glade.h:38
+msgid "Background Color"
+msgstr "Baggrundsfarve"
+
+#: ../data/glade/moserial.glade.h:39
+msgid "Baud Rate"
+msgstr "Baudrate"
+
+#: ../data/glade/moserial.glade.h:40
+msgid ""
+"CR+LF end\n"
+"CR end\n"
+"LF end\n"
+"TAB end\n"
+"ESC end\n"
+"No end"
+msgstr ""
+"CR+LF end\n"
+"CR end\n"
+"LF end\n"
+"TAB end\n"
+"ESC end\n"
+"Ingen end"
+
+#: ../data/glade/moserial.glade.h:46
+msgid "Connect"
+msgstr "Forbind"
+
+#: ../data/glade/moserial.glade.h:47
+msgid "Data Bits"
+msgstr "Databit"
+
+#: ../data/glade/moserial.glade.h:48
+msgid "Device"
+msgstr "Enhed"
+
+#: ../data/glade/moserial.glade.h:49
+msgid "Disconnect"
+msgstr "Afbryd"
+
+#: ../data/glade/moserial.glade.h:50
+msgid "Display Font"
+msgstr "Tekstskrifttype"
+
+#: ../data/glade/moserial.glade.h:51
+msgid "Echo received data"
+msgstr "Data modtaget med ekko"
+
+#: ../data/glade/moserial.glade.h:52
+msgid "Enable timeout after"
+msgstr "Slå tidsudløb til efter"
+
+#: ../data/glade/moserial.glade.h:53
+msgid "Error Correction Protocol"
+msgstr "Protokol for fejlkorrektion"
+
+#: ../data/glade/moserial.glade.h:54
+msgid "Filename required for XMODEM"
+msgstr "Filnavn krævet for XMODEM"
+
+#: ../data/glade/moserial.glade.h:55
+msgid "Font Colour"
+msgstr "Skrifttypefarve"
+
+#: ../data/glade/moserial.glade.h:56
+msgid "Handshake"
+msgstr "Håndtryk"
+
+#: ../data/glade/moserial.glade.h:57
+msgid "Hardware"
+msgstr "Hardware"
+
+#: ../data/glade/moserial.glade.h:58
+msgid "Help"
+msgstr "Hjælp"
+
+#: ../data/glade/moserial.glade.h:59
+msgid "Highlight Color"
+msgstr "Fremhævningsfarve"
+
+#: ../data/glade/moserial.glade.h:60
+msgid ""
+"If this option is enabled, a recorded file will be opened immediately after "
+"it is saved, using the default application for the file type. The default "
+"application is defined by the desktop environment."
+msgstr ""
+"Hvis dette tilvalg er slået til, vil en optaget fil blive åbnet umiddelbart "
+"efter at den er gemt, med brug af standardprogrammet for den filtype. "
+"Standardprogrammet er defineret af skrivebordsmiljøet."
+
+# inaktivitetsfunktionen, inaktivitetstimeren, tidstagning af inaktivitet
+#: ../data/glade/moserial.glade.h:61
+msgid ""
+"If this option is enabled, recording will be automatically stopped after an "
+"adjustable period of inactivity after receiving some data. That is, moserial "
+"will wait indefinitely to record the first data byte before activating the "
+"inactivity timer."
+msgstr ""
+"Hvis dette tilvalg er slået til, vil optagelse automatisk blive stoppet "
+"efter en periode, der kan justeres, uden aktivitet når der er modtaget nogle "
+"data. Det vil sige at moserial vil vente uendeligt på de første databit før "
+"programmet aktiverer inaktivitetsfunktionen."
+
+#: ../data/glade/moserial.glade.h:62
+msgid ""
+"Incoming\n"
+"Outgoing\n"
+"Incoming and Outgoing"
+msgstr ""
+"Indgående\n"
+"Udgående\n"
+"Indgående og udgående"
+
+#: ../data/glade/moserial.glade.h:65
+msgid "Local Echo"
+msgstr "Lokalt ekko"
+
+# Er det bedre at lade dem her være uoversatte?
+# Det er i en glade-fil, som burges af gconf, så ja, jeg ville lade dem
+# være uoversat
+# "Ingen\n"
+# "Besynderlig\n"
+# "Lige\n"
+# "Mærke\n"
+# "Mellemrum"
+#: ../data/glade/moserial.glade.h:66
+msgid ""
+"None\n"
+"Odd\n"
+"Even\n"
+"Mark\n"
+"Space"
+msgstr ""
+"None\n"
+"Odd\n"
+"Even\n"
+"Mark\n"
+"Space"
+
+#: ../data/glade/moserial.glade.h:71
+msgid "Normally disabled"
+msgstr "Normalt deaktiveret"
+
+#: ../data/glade/moserial.glade.h:72
+msgid "Open _Recent"
+msgstr "Åbn _seneste"
+
+#: ../data/glade/moserial.glade.h:73
+msgid "Open/close port"
+msgstr ""
+
+#: ../data/glade/moserial.glade.h:74
+#, fuzzy
+msgid "Other preferences"
+msgstr "Indstillinger"
+
+#: ../data/glade/moserial.glade.h:75
+msgid "Parity"
+msgstr "Paritet"
+
+#: ../data/glade/moserial.glade.h:76
+msgid "Port Setup"
+msgstr "Portopsætning"
+
+#: ../data/glade/moserial.glade.h:77
+msgid "Port configuration"
+msgstr ""
+
+#: ../data/glade/moserial.glade.h:78
+msgid "Preferences"
+msgstr "Indstillinger"
+
+# kan ikke rigtig få Skrivebeskyttet til at passe ind her.
+#: ../data/glade/moserial.glade.h:79
+msgid ""
+"Read and Write\n"
+"Read Only\n"
+"Write Only"
+msgstr ""
+"Læs og skriv\n"
+"Kun læs\n"
+"Kun skriv"
+
+# Modtagelsesfil eller Modtag fil.
+# fejlrapport.
+#: ../data/glade/moserial.glade.h:82
+msgid "Receive File"
+msgstr "Modtagelsesfil"
+
+# Status for filmodtagelse
+#: ../data/glade/moserial.glade.h:83
+msgid "Receive File Progress"
+msgstr "Status på modtagelsesfil"
+
+# Modtagelsesfil eller Modtag fil.
+# fejlrapport.
+#: ../data/glade/moserial.glade.h:84
+#, fuzzy
+msgid "Receive a file"
+msgstr "Modtagelsesfil"
+
+#: ../data/glade/moserial.glade.h:85
+msgid "Received ASCII"
+msgstr "Modtaget ASCII"
+
+#: ../data/glade/moserial.glade.h:86
+msgid "Received HEX"
+msgstr "Modtaget HEX"
+
+#: ../data/glade/moserial.glade.h:87
+msgid "Record"
+msgstr "Optag"
+
+#: ../data/glade/moserial.glade.h:88
+msgid "Record Incoming and/or Outgoing Data"
+msgstr "Optag indgående og/eller udgående data"
+
+#: ../data/glade/moserial.glade.h:89
+#, fuzzy
+msgid "Record sent and/or received data"
+msgstr "Data modtaget med ekko"
+
+#: ../data/glade/moserial.glade.h:90
+msgid "Save Settings _As"
+msgstr "Gem _opsætning som"
+
+#: ../data/glade/moserial.glade.h:91
+msgid "Select File to Send"
+msgstr "Vælg fil der skal sendes"
+
+#: ../data/glade/moserial.glade.h:92
+msgid "Select Folder for Received Files"
+msgstr "Vælg mappe for modtagne filer"
+
+#: ../data/glade/moserial.glade.h:93
+msgid "Send"
+msgstr "Send"
+
+#: ../data/glade/moserial.glade.h:94
+msgid "Send File"
+msgstr "Send fil"
+
+#: ../data/glade/moserial.glade.h:95
+msgid "Send File Progress"
+msgstr "Status for send fil"
+
+#: ../data/glade/moserial.glade.h:96
+#, fuzzy
+msgid "Send a file"
+msgstr "Send fil"
+
+#: ../data/glade/moserial.glade.h:97
+msgid "Send the outgoing data now."
+msgstr ""
+
+#: ../data/glade/moserial.glade.h:98
+msgid "Sent ASCII"
+msgstr "Sendt ASCII"
+
+#: ../data/glade/moserial.glade.h:99
+msgid "Sent HEX"
+msgstr "Sendt HEX"
+
+#: ../data/glade/moserial.glade.h:100
+msgid "Software"
+msgstr "Software"
+
+# Stop bits er så vidt jeg ved noget der indikerer at en transmission er
+# overstået, jeg vil derfor mene at der er tale om "Stopbit"
+#: ../data/glade/moserial.glade.h:101
+msgid "Stop Bits"
+msgstr "Stopbit"
+
+#: ../data/glade/moserial.glade.h:102
+msgid "Stop Recording"
+msgstr "Stop optagelse"
+
+#: ../data/glade/moserial.glade.h:103
+msgid "Stream to record"
+msgstr "Strøm der skal optages"
+
+#: ../data/glade/moserial.glade.h:104
+#, fuzzy
+msgid "Type outgoing data here. Press Enter or Send to send it."
+msgstr ""
+"Indtast her de data du ønsker at transmittere. Tryk retur eller send når du "
+"er klar."
+
+# "X-modem\n"
+# "Y-modem\n"
+# "Z-modem"
+# Som tidligere, de skal sandsynligvis lades være uoversat, efter som de
+# er noget som kunne ligne valgmuligheder og står i en gladefil
+#: ../data/glade/moserial.glade.h:105
+msgid ""
+"Xmodem\n"
+"Ymodem\n"
+"Zmodem"
+msgstr ""
+"Xmodem\n"
+"Ymodem\n"
+"Zmodem"
+
+# "X-modem\n"
+# "Y-modem\n"
+# "Z-modem\n"
+# "Ingen (binært)"
+#: ../data/glade/moserial.glade.h:108
+msgid ""
+"Xmodem\n"
+"Ymodem\n"
+"Zmodem\n"
+"None (straight binary)"
+msgstr ""
+"Xmodem\n"
+"Ymodem\n"
+"Zmodem\n"
+"None (straight binary)"
+
+#: ../data/glade/moserial.glade.h:112
+msgid "_Contents"
+msgstr "_Indhold"
+
+#: ../data/glade/moserial.glade.h:113
+msgid "_Edit"
+msgstr "_Rediger"
+
+#: ../data/glade/moserial.glade.h:114
+msgid "_File"
+msgstr "_Fil"
+
+#: ../data/glade/moserial.glade.h:115
+msgid "_Help"
+msgstr "_Hjælp"
+
+#: ../data/glade/moserial.glade.h:116
+msgid "_Launch recorded files"
+msgstr "_Start optagede filer"
+
+#: ../data/glade/moserial.glade.h:117
+msgid "_Open Settings"
+msgstr "_Åbn opsætning"
+
+#: ../data/glade/moserial.glade.h:118
+msgid "_Save Settings"
+msgstr "_Gem opsætning"
+
+#: ../data/glade/moserial.glade.h:119
+msgid "_Use the system fixed width font"
+msgstr "_Brug systemskriftypen der har fast bredde"
+
+#: ../data/glade/moserial.glade.h:120
+msgid "moserial"
+msgstr "moserial"
+
+#: ../data/glade/moserial.glade.h:121
+msgid "seconds"
+msgstr "sekunder"
+
+#: ../data/moserial.desktop.in.h:1
+msgid "A serial terminal optimized for logging and file capture"
+msgstr "En seriel terminal optimeret til logning og filoptagelse"
+
+#: ../data/moserial.desktop.in.h:2
+msgid "Serial Terminal"
+msgstr "Seriel terminal"
+
+#: ../data/moserial.desktop.in.h:3
+msgid "moserial Terminal"
+msgstr "moserial terminal"
+
+#: ../src/MainWindow.vala:30
+msgid "translator-credits"
+msgstr ""
+"Joe Hansen, 2009.\n"
+"\n"
+"Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
+"Mere info: http://www.dansk-gruppen.dk"
+
+#: ../src/MainWindow.vala:32
+msgid ""
+"moserial is free software: you can redistribute it and/or modify it under "
+"the terms of the GNU General Public License as published by the Free "
+"Software Foundation, either version 3 of the License, or (at your option) "
+"any later version.\n"
+msgstr ""
+"moserial er fri software: Du kan redistribuere og/eller modificere det under "
+"de betingelser som er angivet i GNU General Public License, som udgivet af "
+"Free Software Foundation. Enten version 3 af licensen eller (efter eget "
+"valg) enhver senere version.\n"
+
+#: ../src/MainWindow.vala:33
+msgid ""
+"moserial is distributed in the hope that it will be useful, but WITHOUT ANY "
+"WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
+"FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
+"details.\n"
+msgstr ""
+"moserial distribueres i håb om, at det vil vise sig nyttigt, men UDEN NOGEN "
+"FORM FOR GARANTI, uden selv de underforståede garantier omkring SALGBARHED "
+"eller EGNETHED TIL ET BESTEMT FORMÅL. Yderligere detaljer kan læses i GNU "
+"General Public License.\n"
+
+#: ../src/MainWindow.vala:34
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"this program.  If not, see <http://www.gnu.org/licenses/>."
+msgstr ""
+"Du bør have modtaget en kopi af GNU General Public License sammen med dette "
+"program. Hvis ikke, så se <http://www.gnu.org/licenses/>."
+
+#: ../src/MainWindow.vala:166
+msgid "TX: 0, RX: 0"
+msgstr "TX: 0, RX: 0"
+
+#: ../src/MainWindow.vala:532 ../src/Profile.vala:76 ../src/Profile.vala:107
+#, c-format
+msgid "Error: Could not open file"
+msgstr "Fejl: Kunne ikke åbne fil"
+
+#: ../src/MainWindow.vala:605
+#, c-format
+msgid "Error: Could not open device"
+msgstr "Fejl: Kunne ikke åbne enhed"
+
+#: ../src/MainWindow.vala:727
+#, c-format
+msgid "Unable to display help file: %s"
+msgstr "Kunne ikke vise hjælpfil: %s"
+
+#: ../src/MainWindow.vala:739
+msgid ""
+"A serial terminal for the GNOME desktop, optimized for logging and file "
+"capture."
+msgstr ""
+"En seriel terminal til skrivebordsmiljøet GNOME, optimeret til logning og "
+"filoptagelse."
+
+#: ../src/MainWindow.vala:753
+#, c-format
+msgid "Can't display a clickable URL: %s"
+msgstr "Kan ikke vise en URL der kan klikkes på: %s"
+
+#: ../src/MainWindow.vala:800
+msgid ""
+"You have changed your setting or preferences. Do you want to save these "
+"changes to the loaded profile?"
+msgstr ""
+"Du har ændret din opsætning eller indstillinger. Ønsker du at ændre disse "
+"ændringer i den indlæste profil?"
+
+# msgstr "I"
+#. TRANSLATORS: first letter of "None", a serial port parity setting
+#: ../src/Settings.vala:68
+msgid "N"
+msgstr "N"
+
+# msgstr "B"
+#. TRANSLATORS: first letter of "Odd", a serial port parity setting
+#: ../src/Settings.vala:72
+msgid "O"
+msgstr "O"
+
+# msgstr "L"
+#. TRANSLATORS: first letter of "Even", a serial port parity setting
+#: ../src/Settings.vala:76
+msgid "E"
+msgstr "E"
+
+# mark oversat som mærke (derfor Mæ)
+# msgstr "Mæ"
+#. TRANSLATORS: first letter of "Mark", a serial port parity setting
+#: ../src/Settings.vala:80
+msgid "M"
+msgstr "M"
+
+# msgstr "Me"
+#. TRANSLATORS: first letter of "Space", a serial port parity setting
+#: ../src/Settings.vala:84
+msgid "S"
+msgstr "S"
+
+#: ../src/Settings.vala:94
+msgid "OPEN"
+msgstr "ÅBEN"
+
+#: ../src/Settings.vala:95
+msgid "CLOSED"
+msgstr "LUKKET"
+
+#: ../src/Main.vala:26
+msgid "Profile file to load"
+msgstr "Profilfil der skal indlæses"
+
+#: ../src/Main.vala:36
+#, c-format
+msgid ""
+"Failed to load UI\n"
+"%s"
+msgstr ""
+"Kunne ikke indlæse UI\n"
+"%s"
+
+#: ../src/Main.vala:52
+msgid "- moserial serial terminal"
+msgstr "- moserials serielterminal"
+
+#: ../src/Main.vala:57 ../src/Main.vala:65
+#, c-format
+msgid "Run '%s --help' to see a full list of available command line options.\n"
+msgstr ""
+"Kør '%s --help' for at se en fuldstændig liste over tilgængelige tilvalg for "
+"kommandolinjen.\n"
+
+#: ../src/Preferences.vala:66
+#, c-format
+msgid "Unable to retrieve gconf key: %s"
+msgstr "Kunne ikke hente gconf-nøgle: %s"
+
+#: ../src/SendProgressDialog.vala:43
+msgid "Waiting for remote host"
+msgstr "Venter på ekstern vært"
+
+#: ../src/SerialConnection.vala:301
+#, c-format
+msgid "TX: %lu, RX: %lu (%lu unprintable)"
+msgstr "TX: %lu, RX: %lu (%lu kan ikke udskrives)"
+
+#: ../src/SerialConnection.vala:303
+#, c-format
+msgid "TX: %lu, RX: %lu"
+msgstr "TX: %lu, RX: %lu"
+
+#: ../src/SerialStreamRecorder.vala:52 ../src/SerialStreamRecorder.vala:73
+#, c-format
+msgid "error: %s\n"
+msgstr "fejl: %s\n"
+
+#: ../src/SerialStreamRecorder.vala:82
+#, c-format
+msgid "Unable to launch %s: %s"
+msgstr "Kan ikke starte %s: %s"
+
+#: ../src/Szwrapper.vala:173
+msgid "canceled"
+msgstr "afbrudt"
+
+#: ../src/InputParser.vala:45 ../src/InputParser.vala:52
+#: ../src/InputParser.vala:58
+msgid "Invalid Input"
+msgstr "Ugyldige inddata"
+
+#~ msgid ""
+#~ "Click this to transmit the data entered in the Outgoing text box. "
+#~ "Clicking \"enter\" in that box will do the same thing."
+#~ msgstr ""
+#~ "Klik her for at transmittere de indtastede data i den udgående tekstboks. "
+#~ "Et klik på »retur« i boksen vil have samme effekt."
+
+#~ msgid "Select the error correction protocol to use."
+#~ msgstr "Vælg den fejlkorrektionsprotokol der skal bruges."
+
+#~ msgid ""
+#~ "Select the error correction protocol to use. If you wish to receive a "
+#~ "straight binary file without using error correction protocols, use the "
+#~ "Record button instead."
+#~ msgstr ""
+#~ "Vælg den fejlkorrektionsprotokol der skal bruges. Hvis du ønsker at "
+#~ "modtage en binær fil uden brug af fejlkorrektionsprotokol, så brug "
+#~ "optageknappen i steden for."
+
+#~ msgid ""
+#~ "This determines whether the data entered in the Outgoing text box should "
+#~ "be interpreted as normal ASCII text, or as hexadecimal codes. If this is "
+#~ "set to HEX, the entered data should consist of only 0-9 and A-F "
+#~ "characters."
+#~ msgstr ""
+#~ "Dette afgør hvorvidt de indtastede data i den udgående tekstboks bør "
+#~ "opfasses som normal ASCII-tekst, eller som hexadecimale koder. Hvis "
+#~ "angivet som HEX, bør de indtastede data kun bestå af tallene 0-9 og "
+#~ "bogstaverne A-F."
+
+#~ msgid ""
+#~ "This selects the termination sequence that is appended to the Outgoing "
+#~ "data in the ASCII mode when you click Send."
+#~ msgstr ""
+#~ "Dette vælger afslutningssekvensen som tilføjes de udgående data i ASCII-"
+#~ "tilstanden når du trykker på send."
+
+#~ msgid "Use this to configure your serial port parameters."
+#~ msgstr "Brug denne til at konfigurere parametren for din serielport."
+
+#~ msgid ""
+#~ "Use this to receive a file from a remote computer, using an error "
+#~ "correction protocol. For straight binary dumps without error correction, "
+#~ "use Record instead."
+#~ msgstr ""
+#~ "Brug denne for at modtage en fil fra en ekstern computer, med brug af en "
+#~ "fejlkorrektionsprotokol. For binære skrivninger uden fejlkorrektion, "
+#~ "bruges optag."
+
+#~ msgid ""
+#~ "Use this to record (or \"log\") your communications to a file. You can "
+#~ "log the received data, the sent data, or both. This can also be used to "
+#~ "receive files sent by a remote device without the use of error correction "
+#~ "protocols (a straight binary dump)."
+#~ msgstr ""
+#~ "Brug denne til at optage (eller \"logge\") din kommunkation til en fil. "
+#~ "Du kan logge de modtagne data, de sendte data, eller begge. Dette kan "
+#~ "også bruges til at modtage filer sendt fra en ekstern enhed uden brug af "
+#~ "fejlkorrektionsprotokoller (en binær skrivning)."
+
+#~ msgid ""
+#~ "Use this to send a file to a remote computer, with or without error "
+#~ "correction protocols."
+#~ msgstr ""
+#~ "Brug denne til at sende en fil til en ekstern computer, med eller uden "
+#~ "fejlkorrektionsprotokol."
+
+#~ msgid "Use this to set font sizes and other related settings."
+#~ msgstr ""
+#~ "Brug denne til at angive skrifttypestørrelser og anden relevant opsætning."
+
+#~ msgid ""
+#~ "You must connect to your port before you can send or receive data. "
+#~ "Disconnecting and reconnecting will clear the textboxes and reset the "
+#~ "TX / RX counters."
+#~ msgstr ""
+#~ "Du skal forbinde til din port, før du kan sende eller modtage data. "
+#~ "Afbrydelse og gendannelse af forbindelse vil rydde tekstbokse og "
+#~ "nulstille TX/RX-tællerne."
