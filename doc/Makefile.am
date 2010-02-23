@@ -23,4 +23,4 @@ DOC_FIGURES =	figures/main-toolbar.png \
 		figures/receive-file-dialog.png \
 		figures/preferences.png \
 		figures/authorizations.png
-DOC_LINGUAS = de es sv
+DOC_LINGUAS = cs de es sv
