@@ -1,8 +1,21 @@
+Version 2.29.0
+--------------
+	* Shortened some tooltips (bug 609067)
+	* Updated translations:
+	- Czech (cs)
+	- Danish (da)
+	- German (de)
+	- Slovenian (sl)
+	- Spanish (es)
+
+Version 2.28.3
+--------------
+	* build fixes for ever-shifting vala
+ 
 Version 2.28.2
 --------------
 	* Config.vapi was missing from the tar files
 	* Updated GPLv3 boilerplate text
-	* Shortened some tooltips, added missing icons
 
 Version 2.28.1
 --------------
