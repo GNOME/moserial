@@ -33,7 +33,7 @@ public class moserial.SerialConnection : GLib.Object
         private POSIX.Termios restoretio;
         private int m_fd=-1;
         private GLib.IOChannel IOChannelFd;
-        signal void newData(uchar[] data, int size);
+        public signal void newData(uchar[] data, int size);
         private  int flags=0;
 	public enum LineEnd{ CRLF, CR, LF, TAB, ESC, NONE }
 	uint? sourceId;

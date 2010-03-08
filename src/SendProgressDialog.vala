@@ -25,7 +25,7 @@ public class moserial.SendProgressDialog : GLib.Object
         private Button cancelButton;
         private Gtk.Label status;
         private ProgressBar progressBar;
-        signal void transferCanceled();
+        public signal void transferCanceled();
         public SendProgressDialog(Builder builder) {
                 this.builder=builder;
         }

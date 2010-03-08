@@ -30,8 +30,8 @@ public class moserial.Szwrapper: GLib.Object
 	uint outputChannelId;
         uint errorChannelId;
         private GLib.Pid pid;
-        signal void transferComplete();
-        signal void updateStatus(string newStatus);
+        public signal void transferComplete();
+        public signal void updateStatus(string newStatus);
         public bool running=false;
         
         public string filename {get; construct;}
