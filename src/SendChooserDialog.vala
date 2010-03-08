@@ -23,7 +23,7 @@ public class moserial.SendChooserDialog : GLib.Object
         public Builder builder {get; construct;}
         private FileChooserDialog dialog;
         public ComboBox protocolCombo;
-        signal void startTransfer();
+        public signal void startTransfer();
         public string filename;
         public SendChooserDialog(Builder builder) {
                 this.builder=builder;
