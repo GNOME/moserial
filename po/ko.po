@@ -1,0 +1,611 @@
+# Korean translation for moserial.
+# Copyright (C) 2009 moserial's COPYRIGHT HOLDER
+# This file is distributed under the same license as the moserial package.
+# Homin Lee (Suapapa) <ff4500@gmail.com>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: moserial master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=moserial&component=general\n"
+"POT-Creation-Date: 2009-10-29 20:18+0900\n"
+"PO-Revision-Date: 2009-11-02 19:31+0900\n"
+"Last-Translator: Homin Lee <ff4500@gmail.com>\n"
+"Language-Team: Korean <gnome-kr-translation@lists.sourceforge.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data/glade/moserial.glade.h:1
+msgid ""
+"/dev/ttyS0\n"
+"/dev/ttyS1\n"
+"/dev/ttyS2\n"
+"/dev/ttyS3\n"
+"/dev/ttyUSB0\n"
+"/dev/ttyUSB1\n"
+"/dev/ttyUSB2\n"
+"/dev/ttyUSB3"
+msgstr ""
+"/dev/ttyS0\n"
+"/dev/ttyS1\n"
+"/dev/ttyS2\n"
+"/dev/ttyS3\n"
+"/dev/ttyUSB0\n"
+"/dev/ttyUSB1\n"
+"/dev/ttyUSB2\n"
+"/dev/ttyUSB3"
+
+#: ../data/glade/moserial.glade.h:9
+msgid ""
+"1\n"
+"2"
+msgstr ""
+"1\n"
+"2"
+
+#: ../data/glade/moserial.glade.h:11
+msgid ""
+"300\n"
+"600\n"
+"1200\n"
+"2400\n"
+"4800\n"
+"9600\n"
+"19200\n"
+"38400\n"
+"57600\n"
+"115200\n"
+"230400\n"
+"460800\n"
+"576000\n"
+"927600"
+msgstr ""
+"300\n"
+"600\n"
+"1200\n"
+"2400\n"
+"4800\n"
+"9600\n"
+"19200\n"
+"38400\n"
+"57600\n"
+"115200\n"
+"230400\n"
+"460800\n"
+"576000\n"
+"927600"
+
+#: ../data/glade/moserial.glade.h:25
+msgid ""
+"5\n"
+"6\n"
+"7\n"
+"8"
+msgstr ""
+"5\n"
+"6\n"
+"7\n"
+"8"
+
+#: ../data/glade/moserial.glade.h:29
+msgid "<b>Font</b>"
+msgstr "<b>Font</b>"
+
+#: ../data/glade/moserial.glade.h:30
+msgid "<b>Port Settings</b>"
+msgstr "<b>포트 설정</b>"
+
+#: ../data/glade/moserial.glade.h:31
+msgid "<b>Recording</b>"
+msgstr "<b>갈무리 중</b>"
+
+#: ../data/glade/moserial.glade.h:32
+msgid "<i>Outgoing</i>"
+msgstr "<i>발신</i>"
+
+#: ../data/glade/moserial.glade.h:33
+msgid ""
+"ASCII\n"
+"HEX"
+msgstr ""
+"ASCII\n"
+"HEX"
+
+#: ../data/glade/moserial.glade.h:35
+msgid "Access Mode"
+msgstr "엑세스 모드"
+
+#: ../data/glade/moserial.glade.h:36
+msgid "Also known as RTS/CTS handshaking"
+msgstr "RTS/CTS 흐름제어"
+
+#: ../data/glade/moserial.glade.h:37
+msgid "Also known as XON/XOFF handshaking"
+msgstr "XON/XOFF 흐름제어"
+
+#: ../data/glade/moserial.glade.h:38
+msgid "Background Color"
+msgstr "배경색"
+
+#: ../data/glade/moserial.glade.h:39
+msgid "Baud Rate"
+msgstr "보레이트"
+
+#: ../data/glade/moserial.glade.h:40
+msgid ""
+"CR+LF end\n"
+"CR end\n"
+"LF end\n"
+"TAB end\n"
+"ESC end\n"
+"No end"
+msgstr ""
+"CR+LF 붙임\n"
+"CR 붙임\n"
+"LF 붙임\n"
+"TAB 붙임\n"
+"ESC 붙임\n"
+"붙임 없음"
+
+#: ../data/glade/moserial.glade.h:46
+msgid "Click this to transmit the data entered in the Outgoing text box. Clicking \"enter\" in that box will do the same thing."
+msgstr "이 버튼을 클릭하여 발신 텍스트박스안의 내용을 전송합니다. 텍스트박스에서 \"엔터\"키를 입력하는 것도 같은 동작을 수행 합니다."
+
+#: ../data/glade/moserial.glade.h:47
+msgid "Connect"
+msgstr "접속"
+
+#: ../data/glade/moserial.glade.h:48
+msgid "Data Bits"
+msgstr "데이터 비트"
+
+#: ../data/glade/moserial.glade.h:49
+msgid "Device"
+msgstr "장치"
+
+#: ../data/glade/moserial.glade.h:50
+msgid "Disconnect"
+msgstr "접속 해제"
+
+#: ../data/glade/moserial.glade.h:51
+msgid "Display Font"
+msgstr "표시 글꼴"
+
+#: ../data/glade/moserial.glade.h:52
+msgid "Echo received data"
+msgstr "받은 데이터 에코"
+
+#: ../data/glade/moserial.glade.h:53
+msgid "Enable timeout after"
+msgstr "다음 시간이 지난 후에 자동 멈춤"
+
+#: ../data/glade/moserial.glade.h:54
+msgid "Enter the data that you wish to transmit here. Press Enter or Send when you are ready to send it."
+msgstr "전송하고자 하는 데이터를 이곳에 입력하세요. 엔터키를 누르거나 보내기 버튼을 누르면 전송합니다."
+
+#: ../data/glade/moserial.glade.h:55
+msgid "Error Correction Protocol"
+msgstr "오류 수정 프로토콜"
+
+#: ../data/glade/moserial.glade.h:56
+msgid "Filename required for XMODEM"
+msgstr "XMODEM을 위한 파일 이름이 필요"
+
+#: ../data/glade/moserial.glade.h:57
+msgid "Font Colour"
+msgstr "글꼴색"
+
+#: ../data/glade/moserial.glade.h:58
+msgid "Handshake"
+msgstr "흐름제어"
+
+#: ../data/glade/moserial.glade.h:59
+msgid "Hardware"
+msgstr "하드웨어"
+
+#: ../data/glade/moserial.glade.h:60
+msgid "Help"
+msgstr "도움말"
+
+#: ../data/glade/moserial.glade.h:61
+msgid "Highlight Color"
+msgstr "강조색"
+
+#: ../data/glade/moserial.glade.h:62
+msgid "If this option is enabled, a recorded file will be opened immediately after it is saved, using the default application for the file type. The default application is defined by the desktop environment."
+msgstr "이 옵션을 사용하면, 갈무리된 직후에 파일 종류에 따른 기본 프로그램으로 갈무리 파일이 열립니다. 기본 어플리케이션은 데스크탑 환경에서 지정합니다."
+
+#: ../data/glade/moserial.glade.h:63
+msgid "If this option is enabled, recording will be automatically stopped after an adjustable period of inactivity after receiving some data. That is, moserial will wait indefinitely to record the first data byte before activating the inactivity timer."
+msgstr "이 옵션을 사용하면, 데이타를 받기 시작 후로 지정한 시간이 지난 뒤 갈무리가 자동으로 정지됩니다. 다시말해 첫번째 데이터를 받기 전까지 moserial은 계속 기다리게 됩니다."
+
+#: ../data/glade/moserial.glade.h:64
+msgid ""
+"Incoming\n"
+"Outgoing\n"
+"Incoming and Outgoing"
+msgstr ""
+"수신\n"
+"발신\n"
+"수/발신"
+
+#: ../data/glade/moserial.glade.h:67
+msgid "Local Echo"
+msgstr "로컬 에코"
+
+#: ../data/glade/moserial.glade.h:68
+msgid ""
+"None\n"
+"Odd\n"
+"Even\n"
+"Mark\n"
+"Space"
+msgstr ""
+"None\n"
+"Odd\n"
+"Even\n"
+"Mark\n"
+"Space"
+
+#: ../data/glade/moserial.glade.h:73
+msgid "Normally disabled"
+msgstr "보통 비활성화"
+
+#: ../data/glade/moserial.glade.h:74
+msgid "Open _Recent"
+msgstr "최근 설정 열기(_R)"
+
+#: ../data/glade/moserial.glade.h:75
+msgid "Parity"
+msgstr "패리티"
+
+#: ../data/glade/moserial.glade.h:76
+msgid "Port Setup"
+msgstr "포트 설정"
+
+#: ../data/glade/moserial.glade.h:77
+msgid "Preferences"
+msgstr "기본 설정"
+
+#: ../data/glade/moserial.glade.h:78
+msgid ""
+"Read and Write\n"
+"Read Only\n"
+"Write Only"
+msgstr ""
+"읽고 쓰기\n"
+"읽기만\n"
+"쓰기만"
+
+#: ../data/glade/moserial.glade.h:81
+msgid "Receive File"
+msgstr "파일 수신"
+
+#: ../data/glade/moserial.glade.h:82
+msgid "Receive File Progress"
+msgstr "파일 수신중 입니다."
+
+#: ../data/glade/moserial.glade.h:83
+msgid "Received ASCII"
+msgstr "받은 ASCII"
+
+#: ../data/glade/moserial.glade.h:84
+msgid "Received HEX"
+msgstr "받은 HEX"
+
+#: ../data/glade/moserial.glade.h:85
+msgid "Record"
+msgstr "갈무리"
+
+#: ../data/glade/moserial.glade.h:86
+msgid "Record Incoming and/or Outgoing Data"
+msgstr "수/발신 데이터 갈무리"
+
+#: ../data/glade/moserial.glade.h:87
+msgid "Save Settings _As"
+msgstr "설정을 다른 이름으로 저장(_A)"
+
+#: ../data/glade/moserial.glade.h:88
+msgid "Select File to Send"
+msgstr "전송할 파일 선택"
+
+#: ../data/glade/moserial.glade.h:89
+msgid "Select Folder for Received Files"
+msgstr "수신한 파일을 위한 폴더 선택"
+
+#: ../data/glade/moserial.glade.h:90
+msgid "Select the error correction protocol to use."
+msgstr "오류 수정용 프로토콜 선택하세요."
+
+#: ../data/glade/moserial.glade.h:91
+msgid "Select the error correction protocol to use. If you wish to receive a straight binary file without using error correction protocols, use the Record button instead."
+msgstr "오류 수정 프로토콜을 선택하세요. 에러 수정 프로토콜 없이 바이너리를 받고 싶으면 이 기능 대신 갈무리 기능을 사용하세요."
+
+#: ../data/glade/moserial.glade.h:92
+msgid "Send"
+msgstr "보내기"
+
+#: ../data/glade/moserial.glade.h:93
+msgid "Send File"
+msgstr "파일 전송"
+
+#: ../data/glade/moserial.glade.h:94
+msgid "Send File Progress"
+msgstr "파일 전송중 입니다"
+
+#: ../data/glade/moserial.glade.h:95
+msgid "Sent ASCII"
+msgstr "보낸 ASCII"
+
+#: ../data/glade/moserial.glade.h:96
+msgid "Sent HEX"
+msgstr "보낸 HEX"
+
+#: ../data/glade/moserial.glade.h:97
+msgid "Software"
+msgstr "소프트웨어"
+
+#: ../data/glade/moserial.glade.h:98
+msgid "Stop Bits"
+msgstr "스톱비트"
+
+#: ../data/glade/moserial.glade.h:99
+msgid "Stop Recording"
+msgstr "갈무리 중지"
+
+#: ../data/glade/moserial.glade.h:100
+msgid "Stream to record"
+msgstr "갈무리 할 스트림"
+
+#: ../data/glade/moserial.glade.h:101
+msgid "This determines whether the data entered in the Outgoing text box should be interpreted as normal ASCII text, or as hexadecimal codes. If this is set to HEX, the entered data should consist of only 0-9 and A-F characters."
+msgstr "전송 텍스트박스안에 입력되는 데이터가 보통의 ASCII 텍스트인지 HEX 코드인지를 선택합니다. HEX로 설정된경우 0-9, A-F 범위의 글자들만 사용할 수 있습니다."
+
+#: ../data/glade/moserial.glade.h:102
+msgid "This selects the termination sequence that is appended to the Outgoing data in the ASCII mode when you click Send."
+msgstr "데이터를 ASCII 모드로 전송할 때 뒤에 붙일 터미네이션 시퀀스를 선택하세요."
+
+#: ../data/glade/moserial.glade.h:103
+msgid "Use this to configure your serial port parameters."
+msgstr "시리얼 포트 파라미터들을 설정합니다."
+
+#: ../data/glade/moserial.glade.h:104
+msgid "Use this to receive a file from a remote computer, using an error correction protocol. For straight binary dumps without error correction, use Record instead."
+msgstr "리모트 컴퓨터로부터 파일을 수신하며, 오류 수정 프로토콜을 사용합니다. 오류 수정 없이 덤프하려면 이 기능 대신 갈무리를 사용하세요."
+
+#: ../data/glade/moserial.glade.h:105
+msgid "Use this to record (or \"log\") your communications to a file. You can log the received data, the sent data, or both. This can also be used to receive files sent by a remote device without the use of error correction protocols (a straight binary dump)."
+msgstr "갈무리(또는 로깅)로 주고 받은 내용을 파일에 담습니다. 받은 데이터나 보낸 데이터, 혹은 양쪽 모두를 저장할 수 있습니다. 또한, 원격장치가 보낸 파일을 받을때 오류 수정 프로토콜을 거치치 않은 내용을 저장(a straight binary dump)하는 데도 쓰입니다."
+
+#: ../data/glade/moserial.glade.h:106
+msgid "Use this to send a file to a remote computer, with or without error correction protocols."
+msgstr "파일을 리모트 컴퓨터로 발신 합니다. 오류 수정 프로토콜을 선택할 수 있습니다."
+
+#: ../data/glade/moserial.glade.h:107
+msgid "Use this to set font sizes and other related settings."
+msgstr "글꼴 크기 등의 설정을 합니다."
+
+#: ../data/glade/moserial.glade.h:108
+msgid ""
+"Xmodem\n"
+"Ymodem\n"
+"Zmodem"
+msgstr ""
+"Xmodem\n"
+"Ymodem\n"
+"Zmodem"
+
+#: ../data/glade/moserial.glade.h:111
+msgid ""
+"Xmodem\n"
+"Ymodem\n"
+"Zmodem\n"
+"None (straight binary)"
+msgstr ""
+"Xmodem\n"
+"Ymodem\n"
+"Zmodem\n"
+"None (straight binary)"
+
+#: ../data/glade/moserial.glade.h:115
+msgid "You must connect to your port before you can send or receive data. Disconnecting and reconnecting will clear the textboxes and reset the TX / RX counters."
+msgstr "데이터를 수/발신 하려면, 먼저, 포트에 접속해야 합니다. 접속해제 후 재 접속시 텍스트박스의 내용과 TX / RX 카운터가 초기화 됩니다."
+
+#: ../data/glade/moserial.glade.h:116
+msgid "_Contents"
+msgstr "차례(_C)"
+
+#: ../data/glade/moserial.glade.h:117
+msgid "_Edit"
+msgstr "편집(_E)"
+
+#: ../data/glade/moserial.glade.h:118
+msgid "_File"
+msgstr "파일(_F)"
+
+#: ../data/glade/moserial.glade.h:119
+msgid "_Help"
+msgstr "도움말(_H)"
+
+#: ../data/glade/moserial.glade.h:120
+msgid "_Launch recorded files"
+msgstr "갈무리 파일을 실행(_L)"
+
+#: ../data/glade/moserial.glade.h:121
+msgid "_Open Settings"
+msgstr "설정 불러오기(_O)"
+
+#: ../data/glade/moserial.glade.h:122
+msgid "_Save Settings"
+msgstr "설정 저장(_S)"
+
+#: ../data/glade/moserial.glade.h:123
+msgid "_Use the system fixed width font"
+msgstr "시스템 고정폭글꼴 사용(_U)"
+
+#: ../data/glade/moserial.glade.h:124
+msgid "moserial"
+msgstr "moserial"
+
+#: ../data/glade/moserial.glade.h:125
+msgid "seconds"
+msgstr "초"
+
+#: ../data/moserial.desktop.in.h:1
+msgid "A serial terminal optimized for logging and file capture"
+msgstr "데이터로깅와 파일캡쳐에 특화된 시리얼 터미널"
+
+#: ../data/moserial.desktop.in.h:2
+msgid "Serial Terminal"
+msgstr "시리얼 터미널"
+
+#: ../data/moserial.desktop.in.h:3
+msgid "moserial Terminal"
+msgstr "moserial Terminal"
+
+#: ../src/MainWindow.vala:11
+msgid "translator-credits"
+msgstr "HominLee (Suapapa)  <ff4500@gmail.com>, 2009."
+
+#: ../src/MainWindow.vala:13
+msgid "moserial is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.\n"
+msgstr "moserial is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.\n"
+
+#: ../src/MainWindow.vala:14
+msgid "moserial is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.\n"
+msgstr "moserial is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.\n"
+
+#: ../src/MainWindow.vala:15
+msgid "You should have received a copy of the GNU General Public License along with this program.  If not, see <http://www.gnu.org/licenses/>."
+msgstr "You should have received a copy of the GNU General Public License along with this program.  If not, see <http://www.gnu.org/licenses/>."
+
+#: ../src/MainWindow.vala:147
+msgid "TX: 0, RX: 0"
+msgstr "TX: 0, RX: 0"
+
+#: ../src/MainWindow.vala:513
+#: ../src/Profile.vala:57
+#: ../src/Profile.vala:88
+#, c-format
+msgid "Error: Could not open file"
+msgstr "오류: 파일을 열 수 없습니다"
+
+#: ../src/MainWindow.vala:586
+#, c-format
+msgid "Error: Could not open device"
+msgstr "오류: 장치를 열 수 없습니다"
+
+#: ../src/MainWindow.vala:708
+#, c-format
+msgid "Unable to display help file: %s"
+msgstr "도움말 표시 불가: %s"
+
+#: ../src/MainWindow.vala:720
+msgid "A serial terminal for the GNOME desktop, optimized for logging and file capture."
+msgstr "그놈 데스크탑을 위한, 로깅과 파일 캡쳐에 최적화된, 시리얼 터미널."
+
+#: ../src/MainWindow.vala:734
+#, c-format
+msgid "Can't display a clickable URL: %s"
+msgstr "클릭할 수 있는 URL은 표시할 수 없습니다: %s"
+
+#: ../src/MainWindow.vala:781
+msgid "You have changed your setting or preferences. Do you want to save these changes to the loaded profile?"
+msgstr "설정들이 변경되었습니다. 불러들였던 프로파일에 변경 내용을 저장할까요?"
+
+#. TRANSLATORS: first letter of "None", a serial port parity setting
+#: ../src/Settings.vala:49
+msgid "N"
+msgstr "N"
+
+#. TRANSLATORS: first letter of "Odd", a serial port parity setting
+#: ../src/Settings.vala:53
+msgid "O"
+msgstr "O"
+
+#. TRANSLATORS: first letter of "Even", a serial port parity setting
+#: ../src/Settings.vala:57
+msgid "E"
+msgstr "E"
+
+#. TRANSLATORS: first letter of "Mark", a serial port parity setting
+#: ../src/Settings.vala:61
+msgid "M"
+msgstr "M"
+
+#. TRANSLATORS: first letter of "Space", a serial port parity setting
+#: ../src/Settings.vala:65
+msgid "S"
+msgstr "S"
+
+#: ../src/Settings.vala:75
+msgid "OPEN"
+msgstr "열림"
+
+#: ../src/Settings.vala:76
+msgid "CLOSED"
+msgstr "끊김"
+
+#: ../src/Main.vala:7
+msgid "Profile file to load"
+msgstr "불러올 프로파일 파일"
+
+#: ../src/Main.vala:17
+#, c-format
+msgid ""
+"Failed to load UI\n"
+"%s"
+msgstr ""
+"UI 불러오기 실패\n"
+"%s"
+
+#: ../src/Main.vala:33
+msgid "- moserial serial terminal"
+msgstr "- moserial 시리얼 터미널"
+
+#: ../src/Main.vala:38
+#: ../src/Main.vala:46
+#, c-format
+msgid "Run '%s --help' to see a full list of available command line options.\n"
+msgstr "명령행 옵션의 전체 목록을 보려면 '%s --help'를 실행하십시오.\n"
+
+#: ../src/Preferences.vala:47
+#, c-format
+msgid "Unable to retrieve gconf key: %s"
+msgstr "gconf 키를 가져올 수 없습니다: %s"
+
+#: ../src/SendProgressDialog.vala:24
+msgid "Waiting for remote host"
+msgstr "원격 호스트를 기다리는 중"
+
+#: ../src/SerialConnection.vala:282
+#, c-format
+msgid "TX: %lu, RX: %lu (%lu unprintable)"
+msgstr "TX: %lu, RX: %lu (%lu 출력불가)"
+
+#: ../src/SerialConnection.vala:284
+#, c-format
+msgid "TX: %lu, RX: %lu"
+msgstr "TX: %lu, RX: %lu"
+
+#: ../src/SerialStreamRecorder.vala:33
+#: ../src/SerialStreamRecorder.vala:54
+#, c-format
+msgid "error: %s\n"
+msgstr "오류: %s\n"
+
+#: ../src/SerialStreamRecorder.vala:63
+#, c-format
+msgid "Unable to launch %s: %s"
+msgstr "%s을(를) 실행할 수 없음: %s"
+
+#: ../src/Szwrapper.vala:154
+msgid "canceled"
+msgstr "취소하였습니다"
+
+#: ../src/InputParser.vala:26
+#: ../src/InputParser.vala:33
+#: ../src/InputParser.vala:39
+msgid "Invalid Input"
+msgstr "잘못된 입력"
+
