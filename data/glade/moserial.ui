@@ -406,7 +406,7 @@
             <property name="border_width">4</property>
             <property name="visible">True</property>
             <property name="orientation">GTK_ORIENTATION_HORIZONTAL</property>
-            <property name="toolbar_style">GTK_TOOLBAR_BOTH_HORIZ</property>
+            <property name="toolbar_style">GTK_TOOLBAR_BOTH</property>
             <property name="tooltips">True</property>
             <property name="show_arrow">True</property>
             <child>
@@ -418,7 +418,7 @@
                 <property name="stock_id">gtk-connect</property>
                 <property name="visible_horizontal">True</property>
                 <property name="visible_vertical">True</property>
-                <property name="is_important">False</property>
+                <property name="is_important">True</property>
                 <property name="active">False</property>
               </object>
               <packing>
@@ -447,7 +447,7 @@
                 <property name="stock_id">gtk-media-record</property>
                 <property name="visible_horizontal">True</property>
                 <property name="visible_vertical">True</property>
-                <property name="is_important">False</property>
+                <property name="is_important">True</property>
                 <property name="active">False</property>
               </object>
               <packing>
@@ -464,7 +464,7 @@
                 <property name="stock_id">gtk-go-up</property>
                 <property name="visible_horizontal">True</property>
                 <property name="visible_vertical">True</property>
-                <property name="is_important">False</property>
+                <property name="is_important">True</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -480,7 +480,7 @@
                 <property name="stock_id">gtk-save-as</property>
                 <property name="visible_horizontal">True</property>
                 <property name="visible_vertical">True</property>
-                <property name="is_important">False</property>
+                <property name="is_important">True</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -508,7 +508,7 @@
                 <property name="stock_id">gtk-properties</property>
                 <property name="visible_horizontal">True</property>
                 <property name="visible_vertical">True</property>
-                <property name="is_important">False</property>
+                <property name="is_important">True</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -524,7 +524,7 @@
                 <property name="stock_id">gtk-preferences</property>
                 <property name="visible_horizontal">True</property>
                 <property name="visible_vertical">True</property>
-                <property name="is_important">False</property>
+                <property name="is_important">True</property>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -552,7 +552,7 @@
                 <property name="stock_id">gtk-help</property>
                 <property name="visible_horizontal">True</property>
                 <property name="visible_vertical">True</property>
-                <property name="is_important">False</property>
+                <property name="is_important">True</property>
               </object>
               <packing>
                 <property name="expand">False</property>

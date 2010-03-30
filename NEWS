@@ -1,3 +1,13 @@
+Version 2.30.0
+--------------
+	* Fixed glade file so icons + text labels appear in toolbar
+	* Updated translations:
+	- Chinese (zh_CN)
+	- Korean (ko)
+	- Norwegian Bokmål (nb)
+	- Galician (gl)
+	- French (fr)
+
 Version 2.29.0
 --------------
 	* Shortened some tooltips (bug 609067)
