@@ -1,4 +1,4 @@
-# Slovenian translation of moserial.
+# Slovenian translations for moserial.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the moserial package.
 #
@@ -6,11 +6,11 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: moserial\n"
+"Project-Id-Version: moserial master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=moserial&component=general\n"
 "POT-Creation-Date: 2010-02-09 18:36+0000\n"
-"PO-Revision-Date: 2010-02-12 13:40+0100\n"
-"Last-Translator: Andrej Žnidaršič <andrej.znidarsic@gmail.com>\n"
+"PO-Revision-Date: 2010-06-29 08:31+0100\n"
+"Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -122,11 +122,11 @@ msgstr "Način dostopa"
 
 #: ../data/glade/moserial.glade.h:36
 msgid "Also known as RTS/CTS handshaking"
-msgstr "Poznan tudi kot stisk rok RTS/CTS"
+msgstr "Poznano kot izmenjava signalov RTS/CTS"
 
 #: ../data/glade/moserial.glade.h:37
 msgid "Also known as XON/XOFF handshaking"
-msgstr "Poznan tudi kot stisk rok XON/XOFF"
+msgstr "Poznano kot izmenjava signalov XON/XOFF"
 
 #: ../data/glade/moserial.glade.h:38
 msgid "Background Color"
@@ -158,7 +158,7 @@ msgstr "Poveži"
 
 #: ../data/glade/moserial.glade.h:47
 msgid "Data Bits"
-msgstr "Biti podatkov"
+msgstr "Podatkovni biti"
 
 #: ../data/glade/moserial.glade.h:48
 msgid "Device"
@@ -166,7 +166,7 @@ msgstr "Naprava"
 
 #: ../data/glade/moserial.glade.h:49
 msgid "Disconnect"
-msgstr "Prekini"
+msgstr "Prekini povezavo"
 
 #: ../data/glade/moserial.glade.h:50
 msgid "Display Font"
@@ -194,7 +194,7 @@ msgstr "Barva pisave"
 
 #: ../data/glade/moserial.glade.h:56
 msgid "Handshake"
-msgstr "Stisk roke"
+msgstr "Izmenjava signalov"
 
 #: ../data/glade/moserial.glade.h:57
 msgid "Hardware"
@@ -206,11 +206,11 @@ msgstr "Pomoč"
 
 #: ../data/glade/moserial.glade.h:59
 msgid "Highlight Color"
-msgstr "Poudari barvo"
+msgstr "Barva poudarjanja"
 
 #: ../data/glade/moserial.glade.h:60
 msgid "If this option is enabled, a recorded file will be opened immediately after it is saved, using the default application for the file type. The default application is defined by the desktop environment."
-msgstr "Izbrana možnost določi odprtje posnete datoteke s privzetim programom za vrsto datoteke neposredno po shranjevanju. Privzet program določi namizno okolje. "
+msgstr "Izbrana možnost določi odpiranje posnete datoteke s privzetim programom za vrsto datoteke neposredno po shranjevanju. Privzet program določi namizno okolje. "
 
 #: ../data/glade/moserial.glade.h:61
 msgid "If this option is enabled, recording will be automatically stopped after an adjustable period of inactivity after receiving some data. That is, moserial will wait indefinitely to record the first data byte before activating the inactivity timer."
@@ -262,11 +262,11 @@ msgstr "Druge možnosti"
 
 #: ../data/glade/moserial.glade.h:75
 msgid "Parity"
-msgstr "Pariteta"
+msgstr "Parnost"
 
 #: ../data/glade/moserial.glade.h:76
 msgid "Port Setup"
-msgstr "Nastavitev vrat"
+msgstr "Namestitev vrat"
 
 #: ../data/glade/moserial.glade.h:77
 msgid "Port configuration"
@@ -282,7 +282,7 @@ msgid ""
 "Read Only\n"
 "Write Only"
 msgstr ""
-"Beri in piši\n"
+"beri in piši\n"
 "samo beri\n"
 "samo piši"
 
@@ -296,7 +296,7 @@ msgstr "Napredek prejemanja datoteke"
 
 #: ../data/glade/moserial.glade.h:84
 msgid "Receive a file"
-msgstr "Sprejmi datoteko"
+msgstr "Prejemanje datoteke"
 
 #: ../data/glade/moserial.glade.h:85
 msgid "Received ASCII"
@@ -398,7 +398,7 @@ msgstr ""
 "Xmodem\n"
 "Ymodem\n"
 "Zmodem\n"
-"Brez (čista dvojiška datoteka)"
+"Brez (dvojiška datoteka)"
 
 #: ../data/glade/moserial.glade.h:112
 msgid "_Contents"
@@ -442,11 +442,11 @@ msgstr "sekund"
 
 #: ../data/moserial.desktop.in.h:1
 msgid "A serial terminal optimized for logging and file capture"
-msgstr "Serijski terminal optimiziran za beleženje in zajemanje datotek"
+msgstr "Terminal prilagojen za beleženje in zajemanje datotek"
 
 #: ../data/moserial.desktop.in.h:2
 msgid "Serial Terminal"
-msgstr "Serijski terminal"
+msgstr "Terminal"
 
 #: ../data/moserial.desktop.in.h:3
 msgid "moserial Terminal"
@@ -477,12 +477,12 @@ msgstr "TX: 0, RX: 0"
 #: ../src/Profile.vala:107
 #, c-format
 msgid "Error: Could not open file"
-msgstr "Napaka: Ni mogoče odpreti datoteke"
+msgstr "Napaka: ni mogoče odpreti datoteke"
 
 #: ../src/MainWindow.vala:605
 #, c-format
 msgid "Error: Could not open device"
-msgstr "Napaka: Ni mogoče odpreti naprave"
+msgstr "Napaka: ni mogoče odpreti naprave"
 
 #: ../src/MainWindow.vala:727
 #, c-format
@@ -491,12 +491,12 @@ msgstr "Ni mogoče prikazati datoteke pomoči: %s"
 
 #: ../src/MainWindow.vala:739
 msgid "A serial terminal for the GNOME desktop, optimized for logging and file capture."
-msgstr "Serijski terminal za namizje GNOME, optimiziran za beleženje in zajemanje datotek."
+msgstr "Terminal za namizje GNOME, prilagojen za beleženje in zajemanje datotek."
 
 #: ../src/MainWindow.vala:753
 #, c-format
 msgid "Can't display a clickable URL: %s"
-msgstr "Ni mogoče prikazati neposrednega URL-ja: %s"
+msgstr "Ni mogoče prikazati neposrednega naslova URL: %s"
 
 #: ../src/MainWindow.vala:800
 msgid "You have changed your setting or preferences. Do you want to save these changes to the loaded profile?"
@@ -505,27 +505,27 @@ msgstr "Spremenili ste vaše nastavitve ali možnosti. Ali želite shraniti spre
 #. TRANSLATORS: first letter of "None", a serial port parity setting
 #: ../src/Settings.vala:68
 msgid "N"
-msgstr "N"
+msgstr "B"
 
 #. TRANSLATORS: first letter of "Odd", a serial port parity setting
 #: ../src/Settings.vala:72
 msgid "O"
-msgstr "O"
+msgstr "L"
 
 #. TRANSLATORS: first letter of "Even", a serial port parity setting
 #: ../src/Settings.vala:76
 msgid "E"
-msgstr "E"
+msgstr "S"
 
 #. TRANSLATORS: first letter of "Mark", a serial port parity setting
 #: ../src/Settings.vala:80
 msgid "M"
-msgstr "M"
+msgstr "O"
 
 #. TRANSLATORS: first letter of "Space", a serial port parity setting
 #: ../src/Settings.vala:84
 msgid "S"
-msgstr "S"
+msgstr "P"
 
 #: ../src/Settings.vala:94
 msgid "OPEN"
@@ -550,13 +550,13 @@ msgstr ""
 
 #: ../src/Main.vala:52
 msgid "- moserial serial terminal"
-msgstr "- moserial serijski terminal"
+msgstr "- moserial terminal"
 
 #: ../src/Main.vala:57
 #: ../src/Main.vala:65
 #, c-format
 msgid "Run '%s --help' to see a full list of available command line options.\n"
-msgstr "Zagon '%s --help' izpiše popoln seznam dostopnih možnosti ukazne vrstice.\n"
+msgstr "Zagon ukaza '%s --help' izpiše popoln seznam dostopnih možnosti ukazne vrstice.\n"
 
 #: ../src/Preferences.vala:66
 #, c-format
@@ -597,75 +597,3 @@ msgstr "preklicano"
 #: ../src/InputParser.vala:58
 msgid "Invalid Input"
 msgstr "Neveljaven vnos"
-
-#~ msgid ""
-#~ "Click this to transmit the data entered in the Outgoing text box. "
-#~ "Clicking \"enter\" in that box will do the same thing."
-#~ msgstr ""
-#~ "Kliknite to za oddajanje podatkov vnesenih v odhajajoče besedilo polje. "
-#~ "Klik na \"enter\" v tem polju ima enak učinek."
-#~ msgid "Select the error correction protocol to use."
-#~ msgstr "Izbor protokola popravljanja napak za uporabo."
-#~ msgid ""
-#~ "Select the error correction protocol to use. If you wish to receive a "
-#~ "straight binary file without using error correction protocols, use the "
-#~ "Record button instead."
-#~ msgstr ""
-#~ "Izbor protokola popravljanja napak za uporabo. V primeru da želite "
-#~ "prejeti čisto dvojniško datoteko brez protokolov popravljanja napak, "
-#~ "uporabite gumb Posnemi."
-#~ msgid ""
-#~ "This determines whether the data entered in the Outgoing text box should "
-#~ "be interpreted as normal ASCII text, or as hexadecimal codes. If this is "
-#~ "set to HEX, the entered data should consist of only 0-9 and A-F "
-#~ "characters."
-#~ msgstr ""
-#~ "To določi ali naj bodo podatki vneseni v odhodno besedilo polje "
-#~ "interpretirani kot običajno besedilo ASCII ali kot heksadecimalne kode. V "
-#~ "primeru da je to nastavljeno na HEX, morajo vneseni podatki vsebovati le "
-#~ "znake 0-9 in A-F. "
-#~ msgid ""
-#~ "This selects the termination sequence that is appended to the Outgoing "
-#~ "data in the ASCII mode when you click Send."
-#~ msgstr ""
-#~ "To izbere zaporedje zaključka, ki je pripeto odhodnim podatkov v načinu "
-#~ "ASCII ob kliku na Pošlji."
-#~ msgid "Use this to configure your serial port parameters."
-#~ msgstr "Uporabite to za nastavitev parametrov zaporednih vrat."
-#~ msgid ""
-#~ "Use this to receive a file from a remote computer, using an error "
-#~ "correction protocol. For straight binary dumps without error correction, "
-#~ "use Record instead."
-#~ msgstr ""
-#~ "Uporabite to za prejemanje datoteke z oddaljenega računalnika z uporabo "
-#~ "protokola popravljanja napak. Za izpise čistih dvojiških datotek brez "
-#~ "popravljanja napak uporabite snemanje."
-#~ msgid ""
-#~ "Use this to record (or \"log\") your communications to a file. You can "
-#~ "log the received data, the sent data, or both. This can also be used to "
-#~ "receive files sent by a remote device without the use of error correction "
-#~ "protocols (a straight binary dump)."
-#~ msgstr ""
-#~ "Uporabite to za snemanje (ali \"beleženje\") vaših komunikacij v "
-#~ "datoteko. Beležiti je mogoče poslane podatke, prejete podatke, ali oboje. "
-#~ "To je mogoče uporabiti za prejemanje datotek, poslanih z oddaljeno "
-#~ "napravo brez uporabe protokolov popravljanja napak (čist dvojiški izpis)"
-#~ msgid ""
-#~ "Use this to send a file to a remote computer, with or without error "
-#~ "correction protocols."
-#~ msgstr ""
-#~ "Uporabite to za pošiljanje datoteke oddaljenemu računalniku z ali brez "
-#~ "protokolov popravljanja napak."
-#~ msgid "Use this to set font sizes and other related settings."
-#~ msgstr ""
-#~ "Uporabite to za nastavitev velikosti pisave in drugih povezanih "
-#~ "nastavitev."
-#~ msgid ""
-#~ "You must connect to your port before you can send or receive data. "
-#~ "Disconnecting and reconnecting will clear the textboxes and reset the "
-#~ "TX / RX counters."
-#~ msgstr ""
-#~ "Pred pošiljanjem ali sprejemanjem se je potrebno povezati z vrati. "
-#~ "Prekinitev in ponovno povezovanje bo počistilo vsa polja besedila in "
-#~ "ponovno nastavilo TX / RX števca."
-
