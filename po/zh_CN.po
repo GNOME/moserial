@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: moserial master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=moserial&component=general\n"
-"POT-Creation-Date: 2010-02-23 14:24+0000\n"
-"PO-Revision-Date: 2010-03-29 14:32+0800\n"
+"POT-Creation-Date: 2010-06-29 12:58+0000\n"
+"PO-Revision-Date: 2010-08-28 09:10+0800\n"
 "Last-Translator: yjwork <yjwork@189.cn>\n"
 "Language-Team: Chinese (China) <i18n-zh@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -27,12 +27,22 @@ msgid ""
 "/dev/ttyUSB2\n"
 "/dev/ttyUSB3"
 msgstr ""
+"/dev/ttyS0\n"
+"/dev/ttyS1\n"
+"/dev/ttyS2\n"
+"/dev/ttyS3\n"
+"/dev/ttyUSB0\n"
+"/dev/ttyUSB1\n"
+"/dev/ttyUSB2\n"
+"/dev/ttyUSB3"
 
 #: ../data/glade/moserial.glade.h:9
 msgid ""
 "1\n"
 "2"
 msgstr ""
+"1\n"
+"2"
 
 #: ../data/glade/moserial.glade.h:11
 msgid ""
@@ -51,6 +61,20 @@ msgid ""
 "576000\n"
 "927600"
 msgstr ""
+"300\n"
+"600\n"
+"1200\n"
+"2400\n"
+"4800\n"
+"9600\n"
+"19200\n"
+"38400\n"
+"57600\n"
+"115200\n"
+"230400\n"
+"460800\n"
+"576000\n"
+"927600"
 
 #: ../data/glade/moserial.glade.h:25
 msgid ""
@@ -59,6 +83,10 @@ msgid ""
 "7\n"
 "8"
 msgstr ""
+"5\n"
+"6\n"
+"7\n"
+"8"
 
 #: ../data/glade/moserial.glade.h:29
 msgid "<b>Font</b>"
@@ -81,6 +109,8 @@ msgid ""
 "ASCII\n"
 "HEX"
 msgstr ""
+"ASCII\n"
+"HEX"
 
 #: ../data/glade/moserial.glade.h:35
 msgid "Access Mode"
@@ -152,7 +182,7 @@ msgstr "误差校正协议"
 
 #: ../data/glade/moserial.glade.h:54
 msgid "Filename required for XMODEM"
-msgstr ""
+msgstr "XMODEM 要求的文件名"
 
 #: ../data/glade/moserial.glade.h:55
 msgid "Font Colour"
@@ -190,6 +220,9 @@ msgid ""
 "will wait indefinitely to record the first data byte before activating the "
 "inactivity timer."
 msgstr ""
+"如果启用这个选项，接收到数据后一段时间不活动后将自动停止记录，时间是"
+"可以配置的。同时，moserial 在激活不活动计时器之前无限期等待记录第一个数据字"
+"节。"
 
 #: ../data/glade/moserial.glade.h:62
 msgid ""
@@ -197,6 +230,9 @@ msgid ""
 "Outgoing\n"
 "Incoming and Outgoing"
 msgstr ""
+"输入\n"
+"输出\n"
+"输入和输出"
 
 #: ../data/glade/moserial.glade.h:65
 msgid "Local Echo"
@@ -356,6 +392,9 @@ msgid ""
 "Ymodem\n"
 "Zmodem"
 msgstr ""
+"Xmodem\n"
+"Ymodem\n"
+"Zmodem"
 
 #: ../data/glade/moserial.glade.h:108
 msgid ""
@@ -367,7 +406,7 @@ msgstr ""
 "Xmodem\n"
 "Ymodem\n"
 "Zmodem\n"
-"None (标准二进制)"
+"None (straight binary)"
 
 #: ../data/glade/moserial.glade.h:112
 msgid "_Contents"
@@ -403,7 +442,7 @@ msgstr "使用系统的等宽字体(_U)"
 
 #: ../data/glade/moserial.glade.h:120
 msgid "moserial"
-msgstr ""
+msgstr "moserial"
 
 #: ../data/glade/moserial.glade.h:121
 msgid "seconds"
@@ -411,7 +450,7 @@ msgstr "秒"
 
 #: ../data/moserial.desktop.in.h:1
 msgid "A serial terminal optimized for logging and file capture"
-msgstr ""
+msgstr "为登录和文件获取专门优化的串行终端"
 
 #: ../data/moserial.desktop.in.h:2
 msgid "Serial Terminal"
@@ -419,11 +458,13 @@ msgstr "串口终端"
 
 #: ../data/moserial.desktop.in.h:3
 msgid "moserial Terminal"
-msgstr ""
+msgstr "moserial 终端"
 
 #: ../src/MainWindow.vala:30
 msgid "translator-credits"
-msgstr "微尘 <yjwork@189.cn>, 2010"
+msgstr ""
+"微尘 <yjwork@189.cn>, 2010.\n"
+"YunQiang Su <wzssyqa@gmail.com>, 2010."
 
 #: ../src/MainWindow.vala:32
 msgid ""
@@ -432,6 +473,8 @@ msgid ""
 "Software Foundation, either version 3 of the License, or (at your option) "
 "any later version.\n"
 msgstr ""
+"moserial 是自由软件；您可以按照自由软件基金会所发表的 GNU GPL 协议自由发放和/"
+"或修改它；GPL 协议应该采用第三版或以后的任何版本。\n"
 
 #: ../src/MainWindow.vala:33
 msgid ""
@@ -440,12 +483,17 @@ msgid ""
 "FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
 "details.\n"
 msgstr ""
+"moserial 发表的目的是希望它能够对您有用，但我们没有任何保证；对于以任何用途使"
+"用它所造成的任何直接或间接后果都不承担任何责任。请参看GNU GPL 协议中的细"
+"节。\n"
 
 #: ../src/MainWindow.vala:34
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "this program.  If not, see <http://www.gnu.org/licenses/>."
 msgstr ""
+"您应该在收到 Nautilus 的同时收到了 GNU GPL 协议的副本；如果您没有收到的话，请"
+"访问 <http://www.gnu.org/licenses/>。"
 
 #: ../src/MainWindow.vala:166
 msgid "TX: 0, RX: 0"
@@ -531,7 +579,7 @@ msgstr ""
 
 #: ../src/Main.vala:52
 msgid "- moserial serial terminal"
-msgstr ""
+msgstr "- moserial 串行终端"
 
 #: ../src/Main.vala:57 ../src/Main.vala:65
 #, c-format
@@ -541,11 +589,11 @@ msgstr "运行 '%s --help' 可以查看完整的命令选项。\n"
 #: ../src/Preferences.vala:66
 #, c-format
 msgid "Unable to retrieve gconf key: %s"
-msgstr ""
+msgstr "无法检索 gconf 键：%s"
 
 #: ../src/SendProgressDialog.vala:43
 msgid "Waiting for remote host"
-msgstr ""
+msgstr "等待远程主机"
 
 #: ../src/SerialConnection.vala:301
 #, c-format
