@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: moserial master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-02-14 17:02+0100\n"
-"PO-Revision-Date: 2010-01-14 21:38+0000\n"
+"POT-Creation-Date: 2010-09-27 00:49+0200\n"
+"PO-Revision-Date: 2010-09-25 21:38+0000\n"
 "Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
 "Language-Team: Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
 "MIME-Version: 1.0\n"
@@ -274,12 +274,11 @@ msgstr "Åbn _seneste"
 
 #: ../data/glade/moserial.glade.h:73
 msgid "Open/close port"
-msgstr ""
+msgstr "Åbn/luk port"
 
 #: ../data/glade/moserial.glade.h:74
-#, fuzzy
 msgid "Other preferences"
-msgstr "Indstillinger"
+msgstr "Andre indstillinger"
 
 #: ../data/glade/moserial.glade.h:75
 msgid "Parity"
@@ -291,7 +290,7 @@ msgstr "Portopsætning"
 
 #: ../data/glade/moserial.glade.h:77
 msgid "Port configuration"
-msgstr ""
+msgstr "Portkonfiguration"
 
 #: ../data/glade/moserial.glade.h:78
 msgid "Preferences"
@@ -319,12 +318,10 @@ msgstr "Modtagelsesfil"
 msgid "Receive File Progress"
 msgstr "Status på modtagelsesfil"
 
-# Modtagelsesfil eller Modtag fil.
-# fejlrapport.
+# Gætter på imperativ, 'Modtag en..' jf. senere 'Send en fil'
 #: ../data/glade/moserial.glade.h:84
-#, fuzzy
 msgid "Receive a file"
-msgstr "Modtagelsesfil"
+msgstr "Modtag en fil"
 
 #: ../data/glade/moserial.glade.h:85
 msgid "Received ASCII"
@@ -343,9 +340,8 @@ msgid "Record Incoming and/or Outgoing Data"
 msgstr "Optag indgående og/eller udgående data"
 
 #: ../data/glade/moserial.glade.h:89
-#, fuzzy
 msgid "Record sent and/or received data"
-msgstr "Data modtaget med ekko"
+msgstr "Optag sendt og/eller modtagne data"
 
 #: ../data/glade/moserial.glade.h:90
 msgid "Save Settings _As"
@@ -372,13 +368,12 @@ msgid "Send File Progress"
 msgstr "Status for send fil"
 
 #: ../data/glade/moserial.glade.h:96
-#, fuzzy
 msgid "Send a file"
-msgstr "Send fil"
+msgstr "Send en fil"
 
 #: ../data/glade/moserial.glade.h:97
 msgid "Send the outgoing data now."
-msgstr ""
+msgstr "Send de udgående data nu."
 
 #: ../data/glade/moserial.glade.h:98
 msgid "Sent ASCII"
@@ -407,11 +402,8 @@ msgid "Stream to record"
 msgstr "Strøm der skal optages"
 
 #: ../data/glade/moserial.glade.h:104
-#, fuzzy
 msgid "Type outgoing data here. Press Enter or Send to send it."
-msgstr ""
-"Indtast her de data du ønsker at transmittere. Tryk retur eller send når du "
-"er klar."
+msgstr "Indtast udgående data her. Tryk retur eller send for at sende dem."
 
 # "X-modem\n"
 # "Y-modem\n"
@@ -676,83 +668,3 @@ msgstr "afbrudt"
 #: ../src/InputParser.vala:58
 msgid "Invalid Input"
 msgstr "Ugyldige inddata"
-
-#~ msgid ""
-#~ "Click this to transmit the data entered in the Outgoing text box. "
-#~ "Clicking \"enter\" in that box will do the same thing."
-#~ msgstr ""
-#~ "Klik her for at transmittere de indtastede data i den udgående tekstboks. "
-#~ "Et klik på »retur« i boksen vil have samme effekt."
-
-#~ msgid "Select the error correction protocol to use."
-#~ msgstr "Vælg den fejlkorrektionsprotokol der skal bruges."
-
-#~ msgid ""
-#~ "Select the error correction protocol to use. If you wish to receive a "
-#~ "straight binary file without using error correction protocols, use the "
-#~ "Record button instead."
-#~ msgstr ""
-#~ "Vælg den fejlkorrektionsprotokol der skal bruges. Hvis du ønsker at "
-#~ "modtage en binær fil uden brug af fejlkorrektionsprotokol, så brug "
-#~ "optageknappen i steden for."
-
-#~ msgid ""
-#~ "This determines whether the data entered in the Outgoing text box should "
-#~ "be interpreted as normal ASCII text, or as hexadecimal codes. If this is "
-#~ "set to HEX, the entered data should consist of only 0-9 and A-F "
-#~ "characters."
-#~ msgstr ""
-#~ "Dette afgør hvorvidt de indtastede data i den udgående tekstboks bør "
-#~ "opfasses som normal ASCII-tekst, eller som hexadecimale koder. Hvis "
-#~ "angivet som HEX, bør de indtastede data kun bestå af tallene 0-9 og "
-#~ "bogstaverne A-F."
-
-#~ msgid ""
-#~ "This selects the termination sequence that is appended to the Outgoing "
-#~ "data in the ASCII mode when you click Send."
-#~ msgstr ""
-#~ "Dette vælger afslutningssekvensen som tilføjes de udgående data i ASCII-"
-#~ "tilstanden når du trykker på send."
-
-#~ msgid "Use this to configure your serial port parameters."
-#~ msgstr "Brug denne til at konfigurere parametren for din serielport."
-
-#~ msgid ""
-#~ "Use this to receive a file from a remote computer, using an error "
-#~ "correction protocol. For straight binary dumps without error correction, "
-#~ "use Record instead."
-#~ msgstr ""
-#~ "Brug denne for at modtage en fil fra en ekstern computer, med brug af en "
-#~ "fejlkorrektionsprotokol. For binære skrivninger uden fejlkorrektion, "
-#~ "bruges optag."
-
-#~ msgid ""
-#~ "Use this to record (or \"log\") your communications to a file. You can "
-#~ "log the received data, the sent data, or both. This can also be used to "
-#~ "receive files sent by a remote device without the use of error correction "
-#~ "protocols (a straight binary dump)."
-#~ msgstr ""
-#~ "Brug denne til at optage (eller \"logge\") din kommunkation til en fil. "
-#~ "Du kan logge de modtagne data, de sendte data, eller begge. Dette kan "
-#~ "også bruges til at modtage filer sendt fra en ekstern enhed uden brug af "
-#~ "fejlkorrektionsprotokoller (en binær skrivning)."
-
-#~ msgid ""
-#~ "Use this to send a file to a remote computer, with or without error "
-#~ "correction protocols."
-#~ msgstr ""
-#~ "Brug denne til at sende en fil til en ekstern computer, med eller uden "
-#~ "fejlkorrektionsprotokol."
-
-#~ msgid "Use this to set font sizes and other related settings."
-#~ msgstr ""
-#~ "Brug denne til at angive skrifttypestørrelser og anden relevant opsætning."
-
-#~ msgid ""
-#~ "You must connect to your port before you can send or receive data. "
-#~ "Disconnecting and reconnecting will clear the textboxes and reset the "
-#~ "TX / RX counters."
-#~ msgstr ""
-#~ "Du skal forbinde til din port, før du kan sende eller modtage data. "
-#~ "Afbrydelse og gendannelse af forbindelse vil rydde tekstbokse og "
-#~ "nulstille TX/RX-tællerne."
