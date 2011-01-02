@@ -3,13 +3,14 @@
 # This file is distributed under the same license as the moserial package.
 # Joe Hansen <joedalton2@yahoo.dk>, 2009, 2010.
 # Korrekturlæsning Kenneth Nielsen, 2010.
+# Korrekturlæsning Nicky Thomassen, 2010.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: moserial master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-09-27 00:49+0200\n"
-"PO-Revision-Date: 2010-09-25 21:38+0000\n"
+"POT-Creation-Date: 2011-01-02 11:53+0100\n"
+"PO-Revision-Date: 2010-12-31 21:38+0000\n"
 "Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
 "Language-Team: Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
 "MIME-Version: 1.0\n"
@@ -133,6 +134,7 @@ msgstr "Baggrundsfarve"
 msgid "Baud Rate"
 msgstr "Baudrate"
 
+# måske No end -> Ingen end
 #: ../data/glade/moserial.glade.h:40
 msgid ""
 "CR+LF end\n"
@@ -147,7 +149,7 @@ msgstr ""
 "LF end\n"
 "TAB end\n"
 "ESC end\n"
-"Ingen end"
+"No end"
 
 #: ../data/glade/moserial.glade.h:46
 msgid "Connect"
@@ -169,6 +171,7 @@ msgstr "Afbryd"
 msgid "Display Font"
 msgstr "Tekstskrifttype"
 
+# Måske Ekko-modtaget data
 #: ../data/glade/moserial.glade.h:51
 msgid "Echo received data"
 msgstr "Data modtaget med ekko"
@@ -201,6 +204,7 @@ msgstr "Hardware"
 msgid "Help"
 msgstr "Hjælp"
 
+# måske fremhæv farve
 #: ../data/glade/moserial.glade.h:59
 msgid "Highlight Color"
 msgstr "Fremhævningsfarve"
@@ -622,7 +626,7 @@ msgstr ""
 
 #: ../src/Main.vala:52
 msgid "- moserial serial terminal"
-msgstr "- moserials serielterminal"
+msgstr "- moserials serielle terminal"
 
 #: ../src/Main.vala:57 ../src/Main.vala:65
 #, c-format
