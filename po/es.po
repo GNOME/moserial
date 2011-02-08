@@ -2,14 +2,16 @@
 # Copyright (C) 2009 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Jorge González <jorgegonz@svn.gnome.org>, 2009, 2010.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: moserial.HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=moserial&component=general\n"
-"POT-Creation-Date: 2010-02-05 14:21+0000\n"
-"PO-Revision-Date: 2010-02-15 11:39+0100\n"
-"Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
+"POT-Creation-Date: 2010-02-15 10:41+0000\n"
+"PO-Revision-Date: 2011-02-08 15:42+0100\n"
+"Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -268,7 +270,6 @@ msgid "Open/close port"
 msgstr "Abrir/cerrar puerto"
 
 #: ../data/glade/moserial.glade.h:74
-#| msgid "Preferences"
 msgid "Other preferences"
 msgstr "Otras preferencias"
 
@@ -307,7 +308,6 @@ msgid "Receive File Progress"
 msgstr "Recibir progreso de archivo"
 
 #: ../data/glade/moserial.glade.h:84
-#| msgid "Receive File"
 msgid "Receive a file"
 msgstr "Recibir un archivo"
 
@@ -328,7 +328,6 @@ msgid "Record Incoming and/or Outgoing Data"
 msgstr "Grabar datos de entrada y/o salida"
 
 #: ../data/glade/moserial.glade.h:89
-#| msgid "Echo received data"
 msgid "Record sent and/or received data"
 msgstr "Grabar datos enviados y/o receibidos"
 
@@ -357,7 +356,6 @@ msgid "Send File Progress"
 msgstr "Enviar progreso de archivo"
 
 #: ../data/glade/moserial.glade.h:96
-#| msgid "Send File"
 msgid "Send a file"
 msgstr "Enviar un archivo"
 
@@ -367,11 +365,11 @@ msgstr "Enviar los datos salientes ahora."
 
 #: ../data/glade/moserial.glade.h:98
 msgid "Sent ASCII"
-msgstr "Enviar ASCII"
+msgstr "ASCII enviado"
 
 #: ../data/glade/moserial.glade.h:99
 msgid "Sent HEX"
-msgstr "Enviar HEX"
+msgstr "HEX enviado"
 
 #: ../data/glade/moserial.glade.h:100
 msgid "Software"
@@ -390,9 +388,6 @@ msgid "Stream to record"
 msgstr "Flujo para grabar"
 
 #: ../data/glade/moserial.glade.h:104
-#| msgid ""
-#| "Enter the data that you wish to transmit here. Press Enter or Send when "
-#| "you are ready to send it."
 msgid "Type outgoing data here. Press Enter or Send to send it."
 msgstr ""
 "Introducir aquí los datos que quiere transmitir. Pulse Intro o Enviar cuando "
