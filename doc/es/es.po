@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: moserial.help.master\n"
-"POT-Creation-Date: 2009-06-07 21:30+0000\n"
-"PO-Revision-Date: 2011-02-08 16:04+0100\n"
+"POT-Creation-Date: 2011-02-08 20:04+0000\n"
+"PO-Revision-Date: 2011-02-09 12:26+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -198,6 +198,11 @@ msgid ""
 "application> is primarily intended for technical users who need to "
 "communicate with embedded systems, consoles, and electronic test equipment."
 msgstr ""
+"<application>moserial</application> es una terminal serie para el escritorio "
+"GNOME, optimizada el registro y la captura de archivos. "
+"<application>moserial</application> está pensado principalmente para "
+"usuarios técnicos que necesitan comunicarse con sistemas empotrados, "
+"consolas y equipos electrónicos de pruebas."
 
 #: C/moserial.xml:95(para)
 msgid ""
@@ -207,6 +212,11 @@ msgid ""
 "minimizing the number of clicks needed. The number of configuration options "
 "has also been kept small."
 msgstr ""
+"A pesar de la orientación técnica de su público, <application>moserial</"
+"application> está diseñado para ser amigable. Se ha tenido cuidado de "
+"asegurar que las operaciones son sencillas de ejecutar, minimizando el "
+"número de pulsaciones necesarias. También se ha mantenido un número pequeño "
+"de opciones de configuración."
 
 #: C/moserial.xml:102(para)
 msgid ""
@@ -294,6 +304,13 @@ msgid ""
 "specified in this dialog will override any system default settings for the "
 "port."
 msgstr ""
+"El primer paso para usar <application>moserial</application> es configurar "
+"los parámetros del puerto serie. Pulse <guibutton>Configuración del puerto</"
+"guibutton> para hacerlo. En el diálogo de configuración del puerto que usar, "
+"indique si el puerto se debe abrir para lectura, escritura o ambas, su "
+"velocidad en baudios, el número de bits de datos y de parada y el método de "
+"negociación. La configuración especificada en este diálogo invalidará "
+"cualquier configuración predeterminada del sistema para el puerto."
 
 #: C/moserial.xml:163(para)
 msgid ""
@@ -301,6 +318,9 @@ msgid ""
 "the /dev/ttySnn, /dev/ttyUSBnn, and /dev/rfcommnn ports that actually exist "
 "on the system, for values of \"nn\" between 0 and 31."
 msgstr ""
+"El diálogo de configuración de puertos de <application>moserial</"
+"application> sólo los puertos /dev/ttySnn, /dev/ttyUSBnn, y /dev/rfcommnn "
+"que existen actualmente en el sistema, para valores de «nn» entre 0 y 31."
 
 #: C/moserial.xml:168(para)
 msgid ""
@@ -423,6 +443,12 @@ msgid ""
 "oscilloscopes will dump screenshots to a serial port, without using any "
 "error correction protocols (like the Tektronix 11801)."
 msgstr ""
+"<application>moserial</application> se puede usar para grabar los datos "
+"datos enviados y recibidos a un archivo. Esta función también es útil para "
+"recibir y almacenar flujos binarios de datos volcados desde un dispositivo "
+"remoto. Por ejemplo, algunos osciloscopios volcarán capturas de pantalla a "
+"un puerto serie, sin usar ningún protocolo de corrección de errores (como el "
+"Tektronix 11801)."
 
 #: C/moserial.xml:273(para)
 msgid ""
@@ -448,6 +474,11 @@ msgid ""
 "linkend=\"preferences\">Preferences</link> dialog to enable or disable these "
 "features."
 msgstr ""
+"<application>moserial</application> puede, opcionalmente, abrir el archivo "
+"grabado con la aplicación predeterminada para ese tipo de archivo, cuando la "
+"grabación haya terminado. La grabación también puede terminar después un "
+"período de inactividad. Use el diálogo <link linkend=\"preferences"
+"\">preferencias</link> para activar o desactivar estas características."
 
 #: C/moserial.xml:298(para)
 msgid ""
@@ -458,6 +489,12 @@ msgid ""
 "guibutton> function can automatically determine when the file download is "
 "complete."
 msgstr ""
+"Tenga en cuenta que si recibe archivos usando un protocolo de corrección de "
+"errores (xmodem, ymodem, o zmodem), deberá usar la función <link linkend="
+"\"receiving\">recibir archivo</link> en su lugar. A diferencia de la función "
+"<guibutton>Grabar</guibutton>, la función <guibutton>Recibir archivo</"
+"guibutton> puede determinar automáticamente cuando se ha terminado la "
+"descarga del archivo."
 
 #: C/moserial.xml:311(title)
 msgid "Sending Files"
@@ -471,6 +508,11 @@ msgid ""
 "logged to the <guilabel>Sent ASCII</guilabel> or <guilabel>Sent HEX</"
 "guilabel> text areas."
 msgstr ""
+"<application>moserial</application> puede transmitir archivos como un flujo "
+"de datos binarios, y también puede enviar archivos usando los protocolos de "
+"corrección de errores xmodem, ymodem, y zmodem. Durante la transferencia de "
+"archivos, los datos enviados no se registran en las áreas de texto "
+"<guilabel>ASCII enviado</guilabel> o <guilabel>HEX enviado</guilabel>"
 
 #: C/moserial.xml:322(para)
 msgid ""
@@ -497,6 +539,10 @@ msgid ""
 "data. These utilities, part of the lrzsz package, must be installed on your "
 "system."
 msgstr ""
+"moserial no implementa los protocolos xmodem, ymodem o zmodem directamente. "
+"Se basa en las utilidades estándar rz y sz para enviar y recibir datos. "
+"Estas utilidades, que forman parte del paquete Irzsz se deben instalar en su "
+"sistema."
 
 #: C/moserial.xml:346(title)
 msgid "Receiving Files"
@@ -510,6 +556,11 @@ msgid ""
 "received data is not logged to the <guilabel>Sent ASCII</guilabel> or "
 "<guilabel>Sent HEX</guilabel> text areas."
 msgstr ""
+"<application>moserial</application> puede recibir archivos como un flujo de "
+"datos binarios, y también puede recibir archivos usando los protocolos de "
+"corrección de errores xmodem, ymodem, y zmodem. Durante la transferencia de "
+"archivos, los datos enviados no se registran en las áreas de texto "
+"<guilabel>ASCII enviado</guilabel> o <guilabel>HEX enviado</guilabel>"
 
 #: C/moserial.xml:354(para)
 msgid ""
@@ -536,6 +587,8 @@ msgid ""
 "When recording begins, a progress bar will display the status of the file "
 "reception."
 msgstr ""
+"Cuando se inicia la grabación, una barra de progreso mostrará el estado de "
+"la recepción del archivo."
 
 #: C/moserial.xml:389(title)
 msgid "Other Preferences"
@@ -592,6 +645,7 @@ msgstr ""
 #: C/moserial.xml:425(para)
 msgid "Loading a profile will automatically disconnect any connected port."
 msgstr ""
+"Cargar un perfil desconectará automáticamente cualquier puerto conectado."
 
 #: C/moserial.xml:428(para)
 msgid ""
@@ -599,6 +653,10 @@ msgid ""
 "use are stored in a default profile file. These settings will automatically "
 "be recalled the next time you launch <application>moserial</application>."
 msgstr ""
+"Cuando sale de <application>moserial</application>, la configuración actual "
+"se guarda en un archivo del perfil predeterminado. Esta configuración se "
+"usará automáticamente la próxima vez que ejecute <application>moserial</"
+"application>."
 
 #: C/moserial.xml:436(title) C/moserial.xml:439(title)
 msgid "Special Keys"
@@ -623,7 +681,7 @@ msgstr "C"
 
 #: C/moserial.xml:459(para)
 msgid "Copies text. This can be used in any of the text areas."
-msgstr ""
+msgstr "Copia texto. Esto se puede usar en cualquier área de texto."
 
 #: C/moserial.xml:465(keycap)
 msgid "X"
@@ -634,6 +692,8 @@ msgid ""
 "Cuts text. This only works in the <guilabel>Outgoing</guilabel> single-line "
 "text box."
 msgstr ""
+"Corta texto. Esto sólo funciona en la caja de texto de <guilabel>Salida</"
+"guilabel> de una sola línea."
 
 #: C/moserial.xml:475(keycap)
 msgid "V"
@@ -658,7 +718,7 @@ msgstr ""
 "Mueve el foco a la caja de texto de <guilabel>Salida</guilabel> de una sola "
 "línea."
 
-#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
 #: C/moserial.xml:0(None)
 msgid "translator-credits"
 msgstr ""
