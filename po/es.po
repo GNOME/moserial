@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: moserial.HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=moserial&component=general\n"
-"POT-Creation-Date: 2010-02-15 10:41+0000\n"
-"PO-Revision-Date: 2011-02-08 15:42+0100\n"
+"POT-Creation-Date: 2011-02-08 20:04+0000\n"
+"PO-Revision-Date: 2011-02-10 18:11+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -385,7 +385,7 @@ msgstr "Detener grabación"
 
 #: ../data/glade/moserial.glade.h:103
 msgid "Stream to record"
-msgstr "Flujo para grabar"
+msgstr "Flujo que grabar"
 
 #: ../data/glade/moserial.glade.h:104
 msgid "Type outgoing data here. Press Enter or Send to send it."
