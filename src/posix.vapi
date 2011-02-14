@@ -214,7 +214,7 @@ namespace POSIX
 		public const int errno;
 
 		[CCode (cname = "strerror")]
-		public static weak string to_string (int err_no);
+		public static unowned string to_string (int err_no);
 
 		[CCode (cname = "perror")]
 		public static void print_error (string? prefix = null);
@@ -468,7 +468,8 @@ namespace POSIX
 		[CCode (cname = "SIG_IGN")]
 		public const int IGN;
 		
-		public static delegate void Handler (int sig_num);
+		[CCode (has_target = false)]
+		public delegate void Handler (int sig_num);
 		
 		// vala does not have overloading, so we simply create
 		// to functions, one taking the handler and one taking
@@ -501,8 +502,8 @@ namespace POSIX
 			int si_band;
 			int si_fd;
 		}
-
-		public static delegate void ActionHandler (int sig_num, Info info, void* context);
+		[CCode (has_target = false)]
+		public delegate void ActionHandler (int sig_num, Info info, void* context);
 		
 		[CCode (cname = "struct sigaction")]
 		public struct Action
