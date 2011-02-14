@@ -59,9 +59,9 @@ public class moserial.SettingsDialog : GLib.Object
                 softwareHandshake = (CheckButton)builder.get_object("settings_software_handshake");
                 accessModeCombo = (ComboBox)builder.get_object("settings_open_for");
                 localEcho = (CheckButton)builder.get_object("settings_local_echo");
-                dialog.delete_event += hide;
-                cancelButton.clicked += this.cancel;
-                okButton.clicked += this.ok;
+                dialog.delete_event.connect(hide);
+                cancelButton.clicked.connect(this.cancel);
+                okButton.clicked.connect(this.ok);
 
 		ls = new ListStore(2, typeof(string), typeof(string));
                 deviceCombo = (ComboBoxEntry)builder.get_object("settings_device");	

@@ -30,8 +30,8 @@ public class moserial.XmodemFilenameDialog : GLib.Object
 	construct {
 		dialog = (Dialog)builder.get_object("xmodem_filename_dialog");
 		xmodemFilename = (Gtk.Entry)builder.get_object("xmodem_filename");
-		dialog.delete_event += hide;
-                dialog.response += response;
+		dialog.delete_event.connect(hide);
+                dialog.response.connect(response);
 	}
 	public void show() {
                 dialog.run();

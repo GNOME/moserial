@@ -48,11 +48,11 @@ public class moserial.PreferencesDialog : GLib.Object
                 recordLaunch = (CheckButton)builder.get_object("preferences_record_launch");
                 enableTimeout = (CheckButton)builder.get_object("preferences_record_enable_timeout");
                 timeout = (SpinButton)builder.get_object("preferences_record_timeout");
-                systemFont.toggled += this.systemFontToggled;
-                enableTimeout.toggled += this.enableTimeoutToggled;
-                okButton.clicked += ok;
-                cancelButton.clicked += cancel;
-                dialog.delete_event += hide;
+                systemFont.toggled.connect(this.systemFontToggled);
+                enableTimeout.toggled.connect(this.enableTimeoutToggled);
+                okButton.clicked.connect(ok);
+                cancelButton.clicked.connect(cancel);
+                dialog.delete_event.connect(hide);
         }
         public void ok(Button button) {
         	hide();
@@ -131,14 +131,14 @@ public class moserial.PreferencesDialog : GLib.Object
                 dialog.hide_all();
                 return true;
         }
-        public void systemFontToggled(CheckButton button)
+        public void systemFontToggled(ToggleButton button)
         {
         	if(button.get_active())
         		fontButton.set_sensitive(false);
         	else
 	        	fontButton.set_sensitive(true);
         }
-        public void enableTimeoutToggled(CheckButton button)
+        public void enableTimeoutToggled(ToggleButton button)
         {
         	if(button.get_active())
         		timeout.set_sensitive(true);

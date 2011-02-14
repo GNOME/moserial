@@ -32,10 +32,10 @@ public class moserial.ReceiveChooserDialog : GLib.Object
         construct {
                 dialog = (FileChooserDialog)builder.get_object("receive_chooser_dialog");
                 protocolCombo = (ComboBox)builder.get_object("receive_chooser_protocol");
-                dialog.delete_event += hide;
+                dialog.delete_event.connect(hide);
                 dialog.add_buttons(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL, Gtk.STOCK_OK, Gtk.ResponseType.ACCEPT, null);
                 protocolCombo.set_active(2);
-                dialog.response += response;
+                dialog.response.connect(response);
         }
 
         public void show(string? folder) {

@@ -32,10 +32,10 @@ public class moserial.ReceiveProgressDialog : GLib.Object
         construct {
                 dialog = (Dialog)builder.get_object("receive_progress_dialog");
                 cancelButton = (Button)builder.get_object("receive_progress_cancel");
-                cancelButton.clicked += this.cancel;
+                cancelButton.clicked.connect(this.cancel);
                 status = (Gtk.Label)builder.get_object("receive_statusbox");
                 progressBar = (ProgressBar)builder.get_object("receive_progressbar");
-                dialog.delete_event += hide;
+                dialog.delete_event.connect(hide);
 
         }
         public void show() {

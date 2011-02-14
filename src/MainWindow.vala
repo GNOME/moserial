@@ -101,9 +101,9 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
         construct {
                 //setup window
                 gtkWindow = (Gtk.Window)builder.get_object("window");
-                gtkWindow.destroy += quitSave;
-                gtkWindow.delete_event += deleteSaveSize;
-		gtkWindow.key_press_event += keyPress;
+                gtkWindow.destroy.connect(quitSave);
+                gtkWindow.delete_event.connect(deleteSaveSize);
+		gtkWindow.key_press_event.connect(keyPress);
 
 		//load defaults
                 profile=new Profile();
@@ -124,35 +124,35 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 
                 //setup menu items
                 Action quit = (Action)builder.get_object("menubar_quit");
-                quit.activate += quitSizeSave;
+                quit.activate.connect(quitSizeSave);
                 Action saveAs = (Action)builder.get_object("menubar_save_settings_as");
-                saveAs.activate += saveProfileAs;
+                saveAs.activate.connect(saveProfileAs);
                 Action save = (Action)builder.get_object("menubar_save_settings");
-                save.activate += saveProfile;
+                save.activate.connect(saveProfile);
                 Action open = (Action)builder.get_object("menubar_open_settings");
-                open.activate += loadProfile;
+                open.activate.connect(loadProfile);
                 copyMenuItem = (Action)builder.get_object("menubar_copy");
-		copyMenuItem.activate += this.copy;
+		copyMenuItem.activate.connect(this.copy);
 		Action editMenuItem = (Action)builder.get_object("menubar_edit");
-		editMenuItem.activate += this.editMenu;
+		editMenuItem.activate.connect(this.editMenu);
 		cutMenuItem = (Action)builder.get_object("menubar_cut");
 		copyMenuItem.set_sensitive(false);
 		cutMenuItem.set_sensitive(false);
-		cutMenuItem.activate += this.cut;
+		cutMenuItem.activate.connect(this.cut);
 		Action pasteMenuItem = (Action)builder.get_object("menubar_paste");
-		pasteMenuItem.activate += this.paste;
+		pasteMenuItem.activate.connect(this.paste);
 		Action clearMenuItem = (Action)builder.get_object("menubar_clear");
-		clearMenuItem.activate += this.clear;
+		clearMenuItem.activate.connect(this.clear);
 		
                 //setup the Port Settings Dialog
                 settingsDialog = new SettingsDialog(builder);
-                settingsDialog.updateSettings += this.updateSettings;
+                settingsDialog.updateSettings.connect(this.updateSettings);
                 settingsButton = (ToolButton)builder.get_object("toolbar_settings");
-                settingsButton.clicked += this.showSettingsDialog;
+                settingsButton.clicked.connect(this.showSettingsDialog);
 
                 //setup the Help button
                 ToolButton helpButton = (ToolButton)builder.get_object("toolbar_help");
-                helpButton.clicked += showHelpButton;
+                helpButton.clicked.connect(showHelpButton);
 
                 //setup the statusbar
                 statusbar = (Statusbar)builder.get_object("statusbar");
@@ -166,22 +166,22 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 
                 //setup the about dialog
                 Action about = (Action)builder.get_object("menubar_about");
-                about.activate += showAboutDialog;
+                about.activate.connect(showAboutDialog);
 
                 //setup send
                 sendProgressDialog = new SendProgressDialog(builder);
                 sendChooserDialog = new SendChooserDialog(builder);
                 send = (ToolButton)builder.get_object("toolbar_send");
-                send.clicked += doSendChooser;
-                sendChooserDialog.startTransfer += this.doSend;
+                send.clicked.connect(doSendChooser);
+                sendChooserDialog.startTransfer.connect(this.doSend);
                 sz = new Szwrapper(Szwrapper.Protocol.NULL, null, null);
 
                 //setup receive
                 receiveProgressDialog = new ReceiveProgressDialog(builder);
                 receiveChooserDialog = new ReceiveChooserDialog(builder);
                 receive = (ToolButton)builder.get_object("toolbar_receive");
-                receive.clicked += doReceiveChooser;
-                receiveChooserDialog.startTransfer += this.doReceive;
+                receive.clicked .connect(doReceiveChooser);
+                receiveChooserDialog.startTransfer.connect(this.doReceive);
                 xmodemFilenameDialog = new XmodemFilenameDialog(builder);
                 rz = new Rzwrapper(Rzwrapper.Protocol.NULL, null, null, null);
 
@@ -189,27 +189,27 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 //setup recording
                 recordDialog = new RecordDialog(builder);
                 recordButton = (ToggleToolButton)builder.get_object("toolbar_logging");
-                recordButton.clicked += this.record;
-                recordDialog.stopRecording += this.stopRecording;
-                recordDialog.startRecording += this.startRecording;
+                recordButton.toggled.connect(this.record);
+                recordDialog.stopRecording.connect(this.stopRecording);
+                recordDialog.startRecording.connect(this.startRecording);
                 recordLabel = (Label)builder.get_object("record_label");
                 stopRecordingLabel = (Label)builder.get_object("stop_recording_label");
 
                 //setup preferences
                 preferencesDialog = new PreferencesDialog(builder);
-                preferencesDialog.updatePreferences += this.updatePreferences;
+                preferencesDialog.updatePreferences.connect(this.updatePreferences);
                 ToolButton preferences = (ToolButton)builder.get_object("toolbar_preferences");
-                preferences.clicked += this.showPreferencesDialog;
+                preferences.clicked.connect(this.showPreferencesDialog);
 
                 //setup connectbutton
                 connectButton = (ToggleToolButton)builder.get_object("toolbar_connect");
-                connectButton.clicked += this.connectButtonClick;
+                connectButton.toggled.connect(this.connectButtonClick);
                 disconnectLabel = (Label)builder.get_object("disconnect_label");
                 connectLabel = (Label)builder.get_object("connect_label");
 
                 //setup help
                 Action contents = (Action)builder.get_object("menubar_contents");
-                contents.activate += showHelpAction;
+                contents.activate.connect(showHelpAction);
 
                 //setup incoming notebook
                 incoming_notebook = (Notebook)builder.get_object("incoming_notebook");
@@ -254,19 +254,19 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 		
                 //setup entry
                 sendButton = (Button)builder.get_object("send");
-                sendButton.clicked += sendString;
+                sendButton.clicked.connect(sendString);
                 entry = (Gtk.Entry)builder.get_object("entry");
-                entry.activate += sendString;
+                entry.activate.connect(sendString);
                 inputMode = (ComboBox)builder.get_object("input_mode");
                 inputMode.set_active(0);
-		inputMode.changed += inputModeChanged;
+		inputMode.changed.connect(inputModeChanged);
                 terminationMode = (ComboBox)builder.get_object("termination_mode");
                 terminationMode.set_active(0);
                 
                 //setup recent chooser
                 RecentManager recentManager = RecentManager.get_default ();
                 RecentChooserMenu recentChooserMenu = new Gtk.RecentChooserMenu.for_manager(recentManager);
-                recentChooserMenu.item_activated += recentItemOpen;
+                recentChooserMenu.item_activated.connect(recentItemOpen);
                 RecentFilter filter = new RecentFilter();
                 filter.add_application(GLib.Environment.get_application_name());
                 recentChooserMenu.add_filter(filter);
@@ -442,15 +442,15 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 if(sz.running)
 		{
 			sendProgressDialog.show();
-		        sz.updateStatus+=sendProgressDialog.updateStatus;
-		        sendProgressDialog.transferCanceled+=sz.transferCanceled;
-		        sz.transferComplete += this.sendComplete;
+		        sz.updateStatus.connect(sendProgressDialog.updateStatus);
+		        sendProgressDialog.transferCanceled.connect(sz.transferCanceled);
+		        sz.transferComplete.connect(this.sendComplete);
 		}
         }
 
         public void sendComplete(GLib.Object o) {
-	        sz.updateStatus-=sendProgressDialog.updateStatus;
-        	sendProgressDialog.transferCanceled-=sz.transferCanceled;
+	        sz.updateStatus.disconnect(sendProgressDialog.updateStatus);
+        	sendProgressDialog.transferCanceled.disconnect(sz.transferCanceled);
                 sendProgressDialog.hide();
         }
 
@@ -485,15 +485,15 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 if(rz.running)
                 {
 		        receiveProgressDialog.show();
-		        rz.updateStatus+=receiveProgressDialog.updateStatus;
-		        receiveProgressDialog.transferCanceled+=rz.transferCanceled;
-		        rz.transferComplete += this.receiveComplete;
+		        rz.updateStatus.connect(receiveProgressDialog.updateStatus);
+		        receiveProgressDialog.transferCanceled.connect(rz.transferCanceled);
+		        rz.transferComplete.connect(this.receiveComplete);
 		}
         }
 
         public void receiveComplete(GLib.Object o) {
-                rz.updateStatus-=receiveProgressDialog.updateStatus;
-                receiveProgressDialog.transferCanceled-=rz.transferCanceled;
+                rz.updateStatus.disconnect(receiveProgressDialog.updateStatus);
+                receiveProgressDialog.transferCanceled.disconnect(rz.transferCanceled);
                 receiveProgressDialog.hide();
         }
 
@@ -614,7 +614,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 settingsButton.set_sensitive(false);
                 statusbar.pop(statusbarContext);
                 statusbar.push(statusbarContext, currentSettings.getStatusbarString(true));
-                serialConnection.newData += this.updateIncoming;
+                serialConnection.newData.connect(this.updateIncoming);
                 connectButton.set_label_widget(disconnectLabel);
                 return true;
         }
@@ -625,7 +625,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 } else {
                         settingsButton.set_sensitive(true);
                         serialConnection.doDisconnect();
-                        serialConnection.newData -= this.updateIncoming;
+                        serialConnection.newData.disconnect(this.updateIncoming);
                         bytecountbar.pop(bytecountbarContext);
                         bytecountbar.push(bytecountbarContext, serialConnection.getBytecountbarString());
                         //serialConnection = new SerialConnection();

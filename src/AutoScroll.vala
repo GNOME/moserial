@@ -26,22 +26,22 @@ public class moserial.AutoScroll : GLib.Object
 
         public static void doAutoScroll (Gtk.Adjustment va) {
                 if (va.value==va.upper-va.page_size) 
-                                va.changed+=scroll;
+                                va.changed.connect(scroll);
                 else
-                                va.changed-=scroll;        
+                                va.changed.disconnect(scroll);        
                }
 
         public static void setup(Gtk.Adjustment incomingAsciiVerticalAdjuster, Gtk.Adjustment incomingHexVerticalAdjuster, Gtk.Adjustment outgoingAsciiVerticalAdjuster, Gtk.Adjustment outgoingHexVerticalAdjuster) {
-                incomingAsciiVerticalAdjuster.changed+=scroll;
-                incomingAsciiVerticalAdjuster.value_changed+=doAutoScroll;
+                incomingAsciiVerticalAdjuster.changed.connect(scroll);
+                incomingAsciiVerticalAdjuster.value_changed.connect(doAutoScroll);
 
-                incomingHexVerticalAdjuster.changed+=scroll;
-                incomingHexVerticalAdjuster.value_changed+=doAutoScroll;
+                incomingHexVerticalAdjuster.changed.connect(scroll);
+                incomingHexVerticalAdjuster.value_changed.connect(doAutoScroll);
 
-                outgoingAsciiVerticalAdjuster.changed+=scroll;
-                outgoingAsciiVerticalAdjuster.value_changed+=doAutoScroll;
+                outgoingAsciiVerticalAdjuster.changed.connect(scroll);
+                outgoingAsciiVerticalAdjuster.value_changed.connect(doAutoScroll);
 
-                outgoingHexVerticalAdjuster.changed+=scroll;
-                outgoingHexVerticalAdjuster.value_changed+=doAutoScroll;
+                outgoingHexVerticalAdjuster.changed.connect(scroll);
+                outgoingHexVerticalAdjuster.value_changed.connect(doAutoScroll);
         }
 }
