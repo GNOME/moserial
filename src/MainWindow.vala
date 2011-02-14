@@ -306,7 +306,12 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 			setWindowTitle(null);
 			profileChanged=false;
 			RecentManager recentManager = RecentManager.get_default ();
-			recentManager.add_item(GLib.Filename.to_uri(filename));
+			try {
+				recentManager.add_item(GLib.Filename.to_uri(filename));
+			}
+			catch (GLib.ConvertError e) {
+				stdout.printf("%s\n", e.message);
+			}
 		}
 	}
 
@@ -328,7 +333,12 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 	}
 
 	private void recentItemOpen(RecentChooser r) {
-		applyProfile(GLib.Filename.from_uri(r.get_current_uri()));
+		try{
+			applyProfile(GLib.Filename.from_uri(r.get_current_uri()));
+		}
+		catch (GLib.ConvertError e) {
+			stdout.printf("%s\n", e.message);
+		}
 	}
 
         private void insertBufferEnd (TextBuffer buf, string s) {
@@ -822,7 +832,12 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 		profile.save(profileFilename, gtkWindow);
 		profileChanged=false;
 		RecentManager recentManager = RecentManager.get_default ();
-		recentManager.add_item(GLib.Filename.to_uri(profileFilename));
+		try {
+			recentManager.add_item(GLib.Filename.to_uri(profileFilename));
+		}
+		catch (GLib.ConvertError e) {
+			stdout.printf("%s\n", e.message);
+		}
 	}	
 
 	private void saveProfileAs () {

@@ -98,6 +98,9 @@ public class moserial.Rzwrapper: GLib.Object
                         	errorDialog.run();
                         	errorDialog.destroy();
 			}
+			catch (GLib.IOChannelError e){
+				stdout.printf("readError() %s\n", e.message);
+			}
 		}
 	}
 	public void writeChar(uchar byte) {
@@ -152,6 +155,10 @@ public class moserial.Rzwrapper: GLib.Object
 			catch (ConvertError e)	        {
 				stdout.printf("readError() %s\n", e.message);
 			}
+			catch (GLib.IOChannelError e){
+				stdout.printf("readError() %s\n", e.message);
+			}
+				
 			for (int x=0; x<bytesRead; x++) {
 				unichar c = m_buf[x];
 				if(c.isprint() || c.isspace())
@@ -215,6 +222,9 @@ public class moserial.Rzwrapper: GLib.Object
 			}
 			catch (ConvertError e)	        {
 				stdout.printf("readBytes() %s\n", e.message);
+			}
+			catch (GLib.IOChannelError e){
+				stdout.printf("readError() %s\n", e.message);
 			}
 			for (int x=0; x<bytesRead; x++) {
 				sc.sendByte(m_buf[x]);
