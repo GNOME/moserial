@@ -26,7 +26,7 @@ public class moserial.ReceiveChooserDialog : GLib.Object
         public signal void startTransfer();
         public string path;
         public ReceiveChooserDialog(Builder builder) {
-                this.builder=builder;
+		GLib.Object(builder: builder);
         }
 
         construct {

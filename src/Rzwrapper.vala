@@ -36,10 +36,9 @@ public class moserial.Rzwrapper: GLib.Object
         public string? path {get; construct;}
         public string filename {get; construct;}
 	public Rzwrapper(Protocol? protocol, SerialConnection? sc, string? p, string? filename) {
-		this.protocol = protocol;
-		this.sc = sc;
-		this.path = p;
-		this.filename = filename;
+		GLib.Object(protocol: protocol, 
+			sc: sc, path: p, 
+			filename: filename);
 	}
 	construct {
 		if(protocol==Protocol.NULL || path==null) {

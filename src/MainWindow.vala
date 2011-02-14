@@ -96,8 +96,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 
         //private Gtk.RecentChooser recentChooser;
         public MainWindow(Builder builder, string? profileFilename) {
-                this.builder=builder;
-                this.startupProfileFilename=profileFilename;
+		GLib.Object(builder: builder, startupProfileFilename: profileFilename);
         }
         construct {
                 //setup window

@@ -43,7 +43,7 @@ public class moserial.SettingsDialog : GLib.Object
 	private ListStore ls;
         public signal void updateSettings(Settings settings);
         public SettingsDialog(Builder builder) {
-                this.builder=builder;
+		GLib.Object(builder: builder);
         }
 
         construct {

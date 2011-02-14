@@ -27,7 +27,7 @@ public class moserial.SendProgressDialog : GLib.Object
         private ProgressBar progressBar;
         public signal void transferCanceled();
         public SendProgressDialog(Builder builder) {
-                this.builder=builder;
+		GLib.Object(builder: builder);
         }
         construct {
                 dialog = (Dialog)builder.get_object("send_progress_dialog");

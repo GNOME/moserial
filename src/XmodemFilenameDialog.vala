@@ -25,7 +25,7 @@ public class moserial.XmodemFilenameDialog : GLib.Object
 	private Gtk.Entry xmodemFilename;
 	public string filename;
         public XmodemFilenameDialog(Builder builder) {
-                this.builder=builder;
+		GLib.Object(builder: builder);
         }
 	construct {
 		dialog = (Dialog)builder.get_object("xmodem_filename_dialog");

@@ -34,7 +34,7 @@ public class moserial.PreferencesDialog : GLib.Object
         private SpinButton timeout;
         public signal void updatePreferences(Preferences preferences);
         public PreferencesDialog(Builder builder) {
-                this.builder=builder;
+		GLib.Object(builder: builder);
         }
         construct {
                 dialog = (Dialog)builder.get_object("preferences_dialog");

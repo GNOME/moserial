@@ -29,7 +29,7 @@ public class moserial.RecordDialog : GLib.Object
         public signal void stopRecording();
         public SerialStreamRecorder.Direction direction;
         public RecordDialog(Builder builder) {
-                this.builder=builder;
+		GLib.Object(builder: builder);
         }
         construct {
                 dialog = (FileChooserDialog)builder.get_object("record_dialog");

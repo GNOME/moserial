@@ -41,14 +41,15 @@ public class Settings : GLib.Object
         public AccessMode accessMode {get; construct;}
         public bool localEcho {get; construct;}
         public Settings(string? device, int baudRate, int dataBits, int stopBits, Parity parity, Handshake handshake, AccessMode accessMode, bool localEcho) {
-                this.device = device;
-                this.baudRate = baudRate;
-                this.dataBits = dataBits;
-                this.stopBits = stopBits;
-                this.parity = parity;
-                this.handshake = handshake;
-                this.accessMode = accessMode;
-                this.localEcho = localEcho;
+		GLib.Object (device: device, 
+			baudRate: baudRate, 
+			dataBits: dataBits, 
+			stopBits: stopBits, 
+			parity: parity, 
+			handshake: handshake, 
+			accessMode: accessMode, 
+			localEcho: localEcho);
+
         }
         construct {
                 if (device==null)

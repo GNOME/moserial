@@ -26,7 +26,7 @@ public class moserial.SendChooserDialog : GLib.Object
         public signal void startTransfer();
         public string filename;
         public SendChooserDialog(Builder builder) {
-                this.builder=builder;
+		GLib.Object(builder: builder);
         }
         construct {
                 dialog = (FileChooserDialog)builder.get_object("send_chooser_dialog");

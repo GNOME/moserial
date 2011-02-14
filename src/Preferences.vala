@@ -37,14 +37,14 @@ public class Preferences : GLib.Object
 	public int timeout {get; construct;}
 	
 	public Preferences (bool useSystemMonospaceFont, string? font, string? fontColor,string? backgroundColor,string? highlightColor, bool recordLaunch, bool enableTimeout, int timeout) {
-		this.useSystemMonospaceFont=useSystemMonospaceFont;
-		this.font=font;
-		this.recordLaunch=recordLaunch;
-		this.fontColor=fontColor;
-		this.backgroundColor=backgroundColor;
-		this.highlightColor=highlightColor;
-		this.enableTimeout=enableTimeout;
-		this.timeout=timeout;
+		GLib.Object(useSystemMonospaceFont: useSystemMonospaceFont,
+			font: font, 
+			recordLaunch: recordLaunch, 
+			fontColor: fontColor, 
+			backgroundColor: backgroundColor, 
+			highlightColor: highlightColor, 
+			enableTimeout: enableTimeout, 
+			timeout: timeout);
 	}
 	construct {
 		if(font==null)
