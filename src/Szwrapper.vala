@@ -36,7 +36,8 @@ public class moserial.Szwrapper: GLib.Object
         
         public string filename {get; construct;}
 	public Szwrapper(Protocol? protocol, SerialConnection? sc, string? filename) {
-		GLib.Object(protocol: protocol, 
+		Protocol pro = protocol;
+		GLib.Object(protocol: pro, 
 			sc: sc, 
 			filename: filename);
 	}
