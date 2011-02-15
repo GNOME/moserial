@@ -1,3 +1,21 @@
+Version 2.32.0
+--------------
+	* Build fixes for current vala:
+	- replaced Action with less ambiguous Gtk.Action
+	- added missing catch statments for exceptions
+	- updated signal connect/disconnect syntax
+	- updated constructors to new syntax
+	- fixed runtime warnings in rz/szwrapper
+
+	* Updated translations:
+	- Spanish (es)
+	- Brazilian Portuguese (pt_BR)
+	- Slovenian (sl)
+	- Danish (da)
+	- Simplified Chinese (zh_CN)
+	- Galician (gl)
+
+
 Version 2.30.0
 --------------
 	* Fixed glade file so icons + text labels appear in toolbar
