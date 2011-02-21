@@ -3,15 +3,15 @@
 # Copyright (C) 2009 moserial's COPYRIGHT HOLDER
 # This file is distributed under the same license as the moserial package.
 #
-# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011.
 # Jorge González <jorgegonz@svn.gnome.org>, 2009, 2011.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: moserial.help.master\n"
-"POT-Creation-Date: 2011-02-09 18:18+0000\n"
-"PO-Revision-Date: 2011-02-12 13:20+0100\n"
-"Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
+"POT-Creation-Date: 2011-02-12 12:22+0000\n"
+"PO-Revision-Date: 2011-02-21 15:39+0100\n"
+"Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -406,7 +406,7 @@ msgstr ""
 msgid ""
 "To switch between HEX and ASCII views, simply click on the appropriate tabs."
 msgstr ""
-"Para cambiar entre las vistas HEX y ASCII, simplemente pulse en las solapas "
+"Para cambiar entre las vistas HEX y ASCII, simplemente pulse en las pestañas "
 "apropiadas."
 
 #: C/moserial.xml:218(para)
