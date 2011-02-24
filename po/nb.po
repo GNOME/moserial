@@ -1,16 +1,17 @@
 # Norwegian translation of moserial (bokmål dialect).
 # Copyright (C) 1998-2004, 2005 Free Software Foundation, Inc.
-# Kjartan Maraas <kmaraas@gnome.org>, 1998-2010.
+# Kjartan Maraas <kmaraas@gnome.org>, 1998-2011.
 # Terance Edward Sola <terance@lyse.net>, 2005.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: moserial\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-03-14 12:48+0100\n"
-"PO-Revision-Date: 2010-03-14 12:53+0100\n"
+"POT-Creation-Date: 2011-02-24 11:41+0100\n"
+"PO-Revision-Date: 2011-02-24 11:45+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian Bokmal <i18n-nb@lister.ping.uio.no>\n"
+"Language: nb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -146,7 +147,7 @@ msgstr "Vis mottatte data"
 
 #: ../data/glade/moserial.glade.h:52
 msgid "Enable timeout after"
-msgstr ""
+msgstr "Aktiver tidsavbrudd etter"
 
 #: ../data/glade/moserial.glade.h:53
 msgid "Error Correction Protocol"
@@ -154,7 +155,7 @@ msgstr ""
 
 #: ../data/glade/moserial.glade.h:54
 msgid "Filename required for XMODEM"
-msgstr ""
+msgstr "Filnavn kreves for XMODEM"
 
 #: ../data/glade/moserial.glade.h:55
 msgid "Font Colour"
@@ -162,7 +163,7 @@ msgstr "Skriftfarge"
 
 #: ../data/glade/moserial.glade.h:56
 msgid "Handshake"
-msgstr ""
+msgstr "Håndtrykk"
 
 #: ../data/glade/moserial.glade.h:57
 msgid "Hardware"
@@ -197,10 +198,13 @@ msgid ""
 "Outgoing\n"
 "Incoming and Outgoing"
 msgstr ""
+"Innkommende\n"
+"Utgående\n"
+"Innkommende og utgående"
 
 #: ../data/glade/moserial.glade.h:65
 msgid "Local Echo"
-msgstr ""
+msgstr "Lokalt ekko"
 
 #: ../data/glade/moserial.glade.h:66
 msgid ""
@@ -210,20 +214,23 @@ msgid ""
 "Mark\n"
 "Space"
 msgstr ""
+"Ingen\n"
+"Ulike\n"
+"Like\n"
+"Merke\n"
+"Mellomrom"
 
 #: ../data/glade/moserial.glade.h:71
-#, fuzzy
 msgid "Normally disabled"
-msgstr "Normal størrelse"
+msgstr "Normalt slått av"
 
 #: ../data/glade/moserial.glade.h:72
-#, fuzzy
 msgid "Open _Recent"
-msgstr "Åpne _terminal"
+msgstr "Åpne _nylig"
 
 #: ../data/glade/moserial.glade.h:73
 msgid "Open/close port"
-msgstr ""
+msgstr "Åpne/lukk port"
 
 #: ../data/glade/moserial.glade.h:74
 msgid "Other preferences"
@@ -235,12 +242,11 @@ msgstr "Paritet"
 
 #: ../data/glade/moserial.glade.h:76
 msgid "Port Setup"
-msgstr ""
+msgstr "Oppsett av port"
 
 #: ../data/glade/moserial.glade.h:77
-#, fuzzy
 msgid "Port configuration"
-msgstr "Last en konfigurasjonsfil for terminal"
+msgstr "Portkonfigurasjon"
 
 #: ../data/glade/moserial.glade.h:78
 msgid "Preferences"
@@ -252,6 +258,9 @@ msgid ""
 "Read Only\n"
 "Write Only"
 msgstr ""
+"Les og skriv\n"
+"Kun les\n"
+"Kun skriv"
 
 #: ../data/glade/moserial.glade.h:82
 msgid "Receive File"
@@ -259,7 +268,7 @@ msgstr "Motta fil"
 
 #: ../data/glade/moserial.glade.h:83
 msgid "Receive File Progress"
-msgstr ""
+msgstr "Fremgang for mottak av fil"
 
 #: ../data/glade/moserial.glade.h:84
 msgid "Receive a file"
@@ -267,35 +276,35 @@ msgstr "Motta en fil"
 
 #: ../data/glade/moserial.glade.h:85
 msgid "Received ASCII"
-msgstr ""
+msgstr "Mottatt ASCII"
 
 #: ../data/glade/moserial.glade.h:86
 msgid "Received HEX"
-msgstr ""
+msgstr "Mottatt HEX"
 
 #: ../data/glade/moserial.glade.h:87
 msgid "Record"
-msgstr ""
+msgstr "Ta opp"
 
 #: ../data/glade/moserial.glade.h:88
 msgid "Record Incoming and/or Outgoing Data"
-msgstr ""
+msgstr "Ta opp innkommende og/eller utgående data"
 
 #: ../data/glade/moserial.glade.h:89
 msgid "Record sent and/or received data"
-msgstr ""
+msgstr "Ta opp sendte og/eller mottatte data"
 
 #: ../data/glade/moserial.glade.h:90
 msgid "Save Settings _As"
-msgstr ""
+msgstr "Lagre innstillinger _som"
 
 #: ../data/glade/moserial.glade.h:91
 msgid "Select File to Send"
-msgstr ""
+msgstr "Velg fil som skal sendes"
 
 #: ../data/glade/moserial.glade.h:92
 msgid "Select Folder for Received Files"
-msgstr ""
+msgstr "Velg mappe for mottatte filer"
 
 #: ../data/glade/moserial.glade.h:93
 msgid "Send"
@@ -307,7 +316,7 @@ msgstr "Send fil"
 
 #: ../data/glade/moserial.glade.h:95
 msgid "Send File Progress"
-msgstr ""
+msgstr "Fremgang for sending av fil"
 
 #: ../data/glade/moserial.glade.h:96
 msgid "Send a file"
@@ -315,15 +324,15 @@ msgstr "Send en fil"
 
 #: ../data/glade/moserial.glade.h:97
 msgid "Send the outgoing data now."
-msgstr ""
+msgstr "Send utgående data nå."
 
 #: ../data/glade/moserial.glade.h:98
 msgid "Sent ASCII"
-msgstr ""
+msgstr "Sendt ASCII"
 
 #: ../data/glade/moserial.glade.h:99
 msgid "Sent HEX"
-msgstr ""
+msgstr "Sendt HEX"
 
 #: ../data/glade/moserial.glade.h:100
 msgid "Software"
@@ -335,7 +344,7 @@ msgstr "Stoppbiter"
 
 #: ../data/glade/moserial.glade.h:102
 msgid "Stop Recording"
-msgstr ""
+msgstr "Stopp opptak"
 
 #: ../data/glade/moserial.glade.h:103
 msgid "Stream to record"
@@ -351,6 +360,9 @@ msgid ""
 "Ymodem\n"
 "Zmodem"
 msgstr ""
+"Xmodem\n"
+"Ymodem\n"
+"Zmodem"
 
 #: ../data/glade/moserial.glade.h:108
 msgid ""
@@ -359,6 +371,10 @@ msgid ""
 "Zmodem\n"
 "None (straight binary)"
 msgstr ""
+"Xmodem\n"
+"Ymodem\n"
+"Zmodem\n"
+"Ingen (vanlig binær)"
 
 #: ../data/glade/moserial.glade.h:112
 msgid "_Contents"
@@ -405,14 +421,12 @@ msgid "A serial terminal optimized for logging and file capture"
 msgstr ""
 
 #: ../data/moserial.desktop.in.h:2
-#, fuzzy
 msgid "Serial Terminal"
-msgstr "Terminal"
+msgstr "Seriell terminal"
 
 #: ../data/moserial.desktop.in.h:3
-#, fuzzy
 msgid "moserial Terminal"
-msgstr "_Lukk terminal"
+msgstr "moserial terminal"
 
 #: ../src/MainWindow.vala:30
 msgid "translator-credits"
@@ -449,72 +463,72 @@ msgid ""
 "this program.  If not, see <http://www.gnu.org/licenses/>."
 msgstr ""
 
-#: ../src/MainWindow.vala:166
+#: ../src/MainWindow.vala:165
 msgid "TX: 0, RX: 0"
 msgstr ""
 
-#: ../src/MainWindow.vala:532 ../src/Profile.vala:76 ../src/Profile.vala:107
+#: ../src/MainWindow.vala:541 ../src/Profile.vala:76 ../src/Profile.vala:107
 #, c-format
 msgid "Error: Could not open file"
 msgstr "Feil: Kunne ikke åpne fil"
 
-#: ../src/MainWindow.vala:605
+#: ../src/MainWindow.vala:614
 #, c-format
 msgid "Error: Could not open device"
 msgstr "Feil: :Kunne ikke åpne enhet"
 
-#: ../src/MainWindow.vala:727
+#: ../src/MainWindow.vala:736
 #, c-format
 msgid "Unable to display help file: %s"
 msgstr "Kan ikke vise hjelpfil: %s"
 
-#: ../src/MainWindow.vala:739
+#: ../src/MainWindow.vala:748
 msgid ""
 "A serial terminal for the GNOME desktop, optimized for logging and file "
 "capture."
 msgstr ""
 
-#: ../src/MainWindow.vala:753
+#: ../src/MainWindow.vala:762
 #, c-format
 msgid "Can't display a clickable URL: %s"
 msgstr ""
 
-#: ../src/MainWindow.vala:800
+#: ../src/MainWindow.vala:809
 msgid ""
 "You have changed your setting or preferences. Do you want to save these "
 "changes to the loaded profile?"
 msgstr ""
 
 #. TRANSLATORS: first letter of "None", a serial port parity setting
-#: ../src/Settings.vala:68
+#: ../src/Settings.vala:69
 msgid "N"
 msgstr ""
 
 #. TRANSLATORS: first letter of "Odd", a serial port parity setting
-#: ../src/Settings.vala:72
+#: ../src/Settings.vala:73
 msgid "O"
 msgstr ""
 
 #. TRANSLATORS: first letter of "Even", a serial port parity setting
-#: ../src/Settings.vala:76
+#: ../src/Settings.vala:77
 msgid "E"
 msgstr ""
 
 #. TRANSLATORS: first letter of "Mark", a serial port parity setting
-#: ../src/Settings.vala:80
+#: ../src/Settings.vala:81
 msgid "M"
 msgstr ""
 
 #. TRANSLATORS: first letter of "Space", a serial port parity setting
-#: ../src/Settings.vala:84
+#: ../src/Settings.vala:85
 msgid "S"
 msgstr ""
 
-#: ../src/Settings.vala:94
+#: ../src/Settings.vala:95
 msgid "OPEN"
 msgstr "ÅPEN"
 
-#: ../src/Settings.vala:95
+#: ../src/Settings.vala:96
 msgid "CLOSED"
 msgstr "LUKKET"
 
@@ -531,9 +545,8 @@ msgid ""
 msgstr ""
 
 #: ../src/Main.vala:52
-#, fuzzy
 msgid "- moserial serial terminal"
-msgstr "Lukk denne terminalen?"
+msgstr "- moserial seriell terminal"
 
 #: ../src/Main.vala:57 ../src/Main.vala:65
 #, c-format
@@ -547,7 +560,7 @@ msgstr ""
 
 #: ../src/SendProgressDialog.vala:43
 msgid "Waiting for remote host"
-msgstr ""
+msgstr "Venter på ekstern vert"
 
 #: ../src/SerialConnection.vala:301
 #, c-format
@@ -567,13 +580,13 @@ msgstr "feil: %s\n"
 #: ../src/SerialStreamRecorder.vala:82
 #, c-format
 msgid "Unable to launch %s: %s"
-msgstr ""
+msgstr "Kan ikke starte %s: %s"
 
-#: ../src/Szwrapper.vala:173
+#: ../src/Szwrapper.vala:180
 msgid "canceled"
-msgstr ""
+msgstr "avbrutt"
 
 #: ../src/InputParser.vala:45 ../src/InputParser.vala:52
 #: ../src/InputParser.vala:58
 msgid "Invalid Input"
-msgstr ""
+msgstr "Ugyldige inndata"
