@@ -1,3 +1,11 @@
+Version 2.32.1
+--------------
+	* Build fixes for current vala:
+	- Profile.vala: proper string-to-char conversion
+	- InputParser.vala: make error as public as the function
+	- MainWindow.vala: don't define and pass unused out parameters
+
+
 Version 2.32.0
 --------------
 	* Build fixes for current vala:
