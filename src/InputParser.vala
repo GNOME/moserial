@@ -17,7 +17,7 @@
  *  along with moserial.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-errordomain HexParseError {
+public errordomain HexParseError {
 	INVALID_INPUT;
 }
 public class InputParser : GLib.Object
