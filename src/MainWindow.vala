@@ -895,9 +895,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 				copyMenuItem.set_sensitive(false);
 		}
 		else if(gtkWindow.get_focus()==(Gtk.Widget)entry){
-			int s=0;
-			int e=0;
-			if(entry.get_selection_bounds(s, e)) {
+			if(entry.get_selection_bounds(null, null)) {
 				cutMenuItem.set_sensitive(true);
 				copyMenuItem.set_sensitive(true);
 			}
