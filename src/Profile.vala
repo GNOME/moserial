@@ -100,7 +100,7 @@ public class Profile : GLib.Object
 	                string data;
 	                fos = file.replace(null, false, GLib.FileCreateFlags.NONE, null);
 			data = keyFile.to_data(out s);
-			fos.write(data, s, null);
+			fos.write(data.data, s, null);
 		} catch (GLib.Error e) {
 			stdout.printf("profile.save error: %s\n", e.message);	
                         if (!default_profile) {
