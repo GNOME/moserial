@@ -32,7 +32,7 @@ public class moserial.SendChooserDialog : GLib.Object
                 dialog = (FileChooserDialog)builder.get_object("send_chooser_dialog");
                 protocolCombo = (ComboBox)builder.get_object("send_chooser_protocol");
                 dialog.delete_event.connect(hide);
-                dialog.add_buttons(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL, Gtk.STOCK_OK, Gtk.ResponseType.ACCEPT, null);
+                dialog.add_buttons(Gtk.Stock.CANCEL, Gtk.ResponseType.CANCEL, Gtk.Stock.OK, Gtk.ResponseType.ACCEPT, null);
                 protocolCombo.set_active(2);
                 dialog.response.connect(response);
         }

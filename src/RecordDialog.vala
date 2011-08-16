@@ -37,7 +37,7 @@ public class moserial.RecordDialog : GLib.Object
                 streamCombo = (ComboBox)builder.get_object("record_stream");
                 dialog.delete_event.connect(hide);
                 dialog.response.connect(response);
-                dialog.add_buttons(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL, Gtk.STOCK_SAVE, Gtk.ResponseType.ACCEPT, null);
+                dialog.add_buttons(Gtk.Stock.CANCEL, Gtk.ResponseType.CANCEL, Gtk.Stock.SAVE, Gtk.ResponseType.ACCEPT, null);
                 dialog.set_do_overwrite_confirmation(true);
 		dialog.set_local_only(false);
                 streamCombo.set_active(0);

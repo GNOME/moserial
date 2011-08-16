@@ -777,7 +777,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 
 	private bool keyPress(Widget widget, EventKey key) {
 		/* Bug 551184 – Need gdk/gdkkeysyms.h bindings */
-		if (key.keyval == 0xff1b) {	/* Escape */
+		if (key.keyval == Gdk.keyval_from_name ("Escape")) {
 			AutoScroll.scroll (va1);
                         AutoScroll.scroll (va2);
                         AutoScroll.scroll (va3);
@@ -842,7 +842,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 
 	private void saveProfileAs () {
                 var dialog = new FileChooserDialog (null, gtkWindow, Gtk.FileChooserAction.SAVE);
-                dialog.add_buttons(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL, Gtk.STOCK_SAVE, Gtk.ResponseType.ACCEPT, null);
+                dialog.add_buttons(Gtk.Stock.CANCEL, Gtk.ResponseType.CANCEL, Gtk.Stock.SAVE, Gtk.ResponseType.ACCEPT, null);
                 dialog.set_do_overwrite_confirmation(true);
                 dialog.set_local_only(false);
 	        int response = dialog.run();
@@ -860,7 +860,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 
 	private void loadProfile() {
                 var dialog = new FileChooserDialog (null, gtkWindow, Gtk.FileChooserAction.OPEN);
-                dialog.add_buttons(Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL, Gtk.STOCK_OPEN, Gtk.ResponseType.ACCEPT, null);
+                dialog.add_buttons(Gtk.Stock.CANCEL, Gtk.ResponseType.CANCEL, Gtk.Stock.OPEN, Gtk.ResponseType.ACCEPT, null);
                 dialog.set_local_only(false);
 	        int response = dialog.run();
 	        if(response == Gtk.ResponseType.ACCEPT) {
