@@ -744,7 +744,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 AboutDialog.set_url_hook (url_hook);
                 show_about_dialog (gtkWindow,
                                    "version", Config.VERSION,
-                                   "copyright", "Copyright © 2009-2010\nMichael J. Chudobiak\n<mjc@svn.gnome.org>",
+                                   "copyright", "Copyright © 2009-2011\nMichael J. Chudobiak\n<mjc@svn.gnome.org>",
                                    "comments", _("A serial terminal for the GNOME desktop, optimized for logging and file capture."),
                                    "authors", authors,
                                    "translator-credits", translators,

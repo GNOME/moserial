@@ -2,8 +2,8 @@
 <!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
 "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd"[
   <!ENTITY legal SYSTEM "legal.xml">
-  <!ENTITY appversion "2.26.0">
-  <!ENTITY manualversion "2.26.0">
+  <!ENTITY appversion "3.0.0">
+  <!ENTITY manualversion "3.0.0">
   <!ENTITY date "April 2009">
   <!ENTITY appname "moserial">
   <!ENTITY app "<application>moserial</application>">
@@ -112,30 +112,13 @@
       you actually have permission to read and/or write to the port.
     </para>
     <para>
-      There are a number of ways this is done on a Linux system.
-      On Fedora 10, you may need to use the PolicyKit tool, invoked using
-      <menuchoice><guisubmenu>System</guisubmenu>
-                  <guisubmenu>Preferences</guisubmenu>
-		  <guisubmenu>System</guisubmenu>
-                  <guimenuitem>Authorizations</guimenuitem></menuchoice>. 
-      Then, navigate to the
-      <menuchoice><guisubmenu>org</guisubmenu>
-                  <guisubmenu>freedesktop</guisubmenu>
-                  <guisubmenu>device-access</guisubmenu>
-                  <guimenuitem>Directly access serial modem devices</guimenuitem></menuchoice>,
-      and click <guilabel>edit</guilabel>. Set <guilabel>Anyone:</guilabel> to "Yes".
-    </para>
-    <figure id="authorizations-fig">
-    <title>Serial Port Authorizations on Fedora 10</title>
-      <graphic format="PNG" fileref="figures/authorizations.png"/>
-    </figure>
-    <para>
       On some systems, you may need to do something like "sudo chmod o+rw /dev/ttyS*" and
       "sudo chmod o+rw /dev/ttyUSB*" to obtain read/write permissions (for all users) on the serial ports.
+      Unfortunately, this may not be persistent after reboots.
     </para>
     <para>
       Alternatively, you can see what group the devices belong to, and make your account a member of
-      that group.
+      that group. In Fedora 15, for example, you should add yourself to the "dialout" group.
     </para>
   </sect1>
 
