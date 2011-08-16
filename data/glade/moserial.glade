@@ -1110,7 +1110,9 @@ Space</property>
 230400
 460800
 576000
-927600</property>
+927600
+1000000
+2000000</property>
 		  <property name="add_tearoffs">False</property>
 		  <property name="focus_on_click">True</property>
 		</widget>

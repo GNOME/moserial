@@ -50,7 +50,7 @@ moserial_SOURCES = \
 	$(NULL)
 
 src/moserial.vala.stamp: $(moserial_VALASOURCES)
-	$(VALAC) -C --pkg gtk+-2.0 --pkg gdk-2.0 --pkg Config --pkg posix --pkg gconf-2.0 --vapidir src/ --basedir $(top_srcdir) $^
+	$(VALAC) -C --pkg gtk+-2.0 --pkg gdk-2.0 --pkg Config --pkg posix --pkg gconf-2.0 --pkg linux --vapidir src/ --basedir $(top_srcdir) $^
 	touch $@
 
 moserial_LDADD = \
@@ -68,7 +68,6 @@ EXTRA_DIST = \
 	$(moserial_VALASOURCES) \
 	src/Config.vapi		\
 	src/moserial.vala.stamp \
-	src/posix.vapi		\
         omf.make                \
         xmldocs.make            \
         gnome-doc-utils.make	\

@@ -199,6 +199,12 @@
       <row>
         <col id="0" translatable="yes">927600</col>
       </row>
+      <row>
+        <col id="0" translatable="yes">1000000</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">2000000</col>
+      </row>
     </data>
   </object>
   <object class="GtkListStore" id="model8">

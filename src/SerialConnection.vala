@@ -17,6 +17,9 @@
  *  along with moserial.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+using Posix;
+using Linux;
+
 public class moserial.SerialConnection : GLib.Object
 {
         private bool connected;
@@ -29,8 +32,8 @@ public class moserial.SerialConnection : GLib.Object
 	public string echoReference="";
 	public string echoCompare="";
 
-        private POSIX.Termios newtio;
-        private POSIX.Termios restoretio;
+        private Posix.termios newtio;
+        private Posix.termios restoretio;
         private int m_fd=-1;
         private GLib.IOChannel IOChannelFd;
         public signal void newData(uchar[] data, int size);
@@ -41,24 +44,24 @@ public class moserial.SerialConnection : GLib.Object
         public bool doConnect (Settings settings) {
 
                 if (settings.accessMode==Settings.AccessMode.READWRITE)
-                        flags=POSIX.File.AccessMode.RDWR;
+                        flags=Posix.O_RDWR;
                 else if (settings.accessMode==Settings.AccessMode.READONLY)
-                        flags=POSIX.File.AccessMode.RDONLY;
+                        flags=Posix.O_RDONLY;
                 else
-                        flags=POSIX.File.AccessMode.WRONLY;
+                        flags=Posix.O_WRONLY;
 
-                m_fd = POSIX.File.open(settings.device, flags | POSIX.File.FileStatus.NDELAY | POSIX.File.FileStatus.NONBLOCK);
+                m_fd = Posix.open(settings.device, flags | Posix.O_NONBLOCK);
                 if (m_fd<0) {
                         m_fd=-1;
                         // TODO display error in gui
                         return false;
                 }
-                POSIX.Termios.flush(m_fd, POSIX.LineControl.IOFLUSH);
-                int n = POSIX.File.fcntl(m_fd, POSIX.File.FDFlag.GETFL);
-                POSIX.File.fcntl_with_arg(m_fd, POSIX.File.FDFlag.SETFL, n & ~POSIX.File.FileStatus.NDELAY);
-		restoretio.get_attributes(m_fd);
+                Posix.tcflush(m_fd, Posix.TCIOFLUSH);
+//                int n = Posix.File.fcntl(m_fd, Posix.File.FDFlag.GETFL);
+//                Posix.File.fcntl_with_arg(m_fd, Posix.File.FDFlag.SETFL, n & ~Posix.File.FileStatus.NDELAY);
+		tcgetattr(m_fd, restoretio);
                 applySettings(settings);
-                newtio.set_attribute(m_fd, POSIX.AttributeSelection.NOW);
+                tcsetattr(m_fd, Posix.TCSANOW, newtio);
 
                 connected=true;
 
@@ -74,8 +77,8 @@ public class moserial.SerialConnection : GLib.Object
         	{
 	        	uchar[] b = new uchar[1];
 	        	b[0]=byte;
-	        	size_t x = POSIX.File.write(m_fd, b, 1);
-	        	//POSIX.Termios.drain(m_fd);
+	        	size_t x = Posix.write(m_fd, b, 1);
+	        	//Posix.tcdrain(m_fd);
 	        	
 			tx=tx+x;
 	        }
@@ -85,8 +88,8 @@ public class moserial.SerialConnection : GLib.Object
         {
                 if(connected)
         	{
-        		size_t x = POSIX.File.write(m_fd, bytes, size);
-	        	POSIX.Termios.drain(m_fd);
+        		size_t x = Posix.write(m_fd, bytes, size);
+	        	Posix.tcdrain(m_fd);
 			tx=tx+x;
         	}
         }
@@ -141,14 +144,14 @@ public class moserial.SerialConnection : GLib.Object
 			tx=rx=nonprintable=0;
 			echoReference="";
 			echoCompare="";
-        	        newtio.set_attribute(m_fd, POSIX.AttributeSelection.NOW);
-        	        POSIX.File.close(m_fd);
+        	        tcsetattr(m_fd, Posix.TCSANOW, newtio);
+        	        Posix.close(m_fd);
         	}
         }
 
         private bool readBytes(GLib.IOChannel source, GLib.IOCondition condition) {
                 uchar[] m_buf = new uchar[1000];
-                int bytesRead=(int)POSIX.File.read(m_fd, m_buf, 1000);
+                int bytesRead=(int)Posix.read(m_fd, m_buf, 1000);
 		rx += (ulong) bytesRead;
                 if (bytesRead<0)
                         return false;
@@ -163,57 +166,57 @@ public class moserial.SerialConnection : GLib.Object
                 uint baudRate = 0;
                 switch (settings.baudRate) {
                 case 300:
-                        baudRate=POSIX.BaudRate.B300;
+                        baudRate=Posix.B300;
                         break;
                 case 600:
-                        baudRate=POSIX.BaudRate.B600;
+                        baudRate=Posix.B600;
                         break;
                 case 1200:
-                        baudRate=POSIX.BaudRate.B1200;
+                        baudRate=Posix.B1200;
                         break;
                 case 2400:
-                        baudRate=POSIX.BaudRate.B2400;
+                        baudRate=Posix.B2400;
                         break;
                 case 4800:
-                        baudRate=POSIX.BaudRate.B4800;
+                        baudRate=Posix.B4800;
                         break;
                 case 9600:
-                        baudRate=POSIX.BaudRate.B9600;
+                        baudRate=Posix.B9600;
                         break;
                 case 19200:
-                        baudRate=POSIX.BaudRate.B19200;
+                        baudRate=Posix.B19200;
                         break;
                 case 38400:
-                        baudRate=POSIX.BaudRate.B38400;
+                        baudRate=Posix.B38400;
                         break;
                 case 57600:
-                        baudRate=POSIX.BaudRate.B57600;
+                        baudRate=Posix.B57600;
                         break;
                 case 115200:
-                        baudRate=POSIX.BaudRate.B115200;
+                        baudRate=Posix.B115200;
                         break;
                 case 230400:
-                        baudRate=POSIX.BaudRate.B230400;
+                        baudRate=Posix.B230400;
                         break;
                 case 460800:
-                        baudRate=POSIX.BaudRate.B460800;
+                        baudRate=Linux.Termios.B460800;
                         break;
                 case 576000:
-                        baudRate=POSIX.BaudRate.B576000;
+                        baudRate=Linux.Termios.B576000;
                         break;
                 case 921600:
-                        baudRate=POSIX.BaudRate.B921600;
+                        baudRate=Linux.Termios.B921600;
                         break;
                 case 1000000:
-                        baudRate=POSIX.BaudRate.B1000000;
+                        baudRate=Linux.Termios.B1000000;
                         break;
                 case 2000000:
-                        baudRate=POSIX.BaudRate.B2000000;
+                        baudRate=Linux.Termios.B2000000;
                         break;
                 }
 
-                newtio.set_output_speed(baudRate);
-                newtio.set_input_speed(baudRate);
+                Posix.cfsetospeed(newtio, baudRate);
+                Posix.cfsetispeed(newtio, baudRate);
 
                 //DataBits
                 int dataBits;
@@ -224,74 +227,74 @@ public class moserial.SerialConnection : GLib.Object
 
                 switch (dataBits) {
                 case 5:
-                        newtio.c_cflag = (newtio.c_cflag & ~POSIX.ControlMode.CSIZE) | POSIX.ControlMode.CS5;
+                        newtio.c_cflag = (newtio.c_cflag & ~Posix.CSIZE) | Posix.CS5;
                         break;
                 case 6:
-                        newtio.c_cflag = (newtio.c_cflag & ~POSIX.ControlMode.CSIZE) | POSIX.ControlMode.CS6;
+                        newtio.c_cflag = (newtio.c_cflag & ~Posix.CSIZE) | Posix.CS6;
                         break;
                 case 7:
-                        newtio.c_cflag = (newtio.c_cflag & ~POSIX.ControlMode.CSIZE) | POSIX.ControlMode.CS7;
+                        newtio.c_cflag = (newtio.c_cflag & ~Posix.CSIZE) | Posix.CS7;
                         break;
                 case 8:
                 default:
-                        newtio.c_cflag = (newtio.c_cflag & ~POSIX.ControlMode.CSIZE) | POSIX.ControlMode.CS8;
+                        newtio.c_cflag = (newtio.c_cflag & ~Posix.CSIZE) | Posix.CS8;
                         break;
                 }
-                newtio.c_cflag |= POSIX.ControlMode.CLOCAL | POSIX.ControlMode.CREAD;
+                newtio.c_cflag |= Posix.CLOCAL | Posix.CREAD;
 
                 //Parity
-                newtio.c_cflag &= ~(POSIX.ControlMode.PARENB | POSIX.ControlMode.PARODD);
+                newtio.c_cflag &= ~(Posix.PARENB | Posix.PARODD);
                 if (settings.parity==Settings.Parity.EVEN)
-                        newtio.c_cflag |= POSIX.ControlMode.PARENB;
+                        newtio.c_cflag |= Posix.PARENB;
                 else if (settings.parity==Settings.Parity.ODD)
-                        newtio.c_cflag |= (POSIX.ControlMode.PARENB | POSIX.ControlMode.PARODD);
+                        newtio.c_cflag |= (Posix.PARENB | Posix.PARODD);
 
-                newtio.c_cflag &= ~POSIX.InputMode.CRTSCTS;
+                newtio.c_cflag &= ~Linux.Termios.CRTSCTS;
 
 
                 //Stop Bits
                 if (settings.stopBits==2)
-                        newtio.c_cflag |= POSIX.ControlMode.CSTOPB;
+                        newtio.c_cflag |= Posix.CSTOPB;
                 else
-                        newtio.c_cflag &= ~POSIX.ControlMode.CSTOPB;
+                        newtio.c_cflag &= ~Posix.CSTOPB;
 
                 //Input Settings
-                newtio.c_iflag = POSIX.InputMode.IGNBRK;
+                newtio.c_iflag = Posix.IGNBRK;
 
                 //Handshake
                 if (settings.handshake==Settings.Handshake.SOFTWARE || settings.handshake == Settings.Handshake.BOTH)
-                        newtio.c_iflag |= POSIX.InputMode.IXON | POSIX.InputMode.IXOFF;
+                        newtio.c_iflag |= Posix.IXON | Posix.IXOFF;
                 else
-                        newtio.c_iflag &= ~(POSIX.InputMode.IXON | POSIX.InputMode.IXOFF | POSIX.InputMode.IXANY);
+                        newtio.c_iflag &= ~(Posix.IXON | Posix.IXOFF | Posix.IXANY);
 
                 newtio.c_lflag = 0;
                 newtio.c_oflag = 0;
 
-                newtio.c_cc[POSIX.Misc.VTIME]=1;
-                newtio.c_cc[POSIX.Misc.VMIN]=1;
+                newtio.c_cc[Posix.VTIME]=1;
+                newtio.c_cc[Posix.VMIN]=1;
 	
 	
 		//Some other port settings from minicom.
 		
 //		newtio.c_iflag &= ~(IGNBRK | IGNCR | INLCR | ICRNL | IUCLC | IXANY | IXON | IXOFF | INPCK | ISTRIP);
-		//newtio.c_iflag &= ~(POSIX.InputMode.IGNBRK | POSIX.InputMode.IGNCR | POSIX.InputMode.INLCR | POSIX.InputMode.ICRNL | POSIX.InputMode.IXANY | POSIX.InputMode.IXON | POSIX.InputMode.IXOFF | POSIX.InputMode.INPCK | POSIX.InputMode.ISTRIP);
-		//newtio.c_iflag |= (POSIX.InputMode.BRKINT | POSIX.InputMode.IGNPAR);
-		//newtio.c_oflag &= ~POSIX.OutputMode.OPOST;
+		//newtio.c_iflag &= ~(Posix.IGNBRK | Posix.IGNCR | Posix.InputMode.INLCR | Posix.InputMode.ICRNL | Posix.IXANY | Posix.IXON | Posix.IXOFF | Posix.INPCK | Posix.ISTRIP);
+		//newtio.c_iflag |= (Posix.BRKINT | Posix.IGNPAR);
+		//newtio.c_oflag &= ~Posix.OPOST;
 		//newtio.c_lflag &= ~(XCASE|ECHONL|NOFLSH);
-		newtio.c_lflag &= ~(POSIX.LocalMode.ECHONL|POSIX.LocalMode.NOFLSH);
-		//newtio.c_lflag &= ~(POSIX.LocalMode.ICANON | POSIX.LocalMode.ISIG | POSIX.LocalMode.ECHO);
+		newtio.c_lflag &= ~(Posix.ECHONL|Posix.NOFLSH);
+		//newtio.c_lflag &= ~(Posix.ICANON | Posix.ISIG | Posix.ECHO);
 		//newtio.c_cflag |= CREAD;
 		//newtio.c_cc[VTIME] = 5;
 
                 int mcs=0;
-                POSIX.ioctl.ioctl(m_fd, POSIX.ioctl.TIOCMGET, out mcs);
-                mcs |= POSIX.ioctl.TIOCM_RTS;
-                POSIX.ioctl.ioctl(m_fd, POSIX.ioctl.TIOCMSET, out mcs);
+                Posix.ioctl(m_fd, Linux.Termios.TIOCMGET, out mcs);
+                mcs |= Linux.Termios.TIOCM_RTS;
+                Posix.ioctl(m_fd, Linux.Termios.TIOCMSET, out mcs);
 
                 if (settings.handshake == Settings.Handshake.HARDWARE || settings.handshake == Settings.Handshake.BOTH)
-                        newtio.c_cflag |= POSIX.InputMode.CRTSCTS;
+                        newtio.c_cflag |= Linux.Termios.CRTSCTS;
                 else
-                        newtio.c_cflag &= ~POSIX.InputMode.CRTSCTS;
+                        newtio.c_cflag &= ~Linux.Termios.CRTSCTS;
         }
 
         public string getBytecountbarString() {
