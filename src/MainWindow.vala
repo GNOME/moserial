@@ -226,19 +226,15 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 echoTag = incomingAsciiTextBuffer.create_tag("echo", null);
 
                 incomingHexTextView = (TextView)builder.get_object("incoming_hex_textview");
-                incomingHexTextView.modify_font(Pango.FontDescription.from_string("Monospace 10"));
                 incomingHexTextView.set_buffer(incomingHexTextBuffer);
 
                 incomingAsciiTextView = (TextView)builder.get_object("incoming_ascii_textview");
-                incomingAsciiTextView.modify_font(Pango.FontDescription.from_string("Monospace 10"));
                 incomingAsciiTextView.set_buffer(incomingAsciiTextBuffer);
 
                 outgoingHexTextView = (TextView)builder.get_object("outgoing_hex_textview");
-                outgoingHexTextView.modify_font(Pango.FontDescription.from_string("Monospace 10"));
                 outgoingHexTextView.set_buffer(outgoingHexTextBuffer);
 
                 outgoingAsciiTextView = (TextView)builder.get_object("outgoing_ascii_textview");
-                outgoingAsciiTextView.modify_font(Pango.FontDescription.from_string("Monospace 10"));
                 outgoingAsciiTextView.set_buffer(outgoingAsciiTextBuffer);
                 
                 //setup scrolling
@@ -586,6 +582,11 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
  	      	outgoingHexTextView.modify_text(Gtk.StateType.NORMAL, Preferences.getGdkColor(currentPreferences.fontColor));
         	outgoingHexTextView.modify_base(Gtk.StateType.NORMAL, Preferences.getGdkColor(currentPreferences.backgroundColor));
         	outgoingHexTextBuffer.applyPreferences(currentPreferences);
+
+		entry.modify_font(Pango.FontDescription.from_string(font));
+		entry.modify_text(Gtk.StateType.NORMAL, Preferences.getGdkColor(currentPreferences.fontColor));
+		entry.modify_base(Gtk.StateType.NORMAL, Preferences.getGdkColor(currentPreferences.backgroundColor));
+
         	profileChanged=true;
         }
 
