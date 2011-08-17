@@ -57,15 +57,15 @@ public class Preferences : GLib.Object
 			highlightColor=DEFAULT_HIGHLIGHT_COLOR;
 	}
 	public static string getSystemDefaultMonospaceFont() {
-		string value = "";
 
-                var gc = GConf.Client.get_default ();
-                try {
-                        value = gc.get_string("/desktop/gnome/interface/monospace_font_name");
-                } catch (GLib.Error e) {
-                        warning(_("Unable to retrieve gconf key: %s"), e.message);
-                        value = "Monospace 10";
+		var settings = new GLib.Settings ("org.gnome.desktop.interface");
+                string value = settings.get_string ("monospace-font-name");
+
+		if (value == "") {
+                        warning(_("Unable to retrieve system font setting"));
+                        value = DEFAULT_FONT;
                 }
+
                 return value;
 	}
 	public static Gdk.Color getGdkColor(string color) {
