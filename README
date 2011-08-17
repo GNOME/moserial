@@ -1,0 +1,14 @@
+Build issues
+============
+
+If you see this error:
+src/SerialConnection.c:31:21: fatal error: stropts.h: No such file or directory
+
+then either:
+
+1. sudo touch /usr/include/stropts.h
+
+or
+
+2. patch your posix.vapi file as described at
+http://bugzilla.gnome.org/show_bug.cgi?id=656690#c3
