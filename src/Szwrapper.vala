@@ -160,11 +160,11 @@ public class moserial.Szwrapper: GLib.Object
 			message = MoUtils.getLastMessage(messages);
 			if(!(message==""))
 				updateStatus(message);
-			if(!(messages.str("Transfer complete")==null)) {
+			if(messages.index_of ("Transfer complete", 0) >= 0) {
 				GLib.Timeout.add(2000, shutdown_timeout); //Wait 2 seconds for for the final remote packet to get ackd
 				//shutdown();
 			}
-			if(!(messages.str("Transfer incomplete")==null)) {
+			if(messages.index_of ("Transfer incomplete", 0) >= 0) {
 				shutdown();
 			}
 		        return true;
