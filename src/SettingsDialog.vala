@@ -182,9 +182,9 @@ public class moserial.SettingsDialog : GLib.Object
                 Settings.AccessMode accessMode;
                 bool pLocalEcho;
                 device = deviceCombo.get_active_text();
-                baudRate = baudRateCombo.get_active_text().to_int();
-                dataBits = dataBitsCombo.get_active_text().to_int();
-                stopBits = stopBitsCombo.get_active_text().to_int();
+                baudRate = int.parse (baudRateCombo.get_active_text());
+                dataBits = int.parse (dataBitsCombo.get_active_text());
+                stopBits = int.parse (stopBitsCombo.get_active_text());
 
 		/* Glade choices must be in same order as Settings enums */
                 parity = (Settings.Parity)parityCombo.get_active();
