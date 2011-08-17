@@ -128,7 +128,7 @@ public class moserial.PreferencesDialog : GLib.Object
                 hide();
         }
         public bool hide() {
-                dialog.hide_all();
+                dialog.hide();
                 return true;
         }
         public void systemFontToggled(ToggleButton button)

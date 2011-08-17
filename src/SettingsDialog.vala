@@ -162,13 +162,13 @@ public class moserial.SettingsDialog : GLib.Object
         }
 
         public bool hide (Gtk.Widget w, Gdk.Event event) {
-                dialog.hide_all ();
+                dialog.hide ();
                 return true;
         }
 
         public void cancel (Widget w) {
                 currentSettings=null;
-		dialog.hide_all ();
+		dialog.hide ();
         }
 
         public void ok (Widget w) {
@@ -202,6 +202,6 @@ public class moserial.SettingsDialog : GLib.Object
                 settings = new Settings(device, baudRate, dataBits, stopBits, parity, handshake, accessMode, pLocalEcho);
                 currentSettings = settings;
                 this.updateSettings(currentSettings);
-                dialog.hide_all ();
+                dialog.hide ();
         }
 }

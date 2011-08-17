@@ -44,7 +44,7 @@ public class moserial.SendProgressDialog : GLib.Object
         }
 
         public bool hide() {
-                dialog.hide_all();
+                dialog.hide();
                 return true;
         }
         
