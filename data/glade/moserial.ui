@@ -264,8 +264,9 @@
         </child>
         <child>
           <object class="GtkAction" id="menubar_open_settings">
-            <property name="stock_id">_Open Settings</property>
+            <property name="stock_id">gtk-open</property>
             <property name="name">menubar_open_settings</property>
+            <property name="label">Open Settings</property>
           </object>
         </child>
         <child>
@@ -276,14 +277,16 @@
         </child>
         <child>
           <object class="GtkAction" id="menubar_save_settings">
-            <property name="stock_id">_Save Settings</property>
+            <property name="stock_id">gtk-save</property>
             <property name="name">menubar_save_settings</property>
+            <property name="label">Save Settings</property>
           </object>
         </child>
         <child>
           <object class="GtkAction" id="menubar_save_settings_as">
-            <property name="stock_id">Save Settings _As</property>
+            <property name="stock_id">gtk-save-as</property>
             <property name="name">menubar_save_settings_as</property>
+            <property name="label">Save Settings As</property>
           </object>
         </child>
         <child>
@@ -336,7 +339,7 @@
         </child>
         <child>
           <object class="GtkAction" id="menubar_contents">
-            <property name="stock_id">_Contents</property>
+            <property name="stock_id">gtk-help</property>
             <property name="name">menubar_contents</property>
           </object>
           <accelerator key="F1"/>
