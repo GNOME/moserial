@@ -1,14 +1,16 @@
 Build issues
 ============
 
-If you see this error:
-src/SerialConnection.c:31:21: fatal error: stropts.h: No such file or directory
+A. moserial requires vala 0.12.x to compile.
 
-then either:
+B. If you see this error:
+   src/SerialConnection.c:31:21: fatal error: stropts.h: No such file or directory
 
-1. sudo touch /usr/include/stropts.h
+   then either:
 
-or
+   1. sudo touch /usr/include/stropts.h
 
-2. patch your posix.vapi file as described at
-http://bugzilla.gnome.org/show_bug.cgi?id=656690#c3
+   or
+
+   2. patch your posix.vapi file as described at
+   http://bugzilla.gnome.org/show_bug.cgi?id=656690#c3
