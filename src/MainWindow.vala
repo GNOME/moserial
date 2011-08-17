@@ -776,7 +776,6 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
         }
 
 	private bool keyPress(Widget widget, EventKey key) {
-		/* Bug 551184 – Need gdk/gdkkeysyms.h bindings */
 		if (key.keyval == Gdk.keyval_from_name ("Escape")) {
 			AutoScroll.scroll (va1);
                         AutoScroll.scroll (va2);
