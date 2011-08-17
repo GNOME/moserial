@@ -46,11 +46,7 @@ public class moserial.SerialStreamRecorder {
 			uchar[] o = new uchar[1];
 			o[0]=data;
 			try {
-#if VALA_0_12
 	                        fos.write(o, null);
-#else
-        	                fos.write(o, 1, null);
-#endif
 			}
 			catch(GLib.Error e) {
 				stdout.printf(_("error: %s\n"), e.message);
