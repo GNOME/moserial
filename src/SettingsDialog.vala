@@ -55,10 +55,18 @@ public class moserial.SettingsDialog : GLib.Object
                 dataBitsCombo = (ComboBox)builder.get_object("settings_data_bits");
                 stopBitsCombo = (ComboBox)builder.get_object("settings_stop_bits");
                 parityCombo = (ComboBox)builder.get_object("settings_parity");
+
                 hardwareHandshake = (CheckButton)builder.get_object("settings_hardware_handshake");
+		hardwareHandshake.set_tooltip_text (_("Also known as RTS/CTS handshaking"));
+
                 softwareHandshake = (CheckButton)builder.get_object("settings_software_handshake");
+		softwareHandshake.set_tooltip_text (_("Also known as XON/XOFF handshaking"));
+
                 accessModeCombo = (ComboBox)builder.get_object("settings_open_for");
+
                 localEcho = (CheckButton)builder.get_object("settings_local_echo");
+		localEcho.set_tooltip_text (_("Normally disabled"));
+
                 dialog.delete_event.connect(hide);
                 cancelButton.clicked.connect(this.cancel);
                 okButton.clicked.connect(this.ok);

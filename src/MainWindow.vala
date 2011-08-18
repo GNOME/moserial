@@ -149,10 +149,12 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 settingsDialog.updateSettings.connect(this.updateSettings);
                 settingsButton = (ToolButton)builder.get_object("toolbar_settings");
                 settingsButton.clicked.connect(this.showSettingsDialog);
+		settingsButton.set_tooltip_text (_("Port configuration"));
 
                 //setup the Help button
                 ToolButton helpButton = (ToolButton)builder.get_object("toolbar_help");
                 helpButton.clicked.connect(showHelpButton);
+		helpButton.set_tooltip_text (_("Read the manual"));
 
                 //setup the statusbar
                 statusbar = (Statusbar)builder.get_object("statusbar");
@@ -173,6 +175,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 sendChooserDialog = new SendChooserDialog(builder);
                 send = (ToolButton)builder.get_object("toolbar_send");
                 send.clicked.connect(doSendChooser);
+		send.set_tooltip_text (_("Send a file"));
                 sendChooserDialog.startTransfer.connect(this.doSend);
                 sz = new Szwrapper(Szwrapper.Protocol.NULL, null, null);
 
@@ -180,7 +183,8 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 receiveProgressDialog = new ReceiveProgressDialog(builder);
                 receiveChooserDialog = new ReceiveChooserDialog(builder);
                 receive = (ToolButton)builder.get_object("toolbar_receive");
-                receive.clicked .connect(doReceiveChooser);
+                receive.clicked.connect(doReceiveChooser);
+		receive.set_tooltip_text (_("Receive a file"));
                 receiveChooserDialog.startTransfer.connect(this.doReceive);
                 xmodemFilenameDialog = new XmodemFilenameDialog(builder);
                 rz = new Rzwrapper(Rzwrapper.Protocol.NULL, null, null, null);
@@ -190,6 +194,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 recordDialog = new RecordDialog(builder);
                 recordButton = (ToggleToolButton)builder.get_object("toolbar_logging");
                 recordButton.toggled.connect(this.record);
+                recordButton.set_tooltip_text (_("Record sent and/or received data"));
                 recordDialog.stopRecording.connect(this.stopRecording);
                 recordDialog.startRecording.connect(this.startRecording);
                 recordLabel = (Label)builder.get_object("record_label");
@@ -200,10 +205,12 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 preferencesDialog.updatePreferences.connect(this.updatePreferences);
                 ToolButton preferences = (ToolButton)builder.get_object("toolbar_preferences");
                 preferences.clicked.connect(this.showPreferencesDialog);
+		preferences.set_tooltip_text (_("Other preferences"));
 
                 //setup connectbutton
                 connectButton = (ToggleToolButton)builder.get_object("toolbar_connect");
                 connectButton.toggled.connect(this.connectButtonClick);
+		connectButton.set_tooltip_text (_("Open/close port"));
                 disconnectLabel = (Label)builder.get_object("disconnect_label");
                 connectLabel = (Label)builder.get_object("connect_label");
 
@@ -251,8 +258,10 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 //setup entry
                 sendButton = (Button)builder.get_object("send");
                 sendButton.clicked.connect(sendString);
+		sendButton.set_tooltip_text (_("Send the outgoing data now."));
                 entry = (Gtk.Entry)builder.get_object("entry");
                 entry.activate.connect(sendString);
+		entry.set_tooltip_text (_("Type outgoing data here. Press Enter or Send to send it."));
                 inputMode = (ComboBox)builder.get_object("input_mode");
                 inputMode.set_active(0);
 		inputMode.changed.connect(inputModeChanged);

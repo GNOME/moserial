@@ -192,7 +192,6 @@
             <child>
               <widget class="GtkToggleToolButton" id="toolbar_connect">
                 <property name="visible">True</property>
-                <property name="tooltip" translatable="yes">Open/close port</property>
                 <property name="is_important">True</property>
                 <property name="label" translatable="yes">Connect</property>
                 <property name="use_underline">True</property>
@@ -215,7 +214,6 @@
             <child>
               <widget class="GtkToggleToolButton" id="toolbar_logging">
                 <property name="visible">True</property>
-                <property name="tooltip" translatable="yes">Record sent and/or received data</property>
                 <property name="is_important">True</property>
                 <property name="label" translatable="yes">Record</property>
                 <property name="use_underline">True</property>
@@ -229,7 +227,6 @@
             <child>
               <widget class="GtkToolButton" id="toolbar_send">
                 <property name="visible">True</property>
-                <property name="tooltip" translatable="yes">Send a file</property>
                 <property name="is_important">True</property>
                 <property name="label" translatable="yes">Send File</property>
                 <property name="use_underline">True</property>
@@ -243,7 +240,6 @@
             <child>
               <widget class="GtkToolButton" id="toolbar_receive">
                 <property name="visible">True</property>
-                <property name="tooltip" translatable="yes">Receive a file</property>
                 <property name="is_important">True</property>
                 <property name="label" translatable="yes">Receive File</property>
                 <property name="use_underline">True</property>
@@ -266,7 +262,6 @@
             <child>
               <widget class="GtkToolButton" id="toolbar_settings">
                 <property name="visible">True</property>
-                <property name="tooltip" translatable="yes">Port configuration</property>
                 <property name="is_important">True</property>
                 <property name="label" translatable="yes">Port Setup</property>
                 <property name="use_underline">True</property>
@@ -280,7 +275,6 @@
             <child>
               <widget class="GtkToolButton" id="toolbar_preferences">
                 <property name="visible">True</property>
-                <property name="tooltip" translatable="yes">Other preferences</property>
                 <property name="is_important">True</property>
                 <property name="label" translatable="yes">Preferences</property>
                 <property name="use_underline">True</property>
@@ -302,7 +296,6 @@
             <child>
               <widget class="GtkToolButton" id="toolbar_help">
                 <property name="visible">True</property>
-                <property name="tooltip" translatable="yes">Help</property>
                 <property name="is_important">True</property>
                 <property name="label" translatable="yes">Help</property>
                 <property name="use_underline">True</property>
@@ -499,7 +492,6 @@
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="has_focus">True</property>
-                    <property name="tooltip" translatable="yes">Type outgoing data here. Press Enter or Send to send it.</property>
                     <property name="invisible_char">&#x25CF;</property>
                   </widget>
                   <packing>
@@ -512,7 +504,6 @@
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">False</property>
-                    <property name="tooltip" translatable="yes">Send the outgoing data now.</property>
                     <property name="use_underline">True</property>
                   </widget>
                   <packing>
@@ -651,7 +642,6 @@ Write Only</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">False</property>
-                        <property name="tooltip" translatable="yes">Also known as RTS/CTS handshaking</property>
                         <property name="use_underline">True</property>
                         <property name="draw_indicator">True</property>
                       </widget>
@@ -666,7 +656,6 @@ Write Only</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">False</property>
-                        <property name="tooltip" translatable="yes">Also known as XON/XOFF handshaking</property>
                         <property name="use_underline">True</property>
                         <property name="draw_indicator">True</property>
                       </widget>
@@ -881,7 +870,6 @@ Space</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">False</property>
-                    <property name="tooltip" translatable="yes">Normally disabled</property>
                     <property name="use_underline">True</property>
                     <property name="draw_indicator">True</property>
                   </widget>
@@ -1614,7 +1602,6 @@ None (straight binary)</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">False</property>
-                        <property name="tooltip" translatable="yes">If this option is enabled, a recorded file will be opened immediately after it is saved, using the default application for the file type. The default application is defined by the desktop environment.</property>
                         <property name="use_underline">True</property>
                         <property name="active">True</property>
                         <property name="draw_indicator">True</property>
@@ -1639,7 +1626,6 @@ None (straight binary)</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">False</property>
-                        <property name="tooltip" translatable="yes">If this option is enabled, recording will be automatically stopped after an adjustable period of inactivity after receiving some data. That is, moserial will wait indefinitely to record the first data byte before activating the inactivity timer.</property>
                         <property name="use_underline">True</property>
                         <property name="draw_indicator">True</property>
                       </widget>
