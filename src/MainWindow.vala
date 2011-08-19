@@ -92,8 +92,8 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
         public string? startupProfileFilename{get; construct; }
         private string profileFilename=null;
         private bool profileChanged=false;
-        private Gtk.Action cutMenuItem;
-        private Gtk.Action copyMenuItem;
+        private Gtk.ImageMenuItem cutMenuItem;
+        private Gtk.ImageMenuItem copyMenuItem;
 	private Adjustment va1;
 	private Adjustment va2;
 	private Adjustment va3;
@@ -128,25 +128,25 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 			paned.set_position(-1);
 
                 //setup menu items
-                Gtk.Action quit = (Gtk.Action)builder.get_object("menubar_quit");
+                Gtk.ImageMenuItem quit = (Gtk.ImageMenuItem)builder.get_object("menubar_quit");
                 quit.activate.connect(quitSizeSave);
-                Gtk.Action saveAs = (Gtk.Action)builder.get_object("menubar_save_settings_as");
+                Gtk.ImageMenuItem saveAs = (Gtk.ImageMenuItem)builder.get_object("menubar_save_settings_as");
                 saveAs.activate.connect(saveProfileAs);
-                Gtk.Action save = (Gtk.Action)builder.get_object("menubar_save_settings");
+                Gtk.ImageMenuItem save = (Gtk.ImageMenuItem)builder.get_object("menubar_save_settings");
                 save.activate.connect(saveProfile);
-                Gtk.Action open = (Gtk.Action)builder.get_object("menubar_open_settings");
+                Gtk.ImageMenuItem open = (Gtk.ImageMenuItem)builder.get_object("menubar_open_settings");
                 open.activate.connect(loadProfile);
-                copyMenuItem = (Gtk.Action)builder.get_object("menubar_copy");
+                copyMenuItem = (Gtk.ImageMenuItem)builder.get_object("menubar_copy");
 		copyMenuItem.activate.connect(this.copy);
-		Gtk.Action editMenuItem = (Gtk.Action)builder.get_object("menubar_edit");
+		Gtk.MenuItem editMenuItem = (Gtk.MenuItem)builder.get_object("menubar_edit");
 		editMenuItem.activate.connect(this.editMenu);
-		cutMenuItem = (Gtk.Action)builder.get_object("menubar_cut");
+		cutMenuItem = (Gtk.ImageMenuItem)builder.get_object("menubar_cut");
 		copyMenuItem.set_sensitive(false);
 		cutMenuItem.set_sensitive(false);
 		cutMenuItem.activate.connect(this.cut);
-		Gtk.Action pasteMenuItem = (Gtk.Action)builder.get_object("menubar_paste");
+		Gtk.ImageMenuItem pasteMenuItem = (Gtk.ImageMenuItem)builder.get_object("menubar_paste");
 		pasteMenuItem.activate.connect(this.paste);
-		Gtk.Action clearMenuItem = (Gtk.Action)builder.get_object("menubar_clear");
+		Gtk.ImageMenuItem clearMenuItem = (Gtk.ImageMenuItem)builder.get_object("menubar_clear");
 		clearMenuItem.activate.connect(this.clear);
 		
                 //setup the Port Settings Dialog
@@ -172,7 +172,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 bytecountbar.push(bytecountbarContext, _("TX: 0, RX: 0"));
 
                 //setup the about dialog
-                Gtk.Action about = (Gtk.Action)builder.get_object("menubar_about");
+                Gtk.ImageMenuItem about = (Gtk.ImageMenuItem)builder.get_object("menubar_about");
                 about.activate.connect(showAboutDialog);
 
                 //setup send
@@ -220,7 +220,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 connectLabel = (Label)builder.get_object("connect_label");
 
                 //setup help
-                Gtk.Action contents = (Gtk.Action)builder.get_object("menubar_contents");
+                Gtk.ImageMenuItem contents = (Gtk.ImageMenuItem)builder.get_object("menubar_contents");
                 contents.activate.connect(showHelpAction);
 
                 //setup incoming notebook
@@ -285,16 +285,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 filter.add_application(GLib.Environment.get_application_name());
                 recentChooserMenu.add_filter(filter);
                 recentChooserMenu.set_show_numbers(true);
-                /* We have to do this ugly iteration stuff because 
-		   gtk-builder-convert currently turns menuitems into actions.
-		   Hopefully this wont be need with new glade versions. */
-                MenuShell menuBar = (MenuBar)builder.get_object("menubar");
-               	GLib.List children = menuBar.get_children();
-               	MenuItem fileMenu;
-               	fileMenu = (MenuItem)children.first().data;
-               	MenuShell fileMenuShell = (MenuShell)fileMenu.get_submenu();
-                children = fileMenuShell.get_children();
-                MenuItem recentFileItem = (MenuItem)children.nth(2).data;
+                MenuItem recentFileItem = (Gtk.MenuItem)builder.get_object("menubar_open_recent");
                	recentFileItem.set_submenu(recentChooserMenu);
 
                 //load and apply preferences
@@ -744,7 +735,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 		showHelp ();
 	}
 	
-	private void showHelpAction (Gtk.Action a) {
+	private void showHelpAction () {
 		showHelp ();
 	}
 
@@ -894,7 +885,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 		}
 	}
 	
-	private void editMenu(Gtk.Action a) {
+	private void editMenu() {
 		if(gtkWindow.get_focus()==(Gtk.Widget)outgoingAsciiTextView || gtkWindow.get_focus()==(Gtk.Widget)incomingAsciiTextView || gtkWindow.get_focus()==(Gtk.Widget)outgoingHexTextView || gtkWindow.get_focus()==(Gtk.Widget)incomingHexTextView) {
 			cutMenuItem.set_sensitive(false);
 			TextView tv = (TextView)gtkWindow.get_focus();
