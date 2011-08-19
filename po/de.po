@@ -2,16 +2,16 @@
 # Copyright (C) 2009 Free Software Foundation, Inc.
 # This file is distributed under the same license as the moserial package.
 # Hendrik Brandt <heb@gnome-de.org>, 2009.
-# Mario Blättermann <mariobl@gnome.org>, 2009, 2010.
+# Mario Blättermann <mariobl@freenet.de>, 2009-2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: moserial master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=moserial&component=general\n"
-"POT-Creation-Date: 2010-02-05 14:21+0000\n"
-"PO-Revision-Date: 2010-02-17 11:29+0100\n"
-"Last-Translator: Mario Blättermann <mariobl@gnome.org>\n"
+"product=moserial&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-08-18 14:12+0000\n"
+"PO-Revision-Date: 2011-08-19 10:29+0100\n"
+"Last-Translator: Mario Blättermann <mariobl@freenet.de>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -60,7 +60,9 @@ msgid ""
 "230400\n"
 "460800\n"
 "576000\n"
-"927600"
+"927600\n"
+"1000000\n"
+"2000000"
 msgstr ""
 "300\n"
 "600\n"
@@ -75,9 +77,11 @@ msgstr ""
 "230400\n"
 "460800\n"
 "576000\n"
-"927600"
+"927600\n"
+"1000000\n"
+"2000000"
 
-#: ../data/glade/moserial.glade.h:25
+#: ../data/glade/moserial.glade.h:27
 msgid ""
 "5\n"
 "6\n"
@@ -89,23 +93,23 @@ msgstr ""
 "7\n"
 "8"
 
-#: ../data/glade/moserial.glade.h:29
+#: ../data/glade/moserial.glade.h:31
 msgid "<b>Font</b>"
 msgstr "<b>Schrift</b>"
 
-#: ../data/glade/moserial.glade.h:30
+#: ../data/glade/moserial.glade.h:32
 msgid "<b>Port Settings</b>"
 msgstr "<b>Port-Einstellungen</b>"
 
-#: ../data/glade/moserial.glade.h:31
+#: ../data/glade/moserial.glade.h:33
 msgid "<b>Recording</b>"
 msgstr "<b>Aufzeichnung</b>"
 
-#: ../data/glade/moserial.glade.h:32
+#: ../data/glade/moserial.glade.h:34
 msgid "<i>Outgoing</i>"
 msgstr "<i>Ausgehend</i>"
 
-#: ../data/glade/moserial.glade.h:33
+#: ../data/glade/moserial.glade.h:35
 msgid ""
 "ASCII\n"
 "HEX"
@@ -113,17 +117,9 @@ msgstr ""
 "ASCII\n"
 "HEX"
 
-#: ../data/glade/moserial.glade.h:35
+#: ../data/glade/moserial.glade.h:37
 msgid "Access Mode"
 msgstr "Zugriffsmodus"
-
-#: ../data/glade/moserial.glade.h:36
-msgid "Also known as RTS/CTS handshaking"
-msgstr "Auch bekannt als RTS/CTS-Handshaking"
-
-#: ../data/glade/moserial.glade.h:37
-msgid "Also known as XON/XOFF handshaking"
-msgstr "Auch bekannt als XON/XOFF-Handshaking"
 
 #: ../data/glade/moserial.glade.h:38
 msgid "Background Color"
@@ -207,28 +203,6 @@ msgstr "Hervorhebungsfarbe"
 
 #: ../data/glade/moserial.glade.h:60
 msgid ""
-"If this option is enabled, a recorded file will be opened immediately after "
-"it is saved, using the default application for the file type. The default "
-"application is defined by the desktop environment."
-msgstr ""
-"Wenn diese Option ausgewählt ist, wird die aufgezeichnete Datei direkt "
-"nachdem sie gespeichert wurde mit der Standardanwendung für diesen Dateityp "
-"geöffnet. Die Standardanwendung wird von der Desktop-Umgebung vorgegeben."
-
-#: ../data/glade/moserial.glade.h:61
-msgid ""
-"If this option is enabled, recording will be automatically stopped after an "
-"adjustable period of inactivity after receiving some data. That is, moserial "
-"will wait indefinitely to record the first data byte before activating the "
-"inactivity timer."
-msgstr ""
-"Wenn diese Option ausgewählt ist, wird die Aufzeichnung nach einer bestimmten "
-"Zeit der Inaktivität, nach dem erstmaligen Empfang von Daten, beendet. "
-"Dadurch wartet die Anwendung eine unbegrenzte Zeit auf dem Empfang der ersten "
-"Daten ehe die Inaktivitätszeit gezählt wird."
-
-#: ../data/glade/moserial.glade.h:62
-msgid ""
 "Incoming\n"
 "Outgoing\n"
 "Incoming and Outgoing"
@@ -237,11 +211,11 @@ msgstr ""
 "Ausgehend\n"
 "Ein- und Ausgehend"
 
-#: ../data/glade/moserial.glade.h:65
+#: ../data/glade/moserial.glade.h:63
 msgid "Local Echo"
 msgstr "Lokales Echo"
 
-#: ../data/glade/moserial.glade.h:66
+#: ../data/glade/moserial.glade.h:64
 msgid ""
 "None\n"
 "Odd\n"
@@ -255,40 +229,23 @@ msgstr ""
 "Markierung\n"
 "Leerzeichen"
 
-#: ../data/glade/moserial.glade.h:71
-msgid "Normally disabled"
-msgstr "Standardmäßig deaktiviert"
-
-#: ../data/glade/moserial.glade.h:72
+#: ../data/glade/moserial.glade.h:69
 msgid "Open _Recent"
 msgstr "_Zuletzt geöffnet"
 
-#: ../data/glade/moserial.glade.h:73
-msgid "Open/close port"
-msgstr "Port öffnen/schließen"
-
-#: ../data/glade/moserial.glade.h:74
-#| msgid "Preferences"
-msgid "Other preferences"
-msgstr "Weitere Einstellungen"
-
-#: ../data/glade/moserial.glade.h:75
+#: ../data/glade/moserial.glade.h:70
 msgid "Parity"
 msgstr "Parität"
 
-#: ../data/glade/moserial.glade.h:76
+#: ../data/glade/moserial.glade.h:71
 msgid "Port Setup"
 msgstr "Port-Einstellungen"
 
-#: ../data/glade/moserial.glade.h:77
-msgid "Port configuration"
-msgstr "Port-Konfiguration"
-
-#: ../data/glade/moserial.glade.h:78
+#: ../data/glade/moserial.glade.h:72
 msgid "Preferences"
 msgstr "Einstellungen"
 
-#: ../data/glade/moserial.glade.h:79
+#: ../data/glade/moserial.glade.h:73
 msgid ""
 "Read and Write\n"
 "Read Only\n"
@@ -298,107 +255,75 @@ msgstr ""
 "Nur Lesen\n"
 "Nur Schreiben"
 
-#: ../data/glade/moserial.glade.h:82
+#: ../data/glade/moserial.glade.h:76
 msgid "Receive File"
 msgstr "Datei empfangen"
 
-#: ../data/glade/moserial.glade.h:83
+#: ../data/glade/moserial.glade.h:77
 msgid "Receive File Progress"
 msgstr "Fortschritt der empfangenen Datei"
 
-#: ../data/glade/moserial.glade.h:84
-#| msgid "Receive File"
-msgid "Receive a file"
-msgstr "Eine Datei empfangen"
-
-#: ../data/glade/moserial.glade.h:85
+#: ../data/glade/moserial.glade.h:78
 msgid "Received ASCII"
 msgstr "Empfangenes ASCII"
 
-#: ../data/glade/moserial.glade.h:86
+#: ../data/glade/moserial.glade.h:79
 msgid "Received HEX"
 msgstr "Empfangenes HEX"
 
-#: ../data/glade/moserial.glade.h:87
+#: ../data/glade/moserial.glade.h:80
 msgid "Record"
 msgstr "Aufzeichnen"
 
-#: ../data/glade/moserial.glade.h:88
+#: ../data/glade/moserial.glade.h:81
 msgid "Record Incoming and/or Outgoing Data"
 msgstr "Eingehende und/oder ausgehende Daten aufzeichnen"
 
-#: ../data/glade/moserial.glade.h:89
-#| msgid "Echo received data"
-msgid "Record sent and/or received data"
-msgstr "Gesendete und/oder empfangene Daten aufzeichnen"
-
-#: ../data/glade/moserial.glade.h:90
-msgid "Save Settings _As"
-msgstr "Einstellungen speichern _unter …"
-
-#: ../data/glade/moserial.glade.h:91
+#: ../data/glade/moserial.glade.h:82
 msgid "Select File to Send"
 msgstr "Zu sendende Datei auswählen"
 
-#: ../data/glade/moserial.glade.h:92
+#: ../data/glade/moserial.glade.h:83
 msgid "Select Folder for Received Files"
 msgstr "Ordner für empfangene Dateien auswählen"
 
-#: ../data/glade/moserial.glade.h:93
+#: ../data/glade/moserial.glade.h:84
 msgid "Send"
 msgstr "Absenden"
 
-#: ../data/glade/moserial.glade.h:94
+#: ../data/glade/moserial.glade.h:85
 msgid "Send File"
 msgstr "Datei senden"
 
-#: ../data/glade/moserial.glade.h:95
+#: ../data/glade/moserial.glade.h:86
 msgid "Send File Progress"
 msgstr "Fortschritt der Dateiübermittlung"
 
-#: ../data/glade/moserial.glade.h:96
-#| msgid "Send File"
-msgid "Send a file"
-msgstr "Eine Datei senden"
-
-#: ../data/glade/moserial.glade.h:97
-msgid "Send the outgoing data now."
-msgstr "Die zu übermittelnden Daten jetzt senden."
-
-#: ../data/glade/moserial.glade.h:98
+#: ../data/glade/moserial.glade.h:87
 msgid "Sent ASCII"
 msgstr "Gesendetes ASCII"
 
-#: ../data/glade/moserial.glade.h:99
+#: ../data/glade/moserial.glade.h:88
 msgid "Sent HEX"
 msgstr "Gesendetes HEX"
 
-#: ../data/glade/moserial.glade.h:100
+#: ../data/glade/moserial.glade.h:89
 msgid "Software"
 msgstr "Software"
 
-#: ../data/glade/moserial.glade.h:101
+#: ../data/glade/moserial.glade.h:90
 msgid "Stop Bits"
 msgstr "Stopp-Bits"
 
-#: ../data/glade/moserial.glade.h:102
+#: ../data/glade/moserial.glade.h:91
 msgid "Stop Recording"
 msgstr "Aufzeichnung anhalten"
 
-#: ../data/glade/moserial.glade.h:103
+#: ../data/glade/moserial.glade.h:92
 msgid "Stream to record"
 msgstr "Aufzuzeichnender Datenstrom"
 
-#: ../data/glade/moserial.glade.h:104
-#| msgid ""
-#| "Enter the data that you wish to transmit here. Press Enter or Send when "
-#| "you are ready to send it."
-msgid "Type outgoing data here. Press Enter or Send to send it."
-msgstr ""
-"Geben Sie die zu übermittelnden Daten hier ein und drücken Sie anschließend  "
-"die Eingabetaste oder klicken Sie auf »Absenden«."
-
-#: ../data/glade/moserial.glade.h:105
+#: ../data/glade/moserial.glade.h:93
 msgid ""
 "Xmodem\n"
 "Ymodem\n"
@@ -408,7 +333,7 @@ msgstr ""
 "Ymodem\n"
 "Zmodem"
 
-#: ../data/glade/moserial.glade.h:108
+#: ../data/glade/moserial.glade.h:96
 msgid ""
 "Xmodem\n"
 "Ymodem\n"
@@ -420,43 +345,31 @@ msgstr ""
 "Zmodem\n"
 "Keins (reines Binär)"
 
-#: ../data/glade/moserial.glade.h:112
-msgid "_Contents"
-msgstr "I_nhalt"
-
-#: ../data/glade/moserial.glade.h:113
+#: ../data/glade/moserial.glade.h:100
 msgid "_Edit"
 msgstr "_Bearbeiten"
 
-#: ../data/glade/moserial.glade.h:114
+#: ../data/glade/moserial.glade.h:101
 msgid "_File"
 msgstr "_Datei"
 
-#: ../data/glade/moserial.glade.h:115
+#: ../data/glade/moserial.glade.h:102
 msgid "_Help"
 msgstr "_Hilfe"
 
-#: ../data/glade/moserial.glade.h:116
+#: ../data/glade/moserial.glade.h:103
 msgid "_Launch recorded files"
 msgstr "_Aufgezeichnete Dateien starten"
 
-#: ../data/glade/moserial.glade.h:117
-msgid "_Open Settings"
-msgstr "Einstellungen ö_ffnen"
-
-#: ../data/glade/moserial.glade.h:118
-msgid "_Save Settings"
-msgstr "Einstellungen _speichern"
-
-#: ../data/glade/moserial.glade.h:119
+#: ../data/glade/moserial.glade.h:104
 msgid "_Use the system fixed width font"
 msgstr "_Vom Systems vorgegebene dicktengleiche Schrift verwenden"
 
-#: ../data/glade/moserial.glade.h:120
+#: ../data/glade/moserial.glade.h:105
 msgid "moserial"
 msgstr "moserial"
 
-#: ../data/glade/moserial.glade.h:121
+#: ../data/glade/moserial.glade.h:106
 msgid "seconds"
 msgstr "Sekunden"
 
@@ -510,26 +423,64 @@ msgstr ""
 "Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA "
 "02110-1301, USA und schauen Sie unter <http://www.gnu.org/licenses/>."
 
-#: ../src/MainWindow.vala:166
+#: ../src/MainWindow.vala:152
+msgid "Port configuration"
+msgstr "Port-Konfiguration"
+
+#: ../src/MainWindow.vala:157
+msgid "Read the manual"
+msgstr "Das Handbuch lesen"
+
+#: ../src/MainWindow.vala:167
 msgid "TX: 0, RX: 0"
 msgstr "TX: 0, RX: 0"
 
-#: ../src/MainWindow.vala:532 ../src/Profile.vala:76 ../src/Profile.vala:107
+#: ../src/MainWindow.vala:178
+msgid "Send a file"
+msgstr "Eine Datei senden"
+
+#: ../src/MainWindow.vala:187
+msgid "Receive a file"
+msgstr "Eine Datei empfangen"
+
+#: ../src/MainWindow.vala:197
+msgid "Record sent and/or received data"
+msgstr "Gesendete und/oder empfangene Daten aufzeichnen"
+
+#: ../src/MainWindow.vala:208
+msgid "Other preferences"
+msgstr "Weitere Einstellungen"
+
+#: ../src/MainWindow.vala:213
+msgid "Open/close port"
+msgstr "Port öffnen/schließen"
+
+#: ../src/MainWindow.vala:261
+msgid "Send the outgoing data now."
+msgstr "Die zu übermittelnden Daten jetzt senden."
+
+#: ../src/MainWindow.vala:264
+msgid "Type outgoing data here. Press Enter or Send to send it."
+msgstr ""
+"Geben Sie die zu übermittelnden Daten hier ein und drücken Sie anschließend  "
+"die Eingabetaste oder klicken Sie auf »Absenden«."
+
+#: ../src/MainWindow.vala:546 ../src/Profile.vala:76 ../src/Profile.vala:107
 #, c-format
 msgid "Error: Could not open file"
 msgstr "Fehler: Datei konnte nicht geöffnet werden"
 
-#: ../src/MainWindow.vala:605
+#: ../src/MainWindow.vala:624
 #, c-format
 msgid "Error: Could not open device"
 msgstr "Fehler: Gerät konnte nicht geöffnet werden"
 
-#: ../src/MainWindow.vala:727
+#: ../src/MainWindow.vala:746
 #, c-format
 msgid "Unable to display help file: %s"
 msgstr "Hilfedatei kann nicht angezeigt werden: %s"
 
-#: ../src/MainWindow.vala:739
+#: ../src/MainWindow.vala:758
 msgid ""
 "A serial terminal for the GNOME desktop, optimized for logging and file "
 "capture."
@@ -537,12 +488,12 @@ msgstr ""
 "Ein serielles Terminal für den GNOME-Desktop mit dem Schwerpunkt auf "
 "Mitschnitt und Dateierzeugung."
 
-#: ../src/MainWindow.vala:753
+#: ../src/MainWindow.vala:772
 #, c-format
 msgid "Can't display a clickable URL: %s"
 msgstr "Es konnte keine anklickbare Adresse angezeigt werden: %s"
 
-#: ../src/MainWindow.vala:800
+#: ../src/MainWindow.vala:818
 msgid ""
 "You have changed your setting or preferences. Do you want to save these "
 "changes to the loaded profile?"
@@ -551,35 +502,35 @@ msgstr ""
 "speichern?"
 
 #. TRANSLATORS: first letter of "None", a serial port parity setting
-#: ../src/Settings.vala:68
+#: ../src/Settings.vala:69
 msgid "N"
 msgstr "K"
 
 #. TRANSLATORS: first letter of "Odd", a serial port parity setting
-#: ../src/Settings.vala:72
+#: ../src/Settings.vala:73
 msgid "O"
 msgstr "U"
 
 #. TRANSLATORS: first letter of "Even", a serial port parity setting
-#: ../src/Settings.vala:76
+#: ../src/Settings.vala:77
 msgid "E"
 msgstr "G"
 
 #. TRANSLATORS: first letter of "Mark", a serial port parity setting
-#: ../src/Settings.vala:80
+#: ../src/Settings.vala:81
 msgid "M"
 msgstr "M"
 
 #. TRANSLATORS: first letter of "Space", a serial port parity setting
-#: ../src/Settings.vala:84
+#: ../src/Settings.vala:85
 msgid "S"
 msgstr "L"
 
-#: ../src/Settings.vala:94
+#: ../src/Settings.vala:95
 msgid "OPEN"
 msgstr "VERBUNDEN"
 
-#: ../src/Settings.vala:95
+#: ../src/Settings.vala:96
 msgid "CLOSED"
 msgstr "GETRENNT"
 
@@ -607,21 +558,20 @@ msgstr ""
 "Führen Sie »%s --help« um eine Liste aller Kommandozeilenoptionen zu "
 "erhalten.\n"
 
-#: ../src/Preferences.vala:66
-#, c-format
-msgid "Unable to retrieve gconf key: %s"
-msgstr "GConf-Schlüssel konnte nicht geholt werden: %s"
+#: ../src/Preferences.vala:65
+msgid "Unable to retrieve system font setting"
+msgstr "Schrifteinstellungen des Systems konnten nicht ermittelt werden"
 
 #: ../src/SendProgressDialog.vala:43
 msgid "Waiting for remote host"
 msgstr "Auf Gegenstelle warten"
 
-#: ../src/SerialConnection.vala:301
+#: ../src/SerialConnection.vala:304
 #, c-format
 msgid "TX: %lu, RX: %lu (%lu unprintable)"
 msgstr "TX: %lu, RX: %lu (%lu nicht anzeigbar)"
 
-#: ../src/SerialConnection.vala:303
+#: ../src/SerialConnection.vala:306
 #, c-format
 msgid "TX: %lu, RX: %lu"
 msgstr "TX: %lu, RX: %lu"
@@ -636,7 +586,7 @@ msgstr "Fehler: %s\n"
 msgid "Unable to launch %s: %s"
 msgstr "%s konnte nicht gestartet werden: %s"
 
-#: ../src/Szwrapper.vala:173
+#: ../src/Szwrapper.vala:180
 msgid "canceled"
 msgstr "Abgebrochen"
 
@@ -644,6 +594,48 @@ msgstr "Abgebrochen"
 #: ../src/InputParser.vala:58
 msgid "Invalid Input"
 msgstr "Ungültige Eingabe"
+
+#~ msgid "Also known as RTS/CTS handshaking"
+#~ msgstr "Auch bekannt als RTS/CTS-Handshaking"
+
+#~ msgid "Also known as XON/XOFF handshaking"
+#~ msgstr "Auch bekannt als XON/XOFF-Handshaking"
+
+#~ msgid ""
+#~ "If this option is enabled, a recorded file will be opened immediately "
+#~ "after it is saved, using the default application for the file type. The "
+#~ "default application is defined by the desktop environment."
+#~ msgstr ""
+#~ "Wenn diese Option ausgewählt ist, wird die aufgezeichnete Datei direkt "
+#~ "nachdem sie gespeichert wurde mit der Standardanwendung für diesen "
+#~ "Dateityp geöffnet. Die Standardanwendung wird von der Desktop-Umgebung "
+#~ "vorgegeben."
+
+#~ msgid ""
+#~ "If this option is enabled, recording will be automatically stopped after "
+#~ "an adjustable period of inactivity after receiving some data. That is, "
+#~ "moserial will wait indefinitely to record the first data byte before "
+#~ "activating the inactivity timer."
+#~ msgstr ""
+#~ "Wenn diese Option ausgewählt ist, wird die Aufzeichnung nach einer "
+#~ "bestimmten Zeit der Inaktivität, nach dem erstmaligen Empfang von Daten, "
+#~ "beendet. Dadurch wartet die Anwendung eine unbegrenzte Zeit auf dem "
+#~ "Empfang der ersten Daten ehe die Inaktivitätszeit gezählt wird."
+
+#~ msgid "Normally disabled"
+#~ msgstr "Standardmäßig deaktiviert"
+
+#~ msgid "Save Settings _As"
+#~ msgstr "Einstellungen speichern _unter …"
+
+#~ msgid "_Contents"
+#~ msgstr "I_nhalt"
+
+#~ msgid "_Open Settings"
+#~ msgstr "Einstellungen ö_ffnen"
+
+#~ msgid "_Save Settings"
+#~ msgstr "Einstellungen _speichern"
 
 #~ msgid ""
 #~ "Click this to transmit the data entered in the Outgoing text box. Clicking "
@@ -722,36 +714,6 @@ msgstr "Ungültige Eingabe"
 #~ "Sie müssen sich mit dem Port verbinden ehe Sie Daten sende und empfangen "
 #~ "können. Trennen und erneutes Verbinden leert die Textfelder und setzt die "
 #~ "TX/RX-Zähler zurück."
-
-#~ msgid "gtk-about"
-#~ msgstr "gtk-about"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "gtk-cancel"
-
-#~ msgid "gtk-clear"
-#~ msgstr "gtk-clear"
-
-#~ msgid "gtk-copy"
-#~ msgstr "gtk-copy"
-
-#~ msgid "gtk-cut"
-#~ msgstr "gtk-cut"
-
-#~ msgid "gtk-ok"
-#~ msgstr "gtk-ok"
-
-#~ msgid "gtk-paste"
-#~ msgstr "gtk-paste"
-
-#~ msgid "gtk-quit"
-#~ msgstr "gtk-quit"
-
-#~ msgid "menuitem3"
-#~ msgstr "menuitem3"
-
-#~ msgid "menuitem5"
-#~ msgstr "menuitem5"
 
 #~ msgid "Error: Could not open %s\n"
 #~ msgstr "Fehler: %s konnte nicht geöffnet werden\n"
