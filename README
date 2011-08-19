@@ -1,7 +1,11 @@
 Build issues
 ============
 
-A. moserial requires vala 0.12.x to compile.
+A. moserial 3.0.x requires vala 0.12.x to compile.
+   Early and later versions of vala will cause problems.
+   Patches to fix compilation against later versions of
+   vala are super-welcome!
+   
 
 B. If you see this error:
    src/SerialConnection.c:31:21: fatal error: stropts.h: No such file or directory
