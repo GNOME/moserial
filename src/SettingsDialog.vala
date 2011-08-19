@@ -52,16 +52,16 @@ public class moserial.SettingsDialog : GLib.Object
                 okButton = (Button)builder.get_object("settings_ok_button");
 
                 baudRateCombo = (ComboBox)builder.get_object("settings_baud_rate");
-		MoUtils.populateComboBox (baudRateCombo, settings.BaudRateItems);
+		MoUtils.populateComboBox (baudRateCombo, Settings.BaudRateItems);
 
                 dataBitsCombo = (ComboBox)builder.get_object("settings_data_bits");
-                MoUtils.populateComboBox (dataBitsCombo, settings.DataBitItems);
+                MoUtils.populateComboBox (dataBitsCombo, Settings.DataBitItems);
 
                 stopBitsCombo = (ComboBox)builder.get_object("settings_stop_bits");
-                MoUtils.populateComboBox (stopBitsCombo, settings.StopBitItems);
+                MoUtils.populateComboBox (stopBitsCombo, Settings.StopBitItems);
 
                 parityCombo = (ComboBox)builder.get_object("settings_parity");
-                MoUtils.populateComboBox (parityCombo, settings.ParityModeStrings);
+                MoUtils.populateComboBox (parityCombo, Settings.ParityModeStrings);
 
                 hardwareHandshake = (CheckButton)builder.get_object("settings_hardware_handshake");
 		hardwareHandshake.set_tooltip_text (_("Also known as RTS/CTS handshaking"));
@@ -70,7 +70,7 @@ public class moserial.SettingsDialog : GLib.Object
 		softwareHandshake.set_tooltip_text (_("Also known as XON/XOFF handshaking"));
 
                 accessModeCombo = (ComboBox)builder.get_object("settings_open_for");
-		MoUtils.populateComboBox (accessModeCombo, settings.AccessModeStrings);
+		MoUtils.populateComboBox (accessModeCombo, Settings.AccessModeStrings);
 
                 localEcho = (CheckButton)builder.get_object("settings_local_echo");
 		localEcho.set_tooltip_text (_("Normally disabled"));
@@ -211,12 +211,12 @@ public class moserial.SettingsDialog : GLib.Object
                         t.get_value(iter, 0, out str_data);
                         device = str_data.get_string();
                 } else {
-			device = settings.DEFAULT_DEVICEFILE;
+			device = Settings.DEFAULT_DEVICEFILE;
 		}
 		
-                baudRate = int.parse (settings.BaudRateItems[baudRateCombo.get_active()]);
-                dataBits = int.parse (settings.DataBitItems[dataBitsCombo.get_active()]);
-                stopBits = int.parse (settings.StopBitItems[stopBitsCombo.get_active()]);
+                baudRate = int.parse (Settings.BaudRateItems[baudRateCombo.get_active()]);
+                dataBits = int.parse (Settings.DataBitItems[dataBitsCombo.get_active()]);
+                stopBits = int.parse (Settings.StopBitItems[stopBitsCombo.get_active()]);
 
                 parity = (Settings.Parity)parityCombo.get_active();
                 accessMode = (Settings.AccessMode)accessModeCombo.get_active();
