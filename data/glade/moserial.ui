@@ -1,132 +1,6 @@
 <?xml version="1.0"?>
 <interface>
-  <object class="GtkAdjustment" id="adjustment1">
-    <property name="upper">5000</property>
-    <property name="lower">5</property>
-    <property name="page_increment">10</property>
-    <property name="step_increment">1</property>
-    <property name="page_size">0</property>
-    <property name="value">60</property>
-  </object>
-  <object class="GtkUIManager" id="uimanager1">
-    <child>
-      <object class="GtkActionGroup" id="actiongroup1">
-        <child>
-          <object class="GtkAction" id="menuitem1">
-            <property name="name">menuitem1</property>
-            <property name="label" translatable="yes">_File</property>
-          </object>
-        </child>
-        <child>
-          <object class="GtkAction" id="menubar_open_settings">
-            <property name="stock_id">gtk-open</property>
-            <property name="name">menubar_open_settings</property>
-            <property name="label">Open Settings</property>
-          </object>
-        </child>
-        <child>
-          <object class="GtkAction" id="menubar_open_recent">
-            <property name="name">menubar_open_recent</property>
-            <property name="label" translatable="yes">Open _Recent</property>
-          </object>
-        </child>
-        <child>
-          <object class="GtkAction" id="menubar_save_settings">
-            <property name="stock_id">gtk-save</property>
-            <property name="name">menubar_save_settings</property>
-            <property name="label">Save Settings</property>
-          </object>
-        </child>
-        <child>
-          <object class="GtkAction" id="menubar_save_settings_as">
-            <property name="stock_id">gtk-save-as</property>
-            <property name="name">menubar_save_settings_as</property>
-            <property name="label">Save Settings As</property>
-          </object>
-        </child>
-        <child>
-          <object class="GtkAction" id="menubar_quit">
-            <property name="stock_id">gtk-quit</property>
-            <property name="name">menubar_quit</property>
-          </object>
-        </child>
-        <child>
-          <object class="GtkAction" id="menubar_edit">
-            <property name="name">menubar_edit</property>
-            <property name="label" translatable="yes">_Edit</property>
-          </object>
-        </child>
-        <child>
-          <object class="GtkAction" id="menubar_cut">
-            <property name="stock_id">gtk-cut</property>
-            <property name="name">menubar_cut</property>
-          </object>
-        </child>
-        <child>
-          <object class="GtkAction" id="menubar_copy">
-            <property name="stock_id">gtk-copy</property>
-            <property name="name">menubar_copy</property>
-          </object>
-        </child>
-        <child>
-          <object class="GtkAction" id="menubar_paste">
-            <property name="stock_id">gtk-paste</property>
-            <property name="name">menubar_paste</property>
-          </object>
-        </child>
-        <child>
-          <object class="GtkAction" id="menubar_clear">
-            <property name="stock_id">gtk-clear</property>
-            <property name="name">menubar_clear</property>
-          </object>
-        </child>
-        <child>
-          <object class="GtkAction" id="menuitem4">
-            <property name="name">menuitem4</property>
-            <property name="label" translatable="yes">_Help</property>
-          </object>
-        </child>
-        <child>
-          <object class="GtkAction" id="menubar_about">
-            <property name="stock_id">gtk-about</property>
-            <property name="name">menubar_about</property>
-          </object>
-        </child>
-        <child>
-          <object class="GtkAction" id="menubar_contents">
-            <property name="stock_id">gtk-help</property>
-            <property name="name">menubar_contents</property>
-          </object>
-          <accelerator key="F1"/>
-        </child>
-      </object>
-    </child>
-    <ui>
-      <menubar name="menubar">
-        <menu action="menuitem1">
-          <menuitem action="menubar_open_settings"/>
-          <menuitem action="menubar_open_recent"/>
-          <separator/>
-          <menuitem action="menubar_save_settings"/>
-          <menuitem action="menubar_save_settings_as"/>
-          <separator/>
-          <menuitem action="menubar_quit"/>
-        </menu>
-        <menu action="menubar_edit">
-          <menuitem action="menubar_cut"/>
-          <menuitem action="menubar_copy"/>
-          <menuitem action="menubar_paste"/>
-          <separator/>
-          <menuitem action="menubar_clear"/>
-        </menu>
-        <menu action="menuitem4">
-          <menuitem action="menubar_about"/>
-          <menuitem action="menubar_contents"/>
-        </menu>
-      </menubar>
-    </ui>
-  </object>
-  <!-- interface-requires gtk+ 2.16 -->
+  <requires lib="gtk+" version="2.16"/>
   <!-- interface-naming-policy toplevel-contextual -->
   <object class="GtkWindow" id="window">
     <property name="title" translatable="yes">moserial</property>
@@ -138,8 +12,154 @@
         <property name="visible">True</property>
         <property name="orientation">vertical</property>
         <child>
-          <object class="GtkMenuBar" constructor="uimanager1" id="menubar">
+          <object class="GtkMenuBar" id="menubar">
             <property name="visible">True</property>
+            <child>
+              <object class="GtkMenuItem" id="menuitem1">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">_File</property>
+                <property name="use_underline">True</property>
+                <child type="submenu">
+                  <object class="GtkMenu" id="menu1">
+                    <property name="visible">True</property>
+                    <child>
+                      <object class="GtkImageMenuItem" id="menubar_open_settings">
+                        <property name="label">Open Settings</property>
+                        <property name="visible">True</property>
+                        <property name="use_stock">False</property>
+                        <property name="always_show_image">True</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkMenuItem" id="menubar_open_recent">
+                        <property name="visible">True</property>
+                        <property name="label" translatable="yes">Open _Recent</property>
+                        <property name="use_underline">True</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkSeparatorMenuItem" id="menuitem5">
+                        <property name="visible">True</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkImageMenuItem" id="menubar_save_settings">
+                        <property name="label">Save Settings</property>
+                        <property name="visible">True</property>
+                        <property name="use_stock">False</property>
+                        <property name="always_show_image">True</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkImageMenuItem" id="menubar_save_settings_as">
+                        <property name="label">Save Settings As</property>
+                        <property name="visible">True</property>
+                        <property name="use_stock">False</property>
+                        <property name="always_show_image">True</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkSeparatorMenuItem" id="separatormenuitem1">
+                        <property name="visible">True</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkImageMenuItem" id="menubar_quit">
+                        <property name="label">gtk-quit</property>
+                        <property name="visible">True</property>
+                        <property name="use_underline">True</property>
+                        <property name="use_stock">True</property>
+                        <property name="always_show_image">True</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkMenuItem" id="menubar_edit">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">_Edit</property>
+                <property name="use_underline">True</property>
+                <child type="submenu">
+                  <object class="GtkMenu" id="menu2">
+                    <property name="visible">True</property>
+                    <child>
+                      <object class="GtkImageMenuItem" id="menubar_cut">
+                        <property name="label">gtk-cut</property>
+                        <property name="visible">True</property>
+                        <property name="use_underline">True</property>
+                        <property name="use_stock">True</property>
+                        <property name="always_show_image">True</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkImageMenuItem" id="menubar_copy">
+                        <property name="label">gtk-copy</property>
+                        <property name="visible">True</property>
+                        <property name="use_underline">True</property>
+                        <property name="use_stock">True</property>
+                        <property name="always_show_image">True</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkImageMenuItem" id="menubar_paste">
+                        <property name="label">gtk-paste</property>
+                        <property name="visible">True</property>
+                        <property name="use_underline">True</property>
+                        <property name="use_stock">True</property>
+                        <property name="always_show_image">True</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkSeparatorMenuItem" id="menuitem3">
+                        <property name="visible">True</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkImageMenuItem" id="menubar_clear">
+                        <property name="label">gtk-clear</property>
+                        <property name="visible">True</property>
+                        <property name="use_underline">True</property>
+                        <property name="use_stock">True</property>
+                        <property name="always_show_image">True</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="GtkMenuItem" id="menuitem4">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">_Help</property>
+                <property name="use_underline">True</property>
+                <child type="submenu">
+                  <object class="GtkMenu" id="menu3">
+                    <property name="visible">True</property>
+                    <child>
+                      <object class="GtkImageMenuItem" id="menubar_about">
+                        <property name="label">gtk-about</property>
+                        <property name="visible">True</property>
+                        <property name="use_underline">True</property>
+                        <property name="use_stock">True</property>
+                        <property name="always_show_image">True</property>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="GtkImageMenuItem" id="menubar_contents">
+                        <property name="label">gtk-help</property>
+                        <property name="visible">True</property>
+                        <property name="use_underline">True</property>
+                        <property name="use_stock">True</property>
+                        <property name="always_show_image">True</property>
+                        <accelerator key="F1" signal="activate"/>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
           </object>
           <packing>
             <property name="expand">False</property>
@@ -329,6 +349,9 @@
                       </object>
                     </child>
                   </object>
+                  <packing>
+                    <property name="position">1</property>
+                  </packing>
                 </child>
                 <child type="tab">
                   <object class="GtkLabel" id="label15">
@@ -396,6 +419,9 @@
                       </object>
                     </child>
                   </object>
+                  <packing>
+                    <property name="position">1</property>
+                  </packing>
                 </child>
                 <child type="tab">
                   <object class="GtkLabel" id="label16">
@@ -569,7 +595,7 @@
                     <property name="right_attach">2</property>
                     <property name="top_attach">6</property>
                     <property name="bottom_attach">7</property>
-                    <property name="y_options"/>
+                    <property name="y_options"></property>
                     <property name="y_padding">2</property>
                   </packing>
                 </child>
@@ -621,7 +647,7 @@
                     <property name="right_attach">2</property>
                     <property name="top_attach">4</property>
                     <property name="bottom_attach">5</property>
-                    <property name="y_options"/>
+                    <property name="y_options"></property>
                     <property name="y_padding">2</property>
                   </packing>
                 </child>
@@ -634,7 +660,7 @@
                     <property name="right_attach">2</property>
                     <property name="top_attach">3</property>
                     <property name="bottom_attach">4</property>
-                    <property name="y_options"/>
+                    <property name="y_options"></property>
                     <property name="y_padding">2</property>
                   </packing>
                 </child>
@@ -647,7 +673,7 @@
                     <property name="right_attach">2</property>
                     <property name="top_attach">2</property>
                     <property name="bottom_attach">3</property>
-                    <property name="y_options"/>
+                    <property name="y_options"></property>
                     <property name="y_padding">2</property>
                   </packing>
                 </child>
@@ -660,7 +686,7 @@
                     <property name="right_attach">2</property>
                     <property name="top_attach">1</property>
                     <property name="bottom_attach">2</property>
-                    <property name="y_options"/>
+                    <property name="y_options"></property>
                     <property name="y_padding">2</property>
                   </packing>
                 </child>
@@ -671,7 +697,7 @@
                   <packing>
                     <property name="left_attach">1</property>
                     <property name="right_attach">2</property>
-                    <property name="y_options"/>
+                    <property name="y_options"></property>
                     <property name="y_padding">2</property>
                   </packing>
                 </child>
@@ -840,6 +866,10 @@
         </child>
       </object>
     </child>
+    <action-widgets>
+      <action-widget response="0">settings_cancel_button</action-widget>
+      <action-widget response="0">settings_ok_button</action-widget>
+    </action-widgets>
   </object>
   <object class="GtkDialog" id="send_progress_dialog">
     <property name="width_request">640</property>
@@ -915,6 +945,9 @@
         </child>
       </object>
     </child>
+    <action-widgets>
+      <action-widget response="0">send_progress_cancel</action-widget>
+    </action-widgets>
   </object>
   <object class="GtkDialog" id="receive_progress_dialog">
     <property name="width_request">640</property>
@@ -992,6 +1025,9 @@
         </child>
       </object>
     </child>
+    <action-widgets>
+      <action-widget response="0">receive_progress_cancel</action-widget>
+    </action-widgets>
   </object>
   <object class="GtkWindow" id="window1">
     <child>
@@ -1535,7 +1571,7 @@
                       <object class="GtkSpinButton" id="preferences_record_timeout">
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
-                        <property name="adjustment">adjustment1</property>
+                        <property name="adjustment"></property>
                         <property name="climb_rate">1</property>
                       </object>
                       <packing>
@@ -1612,5 +1648,9 @@
         </child>
       </object>
     </child>
+    <action-widgets>
+      <action-widget response="0">preferences_cancel</action-widget>
+      <action-widget response="0">preferences_ok</action-widget>
+    </action-widgets>
   </object>
 </interface>
