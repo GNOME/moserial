@@ -8,57 +8,6 @@
     <property name="page_size">0</property>
     <property name="value">60</property>
   </object>
-  <object class="GtkListStore" id="model1">
-    <columns>
-      <column type="gchararray"/>
-    </columns>
-    <data>
-      <row>
-        <col id="0" translatable="yes">Incoming</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">Outgoing</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">Incoming and Outgoing</col>
-      </row>
-    </data>
-  </object>
-  <object class="GtkListStore" id="model2">
-    <columns>
-      <column type="gchararray"/>
-    </columns>
-    <data>
-      <row>
-        <col id="0" translatable="yes">Xmodem</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">Ymodem</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">Zmodem</col>
-      </row>
-    </data>
-  </object>
-  <object class="GtkListStore" id="model3">
-    <columns>
-      <column type="gchararray"/>
-    </columns>
-    <data>
-      <row>
-        <col id="0" translatable="yes">Xmodem</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">Ymodem</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">Zmodem</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">None (straight binary)</col>
-      </row>
-    </data>
-  </object>
   <object class="GtkUIManager" id="uimanager1">
     <child>
       <object class="GtkActionGroup" id="actiongroup1">
@@ -1117,13 +1066,6 @@
             <child>
               <object class="GtkComboBox" id="record_stream">
                 <property name="visible">True</property>
-                <property name="model">model1</property>
-                <child>
-                  <object class="GtkCellRendererText" id="renderer1"/>
-                  <attributes>
-                    <attribute name="text">0</attribute>
-                  </attributes>
-                </child>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -1187,13 +1129,6 @@
             <child>
               <object class="GtkComboBox" id="receive_chooser_protocol">
                 <property name="visible">True</property>
-                <property name="model">model2</property>
-                <child>
-                  <object class="GtkCellRendererText" id="renderer2"/>
-                  <attributes>
-                    <attribute name="text">0</attribute>
-                  </attributes>
-                </child>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -1329,13 +1264,6 @@
             <child>
               <object class="GtkComboBox" id="send_chooser_protocol">
                 <property name="visible">True</property>
-                <property name="model">model3</property>
-                <child>
-                  <object class="GtkCellRendererText" id="renderer3"/>
-                  <attributes>
-                    <attribute name="text">0</attribute>
-                  </attributes>
-                </child>
               </object>
               <packing>
                 <property name="expand">False</property>

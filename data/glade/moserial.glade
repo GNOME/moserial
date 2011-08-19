@@ -1114,9 +1114,6 @@
             <child>
               <widget class="GtkComboBox" id="record_stream">
                 <property name="visible">True</property>
-                <property name="items" translatable="yes">Incoming
-Outgoing
-Incoming and Outgoing</property>
               </widget>
               <packing>
                 <property name="expand">False</property>
@@ -1180,9 +1177,6 @@ Incoming and Outgoing</property>
             <child>
               <widget class="GtkComboBox" id="receive_chooser_protocol">
                 <property name="visible">True</property>
-                <property name="items" translatable="yes">Xmodem
-Ymodem
-Zmodem</property>
               </widget>
               <packing>
                 <property name="expand">False</property>
@@ -1316,10 +1310,6 @@ Zmodem</property>
             <child>
               <widget class="GtkComboBox" id="send_chooser_protocol">
                 <property name="visible">True</property>
-                <property name="items" translatable="yes">Xmodem
-Ymodem
-Zmodem
-None (straight binary)</property>
               </widget>
               <packing>
                 <property name="expand">False</property>

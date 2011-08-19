@@ -21,6 +21,11 @@
 public class moserial.Szwrapper: GLib.Object
 {
 	public enum Protocol {XMODEM, YMODEM, ZMODEM, RAW, NULL}
+        public const string[] ProtocolStrings = { GLib.N_("Xmodem"),
+                                                  GLib.N_("Ymodem"),
+                                                  GLib.N_("Zmodem"),
+						  GLib.N_("None (straight binary)") };
+
 	public Protocol protocol {get; construct;}
 	public SerialConnection? sc {get; construct;}
         private IOChannel IOChannelInput;

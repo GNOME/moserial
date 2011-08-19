@@ -34,13 +34,17 @@ public class moserial.RecordDialog : GLib.Object
         construct {
                 dialog = (FileChooserDialog)builder.get_object("record_dialog");
                 cancelButton = (Button)builder.get_object("record_cancel");
+
                 streamCombo = (ComboBox)builder.get_object("record_stream");
+		MoUtils.populateComboBox (streamCombo, SerialStreamRecorder.DirectionStrings);
+                streamCombo.set_active(SerialStreamRecorder.Direction.INCOMING);
+
                 dialog.delete_event.connect(hide);
                 dialog.response.connect(response);
                 dialog.add_buttons(Gtk.Stock.CANCEL, Gtk.ResponseType.CANCEL, Gtk.Stock.SAVE, Gtk.ResponseType.ACCEPT, null);
                 dialog.set_do_overwrite_confirmation(true);
 		dialog.set_local_only(false);
-                streamCombo.set_active(0);
+
                 fileName=null;
         }
 
