@@ -14,14 +14,17 @@
     </columns>
     <data>
       <row>
-        <col id="0" translatable="yes">ASCII</col>
+        <col id="0" translatable="yes">Incoming</col>
       </row>
       <row>
-        <col id="0" translatable="yes">HEX</col>
+        <col id="0" translatable="yes">Outgoing</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Incoming and Outgoing</col>
       </row>
     </data>
   </object>
-  <object class="GtkListStore" id="model10">
+  <object class="GtkListStore" id="model2">
     <columns>
       <column type="gchararray"/>
     </columns>
@@ -37,7 +40,7 @@
       </row>
     </data>
   </object>
-  <object class="GtkListStore" id="model11">
+  <object class="GtkListStore" id="model3">
     <columns>
       <column type="gchararray"/>
     </columns>
@@ -53,203 +56,6 @@
       </row>
       <row>
         <col id="0" translatable="yes">None (straight binary)</col>
-      </row>
-    </data>
-  </object>
-  <object class="GtkListStore" id="model2">
-    <columns>
-      <column type="gchararray"/>
-    </columns>
-    <data>
-      <row>
-        <col id="0" translatable="yes">CR+LF end</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">CR end</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">LF end</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">TAB end</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">ESC end</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">No end</col>
-      </row>
-    </data>
-  </object>
-  <object class="GtkListStore" id="model3">
-    <columns>
-      <column type="gchararray"/>
-    </columns>
-    <data>
-      <row>
-        <col id="0" translatable="yes">Read and Write</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">Read Only</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">Write Only</col>
-      </row>
-    </data>
-  </object>
-  <object class="GtkListStore" id="model4">
-    <columns>
-      <column type="gchararray"/>
-    </columns>
-    <data>
-      <row>
-        <col id="0" translatable="yes">None</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">Odd</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">Even</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">Mark</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">Space</col>
-      </row>
-    </data>
-  </object>
-  <object class="GtkListStore" id="model5">
-    <columns>
-      <column type="gchararray"/>
-    </columns>
-    <data>
-      <row>
-        <col id="0" translatable="yes">1</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">2</col>
-      </row>
-    </data>
-  </object>
-  <object class="GtkListStore" id="model6">
-    <columns>
-      <column type="gchararray"/>
-    </columns>
-    <data>
-      <row>
-        <col id="0" translatable="yes">5</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">6</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">7</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">8</col>
-      </row>
-    </data>
-  </object>
-  <object class="GtkListStore" id="model7">
-    <columns>
-      <column type="gchararray"/>
-    </columns>
-    <data>
-      <row>
-        <col id="0" translatable="yes">300</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">600</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">1200</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">2400</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">4800</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">9600</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">19200</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">38400</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">57600</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">115200</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">230400</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">460800</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">576000</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">927600</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">1000000</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">2000000</col>
-      </row>
-    </data>
-  </object>
-  <object class="GtkListStore" id="model8">
-    <columns>
-      <column type="gchararray"/>
-    </columns>
-    <data>
-      <row>
-        <col id="0" translatable="yes">/dev/ttyS0</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">/dev/ttyS1</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">/dev/ttyS2</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">/dev/ttyS3</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">/dev/ttyUSB0</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">/dev/ttyUSB1</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">/dev/ttyUSB2</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">/dev/ttyUSB3</col>
-      </row>
-    </data>
-  </object>
-  <object class="GtkListStore" id="model9">
-    <columns>
-      <column type="gchararray"/>
-    </columns>
-    <data>
-      <row>
-        <col id="0" translatable="yes">Incoming</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">Outgoing</col>
-      </row>
-      <row>
-        <col id="0" translatable="yes">Incoming and Outgoing</col>
       </row>
     </data>
   </object>
@@ -711,13 +517,6 @@
                 <child>
                   <object class="GtkComboBox" id="input_mode">
                     <property name="visible">True</property>
-                    <property name="model">model1</property>
-                    <child>
-                      <object class="GtkCellRendererText" id="renderer1"/>
-                      <attributes>
-                        <attribute name="text">0</attribute>
-                      </attributes>
-                    </child>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -727,13 +526,6 @@
                 <child>
                   <object class="GtkComboBox" id="termination_mode">
                     <property name="visible">True</property>
-                    <property name="model">model2</property>
-                    <child>
-                      <object class="GtkCellRendererText" id="renderer2"/>
-                      <attributes>
-                        <attribute name="text">0</attribute>
-                      </attributes>
-                    </child>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -761,7 +553,6 @@
               <object class="GtkStatusbar" id="statusbar">
                 <property name="visible">True</property>
                 <property name="border_width">4</property>
-                <property name="has_resize_grip">False</property>
               </object>
               <packing>
                 <property name="position">0</property>
@@ -823,13 +614,6 @@
                 <child>
                   <object class="GtkComboBox" id="settings_open_for">
                     <property name="visible">True</property>
-                    <property name="model">model3</property>
-                    <child>
-                      <object class="GtkCellRendererText" id="renderer3"/>
-                      <attributes>
-                        <attribute name="text">0</attribute>
-                      </attributes>
-                    </child>
                   </object>
                   <packing>
                     <property name="left_attach">1</property>
@@ -882,13 +666,6 @@
                 <child>
                   <object class="GtkComboBox" id="settings_parity">
                     <property name="visible">True</property>
-                    <property name="model">model4</property>
-                    <child>
-                      <object class="GtkCellRendererText" id="renderer4"/>
-                      <attributes>
-                        <attribute name="text">0</attribute>
-                      </attributes>
-                    </child>
                   </object>
                   <packing>
                     <property name="left_attach">1</property>
@@ -902,13 +679,6 @@
                 <child>
                   <object class="GtkComboBox" id="settings_stop_bits">
                     <property name="visible">True</property>
-                    <property name="model">model5</property>
-                    <child>
-                      <object class="GtkCellRendererText" id="renderer5"/>
-                      <attributes>
-                        <attribute name="text">0</attribute>
-                      </attributes>
-                    </child>
                   </object>
                   <packing>
                     <property name="left_attach">1</property>
@@ -922,13 +692,6 @@
                 <child>
                   <object class="GtkComboBox" id="settings_data_bits">
                     <property name="visible">True</property>
-                    <property name="model">model6</property>
-                    <child>
-                      <object class="GtkCellRendererText" id="renderer6"/>
-                      <attributes>
-                        <attribute name="text">0</attribute>
-                      </attributes>
-                    </child>
                   </object>
                   <packing>
                     <property name="left_attach">1</property>
@@ -942,13 +705,6 @@
                 <child>
                   <object class="GtkComboBox" id="settings_baud_rate">
                     <property name="visible">True</property>
-                    <property name="model">model7</property>
-                    <child>
-                      <object class="GtkCellRendererText" id="renderer7"/>
-                      <attributes>
-                        <attribute name="text">0</attribute>
-                      </attributes>
-                    </child>
                   </object>
                   <packing>
                     <property name="left_attach">1</property>
@@ -960,15 +716,8 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkComboBoxEntry" id="settings_device">
+                  <object class="GtkComboBox" id="settings_device">
                     <property name="visible">True</property>
-                    <property name="model">model8</property>
-                    <child>
-                      <object class="GtkCellRendererText" id="renderer8"/>
-                      <attributes>
-                        <attribute name="text">0</attribute>
-                      </attributes>
-                    </child>
                   </object>
                   <packing>
                     <property name="left_attach">1</property>
@@ -1368,9 +1117,9 @@
             <child>
               <object class="GtkComboBox" id="record_stream">
                 <property name="visible">True</property>
-                <property name="model">model9</property>
+                <property name="model">model1</property>
                 <child>
-                  <object class="GtkCellRendererText" id="renderer9"/>
+                  <object class="GtkCellRendererText" id="renderer1"/>
                   <attributes>
                     <attribute name="text">0</attribute>
                   </attributes>
@@ -1438,9 +1187,9 @@
             <child>
               <object class="GtkComboBox" id="receive_chooser_protocol">
                 <property name="visible">True</property>
-                <property name="model">model10</property>
+                <property name="model">model2</property>
                 <child>
-                  <object class="GtkCellRendererText" id="renderer10"/>
+                  <object class="GtkCellRendererText" id="renderer2"/>
                   <attributes>
                     <attribute name="text">0</attribute>
                   </attributes>
@@ -1580,9 +1329,9 @@
             <child>
               <object class="GtkComboBox" id="send_chooser_protocol">
                 <property name="visible">True</property>
-                <property name="model">model11</property>
+                <property name="model">model3</property>
                 <child>
-                  <object class="GtkCellRendererText" id="renderer11"/>
+                  <object class="GtkCellRendererText" id="renderer3"/>
                   <attributes>
                     <attribute name="text">0</attribute>
                   </attributes>

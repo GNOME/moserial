@@ -31,7 +31,7 @@ public class moserial.SettingsDialog : GLib.Object
         private Button cancelButton;
         private Button okButton;
         private Settings settings;
-        private ComboBoxEntry deviceCombo;
+        private ComboBox deviceCombo;
         private ComboBox baudRateCombo;
         private ComboBox dataBitsCombo;
         private ComboBox stopBitsCombo;
@@ -40,7 +40,7 @@ public class moserial.SettingsDialog : GLib.Object
         private CheckButton softwareHandshake;
         private ComboBox accessModeCombo;
         private CheckButton localEcho;
-	private ListStore ls;
+	private ListStore deviceModel;
         public signal void updateSettings(Settings settings);
         public SettingsDialog(Builder builder) {
 		GLib.Object(builder: builder);
@@ -52,9 +52,16 @@ public class moserial.SettingsDialog : GLib.Object
                 okButton = (Button)builder.get_object("settings_ok_button");
 
                 baudRateCombo = (ComboBox)builder.get_object("settings_baud_rate");
+		MoUtils.populateComboBox (baudRateCombo, settings.BaudRateItems);
+
                 dataBitsCombo = (ComboBox)builder.get_object("settings_data_bits");
+                MoUtils.populateComboBox (dataBitsCombo, settings.DataBitItems);
+
                 stopBitsCombo = (ComboBox)builder.get_object("settings_stop_bits");
+                MoUtils.populateComboBox (stopBitsCombo, settings.StopBitItems);
+
                 parityCombo = (ComboBox)builder.get_object("settings_parity");
+                MoUtils.populateComboBox (parityCombo, settings.ParityModeStrings);
 
                 hardwareHandshake = (CheckButton)builder.get_object("settings_hardware_handshake");
 		hardwareHandshake.set_tooltip_text (_("Also known as RTS/CTS handshaking"));
@@ -63,6 +70,7 @@ public class moserial.SettingsDialog : GLib.Object
 		softwareHandshake.set_tooltip_text (_("Also known as XON/XOFF handshaking"));
 
                 accessModeCombo = (ComboBox)builder.get_object("settings_open_for");
+		MoUtils.populateComboBox (accessModeCombo, settings.AccessModeStrings);
 
                 localEcho = (CheckButton)builder.get_object("settings_local_echo");
 		localEcho.set_tooltip_text (_("Normally disabled"));
@@ -71,10 +79,12 @@ public class moserial.SettingsDialog : GLib.Object
                 cancelButton.clicked.connect(this.cancel);
                 okButton.clicked.connect(this.ok);
 
-		ls = new ListStore(2, typeof(string), typeof(string));
-                deviceCombo = (ComboBoxEntry)builder.get_object("settings_device");	
-                deviceCombo.set_model(ls);
-                deviceCombo.set_text_column(1);
+                deviceCombo = (ComboBox)builder.get_object("settings_device");	
+                deviceModel = new ListStore(1, typeof( string ));
+                deviceCombo.set_model(deviceModel);
+                CellRenderer deviceCell = new CellRendererText();
+                deviceCombo.pack_start( deviceCell, false );
+                deviceCombo.set_attributes( deviceCell, "text", 0 );
         }
 
         private void populateDevices(){
@@ -83,15 +93,15 @@ public class moserial.SettingsDialog : GLib.Object
 		deviceTypes.append ("/dev/ttyUSB");
 		deviceTypes.append ("/dev/rfcomm");
 
-		ls.clear();
+		deviceModel.clear();
                 TreeIter iter;
 		
 		foreach (string devType in deviceTypes) {
 			for (int i = 0; i < max_devices; i++) {
 				string dev = "%s%d".printf(devType,i);
 				if (FileUtils.test (dev, FileTest.EXISTS)) {
-		 			ls.append(out iter);
-        		        	ls.set(iter, 0, "", 1, dev, -1);
+		 			deviceModel.append(out iter);
+        		        	deviceModel.set(iter, 0, dev);
 				}
 			}
 		}
@@ -115,7 +125,7 @@ public class moserial.SettingsDialog : GLib.Object
                 success = t.get_iter_first(out ti);
                 while (success) {
                         Value str_data;
-                        t.get_value(ti, 1, out str_data);
+                        t.get_value(ti, 0, out str_data);
                         if (str_data.get_string()==currentSettings.device)
                                 deviceCombo.set_active_iter(ti);
                         success = t.iter_next (ref ti);
@@ -189,12 +199,25 @@ public class moserial.SettingsDialog : GLib.Object
                 Settings.Handshake handshake;
                 Settings.AccessMode accessMode;
                 bool pLocalEcho;
-                device = deviceCombo.get_active_text();
-                baudRate = int.parse (baudRateCombo.get_active_text());
-                dataBits = int.parse (dataBitsCombo.get_active_text());
-                stopBits = int.parse (stopBitsCombo.get_active_text());
 
-		/* Glade choices must be in same order as Settings enums */
+		TreeModel t;
+		TreeIter iter;
+		bool success;
+
+                t = deviceCombo.get_model();
+                success = deviceCombo.get_active_iter (out iter);
+                if (success) {
+                        Value str_data;
+                        t.get_value(iter, 0, out str_data);
+                        device = str_data.get_string();
+                } else {
+			device = settings.DEFAULT_DEVICEFILE;
+		}
+		
+                baudRate = int.parse (settings.BaudRateItems[baudRateCombo.get_active()]);
+                dataBits = int.parse (settings.DataBitItems[dataBitsCombo.get_active()]);
+                stopBits = int.parse (settings.StopBitItems[stopBitsCombo.get_active()]);
+
                 parity = (Settings.Parity)parityCombo.get_active();
                 accessMode = (Settings.AccessMode)accessModeCombo.get_active();
 

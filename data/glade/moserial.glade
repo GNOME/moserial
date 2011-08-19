@@ -514,8 +514,6 @@
                 <child>
                   <widget class="GtkComboBox" id="input_mode">
                     <property name="visible">True</property>
-                    <property name="items" translatable="yes">ASCII
-HEX</property>
                   </widget>
                   <packing>
                     <property name="expand">False</property>
@@ -525,12 +523,6 @@ HEX</property>
                 <child>
                   <widget class="GtkComboBox" id="termination_mode">
                     <property name="visible">True</property>
-                    <property name="items" translatable="yes">CR+LF end
-CR end
-LF end
-TAB end
-ESC end
-No end</property>
                   </widget>
                   <packing>
                     <property name="expand">False</property>
@@ -558,7 +550,6 @@ No end</property>
               <widget class="GtkStatusbar" id="statusbar">
                 <property name="visible">True</property>
                 <property name="border_width">4</property>
-                <property name="has_resize_grip">False</property>
               </widget>
               <packing>
                 <property name="position">0</property>
@@ -620,9 +611,6 @@ No end</property>
                 <child>
                   <widget class="GtkComboBox" id="settings_open_for">
                     <property name="visible">True</property>
-                    <property name="items" translatable="yes">Read and Write
-Read Only
-Write Only</property>
                   </widget>
                   <packing>
                     <property name="left_attach">1</property>
@@ -675,11 +663,6 @@ Write Only</property>
                 <child>
                   <widget class="GtkComboBox" id="settings_parity">
                     <property name="visible">True</property>
-                    <property name="items" translatable="yes">None
-Odd
-Even
-Mark
-Space</property>
                   </widget>
                   <packing>
                     <property name="left_attach">1</property>
@@ -693,8 +676,6 @@ Space</property>
                 <child>
                   <widget class="GtkComboBox" id="settings_stop_bits">
                     <property name="visible">True</property>
-                    <property name="items" translatable="yes">1
-2</property>
                   </widget>
                   <packing>
                     <property name="left_attach">1</property>
@@ -708,10 +689,6 @@ Space</property>
                 <child>
                   <widget class="GtkComboBox" id="settings_data_bits">
                     <property name="visible">True</property>
-                    <property name="items" translatable="yes">5
-6
-7
-8</property>
                   </widget>
                   <packing>
                     <property name="left_attach">1</property>
@@ -725,22 +702,6 @@ Space</property>
                 <child>
                   <widget class="GtkComboBox" id="settings_baud_rate">
                     <property name="visible">True</property>
-                    <property name="items" translatable="yes">300
-600
-1200
-2400
-4800
-9600
-19200
-38400
-57600
-115200
-230400
-460800
-576000
-927600
-1000000
-2000000</property>
                   </widget>
                   <packing>
                     <property name="left_attach">1</property>
@@ -752,16 +713,8 @@ Space</property>
                   </packing>
                 </child>
                 <child>
-                  <widget class="GtkComboBoxEntry" id="settings_device">
+                  <widget class="GtkComboBox" id="settings_device">
                     <property name="visible">True</property>
-                    <property name="items" translatable="yes">/dev/ttyS0
-/dev/ttyS1
-/dev/ttyS2
-/dev/ttyS3
-/dev/ttyUSB0
-/dev/ttyUSB1
-/dev/ttyUSB2
-/dev/ttyUSB3</property>
                   </widget>
                   <packing>
                     <property name="left_attach">1</property>

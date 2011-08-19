@@ -59,8 +59,13 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
         private TextView incomingAsciiTextView;
         private TextView outgoingHexTextView;
         private TextView outgoingAsciiTextView;
-        private ComboBox inputMode;
-        private ComboBox terminationMode;
+
+        private ComboBox inputModeCombo;
+        private enum inputModeValues { ASCII, HEX }
+        private const string[] inputModeStrings = { GLib.N_("ASCII"), GLib.N_("HEX") };
+
+        private ComboBox lineEndModeCombo;
+
         private ToggleToolButton connectButton;
         private Label disconnectLabel;
         private Label connectLabel;
@@ -262,11 +267,15 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 entry = (Gtk.Entry)builder.get_object("entry");
                 entry.activate.connect(sendString);
 		entry.set_tooltip_text (_("Type outgoing data here. Press Enter or Send to send it."));
-                inputMode = (ComboBox)builder.get_object("input_mode");
-                inputMode.set_active(0);
-		inputMode.changed.connect(inputModeChanged);
-                terminationMode = (ComboBox)builder.get_object("termination_mode");
-                terminationMode.set_active(0);
+
+                inputModeCombo = (ComboBox)builder.get_object("input_mode");
+		MoUtils.populateComboBox (inputModeCombo, inputModeStrings);
+                inputModeCombo.set_active(inputModeValues.ASCII);
+		inputModeCombo.changed.connect(inputModeChanged);
+
+                lineEndModeCombo = (ComboBox)builder.get_object("termination_mode");
+		MoUtils.populateComboBox (lineEndModeCombo, serialConnection.LineEndStrings);
+                lineEndModeCombo.set_active(SerialConnection.LineEnd.CRLF);
                 
                 //setup recent chooser
                 RecentManager recentManager = RecentManager.get_default ();
@@ -372,7 +381,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 serialConnection.echoReference=s;
 
                 long len;
-                if (inputMode.get_active()==0) {
+                if (inputModeCombo.get_active()==inputModeValues.ASCII) {
                         len = s.length;
 
                         for (int x=0; x<len; x++) {
@@ -383,7 +392,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                                 s=s.next_char();
                         }
 
-                        string t = serialConnection.getLineEnd(terminationMode.get_active());
+                        string t = serialConnection.LineEndValues[lineEndModeCombo.get_active()];
                         len = t.length;
 
                         for (int x=0; x<len; x++) {
@@ -724,11 +733,11 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 }
         }
 
-	private void inputModeChanged (ComboBox inputMode) {
-		if (inputMode.get_active()==1)
-			outgoing_notebook.set_current_page(1); // HEX
+	private void inputModeChanged (ComboBox inputModeCombo) {
+		if (inputModeCombo.get_active()==inputModeValues.HEX)
+			outgoing_notebook.set_current_page(1);
 		else
-			outgoing_notebook.set_current_page(0); // ASCII
+			outgoing_notebook.set_current_page(0);
 	}
 
 	private void showHelpButton (ToolButton button) {
@@ -751,7 +760,6 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 
                 string license_trans = license[0] + "\n" + license[1] + "\n" + license[2];
 
-                AboutDialog.set_url_hook (url_hook);
                 show_about_dialog (gtkWindow,
                                    "version", Config.VERSION,
                                    "copyright", "Copyright © 2009-2011\nMichael J. Chudobiak\n<mjc@svn.gnome.org>",
@@ -763,14 +771,6 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                                    "license", license_trans,
                                    "website", "http://live.gnome.org/moserial",
                                    null);
-        }
-
-        private void url_hook (AboutDialog about, string link) {
-                try {
-                        show_uri (null, link, Gdk.CURRENT_TIME);
-                } catch (GLib.Error e) {
-                        warning (_("Can't display a clickable URL: %s"), e.message);
-                }
         }
 
         private void quitSizeSave () {

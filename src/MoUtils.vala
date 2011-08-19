@@ -18,6 +18,8 @@
  */
 
 using GLib;
+using Gtk;
+
 public class MoUtils : GLib.Object
 {
 	public static GLib.File newFile (string path) {
@@ -95,6 +97,19 @@ public class MoUtils : GLib.Object
 				message=splitMessages[x];
 		}
 		return message;
+	}
+
+	public static void populateComboBox (ComboBox Combo, string[] val_array) {
+                ListStore Model = new ListStore(1, typeof( string ));
+                foreach (string val_item in val_array) {
+                        TreeIter iter;
+                        Model.append(out iter);
+                        Model.set(iter,0,val_item);
+                }
+                Combo.set_model(Model);
+                CellRenderer Cell = new CellRendererText();
+                Combo.pack_start( Cell, true );
+                Combo.set_attributes( Cell, "text", 0 );
 	}
 }
 

@@ -38,7 +38,17 @@ public class moserial.SerialConnection : GLib.Object
         private GLib.IOChannel IOChannelFd;
         public signal void newData(uchar[] data, int size);
         private  int flags=0;
+
 	public enum LineEnd{ CRLF, CR, LF, TAB, ESC, NONE }
+	public const string[] LineEndStrings = { GLib.N_("CR+LF end"), 
+						 GLib.N_("CR end"), 
+						 GLib.N_("LF end"), 
+						 GLib.N_("TAB end"), 
+						 GLib.N_("ESC end"), 
+						 GLib.N_("No end") };
+	public const string[] LineEndValues = {"\r\n", "\r", "\n", "\t", "\x1b", ""}; 
+
+
 	uint? sourceId;
 	bool localEcho;
         public bool doConnect (Settings settings) {
@@ -93,39 +103,6 @@ public class moserial.SerialConnection : GLib.Object
 			tx=tx+x;
         	}
         }
-	public string getLineEnd(int e)
-	{
-		string s;
-
-		switch(e) {
-			case LineEnd.CR: {
-				s = "\r";
-				break;
-			}
-                        case LineEnd.LF: {
-                                s = "\n";
-                                break;
-                        }
-                        case LineEnd.CRLF: {
-                                s = "\r\n";
-                                break;
-                        }
-                        case LineEnd.TAB: {
-                                s = "\t";
-                                break;
-                        }
-                        case LineEnd.ESC: {
-                                s = "\x1b";
-                                break;
-                        }
-                        case LineEnd.NONE:
-			default: {
-				s = "";
-                                break;
-                        }
-		}
-		return s;
-	}
 
         public void doDisconnect () {
         	if(connected) {

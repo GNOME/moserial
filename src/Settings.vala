@@ -22,8 +22,28 @@ using GLib;
 public class Settings : GLib.Object
 {
         public enum Parity {NONE, ODD, EVEN, MARK, SPACE}
+	public const string[] ParityModeStrings = { GLib.N_("None"),
+						    GLib.N_("Odd"),
+                                                    GLib.N_("Even"),
+                                                    GLib.N_("Mark"),
+                                                    GLib.N_("Space") };
+
         public enum Handshake {NONE, HARDWARE, SOFTWARE, BOTH}
+
         public enum AccessMode {READWRITE, READONLY, WRITEONLY}
+	public const string[] AccessModeStrings = { GLib.N_("Read and Write"),
+						    GLib.N_("Read Only"),
+						    GLib.N_("Write Only") };
+
+	public const string[] DataBitItems = { "5", "6", "7", "8" };
+	public const string[] StopBitItems = { "1", "2" };
+	public const string[] BaudRateItems = { "300", "600", "1200", "2400",
+						"4800", "9600", "19200",
+						"38400", "57600", "115200",
+						"230400", "460800", "576000",
+						"927600", "1000000", "2000000"
+						 };
+
         public static string DEFAULT_DEVICEFILE = "/dev/ttyS0";
         public static int DEFAULT_BAUDRATE = 1200;
         public static int DEFAULT_DATABITS = 8;
