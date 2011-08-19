@@ -50,7 +50,7 @@ public class moserial.PreferencesDialog : GLib.Object
 		recordLaunch.set_tooltip_text (_("If this option is enabled, a recorded file will be opened immediately after it is saved, using the default application for the file type. The default application is defined by the desktop environment."));
 
                 enableTimeout = (CheckButton)builder.get_object("preferences_record_enable_timeout");
-		enableTimeout.set_tooltip_text (_("If this option is enabled, recording will be automatically stopped after an adjustable period of inactivity after receiving some data. That is, moserial will wait indefinitely to record the first data byte before activating the inactivity timer."));
+		enableTimeout.set_tooltip_text (_("If this option is enabled, recording will be automatically stopped after an adjustable period of inactivity after receiving some data. Moserial will wait indefinitely to record the first data byte before activating the inactivity timer."));
 
                 timeout = (SpinButton)builder.get_object("preferences_record_timeout");
                 systemFont.toggled.connect(this.systemFontToggled);
