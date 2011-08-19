@@ -72,8 +72,10 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="xalign">0</property>
-                    <property name="label" translatable="yes">&lt;b&gt;Font&lt;/b&gt;</property>
-                    <property name="use_markup">True</property>
+                    <property name="label" translatable="yes">Font</property>
+                    <attributes>
+                      <attribute name="weight" value="PANGO_WEIGHT_BOLD"/>
+                    </attributes>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -252,8 +254,10 @@
                     <property name="visible">True</property>
                     <property name="can_focus">False</property>
                     <property name="xalign">0</property>
-                    <property name="label" translatable="yes">&lt;b&gt;Recording&lt;/b&gt;</property>
-                    <property name="use_markup">True</property>
+                    <property name="label" translatable="yes">Recording</property>
+                    <attributes>
+                      <attribute name="weight" value="PANGO_WEIGHT_BOLD"/>
+                    </attributes>
                   </object>
                   <packing>
                     <property name="expand">False</property>
@@ -812,8 +816,10 @@
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="xalign">0</property>
-                <property name="label" translatable="yes">&lt;b&gt;Port Settings&lt;/b&gt;</property>
-                <property name="use_markup">True</property>
+                <property name="label" translatable="yes">Port Settings</property>
+                <attributes>
+                  <attribute name="weight" value="PANGO_WEIGHT_BOLD"/>
+                </attributes>
               </object>
               <packing>
                 <property name="expand">False</property>
@@ -1607,8 +1613,10 @@
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="xalign">0</property>
-                <property name="label" translatable="yes">&lt;i&gt;Outgoing&lt;/i&gt;</property>
-                <property name="use_markup">True</property>
+                <property name="label" translatable="yes">Outgoing</property>
+                <attributes>
+                  <attribute name="style" value="PANGO_STYLE_ITALIC"/>
+                </attributes>
               </object>
               <packing>
                 <property name="expand">False</property>
