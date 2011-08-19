@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: moserial HELP\n"
-"POT-Creation-Date: 2011-03-22 09:18+0000\n"
-"PO-Revision-Date: 2011-03-22 10:46+0100\n"
+"POT-Creation-Date: 2011-08-16 19:41+0000\n"
+"PO-Revision-Date: 2011-08-19 21:46+0200\n"
 "Last-Translator: Julien Hardelin <jhardlinATwanadooPOINTfr>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "MIME-Version: 1.0\n"
@@ -19,8 +19,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; nplural=(n > 1)\n"
 
 #: C/moserial.xml:19(title)
-msgid "<application>moserial</application> Manual V2.26.0"
-msgstr "Manuel de <application>moserial</application> v2.26.0"
+msgid "<application>moserial</application> Manual V3.0.0"
+msgstr "Manuel de <application>moserial</application> v3.0.0"
 
 #: C/moserial.xml:21(year)
 msgid "2009"
@@ -153,8 +153,8 @@ msgid "mjc@svn.gnome.org"
 msgstr "mjc@svn.gnome.org"
 
 #: C/moserial.xml:56(revnumber)
-msgid "2.26.0"
-msgstr "2.26.0"
+msgid "3.0.0"
+msgstr "3.0.0"
 
 #: C/moserial.xml:57(date)
 msgid "April 2009"
@@ -162,8 +162,8 @@ msgstr "Avril 2009"
 
 #. this is version of manual, not application
 #: C/moserial.xml:67(releaseinfo)
-msgid "This is manual describes version 2.26.0 of moserial"
-msgstr "Ce manuel documente la version 2.26.0 de moserial"
+msgid "This is manual describes version 3.0.0 of moserial"
+msgstr "Ce manuel documente la version 3.0.0 de moserial"
 
 #: C/moserial.xml:70(para)
 msgid ""
@@ -239,59 +239,36 @@ msgstr ""
 
 #: C/moserial.xml:114(para)
 msgid ""
-"There are a number of ways this is done on a Linux system. On Fedora 10, you "
-"may need to use the PolicyKit tool, invoked using "
-"<menuchoice><guisubmenu>System</guisubmenu><guisubmenu>Preferences</"
-"guisubmenu><guisubmenu>System</guisubmenu><guimenuitem>Authorizations</"
-"guimenuitem></menuchoice>. Then, navigate to the "
-"<menuchoice><guisubmenu>org</guisubmenu><guisubmenu>freedesktop</"
-"guisubmenu><guisubmenu>device-access</guisubmenu><guimenuitem>Directly "
-"access serial modem devices</guimenuitem></menuchoice>, and click "
-"<guilabel>edit</guilabel>. Set <guilabel>Anyone:</guilabel> to \"Yes\"."
-msgstr ""
-"Il existe plusieurs façons de faire cela sur un système Linux. Sur Fedora "
-"10, vous pouvez avoir besoin d'utiliser l'outil PolicyKit, auquel on peut "
-"accéder en choisissant <menuchoice><guisubmenu>Système</"
-"guisubmenu><guisubmenu>Préférences</guisubmenu><guisubmenu>Système</"
-"guisubmenu><guimenuitem>Autorisations</guimenuitem></menuchoice>. Puis allez "
-"à <menuchoice><guisubmenu>org</guisubmenu><guisubmenu>freedesktop</"
-"guisubmenu><guisubmenu>device-access</guisubmenu><guimenuitem>Directly "
-"access serial modem devices</guimenuitem></menuchoice> (accéder directement "
-"à des périphériques modem série), et cliquez sur <guilabel>edit</guilabel>. "
-"Mettez <guilabel>Anyone:</guilabel> sur « Yes »."
-
-#: C/moserial.xml:129(title)
-msgid "Serial Port Authorizations on Fedora 10"
-msgstr "Autorisations pour port série sur Fedora 10"
-
-#: C/moserial.xml:132(para)
-msgid ""
 "On some systems, you may need to do something like \"sudo chmod o+rw /dev/"
 "ttyS*\" and \"sudo chmod o+rw /dev/ttyUSB*\" to obtain read/write "
-"permissions (for all users) on the serial ports."
+"permissions (for all users) on the serial ports. Unfortunately, this may not "
+"be persistent after reboots."
 msgstr ""
 "Sur d'autres systèmes, vous aurez peut-être à lancer des commandes "
 "semblables à celles-ci : « sudo chmod o+rw /dev/ttyS* » ou « sudo chmod o+rw /"
 "dev/ttyUSB* », pour obtenir les droits d'accès aux ports série en lecture et "
-"en écriture (pour tous les utilisateurs)."
+"en écriture (pour tous les utilisateurs). Malheureusement, ces réglages ne "
+"sont pas toujours conservés lors d'un redémarrage."
 
-#: C/moserial.xml:136(para)
+#: C/moserial.xml:119(para)
 msgid ""
 "Alternatively, you can see what group the devices belong to, and make your "
-"account a member of that group."
+"account a member of that group. In Fedora 15, for example, you should add "
+"yourself to the \"dialout\" group."
 msgstr ""
 "Sinon, vous pouvez voir à quel groupe appartiennent les périphériques et "
-"ajouter votre compte comme membre de ce groupe."
+"ajouter votre compte comme membre de ce groupe. Avec Fedora 15, par exemple, "
+"il faut vous ajouter au groupe « dialout »."
 
-#: C/moserial.xml:143(title)
+#: C/moserial.xml:126(title)
 msgid "Basic Usage"
 msgstr "Utilisation de base"
 
-#: C/moserial.xml:145(title)
+#: C/moserial.xml:128(title)
 msgid "The Main Toolbar"
 msgstr "Barre d'outils principale"
 
-#: C/moserial.xml:146(para)
+#: C/moserial.xml:129(para)
 msgid ""
 "Most <application>moserial</application> functions are accessed through the "
 "main toolbar, shown below:"
@@ -299,11 +276,11 @@ msgstr ""
 "La plupart des fonctions de <application>moserial</application> sont "
 "accessibles par la barre d'outils principale, affichée ci-dessous :"
 
-#: C/moserial.xml:154(title)
+#: C/moserial.xml:137(title)
 msgid "Port Setup"
 msgstr "Paramétrage de port"
 
-#: C/moserial.xml:155(para)
+#: C/moserial.xml:138(para)
 msgid ""
 "The first step in using <application>moserial</application> is to configure "
 "the serial port parameters. Click <guibutton>Port Setup</guibutton> to do "
@@ -322,7 +299,7 @@ msgstr ""
 "contrôle de flux. Les paramètres définis dans cette fenêtre écraseront les "
 "paramètres système définis par défaut pour ce port."
 
-#: C/moserial.xml:163(para)
+#: C/moserial.xml:146(para)
 msgid ""
 "The <application>moserial</application> port setup dialog will only list "
 "the /dev/ttySnn, /dev/ttyUSBnn, and /dev/rfcommnn ports that actually exist "
@@ -333,7 +310,7 @@ msgstr ""
 "rfcommnn effectivement présents sur le système, où les valeurs « nn » sont "
 "comprises entre 0 et 31."
 
-#: C/moserial.xml:168(para)
+#: C/moserial.xml:151(para)
 msgid ""
 "A local echo can be enabled from this dialog. If enabled, all data that "
 "<application>moserial</application> receives will be echoed back to the "
@@ -348,11 +325,11 @@ msgstr ""
 "elle est également activée dans le périphérique distant (risque d'écho en "
 "boucle infinie)."
 
-#: C/moserial.xml:179(title)
+#: C/moserial.xml:162(title)
 msgid "Open the Connection"
 msgstr "Ouverture de la connexion"
 
-#: C/moserial.xml:180(para)
+#: C/moserial.xml:163(para)
 msgid ""
 "The next step in communicating with your remote device is to click "
 "<guibutton>Connect</guibutton>. This opens the port. If you do not have the "
@@ -362,7 +339,7 @@ msgstr ""
 "cliquer sur <guibutton>Connecter</guibutton>, ce qui ouvre le port. Si vous "
 "n'avez pas les droits d'accès à ce port, une erreur sera émise."
 
-#: C/moserial.xml:188(para)
+#: C/moserial.xml:171(para)
 msgid ""
 "This step is optional. If you skip it, <application>moserial</application> "
 "will try to connect automatically when needed."
@@ -371,7 +348,7 @@ msgstr ""
 "application> tentera de se connecter automatiquement quand ce sera "
 "nécessaire."
 
-#: C/moserial.xml:192(para)
+#: C/moserial.xml:175(para)
 msgid ""
 "Once you have connected, the <guibutton>Connect</guibutton> button will "
 "change into a <guibutton>Disconnect</guibutton> button. Clicking "
@@ -383,11 +360,11 @@ msgstr ""
 "<guibutton>Déconnecter</guibutton> ferme le port et réinitialise les "
 "compteurs TX et RX."
 
-#: C/moserial.xml:203(title)
+#: C/moserial.xml:186(title)
 msgid "Basic Input and Output"
 msgstr "Entrée et sortie de base"
 
-#: C/moserial.xml:204(para)
+#: C/moserial.xml:187(para)
 msgid ""
 "Once the port has been opened, any text received from the remote device will "
 "be displayed in the <guilabel>Received ASCII</guilabel> text area. If "
@@ -401,14 +378,14 @@ msgstr ""
 "non imprimables, il passera automatiquement en visualisation <guilabel>HEX "
 "reçu</guilabel>."
 
-#: C/moserial.xml:214(para)
+#: C/moserial.xml:197(para)
 msgid ""
 "To switch between HEX and ASCII views, simply click on the appropriate tabs."
 msgstr ""
 "Pour basculer entre les visualisations HEX et ASCII, cliquez simplement sur "
 "les onglets correspondants."
 
-#: C/moserial.xml:218(para)
+#: C/moserial.xml:201(para)
 msgid ""
 "To send data to the remote device, you can type text into the "
 "<guilabel>Outgoing</guilabel> single-line text box, and click the "
@@ -426,7 +403,7 @@ msgstr ""
 "terminaison, essayez d'abord « CR+LF end ». Le bouton <guibutton>ASCII/HEX</"
 "guibutton> doit être sur ASCII pour envoyer du texte."
 
-#: C/moserial.xml:231(para)
+#: C/moserial.xml:214(para)
 msgid ""
 "If the <guibutton>ASCII/HEX</guibutton> button is set to HEX, do not enter "
 "text in the <guilabel>Outgoing</guilabel> area. Instead, enter hexadecimal "
@@ -436,7 +413,7 @@ msgstr ""
 "de texte dans la zone <guilabel>Sortant</guilabel>. À la place, saisissez "
 "des caractères hexadécimaux sous la forme « 1234ABCD.... »."
 
-#: C/moserial.xml:236(para)
+#: C/moserial.xml:219(para)
 msgid ""
 "Once your data has been transmitted, a record of it will exist in the "
 "<guilabel>Sent ASCII</guilabel> and <guilabel>Sent HEX</guilabel> text "
@@ -446,7 +423,7 @@ msgstr ""
 "dans les zones de texte <guilabel>ASCII envoyé</guilabel> et <guilabel>HEX "
 "envoyé</guilabel>. Ces zones de texte ne sont pas modifiables."
 
-#: C/moserial.xml:244(para)
+#: C/moserial.xml:227(para)
 msgid ""
 "The remote device may echo your sent data. If <application>moserial</"
 "application> detects echoed text in the <guilabel>Received ASCII</guilabel> "
@@ -459,7 +436,7 @@ msgstr ""
 "surbrillance (en utilisant la couleur de surbrillance définie dans la boîte "
 "de dialogue des préférences)."
 
-#: C/moserial.xml:250(para)
+#: C/moserial.xml:233(para)
 msgid ""
 "The statusbar at the bottom of the main window shows the state of port, and "
 "a count of the sent (TX) and received (RX) bytes. If some of the received "
@@ -470,11 +447,11 @@ msgstr ""
 "données ne peuvent être affichées, le compte de ces données est néanmoins "
 "présenté."
 
-#: C/moserial.xml:262(title)
+#: C/moserial.xml:245(title)
 msgid "Recording Input and Output"
 msgstr "Enregistrement des entrées et des sorties"
 
-#: C/moserial.xml:263(para)
+#: C/moserial.xml:246(para)
 msgid ""
 "<application>moserial</application> can be used to record your sent and "
 "received data to a file. This function is also useful for receiving and "
@@ -489,7 +466,7 @@ msgstr ""
 "des captures d'écran vers un port série, sans recourir à un protocole de "
 "correction d'erreurs (tel le Tektronix 11801)."
 
-#: C/moserial.xml:273(para)
+#: C/moserial.xml:256(para)
 msgid ""
 "When you are ready to record to a file, simply click <guibutton>Record</"
 "guibutton>, select the desired data to record (Incoming and/or Outgoing) in "
@@ -501,7 +478,7 @@ msgstr ""
 "enregistrer (entrantes et/ou sortantes) dans la boîte de sélection du "
 "<guilabel>Flux à enregistrer</guilabel> et saisissez le nom de fichier."
 
-#: C/moserial.xml:282(para)
+#: C/moserial.xml:265(para)
 msgid ""
 "When recording begins, the <guibutton>Record</guibutton> button will change "
 "into a <guibutton>Stop Recording</guibutton> button. You will need to click "
@@ -514,7 +491,7 @@ msgstr ""
 "quand vous avez reçu la totalité du fichier binaire que vous souhaitiez "
 "télécharger."
 
-#: C/moserial.xml:291(para)
+#: C/moserial.xml:274(para)
 msgid ""
 "<application>moserial</application> can optionally launch the recorded file "
 "with the default application for its file type, when recording has finished. "
@@ -528,7 +505,7 @@ msgstr ""
 "une période d'inactivité. Utilisez les <link linkend=\"preferences"
 "\">Préférences</link> pour activer ou désactiver ces options."
 
-#: C/moserial.xml:298(para)
+#: C/moserial.xml:281(para)
 msgid ""
 "Note that if you wish to receive files using an error correction protocol "
 "(xmodem, ymodem, or zmodem), you will need to use the <link linkend="
@@ -541,13 +518,14 @@ msgstr ""
 "de correction d'erreurs (xmodem, ymodem ou zmodem), vous devez utilisez la "
 "fonction <link linkend=\"receiving\">Recevoir un fichier</link>. "
 "Contrairement à la fonction <guibutton>Enregistrer</guibutton>, la réception "
-"de fichier peut automatiquement détecter la fin d'un téléchargement de fichier."
+"de fichier peut automatiquement détecter la fin d'un téléchargement de "
+"fichier."
 
-#: C/moserial.xml:311(title)
+#: C/moserial.xml:294(title)
 msgid "Sending Files"
 msgstr "Envoi de fichiers"
 
-#: C/moserial.xml:312(para)
+#: C/moserial.xml:295(para)
 msgid ""
 "<application>moserial</application> can transmit files in a straight binary "
 "data stream, and it can also send files using the xmodem, ymodem, and zmodem "
@@ -562,7 +540,7 @@ msgstr ""
 "aux zones de texte <guilabel>ASCII envoyé</guilabel> ou <guilabel>HEX "
 "envoyé</guilabel>."
 
-#: C/moserial.xml:322(para)
+#: C/moserial.xml:305(para)
 msgid ""
 "When you are ready to send a file, simply click <guibutton>Send File</"
 "guibutton>, select the desired file to send. You will also need to select "
@@ -572,7 +550,7 @@ msgstr ""
 "<guibutton>Envoyer un fichier</guibutton>. Vous devrez aussi sélectionner le "
 "protocole approprié en bas de la fenêtre."
 
-#: C/moserial.xml:330(para)
+#: C/moserial.xml:313(para)
 msgid ""
 "When recording begins, a progress bar will display the status of the file "
 "transmission."
@@ -580,7 +558,7 @@ msgstr ""
 "Pendant l'enregistrement, une barre de progression affiche l'état de "
 "transmission du fichier."
 
-#: C/moserial.xml:337(para) C/moserial.xml:380(para)
+#: C/moserial.xml:320(para) C/moserial.xml:363(para)
 msgid ""
 "moserial does not implement the xmodem, ymodem, or zmodem protocols "
 "directly. It relies on the standard rz and sz utilities to send and receive "
@@ -592,11 +570,11 @@ msgstr ""
 "données. Ces utilitaires font partie du paquet lrzsz, qui doit être installé "
 "sur votre système."
 
-#: C/moserial.xml:346(title)
+#: C/moserial.xml:329(title)
 msgid "Receiving Files"
 msgstr "Réception de fichiers"
 
-#: C/moserial.xml:347(para)
+#: C/moserial.xml:330(para)
 msgid ""
 "<application>moserial</application> can receive files sent in a straight "
 "binary data stream, and it can also receive files using the xmodem, ymodem, "
@@ -610,7 +588,7 @@ msgstr ""
 "transmission de fichier, les données reçues ne sont pas reliées aux zones de "
 "texte <guilabel>ASCII reçu</guilabel> ou <guilabel>HEX reçu</guilabel>."
 
-#: C/moserial.xml:354(para)
+#: C/moserial.xml:337(para)
 msgid ""
 "To receive straight binary data streams, use the <link linkend=\"recording"
 "\">Record</link> function instead of the <guibutton>Receive File</guibutton> "
@@ -620,7 +598,7 @@ msgstr ""
 "<link linkend=\"recording\">Enregistrer</link> plutôt que la fonction "
 "<guibutton>Recevoir un fichier</guibutton>."
 
-#: C/moserial.xml:358(para)
+#: C/moserial.xml:341(para)
 msgid ""
 "To receive files sent with the xmodem, ymodem, or zmodem error correction "
 "protocols, using the <guibutton>Receive File</guibutton> function."
@@ -629,7 +607,7 @@ msgstr ""
 "d'erreurs xmodem, ymodem ou zmodem, utilisez la fonction <guibutton>Recevoir "
 "un fichier</guibutton>."
 
-#: C/moserial.xml:365(para)
+#: C/moserial.xml:348(para)
 msgid ""
 "When you are ready to receive a file, simply click <guibutton>Receive File</"
 "guibutton>, select a folder to store the received file. You will also need "
@@ -640,7 +618,7 @@ msgstr ""
 "enregistrer le fichier reçu. Vous devrez également sélectionner le protocole "
 "approprié en bas de la fenêtre."
 
-#: C/moserial.xml:373(para)
+#: C/moserial.xml:356(para)
 msgid ""
 "When recording begins, a progress bar will display the status of the file "
 "reception."
@@ -648,11 +626,11 @@ msgstr ""
 "Pendant l'enregistrement, une barre de progression affiche l'état de "
 "réception du fichier."
 
-#: C/moserial.xml:389(title)
+#: C/moserial.xml:372(title)
 msgid "Other Preferences"
 msgstr "Autres préférences"
 
-#: C/moserial.xml:390(para)
+#: C/moserial.xml:373(para)
 msgid ""
 "<application>moserial</application> has several options that can be "
 "configured from the <guilabel>Preferences</guilabel> dialog."
@@ -661,7 +639,7 @@ msgstr ""
 "être configurées depuis la boîte de dialogue <guilabel>Préférences</"
 "guilabel>."
 
-#: C/moserial.xml:397(para)
+#: C/moserial.xml:380(para)
 msgid ""
 "The color of the text area foreground, background, and highlighting can be "
 "configured, as can the font type and size."
@@ -670,7 +648,7 @@ msgstr ""
 "zones de texte, la couleur de la surbrillance, ainsi que la couleur, le type "
 "et la taille de la police."
 
-#: C/moserial.xml:401(para)
+#: C/moserial.xml:384(para)
 msgid ""
 "If <guilabel>Launch recorded files</guilabel> is enabled, a recorded file "
 "will be opened immediately after it is saved, using the default application "
@@ -682,7 +660,7 @@ msgstr ""
 "utilisant l'application par défaut pour le type du fichier. L'application "
 "par défaut est définie par l'environnement de bureau."
 
-#: C/moserial.xml:406(para)
+#: C/moserial.xml:389(para)
 msgid ""
 "If <guilabel>Enable timeout</guilabel> is enabled, recording will be "
 "automatically stopped after an adjustable period of inactivity after "
@@ -695,11 +673,11 @@ msgstr ""
 "moserial attendra indéfiniment d'enregistrer les premières données avant "
 "d'activer le compteur d'inactivité."
 
-#: C/moserial.xml:415(title)
+#: C/moserial.xml:398(title)
 msgid "Using Profiles"
 msgstr "Utilisation de profils"
 
-#: C/moserial.xml:416(para)
+#: C/moserial.xml:399(para)
 msgid ""
 "<application>moserial</application> can load and save its settings from "
 "profile files, so that you can store and recall commonly used "
@@ -721,12 +699,12 @@ msgstr ""
 "<menuchoice><guisubmenu>Fichier</guisubmenu><guimenuitem>Ouvrir les "
 "paramètres</guimenuitem></menuchoice>."
 
-#: C/moserial.xml:425(para)
+#: C/moserial.xml:408(para)
 msgid "Loading a profile will automatically disconnect any connected port."
 msgstr ""
 "Le chargement d'un profil déconnecte automatiquement tout port connecté."
 
-#: C/moserial.xml:428(para)
+#: C/moserial.xml:411(para)
 msgid ""
 "When you quit <application>moserial</application>, the settings currently in "
 "use are stored in a default profile file. These settings will automatically "
@@ -737,36 +715,36 @@ msgstr ""
 "seront automatiquement rappelés lors du prochain lancement de "
 "<application>moserial</application>."
 
-#: C/moserial.xml:436(title) C/moserial.xml:439(title)
+#: C/moserial.xml:419(title) C/moserial.xml:422(title)
 msgid "Special Keys"
 msgstr "Touches spéciales"
 
-#: C/moserial.xml:446(para)
+#: C/moserial.xml:429(para)
 msgid "Keyboard Shortcut"
 msgstr "Raccourci clavier"
 
-#: C/moserial.xml:448(para)
+#: C/moserial.xml:431(para)
 msgid "Description"
 msgstr "Description"
 
-#: C/moserial.xml:455(keycap) C/moserial.xml:465(keycap)
-#: C/moserial.xml:475(keycap)
+#: C/moserial.xml:438(keycap) C/moserial.xml:448(keycap)
+#: C/moserial.xml:458(keycap)
 msgid "Ctrl"
 msgstr "Ctrl"
 
-#: C/moserial.xml:455(keycap)
+#: C/moserial.xml:438(keycap)
 msgid "C"
 msgstr "C"
 
-#: C/moserial.xml:459(para)
+#: C/moserial.xml:442(para)
 msgid "Copies text. This can be used in any of the text areas."
 msgstr "Copie le texte. Peut être utilisé dans toutes les zones de texte."
 
-#: C/moserial.xml:465(keycap)
+#: C/moserial.xml:448(keycap)
 msgid "X"
 msgstr "X"
 
-#: C/moserial.xml:469(para)
+#: C/moserial.xml:452(para)
 msgid ""
 "Cuts text. This only works in the <guilabel>Outgoing</guilabel> single-line "
 "text box."
@@ -774,11 +752,11 @@ msgstr ""
 "Coupe le texte. Ne marche que pour la zone de texte uni-ligne "
 "<guilabel>Sortant</guilabel>."
 
-#: C/moserial.xml:475(keycap)
+#: C/moserial.xml:458(keycap)
 msgid "V"
 msgstr "V"
 
-#: C/moserial.xml:479(para)
+#: C/moserial.xml:462(para)
 msgid ""
 "Pastes text into the <guilabel>Outgoing</guilabel> single-line text box, and "
 "moves the focus to that text box."
@@ -786,11 +764,11 @@ msgstr ""
 "Colle le texte dans la zone de texte uni-ligne <guilabel>Sortant</guilabel> "
 "et déplace le pointeur dans cette zone."
 
-#: C/moserial.xml:488(keycap)
+#: C/moserial.xml:471(keycap)
 msgid "Esc"
 msgstr "Échap"
 
-#: C/moserial.xml:492(para)
+#: C/moserial.xml:475(para)
 msgid ""
 "Moves the focus to the <guilabel>Outgoing</guilabel> single-line text box."
 msgstr ""
@@ -803,3 +781,31 @@ msgid "translator-credits"
 msgstr ""
 "Julien Hardelin <jhardlinATwanadooPOINTfr, 2011\n"
 "Claude Paroz <claude@2xlibre.net>, 2011"
+
+#~ msgid "2.26.0"
+#~ msgstr "2.26.0"
+
+#~ msgid ""
+#~ "There are a number of ways this is done on a Linux system. On Fedora 10, "
+#~ "you may need to use the PolicyKit tool, invoked using "
+#~ "<menuchoice><guisubmenu>System</guisubmenu><guisubmenu>Preferences</"
+#~ "guisubmenu><guisubmenu>System</guisubmenu><guimenuitem>Authorizations</"
+#~ "guimenuitem></menuchoice>. Then, navigate to the "
+#~ "<menuchoice><guisubmenu>org</guisubmenu><guisubmenu>freedesktop</"
+#~ "guisubmenu><guisubmenu>device-access</guisubmenu><guimenuitem>Directly "
+#~ "access serial modem devices</guimenuitem></menuchoice>, and click "
+#~ "<guilabel>edit</guilabel>. Set <guilabel>Anyone:</guilabel> to \"Yes\"."
+#~ msgstr ""
+#~ "Il existe plusieurs façons de faire cela sur un système Linux. Sur Fedora "
+#~ "10, vous pouvez avoir besoin d'utiliser l'outil PolicyKit, auquel on peut "
+#~ "accéder en choisissant <menuchoice><guisubmenu>Système</"
+#~ "guisubmenu><guisubmenu>Préférences</guisubmenu><guisubmenu>Système</"
+#~ "guisubmenu><guimenuitem>Autorisations</guimenuitem></menuchoice>. Puis "
+#~ "allez à <menuchoice><guisubmenu>org</guisubmenu><guisubmenu>freedesktop</"
+#~ "guisubmenu><guisubmenu>device-access</guisubmenu><guimenuitem>Directly "
+#~ "access serial modem devices</guimenuitem></menuchoice> (accéder "
+#~ "directement à des périphériques modem série), et cliquez sur "
+#~ "<guilabel>edit</guilabel>. Mettez <guilabel>Anyone:</guilabel> sur « Yes »."
+
+#~ msgid "Serial Port Authorizations on Fedora 10"
+#~ msgstr "Autorisations pour port série sur Fedora 10"
