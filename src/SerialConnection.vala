@@ -127,9 +127,13 @@ public class moserial.SerialConnection : GLib.Object
         }
 
         private bool readBytes(GLib.IOChannel source, GLib.IOCondition condition) {
-                uchar[] m_buf = new uchar[1000];
-                int bytesRead=(int)Posix.read(m_fd, m_buf, 1000);
+                uchar[] m_buf = new uchar[128];
+                int bytesRead=(int)Posix.read(m_fd, m_buf, 128);
 		rx += (ulong) bytesRead;
+
+                while(Gtk.events_pending() || Gdk.events_pending())
+                        Gtk.main_iteration_do(true);
+
                 if (bytesRead<0)
                         return false;
                 newData(m_buf, bytesRead);
