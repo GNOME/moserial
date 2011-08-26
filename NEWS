@@ -1,3 +1,12 @@
+Version 3.0.0
+-------------
+	* updated for vala 0.12.x
+	* migrated to gtk3
+	* migrated from libglade to gtk-builder
+	* minor fixes and doc updates
+	* Basic UI and functionality is mostly unchanged
+	
+
 Version 2.32.1
 --------------
 	* Build fixes for current vala:
