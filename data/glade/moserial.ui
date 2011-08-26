@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
   <requires lib="gtk+" version="2.16"/>
+  <object class="GtkAccelGroup" id="accelgroup1"/>
   <object class="GtkDialog" id="preferences_dialog">
     <property name="can_focus">False</property>
     <property name="border_width">5</property>
@@ -74,7 +75,7 @@
                     <property name="xalign">0</property>
                     <property name="label" translatable="yes">Font</property>
                     <attributes>
-                      <attribute name="weight" value="PANGO_WEIGHT_BOLD"/>
+                      <attribute name="weight" value="bold"/>
                     </attributes>
                   </object>
                   <packing>
@@ -256,7 +257,7 @@
                     <property name="xalign">0</property>
                     <property name="label" translatable="yes">Recording</property>
                     <attributes>
-                      <attribute name="weight" value="PANGO_WEIGHT_BOLD"/>
+                      <attribute name="weight" value="bold"/>
                     </attributes>
                   </object>
                   <packing>
@@ -818,7 +819,7 @@
                 <property name="xalign">0</property>
                 <property name="label" translatable="yes">Port Settings</property>
                 <attributes>
-                  <attribute name="weight" value="PANGO_WEIGHT_BOLD"/>
+                  <attribute name="weight" value="bold"/>
                 </attributes>
               </object>
               <packing>
@@ -1187,6 +1188,7 @@
                         <property name="use_action_appearance">False</property>
                         <property name="use_underline">True</property>
                         <property name="use_stock">True</property>
+                        <property name="accel_group">accelgroup1</property>
                         <property name="always_show_image">True</property>
                       </object>
                     </child>
@@ -1213,6 +1215,7 @@
                         <property name="use_action_appearance">False</property>
                         <property name="use_underline">True</property>
                         <property name="use_stock">True</property>
+                        <property name="accel_group">accelgroup1</property>
                         <property name="always_show_image">True</property>
                       </object>
                     </child>
@@ -1224,6 +1227,7 @@
                         <property name="use_action_appearance">False</property>
                         <property name="use_underline">True</property>
                         <property name="use_stock">True</property>
+                        <property name="accel_group">accelgroup1</property>
                         <property name="always_show_image">True</property>
                       </object>
                     </child>
@@ -1235,6 +1239,7 @@
                         <property name="use_action_appearance">False</property>
                         <property name="use_underline">True</property>
                         <property name="use_stock">True</property>
+                        <property name="accel_group">accelgroup1</property>
                         <property name="always_show_image">True</property>
                       </object>
                     </child>
@@ -1252,6 +1257,7 @@
                         <property name="use_action_appearance">False</property>
                         <property name="use_underline">True</property>
                         <property name="use_stock">True</property>
+                        <property name="accel_group">accelgroup1</property>
                         <property name="always_show_image">True</property>
                       </object>
                     </child>
@@ -1278,6 +1284,7 @@
                         <property name="use_action_appearance">False</property>
                         <property name="use_underline">True</property>
                         <property name="use_stock">True</property>
+                        <property name="accel_group">accelgroup1</property>
                         <property name="always_show_image">True</property>
                       </object>
                     </child>
@@ -1289,6 +1296,7 @@
                         <property name="use_action_appearance">False</property>
                         <property name="use_underline">True</property>
                         <property name="use_stock">True</property>
+                        <property name="accel_group">accelgroup1</property>
                         <property name="always_show_image">True</property>
                         <accelerator key="F1" signal="activate"/>
                       </object>
@@ -1615,7 +1623,7 @@
                 <property name="xalign">0</property>
                 <property name="label" translatable="yes">Outgoing</property>
                 <attributes>
-                  <attribute name="style" value="PANGO_STYLE_ITALIC"/>
+                  <attribute name="style" value="italic"/>
                 </attributes>
               </object>
               <packing>

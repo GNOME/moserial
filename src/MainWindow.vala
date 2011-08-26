@@ -98,6 +98,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 	private Adjustment va2;
 	private Adjustment va3;
 	private Adjustment va4;
+	private Gtk.AccelGroup ag;
 
         //private Gtk.RecentChooser recentChooser;
         public MainWindow(Builder builder, string? profileFilename) {
@@ -106,6 +107,9 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
         construct {
                 //setup window
                 gtkWindow = (Gtk.Window)builder.get_object("window");
+		ag = (Gtk.AccelGroup)builder.get_object("accelgroup1");
+		gtkWindow.add_accel_group (ag);
+		
                 gtkWindow.destroy.connect(quitSave);
                 gtkWindow.delete_event.connect(deleteSaveSize);
 		gtkWindow.key_press_event.connect(keyPress);
