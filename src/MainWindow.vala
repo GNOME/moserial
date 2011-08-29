@@ -773,7 +773,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 quitSave();
         }
 
-        private bool deleteSaveSize(Widget widget, Event event) {
+        private bool deleteSaveSize() {
                 windowSizeSave();
                 quitSave();
                 Gtk.main_quit();

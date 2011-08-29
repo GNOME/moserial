@@ -179,7 +179,7 @@ public class moserial.SettingsDialog : GLib.Object
                 	localEcho.set_active(false);
         }
 
-        public bool hide (Gtk.Widget w, Gdk.Event event) {
+        public bool hide () {
                 dialog.hide ();
                 return true;
         }

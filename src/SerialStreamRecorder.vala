@@ -25,7 +25,7 @@ public class moserial.SerialStreamRecorder {
 	private bool isOpen=false;
 	private FileOutputStream? fos;
 
-	public static enum Direction { INCOMING, OUTGOING, BOTH }
+	public enum Direction { INCOMING, OUTGOING, BOTH }
 	public const string[] DirectionStrings = { GLib.N_("Incoming"),
                                                    GLib.N_("Outgoing"),
                                                    GLib.N_("Incoming and Outgoing") };
