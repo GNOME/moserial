@@ -21,6 +21,5 @@ DOC_FIGURES =	figures/main-toolbar.png \
 		figures/send-progress.png \
 		figures/receive-progress.png \
 		figures/receive-file-dialog.png \
-		figures/preferences.png \
-		figures/authorizations.png
+		figures/preferences.png
 DOC_LINGUAS = cs de es fr sl sv
