@@ -1,3 +1,8 @@
+Version 3.0.1
+-------------
+	* fixed broken install
+
+
 Version 3.0.0
 -------------
 	* updated for vala 0.12.x
