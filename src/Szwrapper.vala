@@ -139,7 +139,7 @@ public class moserial.Szwrapper: GLib.Object
 	}
 	private bool readError(GLib.IOChannel source, GLib.IOCondition condition) {
                 while(Gtk.events_pending() || Gdk.events_pending())
-        		Gtk.main_iteration_do(true);
+        		Gtk.main_iteration_do(false);
         	if(running) {
         	
                 	char[] m_buf = new char[1000];
@@ -213,7 +213,7 @@ public class moserial.Szwrapper: GLib.Object
         }
         private bool readBytes(GLib.IOChannel source, GLib.IOCondition condition) {
 		while(Gtk.events_pending() || Gdk.events_pending())
-			Gtk.main_iteration_do(true);
+			Gtk.main_iteration_do(false);
 	         if(running) {
 
 		        char[] m_buf = new char[1024];

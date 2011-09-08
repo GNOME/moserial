@@ -132,7 +132,7 @@ public class moserial.SerialConnection : GLib.Object
 		rx += (ulong) bytesRead;
 
                 while(Gtk.events_pending() || Gdk.events_pending())
-                        Gtk.main_iteration_do(true);
+                        Gtk.main_iteration_do(false);
 
                 if (bytesRead<0)
                         return false;
