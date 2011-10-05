@@ -100,7 +100,9 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 	private Adjustment va4;
 	private Gtk.AccelGroup ag;
 
-        //private Gtk.RecentChooser recentChooser;
+	private const string recentGroup = "moserial-configs";
+	private Gtk.RecentData recentData;
+
         public MainWindow(Builder builder, string? profileFilename) {
 		GLib.Object(builder: builder, startupProfileFilename: profileFilename);
         }
@@ -282,11 +284,16 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 lineEndModeCombo.set_active(SerialConnection.LineEnd.CRLF);
                 
                 //setup recent chooser
+		recentData.groups = {recentGroup};
+		recentData.app_name = GLib.Environment.get_application_name();
+		recentData.app_exec = GLib.Environment.get_prgname() + " %u";
+		recentData.mime_type = "text/plain";
+
                 RecentManager recentManager = RecentManager.get_default ();
                 RecentChooserMenu recentChooserMenu = new Gtk.RecentChooserMenu.for_manager(recentManager);
                 recentChooserMenu.item_activated.connect(recentItemOpen);
                 RecentFilter filter = new RecentFilter();
-                filter.add_application(GLib.Environment.get_application_name());
+                filter.add_group(recentGroup);
                 recentChooserMenu.add_filter(filter);
                 recentChooserMenu.set_show_numbers(true);
                 MenuItem recentFileItem = (Gtk.MenuItem)builder.get_object("menubar_open_recent");
@@ -316,7 +323,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 			profileChanged=false;
 			RecentManager recentManager = RecentManager.get_default ();
 			try {
-				recentManager.add_item(GLib.Filename.to_uri(filename));
+				recentManager.add_full(GLib.Filename.to_uri(filename), recentData);
 			}
 			catch (GLib.ConvertError e) {
 				stdout.printf("%s\n", e.message);
@@ -837,7 +844,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 		profileChanged=false;
 		RecentManager recentManager = RecentManager.get_default ();
 		try {
-			recentManager.add_item(GLib.Filename.to_uri(profileFilename));
+			recentManager.add_full (GLib.Filename.to_uri(profileFilename), recentData);
 		}
 		catch (GLib.ConvertError e) {
 			stdout.printf("%s\n", e.message);
