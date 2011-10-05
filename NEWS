@@ -1,3 +1,9 @@
+Version 3.0.2
+-------------
+	* support BSD device names
+	* better recent-file handling/filtering
+
+
 Version 3.0.1
 -------------
 	* fixed broken install
