@@ -6,227 +6,228 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: moserial master\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-10-09 19:05+0900\n"
-"PO-Revision-Date: 2011-10-09 19:04+0900\n"
-"Last-Translator: Takeshi AIHANA <takeshi.aihana@gmail.com>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=moserial&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-10-09 10:10+0000\n"
+"PO-Revision-Date: 2012-01-01 19:55+0900\n"
+"Last-Translator: Jiro Matsuzawa <jmatsuzawa@src.gnome.org>\n"
 "Language-Team: Japanese <takeshi.aihana@gmail.com>\n"
-"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 
 #: ../data/glade/moserial.ui.h:1
-msgid "Preferences"
-msgstr "設定"
+msgid "Access Mode"
+msgstr "アクセス・モード"
 
 #: ../data/glade/moserial.ui.h:2
-msgid "Font"
-msgstr "フォント"
-
-#: ../data/glade/moserial.ui.h:3
-msgid "_Use the system fixed width font"
-msgstr "システムの固定幅フォントを使う(_U)"
-
-#: ../data/glade/moserial.ui.h:4
-msgid "Display Font"
-msgstr "フォント"
-
-#: ../data/glade/moserial.ui.h:5
-msgid "Font Colour"
-msgstr "文字の色"
-
-#: ../data/glade/moserial.ui.h:6
 msgid "Background Color"
 msgstr "背景の色"
 
+#: ../data/glade/moserial.ui.h:3
+msgid "Baud Rate"
+msgstr "ボーレート"
+
+#: ../data/glade/moserial.ui.h:4
+msgid "Connect"
+msgstr "接続"
+
+#: ../data/glade/moserial.ui.h:5
+msgid "Data Bits"
+msgstr "データのビット"
+
+#: ../data/glade/moserial.ui.h:6
+msgid "Device"
+msgstr "デバイス"
+
 #: ../data/glade/moserial.ui.h:7
-msgid "Highlight Color"
-msgstr "強調表示の色"
+msgid "Disconnect"
+msgstr "接続断"
 
 #: ../data/glade/moserial.ui.h:8
-msgid "Recording"
-msgstr "記録"
+msgid "Display Font"
+msgstr "フォント"
 
 #: ../data/glade/moserial.ui.h:9
-msgid "_Launch recorded files"
-msgstr "ログ・ファイルを開く(_L)"
+msgid "Echo received data"
+msgstr "受信したデータをエコーする"
 
 #: ../data/glade/moserial.ui.h:10
 msgid "Enable timeout after"
 msgstr "次の時間を経過したら記録を停止する: "
 
 #: ../data/glade/moserial.ui.h:11
-msgid "seconds"
-msgstr "秒後"
-
-#: ../data/glade/moserial.ui.h:12
-msgid "Select Folder for Received Files"
-msgstr "フォルダの選択"
-
-#: ../data/glade/moserial.ui.h:13
 msgid "Error Correction Protocol"
 msgstr "エラー時の接続プロトコル:"
 
-#: ../data/glade/moserial.ui.h:14
-msgid "Receive File Progress"
-msgstr "ファイル受信の経過"
-
-#: ../data/glade/moserial.ui.h:15
-msgid "Record Incoming and/or Outgoing Data"
-msgstr "ファイルの選択"
-
-#: ../data/glade/moserial.ui.h:16
-msgid "Stream to record"
-msgstr "記録するストリーム"
-
-#: ../data/glade/moserial.ui.h:17
-msgid "Select File to Send"
-msgstr "送信するファイルの選択"
-
-#: ../data/glade/moserial.ui.h:18
-msgid "Send File Progress"
-msgstr "ファイル送信の経過"
-
-#: ../data/glade/moserial.ui.h:19
-msgid "Port Setup"
-msgstr "ポートの設定"
-
-#: ../data/glade/moserial.ui.h:20
-msgid "Port Settings"
-msgstr "シリアル・ポートの設定"
-
-#: ../data/glade/moserial.ui.h:21
-msgid "Hardware"
-msgstr "ハードウェア"
-
-#: ../data/glade/moserial.ui.h:22
-msgid "Software"
-msgstr "ソフトウェア"
-
-#: ../data/glade/moserial.ui.h:23
-msgid "Access Mode"
-msgstr "アクセス・モード"
-
-#: ../data/glade/moserial.ui.h:24
-msgid "Handshake"
-msgstr "ハンドシェイク"
-
-#: ../data/glade/moserial.ui.h:25
-msgid "Parity"
-msgstr "パリティ"
-
-#: ../data/glade/moserial.ui.h:26
-msgid "Stop Bits"
-msgstr "ストップ・ビット"
-
-#: ../data/glade/moserial.ui.h:27
-msgid "Data Bits"
-msgstr "データのビット"
-
-#: ../data/glade/moserial.ui.h:28
-msgid "Baud Rate"
-msgstr "ボーレート"
-
-#: ../data/glade/moserial.ui.h:29
-msgid "Device"
-msgstr "デバイス"
-
-#: ../data/glade/moserial.ui.h:30
-msgid "Local Echo"
-msgstr "ローカルのエコー"
-
-#: ../data/glade/moserial.ui.h:31
-msgid "Echo received data"
-msgstr "受信したデータをエコーする"
-
-#: ../data/glade/moserial.ui.h:32
-msgid "moserial"
-msgstr "moserial"
-
-#: ../data/glade/moserial.ui.h:33
-msgid "_File"
-msgstr "ファイル(_F)"
-
-#: ../data/glade/moserial.ui.h:34
-msgid "Open _Recent"
-msgstr "最近の接続(_R)"
-
-#: ../data/glade/moserial.ui.h:35
-msgid "_Edit"
-msgstr "編集(_E)"
-
-#: ../data/glade/moserial.ui.h:36
-msgid "_Help"
-msgstr "ヘルプ(_H)"
-
-#: ../data/glade/moserial.ui.h:37
-msgid "Connect"
-msgstr "接続"
-
-#: ../data/glade/moserial.ui.h:38
-msgid "Record"
-msgstr "記録"
-
-#: ../data/glade/moserial.ui.h:39
-msgid "Send File"
-msgstr "ファイルの送信"
-
-#: ../data/glade/moserial.ui.h:40
-msgid "Receive File"
-msgstr "ファイルの受信"
-
-#: ../data/glade/moserial.ui.h:41
-msgid "Help"
-msgstr "ヘルプ"
-
-#: ../data/glade/moserial.ui.h:42
-msgid "Received ASCII"
-msgstr "受信 (ASCII)"
-
-#: ../data/glade/moserial.ui.h:43
-msgid "Received HEX"
-msgstr "受信 (16進)"
-
-#: ../data/glade/moserial.ui.h:44
-msgid "Sent ASCII"
-msgstr "送信 (ASCII)"
-
-#: ../data/glade/moserial.ui.h:45
-msgid "Sent HEX"
-msgstr "送信 (16進)"
-
-#: ../data/glade/moserial.ui.h:46 ../src/SerialStreamRecorder.vala:30
-msgid "Outgoing"
-msgstr "送信データ"
-
-#: ../data/glade/moserial.ui.h:47
-msgid "Send"
-msgstr "送信する"
-
-#: ../data/glade/moserial.ui.h:48
-msgid "Disconnect"
-msgstr "接続断"
-
-#: ../data/glade/moserial.ui.h:49
-msgid "Stop Recording"
-msgstr "停止"
-
-#: ../data/glade/moserial.ui.h:50
+#: ../data/glade/moserial.ui.h:12
 msgid "Filename required for XMODEM"
 msgstr "XMODEM 用のファイル名が必要です"
 
+#: ../data/glade/moserial.ui.h:13
+msgid "Font"
+msgstr "フォント"
+
+#: ../data/glade/moserial.ui.h:14
+msgid "Font Colour"
+msgstr "文字の色"
+
+#: ../data/glade/moserial.ui.h:15
+msgid "Handshake"
+msgstr "ハンドシェイク"
+
+#: ../data/glade/moserial.ui.h:16
+msgid "Hardware"
+msgstr "ハードウェア"
+
+#: ../data/glade/moserial.ui.h:17
+msgid "Help"
+msgstr "ヘルプ"
+
+#: ../data/glade/moserial.ui.h:18
+msgid "Highlight Color"
+msgstr "強調表示の色"
+
+#: ../data/glade/moserial.ui.h:19
+msgid "Local Echo"
+msgstr "ローカルのエコー"
+
+#: ../data/glade/moserial.ui.h:20
+msgid "Open _Recent"
+msgstr "最近の接続(_R)"
+
+#: ../data/glade/moserial.ui.h:21 ../src/SerialStreamRecorder.vala:30
+msgid "Outgoing"
+msgstr "送信データ"
+
+#: ../data/glade/moserial.ui.h:22
+msgid "Parity"
+msgstr "パリティ"
+
+#: ../data/glade/moserial.ui.h:23
+msgid "Port Settings"
+msgstr "シリアル・ポートの設定"
+
+#: ../data/glade/moserial.ui.h:24
+msgid "Port Setup"
+msgstr "ポートの設定"
+
+#: ../data/glade/moserial.ui.h:25
+msgid "Preferences"
+msgstr "設定"
+
+#: ../data/glade/moserial.ui.h:26
+msgid "Receive File"
+msgstr "ファイルの受信"
+
+#: ../data/glade/moserial.ui.h:27
+msgid "Receive File Progress"
+msgstr "ファイル受信の経過"
+
+#: ../data/glade/moserial.ui.h:28
+msgid "Received ASCII"
+msgstr "受信 (ASCII)"
+
+#: ../data/glade/moserial.ui.h:29
+msgid "Received HEX"
+msgstr "受信 (16進)"
+
+#: ../data/glade/moserial.ui.h:30
+msgid "Record"
+msgstr "記録"
+
+#: ../data/glade/moserial.ui.h:31
+msgid "Record Incoming and/or Outgoing Data"
+msgstr "ファイルの選択"
+
+#: ../data/glade/moserial.ui.h:32
+msgid "Recording"
+msgstr "記録"
+
+#: ../data/glade/moserial.ui.h:33
+msgid "Select File to Send"
+msgstr "送信するファイルの選択"
+
+#: ../data/glade/moserial.ui.h:34
+msgid "Select Folder for Received Files"
+msgstr "フォルダーの選択"
+
+#: ../data/glade/moserial.ui.h:35
+msgid "Send"
+msgstr "送信する"
+
+#: ../data/glade/moserial.ui.h:36
+msgid "Send File"
+msgstr "ファイルの送信"
+
+#: ../data/glade/moserial.ui.h:37
+msgid "Send File Progress"
+msgstr "ファイル送信の経過"
+
+#: ../data/glade/moserial.ui.h:38
+msgid "Sent ASCII"
+msgstr "送信 (ASCII)"
+
+#: ../data/glade/moserial.ui.h:39
+msgid "Sent HEX"
+msgstr "送信 (16進)"
+
+#: ../data/glade/moserial.ui.h:40
+msgid "Software"
+msgstr "ソフトウェア"
+
+#: ../data/glade/moserial.ui.h:41
+msgid "Stop Bits"
+msgstr "ストップ・ビット"
+
+#: ../data/glade/moserial.ui.h:42
+msgid "Stop Recording"
+msgstr "停止"
+
+#: ../data/glade/moserial.ui.h:43
+msgid "Stream to record"
+msgstr "記録するストリーム"
+
+#: ../data/glade/moserial.ui.h:44
+msgid "_Edit"
+msgstr "編集(_E)"
+
+#: ../data/glade/moserial.ui.h:45
+msgid "_File"
+msgstr "ファイル(_F)"
+
+#: ../data/glade/moserial.ui.h:46
+msgid "_Help"
+msgstr "ヘルプ(_H)"
+
+#: ../data/glade/moserial.ui.h:47
+msgid "_Launch recorded files"
+msgstr "ログ・ファイルを開く(_L)"
+
+#: ../data/glade/moserial.ui.h:48
+msgid "_Use the system fixed width font"
+msgstr "システムの固定幅フォントを使う(_U)"
+
+#: ../data/glade/moserial.ui.h:49
+msgid "moserial"
+msgstr "moserial"
+
+#: ../data/glade/moserial.ui.h:50
+msgid "seconds"
+msgstr "秒後"
+
 #: ../data/moserial.desktop.in.h:1
-msgid "moserial Terminal"
-msgstr "Moserial 端末"
+msgid "A serial terminal optimized for logging and file capture"
+msgstr "ログの記録やファイルのキャプチャが可能なシリアル端末です"
 
 #: ../data/moserial.desktop.in.h:2
 msgid "Serial Terminal"
 msgstr "シリアル端末"
 
 #: ../data/moserial.desktop.in.h:3
-msgid "A serial terminal optimized for logging and file capture"
-msgstr "ログの記録やファイルのキャプチャが可能なシリアル端末です"
+msgid "moserial Terminal"
+msgstr "Moserial 端末"
 
 #: ../src/InputParser.vala:45 ../src/InputParser.vala:52
 #: ../src/InputParser.vala:58
@@ -303,7 +304,7 @@ msgstr "ポートの設定です"
 
 #: ../src/MainWindow.vala:168
 msgid "Read the manual"
-msgstr "ユーザ・マニュアルを表示します"
+msgstr "ユーザー・マニュアルを表示します"
 
 #: ../src/MainWindow.vala:178
 msgid "TX: 0, RX: 0"
