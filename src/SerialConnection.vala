@@ -47,6 +47,7 @@ public class moserial.SerialConnection : GLib.Object
 						 GLib.N_("ESC end"), 
 						 GLib.N_("No end") };
 	public const string[] LineEndValues = {"\r\n", "\r", "\n", "\t", "\x1b", ""}; 
+	public const int max_buf_size = 128;
 
 
 	uint? sourceId;
@@ -127,8 +128,8 @@ public class moserial.SerialConnection : GLib.Object
         }
 
         private bool readBytes(GLib.IOChannel source, GLib.IOCondition condition) {
-                uchar[] m_buf = new uchar[128];
-                int bytesRead=(int)Posix.read(m_fd, m_buf, 128);
+                uchar[] m_buf = new uchar[max_buf_size];
+                int bytesRead=(int)Posix.read(m_fd, m_buf, max_buf_size);
 		rx += (ulong) bytesRead;
 
                 while(Gtk.events_pending() || Gdk.events_pending())
@@ -136,9 +137,15 @@ public class moserial.SerialConnection : GLib.Object
 
                 if (bytesRead<0)
                         return false;
-                newData(m_buf, bytesRead);
+
+                uchar[] sized_buf = new uchar[bytesRead];
+		for (int x=0; x<bytesRead; x++) {
+			sized_buf[x] = m_buf[x];
+                }
+
+                newData(sized_buf, bytesRead);
                 if(localEcho)
-                	sendBytes((char[])m_buf, bytesRead);
+                	sendBytes((char[])sized_buf, bytesRead);
                 return connected;
         }
 	

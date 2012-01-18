@@ -727,11 +727,11 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 						recordTimeoutID = GLib.Timeout.add_seconds(currentPreferences.timeout, recordTimeout);
 				}
 
-                                streamRecorder.writeIncoming(data[x]);
 				recordDataReceived=true;
                                 bytecountbar.pop(bytecountbarContext);
                                 bytecountbar.push(bytecountbarContext, sc.getBytecountbarString());
                         }
+                        streamRecorder.writeIncoming(data);
                 }
         }
 

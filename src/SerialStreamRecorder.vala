@@ -55,18 +55,29 @@ public class moserial.SerialStreamRecorder {
 			}
 			catch(GLib.Error e) {
 				stdout.printf(_("error: %s\n"), e.message);
-				// What should be done here?
 			}
 		}
 	
 	}
+	private void write_array(uchar[] data) {
+		if(isOpen) {
+			try {
+	                        fos.write(data, null);
+			}
+			catch(GLib.Error e) {
+				stdout.printf(_("error: %s\n"), e.message);
+			}
+		}
+	
+	}
+
 	public void writeOutgoing(uchar data) {
 		if(isOpen && (direction==Direction.OUTGOING || direction==Direction.BOTH))
 			write(data);
 	}
-	public void writeIncoming(uchar data) {
+	public void writeIncoming(uchar[] data) {
 		if(isOpen && (direction==Direction.INCOMING || direction==Direction.BOTH))
-			write(data);
+			write_array(data);
 	}
 	public void close (bool launch){
 		if(isOpen) {

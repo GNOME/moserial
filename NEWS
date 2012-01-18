@@ -1,3 +1,8 @@
+Version 3.0.3
+-------------
+	* fixed over-active file writing in record mode
+
+
 Version 3.0.2
 -------------
 	* support BSD device names
