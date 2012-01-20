@@ -53,6 +53,11 @@ public class moserial.PreferencesDialog : GLib.Object
 		enableTimeout.set_tooltip_text (_("If this option is enabled, recording will be automatically stopped after an adjustable period of inactivity after receiving some data. Moserial will wait indefinitely to record the first data byte before activating the inactivity timer."));
 
                 timeout = (SpinButton)builder.get_object("preferences_record_timeout");
+		timeout.adjustment.lower = 0;
+		timeout.adjustment.upper = 600;
+		timeout.adjustment.step_increment = 1;
+                timeout.adjustment.page_increment = 60;
+
                 systemFont.toggled.connect(this.systemFontToggled);
                 enableTimeout.toggled.connect(this.enableTimeoutToggled);
                 okButton.clicked.connect(ok);
