@@ -772,6 +772,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                                    "wrap-license", true,
                                    "license", license_trans,
                                    "website", "http://live.gnome.org/moserial",
+                                   "website_label", "http://live.gnome.org/moserial",
                                    null);
         }
 

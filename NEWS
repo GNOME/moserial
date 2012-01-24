@@ -1,3 +1,8 @@
+Version 3.0.5
+-------------
+	* support ttyACM device names
+
+
 Version 3.0.4
 -------------
 	* Fixed non-functional recording timeout spinbutton 
