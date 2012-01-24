@@ -91,6 +91,7 @@ public class moserial.SettingsDialog : GLib.Object
 		List<string> deviceTypes = new List<string> ();
 		deviceTypes.append ("/dev/ttyS");
 		deviceTypes.append ("/dev/ttyUSB");
+                deviceTypes.append ("/dev/ttyACM");
 		deviceTypes.append ("/dev/rfcomm");
 		deviceTypes.append ("/dev/cuaU");
 		deviceTypes.append ("/dev/cua");
