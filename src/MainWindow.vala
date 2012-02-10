@@ -296,6 +296,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 filter.add_group(recentGroup);
                 recentChooserMenu.add_filter(filter);
                 recentChooserMenu.set_show_numbers(true);
+		recentChooserMenu.show_not_found = false;
                 MenuItem recentFileItem = (Gtk.MenuItem)builder.get_object("menubar_open_recent");
                	recentFileItem.set_submenu(recentChooserMenu);
 
