@@ -70,7 +70,12 @@ public class moserial.SerialConnection : GLib.Object
                 Posix.tcflush(m_fd, Posix.TCIOFLUSH);
 //                int n = Posix.File.fcntl(m_fd, Posix.File.FDFlag.GETFL);
 //                Posix.File.fcntl_with_arg(m_fd, Posix.File.FDFlag.SETFL, n & ~Posix.File.FileStatus.NDELAY);
+
+#if VALA_0_14
+                tcgetattr(m_fd, out restoretio);
+#else
 		tcgetattr(m_fd, restoretio);
+#endif
                 applySettings(settings);
                 tcsetattr(m_fd, Posix.TCSANOW, newtio);
 
@@ -203,8 +208,13 @@ public class moserial.SerialConnection : GLib.Object
                         break;
                 }
 
+#if VALA_0_14
+                Posix.cfsetospeed(ref newtio, baudRate);
+                Posix.cfsetispeed(ref newtio, baudRate);
+#else
                 Posix.cfsetospeed(newtio, baudRate);
                 Posix.cfsetispeed(newtio, baudRate);
+#endif
 
                 //DataBits
                 int dataBits;
