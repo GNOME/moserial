@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: moserial master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-23 14:26+0200\n"
+"POT-Creation-Date: 2012-04-25 09:54+0200\n"
 "PO-Revision-Date: 2012-04-22 21:38+0000\n"
 "Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
 "Language-Team: Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
@@ -20,223 +20,223 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../data/glade/moserial.ui.h:1
-msgid "Access Mode"
-msgstr "Adgangstilstand"
+msgid "Preferences"
+msgstr "Indstillinger"
 
 #: ../data/glade/moserial.ui.h:2
-msgid "Background Color"
-msgstr "Baggrundsfarve"
+msgid "Font"
+msgstr "Skrifttype"
 
 #: ../data/glade/moserial.ui.h:3
-msgid "Baud Rate"
-msgstr "Baudrate"
+msgid "_Use the system fixed width font"
+msgstr "_Brug systemskriftypen der har fast bredde"
 
 #: ../data/glade/moserial.ui.h:4
-msgid "Connect"
-msgstr "Forbind"
-
-#: ../data/glade/moserial.ui.h:5
-msgid "Data Bits"
-msgstr "Databit"
-
-#: ../data/glade/moserial.ui.h:6
-msgid "Device"
-msgstr "Enhed"
-
-#: ../data/glade/moserial.ui.h:7
-msgid "Disconnect"
-msgstr "Afbryd"
-
-#: ../data/glade/moserial.ui.h:8
 msgid "Display Font"
 msgstr "Tekstskrifttype"
 
-# Måske Ekko-modtaget data
+#: ../data/glade/moserial.ui.h:5
+msgid "Font Colour"
+msgstr "Skrifttypefarve"
+
+#: ../data/glade/moserial.ui.h:6
+msgid "Background Color"
+msgstr "Baggrundsfarve"
+
+# måske fremhæv farve
+#: ../data/glade/moserial.ui.h:7
+msgid "Highlight Color"
+msgstr "Fremhævningsfarve"
+
+#: ../data/glade/moserial.ui.h:8
+msgid "Recording"
+msgstr "Optagelse"
+
 #: ../data/glade/moserial.ui.h:9
-msgid "Echo received data"
-msgstr "Data modtaget med ekko"
+msgid "_Launch recorded files"
+msgstr "_Start optagede filer"
 
 #: ../data/glade/moserial.ui.h:10
 msgid "Enable timeout after"
 msgstr "Slå tidsudløb til efter"
 
 #: ../data/glade/moserial.ui.h:11
-msgid "Error Correction Protocol"
-msgstr "Protokol for fejlkorrektion"
-
-#: ../data/glade/moserial.ui.h:12
-msgid "Filename required for XMODEM"
-msgstr "Filnavn krævet for XMODEM"
-
-#: ../data/glade/moserial.ui.h:13
-msgid "Font"
-msgstr "Skrifttype"
-
-#: ../data/glade/moserial.ui.h:14
-msgid "Font Colour"
-msgstr "Skrifttypefarve"
-
-#: ../data/glade/moserial.ui.h:15
-msgid "Handshake"
-msgstr "Håndtryk"
-
-#: ../data/glade/moserial.ui.h:16
-msgid "Hardware"
-msgstr "Hardware"
-
-#: ../data/glade/moserial.ui.h:17
-msgid "Help"
-msgstr "Hjælp"
-
-# måske fremhæv farve
-#: ../data/glade/moserial.ui.h:18
-msgid "Highlight Color"
-msgstr "Fremhævningsfarve"
-
-#: ../data/glade/moserial.ui.h:19
-msgid "Local Echo"
-msgstr "Lokalt ekko"
-
-#: ../data/glade/moserial.ui.h:20
-msgid "Open _Recent"
-msgstr "Åbn _seneste"
-
-#: ../data/glade/moserial.ui.h:21 ../src/SerialStreamRecorder.vala:30
-msgid "Outgoing"
-msgstr "Udgående"
-
-#: ../data/glade/moserial.ui.h:22
-msgid "Parity"
-msgstr "Paritet"
-
-#: ../data/glade/moserial.ui.h:23
-msgid "Port Settings"
-msgstr "Portopsætning"
-
-#: ../data/glade/moserial.ui.h:24
-msgid "Port Setup"
-msgstr "Portopsætning"
-
-#: ../data/glade/moserial.ui.h:25
-msgid "Preferences"
-msgstr "Indstillinger"
-
-# Modtagelsesfil eller Modtag fil.
-# fejlrapport.
-#: ../data/glade/moserial.ui.h:26
-msgid "Receive File"
-msgstr "Modtagelsesfil"
-
-# Status for filmodtagelse
-#: ../data/glade/moserial.ui.h:27
-msgid "Receive File Progress"
-msgstr "Status på modtagelsesfil"
-
-#: ../data/glade/moserial.ui.h:28
-msgid "Received ASCII"
-msgstr "Modtaget ASCII"
-
-#: ../data/glade/moserial.ui.h:29
-msgid "Received HEX"
-msgstr "Modtaget HEX"
-
-#: ../data/glade/moserial.ui.h:30
-msgid "Record"
-msgstr "Optag"
-
-#: ../data/glade/moserial.ui.h:31
-msgid "Record Incoming and/or Outgoing Data"
-msgstr "Optag indgående og/eller udgående data"
-
-#: ../data/glade/moserial.ui.h:32
-msgid "Recording"
-msgstr "Optagelse"
-
-#: ../data/glade/moserial.ui.h:33
-msgid "Select File to Send"
-msgstr "Vælg fil der skal sendes"
-
-#: ../data/glade/moserial.ui.h:34
-msgid "Select Folder for Received Files"
-msgstr "Vælg mappe for modtagne filer"
-
-#: ../data/glade/moserial.ui.h:35
-msgid "Send"
-msgstr "Send"
-
-#: ../data/glade/moserial.ui.h:36
-msgid "Send File"
-msgstr "Send fil"
-
-#: ../data/glade/moserial.ui.h:37
-msgid "Send File Progress"
-msgstr "Status for send fil"
-
-#: ../data/glade/moserial.ui.h:38
-msgid "Sent ASCII"
-msgstr "Sendt ASCII"
-
-#: ../data/glade/moserial.ui.h:39
-msgid "Sent HEX"
-msgstr "Sendt HEX"
-
-#: ../data/glade/moserial.ui.h:40
-msgid "Software"
-msgstr "Software"
-
-# Stop bits er så vidt jeg ved noget der indikerer at en transmission er
-# overstået, jeg vil derfor mene at der er tale om "Stopbit"
-#: ../data/glade/moserial.ui.h:41
-msgid "Stop Bits"
-msgstr "Stopbit"
-
-#: ../data/glade/moserial.ui.h:42
-msgid "Stop Recording"
-msgstr "Stop optagelse"
-
-#: ../data/glade/moserial.ui.h:43
-msgid "Stream to record"
-msgstr "Strøm der skal optages"
-
-#: ../data/glade/moserial.ui.h:44
-msgid "_Edit"
-msgstr "_Rediger"
-
-#: ../data/glade/moserial.ui.h:45
-msgid "_File"
-msgstr "_Fil"
-
-#: ../data/glade/moserial.ui.h:46
-msgid "_Help"
-msgstr "_Hjælp"
-
-#: ../data/glade/moserial.ui.h:47
-msgid "_Launch recorded files"
-msgstr "_Start optagede filer"
-
-#: ../data/glade/moserial.ui.h:48
-msgid "_Use the system fixed width font"
-msgstr "_Brug systemskriftypen der har fast bredde"
-
-#: ../data/glade/moserial.ui.h:49
-msgid "moserial"
-msgstr "moserial"
-
-#: ../data/glade/moserial.ui.h:50
 msgid "seconds"
 msgstr "sekunder"
 
+#: ../data/glade/moserial.ui.h:12
+msgid "Select Folder for Received Files"
+msgstr "Vælg mappe for modtagne filer"
+
+#: ../data/glade/moserial.ui.h:13
+msgid "Error Correction Protocol"
+msgstr "Protokol for fejlkorrektion"
+
+# Status for filmodtagelse
+#: ../data/glade/moserial.ui.h:14
+msgid "Receive File Progress"
+msgstr "Status på modtagelsesfil"
+
+#: ../data/glade/moserial.ui.h:15
+msgid "Record Incoming and/or Outgoing Data"
+msgstr "Optag indgående og/eller udgående data"
+
+#: ../data/glade/moserial.ui.h:16
+msgid "Stream to record"
+msgstr "Strøm der skal optages"
+
+#: ../data/glade/moserial.ui.h:17
+msgid "Select File to Send"
+msgstr "Vælg fil der skal sendes"
+
+#: ../data/glade/moserial.ui.h:18
+msgid "Send File Progress"
+msgstr "Status for send fil"
+
+#: ../data/glade/moserial.ui.h:19
+msgid "Port Setup"
+msgstr "Portopsætning"
+
+#: ../data/glade/moserial.ui.h:20
+msgid "Port Settings"
+msgstr "Portopsætning"
+
+#: ../data/glade/moserial.ui.h:21
+msgid "Hardware"
+msgstr "Hardware"
+
+#: ../data/glade/moserial.ui.h:22
+msgid "Software"
+msgstr "Software"
+
+#: ../data/glade/moserial.ui.h:23
+msgid "Access Mode"
+msgstr "Adgangstilstand"
+
+#: ../data/glade/moserial.ui.h:24
+msgid "Handshake"
+msgstr "Håndtryk"
+
+#: ../data/glade/moserial.ui.h:25
+msgid "Parity"
+msgstr "Paritet"
+
+# Stop bits er så vidt jeg ved noget der indikerer at en transmission er
+# overstået, jeg vil derfor mene at der er tale om "Stopbit"
+#: ../data/glade/moserial.ui.h:26
+msgid "Stop Bits"
+msgstr "Stopbit"
+
+#: ../data/glade/moserial.ui.h:27
+msgid "Data Bits"
+msgstr "Databit"
+
+#: ../data/glade/moserial.ui.h:28
+msgid "Baud Rate"
+msgstr "Baudrate"
+
+#: ../data/glade/moserial.ui.h:29
+msgid "Device"
+msgstr "Enhed"
+
+#: ../data/glade/moserial.ui.h:30
+msgid "Local Echo"
+msgstr "Lokalt ekko"
+
+# Måske Ekko-modtaget data
+#: ../data/glade/moserial.ui.h:31
+msgid "Echo received data"
+msgstr "Data modtaget med ekko"
+
+#: ../data/glade/moserial.ui.h:32
+msgid "moserial"
+msgstr "moserial"
+
+#: ../data/glade/moserial.ui.h:33
+msgid "_File"
+msgstr "_Fil"
+
+#: ../data/glade/moserial.ui.h:34
+msgid "Open _Recent"
+msgstr "Åbn _seneste"
+
+#: ../data/glade/moserial.ui.h:35
+msgid "_Edit"
+msgstr "_Rediger"
+
+#: ../data/glade/moserial.ui.h:36
+msgid "_Help"
+msgstr "_Hjælp"
+
+#: ../data/glade/moserial.ui.h:37
+msgid "Connect"
+msgstr "Forbind"
+
+#: ../data/glade/moserial.ui.h:38
+msgid "Record"
+msgstr "Optag"
+
+#: ../data/glade/moserial.ui.h:39
+msgid "Send File"
+msgstr "Send fil"
+
+# Modtagelsesfil eller Modtag fil.
+# fejlrapport.
+#: ../data/glade/moserial.ui.h:40
+msgid "Receive File"
+msgstr "Modtagelsesfil"
+
+#: ../data/glade/moserial.ui.h:41
+msgid "Help"
+msgstr "Hjælp"
+
+#: ../data/glade/moserial.ui.h:42
+msgid "Received ASCII"
+msgstr "Modtaget ASCII"
+
+#: ../data/glade/moserial.ui.h:43
+msgid "Received HEX"
+msgstr "Modtaget HEX"
+
+#: ../data/glade/moserial.ui.h:44
+msgid "Sent ASCII"
+msgstr "Sendt ASCII"
+
+#: ../data/glade/moserial.ui.h:45
+msgid "Sent HEX"
+msgstr "Sendt HEX"
+
+#: ../data/glade/moserial.ui.h:46 ../src/SerialStreamRecorder.vala:30
+msgid "Outgoing"
+msgstr "Udgående"
+
+#: ../data/glade/moserial.ui.h:47
+msgid "Send"
+msgstr "Send"
+
+#: ../data/glade/moserial.ui.h:48
+msgid "Disconnect"
+msgstr "Afbryd"
+
+#: ../data/glade/moserial.ui.h:49
+msgid "Stop Recording"
+msgstr "Stop optagelse"
+
+#: ../data/glade/moserial.ui.h:50
+msgid "Filename required for XMODEM"
+msgstr "Filnavn krævet for XMODEM"
+
 #: ../data/moserial.desktop.in.h:1
-msgid "A serial terminal optimized for logging and file capture"
-msgstr "En seriel terminal optimeret til logning og filoptagelse"
+msgid "moserial Terminal"
+msgstr "moserial terminal"
 
 #: ../data/moserial.desktop.in.h:2
 msgid "Serial Terminal"
 msgstr "Seriel terminal"
 
 #: ../data/moserial.desktop.in.h:3
-msgid "moserial Terminal"
-msgstr "moserial terminal"
+msgid "A serial terminal optimized for logging and file capture"
+msgstr "En seriel terminal optimeret til logning og filoptagelse"
 
 #: ../src/InputParser.vala:45 ../src/InputParser.vala:52
 #: ../src/InputParser.vala:58
