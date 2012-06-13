@@ -63,40 +63,68 @@ public class moserial.HexTextBuffer : TextBuffer
 	                        this.get_iter_at_mark(out nextCharIter, nextCharMark);
                         	TextMark startMark = new TextMark("startMark", true);
                         	this.add_mark(startMark, nextCharIter);
+#if VALA_0_16
 	                        this.insert(ref nextCharIter, "\n%08x".printf(hexBytes), 9);
+#else
+				this.insert(nextCharIter, "\n%08x".printf(hexBytes), 9);
+#endif
 	                        this.get_iter_at_mark(out startIter, startMark);
 	                        this.apply_tag_by_name("hex_address", startIter, nextCharIter);
 	                        this.delete_mark(startMark);
+#if VALA_0_16
 	                        this.insert(ref nextCharIter, " ", 1);
+#else
+				this.insert(nextCharIter, " ", 1);
+#endif
 	                        this.delete_mark(nextHexMark);
 	                        nextHexIter=nextCharIter;
 				nextHexMark = new TextMark("nextHex", true);
 	                        this.add_mark(nextHexMark, nextHexIter);
+#if VALA_0_16
 	                        this.insert(ref nextCharIter, "                                                   ", 51);
+#else
+				this.insert(nextCharIter, "                                                   ", 51);
+#endif
 	                        this.delete_mark(nextCharMark);
 	                        nextCharMark = new TextMark("nextChar", true);
 	                        this.add_mark(nextCharMark, nextCharIter);
 	                }
                         else if((hexBytes % 8)==0) {
 	                        this.get_iter_at_mark(out nextHexIter, nextHexMark);
+#if VALA_0_16
 	                        this.insert(ref nextHexIter, "  ", 2);
+#else
+                                this.insert(nextHexIter, "  ", 2);
+#endif
 	                        TextIter tempIter;
 	                        //remove space to align chars
 	                        tempIter = nextHexIter;
         	                tempIter.forward_chars(2);
+#if VALA_0_16
                                 this.delete(ref nextHexIter, ref tempIter);
+#else
+				this.delete(nextHexIter, tempIter);
+#endif
 	                        this.delete_mark(nextHexMark);
 	                        nextHexMark = new TextMark("nextHex", true);
 	                        this.add_mark(nextHexMark, nextHexIter);
 			}
 			this.get_iter_at_mark(out nextHexIter, nextHexMark);
                         incomingHexBuffer+="%02X ".printf(data);
+#if VALA_0_16
                         this.insert(ref nextHexIter, incomingHexBuffer, (int)incomingHexBuffer.length);
+#else
+			this.insert(nextHexIter, incomingHexBuffer, (int)incomingHexBuffer.length);
+#endif
                         //remove space to align chars
                         TextIter tempIter;
                         tempIter = nextHexIter;
                         tempIter.forward_chars(3);
+#if VALA_0_16
                         this.delete(ref nextHexIter, ref tempIter);
+#else
+			this.delete(nextHexIter, tempIter);
+#endif
 			//add odd coloring
 			/*if(((hexBytes+1)%2)==0) {
 	      	                tempIter.backward_chars(3);
@@ -112,9 +140,17 @@ public class moserial.HexTextBuffer : TextBuffer
                         unichar c = "%c".printf(data).get_char();
                         string s = "%c".printf(data);
                         if(s.validate() && c.isprint())
+#if VALA_0_16
 	                        this.insert(ref nextCharIter, s, (int)s.length);
+#else
+				this.insert(nextCharIter, s, (int)s.length);
+#endif
                         else
+#if VALA_0_16
 	                        this.insert(ref nextCharIter, ".", 1);
+#else
+				this.insert(nextCharIter, ".", 1);
+#endif
 			
 			this.delete_mark(nextCharMark);
                         nextCharMark = new TextMark("nextChar", true);

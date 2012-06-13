@@ -371,7 +371,11 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 		}
 
                 buf.get_end_iter(out iter);
+#if VALA_0_16
                 buf.insert(ref iter, builder.str, (int)builder.str.length);
+#else
+		buf.insert(iter, builder.str, (int)builder.str.length);
+#endif
         }
 
         public void sendString(Widget w) {
