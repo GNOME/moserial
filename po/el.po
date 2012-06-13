@@ -1,0 +1,521 @@
+# Greek translation for moserial.
+# Copyright (C) 2012 moserial's COPYRIGHT HOLDER
+# This file is distributed under the same license as the moserial package.
+# Κωσνταντίνος Χόρτης <cograss@yahoo.com>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: moserial master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=moserial&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-06-13 17:19+0000\n"
+"PO-Revision-Date: 2012-06-14 01:29+0200\n"
+"Last-Translator: Tom Tryfonidis <tomtryf@gmail.com>\n"
+"Language-Team: Greek Translation Team\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: el\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.0\n"
+"X-Project-Style: gnome\n"
+
+#: ../data/glade/moserial.ui.h:1
+msgid "Preferences"
+msgstr "Προτιμήσεις"
+
+#: ../data/glade/moserial.ui.h:2
+msgid "Font"
+msgstr "Γραμματοσειρά"
+
+#: ../data/glade/moserial.ui.h:3
+msgid "_Use the system fixed width font"
+msgstr "Χ_ρήση της γραμματοσειράς σταθερού πλάτους του συστήματος"
+
+#: ../data/glade/moserial.ui.h:4
+msgid "Display Font"
+msgstr "Γραμματοσειρά οθόνης"
+
+#: ../data/glade/moserial.ui.h:5
+msgid "Font Colour"
+msgstr "Χρώμα γραμματοσειράς"
+
+#: ../data/glade/moserial.ui.h:6
+msgid "Background Color"
+msgstr "Χρώμα φόντου"
+
+#: ../data/glade/moserial.ui.h:7
+msgid "Highlight Color"
+msgstr "Χρώμα τονισμού"
+
+#: ../data/glade/moserial.ui.h:8
+msgid "Recording"
+msgstr "Εγγραφή"
+
+#: ../data/glade/moserial.ui.h:9
+msgid "_Launch recorded files"
+msgstr "Ε_κκίνηση αρχείων εγγραφής"
+
+#: ../data/glade/moserial.ui.h:10
+msgid "Enable timeout after"
+msgstr "Ενεργοποίηση χρονικού ορίου μετά"
+
+#: ../data/glade/moserial.ui.h:11
+msgid "seconds"
+msgstr "δευτερόλεπτα"
+
+#: ../data/glade/moserial.ui.h:12
+msgid "Select Folder for Received Files"
+msgstr "Επιλογή φακέλου για τα ληφθέντα αρχεία"
+
+#: ../data/glade/moserial.ui.h:13
+msgid "Error Correction Protocol"
+msgstr "Πρωτόκολλο διόρθωσης λαθών"
+
+#: ../data/glade/moserial.ui.h:14
+msgid "Receive File Progress"
+msgstr "Πρόοδος λήψης αρχείου"
+
+#: ../data/glade/moserial.ui.h:15
+msgid "Record Incoming and/or Outgoing Data"
+msgstr "Εγγραφή εισερχομένων και/ή εξερχομένων δεδομένων"
+
+#: ../data/glade/moserial.ui.h:16
+msgid "Stream to record"
+msgstr "Ροή προς εγγραφή"
+
+#: ../data/glade/moserial.ui.h:17
+msgid "Select File to Send"
+msgstr "Επιλογή αρχείου για αποστολή"
+
+#: ../data/glade/moserial.ui.h:18
+msgid "Send File Progress"
+msgstr "Πρόοδος αποστολής αρχείου"
+
+#: ../data/glade/moserial.ui.h:19
+msgid "Port Setup"
+msgstr "Ρύθμιση θύρας"
+
+#: ../data/glade/moserial.ui.h:20
+msgid "Port Settings"
+msgstr "Επιλογές θύρας"
+
+#: ../data/glade/moserial.ui.h:21
+msgid "Hardware"
+msgstr "Υλικό"
+
+#: ../data/glade/moserial.ui.h:22
+msgid "Software"
+msgstr "Λογισμικό"
+
+#: ../data/glade/moserial.ui.h:23
+msgid "Access Mode"
+msgstr "Λειτουργία πρόσβασης"
+
+#: ../data/glade/moserial.ui.h:24
+msgid "Handshake"
+msgstr "Χαιρετισμός"
+
+#: ../data/glade/moserial.ui.h:25
+msgid "Parity"
+msgstr "Ισοτιμία"
+
+#: ../data/glade/moserial.ui.h:26
+msgid "Stop Bits"
+msgstr "Stop Bits"
+
+#: ../data/glade/moserial.ui.h:27
+msgid "Data Bits"
+msgstr "Data Bits"
+
+#: ../data/glade/moserial.ui.h:28
+msgid "Baud Rate"
+msgstr "Baud Rate"
+
+#: ../data/glade/moserial.ui.h:29
+msgid "Device"
+msgstr "Συσκευή"
+
+#: ../data/glade/moserial.ui.h:30
+msgid "Local Echo"
+msgstr "Local Echo"
+
+#: ../data/glade/moserial.ui.h:31
+msgid "Echo received data"
+msgstr "Echo ληφθέντα δεδομένα"
+
+#: ../data/glade/moserial.ui.h:32
+msgid "moserial"
+msgstr "moserial"
+
+#: ../data/glade/moserial.ui.h:33
+msgid "_File"
+msgstr "Α_ρχείο"
+
+#: ../data/glade/moserial.ui.h:34
+msgid "Open _Recent"
+msgstr "Άνοιγμα π_ρόσφατου"
+
+#: ../data/glade/moserial.ui.h:35
+msgid "_Edit"
+msgstr "Ε_πεξεργασία"
+
+#: ../data/glade/moserial.ui.h:36
+msgid "_Help"
+msgstr "Βοή_θεια"
+
+#: ../data/glade/moserial.ui.h:37
+msgid "Connect"
+msgstr "Σύνδεση"
+
+#: ../data/glade/moserial.ui.h:38
+msgid "Record"
+msgstr "Εγγραφή"
+
+#: ../data/glade/moserial.ui.h:39
+msgid "Send File"
+msgstr "Αποστολή αρχείου"
+
+#: ../data/glade/moserial.ui.h:40
+msgid "Receive File"
+msgstr "Λήψη αρχείου"
+
+#: ../data/glade/moserial.ui.h:41
+msgid "Help"
+msgstr "Βοήθεια"
+
+#: ../data/glade/moserial.ui.h:42
+msgid "Received ASCII"
+msgstr "Ελήφθη ASCII"
+
+#: ../data/glade/moserial.ui.h:43
+msgid "Received HEX"
+msgstr "Ελήφθη HEX"
+
+#: ../data/glade/moserial.ui.h:44
+msgid "Sent ASCII"
+msgstr "Απεστάλη ASCII"
+
+#: ../data/glade/moserial.ui.h:45
+msgid "Sent HEX"
+msgstr "Απεστάλη HEX"
+
+#: ../data/glade/moserial.ui.h:46
+#: ../src/SerialStreamRecorder.vala:30
+msgid "Outgoing"
+msgstr "Εξερχόμενα"
+
+#: ../data/glade/moserial.ui.h:47
+msgid "Send"
+msgstr "Αποστολή"
+
+#: ../data/glade/moserial.ui.h:48
+msgid "Disconnect"
+msgstr "Αποσύνδεση"
+
+#: ../data/glade/moserial.ui.h:49
+msgid "Stop Recording"
+msgstr "Διακοπή εγγραφής"
+
+#: ../data/glade/moserial.ui.h:50
+msgid "Filename required for XMODEM"
+msgstr "Απαιτείται όνομα αρχείου για το XMODEM"
+
+#: ../data/moserial.desktop.in.h:1
+msgid "moserial Terminal"
+msgstr "Τερματικό moserial"
+
+#: ../data/moserial.desktop.in.h:2
+msgid "Serial Terminal"
+msgstr "Σειριακό Τερματικό"
+
+#: ../data/moserial.desktop.in.h:3
+msgid "A serial terminal optimized for logging and file capture"
+msgstr "Ένα σειριακό τερματικό βελτιστοποιημένο για τη σύλληψη και καταγραφή αρχείων"
+
+#: ../src/InputParser.vala:45
+#: ../src/InputParser.vala:52
+#: ../src/InputParser.vala:58
+msgid "Invalid Input"
+msgstr "Εισαγόμενα δεδομένα μη έγκυρα"
+
+#: ../src/Main.vala:26
+msgid "Profile file to load"
+msgstr "Αρχείο προφίλ προς φόρτωση"
+
+#: ../src/Main.vala:36
+#, c-format
+msgid ""
+"Failed to load UI\n"
+"%s"
+msgstr ""
+"Αποτυχία φόρτωσης του UI\n"
+"%s"
+
+#: ../src/Main.vala:52
+msgid "- moserial serial terminal"
+msgstr "- moserial σειριακό τερματικό"
+
+#: ../src/Main.vala:57
+#: ../src/Main.vala:65
+#, c-format
+msgid "Run '%s --help' to see a full list of available command line options.\n"
+msgstr "Εκτελέστε '%s --help' για να δείτε την πλήρη λίστα των διαθέσιμων επιλογών γραμμής εντολών.\n"
+
+#: ../src/MainWindow.vala:30
+msgid "translator-credits"
+msgstr "Konstantinos Chortis (Κωνσταντίνος Χόρτης) <cograss@yahoo.com>, 2012"
+
+#: ../src/MainWindow.vala:32
+msgid "moserial is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.\n"
+msgstr "Το moserial είναι ελεύθερο λογισμικό: μπορείτε να το αναδιανείμετε ή/και να το τροποποιήσετε υπό τους όρους της Γενικής Δημόσιας Άδειας GNU όπως εκδόθηκε από το Ίδρυμα Ελεύθερου Λογισμικού, είτε στην έκδοση 3 της Άδειας, είτε (κατ' επιλογήν σας) σε άλλη νεότερη έκδοση.\n"
+
+#: ../src/MainWindow.vala:33
+msgid "moserial is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.\n"
+msgstr "Το moserial διανέμεται με την ελπίδα ότι θα αποδειχθεί χρήσιμο, παρόλα αυτά ΧΩΡΙΣ ΚΑΜΙΑ ΕΓΓΥΗΣΗ – χωρίς ούτε και την σιωπηρή εγγύηση ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ ΣΥΓΚΕΚΡΙΜΕΝΗ ΧΡΗΣΗ. Για περισσότερες λεπτομέρειες ανατρέξτε στη Γενική Άδεια Δημόσιας Χρήσης GNU (GNU General Public License).\n"
+
+#: ../src/MainWindow.vala:34
+msgid "You should have received a copy of the GNU General Public License along with this program.  If not, see <http://www.gnu.org/licenses/>."
+msgstr "Θα πρέπει να έχετε λάβει ένα αντίγραφο της Γενικής Άδειας Δημόσιας Χρήσης GNU (GPL) μαζί με το πρόγραμμα· Εάν όχι, επισκεφθείτε το <http://www.gnu.org/licenses/>."
+
+#: ../src/MainWindow.vala:65
+msgid "ASCII"
+msgstr "ASCII"
+
+#: ../src/MainWindow.vala:65
+msgid "HEX"
+msgstr "HEX"
+
+#: ../src/MainWindow.vala:163
+msgid "Port configuration"
+msgstr "Διαμόρφωση θύρας"
+
+#: ../src/MainWindow.vala:168
+msgid "Read the manual"
+msgstr "Διάβασμα του εγχειριδίου"
+
+#: ../src/MainWindow.vala:178
+msgid "TX: 0, RX: 0"
+msgstr "TX: 0, RX: 0"
+
+#: ../src/MainWindow.vala:189
+msgid "Send a file"
+msgstr "Αποστολή ενός αρχείου"
+
+#: ../src/MainWindow.vala:198
+msgid "Receive a file"
+msgstr "Λήψη ενός αρχείου"
+
+#: ../src/MainWindow.vala:208
+msgid "Record sent and/or received data"
+msgstr "Καταγραφή απεσταλμένων και/ή ληφθέντων δεδομένων"
+
+#: ../src/MainWindow.vala:219
+msgid "Other preferences"
+msgstr "Λοιπές προτιμήσεις"
+
+#: ../src/MainWindow.vala:224
+msgid "Open/close port"
+msgstr "Άνοιγμα/κλείσιμο θύρας"
+
+#: ../src/MainWindow.vala:272
+msgid "Send the outgoing data now."
+msgstr "Αποστολή των εξερχόμενων δεδομένων τώρα."
+
+#: ../src/MainWindow.vala:275
+msgid "Type outgoing data here. Press Enter or Send to send it."
+msgstr "Πληκτρολογήστε εδώ τα εξερχόμενα δεδομένα. Πατήστε το πλήκτρο Enter ή Αποστολή για να τα στείλετε."
+
+#: ../src/MainWindow.vala:562
+#: ../src/Profile.vala:76
+#: ../src/Profile.vala:107
+#, c-format
+msgid "Error: Could not open file"
+msgstr "Σφάλμα: Δεν ήταν δυνατό το άνοιγμα αρχείου"
+
+#: ../src/MainWindow.vala:640
+#, c-format
+msgid "Error: Could not open device"
+msgstr "Σφάλμα: Δεν ήταν δυνατή η αρχικοποίηση συσκευής"
+
+#: ../src/MainWindow.vala:762
+#, c-format
+msgid "Unable to display help file: %s"
+msgstr "Αδυναμία προβολής αρχείου βοήθειας: %s"
+
+#: ../src/MainWindow.vala:773
+msgid "A serial terminal for the GNOME desktop, optimized for logging and file capture."
+msgstr "Ένα σειριακό τερματικό του GNOME βελτιστοποιημένο για τη σύλληψη και καταγραφή αρχείων."
+
+#: ../src/MainWindow.vala:826
+msgid "You have changed your setting or preferences. Do you want to save these changes to the loaded profile?"
+msgstr "Έχετε αλλάξει τη ρύθμιση ή τις προτιμήσεις σας. Θέλετε να αποθηκεύσετε αυτές τις αλλαγές στο φορτωμένο προφίλ;"
+
+#: ../src/PreferencesDialog.vala:50
+msgid "If this option is enabled, a recorded file will be opened immediately after it is saved, using the default application for the file type. The default application is defined by the desktop environment."
+msgstr "Εάν αυτή η επιλογή είναι ενεργοποιημένη, ένα αρχείο καταγραφής θα ανοίξει αμέσως μετά την αποθήκευση του, χρησιμοποιώντας την προεπιλεγμένη εφαρμογή για τον τύπο αρχείου. Η προεπιλεγμένη εφαρμογή ορίζεται από το περιβάλλον επιφάνειας εργασίας."
+
+#: ../src/PreferencesDialog.vala:53
+msgid "If this option is enabled, recording will be automatically stopped after an adjustable period of inactivity after receiving some data. Moserial will wait indefinitely to record the first data byte before activating the inactivity timer."
+msgstr "Εάν αυτή η επιλογή ενεργοποιηθεί, η εγγραφή θα σταματήσει αυτόματα μετά από ένα ρυθμιζόμενο χρονικό διάστημα αδράνειας μετά την παραλαβή ορισμένων δεδομένων. Το Moserial θα περιμένει επ' αόριστον για να καταγράψει το πρώτο byte των δεδομένων πριν από την ενεργοποίηση του χρονοδιακόπτη αδράνειας."
+
+#: ../src/Preferences.vala:65
+msgid "Unable to retrieve system font setting"
+msgstr "Αδυναμία ανάκτησης ρύθμισης γραμματοσειράς του συστήματος"
+
+#: ../src/Rzwrapper.vala:24
+#: ../src/Szwrapper.vala:24
+msgid "Xmodem"
+msgstr "Xmodem"
+
+#: ../src/Rzwrapper.vala:25
+#: ../src/Szwrapper.vala:25
+msgid "Ymodem"
+msgstr "Ymodem"
+
+#: ../src/Rzwrapper.vala:26
+#: ../src/Szwrapper.vala:26
+msgid "Zmodem"
+msgstr "Zmodem"
+
+#: ../src/SendProgressDialog.vala:43
+msgid "Waiting for remote host"
+msgstr "Αναμονή του απομακρυσμένου διακομιστή"
+
+#: ../src/SerialConnection.vala:43
+msgid "CR+LF end"
+msgstr "CR+LF end"
+
+#: ../src/SerialConnection.vala:44
+msgid "CR end"
+msgstr "CR end"
+
+#: ../src/SerialConnection.vala:45
+msgid "LF end"
+msgstr "LF end"
+
+#: ../src/SerialConnection.vala:46
+msgid "TAB end"
+msgstr "TAB end"
+
+#: ../src/SerialConnection.vala:47
+msgid "ESC end"
+msgstr "ESC end"
+
+#: ../src/SerialConnection.vala:48
+msgid "No end"
+msgstr "Χωρίς τέλος"
+
+#: ../src/SerialConnection.vala:302
+#, c-format
+msgid "TX: %lu, RX: %lu (%lu unprintable)"
+msgstr "TX: %lu, RX: %lu (%lu μη εκτυπώσιμο)"
+
+#: ../src/SerialConnection.vala:304
+#, c-format
+msgid "TX: %lu, RX: %lu"
+msgstr "TX: %lu, RX: %lu"
+
+#: ../src/SerialStreamRecorder.vala:29
+msgid "Incoming"
+msgstr "Εισερχόμενα"
+
+#: ../src/SerialStreamRecorder.vala:31
+msgid "Incoming and Outgoing"
+msgstr "Εισερχόμενα και εξερχόμενα"
+
+#: ../src/SerialStreamRecorder.vala:57
+#: ../src/SerialStreamRecorder.vala:68
+#: ../src/SerialStreamRecorder.vala:89
+#, c-format
+msgid "error: %s\n"
+msgstr "σφάλμα: %s\n"
+
+#: ../src/SerialStreamRecorder.vala:98
+#, c-format
+msgid "Unable to launch %s: %s"
+msgstr "Αδυναμία εκκίνησης %s: %s"
+
+#: ../src/SettingsDialog.vala:67
+msgid "Also known as RTS/CTS handshaking"
+msgstr "Επίσης γνωστό ως χειραψία RTS/CTS"
+
+#: ../src/SettingsDialog.vala:70
+msgid "Also known as XON/XOFF handshaking"
+msgstr "Επίσης γνωστό ως χειραψία XON/XOFF"
+
+#: ../src/SettingsDialog.vala:76
+msgid "Normally disabled"
+msgstr "Συνήθως απενεργοποιημένο"
+
+#: ../src/Settings.vala:25
+msgid "None"
+msgstr "Κανένα"
+
+#: ../src/Settings.vala:26
+msgid "Odd"
+msgstr "Περιττός"
+
+#: ../src/Settings.vala:27
+msgid "Even"
+msgstr "Ζυγός"
+
+#: ../src/Settings.vala:28
+msgid "Mark"
+msgstr "Επισήμανση"
+
+#: ../src/Settings.vala:29
+msgid "Space"
+msgstr "Διάστημα"
+
+#: ../src/Settings.vala:34
+msgid "Read and Write"
+msgstr "Ανάγνωση και εγγραφή"
+
+#: ../src/Settings.vala:35
+msgid "Read Only"
+msgstr "Μόνο για ανάγνωση"
+
+#: ../src/Settings.vala:36
+msgid "Write Only"
+msgstr "Μόνο εγγραφή"
+
+#. TRANSLATORS: first letter of "None", a serial port parity setting
+#: ../src/Settings.vala:89
+msgid "N"
+msgstr "Ν"
+
+#. TRANSLATORS: first letter of "Odd", a serial port parity setting
+#: ../src/Settings.vala:93
+msgid "O"
+msgstr "Ο"
+
+#. TRANSLATORS: first letter of "Even", a serial port parity setting
+#: ../src/Settings.vala:97
+msgid "E"
+msgstr "Ε"
+
+#. TRANSLATORS: first letter of "Mark", a serial port parity setting
+#: ../src/Settings.vala:101
+msgid "M"
+msgstr "Μ"
+
+#. TRANSLATORS: first letter of "Space", a serial port parity setting
+#: ../src/Settings.vala:105
+msgid "S"
+msgstr "S"
+
+#: ../src/Settings.vala:115
+msgid "OPEN"
+msgstr "ΑΝΟΙΧΤΌ"
+
+#: ../src/Settings.vala:116
+msgid "CLOSED"
+msgstr "ΚΛΕΙΣΤΌ"
+
+#: ../src/Szwrapper.vala:27
+msgid "None (straight binary)"
+msgstr "None (απευθείας δυαδικό)"
+
+#: ../src/Szwrapper.vala:185
+msgid "canceled"
+msgstr "ακυρώθηκε"
+
