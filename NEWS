@@ -1,3 +1,8 @@
+Version 3.0.7
+-------------
+	* Fixes to support compilation with vala 0.12, 0.14, and now 0.16.
+
+
 Version 3.0.6
 -------------
         * Fixes compilation with vala 0.14, but maintain 0.12 compatibility
