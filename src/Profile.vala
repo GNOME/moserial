@@ -73,7 +73,7 @@ public class Profile : GLib.Object
                         return true;
                 } catch (GLib.FileError e) {
                         if (!default_profile) {
-                                var errorDialog = new MessageDialog (window, DialogFlags.DESTROY_WITH_PARENT, MessageType.ERROR, ButtonsType.CLOSE, "%s: %s\n%s".printf(_("Error: Could not open file"), filename, e.message));
+                                var errorDialog = new MessageDialog (window, DialogFlags.DESTROY_WITH_PARENT, MessageType.ERROR, ButtonsType.CLOSE, "%s: %s\n%s", _("Error: Could not open file"), filename, e.message);
                                 errorDialog.run();
                                 errorDialog.destroy();
                         }
@@ -104,7 +104,7 @@ public class Profile : GLib.Object
 		} catch (GLib.Error e) {
 			stdout.printf("profile.save error: %s\n", e.message);	
                         if (!default_profile) {
-                                var errorDialog = new MessageDialog (window, DialogFlags.DESTROY_WITH_PARENT, MessageType.ERROR, ButtonsType.CLOSE, "%s: %s\n%s".printf(_("Error: Could not open file"), filename, e.message));
+                                var errorDialog = new MessageDialog (window, DialogFlags.DESTROY_WITH_PARENT, MessageType.ERROR, ButtonsType.CLOSE, "%s: %s\n%s", _("Error: Could not open file"), filename, e.message);
                                 errorDialog.run();
                                 errorDialog.destroy();
                         }

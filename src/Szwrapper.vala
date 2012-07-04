@@ -105,7 +105,7 @@ public class moserial.Szwrapper: GLib.Object
 			{
 				running=false;
 				stdout.printf("spawn error: %s\n", e.message);
-				var errorDialog = new Gtk.MessageDialog (null, Gtk.DialogFlags.DESTROY_WITH_PARENT, Gtk.MessageType.ERROR, Gtk.ButtonsType.CLOSE, "%s".printf(e.message));
+				var errorDialog = new Gtk.MessageDialog (null, Gtk.DialogFlags.DESTROY_WITH_PARENT, Gtk.MessageType.ERROR, Gtk.ButtonsType.CLOSE, "%s", e.message);
                         	errorDialog.run();
                         	errorDialog.destroy();
 			}

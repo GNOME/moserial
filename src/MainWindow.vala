@@ -427,7 +427,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 		                }
 			}
 			catch (HexParseError e) {
-	                        var errorDialog = new MessageDialog (gtkWindow, DialogFlags.DESTROY_WITH_PARENT, MessageType.ERROR, ButtonsType.CLOSE, e.message);
+	                        var errorDialog = new MessageDialog (gtkWindow, DialogFlags.DESTROY_WITH_PARENT, MessageType.ERROR, ButtonsType.CLOSE, "%s", e.message);
 				errorDialog.run();
 				errorDialog.destroy();
 			}
@@ -559,7 +559,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                                 stopRecording(dialog);
 			setWindowTitle(filename);
                 } catch (GLib.Error e) {
-                        var errorDialog = new MessageDialog (gtkWindow, DialogFlags.DESTROY_WITH_PARENT, MessageType.ERROR, ButtonsType.CLOSE, "%s: %s\n%s".printf(_("Error: Could not open file"), filename, e.message));
+                        var errorDialog = new MessageDialog (gtkWindow, DialogFlags.DESTROY_WITH_PARENT, MessageType.ERROR, ButtonsType.CLOSE, "%s: %s\n%s", _("Error: Could not open file"), filename, e.message);
                         errorDialog.run();
                         errorDialog.destroy();
                         stopRecording(dialog);
@@ -637,7 +637,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
         private bool startConnection() {
                 if (!(serialConnection.doConnect(currentSettings))) {
                         connectButton.set_active(false);
-                        var dialog = new MessageDialog (gtkWindow, DialogFlags.DESTROY_WITH_PARENT, MessageType.ERROR, ButtonsType.CLOSE, "%s: %s".printf(_("Error: Could not open device"), currentSettings.device));
+                        var dialog = new MessageDialog (gtkWindow, DialogFlags.DESTROY_WITH_PARENT, MessageType.ERROR, ButtonsType.CLOSE, "%s: %s", _("Error: Could not open device"), currentSettings.device);
                         dialog.run();
                         dialog.destroy();
                         return false;
@@ -823,7 +823,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 		currentPaths.saveToProfile(profile);
 		if (profileFilename != null) {
 			if (profileChanged) {
-                		var dialog = new MessageDialog (gtkWindow, DialogFlags.DESTROY_WITH_PARENT, MessageType.QUESTION, ButtonsType.YES_NO, _("You have changed your setting or preferences. Do you want to save these changes to the loaded profile?"));
+                		var dialog = new MessageDialog (gtkWindow, DialogFlags.DESTROY_WITH_PARENT, MessageType.QUESTION, ButtonsType.YES_NO, "%s", _("You have changed your setting or preferences. Do you want to save these changes to the loaded profile?"));
 	                	int response = dialog.run();
         	        	if(response == Gtk.ResponseType.YES)
 	        	        	saveProfile();
