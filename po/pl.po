@@ -4,12 +4,14 @@
 # pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
 # gnomepl@aviary.pl
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+# Piotr Drąg <piotrdrag@gmail.com>, 2012.
+# Aviary.pl <gnomepl@aviary.pl>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: moserial\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-12 00:34+0200\n"
-"PO-Revision-Date: 2012-07-12 00:35+0200\n"
+"POT-Creation-Date: 2012-09-04 19:23+0200\n"
+"PO-Revision-Date: 2012-09-04 19:25+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -260,12 +262,14 @@ msgstr "- terminal szeregowy moserial"
 #, c-format
 msgid "Run '%s --help' to see a full list of available command line options.\n"
 msgstr ""
-"Wykonanie polecenia \"%s --help\" wyświetli pełną listę dostępnych opcji "
-"wiersza poleceń.\n"
+"Polecenie \"%s --help\" wyświetli pełną listę dostępnych opcji wiersza "
+"poleceń.\n"
 
 #: ../src/MainWindow.vala:30
 msgid "translator-credits"
-msgstr "Aviary.pl <gnomepl@aviary.pl>, 2012"
+msgstr ""
+"Piotr Drąg <piotrdrag@gmail.com>, 2012\n"
+"Aviary.pl <gnomepl@aviary.pl>, 2012"
 
 #: ../src/MainWindow.vala:32
 msgid ""
