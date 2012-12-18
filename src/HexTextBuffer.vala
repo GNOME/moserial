@@ -74,7 +74,7 @@ public class moserial.HexTextBuffer : TextBuffer
 #else
 				this.insert(nextCharIter, "\n%08x".printf(hexBytes), 9);
 #endif
-	                        this.get_iter_at_offset(out nextCharIter, this.cursor_position);
+				this.get_end_iter (out nextCharIter);	
 
 				// Format offset info
 	                        this.get_iter_at_mark(out startIter, startMark);
@@ -87,7 +87,7 @@ public class moserial.HexTextBuffer : TextBuffer
 #else
 				this.insert(nextCharIter, " ", 1);
 #endif
-	                        this.get_iter_at_offset(out nextCharIter, this.cursor_position);
+				this.get_end_iter (out nextCharIter);
 
 	                        // Save current position in nextHexMark
 	                        this.delete_mark(nextHexMark);
@@ -101,7 +101,7 @@ public class moserial.HexTextBuffer : TextBuffer
 #else
 				this.insert(nextCharIter, "                                                   ", 51);
 #endif
-	                        this.get_iter_at_offset(out nextCharIter, this.cursor_position);
+				this.get_end_iter (out nextCharIter);
 				// Save current nextCharMark
 	                        this.delete_mark(nextCharMark);
 	                        nextCharMark = new TextMark("nextChar", true);
