@@ -22,4 +22,4 @@ DOC_FIGURES =	figures/main-toolbar.png \
 		figures/receive-progress.png \
 		figures/receive-file-dialog.png \
 		figures/preferences.png
-DOC_LINGUAS = cs de es fr sl sv
+DOC_LINGUAS = cs de el es fr sl sv
