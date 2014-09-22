@@ -4,19 +4,19 @@
 <application>
   <id type="desktop">moserial.desktop</id>
   <metadata_license>CC0-1.0</metadata_license>
-  <summary>Serial terminal</summary>
+  <_summary>Serial terminal</_summary>
   <description>
-    <p>
+    <_p>
       Moserial is a serial terminal used for interacting with serial consoles
       and embedded devices.
       It supports the view of incoming and outgoing data in both ASCII
-      and hexadecimal formats with the option to log this data also.
+      and hexadecimal formats with the option to log this data.
       It also supports sending and receiving of x, y, and z-modem files, and has
       profiles to easily switch between configurations for different devices you
       are communicating with. 
-    </p>
+    </_p>
   </description>
-  <url type="homepage">http://live.gnome.org/moserial/</url>
+  <url type="homepage">https://wiki.gnome.org/moserial/</url>
   <screenshots>
     <screenshot type="default">https://wiki.gnome.org/moserial?action=AttachFile&amp;do=get&amp;target=main.png</screenshot>
   </screenshots>
