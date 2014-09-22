@@ -16,6 +16,8 @@ man_MANS = moserial.1
 EXTRA_DIST = 			\
 	$(desktop_in_files)	\
 	$(desktop_DATA)		\
+        $(appdata_in_files)     \
+        $(appdata_DATA)         \
 	$(man_MANS)
 
 
