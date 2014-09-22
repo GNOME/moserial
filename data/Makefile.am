@@ -6,6 +6,11 @@ desktopdir = $(datadir)/applications
 desktop_in_files=moserial.desktop.in
 desktop_DATA = $(desktop_in_files:.desktop.in=.desktop) 
 
+@INTLTOOL_XML_RULE@
+appdatadir = $(datarootdir)/appdata
+appdata_DATA = $(appdata_in_files:.xml.in=.xml)
+appdata_in_files = moserial.appdata.xml.in
+
 man_MANS = moserial.1
 
 EXTRA_DIST = 			\
@@ -15,4 +20,5 @@ EXTRA_DIST = 			\
 
 
 DISTCLEANFILES =                \
-	$(desktop_DATA)
+	$(desktop_DATA)		\
+	$(appdata_DATA)

@@ -2,6 +2,7 @@
 # List of source files which contain translatable strings.
 [type: gettext/glade]data/glade/moserial.ui
 data/moserial.desktop.in
+data/moserial.appdata.xml.in
 src/InputParser.vala
 src/Main.vala
 src/MainWindow.vala
