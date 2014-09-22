@@ -1,3 +1,8 @@
+Version 3.0.9
+-------------
+	* Adds an appdata file
+
+
 Version 3.0.8
 -------------
 	* Fixes segmentation fault on HexTextBuffer.vala
