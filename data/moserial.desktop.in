@@ -2,7 +2,7 @@
 _Name=moserial Terminal
 _GenericName=Serial Terminal
 _Comment=A serial terminal optimized for logging and file capture
-Categories=GTK;Utility;FileTransfer;TerminalEmulator
+Categories=GTK;Utility;FileTransfer;TerminalEmulator;
 Exec=moserial %U
 Icon=moserial
 MimeType=
