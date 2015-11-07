@@ -27,7 +27,7 @@ public class moserial.SendProgressDialog : GLib.Object
         public signal void transferCanceled();
         construct {
                 Builder builder = new Builder();
-                builder.add_from_file(Config.MOSERIAL_GLADEDIR + "/send_progress_dialog.ui");
+                builder.add_from_resource(Config.UIROOT + "send_progress_dialog.ui");
 
                 dialog = (Dialog)builder.get_object("send_progress_dialog");
                 cancelButton = (Button)builder.get_object("send_progress_cancel");

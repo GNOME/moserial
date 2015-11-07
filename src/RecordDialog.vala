@@ -29,7 +29,7 @@ public class moserial.RecordDialog : GLib.Object
         public SerialStreamRecorder.Direction direction;
         construct {
                 Builder builder = new Builder();
-                builder.add_from_file(Config.MOSERIAL_GLADEDIR + "/record_dialog.ui");
+                builder.add_from_resource(Config.UIROOT + "record_dialog.ui");
 
                 dialog = (FileChooserDialog)builder.get_object("record_dialog");
                 cancelButton = (Button)builder.get_object("record_cancel");

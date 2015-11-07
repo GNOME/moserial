@@ -26,7 +26,7 @@ public class moserial.SendChooserDialog : GLib.Object
         public string filename;
         construct {
                 Builder builder = new Builder();
-                builder.add_from_file(Config.MOSERIAL_GLADEDIR + "/send_chooser_dialog.ui");
+                builder.add_from_resource(Config.UIROOT + "send_chooser_dialog.ui");
 
                 dialog = (FileChooserDialog)builder.get_object("send_chooser_dialog");
 

@@ -44,7 +44,7 @@ public class moserial.SettingsDialog : GLib.Object
 
         construct {
                 Builder builder = new Builder();
-                builder.add_from_file(Config.MOSERIAL_GLADEDIR + "/settings_dialog.ui");
+                builder.add_from_resource(Config.UIROOT + "settings_dialog.ui");
 
                 dialog = (Dialog)builder.get_object("settings_dialog");
                 cancelButton = (Button)builder.get_object("settings_cancel_button");

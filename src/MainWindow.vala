@@ -107,7 +107,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
         }
         construct {
                 Builder builder = new Builder();
-                builder.add_from_file(Config.MOSERIAL_GLADEDIR + "/mainwindow.ui");
+                builder.add_from_resource(Config.UIROOT + "mainwindow.ui");
 
                 //setup window
                 gtkWindow = (Gtk.Window)builder.get_object("window");

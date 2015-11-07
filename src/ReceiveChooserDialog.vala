@@ -27,7 +27,7 @@ public class moserial.ReceiveChooserDialog : GLib.Object
 
         construct {
                 Builder builder = new Builder();
-                builder.add_from_file(Config.MOSERIAL_GLADEDIR + "/receive_chooser.ui");
+                builder.add_from_resource(Config.UIROOT + "receive_chooser.ui");
 
                 dialog = (FileChooserDialog)builder.get_object("receive_chooser_dialog");
 

@@ -1,4 +1,4 @@
-SUBDIRS = ui icons
+SUBDIRS = icons
 
 @INTLTOOL_DESKTOP_RULE@
 
@@ -13,13 +13,17 @@ appdata_in_files = moserial.appdata.xml.in
 
 man_MANS = moserial.1
 
+gresource_file = moserial.gresource.xml
+resource_files = $(shell $(GLIB_COMPILE_RESOURCES) --generate-dependencies $(gresource_file))
+
 EXTRA_DIST = 			\
 	$(desktop_in_files)	\
 	$(desktop_DATA)		\
         $(appdata_in_files)     \
         $(appdata_DATA)         \
-	$(man_MANS)
-
+	$(man_MANS)		\
+	$(gresource_files)	\
+	$(resource_files)
 
 DISTCLEANFILES =                \
 	$(desktop_DATA)		\

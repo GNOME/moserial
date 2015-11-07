@@ -27,7 +27,7 @@ public class moserial.ReceiveProgressDialog : GLib.Object
         public signal void transferCanceled();
         construct {
                 Builder builder = new Builder();
-                builder.add_from_file(Config.MOSERIAL_GLADEDIR + "/receive_progress.ui");
+                builder.add_from_resource(Config.UIROOT + "receive_progress.ui");
 
                 dialog = (Dialog)builder.get_object("receive_progress_dialog");
                 cancelButton = (Button)builder.get_object("receive_progress_cancel");

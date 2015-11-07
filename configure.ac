@@ -36,11 +36,12 @@ PKG_CHECK_MODULES(MOSERIAL, glib-2.0 >= $GLIB_REQUIRED
 AC_SUBST(MOSERIAL_CFLAGS)
 AC_SUBST(MOSERIAL_LIBS)
 
+AC_PATH_PROG(GLIB_COMPILE_RESOURCES, glib-compile-resources)
+
 AC_CONFIG_FILES([
 	Makefile
 	po/Makefile.in
 	data/Makefile
-	data/ui/Makefile
 	data/icons/Makefile
 	data/icons/48x48/Makefile
 	data/icons/48x48/apps/Makefile

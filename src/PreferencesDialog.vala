@@ -34,7 +34,7 @@ public class moserial.PreferencesDialog : GLib.Object
         public signal void updatePreferences(Preferences preferences);
         construct {
                 Builder builder = new Builder();
-                builder.add_from_file(Config.MOSERIAL_GLADEDIR + "/preferences.ui");
+                builder.add_from_resource(Config.UIROOT + "preferences.ui");
 
                 dialog = (Dialog)builder.get_object("preferences_dialog");
                 okButton = (Button)builder.get_object("preferences_ok");

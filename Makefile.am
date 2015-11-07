@@ -8,15 +8,21 @@ SUBDIRS = \
 	po \
 	$(NULL)
 
-gladedir = $(datadir)/moserial/glade
-INCLUDES = -DMOSERIAL_GLADEDIR=\""$(gladedir)"\" -DPACKAGE_LOCALEDIR=\""$(datadir)/locale"\"
+INCLUDES = -DUIROOT=\""/org/gnome/moserial/ui/"\" -DPACKAGE_LOCALEDIR=\""$(datadir)/locale"\"
+
+gresource_file = $(top_srcdir)/data/moserial.gresource.xml
+AM_VALAFLAGS = --gresources $(gresource_file)
+
+resource_files = $(shell $(GLIB_COMPILE_RESOURCES) --generate-dependencies --sourcedir=$(top_srcdir)/data $(gresource_file))
+src/resources.c: $(gresource_file) $(resource_files)
+	$(AM_V_GEN) $(GLIB_COMPILE_RESOURCES) --target=$@ --sourcedir=$(top_srcdir)/data --generate-source $<
 
 AM_CPPFLAGS = \
 	$(MOSERIAL_CFLAGS) \
 	-include $(CONFIG_HEADER) \
 	$(NULL)
 
-BUILT_SOURCES = src/moserial.vala.stamp
+BUILT_SOURCES = src/moserial.vala.stamp src/resources.c
 
 bin_PROGRAMS = moserial
 
@@ -46,7 +52,8 @@ moserial_VALASOURCES = \
 	$(NULL)
 
 moserial_SOURCES = \
-	$(moserial_VALASOURCES:.vala=.c) \
+	$(moserial_VALASOURCES:.vala=.c)	\
+	src/resources.c				\
 	$(NULL)
 
 src/moserial.vala.stamp: $(moserial_VALASOURCES)

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/org/gnome/moserial">
+    <file preprocess="xml-stripblanks">ui/mainwindow.ui</file>
+    <file preprocess="xml-stripblanks">ui/preferences.ui</file>
+    <file preprocess="xml-stripblanks">ui/receive_chooser.ui</file>
+    <file preprocess="xml-stripblanks">ui/receive_progress.ui</file>
+    <file preprocess="xml-stripblanks">ui/record_dialog.ui</file>
+    <file preprocess="xml-stripblanks">ui/send_chooser_dialog.ui</file>
+    <file preprocess="xml-stripblanks">ui/send_progress_dialog.ui</file>
+    <file preprocess="xml-stripblanks">ui/settings_dialog.ui</file>
+    <file preprocess="xml-stripblanks">ui/xmodem_filename_dialog.ui</file>
+  </gresource>
+</gresources>
