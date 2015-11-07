@@ -1,4 +1,4 @@
-SUBDIRS = glade icons
+SUBDIRS = ui icons
 
 @INTLTOOL_DESKTOP_RULE@
 

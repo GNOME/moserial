@@ -40,7 +40,7 @@ AC_CONFIG_FILES([
 	Makefile
 	po/Makefile.in
 	data/Makefile
-	data/glade/Makefile
+	data/ui/Makefile
 	data/icons/Makefile
 	data/icons/48x48/Makefile
 	data/icons/48x48/apps/Makefile

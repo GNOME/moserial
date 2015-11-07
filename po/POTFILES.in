@@ -1,6 +1,6 @@
 [encoding: UTF-8]
 # List of source files which contain translatable strings.
-[type: gettext/glade]data/glade/moserial.ui
+[type: gettext/glade]data/ui/moserial.ui
 data/moserial.desktop.in
 data/moserial.appdata.xml.in
 src/InputParser.vala
