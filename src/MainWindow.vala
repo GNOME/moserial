@@ -757,7 +757,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 
         private void showHelp () {
                 try {
-                        show_uri(null, "ghelp:moserial", Gdk.CURRENT_TIME);
+                        show_uri(null, "help:moserial", Gdk.CURRENT_TIME);
                 } catch (GLib.Error e) {
                         warning(_("Unable to display help file: %s"), e.message);
                 }

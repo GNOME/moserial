@@ -57,10 +57,6 @@ moserial_LDADD = \
 	$(MOSERIAL_LIBS) \
 	$(NULL)
 
-distcleancheck_listfiles = find . -type f -print | grep -v 'omf\.out'
-
-distuninstallcheck_listfiles = find . -type f -print | grep -v '^\./var/scrollkeeper' | grep -v 'omf' | grep -v 'figures'
-
 EXTRA_DIST = \
 	intltool-extract.in \
 	intltool-update.in \
@@ -68,9 +64,7 @@ EXTRA_DIST = \
 	$(moserial_VALASOURCES) \
 	src/Config.vapi		\
 	src/moserial.vala.stamp \
-        omf.make                \
         xmldocs.make            \
-        gnome-doc-utils.make	\
 	MAINTAINERS		\
 	ChangeLog.pre-git	\
 	$(NULL)
@@ -83,11 +77,7 @@ DISTCLEANFILES = \
 	intltool-update \
 	intltool-merge \
 	po/.intltool-merge-cache \
-        gnome-doc-utils.make	\
 	$(NULL)
-
-DISTCHECK_CONFIGURE_FLAGS = --disable-scrollkeeper
-
 
 # Build ChangeLog from GIT history
 ChangeLog:

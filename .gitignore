@@ -41,5 +41,4 @@ po/Makefile.in.in
 doc/*/.xml2po.mo
 doc/*/moserial.xml
 doc/*.omf
-gnome-doc-utils.make
 

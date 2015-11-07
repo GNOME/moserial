@@ -1,10 +1,9 @@
-include $(top_srcdir)/gnome-doc-utils.make
-dist-hook: doc-dist-hook
+@YELP_HELP_RULES@
 
-DOC_MODULE = moserial
-DOC_ENTITIES = legal.xml
-DOC_INCLUDES = 
-DOC_FIGURES =	figures/main-toolbar.png \
+HELP_ID = moserial
+HELP_FILES = index.docbook
+HELP_EXTRA = legal.xml
+HELP_MEDIA = figures/main-toolbar.png \
 		figures/statusbar.png \
 		figures/port-setup.png \
 		figures/connect.png \
@@ -22,4 +21,4 @@ DOC_FIGURES =	figures/main-toolbar.png \
 		figures/receive-progress.png \
 		figures/receive-file-dialog.png \
 		figures/preferences.png
-DOC_LINGUAS = cs de el es fr sl sv
+HELP_LINGUAS = cs de el es fr sl sv
