@@ -25,7 +25,6 @@ public class moserial.SettingsDialog : GLib.Object
 	// Does anyone have more than 32 serial ports?
 	const int max_devices = 32;
 
-        public Builder builder {get; construct;}
         private Settings currentSettings;
         private Dialog dialog;
         private Button cancelButton;
@@ -42,11 +41,11 @@ public class moserial.SettingsDialog : GLib.Object
         private CheckButton localEcho;
 	private Gtk.ListStore deviceModel;
         public signal void updateSettings(Settings settings);
-        public SettingsDialog(Builder builder) {
-		GLib.Object(builder: builder);
-        }
 
         construct {
+                Builder builder = new Builder();
+                builder.add_from_file(Config.MOSERIAL_GLADEDIR + "/settings_dialog.ui");
+
                 dialog = (Dialog)builder.get_object("settings_dialog");
                 cancelButton = (Button)builder.get_object("settings_cancel_button");
                 okButton = (Button)builder.get_object("settings_ok_button");

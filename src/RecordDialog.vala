@@ -20,7 +20,6 @@
 using Gtk;
 public class moserial.RecordDialog : GLib.Object
 {
-        public Builder builder {get; construct;}
         private FileChooserDialog dialog;
         private Button cancelButton;
         private ComboBox streamCombo;
@@ -28,10 +27,10 @@ public class moserial.RecordDialog : GLib.Object
         public signal void startRecording(string fileName, SerialStreamRecorder.Direction direction);
         public signal void stopRecording();
         public SerialStreamRecorder.Direction direction;
-        public RecordDialog(Builder builder) {
-		GLib.Object(builder: builder);
-        }
         construct {
+                Builder builder = new Builder();
+                builder.add_from_file(Config.MOSERIAL_GLADEDIR + "/record_dialog.ui");
+
                 dialog = (FileChooserDialog)builder.get_object("record_dialog");
                 cancelButton = (Button)builder.get_object("record_cancel");
 

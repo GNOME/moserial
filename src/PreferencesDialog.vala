@@ -20,7 +20,6 @@
 using Gtk;
 public class moserial.PreferencesDialog : GLib.Object
 {
-        public Builder builder {get; construct;}
         private Dialog dialog;
         private Button cancelButton;
         private Button okButton;
@@ -33,10 +32,10 @@ public class moserial.PreferencesDialog : GLib.Object
         private CheckButton enableTimeout;
         private SpinButton timeout;
         public signal void updatePreferences(Preferences preferences);
-        public PreferencesDialog(Builder builder) {
-		GLib.Object(builder: builder);
-        }
         construct {
+                Builder builder = new Builder();
+                builder.add_from_file(Config.MOSERIAL_GLADEDIR + "/preferences.ui");
+
                 dialog = (Dialog)builder.get_object("preferences_dialog");
                 okButton = (Button)builder.get_object("preferences_ok");
                 cancelButton = (Button)builder.get_object("preferences_cancel");

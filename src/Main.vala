@@ -29,16 +29,9 @@ class moserial.Main : GLib.Object
         public void run() {
 
                 moserial.MainWindow mainWindow;
-                Builder builder = new Builder();
-                try {
-                        builder.add_from_file(Config.MOSERIAL_GLADEDIR + "/moserial.ui");
-                } catch (Error e) {
-                        var msg = new MessageDialog (null, DialogFlags.MODAL, MessageType.ERROR, ButtonsType.CANCEL, _("Failed to load UI\n%s"), e.message);
-                        msg.run ();
-                }
                 if(!(profileFilename==null) && (!GLib.Path.is_absolute(profileFilename)))
                 		profileFilename=GLib.Path.build_filename(GLib.Environment.get_current_dir(), profileFilename);
-                mainWindow = new moserial.MainWindow(builder, profileFilename);
+                mainWindow = new moserial.MainWindow(profileFilename);
                 mainWindow.showWindow();
         }
         public static int main (string[] args) {

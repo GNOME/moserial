@@ -20,14 +20,13 @@
 using Gtk;
 public class moserial.XmodemFilenameDialog : GLib.Object
 {
-        public Builder builder {get; construct;}
         private Dialog dialog;
 	private Gtk.Entry xmodemFilename;
 	public string filename;
-        public XmodemFilenameDialog(Builder builder) {
-		GLib.Object(builder: builder);
-        }
 	construct {
+                Builder builder = new Builder();
+                builder.add_from_file(Config.MOSERIAL_GLADEDIR + "/xmodem_filename_dialog.ui");
+
 		dialog = (Dialog)builder.get_object("xmodem_filename_dialog");
 		xmodemFilename = (Gtk.Entry)builder.get_object("xmodem_filename");
 		dialog.delete_event.connect(hide);

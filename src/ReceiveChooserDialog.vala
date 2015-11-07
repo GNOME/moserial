@@ -20,16 +20,15 @@
 using Gtk;
 public class moserial.ReceiveChooserDialog : GLib.Object
 {
-        public Builder builder {get; construct;}
         private FileChooserDialog dialog;
         public ComboBox protocolCombo;
         public signal void startTransfer();
         public string path;
-        public ReceiveChooserDialog(Builder builder) {
-		GLib.Object(builder: builder);
-        }
 
         construct {
+                Builder builder = new Builder();
+                builder.add_from_file(Config.MOSERIAL_GLADEDIR + "/receive_chooser.ui");
+
                 dialog = (FileChooserDialog)builder.get_object("receive_chooser_dialog");
 
                 protocolCombo = (ComboBox)builder.get_object("receive_chooser_protocol");

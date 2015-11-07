@@ -20,16 +20,15 @@
 using Gtk;
 public class moserial.ReceiveProgressDialog : GLib.Object
 {
-        public Builder builder {get; construct;}
         private Dialog dialog;
         private Button cancelButton;
         private Gtk.Label status;
         private ProgressBar progressBar;
         public signal void transferCanceled();
-        public ReceiveProgressDialog(Builder builder) {
-		GLib.Object(builder: builder);
-        }
         construct {
+                Builder builder = new Builder();
+                builder.add_from_file(Config.MOSERIAL_GLADEDIR + "/receive_progress.ui");
+
                 dialog = (Dialog)builder.get_object("receive_progress_dialog");
                 cancelButton = (Button)builder.get_object("receive_progress_cancel");
                 cancelButton.clicked.connect(this.cancel);

@@ -34,7 +34,6 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 N_("You should have received a copy of the GNU General Public License along with this program.  If not, see <http://www.gnu.org/licenses/>.")
         };
 
-        public Builder builder {get; construct; }
         private Gtk.Window gtkWindow;
         private SettingsDialog settingsDialog;
         private ToolButton settingsButton;
@@ -103,10 +102,13 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 	private const string recentGroup = "moserial-configs";
 	private Gtk.RecentData recentData;
 
-        public MainWindow(Builder builder, string? profileFilename) {
-		GLib.Object(builder: builder, startupProfileFilename: profileFilename);
+        public MainWindow(string? profileFilename) {
+		GLib.Object(startupProfileFilename: profileFilename);
         }
         construct {
+                Builder builder = new Builder();
+                builder.add_from_file(Config.MOSERIAL_GLADEDIR + "/mainwindow.ui");
+
                 //setup window
                 gtkWindow = (Gtk.Window)builder.get_object("window");
 		ag = (Gtk.AccelGroup)builder.get_object("accelgroup1");
@@ -156,7 +158,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 		clearMenuItem.activate.connect(this.clear);
 		
                 //setup the Port Settings Dialog
-                settingsDialog = new SettingsDialog(builder);
+                settingsDialog = new SettingsDialog();
                 settingsDialog.updateSettings.connect(this.updateSettings);
                 settingsButton = (ToolButton)builder.get_object("toolbar_settings");
                 settingsButton.clicked.connect(this.showSettingsDialog);
@@ -182,8 +184,8 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 about.activate.connect(showAboutDialog);
 
                 //setup send
-                sendProgressDialog = new SendProgressDialog(builder);
-                sendChooserDialog = new SendChooserDialog(builder);
+                sendProgressDialog = new SendProgressDialog();
+                sendChooserDialog = new SendChooserDialog();
                 send = (ToolButton)builder.get_object("toolbar_send");
                 send.clicked.connect(doSendChooser);
 		send.set_tooltip_text (_("Send a file"));
@@ -191,18 +193,18 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 sz = new Szwrapper(Szwrapper.Protocol.NULL, null, null);
 
                 //setup receive
-                receiveProgressDialog = new ReceiveProgressDialog(builder);
-                receiveChooserDialog = new ReceiveChooserDialog(builder);
+                receiveProgressDialog = new ReceiveProgressDialog();
+                receiveChooserDialog = new ReceiveChooserDialog();
                 receive = (ToolButton)builder.get_object("toolbar_receive");
                 receive.clicked.connect(doReceiveChooser);
 		receive.set_tooltip_text (_("Receive a file"));
                 receiveChooserDialog.startTransfer.connect(this.doReceive);
-                xmodemFilenameDialog = new XmodemFilenameDialog(builder);
+                xmodemFilenameDialog = new XmodemFilenameDialog();
                 rz = new Rzwrapper(Rzwrapper.Protocol.NULL, null, null, null);
 
 
                 //setup recording
-                recordDialog = new RecordDialog(builder);
+                recordDialog = new RecordDialog();
                 recordButton = (ToggleToolButton)builder.get_object("toolbar_logging");
                 recordButton.toggled.connect(this.record);
                 recordButton.set_tooltip_text (_("Record sent and/or received data"));
@@ -212,7 +214,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 stopRecordingLabel = (Label)builder.get_object("stop_recording_label");
 
                 //setup preferences
-                preferencesDialog = new PreferencesDialog(builder);
+                preferencesDialog = new PreferencesDialog();
                 preferencesDialog.updatePreferences.connect(this.updatePreferences);
                 ToolButton preferences = (ToolButton)builder.get_object("toolbar_preferences");
                 preferences.clicked.connect(this.showPreferencesDialog);
