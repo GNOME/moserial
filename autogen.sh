@@ -4,6 +4,4 @@
 srcdir=`dirname $0`
 test -z "$srcdir" && srcdir=.
 
-PKG_NAME="moserial"
-
 . gnome-autogen.sh
