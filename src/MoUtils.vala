@@ -104,7 +104,7 @@ public class MoUtils : GLib.Object
 	}
 
 	public static void populateComboBox (ComboBox Combo, string[] val_array) {
-                ListStore Model = new ListStore(1, typeof( string ));
+                Gtk.ListStore Model = new Gtk.ListStore(1, typeof( string ));
                 foreach (string val_item in val_array) {
                         TreeIter iter;
                         Model.append(out iter);

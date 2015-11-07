@@ -40,7 +40,7 @@ public class moserial.SettingsDialog : GLib.Object
         private CheckButton softwareHandshake;
         private ComboBox accessModeCombo;
         private CheckButton localEcho;
-	private ListStore deviceModel;
+	private Gtk.ListStore deviceModel;
         public signal void updateSettings(Settings settings);
         public SettingsDialog(Builder builder) {
 		GLib.Object(builder: builder);
@@ -80,7 +80,7 @@ public class moserial.SettingsDialog : GLib.Object
                 okButton.clicked.connect(this.ok);
 
                 deviceCombo = (ComboBox)builder.get_object("settings_device");	
-                deviceModel = new ListStore(1, typeof( string ));
+                deviceModel = new Gtk.ListStore(1, typeof( string ));
                 deviceCombo.set_model(deviceModel);
                 CellRenderer deviceCell = new CellRendererText();
                 deviceCombo.pack_start( deviceCell, false );
