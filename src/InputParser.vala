@@ -39,24 +39,22 @@ public class InputParser : GLib.Object
 
 	       		c=s.get_char();
 
+			i=xtoi(c);
+			if(i>15)
+				throw new HexParseError.INVALID_INPUT(_("Invalid Input"));
+
 	       		if(len>1) {
-		       		i=xtoi(c)*16;
-	       			if(i<0)
-	       				throw new HexParseError.INVALID_INPUT(_("Invalid Input"));
+				i*=16;
+
 		       		s=s.next_char();
-	       		
 		       		c=s.get_char();
-	       		
+
 	       			temp=xtoi(c);
-	       			if(temp<0)
+				if(temp>15)
 	       				throw new HexParseError.INVALID_INPUT(_("Invalid Input"));
-	       			i=i+temp;
+				i+=temp;
 		       	}
-		       	else {
-		       		i=xtoi(c);
-	       			if(i<0)
-	       				throw new HexParseError.INVALID_INPUT(_("Invalid Input"));
-		       	}
+
 	       		s=s.next_char();
 	       		r[x]=(uchar)i;
         	}
@@ -65,8 +63,8 @@ public class InputParser : GLib.Object
 	}
 	
 	// There should be bindings to something in vala that can do this but there dosen't seem to be yet 2009-01-31
-	private static char xtoi(unichar c) {
-		char i=-1;
+	private static uchar xtoi(unichar c) {
+		char i=16;	// an invalid positive result
 		switch(c){
 			case '0':
 			i=0;
