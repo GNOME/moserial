@@ -64,7 +64,7 @@ public class InputParser : GLib.Object
 	
 	// There should be bindings to something in vala that can do this but there dosen't seem to be yet 2009-01-31
 	private static uchar xtoi(unichar c) {
-		char i=16;	// an invalid positive result
+		uchar i=16;	// an invalid positive result
 		switch(c){
 			case '0':
 			i=0;
