@@ -1,3 +1,11 @@
+Version 3.0.10
+--------------
+
+	* migrate from gnome-doc-utils to yelp (bug 757733)
+	* other minor code updates (bug 757733)
+	* Modernise GtkBuilder loading (bug 757737)
+
+
 Version 3.0.9
 -------------
 	* Adds an appdata file
