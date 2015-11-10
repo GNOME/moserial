@@ -22,7 +22,7 @@ EXTRA_DIST = 			\
         $(appdata_in_files)     \
         $(appdata_DATA)         \
 	$(man_MANS)		\
-	$(gresource_files)	\
+	$(gresource_file)	\
 	$(resource_files)
 
 DISTCLEANFILES =                \
