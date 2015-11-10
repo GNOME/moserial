@@ -17,23 +17,23 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Virtaal 0.7.0\n"
 
-#: C/moserial.xml:19(title)
+#: C/index.docbook:19(title)
 msgid "<application>moserial</application> Manual V3.0.0"
 msgstr "<application>moserial</application> Eγχειρίδιο V3.0.0"
 
-#: C/moserial.xml:21(year)
+#: C/index.docbook:21(year)
 msgid "2009"
 msgstr "2009"
 
-#: C/moserial.xml:22(holder) C/moserial.xml:59(para)
+#: C/index.docbook:22(holder) C/index.docbook:59(para)
 msgid "Michael J. Chudobiak"
 msgstr "Michael J. Chudobiak"
 
-#: C/moserial.xml:38(publishername) C/moserial.xml:60(para)
+#: C/index.docbook:38(publishername) C/index.docbook:60(para)
 msgid "GNOME Documentation Project"
 msgstr "Έργο Τεκμηρίωσης GNOME"
 
-#: C/moserial.xml:2(para)
+#: C/index.docbook:2(para)
 msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
@@ -50,7 +50,7 @@ msgstr ""
 "ακόλουθο <ulink type=\"help\" url=\"ghelp:fdl\">σύνδεσμο</ulink>, ή στο "
 "αρχείο COPYING-DOCS που διανέμεται μαζί με το παρόν εγχειρίδιο."
 
-#: C/moserial.xml:12(para)
+#: C/index.docbook:12(para)
 msgid ""
 "This manual is part of a collection of GNOME manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
@@ -62,7 +62,7 @@ msgstr ""
 "εγχειρίδιο ξεχωριστά από τη συλλογή, οφείλετε να προσθέσετε στο εγχειρίδιο "
 "αντίγραφο της άδειας χρήσης, όπως προβλέπεται στην ενότητα 6 της άδειας."
 
-#: C/moserial.xml:19(para)
+#: C/index.docbook:19(para)
 msgid ""
 "Many of the names used by companies to distinguish their products and "
 "services are claimed as trademarks. Where those names appear in any GNOME "
@@ -77,7 +77,7 @@ msgstr ""
 "αυτών των εμπορικών σημάτων, οι ονομασίες ή τα αρχικά αυτών θα γράφονται με "
 "κεφαλαίους χαρακτήρες."
 
-#: C/moserial.xml:35(para)
+#: C/index.docbook:35(para)
 msgid ""
 "DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
 "EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
@@ -105,7 +105,7 @@ msgstr ""
 "ΤΡΟΠΟΠΟΙΗΜΕΝΩΝ ΕΚΔΟΣΕΩΝ ΑΥΤΟΥ ΣΥΜΦΩΝΑ ΜΕ ΤΟΥΣ ΟΡΟΥΣ ΤΗΣ ΠΑΡΟΥΣΑΣ, ΠΑΡΑ ΜΟΝΟ "
 "ΕΑΝ ΣΥΝΟΔΕΥΕΤΑΙ ΑΠΟ ΤΗΝ ΑΠΟΠΟΙΗΣΗ ΕΓΓΥΗΣΗΣ, ΚΑΙ"
 
-#: C/moserial.xml:55(para)
+#: C/index.docbook:55(para)
 msgid ""
 "UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
 "NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
@@ -131,7 +131,7 @@ msgstr ""
 "ΕΚΔΟΣΕΩΝ ΑΥΤΟΥ, ΑΚΟΜΑ ΚΑΙ ΑΝ ΤΑ ΩΣ ΑΝΩ ΜΕΡΗ ΕΙΧΑΝ ΛΑΒΕΙ ΓΝΩΣΗ ΤΗΣ "
 "ΠΙΘΑΝΟΤΗΤΑΣ ΠΡΟΚΛΗΣΗΣ ΤΕΤΟΙΩΝ ΖΗΜΙΩΝ."
 
-#: C/moserial.xml:28(para)
+#: C/index.docbook:28(para)
 msgid ""
 "DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
 "OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
@@ -141,32 +141,32 @@ msgstr ""
 "ΟΡΟΥΣ ΤΗΣ ΕΛΕΥΘΕΡΗΣ ΑΔΕΙΑΣ ΤΕΚΜΗΡΙΩΣΗΣ GNU (GFDL) ΚΑΙ ΜΕ ΤΗΝ ΠΕΡΑΙΤΕΡΩ "
 "ΔΙΕΥΚΡΙΝΙΣΗ ΟΤΙ: <placeholder-1/>"
 
-#: C/moserial.xml:45(firstname)
+#: C/index.docbook:45(firstname)
 msgid "Michael"
 msgstr "Michael"
 
-#: C/moserial.xml:46(surname)
+#: C/index.docbook:46(surname)
 msgid "Chudobiak"
 msgstr "Chudobiak"
 
-#: C/moserial.xml:48(email)
+#: C/index.docbook:48(email)
 msgid "mjc@svn.gnome.org"
 msgstr "mjc@svn.gnome.org"
 
-#: C/moserial.xml:56(revnumber)
+#: C/index.docbook:56(revnumber)
 msgid "3.0.0"
 msgstr "3.0.0"
 
-#: C/moserial.xml:57(date)
+#: C/index.docbook:57(date)
 msgid "April 2009"
 msgstr "Απρίλιος 2009"
 
 #. this is version of manual, not application
-#: C/moserial.xml:67(releaseinfo)
+#: C/index.docbook:67(releaseinfo)
 msgid "This is manual describes version 3.0.0 of moserial"
 msgstr "Αυτό το εγχειρίδιο περιγράφει την έκδοση 3.0.0 του moserial"
 
-#: C/moserial.xml:70(para)
+#: C/index.docbook:70(para)
 msgid ""
 "<application>moserial</application> is a serial terminal for the GNOME "
 "desktop, optimized for logging and file capture."
@@ -175,23 +175,23 @@ msgstr ""
 "επιφάνεια εργασίας GNOME, βελτιστοποιημένο για τη σύλληψη και καταγραφή "
 "αρχείων."
 
-#: C/moserial.xml:74(primary)
+#: C/index.docbook:74(primary)
 msgid "moserial"
 msgstr "moserial"
 
-#: C/moserial.xml:77(primary)
+#: C/index.docbook:77(primary)
 msgid "serial"
 msgstr "σειριακό"
 
-#: C/moserial.xml:80(secondary)
+#: C/index.docbook:80(secondary)
 msgid "terminal"
 msgstr "τερματικό"
 
-#: C/moserial.xml:88(title)
+#: C/index.docbook:88(title)
 msgid "Introduction"
 msgstr "Εισαγωγή"
 
-#: C/moserial.xml:89(para)
+#: C/index.docbook:89(para)
 msgid ""
 "<application>moserial</application> is a serial terminal for the GNOME "
 "desktop, optimized for logging and file capture. <application>moserial</"
@@ -204,7 +204,7 @@ msgstr ""
 "τεχνικούς χρήστες που χρειάζεται να επικοινωνούν με τα ενσωματωμένα "
 "συστήματα, τις κονσόλες, και τον ηλεκτρονικό εξοπλισμό δοκιμών."
 
-#: C/moserial.xml:95(para)
+#: C/index.docbook:95(para)
 msgid ""
 "Despite the technical orientation of the intended audience, "
 "<application>moserial</application> is designed to be user-friendly. Care "
@@ -218,7 +218,7 @@ msgstr ""
 "απλές στην εκτέλεση, ελαχιστοποιώντας τον αριθμό των κλικ που απαιτούνται. Ο "
 "αριθμός των επιλογών διαμόρφωσης έχει επίσης διατηρηθεί μικρός."
 
-#: C/moserial.xml:102(para)
+#: C/index.docbook:102(para)
 msgid ""
 "To further improve efficiency, <application>moserial</application> also "
 "supports profile files to store frequently-used configurations."
@@ -227,11 +227,11 @@ msgstr ""
 "<application>moserial</application> υποστηρίζει επίσης αρχεία προφίλ για να "
 "αποθηκεύσετε τις πιο συχνά χρησιμοποιούμενες ρυθμίσεις."
 
-#: C/moserial.xml:109(title)
+#: C/index.docbook:109(title)
 msgid "System Port Permissions"
 msgstr "Δικαιώματα Θυρών Συστήματος"
 
-#: C/moserial.xml:110(para)
+#: C/index.docbook:110(para)
 msgid ""
 "Before using <application>moserial</application> with a serial port, you "
 "need to make sure that you actually have permission to read and/or write to "
@@ -241,7 +241,7 @@ msgstr ""
 "θύρα, θα πρέπει να βεβαιωθείτε ότι έχετε πραγματικά την άδεια να κάνετε "
 "ανάγνωση ή / και εγγραφή στη θύρα."
 
-#: C/moserial.xml:114(para)
+#: C/index.docbook:114(para)
 msgid ""
 "On some systems, you may need to do something like \"sudo chmod o+rw /dev/"
 "ttyS*\" and \"sudo chmod o+rw /dev/ttyUSB*\" to obtain read/write "
@@ -253,7 +253,7 @@ msgstr ""
 "άδεια ανάγνωσης / εγγραφής (για όλους τους χρήστες) στις σειριακές θύρες. "
 "Δυστυχώς, αυτό δεν μπορεί να παραμείνει μετά από επανεκκινήσεις."
 
-#: C/moserial.xml:119(para)
+#: C/index.docbook:119(para)
 msgid ""
 "Alternatively, you can see what group the devices belong to, and make your "
 "account a member of that group. In Fedora 15, for example, you should add "
@@ -263,15 +263,15 @@ msgstr ""
 "κάνετε το λογαριασμό σας μέλος αυτής της ομάδας. Στο Fedora 15, για "
 "παράδειγμα, θα πρέπει να προσθέσετε τον εαυτό σας με την ομάδα \"dialout\"."
 
-#: C/moserial.xml:126(title)
+#: C/index.docbook:126(title)
 msgid "Basic Usage"
 msgstr "Βασική χρήση"
 
-#: C/moserial.xml:128(title)
+#: C/index.docbook:128(title)
 msgid "The Main Toolbar"
 msgstr "Η Κύρια γραμμή εργαλείων"
 
-#: C/moserial.xml:129(para)
+#: C/index.docbook:129(para)
 msgid ""
 "Most <application>moserial</application> functions are accessed through the "
 "main toolbar, shown below:"
@@ -279,11 +279,11 @@ msgstr ""
 "Οι περισσότερες λειτουργίες του <application>moserial</application> είναι "
 "προσβάσιμες μέσω της κύριας γραμμής εργαλείων, όπως φαίνεται παρακάτω:"
 
-#: C/moserial.xml:137(title)
+#: C/index.docbook:137(title)
 msgid "Port Setup"
 msgstr "Ρύθμιση θύρας"
 
-#: C/moserial.xml:138(para)
+#: C/index.docbook:138(para)
 msgid ""
 "The first step in using <application>moserial</application> is to configure "
 "the serial port parameters. Click <guibutton>Port Setup</guibutton> to do "
@@ -302,7 +302,7 @@ msgstr ""
 "ρυθμίσεις που καθορίζονται σε αυτό το παράθυρο θα αντικαταστήσουν "
 "οποιεσδήποτε προεπιλεγμένες ρυθμίσεις του συστήματος για τη θύρα αυτή."
 
-#: C/moserial.xml:146(para)
+#: C/index.docbook:146(para)
 msgid ""
 "The <application>moserial</application> port setup dialog will only list "
 "the /dev/ttySnn, /dev/ttyUSBnn, and /dev/rfcommnn ports that actually exist "
@@ -312,7 +312,7 @@ msgstr ""
 "εμφανίσει μόνο τις /dev/ttySnn, /dev/ttyUSBnn, και /dev/rfcommnn θύρες που "
 "πραγματικά υπάρχουν στο σύστημα, για τιμές των \"nn\" μεταξύ 0 και 31."
 
-#: C/moserial.xml:151(para)
+#: C/index.docbook:151(para)
 msgid ""
 "A local echo can be enabled from this dialog. If enabled, all data that "
 "<application>moserial</application> receives will be echoed back to the "
@@ -328,11 +328,11 @@ msgstr ""
 "επίσης ηχώ ενεργοποιημένη. (Αυτό θα μπορούσε να προκαλέσει ένα άπειρο βρόχο "
 "αναμεταδόσεων!)"
 
-#: C/moserial.xml:162(title)
+#: C/index.docbook:162(title)
 msgid "Open the Connection"
 msgstr "Ανοιγμα της Σύνδεσης"
 
-#: C/moserial.xml:163(para)
+#: C/index.docbook:163(para)
 msgid ""
 "The next step in communicating with your remote device is to click "
 "<guibutton>Connect</guibutton>. This opens the port. If you do not have the "
@@ -343,7 +343,7 @@ msgstr ""
 "έχετε τα απαραίτητα δικαιώματα για να ανοίξει τη θύρα, θα γίνει αναφορά "
 "σφάλματος."
 
-#: C/moserial.xml:171(para)
+#: C/index.docbook:171(para)
 msgid ""
 "This step is optional. If you skip it, <application>moserial</application> "
 "will try to connect automatically when needed."
@@ -352,7 +352,7 @@ msgstr ""
 "<application>moserial</application> θα προσπαθήσει να συνδεθεί αυτόματα όταν "
 "χρειαστεί."
 
-#: C/moserial.xml:175(para)
+#: C/index.docbook:175(para)
 msgid ""
 "Once you have connected, the <guibutton>Connect</guibutton> button will "
 "change into a <guibutton>Disconnect</guibutton> button. Clicking "
@@ -363,11 +363,11 @@ msgstr ""
 "<guibutton>Αποσύνδεση</guibutton>. Κάνοντας κλικ στο <guibutton>Αποσύνδεση</"
 "guibutton> κλείνει η θύρα, και μηδενίζονται οι TX και RX μετρητές."
 
-#: C/moserial.xml:186(title)
+#: C/index.docbook:186(title)
 msgid "Basic Input and Output"
 msgstr "Βασικοί Είσοδοι και Έξοδοι"
 
-#: C/moserial.xml:187(para)
+#: C/index.docbook:187(para)
 msgid ""
 "Once the port has been opened, any text received from the remote device will "
 "be displayed in the <guilabel>Received ASCII</guilabel> text area. If "
@@ -381,14 +381,14 @@ msgstr ""
 "αριθμό μη εκτυπώσιμων χαρακτήρων, θα μεταβεί αυτόματα στην προβολή "
 "<guilabel>Ληφθέντα HEX</guilabel>."
 
-#: C/moserial.xml:197(para)
+#: C/index.docbook:197(para)
 msgid ""
 "To switch between HEX and ASCII views, simply click on the appropriate tabs."
 msgstr ""
 "Για εναλλαγή μεταξύ των προβολών HEX και ASCII, απλά κάντε κλικ στις "
 "αντίστοιχες καρτέλες."
 
-#: C/moserial.xml:201(para)
+#: C/index.docbook:201(para)
 msgid ""
 "To send data to the remote device, you can type text into the "
 "<guilabel>Outgoing</guilabel> single-line text box, and click the "
@@ -408,7 +408,7 @@ msgstr ""
 "<guibutton>ASCII/HEΧ</guibutton> θα πρέπει να έχει οριστεί σε ASCII για να "
 "στείλει το κείμενο."
 
-#: C/moserial.xml:214(para)
+#: C/index.docbook:214(para)
 msgid ""
 "If the <guibutton>ASCII/HEX</guibutton> button is set to HEX, do not enter "
 "text in the <guilabel>Outgoing</guilabel> area. Instead, enter hexadecimal "
@@ -418,7 +418,7 @@ msgstr ""
 "εισάγετε κείμενο στην περιοχή <guilabel>Εξερχόμενα</guilabel>. Αντ 'αυτού, "
 "πληκτρολογήστε δεκαεξαδικούς αριθμούς με τη μορφή \"1234ABCD ....\"."
 
-#: C/moserial.xml:219(para)
+#: C/index.docbook:219(para)
 msgid ""
 "Once your data has been transmitted, a record of it will exist in the "
 "<guilabel>Sent ASCII</guilabel> and <guilabel>Sent HEX</guilabel> text "
@@ -429,7 +429,7 @@ msgstr ""
 "<guilabel>Απεσταλμένα HEX</guilabel>. Αυτές οι περιοχές κειμένου δεν είναι "
 "επεξεργάσιμες."
 
-#: C/moserial.xml:227(para)
+#: C/index.docbook:227(para)
 msgid ""
 "The remote device may echo your sent data. If <application>moserial</"
 "application> detects echoed text in the <guilabel>Received ASCII</guilabel> "
@@ -442,7 +442,7 @@ msgstr ""
 "guilabel>, θα επισημάνει το αντηχούμενο κείμενο (χρησιμοποιώντας το χρώμα "
 "επισήμανσης που ορίζεται στο παράθυρο προτιμήσεων)."
 
-#: C/moserial.xml:233(para)
+#: C/index.docbook:233(para)
 msgid ""
 "The statusbar at the bottom of the main window shows the state of port, and "
 "a count of the sent (TX) and received (RX) bytes. If some of the received "
@@ -453,11 +453,11 @@ msgstr ""
 "bytes. Εάν κάποια από τα ληφθέντα δεδομένα είναι μη εκτυπώσιμα, ο αριθμός "
 "αυτών φαίνεται επίσης."
 
-#: C/moserial.xml:245(title)
+#: C/index.docbook:245(title)
 msgid "Recording Input and Output"
 msgstr "Εγγραφή Εισερχόμενων και Εξερχόμενων"
 
-#: C/moserial.xml:246(para)
+#: C/index.docbook:246(para)
 msgid ""
 "<application>moserial</application> can be used to record your sent and "
 "received data to a file. This function is also useful for receiving and "
@@ -473,7 +473,7 @@ msgstr ""
 "σειριακή θύρα, χωρίς τη χρήση πρωτόκολλων διόρθωσης σφαλμάτων (όπως το "
 "Tektronix 11801)."
 
-#: C/moserial.xml:256(para)
+#: C/index.docbook:256(para)
 msgid ""
 "When you are ready to record to a file, simply click <guibutton>Record</"
 "guibutton>, select the desired data to record (Incoming and/or Outgoing) in "
@@ -486,7 +486,7 @@ msgstr ""
 "εγγραφή</guilabel>, και πληκτρολογήστε το όνομα του αρχείου στην περιοχή "
 "επιλογής αρχείων."
 
-#: C/moserial.xml:265(para)
+#: C/index.docbook:265(para)
 msgid ""
 "When recording begins, the <guibutton>Record</guibutton> button will change "
 "into a <guibutton>Stop Recording</guibutton> button. You will need to click "
@@ -498,7 +498,7 @@ msgstr ""
 "κάνετε κλικ σε αυτό, όταν θέλετε να διακόψετε την εγγραφή, ή έχετε λάβει "
 "ολόκληρο το δυαδικό αρχείο που θέλατε να κατεβάσετε."
 
-#: C/moserial.xml:274(para)
+#: C/index.docbook:274(para)
 msgid ""
 "<application>moserial</application> can optionally launch the recorded file "
 "with the default application for its file type, when recording has finished. "
@@ -513,7 +513,7 @@ msgstr ""
 "\"preferences\">Προτιμήσεις</link> για να ενεργοποιήσετε ή να "
 "απενεργοποιήσετε αυτές τις δυνατότητες."
 
-#: C/moserial.xml:281(para)
+#: C/index.docbook:281(para)
 msgid ""
 "Note that if you wish to receive files using an error correction protocol "
 "(xmodem, ymodem, or zmodem), you will need to use the <link linkend="
@@ -529,11 +529,11 @@ msgstr ""
 "<guibutton>Λήψη Αρχείου</guibutton> μπορεί να προσδιορίσει αυτόματα το πότε "
 "η λήψη του αρχείου είναι πλήρης."
 
-#: C/moserial.xml:294(title)
+#: C/index.docbook:294(title)
 msgid "Sending Files"
 msgstr "Αποστολή Αρχείων"
 
-#: C/moserial.xml:295(para)
+#: C/index.docbook:295(para)
 msgid ""
 "<application>moserial</application> can transmit files in a straight binary "
 "data stream, and it can also send files using the xmodem, ymodem, and zmodem "
@@ -548,7 +548,7 @@ msgstr ""
 "δεν είναι συνδεδεμένα με τις περιοχές κειμένου <guilabel>Απεσταλμένα ASCII</"
 "guilabel> ή <guilabel>Απεσταλμένα HEX</guilabel>."
 
-#: C/moserial.xml:305(para)
+#: C/index.docbook:305(para)
 msgid ""
 "When you are ready to send a file, simply click <guibutton>Send File</"
 "guibutton>, select the desired file to send. You will also need to select "
@@ -558,7 +558,7 @@ msgstr ""
 "<guibutton>Αποστολή Αρχείου</guibutton>, και επιλέξτε το αρχείο που θέλετε "
 "να στείλετε. Θα πρέπει επίσης να επιλέξετε το κατάλληλο πρωτόκολλο παρακάτω."
 
-#: C/moserial.xml:313(para)
+#: C/index.docbook:313(para)
 msgid ""
 "When recording begins, a progress bar will display the status of the file "
 "transmission."
@@ -566,7 +566,7 @@ msgstr ""
 "Όταν ξεκινάει η εγγραφή, μια γραμμή προόδου θα εμφανίζει την κατάσταση της "
 "μετάδοσης του αρχείου."
 
-#: C/moserial.xml:320(para) C/moserial.xml:363(para)
+#: C/index.docbook:320(para) C/index.docbook:363(para)
 msgid ""
 "moserial does not implement the xmodem, ymodem, or zmodem protocols "
 "directly. It relies on the standard rz and sz utilities to send and receive "
@@ -578,11 +578,11 @@ msgstr ""
 "λήψη δεδομένων. Αυτά τα βοηθητικά προγράμματα, μέρος του πακέτου lrzsz, θα "
 "πρέπει να είναι εγκατεστημένα στο σύστημά σας."
 
-#: C/moserial.xml:329(title)
+#: C/index.docbook:329(title)
 msgid "Receiving Files"
 msgstr "Παραλαβή Αρχείων"
 
-#: C/moserial.xml:330(para)
+#: C/index.docbook:330(para)
 msgid ""
 "<application>moserial</application> can receive files sent in a straight "
 "binary data stream, and it can also receive files using the xmodem, ymodem, "
@@ -597,7 +597,7 @@ msgstr ""
 "είναι συνδεδεμένα με τις περιοχές κειμένου <guilabel>Απεσταλμένα ASCII</"
 "guilabel> ή <guilabel>Απεσταλμένα HEX</guilabel>."
 
-#: C/moserial.xml:337(para)
+#: C/index.docbook:337(para)
 msgid ""
 "To receive straight binary data streams, use the <link linkend=\"recording"
 "\">Record</link> function instead of the <guibutton>Receive File</guibutton> "
@@ -607,7 +607,7 @@ msgstr ""
 "λειτουργία <link linkend=\"recording\">Εγγραφή</link>, αντί της "
 "<guibutton>Λήψη αρχείου</guibutton>."
 
-#: C/moserial.xml:341(para)
+#: C/index.docbook:341(para)
 msgid ""
 "To receive files sent with the xmodem, ymodem, or zmodem error correction "
 "protocols, using the <guibutton>Receive File</guibutton> function."
@@ -616,7 +616,7 @@ msgstr ""
 "xmodem, ymodem, και zmodem, χρησιμοποιώντας τη λειτουργία <guibutton>Λήψη "
 "Αρχείου</guibutton>."
 
-#: C/moserial.xml:348(para)
+#: C/index.docbook:348(para)
 msgid ""
 "When you are ready to receive a file, simply click <guibutton>Receive File</"
 "guibutton>, select a folder to store the received file. You will also need "
@@ -627,7 +627,7 @@ msgstr ""
 "αποθηκεύσετε το αρχείο που παραλάβατε. Θα πρέπει επίσης να επιλέξετε το "
 "κατάλληλο πρωτόκολλο παρακάτω."
 
-#: C/moserial.xml:356(para)
+#: C/index.docbook:356(para)
 msgid ""
 "When recording begins, a progress bar will display the status of the file "
 "reception."
@@ -635,11 +635,11 @@ msgstr ""
 "Όταν ξεκινάει η εγγραφή, μια γραμμή προόδου θα εμφανίζει την κατάσταση της "
 "λήψης του αρχείου."
 
-#: C/moserial.xml:372(title)
+#: C/index.docbook:372(title)
 msgid "Other Preferences"
 msgstr "Άλλες Προτιμήσεις"
 
-#: C/moserial.xml:373(para)
+#: C/index.docbook:373(para)
 msgid ""
 "<application>moserial</application> has several options that can be "
 "configured from the <guilabel>Preferences</guilabel> dialog."
@@ -647,7 +647,7 @@ msgstr ""
 "Το <application>moserial</application> έχει πολλές επιλογές που μπορεί να "
 "ρυθμιστούν από το παράθυρο <guilabel>Προτιμήσεις</guilabel>."
 
-#: C/moserial.xml:380(para)
+#: C/index.docbook:380(para)
 msgid ""
 "The color of the text area foreground, background, and highlighting can be "
 "configured, as can the font type and size."
@@ -655,7 +655,7 @@ msgstr ""
 "Το χρώμα του προσκηνίου της περιοχής κειμένου, το φόντο, και η επισήμανση "
 "μπορεί να ρυθμιστούν, καθώς και ο τύπος και το μέγεθος της γραμματοσειράς."
 
-#: C/moserial.xml:384(para)
+#: C/index.docbook:384(para)
 msgid ""
 "If <guilabel>Launch recorded files</guilabel> is enabled, a recorded file "
 "will be opened immediately after it is saved, using the default application "
@@ -667,7 +667,7 @@ msgstr ""
 "χρησιμοποιώντας την προεπιλεγμένη εφαρμογή για τον τύπο του αρχείου. Η "
 "προεπιλεγμένη εφαρμογή ορίζεται από το περιβάλλον εργασίας."
 
-#: C/moserial.xml:389(para)
+#: C/index.docbook:389(para)
 msgid ""
 "If <guilabel>Enable timeout</guilabel> is enabled, recording will be "
 "automatically stopped after an adjustable period of inactivity after "
@@ -680,11 +680,11 @@ msgstr ""
 "επ 'αόριστον για να καταγράψει το πρώτο byte δεδομένων πριν από την "
 "ενεργοποίηση του χρονοδιακόπτη αδράνειας."
 
-#: C/moserial.xml:398(title)
+#: C/index.docbook:398(title)
 msgid "Using Profiles"
 msgstr "Χρήση Προφίλ"
 
-#: C/moserial.xml:399(para)
+#: C/index.docbook:399(para)
 msgid ""
 "<application>moserial</application> can load and save its settings from "
 "profile files, so that you can store and recall commonly used "
@@ -706,12 +706,12 @@ msgstr ""
 "<menuchoice><guisubmenu>Αρχείο</guisubmenu><guimenuitem>'Ανοιγμα</"
 "guimenuitem></menuchoice>."
 
-#: C/moserial.xml:408(para)
+#: C/index.docbook:408(para)
 msgid "Loading a profile will automatically disconnect any connected port."
 msgstr ""
 "Φορτώνοντας ενα προφίλ θα αποσυνδέσει αυτόματα οποιαδήποτε συνδεμένη θύρα."
 
-#: C/moserial.xml:411(para)
+#: C/index.docbook:411(para)
 msgid ""
 "When you quit <application>moserial</application>, the settings currently in "
 "use are stored in a default profile file. These settings will automatically "
@@ -722,38 +722,38 @@ msgstr ""
 "ανακαλούνται αυτόματα την επόμενη φορά που θα ξεκινήσει το "
 "<application>moserial</application>."
 
-#: C/moserial.xml:419(title) C/moserial.xml:422(title)
+#: C/index.docbook:419(title) C/index.docbook:422(title)
 msgid "Special Keys"
 msgstr "Ειδικά πλήκτρα"
 
-#: C/moserial.xml:429(para)
+#: C/index.docbook:429(para)
 msgid "Keyboard Shortcut"
 msgstr "Συντομεύσεις Πληκτρολογίου"
 
-#: C/moserial.xml:431(para)
+#: C/index.docbook:431(para)
 msgid "Description"
 msgstr "Περιγραφή"
 
-#: C/moserial.xml:438(keycap) C/moserial.xml:448(keycap)
-#: C/moserial.xml:458(keycap)
+#: C/index.docbook:438(keycap) C/index.docbook:448(keycap)
+#: C/index.docbook:458(keycap)
 msgid "Ctrl"
 msgstr "Ctrl"
 
-#: C/moserial.xml:438(keycap)
+#: C/index.docbook:438(keycap)
 msgid "C"
 msgstr "C"
 
-#: C/moserial.xml:442(para)
+#: C/index.docbook:442(para)
 msgid "Copies text. This can be used in any of the text areas."
 msgstr ""
 "Αντιγράφει κείμενο. Αυτό μπορεί να χρησιμοποιηθεί σε οποιαδήποτε από τις "
 "περιοχές κειμένου."
 
-#: C/moserial.xml:448(keycap)
+#: C/index.docbook:448(keycap)
 msgid "X"
 msgstr "X"
 
-#: C/moserial.xml:452(para)
+#: C/index.docbook:452(para)
 msgid ""
 "Cuts text. This only works in the <guilabel>Outgoing</guilabel> single-line "
 "text box."
@@ -761,11 +761,11 @@ msgstr ""
 "Κάνει αποκοπή κειμένου. Αυτό λειτουργεί μόνο στο πλαίσιο κειμένου μονής "
 "γραμμής <guilabel>Εξερχόμενα</guilabel>."
 
-#: C/moserial.xml:458(keycap)
+#: C/index.docbook:458(keycap)
 msgid "V"
 msgstr "V"
 
-#: C/moserial.xml:462(para)
+#: C/index.docbook:462(para)
 msgid ""
 "Pastes text into the <guilabel>Outgoing</guilabel> single-line text box, and "
 "moves the focus to that text box."
@@ -773,11 +773,11 @@ msgstr ""
 "Κάνει επικόλληση στο πλαίσιο κειμένου μονής γραμμής <guilabel>Εξερχόμενα</"
 "guilabel>, και μετακινεί την εστίαση σε αυτό το πλαίσιο κειμένου."
 
-#: C/moserial.xml:471(keycap)
+#: C/index.docbook:471(keycap)
 msgid "Esc"
 msgstr "Esc"
 
-#: C/moserial.xml:475(para)
+#: C/index.docbook:475(para)
 msgid ""
 "Moves the focus to the <guilabel>Outgoing</guilabel> single-line text box."
 msgstr ""
@@ -785,6 +785,6 @@ msgstr ""
 "<guilabel>Εξερχόμενα</guilabel>."
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
-#: C/moserial.xml:0(None)
+#: C/index.docbook:0(None)
 msgid "translator-credits"
 msgstr "Maria Mavridou <mavridou@gmail.com>, 2014"
