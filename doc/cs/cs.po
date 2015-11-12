@@ -1,41 +1,47 @@
 # Czech translation for moserial.
 # Copyright (C) 2009 moserial's COPYRIGHT HOLDER
 # This file is distributed under the same license as the moserial package.
-#
-# Marek Černocký <marek@manet.cz>, 2009, 2010, 2011.
+# Marek Černocký <marek@manet.cz>, 2009, 2010, 2011, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: moserial master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-08-16 19:41+0000\n"
-"PO-Revision-Date: 2011-08-25 07:54+0200\n"
+"POT-Creation-Date: 2015-11-10 14:15+0000\n"
+"PO-Revision-Date: 2015-11-12 16:43+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
-"MIME-Version: 1.0\n"
 "Language: cs\n"
+"MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Gtranslator 2.91.7\n"
 
-#: C/index.docbook:19(title)
-#| msgid "<application>moserial</application> Manual V2.26.0"
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+#| msgid "translator-credits"
+msgctxt "_"
+msgid "translator-credits"
+msgstr "Marek Černocký <marek@manet.cz>"
+
+#. (itstool) path: articleinfo/title
+#: C/index.docbook:19
 msgid "<application>moserial</application> Manual V3.0.0"
 msgstr "Příručka aplikace <application>moserial</application>, verze 3.0.0"
 
-#: C/index.docbook:21(year)
-msgid "2009"
-msgstr "2009"
+#. (itstool) path: articleinfo/copyright
+#: C/index.docbook:20
+msgid "<year>2009</year> <holder>Michael J. Chudobiak</holder>"
+msgstr "<year>2009</year> <holder>Michael J. Chudobiak</holder>"
 
-#: C/index.docbook:22(holder) C/index.docbook:59(para)
-msgid "Michael J. Chudobiak"
-msgstr "Michael J. Chudobiak"
-
-#: C/index.docbook:38(publishername) C/index.docbook:60(para)
+#. (itstool) path: publisher/publishername
+#. (itstool) path: revdescription/para
+#: C/index.docbook:38 C/index.docbook:60
 msgid "GNOME Documentation Project"
 msgstr "Dokumentační projekt GNOME"
 
-#: C/index.docbook:2(para)
+#. (itstool) path: legalnotice/para
+#: C/index.docbook:2
 msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
@@ -51,7 +57,8 @@ msgstr ""
 "jménem <ulink type=\"help\" url=\"ghelp:fdl\">GNU Free Documentation "
 "License</ulink> nebo v souboru COPYING-DOCS dodávaném s touto příručkou."
 
-#: C/index.docbook:12(para)
+#. (itstool) path: legalnotice/para
+#: C/index.docbook:12
 msgid ""
 "This manual is part of a collection of GNOME manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
@@ -62,7 +69,8 @@ msgstr ""
 "licencí GNU FDL. Pokud chcete tento dokument šířit odděleně od kolekce, "
 "musíte přiložit kopii licence dle popisu v sekci 6 dané licence."
 
-#: C/index.docbook:19(para)
+#. (itstool) path: legalnotice/para
+#: C/index.docbook:19
 msgid ""
 "Many of the names used by companies to distinguish their products and "
 "services are claimed as trademarks. Where those names appear in any GNOME "
@@ -73,10 +81,11 @@ msgstr ""
 "Mnoho názvů použitých firmami k zviditelnění produktů nebo služeb jsou "
 "ochranné známky. Na místech, kde jsou tyto názvy v dokumentaci použity a "
 "členové Dokumentačního projektu GNOME jsou si vědomi skutečnosti, že se "
-"jedná o ochrannou známku, je takovýto název psán velkými písmeny celý nebo "
-"s velkým písmenem na začátku."
+"jedná o ochrannou známku, je takovýto název psán velkými písmeny celý nebo s "
+"velkým písmenem na začátku."
 
-#: C/index.docbook:35(para)
+#. (itstool) path: listitem/para
+#: C/index.docbook:35
 msgid ""
 "DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
 "EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
@@ -101,7 +110,8 @@ msgstr ""
 "LICENCE. BEZ TOHOTO PROHLÁŠENÍ NENÍ, PODLE TÉTO DOHODY, POVOLENO UŽÍVÁNÍ ANI "
 "ÚPRAVY TOHOTO DOKUMENTU; DÁLE"
 
-#: C/index.docbook:55(para)
+#. (itstool) path: listitem/para
+#: C/index.docbook:55
 msgid ""
 "UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
 "NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
@@ -125,42 +135,49 @@ msgstr ""
 "K POUŽÍVÁNÍ TOHOTO DOKUMENTU NEBO UPRAVENÝCH VERZÍ DOKUMENTU, I KDYŽ BY "
 "TAKOVÁTO STRANA BYLA INFORMOVANÁ O MOŽNOSTI TAKOVÉHOTO POŠKOZENÍ."
 
-#: C/index.docbook:28(para)
+#. (itstool) path: legalnotice/para
+#: C/index.docbook:28
+#| msgid ""
+#| "DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE "
+#| "TERMS OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER "
+#| "UNDERSTANDING THAT: <placeholder-1/>"
 msgid ""
 "DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
 "OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
-"<placeholder-1/>"
+"<_:orderedlist-1/>"
 msgstr ""
 "DOKUMENT A JEHO UPRAVENÉ VERZE JSOU ŠÍŘENY V SOULADU SE ZNĚNÍM LICENCE GNU "
-"FREE DOCUMENTATION LICENSE S NÁSLEDUJÍCÍM USTANOVENÍM: <placeholder-1/>"
+"FREE DOCUMENTATION LICENSE S NÁSLEDUJÍCÍM USTANOVENÍM: <_:orderedlist-1/>"
 
-#: C/index.docbook:45(firstname)
-msgid "Michael"
-msgstr "Michael"
+#. (itstool) path: authorgroup/author
+#: C/index.docbook:44
+msgid ""
+"<firstname>Michael</firstname> <surname>Chudobiak</surname> <affiliation> "
+"<address> <email>mjc@svn.gnome.org</email> </address> </affiliation>"
+msgstr ""
+"<firstname>Michael</firstname> <surname>Chudobiak</surname> "
+"<affiliation><address><email>mjc@svn.gnome.org</email></address></"
+"affiliation>"
 
-#: C/index.docbook:46(surname)
-msgid "Chudobiak"
-msgstr "Chudobiak"
+#. (itstool) path: revdescription/para
+#: C/index.docbook:59
+msgid "Michael J. Chudobiak"
+msgstr "Michael J. Chudobiak"
 
-#: C/index.docbook:48(email)
-msgid "mjc@svn.gnome.org"
-msgstr "mjc@svn.gnome.org"
+#. (itstool) path: revhistory/revision
+#: C/index.docbook:55
+msgid ""
+"<revnumber>3.0.0</revnumber> <date>April 2009</date> <_:revdescription-1/>"
+msgstr ""
+"<revnumber>3.0.0</revnumber> <date>duben 2009</date> <_:revdescription-1/>"
 
-#: C/index.docbook:56(revnumber)
-msgid "3.0.0"
-msgstr "3.0.0"
-
-#: C/index.docbook:57(date)
-msgid "April 2009"
-msgstr "Duben 2009"
-
-#. this is version of manual, not application
-#: C/index.docbook:67(releaseinfo)
-#| msgid "This is manual describes version 2.26.0 of moserial"
+#. (itstool) path: articleinfo/releaseinfo
+#: C/index.docbook:67
 msgid "This is manual describes version 3.0.0 of moserial"
 msgstr "Tato příručka popisuje aplikaci moserial ve verzi 3.00.0"
 
-#: C/index.docbook:70(para)
+#. (itstool) path: abstract/para
+#: C/index.docbook:70
 msgid ""
 "<application>moserial</application> is a serial terminal for the GNOME "
 "desktop, optimized for logging and file capture."
@@ -168,23 +185,28 @@ msgstr ""
 "<application>moserial</application> je sériový terminál pro pracovní "
 "prostředí GNOME, optimalizovaný pro evidování a zachytávání souborů."
 
-#: C/index.docbook:74(primary)
-msgid "moserial"
-msgstr "moserial"
+#. (itstool) path: article/indexterm
+#: C/index.docbook:73
+msgid "<primary>moserial</primary>"
+msgstr "<primary>moserial</primary>"
 
-#: C/index.docbook:77(primary)
-msgid "serial"
-msgstr "sériový"
+#. (itstool) path: article/indexterm
+#: C/index.docbook:76
+msgid "<primary>serial</primary>"
+msgstr "<primary>sériový port</primary>"
 
-#: C/index.docbook:80(secondary)
-msgid "terminal"
-msgstr "terminál"
+#. (itstool) path: article/indexterm
+#: C/index.docbook:79
+msgid "<secondary>terminal</secondary>"
+msgstr "<secondary>terminál</secondary>"
 
-#: C/index.docbook:88(title)
+#. (itstool) path: sect1/title
+#: C/index.docbook:88
 msgid "Introduction"
 msgstr "Úvod"
 
-#: C/index.docbook:89(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:89
 msgid ""
 "<application>moserial</application> is a serial terminal for the GNOME "
 "desktop, optimized for logging and file capture. <application>moserial</"
@@ -197,7 +219,8 @@ msgstr ""
 "primárně určená pro technické uživatele, kteří potřebují komunikovat se "
 "zabudovanými zařízeními, konzolami a elektronickými měřicími přístroji."
 
-#: C/index.docbook:95(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:95
 msgid ""
 "Despite the technical orientation of the intended audience, "
 "<application>moserial</application> is designed to be user-friendly. Care "
@@ -210,7 +233,8 @@ msgstr ""
 "dbáno na to, aby šly operace spouštět jednoduše, s minimálním počtem "
 "potřebných kliknutí. Rovněž je snaha o malý počet voleb nastavení."
 
-#: C/index.docbook:102(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:102
 msgid ""
 "To further improve efficiency, <application>moserial</application> also "
 "supports profile files to store frequently-used configurations."
@@ -219,11 +243,13 @@ msgstr ""
 "application> soubory s profily, ve kterých si můžete uchovávat svá "
 "nejčastěji používaná nastavení."
 
-#: C/index.docbook:109(title)
+#. (itstool) path: sect1/title
+#: C/index.docbook:109
 msgid "System Port Permissions"
 msgstr "Systémová oprávnění k portu"
 
-#: C/index.docbook:110(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:110
 msgid ""
 "Before using <application>moserial</application> with a serial port, you "
 "need to make sure that you actually have permission to read and/or write to "
@@ -232,11 +258,8 @@ msgstr ""
 "Než použijete aplikaci <application>moserial</application> se sériovým "
 "portem, musíte se ujistit, že máte oprávnění číst a/nebo zapisovat port."
 
-#: C/index.docbook:114(para)
-#| msgid ""
-#| "On some systems, you may need to do something like \"sudo chmod o+rw /dev/"
-#| "ttyS*\" and \"sudo chmod o+rw /dev/ttyUSB*\" to obtain read/write "
-#| "permissions (for all users) on the serial ports."
+#. (itstool) path: sect1/para
+#: C/index.docbook:114
 msgid ""
 "On some systems, you may need to do something like \"sudo chmod o+rw /dev/"
 "ttyS*\" and \"sudo chmod o+rw /dev/ttyUSB*\" to obtain read/write "
@@ -248,10 +271,8 @@ msgstr ""
 "ttyS*“ a „sudo chmod o+rw /dev/ttyUSB*“. Bohužel se toto nastavení nemusí "
 "zachovat po restartování systému."
 
-#: C/index.docbook:119(para)
-#| msgid ""
-#| "Alternatively, you can see what group the devices belong to, and make "
-#| "your account a member of that group."
+#. (itstool) path: sect1/para
+#: C/index.docbook:119
 msgid ""
 "Alternatively, you can see what group the devices belong to, and make your "
 "account a member of that group. In Fedora 15, for example, you should add "
@@ -261,15 +282,18 @@ msgstr ""
 "účet do této skupiny. Například v distribuci Fedora 15 byste se měli přidat "
 "do skupiny „dialout“."
 
-#: C/index.docbook:126(title)
+#. (itstool) path: sect1/title
+#: C/index.docbook:126
 msgid "Basic Usage"
 msgstr "Základy používání"
 
-#: C/index.docbook:128(title)
+#. (itstool) path: sect2/title
+#: C/index.docbook:128
 msgid "The Main Toolbar"
 msgstr "Hlavní nástrojová lišta"
 
-#: C/index.docbook:129(para)
+#. (itstool) path: sect2/para
+#: C/index.docbook:129
 msgid ""
 "Most <application>moserial</application> functions are accessed through the "
 "main toolbar, shown below:"
@@ -277,11 +301,13 @@ msgstr ""
 "Většina funkcí aplikace <application>moserial</application> je přístupných "
 "přes hlavní nástrojovou lištu zobrazenou níže:"
 
-#: C/index.docbook:137(title)
+#. (itstool) path: sect2/title
+#: C/index.docbook:137
 msgid "Port Setup"
 msgstr "Nastavení portu"
 
-#: C/index.docbook:138(para)
+#. (itstool) path: sect2/para
+#: C/index.docbook:138
 msgid ""
 "The first step in using <application>moserial</application> is to configure "
 "the serial port parameters. Click <guibutton>Port Setup</guibutton> to do "
@@ -299,7 +325,8 @@ msgstr ""
 "protokol. Natavení zadaná v tomto dialogovém okně přepíšou případné "
 "systémové výchozí hodnoty portu. "
 
-#: C/index.docbook:146(para)
+#. (itstool) path: sect2/para
+#: C/index.docbook:146
 msgid ""
 "The <application>moserial</application> port setup dialog will only list "
 "the /dev/ttySnn, /dev/ttyUSBnn, and /dev/rfcommnn ports that actually exist "
@@ -310,7 +337,8 @@ msgstr ""
 "rfcommnn, které v systému aktuálně existují a kde hodnota „nn“ je v rozmezí "
 "0 až 31."
 
-#: C/index.docbook:151(para)
+#. (itstool) path: sect2/para
+#: C/index.docbook:151
 msgid ""
 "A local echo can be enabled from this dialog. If enabled, all data that "
 "<application>moserial</application> receives will be echoed back to the "
@@ -325,11 +353,13 @@ msgstr ""
 "zařízení má odezvu rovněž zapnutou. (To by mohlo zapřičinit i nekonečnou "
 "smyčku odezev!)"
 
-#: C/index.docbook:162(title)
+#. (itstool) path: sect2/title
+#: C/index.docbook:162
 msgid "Open the Connection"
 msgstr "Otevření spojení"
 
-#: C/index.docbook:163(para)
+#. (itstool) path: sect2/para
+#: C/index.docbook:163
 msgid ""
 "The next step in communicating with your remote device is to click "
 "<guibutton>Connect</guibutton>. This opens the port. If you do not have the "
@@ -339,7 +369,8 @@ msgstr ""
 "<guibutton>Připojit</guibutton>. Tím se port otevře. Pokud nemáte k otevření "
 "portu dostatečná oprávnění, objeví se chybové hlášení."
 
-#: C/index.docbook:171(para)
+#. (itstool) path: sect2/para
+#: C/index.docbook:171
 msgid ""
 "This step is optional. If you skip it, <application>moserial</application> "
 "will try to connect automatically when needed."
@@ -348,7 +379,8 @@ msgstr ""
 "<application>moserial</application> se pokusí připojit automaticky, až to "
 "bude zapotřebí."
 
-#: C/index.docbook:175(para)
+#. (itstool) path: sect2/para
+#: C/index.docbook:175
 msgid ""
 "Once you have connected, the <guibutton>Connect</guibutton> button will "
 "change into a <guibutton>Disconnect</guibutton> button. Clicking "
@@ -359,11 +391,13 @@ msgstr ""
 "tlačítko <guibutton>Odpojit</guibutton>. Kliknutím na <guibutton>Odpojit</"
 "guibutton> se port uzavře a vynulují se počítadla TX a RX."
 
-#: C/index.docbook:186(title)
+#. (itstool) path: sect2/title
+#: C/index.docbook:186
 msgid "Basic Input and Output"
 msgstr "Základní vstup a výstup"
 
-#: C/index.docbook:187(para)
+#. (itstool) path: sect2/para
+#: C/index.docbook:187
 msgid ""
 "Once the port has been opened, any text received from the remote device will "
 "be displayed in the <guilabel>Received ASCII</guilabel> text area. If "
@@ -376,14 +410,16 @@ msgstr ""
 "<application>moserial</application> zjistí velké množství netisknutelných "
 "znaků, automaticky přepne na zobrazení <guilabel>Přijaté HEX</guilabel>."
 
-#: C/index.docbook:197(para)
+#. (itstool) path: sect2/para
+#: C/index.docbook:197
 msgid ""
 "To switch between HEX and ASCII views, simply click on the appropriate tabs."
 msgstr ""
 "Pokud chcete přepnout mezi zobrazením HEX a ASCII, jednoduše klikněte na "
 "příslušnou kartu."
 
-#: C/index.docbook:201(para)
+#. (itstool) path: sect2/para
+#: C/index.docbook:201
 msgid ""
 "To send data to the remote device, you can type text into the "
 "<guilabel>Outgoing</guilabel> single-line text box, and click the "
@@ -401,7 +437,8 @@ msgstr ""
 "s „Zakončení CR+LF“. Výběrový seznam <guibutton>ASCII/HEX</guibutton> by měl "
 "být při odesílání textu nastaven na ASCII."
 
-#: C/index.docbook:214(para)
+#. (itstool) path: sect2/para
+#: C/index.docbook:214
 msgid ""
 "If the <guibutton>ASCII/HEX</guibutton> button is set to HEX, do not enter "
 "text in the <guilabel>Outgoing</guilabel> area. Instead, enter hexadecimal "
@@ -411,7 +448,8 @@ msgstr ""
 "nezadávejte do pole <guilabel>Odchozí</guilabel> text. Místo toho uvádějte "
 "číslice v šestnáctkovém tvaru  „1234ABCD…“."
 
-#: C/index.docbook:219(para)
+#. (itstool) path: sect2/para
+#: C/index.docbook:219
 msgid ""
 "Once your data has been transmitted, a record of it will exist in the "
 "<guilabel>Sent ASCII</guilabel> and <guilabel>Sent HEX</guilabel> text "
@@ -421,7 +459,8 @@ msgstr ""
 "<guilabel>Odeslané ASCII</guilabel> a <guilabel>Odeslané HEX</guilabel>. "
 "Tyto textové oblasti nelze upravovat."
 
-#: C/index.docbook:227(para)
+#. (itstool) path: sect2/para
+#: C/index.docbook:227
 msgid ""
 "The remote device may echo your sent data. If <application>moserial</"
 "application> detects echoed text in the <guilabel>Received ASCII</guilabel> "
@@ -433,7 +472,8 @@ msgstr ""
 "oblasti <guilabel>Přijaté ASCII</guilabel>, tak opakovaný text zvýrazní "
 "(pomocí barvy pro zvýraznění určené v dialogovém okně předvoleb)."
 
-#: C/index.docbook:233(para)
+#. (itstool) path: sect2/para
+#: C/index.docbook:233
 msgid ""
 "The statusbar at the bottom of the main window shows the state of port, and "
 "a count of the sent (TX) and received (RX) bytes. If some of the received "
@@ -443,11 +483,13 @@ msgstr ""
 "odeslaných (TX) a přijatých (RX) bajtů. I když jsou některá přijatá data "
 "netisknutelná, v celkovém počtu jsou zahrnuta."
 
-#: C/index.docbook:245(title)
+#. (itstool) path: sect1/title
+#: C/index.docbook:245
 msgid "Recording Input and Output"
 msgstr "Evidování vstupu a výstupu"
 
-#: C/index.docbook:246(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:246
 msgid ""
 "<application>moserial</application> can be used to record your sent and "
 "received data to a file. This function is also useful for receiving and "
@@ -461,7 +503,8 @@ msgstr ""
 "Například některé osciloskopy vypisují snímky obrazovky do sériového portu "
 "bez použití protokolu s korekcí chyb (jako Tektronix 11801)."
 
-#: C/index.docbook:256(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:256
 msgid ""
 "When you are ready to record to a file, simply click <guibutton>Record</"
 "guibutton>, select the desired data to record (Incoming and/or Outgoing) in "
@@ -473,7 +516,8 @@ msgstr ""
 "zaznamenávat</guilabel> data, která chcete zaznamenat (příchozí a/nebo "
 "odchozí), a v části pro výběr souboru zadejte název souboru."
 
-#: C/index.docbook:265(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:265
 msgid ""
 "When recording begins, the <guibutton>Record</guibutton> button will change "
 "into a <guibutton>Stop Recording</guibutton> button. You will need to click "
@@ -485,7 +529,8 @@ msgstr ""
 "kliknout, pokud si přejete zaznamenávání zastavit nebo jste již přijali celý "
 "binární soubor, který jste chtěli stáhnout."
 
-#: C/index.docbook:274(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:274
 msgid ""
 "<application>moserial</application> can optionally launch the recorded file "
 "with the default application for its file type, when recording has finished. "
@@ -499,7 +544,8 @@ msgstr ""
 "zapnutí nebo vypnutí této funkce použijte dialogové okno <link linkend="
 "\"preferences\">Předvolby</link>."
 
-#: C/index.docbook:281(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:281
 msgid ""
 "Note that if you wish to receive files using an error correction protocol "
 "(xmodem, ymodem, or zmodem), you will need to use the <link linkend="
@@ -514,11 +560,13 @@ msgstr ""
 "<guibutton>Zaznamenat</guibutton> umí funkce <guibutton>Přijmout soubor</"
 "guibutton> automaticky rozpoznat, kdy je stahování souboru dokončeno."
 
-#: C/index.docbook:294(title)
+#. (itstool) path: sect1/title
+#: C/index.docbook:294
 msgid "Sending Files"
 msgstr "Odesílání souborů"
 
-#: C/index.docbook:295(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:295
 msgid ""
 "<application>moserial</application> can transmit files in a straight binary "
 "data stream, and it can also send files using the xmodem, ymodem, and zmodem "
@@ -532,7 +580,8 @@ msgstr ""
 "neevidují v textových oblastech <guilabel>Odesílané ASCII</guilabel> "
 "respektive <guilabel>Odesílané HEX</guilabel>."
 
-#: C/index.docbook:305(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:305
 msgid ""
 "When you are ready to send a file, simply click <guibutton>Send File</"
 "guibutton>, select the desired file to send. You will also need to select "
@@ -542,7 +591,8 @@ msgstr ""
 "<guibutton>Odeslat soubor</guibutton> a vyberte požadovaný soubor k "
 "odeslání. Dále budete také muset vybrat příslušný protokol."
 
-#: C/index.docbook:313(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:313
 msgid ""
 "When recording begins, a progress bar will display the status of the file "
 "transmission."
@@ -550,7 +600,8 @@ msgstr ""
 "Jakmile začne záznam, bude se stav přenosu souboru zobrazovat pomocí "
 "ukazatele průběhu."
 
-#: C/index.docbook:320(para) C/index.docbook:363(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:320 C/index.docbook:363
 msgid ""
 "moserial does not implement the xmodem, ymodem, or zmodem protocols "
 "directly. It relies on the standard rz and sz utilities to send and receive "
@@ -562,11 +613,13 @@ msgstr ""
 "nástroje, které jsou součástí balíku lrzsz, musí být ve vašem systému "
 "nainstalovány."
 
-#: C/index.docbook:329(title)
+#. (itstool) path: sect1/title
+#: C/index.docbook:329
 msgid "Receiving Files"
 msgstr "Příjem souborů"
 
-#: C/index.docbook:330(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:330
 msgid ""
 "<application>moserial</application> can receive files sent in a straight "
 "binary data stream, and it can also receive files using the xmodem, ymodem, "
@@ -580,7 +633,8 @@ msgstr ""
 "přijímaná data neevidují v textových oblastech <guilabel>Přijaté ASCII</"
 "guilabel> respektive <guilabel>Přijaté HEX</guilabel>."
 
-#: C/index.docbook:337(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:337
 msgid ""
 "To receive straight binary data streams, use the <link linkend=\"recording"
 "\">Record</link> function instead of the <guibutton>Receive File</guibutton> "
@@ -590,7 +644,8 @@ msgstr ""
 "\"recording\">Zaznamenat</link> namísto funkce <guibutton>Přijmout soubor</"
 "guibutton>."
 
-#: C/index.docbook:341(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:341
 msgid ""
 "To receive files sent with the xmodem, ymodem, or zmodem error correction "
 "protocols, using the <guibutton>Receive File</guibutton> function."
@@ -598,7 +653,8 @@ msgstr ""
 "Pro příjem souborů odeslaných pomocí protokolů s korekcí chyb xmodem, ymodem "
 "nebo zmodem použijte funkci <guibutton>Přijmout soubor</guibutton>."
 
-#: C/index.docbook:348(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:348
 msgid ""
 "When you are ready to receive a file, simply click <guibutton>Receive File</"
 "guibutton>, select a folder to store the received file. You will also need "
@@ -608,7 +664,8 @@ msgstr ""
 "<guibutton>Přijmout soubor</guibutton> a vyberte složku, kde chcete přijatý "
 "soubor uložit. Dále budete také muset vybrat příslušný protokol."
 
-#: C/index.docbook:356(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:356
 msgid ""
 "When recording begins, a progress bar will display the status of the file "
 "reception."
@@ -616,11 +673,13 @@ msgstr ""
 "Jakmile začne záznam, bude se stav příjmu souboru zobrazovat pomocí "
 "ukazatele průběhu."
 
-#: C/index.docbook:372(title)
+#. (itstool) path: sect1/title
+#: C/index.docbook:372
 msgid "Other Preferences"
 msgstr "Ostatní předvolby"
 
-#: C/index.docbook:373(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:373
 msgid ""
 "<application>moserial</application> has several options that can be "
 "configured from the <guilabel>Preferences</guilabel> dialog."
@@ -628,7 +687,8 @@ msgstr ""
 "Aplikace <application>moserial</application> obsahuje několik voleb, které "
 "můžete nastavit v dialogovém okně <guilabel>Předvolby</guilabel>."
 
-#: C/index.docbook:380(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:380
 msgid ""
 "The color of the text area foreground, background, and highlighting can be "
 "configured, as can the font type and size."
@@ -636,7 +696,8 @@ msgstr ""
 "Nastavit můžete barvy pro textovou oblast, konkrétně barvu písma, pozadí a "
 "zvýraznění, stejně jako typ a velikost písma."
 
-#: C/index.docbook:384(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:384
 msgid ""
 "If <guilabel>Launch recorded files</guilabel> is enabled, a recorded file "
 "will be opened immediately after it is saved, using the default application "
@@ -648,7 +709,8 @@ msgstr ""
 "aplikace pro typ souboru. Výchozí aplikaci určuje nastavení pracovního "
 "prostředí."
 
-#: C/index.docbook:389(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:389
 msgid ""
 "If <guilabel>Enable timeout</guilabel> is enabled, recording will be "
 "automatically stopped after an adjustable period of inactivity after "
@@ -660,11 +722,13 @@ msgstr ""
 "dat. To znamená, že aplikace moserial bude čekat neomezeně dlouho na záznam "
 "prvního bajtu dat před tím, něž spustí časovač neaktivity."
 
-#: C/index.docbook:398(title)
+#. (itstool) path: sect1/title
+#: C/index.docbook:398
 msgid "Using Profiles"
 msgstr "Používání profilů"
 
-#: C/index.docbook:399(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:399
 msgid ""
 "<application>moserial</application> can load and save its settings from "
 "profile files, so that you can store and recall commonly used "
@@ -685,11 +749,13 @@ msgstr ""
 "<menuchoice><guisubmenu>Soubor</guisubmenu><guimenuitem>Otevřít nastavení</"
 "guimenuitem></menuchoice>."
 
-#: C/index.docbook:408(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:408
 msgid "Loading a profile will automatically disconnect any connected port."
 msgstr "Načtením profilu se automaticky odpojí a připojí port."
 
-#: C/index.docbook:411(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:411
 msgid ""
 "When you quit <application>moserial</application>, the settings currently in "
 "use are stored in a default profile file. These settings will automatically "
@@ -700,36 +766,39 @@ msgstr ""
 "spuštění aplikace <application>moserial</application>, se toto nastavení "
 "automaticky znovu načte."
 
-#: C/index.docbook:419(title) C/index.docbook:422(title)
+#. (itstool) path: sect1/title
+#. (itstool) path: table/title
+#: C/index.docbook:419 C/index.docbook:422
 msgid "Special Keys"
 msgstr "Speciální klávesy"
 
-#: C/index.docbook:429(para)
+#. (itstool) path: entry/para
+#: C/index.docbook:429
 msgid "Keyboard Shortcut"
 msgstr "Klávesová zkratka"
 
-#: C/index.docbook:431(para)
+#. (itstool) path: entry/para
+#: C/index.docbook:431
 msgid "Description"
 msgstr "Popis"
 
-#: C/index.docbook:438(keycap) C/index.docbook:448(keycap)
-#: C/index.docbook:458(keycap)
-msgid "Ctrl"
-msgstr "Ctrl"
+#. (itstool) path: entry/para
+#: C/index.docbook:437
+msgid "<keycombo><keycap>Ctrl</keycap><keycap>C</keycap></keycombo>"
+msgstr "<keycombo><keycap>Ctrl</keycap><keycap>C</keycap></keycombo>"
 
-#: C/index.docbook:438(keycap)
-msgid "C"
-msgstr "C"
-
-#: C/index.docbook:442(para)
+#. (itstool) path: entry/para
+#: C/index.docbook:442
 msgid "Copies text. This can be used in any of the text areas."
 msgstr "Kopíruje text. To lze použít v kterékoliv textové oblasti."
 
-#: C/index.docbook:448(keycap)
-msgid "X"
-msgstr "X"
+#. (itstool) path: entry/para
+#: C/index.docbook:447
+msgid "<keycombo><keycap>Ctrl</keycap><keycap>X</keycap></keycombo>"
+msgstr "<keycombo><keycap>Ctrl</keycap><keycap>X</keycap></keycombo>"
 
-#: C/index.docbook:452(para)
+#. (itstool) path: entry/para
+#: C/index.docbook:452
 msgid ""
 "Cuts text. This only works in the <guilabel>Outgoing</guilabel> single-line "
 "text box."
@@ -737,11 +806,13 @@ msgstr ""
 "Vyjme text. To funguje pouze v jednořádkovém textovém poli "
 "<guilabel>Odchozí</guilabel>."
 
-#: C/index.docbook:458(keycap)
-msgid "V"
-msgstr "V"
+#. (itstool) path: entry/para
+#: C/index.docbook:457
+msgid "<keycombo><keycap>Ctrl</keycap><keycap>V</keycap></keycombo>"
+msgstr "<keycombo><keycap>Ctrl</keycap><keycap>V</keycap></keycombo>"
 
-#: C/index.docbook:462(para)
+#. (itstool) path: entry/para
+#: C/index.docbook:462
 msgid ""
 "Pastes text into the <guilabel>Outgoing</guilabel> single-line text box, and "
 "moves the focus to that text box."
@@ -749,18 +820,56 @@ msgstr ""
 "Vloží text do jednořádkového textového pole <guilabel>Odchozí</guilabel> a "
 "na toto textové pole přepne zaměření."
 
-#: C/index.docbook:471(keycap)
-msgid "Esc"
-msgstr "Esc"
+#. (itstool) path: entry/para
+#: C/index.docbook:470
+msgid "<keycap>Esc</keycap>"
+msgstr "<keycap>Esc</keycap>"
 
-#: C/index.docbook:475(para)
+#. (itstool) path: entry/para
+#: C/index.docbook:475
 msgid ""
 "Moves the focus to the <guilabel>Outgoing</guilabel> single-line text box."
 msgstr ""
 "Přepne zaměření na jednořádkové textové pole <guilabel>Odchozí</guilabel>."
 
-#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
-#: C/index.docbook:0(None)
-msgid "translator-credits"
-msgstr "Marek Černocký <marek@manet.cz>"
+#~ msgid "2009"
+#~ msgstr "2009"
 
+#~ msgid "Michael"
+#~ msgstr "Michael"
+
+#~ msgid "Chudobiak"
+#~ msgstr "Chudobiak"
+
+#~ msgid "mjc@svn.gnome.org"
+#~ msgstr "mjc@svn.gnome.org"
+
+#~ msgid "3.0.0"
+#~ msgstr "3.0.0"
+
+#~ msgid "April 2009"
+#~ msgstr "Duben 2009"
+
+#~ msgid "moserial"
+#~ msgstr "moserial"
+
+#~ msgid "serial"
+#~ msgstr "sériový"
+
+#~ msgid "terminal"
+#~ msgstr "terminál"
+
+#~ msgid "Ctrl"
+#~ msgstr "Ctrl"
+
+#~ msgid "C"
+#~ msgstr "C"
+
+#~ msgid "X"
+#~ msgstr "X"
+
+#~ msgid "V"
+#~ msgstr "V"
+
+#~ msgid "Esc"
+#~ msgstr "Esc"
