@@ -1,239 +1,258 @@
 # Czech translation for moserial.
 # Copyright (C) 2009 moserial's COPYRIGHT HOLDER
 # This file is distributed under the same license as the moserial package.
-#
-# Marek Černocký <marek@manet.cz>, 2009, 2010, 2011.
+# Marek Černocký <marek@manet.cz>, 2009, 2010, 2011, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: moserial master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=moserial&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-08-19 19:02+0000\n"
-"PO-Revision-Date: 2011-08-25 07:42+0200\n"
+"POT-Creation-Date: 2015-11-10 14:28+0000\n"
+"PO-Revision-Date: 2015-11-12 17:39+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
-"MIME-Version: 1.0\n"
 "Language: cs\n"
+"MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Gtranslator 2.91.7\n"
 
-#: ../data/glade/moserial.ui.h:1
-msgid "Access Mode"
-msgstr "Režim přístupu"
-
-#: ../data/glade/moserial.ui.h:2
-msgid "Background Color"
-msgstr "Barva pozadí"
-
-#: ../data/glade/moserial.ui.h:3
-msgid "Baud Rate"
-msgstr "Rychlost v baudech"
-
-#: ../data/glade/moserial.ui.h:4
-msgid "Connect"
-msgstr "Připojit"
-
-#: ../data/glade/moserial.ui.h:5
-msgid "Data Bits"
-msgstr "Datové bity"
-
-#: ../data/glade/moserial.ui.h:6
-msgid "Device"
-msgstr "Zařízení"
-
-#: ../data/glade/moserial.ui.h:7
-msgid "Disconnect"
-msgstr "Odpojit"
-
-#: ../data/glade/moserial.ui.h:8
-msgid "Display Font"
-msgstr "Písmo zobrazení"
-
-#: ../data/glade/moserial.ui.h:9
-msgid "Echo received data"
-msgstr "Opakovat přijatá data"
-
-#: ../data/glade/moserial.ui.h:10
-msgid "Enable timeout after"
-msgstr "Povolit vypršení času po"
-
-#: ../data/glade/moserial.ui.h:11
-msgid "Error Correction Protocol"
-msgstr "Protokol na opravu chyb"
-
-#: ../data/glade/moserial.ui.h:12
-msgid "Filename required for XMODEM"
-msgstr "Název souboru vyžadovaný pro XMODEM"
-
-#: ../data/glade/moserial.ui.h:13
-msgid "Font"
-msgstr "Písmo"
-
-#: ../data/glade/moserial.ui.h:14
-msgid "Font Colour"
-msgstr "Barva písma"
-
-#: ../data/glade/moserial.ui.h:15
-msgid "Handshake"
-msgstr "Úvodní dohoda"
-
-#: ../data/glade/moserial.ui.h:16
-msgid "Hardware"
-msgstr "Hardwarová"
-
-#: ../data/glade/moserial.ui.h:17
-msgid "Help"
-msgstr "Nápověda"
-
-#: ../data/glade/moserial.ui.h:18
-msgid "Highlight Color"
-msgstr "Barva zvýraznění"
-
-#: ../data/glade/moserial.ui.h:19
-msgid "Local Echo"
-msgstr "Místní odezva"
-
-#: ../data/glade/moserial.ui.h:20
-msgid "Open _Recent"
-msgstr "Otevřít _nedávné"
-
-#: ../data/glade/moserial.ui.h:21 ../src/SerialStreamRecorder.vala:30
-msgid "Outgoing"
-msgstr "Odchozí"
-
-#: ../data/glade/moserial.ui.h:22
-msgid "Parity"
-msgstr "Parita"
-
-#: ../data/glade/moserial.ui.h:23
-msgid "Port Settings"
-msgstr "Nastavení portu"
-
-#: ../data/glade/moserial.ui.h:24
-msgid "Port Setup"
-msgstr "Nastavení portu"
-
-#: ../data/glade/moserial.ui.h:25
-msgid "Preferences"
-msgstr "Předvolby"
-
-#: ../data/glade/moserial.ui.h:26
-msgid "Receive File"
-msgstr "Přijmout soubor"
-
-#: ../data/glade/moserial.ui.h:27
-msgid "Receive File Progress"
-msgstr "Průběh příjmu souboru"
-
-#: ../data/glade/moserial.ui.h:28
-msgid "Received ASCII"
-msgstr "Přijaté ASCII"
-
-#: ../data/glade/moserial.ui.h:29
-msgid "Received HEX"
-msgstr "Přijaté HEX"
-
-#: ../data/glade/moserial.ui.h:30
-msgid "Record"
-msgstr "Zaznamenat"
-
-#: ../data/glade/moserial.ui.h:31
-msgid "Record Incoming and/or Outgoing Data"
-msgstr "Záznam příchozích a/nebo odchozích dat"
-
-#: ../data/glade/moserial.ui.h:32
-msgid "Recording"
-msgstr "Zaznamenávání"
-
-#: ../data/glade/moserial.ui.h:33
-msgid "Select File to Send"
-msgstr "Výběr souboru k odeslání"
-
-#: ../data/glade/moserial.ui.h:34
-msgid "Select Folder for Received Files"
-msgstr "Výběr složky pro přijaté soubory"
-
-#: ../data/glade/moserial.ui.h:35
-msgid "Send"
-msgstr "Odeslat"
-
-#: ../data/glade/moserial.ui.h:36
-msgid "Send File"
-msgstr "Odeslat soubor"
-
-#: ../data/glade/moserial.ui.h:37
-msgid "Send File Progress"
-msgstr "Průběh odesílání souboru"
-
-#: ../data/glade/moserial.ui.h:38
-msgid "Sent ASCII"
-msgstr "Odeslané ASCII"
-
-#: ../data/glade/moserial.ui.h:39
-msgid "Sent HEX"
-msgstr "Odeslané HEX"
-
-#: ../data/glade/moserial.ui.h:40
-msgid "Software"
-msgstr "Softwarová"
-
-#: ../data/glade/moserial.ui.h:41
-msgid "Stop Bits"
-msgstr "Stop bity"
-
-#: ../data/glade/moserial.ui.h:42
-msgid "Stop Recording"
-msgstr "Zastavit záznam"
-
-#: ../data/glade/moserial.ui.h:43
-msgid "Stream to record"
-msgstr "Co zaznamenávat"
-
-#: ../data/glade/moserial.ui.h:44
-msgid "_Edit"
-msgstr "_Upravit"
-
-#: ../data/glade/moserial.ui.h:45
-msgid "_File"
-msgstr "_Soubor"
-
-#: ../data/glade/moserial.ui.h:46
-msgid "_Help"
-msgstr "_Nápověda"
-
-#: ../data/glade/moserial.ui.h:47
-msgid "_Launch recorded files"
-msgstr "_Spustit zaznamenané soubory"
-
-#: ../data/glade/moserial.ui.h:48
-msgid "_Use the system fixed width font"
-msgstr "Po_užít systémové písmo s pevnou šířkou"
-
-#: ../data/glade/moserial.ui.h:49
+#: ../data/ui/mainwindow.ui.h:1
 msgid "moserial"
 msgstr "moserial"
 
-#: ../data/glade/moserial.ui.h:50
+#: ../data/ui/mainwindow.ui.h:2
+msgid "_File"
+msgstr "_Soubor"
+
+#: ../data/ui/mainwindow.ui.h:3
+msgid "Open _Recent"
+msgstr "Otevřít _nedávné"
+
+#: ../data/ui/mainwindow.ui.h:4
+msgid "_Edit"
+msgstr "_Upravit"
+
+#: ../data/ui/mainwindow.ui.h:5
+msgid "_Help"
+msgstr "_Nápověda"
+
+#: ../data/ui/mainwindow.ui.h:6
+msgid "Connect"
+msgstr "Připojit"
+
+#: ../data/ui/mainwindow.ui.h:7
+msgid "Record"
+msgstr "Zaznamenat"
+
+#: ../data/ui/mainwindow.ui.h:8
+msgid "Send File"
+msgstr "Odeslat soubor"
+
+#: ../data/ui/mainwindow.ui.h:9
+msgid "Receive File"
+msgstr "Přijmout soubor"
+
+#: ../data/ui/mainwindow.ui.h:10 ../data/ui/settings_dialog.ui.h:1
+msgid "Port Setup"
+msgstr "Nastavení portu"
+
+#: ../data/ui/mainwindow.ui.h:11 ../data/ui/preferences.ui.h:1
+msgid "Preferences"
+msgstr "Předvolby"
+
+#: ../data/ui/mainwindow.ui.h:12
+msgid "Help"
+msgstr "Nápověda"
+
+#: ../data/ui/mainwindow.ui.h:13
+msgid "Received ASCII"
+msgstr "Přijaté ASCII"
+
+#: ../data/ui/mainwindow.ui.h:14
+msgid "Received HEX"
+msgstr "Přijaté HEX"
+
+#: ../data/ui/mainwindow.ui.h:15
+msgid "Sent ASCII"
+msgstr "Odeslané ASCII"
+
+#: ../data/ui/mainwindow.ui.h:16
+msgid "Sent HEX"
+msgstr "Odeslané HEX"
+
+#: ../data/ui/mainwindow.ui.h:17 ../src/SerialStreamRecorder.vala:30
+msgid "Outgoing"
+msgstr "Odchozí"
+
+#: ../data/ui/mainwindow.ui.h:18
+msgid "Send"
+msgstr "Odeslat"
+
+#: ../data/ui/mainwindow.ui.h:19
+msgid "Disconnect"
+msgstr "Odpojit"
+
+#: ../data/ui/mainwindow.ui.h:20
+msgid "Stop Recording"
+msgstr "Zastavit záznam"
+
+#: ../data/ui/preferences.ui.h:2
+msgid "Font"
+msgstr "Písmo"
+
+#: ../data/ui/preferences.ui.h:3
+msgid "_Use the system fixed width font"
+msgstr "Po_užít systémové písmo s pevnou šířkou"
+
+#: ../data/ui/preferences.ui.h:4
+msgid "Display Font"
+msgstr "Písmo zobrazení"
+
+#: ../data/ui/preferences.ui.h:5
+msgid "Font Colour"
+msgstr "Barva písma"
+
+#: ../data/ui/preferences.ui.h:6
+msgid "Background Color"
+msgstr "Barva pozadí"
+
+#: ../data/ui/preferences.ui.h:7
+msgid "Highlight Color"
+msgstr "Barva zvýraznění"
+
+#: ../data/ui/preferences.ui.h:8
+msgid "Recording"
+msgstr "Zaznamenávání"
+
+#: ../data/ui/preferences.ui.h:9
+msgid "_Launch recorded files"
+msgstr "_Spustit zaznamenané soubory"
+
+#: ../data/ui/preferences.ui.h:10
+msgid "Enable timeout after"
+msgstr "Povolit vypršení času po"
+
+#: ../data/ui/preferences.ui.h:11
 msgid "seconds"
 msgstr "sekund"
 
+#: ../data/ui/receive_chooser.ui.h:1
+msgid "Select Folder for Received Files"
+msgstr "Výběr složky pro přijaté soubory"
+
+#: ../data/ui/receive_chooser.ui.h:2 ../data/ui/send_chooser_dialog.ui.h:2
+msgid "Error Correction Protocol"
+msgstr "Protokol na opravu chyb"
+
+#: ../data/ui/receive_progress.ui.h:1
+msgid "Receive File Progress"
+msgstr "Průběh příjmu souboru"
+
+#: ../data/ui/record_dialog.ui.h:1
+msgid "Record Incoming and/or Outgoing Data"
+msgstr "Záznam příchozích a/nebo odchozích dat"
+
+#: ../data/ui/record_dialog.ui.h:2
+msgid "Stream to record"
+msgstr "Co zaznamenávat"
+
+#: ../data/ui/send_chooser_dialog.ui.h:1
+msgid "Select File to Send"
+msgstr "Výběr souboru k odeslání"
+
+#: ../data/ui/send_progress_dialog.ui.h:1
+msgid "Send File Progress"
+msgstr "Průběh odesílání souboru"
+
+#: ../data/ui/settings_dialog.ui.h:2
+msgid "Port Settings"
+msgstr "Nastavení portu"
+
+#: ../data/ui/settings_dialog.ui.h:3
+msgid "Hardware"
+msgstr "Hardwarová"
+
+#: ../data/ui/settings_dialog.ui.h:4
+msgid "Software"
+msgstr "Softwarová"
+
+#: ../data/ui/settings_dialog.ui.h:5
+msgid "Access Mode"
+msgstr "Režim přístupu"
+
+#: ../data/ui/settings_dialog.ui.h:6
+msgid "Handshake"
+msgstr "Úvodní dohoda"
+
+#: ../data/ui/settings_dialog.ui.h:7
+msgid "Parity"
+msgstr "Parita"
+
+#: ../data/ui/settings_dialog.ui.h:8
+msgid "Stop Bits"
+msgstr "Stop bity"
+
+#: ../data/ui/settings_dialog.ui.h:9
+msgid "Data Bits"
+msgstr "Datové bity"
+
+#: ../data/ui/settings_dialog.ui.h:10
+msgid "Baud Rate"
+msgstr "Rychlost v baudech"
+
+#: ../data/ui/settings_dialog.ui.h:11
+msgid "Device"
+msgstr "Zařízení"
+
+#: ../data/ui/settings_dialog.ui.h:12
+msgid "Local Echo"
+msgstr "Místní odezva"
+
+#: ../data/ui/settings_dialog.ui.h:13
+msgid "Echo received data"
+msgstr "Opakovat přijatá data"
+
+#: ../data/ui/xmodem_filename_dialog.ui.h:1
+msgid "Filename required for XMODEM"
+msgstr "Název souboru vyžadovaný pro XMODEM"
+
 #: ../data/moserial.desktop.in.h:1
-msgid "A serial terminal optimized for logging and file capture"
-msgstr ""
-"Sériový terminál optimalizovaný pro ukládání záznamu a zachytávání souborů"
+msgid "moserial Terminal"
+msgstr "Terminál moserial"
 
 #: ../data/moserial.desktop.in.h:2
 msgid "Serial Terminal"
 msgstr "Sériový terminál"
 
 #: ../data/moserial.desktop.in.h:3
-msgid "moserial Terminal"
-msgstr "Terminál moserial"
+msgid "A serial terminal optimized for logging and file capture"
+msgstr ""
+"Sériový terminál optimalizovaný pro ukládání záznamu a zachytávání souborů"
 
-#: ../src/InputParser.vala:45 ../src/InputParser.vala:52
-#: ../src/InputParser.vala:58
+#: ../data/moserial.appdata.xml.in.h:1
+msgid "Serial terminal"
+msgstr "Sériový terminál"
+
+#: ../data/moserial.appdata.xml.in.h:2
+msgid ""
+"Moserial is a serial terminal used for interacting with serial consoles and "
+"embedded devices. It supports the view of incoming and outgoing data in both "
+"ASCII and hexadecimal formats with the option to log this data. It also "
+"supports sending and receiving of x, y, and z-modem files, and has profiles "
+"to easily switch between configurations for different devices you are "
+"communicating with."
+msgstr ""
+"Moserial je sériový terminál používaný ke komunikaci se sériovými konzolami "
+"a elektronickými zařízeními. Podporuje zobrazení příchozích a odchozích dat "
+"jak v ASCII, tak v šestnáctkovém formátu, a tato data může volitelně "
+"zaznamenávat. Rovněž podporuje odesílání a příjem souborů pro x, y a z-modem "
+"a má profily pro snadné přepínání nastavení pro různá zařízení, se kterými "
+"komunikujete."
+
+#: ../src/InputParser.vala:44 ../src/InputParser.vala:54
 msgid "Invalid Input"
 msgstr "Neplatný vstup"
 
@@ -241,20 +260,11 @@ msgstr "Neplatný vstup"
 msgid "Profile file to load"
 msgstr "Profil, který se má načíst"
 
-#: ../src/Main.vala:36
-#, c-format
-msgid ""
-"Failed to load UI\n"
-"%s"
-msgstr ""
-"Nepodařilo se načíst uživatelské rozhraní\n"
-"%s"
-
-#: ../src/Main.vala:52
+#: ../src/Main.vala:45
 msgid "- moserial serial terminal"
 msgstr "– sériový terminál moserial"
 
-#: ../src/Main.vala:57 ../src/Main.vala:65
+#: ../src/Main.vala:50 ../src/Main.vala:58
 #, c-format
 msgid "Run '%s --help' to see a full list of available command line options.\n"
 msgstr ""
@@ -297,72 +307,70 @@ msgstr ""
 "License. Pokud se tak nestalo, podívejte se na <http://www.gnu.org/licenses/"
 ">."
 
-#: ../src/MainWindow.vala:65
+#: ../src/MainWindow.vala:64
 msgid "ASCII"
 msgstr "ASCII"
 
-#: ../src/MainWindow.vala:65
+#: ../src/MainWindow.vala:64
 msgid "HEX"
 msgstr "HEX"
 
-#: ../src/MainWindow.vala:157
+#: ../src/MainWindow.vala:165
 msgid "Port configuration"
 msgstr "Nastavení portu"
 
-#: ../src/MainWindow.vala:162
+#: ../src/MainWindow.vala:170
 msgid "Read the manual"
 msgstr "Přečíst si příručku"
 
-#: ../src/MainWindow.vala:172
+#: ../src/MainWindow.vala:180
 msgid "TX: 0, RX: 0"
 msgstr "TX: 0, RX: 0"
 
-#: ../src/MainWindow.vala:183
+#: ../src/MainWindow.vala:191
 msgid "Send a file"
 msgstr "Odeslat soubor"
 
-#: ../src/MainWindow.vala:192
+#: ../src/MainWindow.vala:200
 msgid "Receive a file"
 msgstr "Přijmout soubor"
 
-#: ../src/MainWindow.vala:202
+#: ../src/MainWindow.vala:210
 msgid "Record sent and/or received data"
 msgstr "Zaznamenat odchozí a/nebo příchozí data."
 
-#: ../src/MainWindow.vala:213
+#: ../src/MainWindow.vala:221
 msgid "Other preferences"
 msgstr "Ostatní předvolby"
 
-#: ../src/MainWindow.vala:218
+#: ../src/MainWindow.vala:226
 msgid "Open/close port"
 msgstr "Otevřít/zavřít port"
 
-#: ../src/MainWindow.vala:266
+#: ../src/MainWindow.vala:274
 msgid "Send the outgoing data now."
 msgstr "Nyní odeslat odchozí data."
 
-#: ../src/MainWindow.vala:269
+#: ../src/MainWindow.vala:277
 msgid "Type outgoing data here. Press Enter or Send to send it."
 msgstr ""
 "Zde zadejte odchozí data. Odešlete je zmáčknutím klávesy Enter nebo tlačítka "
 "Odeslat."
 
-#: ../src/MainWindow.vala:546 ../src/Profile.vala:76 ../src/Profile.vala:107
-#, c-format
+#: ../src/MainWindow.vala:564 ../src/Profile.vala:76 ../src/Profile.vala:107
 msgid "Error: Could not open file"
 msgstr "Chyba: Nelze otevřít soubor"
 
-#: ../src/MainWindow.vala:624
-#, c-format
+#: ../src/MainWindow.vala:642
 msgid "Error: Could not open device"
 msgstr "Chyba: Nelze otevřít zařízení"
 
-#: ../src/MainWindow.vala:746
+#: ../src/MainWindow.vala:764
 #, c-format
 msgid "Unable to display help file: %s"
 msgstr "Nelze zobrazit soubor s nápovědou: %s"
 
-#: ../src/MainWindow.vala:757
+#: ../src/MainWindow.vala:775
 msgid ""
 "A serial terminal for the GNOME desktop, optimized for logging and file "
 "capture."
@@ -370,7 +378,7 @@ msgstr ""
 "Sériový terminál pro pracovní prostředí GNOME, optimalizovaný pro ukládání "
 "záznamu a zachytávání soborů"
 
-#: ../src/MainWindow.vala:809
+#: ../src/MainWindow.vala:828
 msgid ""
 "You have changed your setting or preferences. Do you want to save these "
 "changes to the loaded profile?"
@@ -378,7 +386,7 @@ msgstr ""
 "Změnili jste své nastavení a předvolby. Chcete tyto změny uložit do "
 "načteného profilu?"
 
-#: ../src/PreferencesDialog.vala:50
+#: ../src/PreferencesDialog.vala:49
 msgid ""
 "If this option is enabled, a recorded file will be opened immediately after "
 "it is saved, using the default application for the file type. The default "
@@ -388,7 +396,7 @@ msgstr ""
 "pomocí výchozí aplikace pro daný typ souboru. Výchozí aplikace se určuje v "
 "nastavení pracovního prostředí."
 
-#: ../src/PreferencesDialog.vala:53
+#: ../src/PreferencesDialog.vala:52
 msgid ""
 "If this option is enabled, recording will be automatically stopped after an "
 "adjustable period of inactivity after receiving some data. Moserial will "
@@ -416,7 +424,7 @@ msgstr "Ymodem"
 msgid "Zmodem"
 msgstr "Zmodem"
 
-#: ../src/SendProgressDialog.vala:43
+#: ../src/SendProgressDialog.vala:42
 msgid "Waiting for remote host"
 msgstr "Čeká se na vzdáleného hostitele"
 
@@ -444,12 +452,12 @@ msgstr "Zakončit ESC"
 msgid "No end"
 msgstr "Nezakončovat"
 
-#: ../src/SerialConnection.vala:281
+#: ../src/SerialConnection.vala:302
 #, c-format
 msgid "TX: %lu, RX: %lu (%lu unprintable)"
 msgstr "TX: %lu, RX: %lu (%lu netisknutelných)"
 
-#: ../src/SerialConnection.vala:283
+#: ../src/SerialConnection.vala:304
 #, c-format
 msgid "TX: %lu, RX: %lu"
 msgstr "TX: %lu, RX: %lu"
@@ -462,25 +470,26 @@ msgstr "Příchozí"
 msgid "Incoming and Outgoing"
 msgstr "Příchozí a odchozí"
 
-#: ../src/SerialStreamRecorder.vala:57 ../src/SerialStreamRecorder.vala:78
+#: ../src/SerialStreamRecorder.vala:57 ../src/SerialStreamRecorder.vala:68
+#: ../src/SerialStreamRecorder.vala:89
 #, c-format
 msgid "error: %s\n"
 msgstr "chyba: %s\n"
 
-#: ../src/SerialStreamRecorder.vala:87
+#: ../src/SerialStreamRecorder.vala:98
 #, c-format
 msgid "Unable to launch %s: %s"
 msgstr "Nelze spustit %s: %s"
 
-#: ../src/SettingsDialog.vala:67
+#: ../src/SettingsDialog.vala:66
 msgid "Also known as RTS/CTS handshaking"
 msgstr "Známé také jako úvodní dohoda RTS/CTS"
 
-#: ../src/SettingsDialog.vala:70
+#: ../src/SettingsDialog.vala:69
 msgid "Also known as XON/XOFF handshaking"
 msgstr "Známé také jako úvodní dohoda XON/XOFF"
 
-#: ../src/SettingsDialog.vala:76
+#: ../src/SettingsDialog.vala:75
 msgid "Normally disabled"
 msgstr "Normálně vypnuto"
 
@@ -556,4 +565,3 @@ msgstr "Žádný (přímo binární data)"
 #: ../src/Szwrapper.vala:185
 msgid "canceled"
 msgstr "zrušeno"
-
