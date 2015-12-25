@@ -2,235 +2,257 @@
 # Copyright (C) 2009 Free Software Foundation, Inc.
 # This file is distributed under the same license as the moserial package.
 # Hendrik Brandt <heb@gnome-de.org>, 2009.
-# Mario Blättermann <mariobl@freenet.de>, 2009-2011.
+# Mario Blättermann <mario.blaettermann@gmail.com>, 2009-2011, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: moserial master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=moserial&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-08-20 09:30+0000\n"
-"PO-Revision-Date: 2011-08-21 17:29+0100\n"
-"Last-Translator: Mario Blättermann <mariobl@freenet.de>\n"
+"POT-Creation-Date: 2015-11-10 14:28+0000\n"
+"PO-Revision-Date: 2015-12-25 22:36+0100\n"
+"Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.5\n"
 
-#: ../data/glade/moserial.ui.h:1
-msgid "Access Mode"
-msgstr "Zugriffsmodus"
-
-#: ../data/glade/moserial.ui.h:2
-msgid "Background Color"
-msgstr "Hintergrundfarbe"
-
-#: ../data/glade/moserial.ui.h:3
-msgid "Baud Rate"
-msgstr "Baudrate"
-
-#: ../data/glade/moserial.ui.h:4
-msgid "Connect"
-msgstr "Verbinden"
-
-#: ../data/glade/moserial.ui.h:5
-msgid "Data Bits"
-msgstr "Daten-Bits"
-
-#: ../data/glade/moserial.ui.h:6
-msgid "Device"
-msgstr "Gerät"
-
-#: ../data/glade/moserial.ui.h:7
-msgid "Disconnect"
-msgstr "Trennen"
-
-#: ../data/glade/moserial.ui.h:8
-msgid "Display Font"
-msgstr "Anzeigeschrift"
-
-#: ../data/glade/moserial.ui.h:9
-msgid "Echo received data"
-msgstr "Empfangene Daten zurückgeben"
-
-#: ../data/glade/moserial.ui.h:10
-msgid "Enable timeout after"
-msgstr "Abbrechen nach"
-
-#: ../data/glade/moserial.ui.h:11
-msgid "Error Correction Protocol"
-msgstr "Fehlerkorrekturprotokoll"
-
-#: ../data/glade/moserial.ui.h:12
-msgid "Filename required for XMODEM"
-msgstr "Der von XMODEM benötigte Dateiname"
-
-#: ../data/glade/moserial.ui.h:13
-msgid "Font"
-msgstr "Schrift"
-
-#: ../data/glade/moserial.ui.h:14
-msgid "Font Colour"
-msgstr "Schriftfarbe"
-
-#: ../data/glade/moserial.ui.h:15
-msgid "Handshake"
-msgstr "Handshake"
-
-#: ../data/glade/moserial.ui.h:16
-msgid "Hardware"
-msgstr "Hardware"
-
-#: ../data/glade/moserial.ui.h:17
-msgid "Help"
-msgstr "Hilfe"
-
-#: ../data/glade/moserial.ui.h:18
-msgid "Highlight Color"
-msgstr "Hervorhebungsfarbe"
-
-#: ../data/glade/moserial.ui.h:19
-msgid "Local Echo"
-msgstr "Lokales Echo"
-
-#: ../data/glade/moserial.ui.h:20
-msgid "Open _Recent"
-msgstr "_Zuletzt geöffnet"
-
-#: ../data/glade/moserial.ui.h:21 ../src/SerialStreamRecorder.vala:30
-msgid "Outgoing"
-msgstr "Ausgehend"
-
-#: ../data/glade/moserial.ui.h:22
-msgid "Parity"
-msgstr "Parität"
-
-#: ../data/glade/moserial.ui.h:23
-msgid "Port Settings"
-msgstr "Port-Einstellungen"
-
-#: ../data/glade/moserial.ui.h:24
-msgid "Port Setup"
-msgstr "Port-Einstellungen"
-
-#: ../data/glade/moserial.ui.h:25
-msgid "Preferences"
-msgstr "Einstellungen"
-
-#: ../data/glade/moserial.ui.h:26
-msgid "Receive File"
-msgstr "Datei empfangen"
-
-#: ../data/glade/moserial.ui.h:27
-msgid "Receive File Progress"
-msgstr "Fortschritt der empfangenen Datei"
-
-#: ../data/glade/moserial.ui.h:28
-msgid "Received ASCII"
-msgstr "Empfangenes ASCII"
-
-#: ../data/glade/moserial.ui.h:29
-msgid "Received HEX"
-msgstr "Empfangenes HEX"
-
-#: ../data/glade/moserial.ui.h:30
-msgid "Record"
-msgstr "Aufzeichnen"
-
-#: ../data/glade/moserial.ui.h:31
-msgid "Record Incoming and/or Outgoing Data"
-msgstr "Eingehende und/oder ausgehende Daten aufzeichnen"
-
-#: ../data/glade/moserial.ui.h:32
-msgid "Recording"
-msgstr "Aufzeichnen"
-
-#: ../data/glade/moserial.ui.h:33
-msgid "Select File to Send"
-msgstr "Zu sendende Datei auswählen"
-
-#: ../data/glade/moserial.ui.h:34
-msgid "Select Folder for Received Files"
-msgstr "Ordner für empfangene Dateien auswählen"
-
-#: ../data/glade/moserial.ui.h:35
-msgid "Send"
-msgstr "Absenden"
-
-#: ../data/glade/moserial.ui.h:36
-msgid "Send File"
-msgstr "Datei senden"
-
-#: ../data/glade/moserial.ui.h:37
-msgid "Send File Progress"
-msgstr "Fortschritt der Dateiübermittlung"
-
-#: ../data/glade/moserial.ui.h:38
-msgid "Sent ASCII"
-msgstr "Gesendetes ASCII"
-
-#: ../data/glade/moserial.ui.h:39
-msgid "Sent HEX"
-msgstr "Gesendetes HEX"
-
-#: ../data/glade/moserial.ui.h:40
-msgid "Software"
-msgstr "Software"
-
-#: ../data/glade/moserial.ui.h:41
-msgid "Stop Bits"
-msgstr "Stopp-Bits"
-
-#: ../data/glade/moserial.ui.h:42
-msgid "Stop Recording"
-msgstr "Aufzeichnung anhalten"
-
-#: ../data/glade/moserial.ui.h:43
-msgid "Stream to record"
-msgstr "Aufzuzeichnender Datenstrom"
-
-#: ../data/glade/moserial.ui.h:44
-msgid "_Edit"
-msgstr "_Bearbeiten"
-
-#: ../data/glade/moserial.ui.h:45
-msgid "_File"
-msgstr "_Datei"
-
-#: ../data/glade/moserial.ui.h:46
-msgid "_Help"
-msgstr "_Hilfe"
-
-#: ../data/glade/moserial.ui.h:47
-msgid "_Launch recorded files"
-msgstr "_Aufgezeichnete Dateien starten"
-
-#: ../data/glade/moserial.ui.h:48
-msgid "_Use the system fixed width font"
-msgstr "_Vom Systems vorgegebene dicktengleiche Schrift verwenden"
-
-#: ../data/glade/moserial.ui.h:49
+#: ../data/ui/mainwindow.ui.h:1
 msgid "moserial"
 msgstr "moserial"
 
-#: ../data/glade/moserial.ui.h:50
+#: ../data/ui/mainwindow.ui.h:2
+msgid "_File"
+msgstr "_Datei"
+
+#: ../data/ui/mainwindow.ui.h:3
+msgid "Open _Recent"
+msgstr "_Zuletzt geöffnet"
+
+#: ../data/ui/mainwindow.ui.h:4
+msgid "_Edit"
+msgstr "_Bearbeiten"
+
+#: ../data/ui/mainwindow.ui.h:5
+msgid "_Help"
+msgstr "_Hilfe"
+
+#: ../data/ui/mainwindow.ui.h:6
+msgid "Connect"
+msgstr "Verbinden"
+
+#: ../data/ui/mainwindow.ui.h:7
+msgid "Record"
+msgstr "Aufzeichnen"
+
+#: ../data/ui/mainwindow.ui.h:8
+msgid "Send File"
+msgstr "Datei senden"
+
+#: ../data/ui/mainwindow.ui.h:9
+msgid "Receive File"
+msgstr "Datei empfangen"
+
+#: ../data/ui/mainwindow.ui.h:10 ../data/ui/settings_dialog.ui.h:1
+msgid "Port Setup"
+msgstr "Port-Einstellungen"
+
+#: ../data/ui/mainwindow.ui.h:11 ../data/ui/preferences.ui.h:1
+msgid "Preferences"
+msgstr "Einstellungen"
+
+#: ../data/ui/mainwindow.ui.h:12
+msgid "Help"
+msgstr "Hilfe"
+
+#: ../data/ui/mainwindow.ui.h:13
+msgid "Received ASCII"
+msgstr "Empfangenes ASCII"
+
+#: ../data/ui/mainwindow.ui.h:14
+msgid "Received HEX"
+msgstr "Empfangenes HEX"
+
+#: ../data/ui/mainwindow.ui.h:15
+msgid "Sent ASCII"
+msgstr "Gesendetes ASCII"
+
+#: ../data/ui/mainwindow.ui.h:16
+msgid "Sent HEX"
+msgstr "Gesendetes HEX"
+
+#: ../data/ui/mainwindow.ui.h:17 ../src/SerialStreamRecorder.vala:30
+msgid "Outgoing"
+msgstr "Ausgehend"
+
+#: ../data/ui/mainwindow.ui.h:18
+msgid "Send"
+msgstr "Absenden"
+
+#: ../data/ui/mainwindow.ui.h:19
+msgid "Disconnect"
+msgstr "Trennen"
+
+#: ../data/ui/mainwindow.ui.h:20
+msgid "Stop Recording"
+msgstr "Aufzeichnung anhalten"
+
+#: ../data/ui/preferences.ui.h:2
+msgid "Font"
+msgstr "Schrift"
+
+#: ../data/ui/preferences.ui.h:3
+msgid "_Use the system fixed width font"
+msgstr "_Vom Systems vorgegebene dicktengleiche Schrift verwenden"
+
+#: ../data/ui/preferences.ui.h:4
+msgid "Display Font"
+msgstr "Anzeigeschrift"
+
+#: ../data/ui/preferences.ui.h:5
+msgid "Font Colour"
+msgstr "Schriftfarbe"
+
+#: ../data/ui/preferences.ui.h:6
+msgid "Background Color"
+msgstr "Hintergrundfarbe"
+
+#: ../data/ui/preferences.ui.h:7
+msgid "Highlight Color"
+msgstr "Hervorhebungsfarbe"
+
+#: ../data/ui/preferences.ui.h:8
+msgid "Recording"
+msgstr "Aufzeichnen"
+
+#: ../data/ui/preferences.ui.h:9
+msgid "_Launch recorded files"
+msgstr "_Aufgezeichnete Dateien starten"
+
+#: ../data/ui/preferences.ui.h:10
+msgid "Enable timeout after"
+msgstr "Abbrechen nach"
+
+#: ../data/ui/preferences.ui.h:11
 msgid "seconds"
 msgstr "Sekunden"
 
+#: ../data/ui/receive_chooser.ui.h:1
+msgid "Select Folder for Received Files"
+msgstr "Ordner für empfangene Dateien auswählen"
+
+#: ../data/ui/receive_chooser.ui.h:2 ../data/ui/send_chooser_dialog.ui.h:2
+msgid "Error Correction Protocol"
+msgstr "Fehlerkorrekturprotokoll"
+
+#: ../data/ui/receive_progress.ui.h:1
+msgid "Receive File Progress"
+msgstr "Fortschritt der empfangenen Datei"
+
+#: ../data/ui/record_dialog.ui.h:1
+msgid "Record Incoming and/or Outgoing Data"
+msgstr "Eingehende und/oder ausgehende Daten aufzeichnen"
+
+#: ../data/ui/record_dialog.ui.h:2
+msgid "Stream to record"
+msgstr "Aufzuzeichnender Datenstrom"
+
+#: ../data/ui/send_chooser_dialog.ui.h:1
+msgid "Select File to Send"
+msgstr "Zu sendende Datei auswählen"
+
+#: ../data/ui/send_progress_dialog.ui.h:1
+msgid "Send File Progress"
+msgstr "Fortschritt der Dateiübermittlung"
+
+#: ../data/ui/settings_dialog.ui.h:2
+msgid "Port Settings"
+msgstr "Port-Einstellungen"
+
+#: ../data/ui/settings_dialog.ui.h:3
+msgid "Hardware"
+msgstr "Hardware"
+
+#: ../data/ui/settings_dialog.ui.h:4
+msgid "Software"
+msgstr "Software"
+
+#: ../data/ui/settings_dialog.ui.h:5
+msgid "Access Mode"
+msgstr "Zugriffsmodus"
+
+#: ../data/ui/settings_dialog.ui.h:6
+msgid "Handshake"
+msgstr "Handshake"
+
+#: ../data/ui/settings_dialog.ui.h:7
+msgid "Parity"
+msgstr "Parität"
+
+#: ../data/ui/settings_dialog.ui.h:8
+msgid "Stop Bits"
+msgstr "Stopp-Bits"
+
+#: ../data/ui/settings_dialog.ui.h:9
+msgid "Data Bits"
+msgstr "Daten-Bits"
+
+#: ../data/ui/settings_dialog.ui.h:10
+msgid "Baud Rate"
+msgstr "Baudrate"
+
+#: ../data/ui/settings_dialog.ui.h:11
+msgid "Device"
+msgstr "Gerät"
+
+#: ../data/ui/settings_dialog.ui.h:12
+msgid "Local Echo"
+msgstr "Lokales Echo"
+
+#: ../data/ui/settings_dialog.ui.h:13
+msgid "Echo received data"
+msgstr "Empfangene Daten zurückgeben"
+
+#: ../data/ui/xmodem_filename_dialog.ui.h:1
+msgid "Filename required for XMODEM"
+msgstr "Der von XMODEM benötigte Dateiname"
+
 #: ../data/moserial.desktop.in.h:1
-msgid "A serial terminal optimized for logging and file capture"
-msgstr "Ein serielles Terminal für das Mitschneiden und Aufzeichnen"
+msgid "moserial Terminal"
+msgstr "Serielles Terminal"
 
 #: ../data/moserial.desktop.in.h:2
 msgid "Serial Terminal"
 msgstr "Serielles Terminal"
 
 #: ../data/moserial.desktop.in.h:3
-msgid "moserial Terminal"
+msgid "A serial terminal optimized for logging and file capture"
+msgstr "Ein serielles Terminal für das Mitschneiden und Aufzeichnen"
+
+#: ../data/moserial.appdata.xml.in.h:1
+msgid "Serial terminal"
 msgstr "Serielles Terminal"
 
-#: ../src/InputParser.vala:45 ../src/InputParser.vala:52
-#: ../src/InputParser.vala:58
+#: ../data/moserial.appdata.xml.in.h:2
+msgid ""
+"Moserial is a serial terminal used for interacting with serial consoles and "
+"embedded devices. It supports the view of incoming and outgoing data in both "
+"ASCII and hexadecimal formats with the option to log this data. It also "
+"supports sending and receiving of x, y, and z-modem files, and has profiles "
+"to easily switch between configurations for different devices you are "
+"communicating with."
+msgstr ""
+"Moserial ist ein serielles Terminal, das für die Interaktion mit seriellen "
+"Konsolen und eingebetteten Geräten verwendet wird. Es unterstützt die "
+"Betrachtung eingehenden und ausgehenden Datenverkehrs in sowohl ASCII- als "
+"auch im Hexadezimalformat, wobei diese Daten auch protokolliert werden "
+"können. Außerdem wird das Senden und Empfangen von x-, y- und z-Modemdateien "
+"unterstützt sowie der schnelle Wechsel zwischen mehreren Konfigurationen für "
+"die Kommunikation mit unterschiedlichen Geräten."
+
+#: ../src/InputParser.vala:44 ../src/InputParser.vala:54
 msgid "Invalid Input"
 msgstr "Ungültige Eingabe"
 
@@ -238,20 +260,11 @@ msgstr "Ungültige Eingabe"
 msgid "Profile file to load"
 msgstr "Zu ladende Profildatei"
 
-#: ../src/Main.vala:36
-#, c-format
-msgid ""
-"Failed to load UI\n"
-"%s"
-msgstr ""
-"Benutzeroberfläche konnte nicht geladen werden\n"
-"%s"
-
-#: ../src/Main.vala:52
+#: ../src/Main.vala:45
 msgid "- moserial serial terminal"
 msgstr "- serielles Terminal moserial"
 
-#: ../src/Main.vala:57 ../src/Main.vala:65
+#: ../src/Main.vala:50 ../src/Main.vala:58
 #, c-format
 msgid "Run '%s --help' to see a full list of available command line options.\n"
 msgstr ""
@@ -298,72 +311,70 @@ msgstr ""
 "Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA "
 "02110-1301, USA und schauen Sie unter <http://www.gnu.org/licenses/>."
 
-#: ../src/MainWindow.vala:65
+#: ../src/MainWindow.vala:64
 msgid "ASCII"
 msgstr "ASCII"
 
-#: ../src/MainWindow.vala:65
+#: ../src/MainWindow.vala:64
 msgid "HEX"
 msgstr "HEX"
 
-#: ../src/MainWindow.vala:157
+#: ../src/MainWindow.vala:165
 msgid "Port configuration"
 msgstr "Port-Konfiguration"
 
-#: ../src/MainWindow.vala:162
+#: ../src/MainWindow.vala:170
 msgid "Read the manual"
 msgstr "Das Handbuch lesen"
 
-#: ../src/MainWindow.vala:172
+#: ../src/MainWindow.vala:180
 msgid "TX: 0, RX: 0"
 msgstr "TX: 0, RX: 0"
 
-#: ../src/MainWindow.vala:183
+#: ../src/MainWindow.vala:191
 msgid "Send a file"
 msgstr "Eine Datei senden"
 
-#: ../src/MainWindow.vala:192
+#: ../src/MainWindow.vala:200
 msgid "Receive a file"
 msgstr "Eine Datei empfangen"
 
-#: ../src/MainWindow.vala:202
+#: ../src/MainWindow.vala:210
 msgid "Record sent and/or received data"
 msgstr "Gesendete und/oder empfangene Daten aufzeichnen"
 
-#: ../src/MainWindow.vala:213
+#: ../src/MainWindow.vala:221
 msgid "Other preferences"
 msgstr "Weitere Einstellungen"
 
-#: ../src/MainWindow.vala:218
+#: ../src/MainWindow.vala:226
 msgid "Open/close port"
 msgstr "Port öffnen/schließen"
 
-#: ../src/MainWindow.vala:266
+#: ../src/MainWindow.vala:274
 msgid "Send the outgoing data now."
 msgstr "Die zu übermittelnden Daten jetzt senden."
 
-#: ../src/MainWindow.vala:269
+#: ../src/MainWindow.vala:277
 msgid "Type outgoing data here. Press Enter or Send to send it."
 msgstr ""
 "Geben Sie die zu übermittelnden Daten hier ein und drücken Sie anschließend  "
 "die Eingabetaste oder klicken Sie auf »Absenden«."
 
-#: ../src/MainWindow.vala:546 ../src/Profile.vala:76 ../src/Profile.vala:107
-#, c-format
+#: ../src/MainWindow.vala:564 ../src/Profile.vala:76 ../src/Profile.vala:107
 msgid "Error: Could not open file"
 msgstr "Fehler: Datei konnte nicht geöffnet werden"
 
-#: ../src/MainWindow.vala:624
-#, c-format
+#: ../src/MainWindow.vala:642
 msgid "Error: Could not open device"
 msgstr "Fehler: Gerät konnte nicht geöffnet werden"
 
-#: ../src/MainWindow.vala:746
+#: ../src/MainWindow.vala:764
 #, c-format
 msgid "Unable to display help file: %s"
 msgstr "Hilfedatei kann nicht angezeigt werden: %s"
 
-#: ../src/MainWindow.vala:757
+#: ../src/MainWindow.vala:775
 msgid ""
 "A serial terminal for the GNOME desktop, optimized for logging and file "
 "capture."
@@ -371,7 +382,7 @@ msgstr ""
 "Ein serielles Terminal für die GNOME-Arbeitsumgebung mit dem Schwerpunkt auf "
 "Mitschnitt und Dateierzeugung."
 
-#: ../src/MainWindow.vala:809
+#: ../src/MainWindow.vala:828
 msgid ""
 "You have changed your setting or preferences. Do you want to save these "
 "changes to the loaded profile?"
@@ -379,7 +390,7 @@ msgstr ""
 "Sie haben die Einstellungen geändert. Möchten Sie diese im aktuellen Profil "
 "speichern?"
 
-#: ../src/PreferencesDialog.vala:50
+#: ../src/PreferencesDialog.vala:49
 msgid ""
 "If this option is enabled, a recorded file will be opened immediately after "
 "it is saved, using the default application for the file type. The default "
@@ -389,7 +400,7 @@ msgstr ""
 "nachdem sie gespeichert wurde mit der Standardanwendung für diesen Dateityp "
 "geöffnet. Die Standardanwendung wird von der Arbeitsumgebung vorgegeben."
 
-#: ../src/PreferencesDialog.vala:53
+#: ../src/PreferencesDialog.vala:52
 msgid ""
 "If this option is enabled, recording will be automatically stopped after an "
 "adjustable period of inactivity after receiving some data. Moserial will "
@@ -417,7 +428,7 @@ msgstr "Ymodem"
 msgid "Zmodem"
 msgstr "Zmodem"
 
-#: ../src/SendProgressDialog.vala:43
+#: ../src/SendProgressDialog.vala:42
 msgid "Waiting for remote host"
 msgstr "Auf Gegenstelle wird gewartet"
 
@@ -445,12 +456,12 @@ msgstr "ESC-Zeilenende"
 msgid "No end"
 msgstr "Kein Ende"
 
-#: ../src/SerialConnection.vala:281
+#: ../src/SerialConnection.vala:302
 #, c-format
 msgid "TX: %lu, RX: %lu (%lu unprintable)"
 msgstr "TX: %lu, RX: %lu (%lu nicht anzeigbar)"
 
-#: ../src/SerialConnection.vala:283
+#: ../src/SerialConnection.vala:304
 #, c-format
 msgid "TX: %lu, RX: %lu"
 msgstr "TX: %lu, RX: %lu"
@@ -463,25 +474,26 @@ msgstr "Eingehend"
 msgid "Incoming and Outgoing"
 msgstr "Eingehend und ausgehend"
 
-#: ../src/SerialStreamRecorder.vala:57 ../src/SerialStreamRecorder.vala:78
+#: ../src/SerialStreamRecorder.vala:57 ../src/SerialStreamRecorder.vala:68
+#: ../src/SerialStreamRecorder.vala:89
 #, c-format
 msgid "error: %s\n"
 msgstr "Fehler: %s\n"
 
-#: ../src/SerialStreamRecorder.vala:87
+#: ../src/SerialStreamRecorder.vala:98
 #, c-format
 msgid "Unable to launch %s: %s"
 msgstr "%s konnte nicht gestartet werden: %s"
 
-#: ../src/SettingsDialog.vala:67
+#: ../src/SettingsDialog.vala:66
 msgid "Also known as RTS/CTS handshaking"
 msgstr "Auch bekannt als RTS/CTS-Handshaking"
 
-#: ../src/SettingsDialog.vala:70
+#: ../src/SettingsDialog.vala:69
 msgid "Also known as XON/XOFF handshaking"
 msgstr "Auch bekannt als XON/XOFF-Handshaking"
 
-#: ../src/SettingsDialog.vala:76
+#: ../src/SettingsDialog.vala:75
 msgid "Normally disabled"
 msgstr "Standardmäßig deaktiviert"
 
@@ -557,6 +569,13 @@ msgstr "Keines (reines Binär)"
 #: ../src/Szwrapper.vala:185
 msgid "canceled"
 msgstr "Abgebrochen"
+
+#~ msgid ""
+#~ "Failed to load UI\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Benutzeroberfläche konnte nicht geladen werden\n"
+#~ "%s"
 
 #~ msgid ""
 #~ "/dev/ttyS0\n"
