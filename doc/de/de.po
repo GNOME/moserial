@@ -1,43 +1,49 @@
 # German translation of the moserial manual.
-# Mario Blättermann <mariobl@freenet.de>, 2009, 2011.
+# Mario Blättermann <mario.blaettermann@gmail.com>, 2009, 2011, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: moserial\n"
-"POT-Creation-Date: 2011-08-16 19:41+0000\n"
-"PO-Revision-Date: 2011-08-19 10:35+0100\n"
-"Last-Translator: Mario Blättermann <mariobl@freenet.de>\n"
+"POT-Creation-Date: 2015-11-10 14:15+0000\n"
+"PO-Revision-Date: 2015-12-28 13:10+0100\n"
+"Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: German\n"
-"X-Poedit-Country: GERMANY\n"
+"X-Generator: Poedit 1.8.5\n"
 
-#: C/index.docbook:19(title)
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr "Mario Blättermann <mario.blaettermann@gmail.com>, 2009, 2011, 2015"
+
+#. (itstool) path: articleinfo/title
+#: C/index.docbook:19
 msgid "<application>moserial</application> Manual V3.0.0"
 msgstr "<application>moserial</application>-Handbuch V3.0.0"
 
-#: C/index.docbook:21(year)
-msgid "2009"
-msgstr "2009"
+#. (itstool) path: articleinfo/copyright
+#: C/index.docbook:20
+msgid "<year>2009</year> <holder>Michael J. Chudobiak</holder>"
+msgstr "<year>2009</year> <holder>Michael J. Chudobiak</holder>"
 
-#: C/index.docbook:22(holder) C/index.docbook:59(para)
-msgid "Michael J. Chudobiak"
-msgstr "Michael J. Chudobiak"
-
-#: C/index.docbook:38(publishername) C/index.docbook:60(para)
+#. (itstool) path: publisher/publishername
+#. (itstool) path: revdescription/para
+#: C/index.docbook:38 C/index.docbook:60
 msgid "GNOME Documentation Project"
 msgstr "GNOME-Dokumentationsprojekt"
 
-#: C/index.docbook:2(para)
+#. (itstool) path: legalnotice/para
+#: C/index.docbook:2
 msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
 "later version published by the Free Software Foundation with no Invariant "
 "Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
-"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or in "
-"the file COPYING-DOCS distributed with this manual."
+"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or "
+"in the file COPYING-DOCS distributed with this manual."
 msgstr ""
 "Das vorliegende Dokument kann gemäß den Bedingungen der GNU Free "
 "Documentation License (GFDL), Version 1.1 oder jeder späteren, von der Free "
@@ -47,7 +53,8 @@ msgstr ""
 "<ulink type=\"help\" url=\"ghelp:fdl\">Link</ulink> oder in der mit diesem "
 "Handbuch gelieferten Datei COPYING-DOCS."
 
-#: C/index.docbook:12(para)
+#. (itstool) path: legalnotice/para
+#: C/index.docbook:12
 msgid ""
 "This manual is part of a collection of GNOME manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
@@ -60,7 +67,8 @@ msgstr ""
 "der Lizenz zum Handbuch hinzufügen, wie es in Abschnitt 6 der Lizenz "
 "beschrieben ist."
 
-#: C/index.docbook:19(para)
+#. (itstool) path: legalnotice/para
+#: C/index.docbook:19
 msgid ""
 "Many of the names used by companies to distinguish their products and "
 "services are claimed as trademarks. Where those names appear in any GNOME "
@@ -75,19 +83,20 @@ msgstr ""
 "großen Anfangsbuchstaben geschrieben, wenn das GNOME-Dokumentationsprojekt "
 "auf diese Warenzeichen hingewiesen wird."
 
-#: C/index.docbook:35(para)
+#. (itstool) path: listitem/para
+#: C/index.docbook:35
 msgid ""
 "DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
 "EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
 "THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
-"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE RISK "
-"AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR MODIFIED "
-"VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR MODIFIED VERSION "
-"PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY "
-"CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY SERVICING, REPAIR OR "
-"CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS "
-"LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS "
-"AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
+"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
+"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
 msgstr ""
 "DIESES DOKUMENT WIRD »WIE VORLIEGEND« GELIEFERT, OHNE GARANTIEN IRGENDEINER "
 "ART, SOWOHL AUSDRÜCKLICH GENANNTE ALS AUCH ANGEDEUTETE. DIES BEZIEHT SICH "
@@ -96,23 +105,24 @@ msgstr ""
 "ZWECK GEEIGNET IST ODER DASS ES KEINE RECHTE DRITTER VERLETZT. DAS VOLLE "
 "RISIKO WAS QUALITÄT, GENAUIGKEIT UND LEISTUNG DES DOKUMENTS ODER VERÄNDERTE "
 "FASSUNGEN DES DOKUMENTS LIEGT BEI IHNEN. SOLLTE EIN DOKUMENT ODER EINE "
-"VERÄNDERTE FASSUNG DAVON FEHLER IRGENDEINER ART BEINHALTEN, TRAGEN SIE (NICHT "
-"DER URSPRUNGSAUTOR, DER AUTOR ODER EIN MITWIRKENDER) DIE KOSTEN FÜR "
+"VERÄNDERTE FASSUNG DAVON FEHLER IRGENDEINER ART BEINHALTEN, TRAGEN SIE "
+"(NICHT DER URSPRUNGSAUTOR, DER AUTOR ODER EIN MITWIRKENDER) DIE KOSTEN FÜR "
 "NOTWENDIGE DIENSTLEISTUNGEN, REPARATUREN ODER FEHLERKORREKTUREN. DIESER "
 "HAFTUNGSAUSSCHLUSS IST EIN ESSENZIELLER TEIL DIESER LIZENZ. DIE VERWENDUNG "
 "EINES DOKUMENTS ODER EINER VERÄNDERTEN VERSION DES DOKUMENTS IST NICHT "
 "GESTATTET AUßER UNTER BEACHTUNG DIESES HAFTUNGSAUSSCHLUSSES UND"
 
-#: C/index.docbook:55(para)
+#. (itstool) path: listitem/para
+#: C/index.docbook:55
 msgid ""
 "UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
 "NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
 "CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
-"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON FOR "
-"ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY "
-"CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, WORK "
-"STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR "
-"LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
+"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
+"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
 "VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
 "POSSIBILITY OF SUCH DAMAGES."
 msgstr ""
@@ -121,50 +131,53 @@ msgstr ""
 "ANDERWEITIG KANN DER AUTOR, URSPRUNGSAUTOR, EIN MITWIRKENDER ODER EIN "
 "VERTRIEBSPARTNER DIESES DOKUMENTS ODER EINER VERÄNDERTEN FASSUNG DES "
 "DOKUMENTS ODER EIN ZULIEFERER EINER DIESER PARTEIEN, HAFTBAR GEMACHT WERDEN "
-"FÜR DIREKTE, INDIREKTE, SPEZIELLE, VERSEHENTLICHE ODER FOLGESCHÄDEN JEGLICHER "
-"ART, EINSCHLIEßLICH UND OHNE EINSCHRÄNKUNGEN SCHÄDEN DURCH VERLUST VON "
-"KULANZ, ARBEITSAUSFALL, COMPUTERVERSAGEN ODER COMPUTERFEHLFUNKTIONEN ODER "
-"ALLE ANDEREN SCHÄDEN ODER VERLUSTE, DIE SICH AUS ODER IN VERBINDUNG MIT DER "
-"VERWENDUNG DES DOKUMENTS UND VERÄNDERTER FASSUNGEN DES DOKUMENTS ERGEBEN, "
-"AUCH WENN DIE OBEN GENANNTEN PARTEIEN ÜBER DIE MÖGLICHKEIT SOLCHER SCHÄDEN "
-"INFORMIERT WAREN."
+"FÜR DIREKTE, INDIREKTE, SPEZIELLE, VERSEHENTLICHE ODER FOLGESCHÄDEN "
+"JEGLICHER ART, EINSCHLIEßLICH UND OHNE EINSCHRÄNKUNGEN SCHÄDEN DURCH VERLUST "
+"VON KULANZ, ARBEITSAUSFALL, COMPUTERVERSAGEN ODER COMPUTERFEHLFUNKTIONEN "
+"ODER ALLE ANDEREN SCHÄDEN ODER VERLUSTE, DIE SICH AUS ODER IN VERBINDUNG MIT "
+"DER VERWENDUNG DES DOKUMENTS UND VERÄNDERTER FASSUNGEN DES DOKUMENTS "
+"ERGEBEN, AUCH WENN DIE OBEN GENANNTEN PARTEIEN ÜBER DIE MÖGLICHKEIT SOLCHER "
+"SCHÄDEN INFORMIERT WAREN."
 
-#: C/index.docbook:28(para)
+#. (itstool) path: legalnotice/para
+#: C/index.docbook:28
 msgid ""
 "DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
 "OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
-"<placeholder-1/>"
+"<_:orderedlist-1/>"
 msgstr ""
 "DAS DOKUMENT UND VERÄNDERTE FASSUNGEN DES DOKUMENTS WERDEN UNTER DEN "
-"BEDINGUNGEN DER GNU FREE DOCUMENTATION LICENSE ZUR VERFÜGUNG GESTELLT MIT DEM "
-"WEITERGEHENDEN VERSTÄNDNIS, DASS: <placeholder-1/>"
+"BEDINGUNGEN DER GNU FREE DOCUMENTATION LICENSE ZUR VERFÜGUNG GESTELLT MIT "
+"DEM WEITERGEHENDEN VERSTÄNDNIS, DASS: <_:orderedlist-1/>"
 
-#: C/index.docbook:45(firstname)
-msgid "Michael"
-msgstr "Michael"
+#. (itstool) path: authorgroup/author
+#: C/index.docbook:44
+msgid ""
+"<firstname>Michael</firstname> <surname>Chudobiak</surname> <affiliation> "
+"<address> <email>mjc@svn.gnome.org</email> </address> </affiliation>"
+msgstr ""
+"<firstname>Michael</firstname> <surname>Chudobiak</surname> <affiliation> "
+"<address> <email>mjc@svn.gnome.org</email> </address> </affiliation>"
 
-#: C/index.docbook:46(surname)
-msgid "Chudobiak"
-msgstr "Chudobiak"
+#. (itstool) path: revdescription/para
+#: C/index.docbook:59
+msgid "Michael J. Chudobiak"
+msgstr "Michael J. Chudobiak"
 
-#: C/index.docbook:48(email)
-msgid "mjc@svn.gnome.org"
-msgstr "mjc@svn.gnome.org"
+#. (itstool) path: revhistory/revision
+#: C/index.docbook:55
+msgid ""
+"<revnumber>3.0.0</revnumber> <date>April 2009</date> <_:revdescription-1/>"
+msgstr ""
+"<revnumber>3.0.0</revnumber> <date>April 2009</date> <_:revdescription-1/>"
 
-#: C/index.docbook:56(revnumber)
-msgid "3.0.0"
-msgstr "3.0.0"
-
-#: C/index.docbook:57(date)
-msgid "April 2009"
-msgstr "April 2009"
-
-#. this is version of manual, not application
-#: C/index.docbook:67(releaseinfo)
+#. (itstool) path: articleinfo/releaseinfo
+#: C/index.docbook:67
 msgid "This is manual describes version 3.0.0 of moserial"
 msgstr "Dieses Handbuch beschreibt Version 3.0.0 von moserial"
 
-#: C/index.docbook:70(para)
+#. (itstool) path: abstract/para
+#: C/index.docbook:70
 msgid ""
 "<application>moserial</application> is a serial terminal for the GNOME "
 "desktop, optimized for logging and file capture."
@@ -172,23 +185,28 @@ msgstr ""
 "<application>moserial</application> ist ein serielles Terminal für den GNOME-"
 "Desktop, optimiert auf Protokollierung und Dateiaufzeichnung."
 
-#: C/index.docbook:74(primary)
-msgid "moserial"
-msgstr "moserial"
+#. (itstool) path: article/indexterm
+#: C/index.docbook:73
+msgid "<primary>moserial</primary>"
+msgstr "<primary>moserial</primary>"
 
-#: C/index.docbook:77(primary)
-msgid "serial"
-msgstr "serial"
+#. (itstool) path: article/indexterm
+#: C/index.docbook:76
+msgid "<primary>serial</primary>"
+msgstr "<primary>seriell</primary>"
 
-#: C/index.docbook:80(secondary)
-msgid "terminal"
-msgstr "terminal"
+#. (itstool) path: article/indexterm
+#: C/index.docbook:79
+msgid "<secondary>terminal</secondary>"
+msgstr "<secondary>terminal</secondary>"
 
-#: C/index.docbook:88(title)
+#. (itstool) path: sect1/title
+#: C/index.docbook:88
 msgid "Introduction"
 msgstr "Einführung"
 
-#: C/index.docbook:89(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:89
 msgid ""
 "<application>moserial</application> is a serial terminal for the GNOME "
 "desktop, optimized for logging and file capture. <application>moserial</"
@@ -197,17 +215,18 @@ msgid ""
 msgstr ""
 "<application>moserial</application> ist ein serielles Terminal für den GNOME-"
 "Desktop, optimiert auf Protokollierung und Dateiaufzeichnung. "
-"<application>moserial</application> richtet sich in erster Linie an technisch "
-"orientierte Benutzer, die ein Kommunikationsinstrument für eingebettete "
-"Systeme, Konsolen und elektronische Testumgebungen benötigen."
+"<application>moserial</application> richtet sich in erster Linie an "
+"technisch orientierte Benutzer, die ein Kommunikationsinstrument für "
+"eingebettete Systeme, Konsolen und elektronische Testumgebungen benötigen."
 
-#: C/index.docbook:95(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:95
 msgid ""
 "Despite the technical orientation of the intended audience, "
-"<application>moserial</application> is designed to be user-friendly. Care has "
-"been taken to ensure that operations are simple to execute, by minimizing the "
-"number of clicks needed. The number of configuration options has also been "
-"kept small."
+"<application>moserial</application> is designed to be user-friendly. Care "
+"has been taken to ensure that operations are simple to execute, by "
+"minimizing the number of clicks needed. The number of configuration options "
+"has also been kept small."
 msgstr ""
 "Ungeachtet der technischen Orientierung des Zielpublikums wurde "
 "<application>moserial</application> daraufhin entworfen, benutzerfreundlich "
@@ -215,7 +234,8 @@ msgstr ""
 "Verminderung der Zahl der benötigten Mausklicks einfach ausführbar sind. "
 "Ebenso wurde die Zahl der Einstellungsoptionen bewusst klein gehalten."
 
-#: C/index.docbook:102(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:102
 msgid ""
 "To further improve efficiency, <application>moserial</application> also "
 "supports profile files to store frequently-used configurations."
@@ -223,33 +243,37 @@ msgstr ""
 "Um die Effizienz weiter zu verbessern, unterstützt <application>moserial</"
 "application> auch Profile, um häufig benutzte Konfigurationen zu speichern."
 
-#: C/index.docbook:109(title)
+#. (itstool) path: sect1/title
+#: C/index.docbook:109
 msgid "System Port Permissions"
 msgstr "Zugriffsrechte der Systemports"
 
-#: C/index.docbook:110(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:110
 msgid ""
-"Before using <application>moserial</application> with a serial port, you need "
-"to make sure that you actually have permission to read and/or write to the "
-"port."
+"Before using <application>moserial</application> with a serial port, you "
+"need to make sure that you actually have permission to read and/or write to "
+"the port."
 msgstr ""
 "Bevor Sie <application>moserial</application> mit einem seriellen Port "
 "verwenden können, müssen Sie sicherstellen, dass Sie Lese- und/oder "
 "Schreibrechte auf diesem Port haben."
 
-#: C/index.docbook:114(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:114
 msgid ""
 "On some systems, you may need to do something like \"sudo chmod o+rw /dev/"
-"ttyS*\" and \"sudo chmod o+rw /dev/ttyUSB*\" to obtain read/write permissions "
-"(for all users) on the serial ports. Unfortunately, this may not be "
-"persistent after reboots."
+"ttyS*\" and \"sudo chmod o+rw /dev/ttyUSB*\" to obtain read/write "
+"permissions (for all users) on the serial ports. Unfortunately, this may not "
+"be persistent after reboots."
 msgstr ""
 "Auf einigen Systemen müssen Sie etwas wie »sudo chmod o+rw /dev/ttyS*« und "
 "»sudo chmod o+rw /dev/ttyUSB*« aufrufen, um Lese- und Schreibrechte für alle "
-"Benutzer auf den seriellen Ports zu erhalten. Unglücklicherweise bleibt diese "
-"Einstellung nach einem Neustart des Systems nicht erhalten."
+"Benutzer auf den seriellen Ports zu erhalten. Unglücklicherweise bleibt "
+"diese Einstellung nach einem Neustart des Systems nicht erhalten."
 
-#: C/index.docbook:119(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:119
 msgid ""
 "Alternatively, you can see what group the devices belong to, and make your "
 "account a member of that group. In Fedora 15, for example, you should add "
@@ -259,15 +283,18 @@ msgstr ""
 "Benutzerkonto als Mitglied dieser Gruppe zuordnen. In Fedora 15 "
 "beispielsweise sollten Sie sich selbst der Gruppe »dialout« zuordnen."
 
-#: C/index.docbook:126(title)
+#. (itstool) path: sect1/title
+#: C/index.docbook:126
 msgid "Basic Usage"
 msgstr "Grundlagen der Benutzung"
 
-#: C/index.docbook:128(title)
+#. (itstool) path: sect2/title
+#: C/index.docbook:128
 msgid "The Main Toolbar"
 msgstr "Die Hauptwerkzeugleiste"
 
-#: C/index.docbook:129(para)
+#. (itstool) path: sect2/para
+#: C/index.docbook:129
 msgid ""
 "Most <application>moserial</application> functions are accessed through the "
 "main toolbar, shown below:"
@@ -275,11 +302,13 @@ msgstr ""
 "Die meisten Funktionen von <application>moserial</application> sind über die "
 "Hauptwerkzeugleiste erreichbar, wie unten angezeigt:"
 
-#: C/index.docbook:137(title)
+#. (itstool) path: sect2/title
+#: C/index.docbook:137
 msgid "Port Setup"
 msgstr "Port-Einstellung"
 
-#: C/index.docbook:138(para)
+#. (itstool) path: sect2/para
+#: C/index.docbook:138
 msgid ""
 "The first step in using <application>moserial</application> is to configure "
 "the serial port parameters. Click <guibutton>Port Setup</guibutton> to do "
@@ -290,32 +319,34 @@ msgid ""
 "port."
 msgstr ""
 "Der erste Schritt bei der Benutzung von <application>moserial</application> "
-"ist die Konfiguration der Parameter des seriellen Ports. Klicken Sie dazu auf "
-"<guibutton>Port-Einstellungen</guibutton>. Im Dialog der Port-Einstellungen "
-"stellen Sie den zu verwendenden Port ein, ob der Port zum Lesen, Schreiben "
-"oder für beides geöffnet werden soll, dessen Baudrate, die Parität, die "
-"Anzahl der Daten- und Stoppbits und die Handshaking-Methode. Die "
-"Einstellungen in diesem Dialog überschreiben alle systemweit definierten "
+"ist die Konfiguration der Parameter des seriellen Ports. Klicken Sie dazu "
+"auf <guibutton>Port-Einstellungen</guibutton>. Im Dialog der Port-"
+"Einstellungen stellen Sie den zu verwendenden Port ein, ob der Port zum "
+"Lesen, Schreiben oder für beides geöffnet werden soll, dessen Baudrate, die "
+"Parität, die Anzahl der Daten- und Stoppbits und die Handshaking-Methode. "
+"Die Einstellungen in diesem Dialog überschreiben alle systemweit definierten "
 "Einstellungen für diesen Port."
 
-#: C/index.docbook:146(para)
+#. (itstool) path: sect2/para
+#: C/index.docbook:146
 msgid ""
-"The <application>moserial</application> port setup dialog will only list the /"
-"dev/ttySnn, /dev/ttyUSBnn, and /dev/rfcommnn ports that actually exist on the "
-"system, for values of \"nn\" between 0 and 31."
+"The <application>moserial</application> port setup dialog will only list "
+"the /dev/ttySnn, /dev/ttyUSBnn, and /dev/rfcommnn ports that actually exist "
+"on the system, for values of \"nn\" between 0 and 31."
 msgstr ""
 "Der Port-Einstellungsdialog von <application>moserial</application> listet "
 "nur die Ports /dev/ttySnn, /dev/ttyUSBnn und /dev/rfcommnn auf, die "
 "gegenwärtig auf Ihrem System vorhanden sind, wobei »nn« Werte zwischen 0 und "
 "31 annehmen kann."
 
-#: C/index.docbook:151(para)
+#. (itstool) path: sect2/para
+#: C/index.docbook:151
 msgid ""
 "A local echo can be enabled from this dialog. If enabled, all data that "
 "<application>moserial</application> receives will be echoed back to the "
 "sending device. This should normally be disabled, as it can cause unexpected "
-"behaviour, especially if the remote device also has echo enabled. (This would "
-"cause an infinite loop of echoes!)"
+"behaviour, especially if the remote device also has echo enabled. (This "
+"would cause an infinite loop of echoes!)"
 msgstr ""
 "Über diesen Dialog können Sie auch ein lokales Echo aktivieren. Bei "
 "aktiviertem Echo werden alle von <application>moserial</application> "
@@ -324,11 +355,13 @@ msgstr ""
 "Besonders in dem Fall, wenn auf dem sendenden Gerät ebenfalls ein Echo "
 "aktiviert ist, führt das zu einer Endlosschleife von Echos!"
 
-#: C/index.docbook:162(title)
+#. (itstool) path: sect2/title
+#: C/index.docbook:162
 msgid "Open the Connection"
 msgstr "Öffnen der Verbindung"
 
-#: C/index.docbook:163(para)
+#. (itstool) path: sect2/para
+#: C/index.docbook:163
 msgid ""
 "The next step in communicating with your remote device is to click "
 "<guibutton>Connect</guibutton>. This opens the port. If you do not have the "
@@ -336,19 +369,21 @@ msgid ""
 msgstr ""
 "Der nächste Schritt in der Kommunikation mit Ihrem entfernten Gerät ist das "
 "Anklicken von <guibutton>Verbinden</guibutton>. Dadurch wird der Port "
-"geöffnet. Falls Sie nicht über die nötigen Rechte verfügen, um diesen Port zu "
-"öffnen, erscheint eine Fehlermeldung."
+"geöffnet. Falls Sie nicht über die nötigen Rechte verfügen, um diesen Port "
+"zu öffnen, erscheint eine Fehlermeldung."
 
-#: C/index.docbook:171(para)
+#. (itstool) path: sect2/para
+#: C/index.docbook:171
 msgid ""
 "This step is optional. If you skip it, <application>moserial</application> "
 "will try to connect automatically when needed."
 msgstr ""
 "Dieser Schritt ist optional. Falls Sie ihn überspringen, versucht "
-"<application>moserial</application> eine Verbindung automatisch herzustellen, "
-"falls nötig."
+"<application>moserial</application> eine Verbindung automatisch "
+"herzustellen, falls nötig."
 
-#: C/index.docbook:175(para)
+#. (itstool) path: sect2/para
+#: C/index.docbook:175
 msgid ""
 "Once you have connected, the <guibutton>Connect</guibutton> button will "
 "change into a <guibutton>Disconnect</guibutton> button. Clicking "
@@ -360,11 +395,13 @@ msgstr ""
 "Sie auf <guibutton>Trennen</guibutton>, um den Port zu schließen und die TX- "
 "und RX-Zähler zurückzusetzen."
 
-#: C/index.docbook:186(title)
+#. (itstool) path: sect2/title
+#: C/index.docbook:186
 msgid "Basic Input and Output"
 msgstr "Grundlagen der Eingabe und Ausgabe"
 
-#: C/index.docbook:187(para)
+#. (itstool) path: sect2/para
+#: C/index.docbook:187
 msgid ""
 "Once the port has been opened, any text received from the remote device will "
 "be displayed in the <guilabel>Received ASCII</guilabel> text area. If "
@@ -372,31 +409,33 @@ msgid ""
 "characters, it will switch automatically to the <guilabel>Received HEX</"
 "guilabel> view."
 msgstr ""
-"Sobald der Port geöffnet ist, wird jeglicher vom entfernten Gerät empfangener "
-"Text im Textfeld <guilabel>Empfangenes ASCII</guilabel> angezeigt. Falls "
-"<application>moserial</application> einen hohen Anteil an nicht druckbaren "
-"Zeichen erkennt, wechselt die Anwendung automatisch in die Ansicht "
-"<guilabel>Empfangenes HEX</guilabel>."
+"Sobald der Port geöffnet ist, wird jeglicher vom entfernten Gerät "
+"empfangener Text im Textfeld <guilabel>Empfangenes ASCII</guilabel> "
+"angezeigt. Falls <application>moserial</application> einen hohen Anteil an "
+"nicht druckbaren Zeichen erkennt, wechselt die Anwendung automatisch in die "
+"Ansicht <guilabel>Empfangenes HEX</guilabel>."
 
-#: C/index.docbook:197(para)
+#. (itstool) path: sect2/para
+#: C/index.docbook:197
 msgid ""
 "To switch between HEX and ASCII views, simply click on the appropriate tabs."
 msgstr ""
 "Um zwischen der HEX- und der ASCII-Ansicht zu wechseln, klicken Sie einfach "
 "auf die entsprechenden Reiter."
 
-#: C/index.docbook:201(para)
+#. (itstool) path: sect2/para
+#: C/index.docbook:201
 msgid ""
 "To send data to the remote device, you can type text into the "
 "<guilabel>Outgoing</guilabel> single-line text box, and click the "
-"<guibutton>Send</guibutton> button. Your line of text will be terminated with "
-"the sequence selected in the area to the right of the <guibutton>Send</"
+"<guibutton>Send</guibutton> button. Your line of text will be terminated "
+"with the sequence selected in the area to the right of the <guibutton>Send</"
 "guibutton> button. If you aren't sure which termination sequence is best, "
 "start with \"CR+LF end\". The <guibutton>ASCII/HEX</guibutton> button should "
 "be set to ASCII to send text."
 msgstr ""
-"Um Daten zum entfernten Gerät zu senden, geben Sie den Text in das einzeilige "
-"Textfeld <guilabel>Ausgehend</guilabel> ein und klicken auf "
+"Um Daten zum entfernten Gerät zu senden, geben Sie den Text in das "
+"einzeilige Textfeld <guilabel>Ausgehend</guilabel> ein und klicken auf "
 "<guibutton>Senden</guibutton> button. Ihre Textzeile wird mit der gewählten "
 "Sequenz abgeschlossen, die im Bereich rechts neben dem <guibutton>Senden</"
 "guibutton>-Knopf angezeigt wird. Falls Sie nicht sicher sind, welche "
@@ -404,7 +443,8 @@ msgstr ""
 "<guibutton>ASCII/HEX</guibutton> sollte zum Senden von Text auf "
 "<guibutton>ASCII</guibutton> gesetzt sein."
 
-#: C/index.docbook:214(para)
+#. (itstool) path: sect2/para
+#: C/index.docbook:214
 msgid ""
 "If the <guibutton>ASCII/HEX</guibutton> button is set to HEX, do not enter "
 "text in the <guilabel>Outgoing</guilabel> area. Instead, enter hexadecimal "
@@ -415,17 +455,19 @@ msgstr ""
 "guilabel> ein. Verwenden Sie stattdessen Hexadezimalzahlen in der Form "
 "»1234ABCD....«."
 
-#: C/index.docbook:219(para)
+#. (itstool) path: sect2/para
+#: C/index.docbook:219
 msgid ""
 "Once your data has been transmitted, a record of it will exist in the "
-"<guilabel>Sent ASCII</guilabel> and <guilabel>Sent HEX</guilabel> text areas. "
-"These text areas are not editable."
+"<guilabel>Sent ASCII</guilabel> and <guilabel>Sent HEX</guilabel> text "
+"areas. These text areas are not editable."
 msgstr ""
 "Sobald Ihre Daten übertragen wurden, erscheint eine Aufzeichnung in den "
 "Textfeldern <guilabel>Gesendetes ASCII</guilabel> und <guilabel>Gesendetes "
 "HEX</guilabel>. Diese Texte sind nicht bearbeitbar."
 
-#: C/index.docbook:227(para)
+#. (itstool) path: sect2/para
+#: C/index.docbook:227
 msgid ""
 "The remote device may echo your sent data. If <application>moserial</"
 "application> detects echoed text in the <guilabel>Received ASCII</guilabel> "
@@ -437,28 +479,31 @@ msgstr ""
 "<guilabel>Empfangenes ASCII</guilabel> erkennt, wird der Echo-Text in der im "
 "Einstellungsdialog dafür festgelegten Farbe hervorgehoben."
 
-#: C/index.docbook:233(para)
+#. (itstool) path: sect2/para
+#: C/index.docbook:233
 msgid ""
-"The statusbar at the bottom of the main window shows the state of port, and a "
-"count of the sent (TX) and received (RX) bytes. If some of the received data "
-"is unprintable, a count of these items is shown as well."
+"The statusbar at the bottom of the main window shows the state of port, and "
+"a count of the sent (TX) and received (RX) bytes. If some of the received "
+"data is unprintable, a count of these items is shown as well."
 msgstr ""
 "Die Statuszeile am unteren Rand des Hauptfensters zeigt den Status des Ports "
 "an sowie die Anzahl der gesendeten (TX) und empfangenen (RX) Bytes. Falls "
-"einige der empfangenen Daten aus nicht druckbaren Zeichen bestehen, wird auch "
-"die Anzahl dieser Objekte angezeigt."
+"einige der empfangenen Daten aus nicht druckbaren Zeichen bestehen, wird "
+"auch die Anzahl dieser Objekte angezeigt."
 
-#: C/index.docbook:245(title)
+#. (itstool) path: sect1/title
+#: C/index.docbook:245
 msgid "Recording Input and Output"
 msgstr "Aufzeichnen von Eingabe und Ausgabe"
 
-#: C/index.docbook:246(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:246
 msgid ""
 "<application>moserial</application> can be used to record your sent and "
 "received data to a file. This function is also useful for receiving and "
 "storing straight binary data dumped from a remote device. For instance, some "
-"oscilloscopes will dump screenshots to a serial port, without using any error "
-"correction protocols (like the Tektronix 11801)."
+"oscilloscopes will dump screenshots to a serial port, without using any "
+"error correction protocols (like the Tektronix 11801)."
 msgstr ""
 "Mit <application>moserial</application> können Sie die gesendeten und "
 "empfangenen Daten in einer Datei speichern. Diese Funktion ist auch nützlich "
@@ -467,7 +512,8 @@ msgstr ""
 "über den seriellen Port aus, unter Umgehung eventueller "
 "Fehlerkorrekturprotokolle (wie Tektronix 11801)."
 
-#: C/index.docbook:256(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:256
 msgid ""
 "When you are ready to record to a file, simply click <guibutton>Record</"
 "guibutton>, select the desired data to record (Incoming and/or Outgoing) in "
@@ -479,20 +525,22 @@ msgstr ""
 "Auswahlfeld <guilabel>Aufzuzeichnender Datenstrom</guilabel> aus (Eingehend/"
 "Ausgehend) und geben den Dateinamen im Dateiauswahldialog ein."
 
-#: C/index.docbook:265(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:265
 msgid ""
 "When recording begins, the <guibutton>Record</guibutton> button will change "
 "into a <guibutton>Stop Recording</guibutton> button. You will need to click "
 "this when you wish to stop recording, or you have received the entire binary "
 "file that you wanted to download."
 msgstr ""
-"Sobald die Aufzeichnung beginnt, ändert sich die Beschriftung des Knopfes von "
-"<guibutton>Aufzeichnen</guibutton> in <guibutton>Aufzeichnung anhalten</"
+"Sobald die Aufzeichnung beginnt, ändert sich die Beschriftung des Knopfes "
+"von <guibutton>Aufzeichnen</guibutton> in <guibutton>Aufzeichnung anhalten</"
 "guibutton>. Sie müssen darauf klicken, falls Sie die Aufzeichnung anzuhalten "
 "wünschen oder wenn Sie die gesamte Binärdatei empfangen haben, die Sie "
 "herunterladen wollten."
 
-#: C/index.docbook:274(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:274
 msgid ""
 "<application>moserial</application> can optionally launch the recorded file "
 "with the default application for its file type, when recording has finished. "
@@ -507,7 +555,8 @@ msgstr ""
 "\">Einstellungsdialog</link>, um diese Funktionsmerkmale zu aktivieren oder "
 "zu deaktivieren."
 
-#: C/index.docbook:281(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:281
 msgid ""
 "Note that if you wish to receive files using an error correction protocol "
 "(xmodem, ymodem, or zmodem), you will need to use the <link linkend="
@@ -523,11 +572,13 @@ msgstr ""
 "<guibutton>Datei empfangen</guibutton> automatisch erkennen, wann das "
 "Herunterladen der Datei abgeschlossen ist."
 
-#: C/index.docbook:294(title)
+#. (itstool) path: sect1/title
+#: C/index.docbook:294
 msgid "Sending Files"
 msgstr "Senden von Dateien"
 
-#: C/index.docbook:295(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:295
 msgid ""
 "<application>moserial</application> can transmit files in a straight binary "
 "data stream, and it can also send files using the xmodem, ymodem, and zmodem "
@@ -539,20 +590,22 @@ msgstr ""
 "binären Datenstrom übertragen sowie Dateien unter Verwendung der "
 "Fehlerkorrekturprotokolle xmodem, ymodem und zmodem versenden. Während der "
 "Dateiübertragung werden die gesendeten Daten in den Textfeldern "
-"<guilabel>Gesendetes ASCII</guilabel> und <guilabel>Gesendetes HEX</guilabel> "
-"nicht protokolliert."
+"<guilabel>Gesendetes ASCII</guilabel> und <guilabel>Gesendetes HEX</"
+"guilabel> nicht protokolliert."
 
-#: C/index.docbook:305(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:305
 msgid ""
 "When you are ready to send a file, simply click <guibutton>Send File</"
-"guibutton>, select the desired file to send. You will also need to select the "
-"appropriate protocol below."
+"guibutton>, select the desired file to send. You will also need to select "
+"the appropriate protocol below."
 msgstr ""
-"Wenn Sie zum Senden einer Datei bereit sind, klicken Sie auf <guibutton>Datei "
-"senden</guibutton> und wählen die gewünschte Datei aus. Sie müssen außerdem "
-"das entsprechende Protokoll auswählen."
+"Wenn Sie zum Senden einer Datei bereit sind, klicken Sie auf "
+"<guibutton>Datei senden</guibutton> und wählen die gewünschte Datei aus. Sie "
+"müssen außerdem das entsprechende Protokoll auswählen."
 
-#: C/index.docbook:313(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:313
 msgid ""
 "When recording begins, a progress bar will display the status of the file "
 "transmission."
@@ -560,47 +613,53 @@ msgstr ""
 "Wenn eine Aufzeichnung beginnt, zeigt eine Fortschrittsleiste den Status der "
 "Dateiübertragung an."
 
-#: C/index.docbook:320(para) C/index.docbook:363(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:320 C/index.docbook:363
 msgid ""
-"moserial does not implement the xmodem, ymodem, or zmodem protocols directly. "
-"It relies on the standard rz and sz utilities to send and receive data. These "
-"utilities, part of the lrzsz package, must be installed on your system."
+"moserial does not implement the xmodem, ymodem, or zmodem protocols "
+"directly. It relies on the standard rz and sz utilities to send and receive "
+"data. These utilities, part of the lrzsz package, must be installed on your "
+"system."
 msgstr ""
 "<application>moserial</application> implementiert die Protokolle »xmodem«, "
 "»ymodem« oder »zmodem« nicht direkt. Es benutzt die Standardwerkzeuge »rz« "
-"und »sz« zum Senden und Empfangen von Daten. Diese Werkzeuge sind Bestandteil "
-"des Pakets »lrzsz«, das auf Ihrem System installiert sein muss."
+"und »sz« zum Senden und Empfangen von Daten. Diese Werkzeuge sind "
+"Bestandteil des Pakets »lrzsz«, das auf Ihrem System installiert sein muss."
 
-#: C/index.docbook:329(title)
+#. (itstool) path: sect1/title
+#: C/index.docbook:329
 msgid "Receiving Files"
 msgstr "Empfangen von Dateien"
 
-#: C/index.docbook:330(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:330
 msgid ""
 "<application>moserial</application> can receive files sent in a straight "
 "binary data stream, and it can also receive files using the xmodem, ymodem, "
-"and zmodem error correction protocols. During file transmission, the received "
-"data is not logged to the <guilabel>Sent ASCII</guilabel> or <guilabel>Sent "
-"HEX</guilabel> text areas."
+"and zmodem error correction protocols. During file transmission, the "
+"received data is not logged to the <guilabel>Sent ASCII</guilabel> or "
+"<guilabel>Sent HEX</guilabel> text areas."
 msgstr ""
 "<application>moserial</application> kann Dateien in einem kontinuierlichen "
 "binären Datenstrom empfangen sowie auch Dateien unter Verwendung der "
 "Fehlerkorrekturprotokolle xmodem, ymodem und zmodem empfangen. Während der "
 "Dateiübertragung werden die empfangenen Daten in den Textfeldern "
-"<guilabel>Gesendetes ASCII</guilabel> und <guilabel>Gesendetes HEX</guilabel> "
-"nicht protokolliert."
+"<guilabel>Gesendetes ASCII</guilabel> und <guilabel>Gesendetes HEX</"
+"guilabel> nicht protokolliert."
 
-#: C/index.docbook:337(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:337
 msgid ""
 "To receive straight binary data streams, use the <link linkend=\"recording"
 "\">Record</link> function instead of the <guibutton>Receive File</guibutton> "
 "function."
 msgstr ""
 "Um kontinuierliche binäre Datenströme zu empfangen, verwenden Sie die "
-"Funktion <link linkend=\"recording\">Aufzeichnen</link> anstelle der Funktion "
-"<guibutton>Datei empfangen</guibutton>."
+"Funktion <link linkend=\"recording\">Aufzeichnen</link> anstelle der "
+"Funktion <guibutton>Datei empfangen</guibutton>."
 
-#: C/index.docbook:341(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:341
 msgid ""
 "To receive files sent with the xmodem, ymodem, or zmodem error correction "
 "protocols, using the <guibutton>Receive File</guibutton> function."
@@ -609,17 +668,19 @@ msgstr ""
 "Fehlerkorrekturprotokolle xmodem, ymodem, oder zmodem gesendet werden, "
 "benutzen Sie die Funktion <guibutton>Datei empfangen</guibutton>."
 
-#: C/index.docbook:348(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:348
 msgid ""
 "When you are ready to receive a file, simply click <guibutton>Receive File</"
-"guibutton>, select a folder to store the received file. You will also need to "
-"select the appropriate protocol below."
+"guibutton>, select a folder to store the received file. You will also need "
+"to select the appropriate protocol below."
 msgstr ""
 "Wenn Sie zum Empfang einer Datei bereit sind, klicken Sie auf "
 "<guibutton>Datei empfangen</guibutton> und wählen die gewünschte Datei aus. "
 "Sie müssen außerdem das entsprechende Protokoll auswählen."
 
-#: C/index.docbook:356(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:356
 msgid ""
 "When recording begins, a progress bar will display the status of the file "
 "reception."
@@ -627,11 +688,13 @@ msgstr ""
 "Wenn eine Aufzeichnung beginnt, zeigt eine Fortschrittsleiste den Status des "
 "Dateiempfangs an."
 
-#: C/index.docbook:372(title)
+#. (itstool) path: sect1/title
+#: C/index.docbook:372
 msgid "Other Preferences"
 msgstr "Weitere Einstellungen"
 
-#: C/index.docbook:373(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:373
 msgid ""
 "<application>moserial</application> has several options that can be "
 "configured from the <guilabel>Preferences</guilabel> dialog."
@@ -639,15 +702,18 @@ msgstr ""
 "<application>moserial</application> verfügt über verschiedene Optionen, die "
 "im Dialog <guilabel>Einstellungen</guilabel> bearbeitet werden können."
 
-#: C/index.docbook:380(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:380
 msgid ""
 "The color of the text area foreground, background, and highlighting can be "
 "configured, as can the font type and size."
 msgstr ""
 "Die Farben des Vorder- und Hintergrunds der Textfelder, die Hervorhebung "
-"sowie die Schriftart und -größe können an Ihre Erfordernisse angepasst werden."
+"sowie die Schriftart und -größe können an Ihre Erfordernisse angepasst "
+"werden."
 
-#: C/index.docbook:384(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:384
 msgid ""
 "If <guilabel>Launch recorded files</guilabel> is enabled, a recorded file "
 "will be opened immediately after it is saved, using the default application "
@@ -659,7 +725,8 @@ msgstr ""
 "diesen Dateityp festgelegten Standardanwendung geöffnet. Die "
 "Standardanwendung ist von den Einstellungen der Arbeitsumgebung abhängig."
 
-#: C/index.docbook:389(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:389
 msgid ""
 "If <guilabel>Enable timeout</guilabel> is enabled, recording will be "
 "automatically stopped after an adjustable period of inactivity after "
@@ -667,24 +734,27 @@ msgid ""
 "first data byte before activating the inactivity timer."
 msgstr ""
 "Falls <guilabel>Abbrechen nach</guilabel> aktiviert ist, dann werden "
-"Aufzeichnungen automatisch nach einer einstellbaren inaktiven Zeitspanne nach "
-"dem Empfang von Daten abgebrochen. Die Anwendung wartet allerdings auf den "
-"Empfang des ersten Daten-Bytes, bevor die Zeitspanne der Inaktivität "
+"Aufzeichnungen automatisch nach einer einstellbaren inaktiven Zeitspanne "
+"nach dem Empfang von Daten abgebrochen. Die Anwendung wartet allerdings auf "
+"den Empfang des ersten Daten-Bytes, bevor die Zeitspanne der Inaktivität "
 "ausgelöst wird."
 
-#: C/index.docbook:398(title)
+#. (itstool) path: sect1/title
+#: C/index.docbook:398
 msgid "Using Profiles"
 msgstr "Verwenden von Profilen"
 
-#: C/index.docbook:399(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:399
 msgid ""
 "<application>moserial</application> can load and save its settings from "
-"profile files, so that you can store and recall commonly used configurations. "
-"To save a profile, simply use the <menuchoice><guisubmenu>File</"
-"guisubmenu><guimenuitem>Save</guimenuitem></menuchoice> or "
-"<menuchoice><guisubmenu>File</guisubmenu><guimenuitem>Save As</guimenuitem></"
-"menuchoice> dialogs. To load a profile, use the <menuchoice><guisubmenu>File</"
-"guisubmenu><guimenuitem>Open</guimenuitem></menuchoice> dialog."
+"profile files, so that you can store and recall commonly used "
+"configurations. To save a profile, simply use the "
+"<menuchoice><guisubmenu>File</guisubmenu><guimenuitem>Save</guimenuitem></"
+"menuchoice> or <menuchoice><guisubmenu>File</guisubmenu><guimenuitem>Save "
+"As</guimenuitem></menuchoice> dialogs. To load a profile, use the "
+"<menuchoice><guisubmenu>File</guisubmenu><guimenuitem>Open</guimenuitem></"
+"menuchoice> dialog."
 msgstr ""
 "<application>moserial</application> kann seine Einstellungen aus "
 "Profildateien laden und auch wieder in diese speichern, so dass Sie häufig "
@@ -696,12 +766,14 @@ msgstr ""
 "<menuchoice><guisubmenu>Datei</guisubmenu><guimenuitem>Öffnen</guimenuitem></"
 "menuchoice>."
 
-#: C/index.docbook:408(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:408
 msgid "Loading a profile will automatically disconnect any connected port."
 msgstr ""
 "Beim Laden eines Profils wird automatisch jeder geöffnete Port geschlossen."
 
-#: C/index.docbook:411(para)
+#. (itstool) path: sect1/para
+#: C/index.docbook:411
 msgid ""
 "When you quit <application>moserial</application>, the settings currently in "
 "use are stored in a default profile file. These settings will automatically "
@@ -712,37 +784,40 @@ msgstr ""
 "Einstellungen werden automatisch aufgerufen, wenn Sie <application>moserial</"
 "application> das nächste Mal starten."
 
-#: C/index.docbook:419(title) C/index.docbook:422(title)
+#. (itstool) path: sect1/title
+#. (itstool) path: table/title
+#: C/index.docbook:419 C/index.docbook:422
 msgid "Special Keys"
 msgstr "Tastenkürzel"
 
-#: C/index.docbook:429(para)
+#. (itstool) path: entry/para
+#: C/index.docbook:429
 msgid "Keyboard Shortcut"
 msgstr "Tastenkürzel"
 
-#: C/index.docbook:431(para)
+#. (itstool) path: entry/para
+#: C/index.docbook:431
 msgid "Description"
 msgstr "Beschreibung"
 
-#: C/index.docbook:438(keycap) C/index.docbook:448(keycap)
-#: C/index.docbook:458(keycap)
-msgid "Ctrl"
-msgstr "Strg"
+#. (itstool) path: entry/para
+#: C/index.docbook:437
+msgid "<keycombo><keycap>Ctrl</keycap><keycap>C</keycap></keycombo>"
+msgstr "<keycombo><keycap>Strg</keycap><keycap>C</keycap></keycombo>"
 
-#: C/index.docbook:438(keycap)
-msgid "C"
-msgstr "C"
-
-#: C/index.docbook:442(para)
+#. (itstool) path: entry/para
+#: C/index.docbook:442
 msgid "Copies text. This can be used in any of the text areas."
 msgstr ""
 "Text wird kopiert. Dies kann in jedem der Textbereiche verwendet werden."
 
-#: C/index.docbook:448(keycap)
-msgid "X"
-msgstr "X"
+#. (itstool) path: entry/para
+#: C/index.docbook:447
+msgid "<keycombo><keycap>Ctrl</keycap><keycap>X</keycap></keycombo>"
+msgstr "<keycombo><keycap>Strg</keycap><keycap>X</keycap></keycombo>"
 
-#: C/index.docbook:452(para)
+#. (itstool) path: entry/para
+#: C/index.docbook:452
 msgid ""
 "Cuts text. This only works in the <guilabel>Outgoing</guilabel> single-line "
 "text box."
@@ -750,11 +825,13 @@ msgstr ""
 "Schneidet Text aus. Das funktioniert nur im einzeiligen Textfeld "
 "<guilabel>Ausgehend</guilabel>."
 
-#: C/index.docbook:458(keycap)
-msgid "V"
-msgstr "V"
+#. (itstool) path: entry/para
+#: C/index.docbook:457
+msgid "<keycombo><keycap>Ctrl</keycap><keycap>V</keycap></keycombo>"
+msgstr "<keycombo><keycap>Strg</keycap><keycap>V</keycap></keycombo>"
 
-#: C/index.docbook:462(para)
+#. (itstool) path: entry/para
+#: C/index.docbook:462
 msgid ""
 "Pastes text into the <guilabel>Outgoing</guilabel> single-line text box, and "
 "moves the focus to that text box."
@@ -762,44 +839,14 @@ msgstr ""
 "Fügt Text in das einzeilige Textfeld <guilabel>Ausgehend</guilabel> ein und "
 "aktiviert dieses Textfeld."
 
-#: C/index.docbook:471(keycap)
-msgid "Esc"
-msgstr "Esc"
+#. (itstool) path: entry/para
+#: C/index.docbook:470
+msgid "<keycap>Esc</keycap>"
+msgstr "<keycap>Esc</keycap>"
 
-#: C/index.docbook:475(para)
+#. (itstool) path: entry/para
+#: C/index.docbook:475
 msgid ""
 "Moves the focus to the <guilabel>Outgoing</guilabel> single-line text box."
 msgstr "Aktiviert das einzeilige Textfeld <guilabel>Ausgehend</guilabel>."
 
-#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
-#: C/index.docbook:0(None)
-msgid "translator-credits"
-msgstr "Mario Blättermann <mariobl@freenet.de>, 2009, 2011"
-
-#~ msgid "2.26.0"
-#~ msgstr "2.26.0"
-
-#~ msgid ""
-#~ "There are a number of ways this is done on a Linux system. On Fedora 10, "
-#~ "you may need to use the PolicyKit tool, invoked using "
-#~ "<menuchoice><guisubmenu>System</guisubmenu><guisubmenu>Preferences</"
-#~ "guisubmenu><guisubmenu>System</guisubmenu><guimenuitem>Authorizations</"
-#~ "guimenuitem></menuchoice>. Then, navigate to the "
-#~ "<menuchoice><guisubmenu>org</guisubmenu><guisubmenu>freedesktop</"
-#~ "guisubmenu><guisubmenu>device-access</guisubmenu><guimenuitem>Directly "
-#~ "access serial modem devices</guimenuitem></menuchoice>, and click "
-#~ "<guilabel>edit</guilabel>. Set <guilabel>Anyone:</guilabel> to \"Yes\"."
-#~ msgstr ""
-#~ "Dazu gibt es auf einem Linux-System verschiedene Möglichkeiten. Unter "
-#~ "Fedora 10 benötigen Sie das Werkzeug <application>PolicyKit</application>, "
-#~ "das Sie über <menuchoice><guisubmenu>System</"
-#~ "guisubmenu><guisubmenu>Einstellungen</guisubmenu><guisubmenu>System</"
-#~ "guisubmenu><guimenuitem>Autorisierungen</guimenuitem></menuchoice> "
-#~ "erreichen. Dann navigieren Sie zu <menuchoice><guisubmenu>org</"
-#~ "guisubmenu><guisubmenu>freedesktop</guisubmenu><guisubmenu>Gerätezugriff</"
-#~ "guisubmenu><guimenuitem>Auf serielle Modems direkt zugreifen</"
-#~ "guimenuitem></menuchoice> und klicken auf <guilabel>Bearbeiten</guilabel>. "
-#~ "Setzen Sie <guilabel>Alle:</guilabel> auf »Ja«."
-
-#~ msgid "Serial Port Authorizations on Fedora 10"
-#~ msgstr "Legitimierung der seriellen Ports in Fedora 10"
