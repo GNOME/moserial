@@ -1,0 +1,570 @@
+# Serbian translation for moserial.
+# Courtesy of Prevod.org team (http://prevod.org/) -- 2016.
+# Copyright (C) 2016 moserial's COPYRIGHT HOLDER
+# This file is distributed under the same license as the moserial package.
+# Мирослав Николић <miroslavnikolic@rocketmail.com>, 2016.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: moserial master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=moserial&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2016-01-05 13:37+0000\n"
+"PO-Revision-Date: 2016-01-05 18:01+0100\n"
+"Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
+"Language-Team: Serbian <gnom@prevod.org>\n"
+"Language: sr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Project-Style: gnome\n"
+
+#: ../data/ui/mainwindow.ui.h:1
+msgid "moserial"
+msgstr "мосеријал"
+
+#: ../data/ui/mainwindow.ui.h:2
+msgid "_File"
+msgstr "_Датотека"
+
+#: ../data/ui/mainwindow.ui.h:3
+msgid "Open _Recent"
+msgstr "Отвори _скорашње"
+
+#: ../data/ui/mainwindow.ui.h:4
+msgid "_Edit"
+msgstr "_Уређивање"
+
+#: ../data/ui/mainwindow.ui.h:5
+msgid "_Help"
+msgstr "По_моћ"
+
+#: ../data/ui/mainwindow.ui.h:6
+msgid "Connect"
+msgstr "Повежи"
+
+#: ../data/ui/mainwindow.ui.h:7
+msgid "Record"
+msgstr "Сними"
+
+#: ../data/ui/mainwindow.ui.h:8
+msgid "Send File"
+msgstr "Пошаљи датотеку"
+
+#: ../data/ui/mainwindow.ui.h:9
+msgid "Receive File"
+msgstr "Прими датотеку"
+
+#: ../data/ui/mainwindow.ui.h:10 ../data/ui/settings_dialog.ui.h:1
+msgid "Port Setup"
+msgstr "Прикључник"
+
+#: ../data/ui/mainwindow.ui.h:11 ../data/ui/preferences.ui.h:1
+msgid "Preferences"
+msgstr "Поставке"
+
+#: ../data/ui/mainwindow.ui.h:12
+msgid "Help"
+msgstr "Помоћ"
+
+#: ../data/ui/mainwindow.ui.h:13
+msgid "Received ASCII"
+msgstr "Примљени АСКРИ"
+
+#: ../data/ui/mainwindow.ui.h:14
+msgid "Received HEX"
+msgstr "Примљени ХЕКС"
+
+#: ../data/ui/mainwindow.ui.h:15
+msgid "Sent ASCII"
+msgstr "Послати АСКРИ"
+
+#: ../data/ui/mainwindow.ui.h:16
+msgid "Sent HEX"
+msgstr "Послати ХЕКС"
+
+#: ../data/ui/mainwindow.ui.h:17 ../src/SerialStreamRecorder.vala:30
+msgid "Outgoing"
+msgstr "Одлазно"
+
+#: ../data/ui/mainwindow.ui.h:18
+msgid "Send"
+msgstr "Пошаљи"
+
+#: ../data/ui/mainwindow.ui.h:19
+msgid "Disconnect"
+msgstr "Прекини везу"
+
+#: ../data/ui/mainwindow.ui.h:20
+msgid "Stop Recording"
+msgstr "Заустави снимање"
+
+#: ../data/ui/preferences.ui.h:2
+msgid "Font"
+msgstr "Словни лик"
+
+#: ../data/ui/preferences.ui.h:3
+msgid "_Use the system fixed width font"
+msgstr "_Користи системски словни лик сталне ширине"
+
+#: ../data/ui/preferences.ui.h:4
+msgid "Display Font"
+msgstr "Словни лик приказа"
+
+#: ../data/ui/preferences.ui.h:5
+msgid "Font Colour"
+msgstr "Боја словног лика"
+
+#: ../data/ui/preferences.ui.h:6
+msgid "Background Color"
+msgstr "Боја позадине"
+
+#: ../data/ui/preferences.ui.h:7
+msgid "Highlight Color"
+msgstr "Боја истицања"
+
+#: ../data/ui/preferences.ui.h:8
+msgid "Recording"
+msgstr "Снимање"
+
+#: ../data/ui/preferences.ui.h:9
+msgid "_Launch recorded files"
+msgstr "_Покрени снимљене датотеке"
+
+#: ../data/ui/preferences.ui.h:10
+msgid "Enable timeout after"
+msgstr "Укључи истек времена након"
+
+#: ../data/ui/preferences.ui.h:11
+msgid "seconds"
+msgstr "секунде"
+
+#: ../data/ui/receive_chooser.ui.h:1
+msgid "Select Folder for Received Files"
+msgstr "Изабери фасциклу за примљене датотеке"
+
+#: ../data/ui/receive_chooser.ui.h:2 ../data/ui/send_chooser_dialog.ui.h:2
+msgid "Error Correction Protocol"
+msgstr "Протокол исправљања грешке"
+
+#: ../data/ui/receive_progress.ui.h:1
+msgid "Receive File Progress"
+msgstr "Напредовање пријема датотеке"
+
+#: ../data/ui/record_dialog.ui.h:1
+msgid "Record Incoming and/or Outgoing Data"
+msgstr "Снимите долазне и/или одлазне податке"
+
+#: ../data/ui/record_dialog.ui.h:2
+msgid "Stream to record"
+msgstr "Ток за снимање"
+
+#: ../data/ui/send_chooser_dialog.ui.h:1
+msgid "Select File to Send"
+msgstr "Изабери датотеку за слање"
+
+#: ../data/ui/send_progress_dialog.ui.h:1
+msgid "Send File Progress"
+msgstr "Напредовање слања датотеке"
+
+#: ../data/ui/settings_dialog.ui.h:2
+msgid "Port Settings"
+msgstr "Подешавања прикључника"
+
+#: ../data/ui/settings_dialog.ui.h:3
+msgid "Hardware"
+msgstr "Хардвер"
+
+#: ../data/ui/settings_dialog.ui.h:4
+msgid "Software"
+msgstr "Софтвер"
+
+#: ../data/ui/settings_dialog.ui.h:5
+msgid "Access Mode"
+msgstr "Режим приступа"
+
+#: ../data/ui/settings_dialog.ui.h:6
+msgid "Handshake"
+msgstr "Руковање"
+
+#: ../data/ui/settings_dialog.ui.h:7
+msgid "Parity"
+msgstr "Парност"
+
+#: ../data/ui/settings_dialog.ui.h:8
+msgid "Stop Bits"
+msgstr "Битови заустављања"
+
+#: ../data/ui/settings_dialog.ui.h:9
+msgid "Data Bits"
+msgstr "Битови података"
+
+#: ../data/ui/settings_dialog.ui.h:10
+msgid "Baud Rate"
+msgstr "Брзина у бодима"
+
+#: ../data/ui/settings_dialog.ui.h:11
+msgid "Device"
+msgstr "Уређај"
+
+#: ../data/ui/settings_dialog.ui.h:12
+msgid "Local Echo"
+msgstr "Локални одјек"
+
+#: ../data/ui/settings_dialog.ui.h:13
+msgid "Echo received data"
+msgstr "Одјекни примљеним подацима"
+
+#: ../data/ui/xmodem_filename_dialog.ui.h:1
+msgid "Filename required for XMODEM"
+msgstr "Назив датотеке је потребан за ИксМОДЕМ"
+
+#: ../data/moserial.desktop.in.h:1
+msgid "moserial Terminal"
+msgstr "Терминал мосеријал"
+
+#: ../data/moserial.desktop.in.h:2
+msgid "Serial Terminal"
+msgstr "Серијски терминал"
+
+#: ../data/moserial.desktop.in.h:3
+msgid "A serial terminal optimized for logging and file capture"
+msgstr "Серијски терминал прилагођен за пријављивање и снимање датотека"
+
+#: ../data/moserial.appdata.xml.in.h:1
+msgid "Serial terminal"
+msgstr "Серијски терминал"
+
+#: ../data/moserial.appdata.xml.in.h:2
+msgid ""
+"Moserial is a serial terminal used for interacting with serial consoles and "
+"embedded devices. It supports the view of incoming and outgoing data in both "
+"ASCII and hexadecimal formats with the option to log this data. It also "
+"supports sending and receiving of x, y, and z-modem files, and has profiles "
+"to easily switch between configurations for different devices you are "
+"communicating with."
+msgstr ""
+"Мосеријал је серијски терминал који се користи за међудејство са серијским "
+"конзолама и уграђеним уређајима. Подржава преглед улазних и излазних "
+"података у АСКРИ и хексадецималним форматима са опцијом прибележавања ових "
+"података. Такође подржава слање и примање датотека x, y, и z-модема, и "
+"садржи профиле за лако пребацивање између подешавања различитих уређаја са "
+"којима комуницирате."
+
+#: ../src/InputParser.vala:44 ../src/InputParser.vala:54
+msgid "Invalid Input"
+msgstr "Неисправан улаз"
+
+#: ../src/Main.vala:26
+msgid "Profile file to load"
+msgstr "Датотека профила за учитавање"
+
+#: ../src/Main.vala:45
+msgid "- moserial serial terminal"
+msgstr "— серијски терминал мосеријал"
+
+#: ../src/Main.vala:50 ../src/Main.vala:58
+#, c-format
+msgid "Run '%s --help' to see a full list of available command line options.\n"
+msgstr ""
+"Покрените „%s --help“ да видите читав списак доступних могућности линије "
+"наредби.\n"
+
+#: ../src/MainWindow.vala:30
+msgid "translator-credits"
+msgstr ""
+"Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
+"\n"
+"http://prevod.org — превод на српски језик"
+
+#: ../src/MainWindow.vala:32
+msgid ""
+"moserial is free software: you can redistribute it and/or modify it under "
+"the terms of the GNU General Public License as published by the Free "
+"Software Foundation, either version 3 of the License, or (at your option) "
+"any later version.\n"
+msgstr ""
+"Овај програм је слободан софтвер; можете га расподељивати\n"
+"и/или мењати под условима Гнуове опште јавне лиценце коју\n"
+"је објавила Задужбина слободног софтвера; издања 3 лиценце\n"
+"или (по вашем избору) било којег новијег издања."
+
+#: ../src/MainWindow.vala:33
+msgid ""
+"moserial is distributed in the hope that it will be useful, but WITHOUT ANY "
+"WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
+"FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
+"details.\n"
+msgstr ""
+"Овај програм се расподељује у нади да ће бити користан,\n"
+"али БЕЗ ИКАКВЕ ГАРАНЦИЈЕ; чак и без примењене гаранције\n"
+"ТРЖИШНЕ ВРЕДНОСТИ или ПРИЛАГОЂЕНОСТИ ОДРЕЂЕНОЈ НАМЕНИ.\n"
+"Погледајте Гнуову Општу јавну лиценцу за више детаља."
+
+#: ../src/MainWindow.vala:34
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"this program.  If not, see <http://www.gnu.org/licenses/>."
+msgstr ""
+"Требали сте да примите примерак Гнуове Опште јавне лиценце\n"
+"уз овај програм. Ако нисте, видите „http://www.gnu.org/licenses/“."
+
+#: ../src/MainWindow.vala:64
+msgid "ASCII"
+msgstr "АСКРИ"
+
+#: ../src/MainWindow.vala:64
+msgid "HEX"
+msgstr "ХЕКС"
+
+#: ../src/MainWindow.vala:165
+msgid "Port configuration"
+msgstr "Подешавање прикључника"
+
+#: ../src/MainWindow.vala:170
+msgid "Read the manual"
+msgstr "Прочитајте упутство"
+
+#: ../src/MainWindow.vala:180
+msgid "TX: 0, RX: 0"
+msgstr "ДОЛ.: 0; ОДЛ.: 0"
+
+#: ../src/MainWindow.vala:191
+msgid "Send a file"
+msgstr "Пошаљите датотеку"
+
+#: ../src/MainWindow.vala:200
+msgid "Receive a file"
+msgstr "Примите датотеку"
+
+#: ../src/MainWindow.vala:210
+msgid "Record sent and/or received data"
+msgstr "Сними послате и/или примљене податке"
+
+#: ../src/MainWindow.vala:221
+msgid "Other preferences"
+msgstr "Остале поставке"
+
+#: ../src/MainWindow.vala:226
+msgid "Open/close port"
+msgstr "Отвори/затвори прикључник"
+
+#: ../src/MainWindow.vala:274
+msgid "Send the outgoing data now."
+msgstr "Пошаљи одлазне податке сада."
+
+#: ../src/MainWindow.vala:277
+msgid "Type outgoing data here. Press Enter or Send to send it."
+msgstr ""
+"Овде упишите одлазне податке. Притисните „Унеси“ или „Пошаљи“ да их пошаљете."
+
+#: ../src/MainWindow.vala:564 ../src/Profile.vala:76 ../src/Profile.vala:107
+msgid "Error: Could not open file"
+msgstr "Грешка: Не могу да отворим датотеку"
+
+#: ../src/MainWindow.vala:642
+msgid "Error: Could not open device"
+msgstr "Грешка: Не могу да отворим уређај"
+
+#: ../src/MainWindow.vala:764
+#, c-format
+msgid "Unable to display help file: %s"
+msgstr "Не могу да прикажем датотеку помоћи: %s"
+
+#: ../src/MainWindow.vala:775
+msgid ""
+"A serial terminal for the GNOME desktop, optimized for logging and file "
+"capture."
+msgstr ""
+"Серијски терминал за Гномову радну површ, прилагођен за пријављивање и "
+"снимање датотека"
+
+#: ../src/MainWindow.vala:828
+msgid ""
+"You have changed your setting or preferences. Do you want to save these "
+"changes to the loaded profile?"
+msgstr ""
+"Изменили сте ваша подешавања или поставке. Да ли желите да сачувате ове "
+"измене у учитаном профилу?"
+
+#: ../src/PreferencesDialog.vala:49
+msgid ""
+"If this option is enabled, a recorded file will be opened immediately after "
+"it is saved, using the default application for the file type. The default "
+"application is defined by the desktop environment."
+msgstr ""
+"Ако је ова опција укључена, забележена датотека ће бити отворена одмах након "
+"што је сачувана, употребом основног програма за ту врсту датотеке. Основни "
+"програм је одређен радним окружењем."
+
+#: ../src/PreferencesDialog.vala:52
+msgid ""
+"If this option is enabled, recording will be automatically stopped after an "
+"adjustable period of inactivity after receiving some data. Moserial will "
+"wait indefinitely to record the first data byte before activating the "
+"inactivity timer."
+msgstr ""
+"Ако је ова опција укључена, прибележавање ће бити аутоматски заустављено "
+"након подесивог периода неактивности након пријема неких података. Мосеријал "
+"ће чекати у недоглед да прибележи први бајт података пре него што активирата "
+"одбројавач неактивности."
+
+#: ../src/Preferences.vala:65
+msgid "Unable to retrieve system font setting"
+msgstr "Не могу да добавим подешавање системског словног лика"
+
+#: ../src/Rzwrapper.vala:24 ../src/Szwrapper.vala:24
+msgid "Xmodem"
+msgstr "X-модем"
+
+#: ../src/Rzwrapper.vala:25 ../src/Szwrapper.vala:25
+msgid "Ymodem"
+msgstr "Y-модем"
+
+#: ../src/Rzwrapper.vala:26 ../src/Szwrapper.vala:26
+msgid "Zmodem"
+msgstr "Z-модем"
+
+#: ../src/SendProgressDialog.vala:42
+msgid "Waiting for remote host"
+msgstr "Чекам на удаљени рачунар"
+
+#: ../src/SerialConnection.vala:43
+msgid "CR+LF end"
+msgstr "ЦР+ЛВ крај"
+
+#: ../src/SerialConnection.vala:44
+msgid "CR end"
+msgstr "ЦР крај"
+
+#: ../src/SerialConnection.vala:45
+msgid "LF end"
+msgstr "ЛВ крај"
+
+#: ../src/SerialConnection.vala:46
+msgid "TAB end"
+msgstr "ТАБ крај"
+
+#: ../src/SerialConnection.vala:47
+msgid "ESC end"
+msgstr "ИЗЛ крај"
+
+#: ../src/SerialConnection.vala:48
+msgid "No end"
+msgstr "Нема краја"
+
+#: ../src/SerialConnection.vala:302
+#, c-format
+msgid "TX: %lu, RX: %lu (%lu unprintable)"
+msgstr "ОДЛ: %lu, ДОЛ: %lu (%lu неисписиво)"
+
+#: ../src/SerialConnection.vala:304
+#, c-format
+msgid "TX: %lu, RX: %lu"
+msgstr "ДОЛ.: %lu, ОДЛ.: %lu"
+
+#: ../src/SerialStreamRecorder.vala:29
+msgid "Incoming"
+msgstr "Долазно"
+
+#: ../src/SerialStreamRecorder.vala:31
+msgid "Incoming and Outgoing"
+msgstr "Долазно и одлазно"
+
+#: ../src/SerialStreamRecorder.vala:57 ../src/SerialStreamRecorder.vala:68
+#: ../src/SerialStreamRecorder.vala:89
+#, c-format
+msgid "error: %s\n"
+msgstr "грешка: %s\n"
+
+#: ../src/SerialStreamRecorder.vala:98
+#, c-format
+msgid "Unable to launch %s: %s"
+msgstr "Не могу да покренем „%s“: %s"
+
+#: ../src/SettingsDialog.vala:66
+msgid "Also known as RTS/CTS handshaking"
+msgstr "Такође познато као „RTS/CTS“ руковање"
+
+#: ../src/SettingsDialog.vala:69
+msgid "Also known as XON/XOFF handshaking"
+msgstr "Такође познато као „XON/XOFF“ руковање"
+
+#: ../src/SettingsDialog.vala:75
+msgid "Normally disabled"
+msgstr "Уобичајено искључено"
+
+#: ../src/Settings.vala:25
+msgid "None"
+msgstr "Ништа"
+
+#: ../src/Settings.vala:26
+msgid "Odd"
+msgstr "Непарно"
+
+#: ../src/Settings.vala:27
+msgid "Even"
+msgstr "Парно"
+
+#: ../src/Settings.vala:28
+msgid "Mark"
+msgstr "Белег"
+
+#: ../src/Settings.vala:29
+msgid "Space"
+msgstr "Размак"
+
+#: ../src/Settings.vala:34
+msgid "Read and Write"
+msgstr "Читање и писање"
+
+#: ../src/Settings.vala:35
+msgid "Read Only"
+msgstr "Само читање"
+
+#: ../src/Settings.vala:36
+msgid "Write Only"
+msgstr "Само писање"
+
+#. TRANSLATORS: first letter of "None", a serial port parity setting
+#: ../src/Settings.vala:89
+msgid "N"
+msgstr "Н"
+
+#. TRANSLATORS: first letter of "Odd", a serial port parity setting
+#: ../src/Settings.vala:93
+msgid "O"
+msgstr "Н"
+
+#. TRANSLATORS: first letter of "Even", a serial port parity setting
+#: ../src/Settings.vala:97
+msgid "E"
+msgstr "П"
+
+#. TRANSLATORS: first letter of "Mark", a serial port parity setting
+#: ../src/Settings.vala:101
+msgid "M"
+msgstr "Б"
+
+#. TRANSLATORS: first letter of "Space", a serial port parity setting
+#: ../src/Settings.vala:105
+msgid "S"
+msgstr "Р"
+
+#: ../src/Settings.vala:115
+msgid "OPEN"
+msgstr "ОТВАРА"
+
+#: ../src/Settings.vala:116
+msgid "CLOSED"
+msgstr "ЗАТВОРЕН"
+
+#: ../src/Szwrapper.vala:27
+msgid "None (straight binary)"
+msgstr "Ништа (прави извршни)"
+
+#: ../src/Szwrapper.vala:185
+msgid "canceled"
+msgstr "отказано"
