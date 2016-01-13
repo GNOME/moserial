@@ -41,7 +41,7 @@ public class Settings : GLib.Object
 						"4800", "9600", "19200",
 						"38400", "57600", "115200",
 						"230400", "460800", "576000",
-						"927600", "1000000", "2000000"
+						"921600", "1000000", "2000000"
 						 };
 
         public static string DEFAULT_DEVICEFILE = "/dev/ttyS0";
