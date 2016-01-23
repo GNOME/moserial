@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright 2014 Ryan Lerch <rlerch@redhat.com> -->
-
-<application>
-  <id type="desktop">moserial.desktop</id>
+<component type="desktop">
+  <id>moserial.desktop</id>
   <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0+</project_license>
+  <_name>moserial</_name>
   <_summary>Serial terminal</_summary>
   <description>
     <_p>
@@ -16,8 +17,14 @@
       are communicating with. 
     </_p>
   </description>
+  <project_group>GNOME</project_group>
   <url type="homepage">https://wiki.gnome.org/moserial/</url>
+  <url type="bugtracker">https://bugzilla.gnome.org/enter_bug.cgi?product=moserial</url>
+  <url type="donation">http://www.gnome.org/friends/</url>
+  <url type="help">https://help.gnome.org/users/moserial/stable/</url>
   <screenshots>
-    <screenshot type="default">https://wiki.gnome.org/moserial?action=AttachFile&amp;do=get&amp;target=main.png</screenshot>
+    <screenshot type="default">
+      <image>https://wiki.gnome.org/moserial?action=AttachFile&amp;do=get&amp;target=main.png</image>
+    </screenshot>
   </screenshots>
-</application>
+</component>
