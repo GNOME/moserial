@@ -1,225 +1,221 @@
-# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-# Aviary.pl
-# Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
-# pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
-# gnomepl@aviary.pl
-# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-# Piotr Drąg <piotrdrag@gmail.com>, 2012-2014.
-# Aviary.pl <gnomepl@aviary.pl>, 2012-2014.
+# Polish translation for moserial.
+# Copyright © 2012-2016 the moserial authors.
+# This file is distributed under the same license as the moserial package.
+# Piotr Drąg <piotrdrag@gmail.com>, 2012-2016.
+# Aviary.pl <community-poland@mozilla.org>, 2012-2016.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: moserial\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-22 20:01+0200\n"
-"PO-Revision-Date: 2014-09-22 20:02+0200\n"
+"POT-Creation-Date: 2016-08-21 15:49+0200\n"
+"PO-Revision-Date: 2016-08-21 15:50+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
-"Language-Team: Polish <gnomepl@aviary.pl>\n"
+"Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Poedit-Language: Polish\n"
-"X-Poedit-Country: Poland\n"
 
-#: ../data/glade/moserial.ui.h:1
-msgid "Preferences"
-msgstr "Preferencje"
-
-#: ../data/glade/moserial.ui.h:2
-msgid "Font"
-msgstr "Czcionka"
-
-#: ../data/glade/moserial.ui.h:3
-msgid "_Use the system fixed width font"
-msgstr "Czci_onka systemowa o stałej szerokości"
-
-#: ../data/glade/moserial.ui.h:4
-msgid "Display Font"
-msgstr "Wyświetlana czcionka"
-
-#: ../data/glade/moserial.ui.h:5
-msgid "Font Colour"
-msgstr "Kolor czcionki"
-
-#: ../data/glade/moserial.ui.h:6
-msgid "Background Color"
-msgstr "Kolor tła"
-
-#: ../data/glade/moserial.ui.h:7
-msgid "Highlight Color"
-msgstr "Kolor wyróżnienia"
-
-#: ../data/glade/moserial.ui.h:8
-msgid "Recording"
-msgstr "Nagrywanie"
-
-#: ../data/glade/moserial.ui.h:9
-msgid "_Launch recorded files"
-msgstr "_Uruchamianie nagranych plików"
-
-#: ../data/glade/moserial.ui.h:10
-msgid "Enable timeout after"
-msgstr "Włączenie czasu oczekiwania po"
-
-#: ../data/glade/moserial.ui.h:11
-msgid "seconds"
-msgstr "sekundach"
-
-#: ../data/glade/moserial.ui.h:12
-msgid "Select Folder for Received Files"
-msgstr "Wybór katalogu dla odebranych plików"
-
-#: ../data/glade/moserial.ui.h:13
-msgid "Error Correction Protocol"
-msgstr "Protokół korekcji błędów"
-
-#: ../data/glade/moserial.ui.h:14
-msgid "Receive File Progress"
-msgstr "Postęp odebierania plików"
-
-#: ../data/glade/moserial.ui.h:15
-msgid "Record Incoming and/or Outgoing Data"
-msgstr "Nagrywanie przychodzących i/lub wychodzących danych"
-
-#: ../data/glade/moserial.ui.h:16
-msgid "Stream to record"
-msgstr "Potok do nagrania"
-
-#: ../data/glade/moserial.ui.h:17
-msgid "Select File to Send"
-msgstr "Wybór pliku do wysłania"
-
-#: ../data/glade/moserial.ui.h:18
-msgid "Send File Progress"
-msgstr "Postęp wysyłania pliku"
-
-#: ../data/glade/moserial.ui.h:19
-msgid "Port Setup"
-msgstr "Ustawienia portu"
-
-#: ../data/glade/moserial.ui.h:20
-msgid "Port Settings"
-msgstr "Ustawienia portu"
-
-#: ../data/glade/moserial.ui.h:21
-msgid "Hardware"
-msgstr "Sprzęt"
-
-#: ../data/glade/moserial.ui.h:22
-msgid "Software"
-msgstr "Oprogramowanie"
-
-#: ../data/glade/moserial.ui.h:23
-msgid "Access Mode"
-msgstr "Tryb dostępu"
-
-#: ../data/glade/moserial.ui.h:24
-msgid "Handshake"
-msgstr "Powitanie"
-
-#: ../data/glade/moserial.ui.h:25
-msgid "Parity"
-msgstr "Parzystość"
-
-#: ../data/glade/moserial.ui.h:26
-msgid "Stop Bits"
-msgstr "Bity zatrzymania"
-
-#: ../data/glade/moserial.ui.h:27
-msgid "Data Bits"
-msgstr "Bity danych"
-
-#: ../data/glade/moserial.ui.h:28
-msgid "Baud Rate"
-msgstr "Prędkość w baudach"
-
-#: ../data/glade/moserial.ui.h:29
-msgid "Device"
-msgstr "Urządzenie"
-
-#: ../data/glade/moserial.ui.h:30
-msgid "Local Echo"
-msgstr "Lokalne powtarzanie"
-
-#: ../data/glade/moserial.ui.h:31
-msgid "Echo received data"
-msgstr "Powtarzanie odebranych danych"
-
-#: ../data/glade/moserial.ui.h:32
+#: ../data/ui/mainwindow.ui.h:1 ../data/moserial.appdata.xml.in.h:1
 msgid "moserial"
 msgstr "moserial"
 
-#: ../data/glade/moserial.ui.h:33
+#: ../data/ui/mainwindow.ui.h:2
 msgid "_File"
 msgstr "_Plik"
 
-#: ../data/glade/moserial.ui.h:34
+#: ../data/ui/mainwindow.ui.h:3
 msgid "Open _Recent"
 msgstr "_Otwórz ostatnie"
 
-#: ../data/glade/moserial.ui.h:35
+#: ../data/ui/mainwindow.ui.h:4
 msgid "_Edit"
 msgstr "_Edycja"
 
-#: ../data/glade/moserial.ui.h:36
+#: ../data/ui/mainwindow.ui.h:5
 msgid "_Help"
 msgstr "Pomo_c"
 
-#: ../data/glade/moserial.ui.h:37
+#: ../data/ui/mainwindow.ui.h:6
 msgid "Connect"
 msgstr "Połącz"
 
-#: ../data/glade/moserial.ui.h:38
+#: ../data/ui/mainwindow.ui.h:7
 msgid "Record"
 msgstr "Nagraj"
 
-#: ../data/glade/moserial.ui.h:39
+#: ../data/ui/mainwindow.ui.h:8
 msgid "Send File"
 msgstr "Wyślij plik"
 
-#: ../data/glade/moserial.ui.h:40
+#: ../data/ui/mainwindow.ui.h:9
 msgid "Receive File"
 msgstr "Odbierz plik"
 
-#: ../data/glade/moserial.ui.h:41
+#: ../data/ui/mainwindow.ui.h:10 ../data/ui/settings_dialog.ui.h:1
+msgid "Port Setup"
+msgstr "Ustawienia portu"
+
+#: ../data/ui/mainwindow.ui.h:11 ../data/ui/preferences.ui.h:1
+msgid "Preferences"
+msgstr "Preferencje"
+
+#: ../data/ui/mainwindow.ui.h:12
 msgid "Help"
 msgstr "Pomoc"
 
-#: ../data/glade/moserial.ui.h:42
+#: ../data/ui/mainwindow.ui.h:13
 msgid "Received ASCII"
 msgstr "Odebrane ASCII"
 
-#: ../data/glade/moserial.ui.h:43
+#: ../data/ui/mainwindow.ui.h:14
 msgid "Received HEX"
 msgstr "Odebrane HEX"
 
-#: ../data/glade/moserial.ui.h:44
+#: ../data/ui/mainwindow.ui.h:15
 msgid "Sent ASCII"
 msgstr "Wysłane ASCII"
 
-#: ../data/glade/moserial.ui.h:45
+#: ../data/ui/mainwindow.ui.h:16
 msgid "Sent HEX"
 msgstr "Wysłane HEX"
 
-#: ../data/glade/moserial.ui.h:46 ../src/SerialStreamRecorder.vala:30
+#: ../data/ui/mainwindow.ui.h:17 ../src/SerialStreamRecorder.vala:30
 msgid "Outgoing"
 msgstr "Wychodzące"
 
-#: ../data/glade/moserial.ui.h:47
+#: ../data/ui/mainwindow.ui.h:18
 msgid "Send"
 msgstr "Wyślij"
 
-#: ../data/glade/moserial.ui.h:48
+#: ../data/ui/mainwindow.ui.h:19
 msgid "Disconnect"
 msgstr "Rozłącz"
 
-#: ../data/glade/moserial.ui.h:49
+#: ../data/ui/mainwindow.ui.h:20
 msgid "Stop Recording"
 msgstr "Zatrzymaj nagrywanie"
 
-#: ../data/glade/moserial.ui.h:50
+#: ../data/ui/preferences.ui.h:2
+msgid "Font"
+msgstr "Czcionka"
+
+#: ../data/ui/preferences.ui.h:3
+msgid "_Use the system fixed width font"
+msgstr "Czci_onka systemowa o stałej szerokości"
+
+#: ../data/ui/preferences.ui.h:4
+msgid "Display Font"
+msgstr "Wyświetlana czcionka"
+
+#: ../data/ui/preferences.ui.h:5
+msgid "Font Colour"
+msgstr "Kolor czcionki"
+
+#: ../data/ui/preferences.ui.h:6
+msgid "Background Color"
+msgstr "Kolor tła"
+
+#: ../data/ui/preferences.ui.h:7
+msgid "Highlight Color"
+msgstr "Kolor wyróżnienia"
+
+#: ../data/ui/preferences.ui.h:8
+msgid "Recording"
+msgstr "Nagrywanie"
+
+#: ../data/ui/preferences.ui.h:9
+msgid "_Launch recorded files"
+msgstr "_Uruchamianie nagranych plików"
+
+#: ../data/ui/preferences.ui.h:10
+msgid "Enable timeout after"
+msgstr "Włączenie czasu oczekiwania po"
+
+#: ../data/ui/preferences.ui.h:11
+msgid "seconds"
+msgstr "sekundach"
+
+#: ../data/ui/receive_chooser.ui.h:1
+msgid "Select Folder for Received Files"
+msgstr "Wybór katalogu dla odebranych plików"
+
+#: ../data/ui/receive_chooser.ui.h:2 ../data/ui/send_chooser_dialog.ui.h:2
+msgid "Error Correction Protocol"
+msgstr "Protokół korekcji błędów"
+
+#: ../data/ui/receive_progress.ui.h:1
+msgid "Receive File Progress"
+msgstr "Postęp odbierania plików"
+
+#: ../data/ui/record_dialog.ui.h:1
+msgid "Record Incoming and/or Outgoing Data"
+msgstr "Nagrywanie przychodzących i/lub wychodzących danych"
+
+#: ../data/ui/record_dialog.ui.h:2
+msgid "Stream to record"
+msgstr "Potok do nagrania"
+
+#: ../data/ui/send_chooser_dialog.ui.h:1
+msgid "Select File to Send"
+msgstr "Wybór pliku do wysłania"
+
+#: ../data/ui/send_progress_dialog.ui.h:1
+msgid "Send File Progress"
+msgstr "Postęp wysyłania pliku"
+
+#: ../data/ui/settings_dialog.ui.h:2
+msgid "Port Settings"
+msgstr "Ustawienia portu"
+
+#: ../data/ui/settings_dialog.ui.h:3
+msgid "Hardware"
+msgstr "Sprzęt"
+
+#: ../data/ui/settings_dialog.ui.h:4
+msgid "Software"
+msgstr "Oprogramowanie"
+
+#: ../data/ui/settings_dialog.ui.h:5
+msgid "Access Mode"
+msgstr "Tryb dostępu"
+
+#: ../data/ui/settings_dialog.ui.h:6
+msgid "Handshake"
+msgstr "Powitanie"
+
+#: ../data/ui/settings_dialog.ui.h:7
+msgid "Parity"
+msgstr "Parzystość"
+
+#: ../data/ui/settings_dialog.ui.h:8
+msgid "Stop Bits"
+msgstr "Bity zatrzymania"
+
+#: ../data/ui/settings_dialog.ui.h:9
+msgid "Data Bits"
+msgstr "Bity danych"
+
+#: ../data/ui/settings_dialog.ui.h:10
+msgid "Baud Rate"
+msgstr "Prędkość w baudach"
+
+#: ../data/ui/settings_dialog.ui.h:11
+msgid "Device"
+msgstr "Urządzenie"
+
+#: ../data/ui/settings_dialog.ui.h:12
+msgid "Local Echo"
+msgstr "Lokalne powtarzanie"
+
+#: ../data/ui/settings_dialog.ui.h:13
+msgid "Echo received data"
+msgstr "Powtarzanie odebranych danych"
+
+#: ../data/ui/xmodem_filename_dialog.ui.h:1
 msgid "Filename required for XMODEM"
 msgstr "Wymagana jest nazwa pliku dla XMODEM"
 
@@ -234,13 +230,13 @@ msgstr "Terminal szeregowy"
 #: ../data/moserial.desktop.in.h:3
 msgid "A serial terminal optimized for logging and file capture"
 msgstr ""
-"Terminal szeregowy zoptymalizowany do nagrywania i przechwytywania plików"
+"Terminal szeregowy zoptymalizowany do nagrywania i przechwytywania plików"
 
-#: ../data/moserial.appdata.xml.in.h:1
+#: ../data/moserial.appdata.xml.in.h:2
 msgid "Serial terminal"
 msgstr "Terminal szeregowy"
 
-#: ../data/moserial.appdata.xml.in.h:2
+#: ../data/moserial.appdata.xml.in.h:3
 msgid ""
 "Moserial is a serial terminal used for interacting with serial consoles and "
 "embedded devices. It supports the view of incoming and outgoing data in both "
@@ -249,15 +245,14 @@ msgid ""
 "to easily switch between configurations for different devices you are "
 "communicating with."
 msgstr ""
-"moserial to terminal szeregowy używany z konsolami szeregowymi i "
-"urządzeniami osadzonymi. Obsługuje on wyświetlanie danych przychodzących i "
-"wychodzących w formatach ASCII i szesnastkowych, umożliwiając ich "
-"zapisywanie. Obsługuje także wysyłanie i odbieranie plików modemów X, Y i Z, "
+"moserial to terminal szeregowy używany z konsolami szeregowymi "
+"i urządzeniami osadzonymi. Obsługuje on wyświetlanie danych przychodzących "
+"i wychodzących w formatach ASCII i szesnastkowych, umożliwiając ich "
+"zapisywanie. Obsługuje także wysyłanie i odbieranie plików modemów X, Y i Z, "
 "oraz posiada profile to łatwego przełączania się między konfiguracjami dla "
 "różnych urządzeń."
 
-#: ../src/InputParser.vala:45 ../src/InputParser.vala:52
-#: ../src/InputParser.vala:58
+#: ../src/InputParser.vala:44 ../src/InputParser.vala:54
 msgid "Invalid Input"
 msgstr "Nieprawidłowe wejście"
 
@@ -265,31 +260,22 @@ msgstr "Nieprawidłowe wejście"
 msgid "Profile file to load"
 msgstr "Plik profilu do wczytania"
 
-#: ../src/Main.vala:36
-#, c-format
-msgid ""
-"Failed to load UI\n"
-"%s"
-msgstr ""
-"Wczytanie interfejsu użytkownika się nie powiodło\n"
-"%s"
-
-#: ../src/Main.vala:52
+#: ../src/Main.vala:45
 msgid "- moserial serial terminal"
-msgstr "- terminal szeregowy moserial"
+msgstr "— terminal szeregowy moserial"
 
-#: ../src/Main.vala:57 ../src/Main.vala:65
+#: ../src/Main.vala:50 ../src/Main.vala:58
 #, c-format
 msgid "Run '%s --help' to see a full list of available command line options.\n"
 msgstr ""
-"Polecenie \"%s --help\" wyświetli pełną listę dostępnych opcji wiersza "
+"Polecenie „%s --help” wyświetli pełną listę dostępnych opcji wiersza "
 "poleceń.\n"
 
 #: ../src/MainWindow.vala:30
 msgid "translator-credits"
 msgstr ""
-"Piotr Drąg <piotrdrag@gmail.com>, 2012-2014\n"
-"Aviary.pl <gnomepl@aviary.pl>, 2012-2014"
+"Piotr Drąg <piotrdrag@gmail.com>, 2012-2016\n"
+"Aviary.pl <community-poland@mozilla.org>, 2012-2016"
 
 #: ../src/MainWindow.vala:32
 msgid ""
@@ -300,8 +286,8 @@ msgid ""
 msgstr ""
 "Program moserial jest wolnym oprogramowaniem; można go rozprowadzać dalej i/"
 "lub modyfikować na warunkach Powszechnej Licencji Publicznej GNU, wydanej "
-"przez Fundację Wolnego Oprogramowania - według wersji trzeciej tej Licencji "
-"lub którejś z późniejszych wersji.\n"
+"przez Fundację Wolnego Oprogramowania — według wersji trzeciej tej Licencji "
+"lub którejś z późniejszych wersji.\n"
 
 #: ../src/MainWindow.vala:33
 msgid ""
@@ -310,10 +296,10 @@ msgid ""
 "FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
 "details.\n"
 msgstr ""
-"Program moserial rozpowszechniany jest z nadzieją, iż będzie on użyteczny - "
+"Program moserial rozpowszechniany jest z nadzieją, iż będzie on użyteczny — "
 "jednak BEZ JAKIEJKOLWIEK GWARANCJI, nawet domyślnej gwarancji PRZYDATNOŚCI "
-"HANDLOWEJ albo PRZYDATNOŚCI DO OKREŚLONYCH ZASTOSOWAŃ. W celu uzyskania "
-"bliższych informacji należy zapoznać się z Powszechną Licencją Publiczną "
+"HANDLOWEJ albo PRZYDATNOŚCI DO OKREŚLONYCH ZASTOSOWAŃ. W celu uzyskania "
+"bliższych informacji należy zapoznać się z Powszechną Licencją Publiczną "
 "GNU.\n"
 
 #: ../src/MainWindow.vala:34
@@ -321,89 +307,89 @@ msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "this program.  If not, see <http://www.gnu.org/licenses/>."
 msgstr ""
-"Z pewnością wraz z niniejszym programem dostarczono także egzemplarz "
+"Z pewnością wraz z niniejszym programem dostarczono także egzemplarz "
 "Powszechnej Licencji Publicznej GNU (GNU General Public License); jeśli nie "
-"- proszę odwiedzić stronę internetową <http://www.gnu.org/licenses/>."
+"— proszę odwiedzić stronę internetową <http://www.gnu.org/licenses/>."
 
-#: ../src/MainWindow.vala:65
+#: ../src/MainWindow.vala:64
 msgid "ASCII"
 msgstr "ASCII"
 
-#: ../src/MainWindow.vala:65
+#: ../src/MainWindow.vala:64
 msgid "HEX"
 msgstr "HEX"
 
-#: ../src/MainWindow.vala:163
+#: ../src/MainWindow.vala:165
 msgid "Port configuration"
 msgstr "Konfiguracja portu"
 
-#: ../src/MainWindow.vala:168
+#: ../src/MainWindow.vala:170
 msgid "Read the manual"
-msgstr "Przeczytaj podręcznik"
+msgstr "Podręcznik"
 
-#: ../src/MainWindow.vala:178
+#: ../src/MainWindow.vala:180
 msgid "TX: 0, RX: 0"
 msgstr "Wysyłanie: 0, odbieranie: 0"
 
-#: ../src/MainWindow.vala:189
+#: ../src/MainWindow.vala:191
 msgid "Send a file"
 msgstr "Wyślij plik"
 
-#: ../src/MainWindow.vala:198
+#: ../src/MainWindow.vala:200
 msgid "Receive a file"
 msgstr "Odbierz plik"
 
-#: ../src/MainWindow.vala:208
+#: ../src/MainWindow.vala:210
 msgid "Record sent and/or received data"
 msgstr "Nagraj wysłane i/lub odebrane dane"
 
-#: ../src/MainWindow.vala:219
+#: ../src/MainWindow.vala:221
 msgid "Other preferences"
 msgstr "Inne preferencje"
 
-#: ../src/MainWindow.vala:224
+#: ../src/MainWindow.vala:226
 msgid "Open/close port"
 msgstr "Otwórz/zamknij port"
 
-#: ../src/MainWindow.vala:272
+#: ../src/MainWindow.vala:274
 msgid "Send the outgoing data now."
 msgstr "Wyślij wychodzące dane teraz."
 
-#: ../src/MainWindow.vala:275
+#: ../src/MainWindow.vala:277
 msgid "Type outgoing data here. Press Enter or Send to send it."
 msgstr ""
 "Tutaj można wpisać dane wychodzące. Naciśnięcie klawisza Enter lub przycisku "
 "Wyślij spowoduje ich wysłanie."
 
-#: ../src/MainWindow.vala:562 ../src/Profile.vala:76 ../src/Profile.vala:107
+#: ../src/MainWindow.vala:564 ../src/Profile.vala:76 ../src/Profile.vala:107
 msgid "Error: Could not open file"
 msgstr "Błąd: nie można otworzyć pliku"
 
-#: ../src/MainWindow.vala:640
+#: ../src/MainWindow.vala:642
 msgid "Error: Could not open device"
 msgstr "Błąd: nie można otworzyć urządzenia"
 
-#: ../src/MainWindow.vala:762
+#: ../src/MainWindow.vala:764
 #, c-format
 msgid "Unable to display help file: %s"
 msgstr "Nie można wyświetlić pliku pomocy: %s"
 
-#: ../src/MainWindow.vala:773
+#: ../src/MainWindow.vala:775
 msgid ""
 "A serial terminal for the GNOME desktop, optimized for logging and file "
 "capture."
 msgstr ""
-"Terminal szeregowy dla środowiska GNOME, zoptymalizowane do nagrywania i "
-"przechwytywania plików."
+"Terminal szeregowy dla środowiska GNOME, zoptymalizowane do nagrywania "
+"i przechwytywania plików."
 
-#: ../src/MainWindow.vala:826
+#: ../src/MainWindow.vala:828
 msgid ""
 "You have changed your setting or preferences. Do you want to save these "
 "changes to the loaded profile?"
 msgstr ""
 "Zmieniono ustawienia lu preferencje. Zapisać te zmiany we wczytanym profilu?"
 
-#: ../src/PreferencesDialog.vala:50
+#: ../src/PreferencesDialog.vala:49
 msgid ""
 "If this option is enabled, a recorded file will be opened immediately after "
 "it is saved, using the default application for the file type. The default "
@@ -411,9 +397,9 @@ msgid ""
 msgstr ""
 "Jeśli ta opcja jest włączona, nagrany plik zostanie otwarty natychmiast po "
 "jego zapisaniu, używając domyślnego programu dla danego typu pliku. Domyślny "
-"program jest konfigurowany w środowisku graficznym."
+"program jest konfigurowany w środowisku graficznym."
 
-#: ../src/PreferencesDialog.vala:53
+#: ../src/PreferencesDialog.vala:52
 msgid ""
 "If this option is enabled, recording will be automatically stopped after an "
 "adjustable period of inactivity after receiving some data. Moserial will "
@@ -422,7 +408,7 @@ msgid ""
 msgstr ""
 "Jeśli ta opcja jest włączona, nagranie zostanie automatycznie zatrzymane po "
 "określonym okresie nieaktywności po odebraniu części danych. Program "
-"moserial będzie czekał w nieskończoność na nagranie pierwszego bajtu danych "
+"moserial będzie czekał w nieskończoność na nagranie pierwszego bajtu danych "
 "przed aktywowaniem zegara nieaktywności."
 
 #: ../src/Preferences.vala:65
@@ -441,7 +427,7 @@ msgstr "Ymodem"
 msgid "Zmodem"
 msgstr "Zmodem"
 
-#: ../src/SendProgressDialog.vala:43
+#: ../src/SendProgressDialog.vala:42
 msgid "Waiting for remote host"
 msgstr "Oczekiwanie na zdalny komputer"
 
@@ -485,7 +471,7 @@ msgstr "Przychodzące"
 
 #: ../src/SerialStreamRecorder.vala:31
 msgid "Incoming and Outgoing"
-msgstr "Przychodzące i wychodzące"
+msgstr "Przychodzące i wychodzące"
 
 #: ../src/SerialStreamRecorder.vala:57 ../src/SerialStreamRecorder.vala:68
 #: ../src/SerialStreamRecorder.vala:89
@@ -498,15 +484,15 @@ msgstr "błąd: %s\n"
 msgid "Unable to launch %s: %s"
 msgstr "Nie można uruchomić %s: %s"
 
-#: ../src/SettingsDialog.vala:67
+#: ../src/SettingsDialog.vala:66
 msgid "Also known as RTS/CTS handshaking"
 msgstr "Znane także jako powitanie RTS/CTS"
 
-#: ../src/SettingsDialog.vala:70
+#: ../src/SettingsDialog.vala:69
 msgid "Also known as XON/XOFF handshaking"
 msgstr "Znane także jako powitanie XON/XOFF"
 
-#: ../src/SettingsDialog.vala:76
+#: ../src/SettingsDialog.vala:75
 msgid "Normally disabled"
 msgstr "Zwykle wyłączone"
 
@@ -532,7 +518,7 @@ msgstr "Spacja"
 
 #: ../src/Settings.vala:34
 msgid "Read and Write"
-msgstr "Odczyt i zapis"
+msgstr "Odczyt i zapis"
 
 #: ../src/Settings.vala:35
 msgid "Read Only"
