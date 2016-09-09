@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: moserial\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-21 15:49+0200\n"
-"PO-Revision-Date: 2016-08-21 15:50+0200\n"
+"POT-Creation-Date: 2016-09-09 23:54+0200\n"
+"PO-Revision-Date: 2016-09-09 23:55+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -153,7 +153,7 @@ msgstr "Postęp odbierania plików"
 
 #: ../data/ui/record_dialog.ui.h:1
 msgid "Record Incoming and/or Outgoing Data"
-msgstr "Nagrywanie przychodzących i/lub wychodzących danych"
+msgstr "Nagrywanie przychodzących lub wychodzących danych"
 
 #: ../data/ui/record_dialog.ui.h:2
 msgid "Stream to record"
@@ -249,7 +249,7 @@ msgstr ""
 "i urządzeniami osadzonymi. Obsługuje on wyświetlanie danych przychodzących "
 "i wychodzących w formatach ASCII i szesnastkowych, umożliwiając ich "
 "zapisywanie. Obsługuje także wysyłanie i odbieranie plików modemów X, Y i Z, "
-"oraz posiada profile to łatwego przełączania się między konfiguracjami dla "
+"oraz ma profile do łatwego przełączania się między konfiguracjami dla "
 "różnych urządzeń."
 
 #: ../src/InputParser.vala:44 ../src/InputParser.vala:54
@@ -341,7 +341,7 @@ msgstr "Odbierz plik"
 
 #: ../src/MainWindow.vala:210
 msgid "Record sent and/or received data"
-msgstr "Nagraj wysłane i/lub odebrane dane"
+msgstr "Nagraj wysłane lub odebrane dane"
 
 #: ../src/MainWindow.vala:221
 msgid "Other preferences"
@@ -396,7 +396,7 @@ msgid ""
 "application is defined by the desktop environment."
 msgstr ""
 "Jeśli ta opcja jest włączona, nagrany plik zostanie otwarty natychmiast po "
-"jego zapisaniu, używając domyślnego programu dla danego typu pliku. Domyślny "
+"jego zapisaniu za pomocą domyślnego programu dla danego typu pliku. Domyślny "
 "program jest konfigurowany w środowisku graficznym."
 
 #: ../src/PreferencesDialog.vala:52
