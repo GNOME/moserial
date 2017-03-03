@@ -1,4 +1,4 @@
-AC_INIT([moserial],[3.0.10],[http://bugzilla.gnome.org/enter_bug.cgi?product=moserial])
+AC_INIT([moserial],[3.0.11],[http://bugzilla.gnome.org/enter_bug.cgi?product=moserial])
 AC_CONFIG_SRCDIR([Makefile.am])
 AC_CONFIG_HEADERS(config.h)
 AM_INIT_AUTOMAKE([dist-xz tar-ustar no-dist-gzip])
