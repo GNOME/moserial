@@ -117,7 +117,7 @@ msgid "Display Font"
 msgstr "Tekstskrifttype"
 
 #: ../data/ui/preferences.ui.h:5
-msgid "Font Colour"
+msgid "Font Color"
 msgstr "Skrifttypefarve"
 
 #: ../data/ui/preferences.ui.h:6

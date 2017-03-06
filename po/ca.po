@@ -202,7 +202,7 @@ msgid "Filename required for XMODEM"
 msgstr "Cal un nom de fitxer per l'XMODEM"
 
 #: ../data/glade/moserial.glade.h:57
-msgid "Font Colour"
+msgid "Font Color"
 msgstr "Color del tipus de lletra"
 
 #: ../data/glade/moserial.glade.h:58

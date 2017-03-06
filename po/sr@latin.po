@@ -114,7 +114,7 @@ msgid "Display Font"
 msgstr "Slovni lik prikaza"
 
 #: ../data/ui/preferences.ui.h:5
-msgid "Font Colour"
+msgid "Font Color"
 msgstr "Boja slovnog lika"
 
 #: ../data/ui/preferences.ui.h:6

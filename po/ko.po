@@ -192,7 +192,7 @@ msgid "Filename required for XMODEM"
 msgstr "XMODEM을 위한 파일 이름이 필요"
 
 #: ../data/glade/moserial.glade.h:57
-msgid "Font Colour"
+msgid "Font Color"
 msgstr "글꼴색"
 
 #: ../data/glade/moserial.glade.h:58

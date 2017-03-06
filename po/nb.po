@@ -158,7 +158,7 @@ msgid "Filename required for XMODEM"
 msgstr "Filnavn kreves for XMODEM"
 
 #: ../data/glade/moserial.glade.h:55
-msgid "Font Colour"
+msgid "Font Color"
 msgstr "Skriftfarge"
 
 #: ../data/glade/moserial.glade.h:56

@@ -115,7 +115,7 @@ msgid "Display Font"
 msgstr "Mostrar fonte"
 
 #: ../data/ui/preferences.ui.h:5
-msgid "Font Colour"
+msgid "Font Color"
 msgstr "Cor da fonte"
 
 #: ../data/ui/preferences.ui.h:6

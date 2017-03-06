@@ -113,7 +113,7 @@ msgid "Display Font"
 msgstr "Mostrar tipografía"
 
 #: ../data/ui/preferences.ui.h:5
-msgid "Font Colour"
+msgid "Font Color"
 msgstr "Color de la tipografía"
 
 #: ../data/ui/preferences.ui.h:6

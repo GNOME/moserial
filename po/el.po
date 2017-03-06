@@ -35,7 +35,7 @@ msgid "Display Font"
 msgstr "Γραμματοσειρά οθόνης"
 
 #: ../data/glade/moserial.ui.h:5
-msgid "Font Colour"
+msgid "Font Color"
 msgstr "Χρώμα γραμματοσειράς"
 
 #: ../data/glade/moserial.ui.h:6

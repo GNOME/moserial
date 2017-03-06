@@ -37,7 +37,7 @@ msgid "Display Font"
 msgstr "Font de afișare"
 
 #: ../data/glade/moserial.ui.h:5
-msgid "Font Colour"
+msgid "Font Color"
 msgstr "Culoarea fontului"
 
 #: ../data/glade/moserial.ui.h:6

@@ -116,7 +116,7 @@ msgid "Display Font"
 msgstr "Pisava prikaza"
 
 #: ../data/ui/preferences.ui.h:5
-msgid "Font Colour"
+msgid "Font Color"
 msgstr "Barva pisave"
 
 #: ../data/ui/preferences.ui.h:6

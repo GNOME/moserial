@@ -36,7 +36,7 @@ msgid "Display Font"
 msgstr "Betűkészlet megjelenítése"
 
 #: ../data/glade/moserial.ui.h:5
-msgid "Font Colour"
+msgid "Font Color"
 msgstr "Betűszín"
 
 #: ../data/glade/moserial.ui.h:6

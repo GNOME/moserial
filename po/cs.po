@@ -112,7 +112,7 @@ msgid "Display Font"
 msgstr "Písmo zobrazení"
 
 #: ../data/ui/preferences.ui.h:5
-msgid "Font Colour"
+msgid "Font Color"
 msgstr "Barva písma"
 
 #: ../data/ui/preferences.ui.h:6

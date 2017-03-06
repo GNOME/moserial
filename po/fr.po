@@ -71,7 +71,7 @@ msgid "Font"
 msgstr "Police"
 
 #: ../data/glade/moserial.ui.h:14
-msgid "Font Colour"
+msgid "Font Color"
 msgstr "Couleur de police"
 
 #: ../data/glade/moserial.ui.h:15

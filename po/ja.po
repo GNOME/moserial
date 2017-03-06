@@ -70,7 +70,7 @@ msgid "Font"
 msgstr "フォント"
 
 #: ../data/glade/moserial.ui.h:14
-msgid "Font Colour"
+msgid "Font Color"
 msgstr "文字の色"
 
 #: ../data/glade/moserial.ui.h:15

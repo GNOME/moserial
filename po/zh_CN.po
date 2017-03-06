@@ -35,7 +35,7 @@ msgid "Display Font"
 msgstr "显示字体"
 
 #: ../data/glade/moserial.ui.h:5
-msgid "Font Colour"
+msgid "Font Color"
 msgstr "字体颜色"
 
 #: ../data/glade/moserial.ui.h:6
