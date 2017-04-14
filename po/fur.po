@@ -1,0 +1,565 @@
+# Friulian translation for moserial.
+# Copyright (C) 2017 moserial's COPYRIGHT HOLDER
+# This file is distributed under the same license as the moserial package.
+# Fabio Tomat <f.t.public@gmail.com>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: moserial master\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
+"product=moserial&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2017-03-23 13:53+0000\n"
+"PO-Revision-Date: 2017-04-14 10:51+0200\n"
+"Language-Team: Friulian <fur@li.org>\n"
+"Language: fur\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
+"X-Generator: Poedit 1.8.12\n"
+
+#: ../data/ui/mainwindow.ui.h:1 ../data/moserial.appdata.xml.in.h:1
+msgid "moserial"
+msgstr "moserial"
+
+#: ../data/ui/mainwindow.ui.h:2
+msgid "_File"
+msgstr "_File"
+
+#: ../data/ui/mainwindow.ui.h:3
+msgid "Open _Recent"
+msgstr "Vierç _resint"
+
+#: ../data/ui/mainwindow.ui.h:4
+msgid "_Edit"
+msgstr "_Modifiche"
+
+#: ../data/ui/mainwindow.ui.h:5
+msgid "_Help"
+msgstr "_Jutori"
+
+#: ../data/ui/mainwindow.ui.h:6
+msgid "Connect"
+msgstr "Conet"
+
+#: ../data/ui/mainwindow.ui.h:7
+msgid "Record"
+msgstr "Regjistre"
+
+#: ../data/ui/mainwindow.ui.h:8
+msgid "Send File"
+msgstr "Invie file"
+
+#: ../data/ui/mainwindow.ui.h:9
+msgid "Receive File"
+msgstr "Ricêf file"
+
+#: ../data/ui/mainwindow.ui.h:10 ../data/ui/settings_dialog.ui.h:1
+msgid "Port Setup"
+msgstr "Configurazion de puarte"
+
+#: ../data/ui/mainwindow.ui.h:11 ../data/ui/preferences.ui.h:1
+msgid "Preferences"
+msgstr "Preferencis"
+
+#: ../data/ui/mainwindow.ui.h:12
+msgid "Help"
+msgstr "Jutori"
+
+#: ../data/ui/mainwindow.ui.h:13
+msgid "Received ASCII"
+msgstr "ASCII ricevût"
+
+#: ../data/ui/mainwindow.ui.h:14
+msgid "Received HEX"
+msgstr "HEX ricevût"
+
+#: ../data/ui/mainwindow.ui.h:15
+msgid "Sent ASCII"
+msgstr "ASCII inviât"
+
+#: ../data/ui/mainwindow.ui.h:16
+msgid "Sent HEX"
+msgstr "HEX inviât"
+
+#: ../data/ui/mainwindow.ui.h:17 ../src/SerialStreamRecorder.vala:30
+msgid "Outgoing"
+msgstr "In jessude"
+
+#: ../data/ui/mainwindow.ui.h:18
+msgid "Send"
+msgstr "Invie"
+
+#: ../data/ui/mainwindow.ui.h:19
+msgid "Disconnect"
+msgstr "Disconet"
+
+#: ../data/ui/mainwindow.ui.h:20
+msgid "Stop Recording"
+msgstr "Ferme regjistrazion"
+
+#: ../data/ui/preferences.ui.h:2
+msgid "Font"
+msgstr "Caratar"
+
+#: ../data/ui/preferences.ui.h:3
+msgid "_Use the system fixed width font"
+msgstr "_Dopre il caratar a largjece fisse di sisteme"
+
+#: ../data/ui/preferences.ui.h:4
+msgid "Display Font"
+msgstr "Mostre caratar"
+
+#: ../data/ui/preferences.ui.h:5
+msgid "Font Color"
+msgstr "Colôr caratar"
+
+#: ../data/ui/preferences.ui.h:6
+msgid "Background Color"
+msgstr "Colôr fondâl"
+
+#: ../data/ui/preferences.ui.h:7
+msgid "Highlight Color"
+msgstr "Colôr evidenziazion"
+
+#: ../data/ui/preferences.ui.h:8
+msgid "Recording"
+msgstr "Regjistrazion"
+
+#: ../data/ui/preferences.ui.h:9
+msgid "_Launch recorded files"
+msgstr "_Invie file regjistrâts"
+
+#: ../data/ui/preferences.ui.h:10
+msgid "Enable timeout after"
+msgstr "Abilite timp di scjadince daspò di"
+
+#: ../data/ui/preferences.ui.h:11
+msgid "seconds"
+msgstr "seconts"
+
+#: ../data/ui/receive_chooser.ui.h:1
+msgid "Select Folder for Received Files"
+msgstr "Selezione cartele pai file ricevûts"
+
+#: ../data/ui/receive_chooser.ui.h:2 ../data/ui/send_chooser_dialog.ui.h:2
+msgid "Error Correction Protocol"
+msgstr "Protocol di corezion dai erôrs"
+
+#: ../data/ui/receive_progress.ui.h:1
+msgid "Receive File Progress"
+msgstr "Stât di avanzament dal file ricevût"
+
+#: ../data/ui/record_dialog.ui.h:1
+msgid "Record Incoming and/or Outgoing Data"
+msgstr "Regjistre dâts di jentrade e/o jessude"
+
+#: ../data/ui/record_dialog.ui.h:2
+msgid "Stream to record"
+msgstr "Flus di regjistrâ"
+
+#: ../data/ui/send_chooser_dialog.ui.h:1
+msgid "Select File to Send"
+msgstr "Selezione file di inviâ"
+
+#: ../data/ui/send_progress_dialog.ui.h:1
+msgid "Send File Progress"
+msgstr "Stât di avanzament dal file inviât"
+
+#: ../data/ui/settings_dialog.ui.h:2
+msgid "Port Settings"
+msgstr "Impostazions puarte"
+
+#: ../data/ui/settings_dialog.ui.h:3
+msgid "Hardware"
+msgstr "Hardware"
+
+#: ../data/ui/settings_dialog.ui.h:4
+msgid "Software"
+msgstr "Software"
+
+#: ../data/ui/settings_dialog.ui.h:5
+msgid "Access Mode"
+msgstr "Modalitât di acès"
+
+#: ../data/ui/settings_dialog.ui.h:6
+msgid "Handshake"
+msgstr "Negoziazion"
+
+#: ../data/ui/settings_dialog.ui.h:7
+msgid "Parity"
+msgstr "Paritât"
+
+#: ../data/ui/settings_dialog.ui.h:8
+msgid "Stop Bits"
+msgstr "Bit di ferme"
+
+#: ../data/ui/settings_dialog.ui.h:9
+msgid "Data Bits"
+msgstr "Bit dâts"
+
+#: ../data/ui/settings_dialog.ui.h:10
+msgid "Baud Rate"
+msgstr "Tas di Baud"
+
+#: ../data/ui/settings_dialog.ui.h:11
+msgid "Device"
+msgstr "Dispositîf"
+
+#: ../data/ui/settings_dialog.ui.h:12
+msgid "Local Echo"
+msgstr "Eco locâl"
+
+#: ../data/ui/settings_dialog.ui.h:13
+msgid "Echo received data"
+msgstr "Eco dâts ricevûts"
+
+#: ../data/ui/xmodem_filename_dialog.ui.h:1
+msgid "Filename required for XMODEM"
+msgstr "Non file necessari par XMODEM"
+
+#: ../data/moserial.desktop.in.h:1
+msgid "moserial Terminal"
+msgstr "Terminâl moserial"
+
+#: ../data/moserial.desktop.in.h:2
+msgid "Serial Terminal"
+msgstr "Terminâl seriâl"
+
+#: ../data/moserial.desktop.in.h:3
+msgid "A serial terminal optimized for logging and file capture"
+msgstr "Un terminâl seriâl perfezionât pe regjistrazion e cature di file"
+
+#: ../data/moserial.appdata.xml.in.h:2
+msgid "Serial terminal"
+msgstr "Terminâl seriâl"
+
+#: ../data/moserial.appdata.xml.in.h:3
+msgid ""
+"Moserial is a serial terminal used for interacting with serial consoles and "
+"embedded devices. It supports the view of incoming and outgoing data in both "
+"ASCII and hexadecimal formats with the option to log this data. It also "
+"supports sending and receiving of x, y, and z-modem files, and has profiles "
+"to easily switch between configurations for different devices you are "
+"communicating with."
+msgstr ""
+"Moserial al è un terminâl seriâl doprât par interagjî cun lis console "
+"seriâls e i dispositîfs incorporâts. Al supuarte la viodude di dâts in "
+"jentrade e jessude sedi in formât ASCII che esadecimâl, cun la opzion di "
+"regjistrâ chescj dâts. Al supuarte ancje l'inviament e il riceviment dai "
+"file dal modem x,y e z; al à in plui i profîi par cambiâ in mût facil tra "
+"lis configurazions pai diferents dispositîfs cui cuâi si sta comunicant."
+
+#: ../src/InputParser.vala:44 ../src/InputParser.vala:54
+msgid "Invalid Input"
+msgstr "Jentrade no valide"
+
+#: ../src/Main.vala:26
+msgid "Profile file to load"
+msgstr "File profîl di cjariâ"
+
+#: ../src/Main.vala:45
+msgid "- moserial serial terminal"
+msgstr "- terminâl seriâl moserial"
+
+#: ../src/Main.vala:50 ../src/Main.vala:58
+#, c-format
+msgid "Run '%s --help' to see a full list of available command line options.\n"
+msgstr ""
+"Eseguìs “%s --help” par viodi la liste di dutis lis opzions disponibilis te "
+"rie di comant.\n"
+
+#: ../src/MainWindow.vala:30
+msgid "translator-credits"
+msgstr "Fabio Tomat <f.t.public@gmail.com>"
+
+#: ../src/MainWindow.vala:32
+msgid ""
+"moserial is free software: you can redistribute it and/or modify it under "
+"the terms of the GNU General Public License as published by the Free "
+"Software Foundation, either version 3 of the License, or (at your option) "
+"any later version.\n"
+msgstr ""
+"moserial al è software libar: o podês tornâ a distribuîlu e/o modificâlu sot "
+"i tiermins de Licence GNU General Public come publicade de Free Software "
+"Foundation, sedi la version 3 de licence, o (a to plasê) cualsisei version "
+"sucessive.\n"
+
+#: ../src/MainWindow.vala:33
+msgid ""
+"moserial is distributed in the hope that it will be useful, but WITHOUT ANY "
+"WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
+"FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
+"details.\n"
+msgstr ""
+"moserial al è distribuît inte sperance che al sedi util, ma CENCE NISSUNE "
+"GARANZIE; cence nancje la implicite garanzie di CUMIERÇABILITÂT o IDONEITÂT "
+"A UNE PARTICOLÂR FINALITÂT. Viodêt la GNU General Public License par vê plui "
+"detais.\n"
+
+#: ../src/MainWindow.vala:34
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"this program.  If not, see <http://www.gnu.org/licenses/>."
+msgstr ""
+"O varessis di vê ricevût une copie de licence GNU General Public adun cun "
+"chest program. Se no, viodêt <http://www.gnu.org/licenses/>."
+
+#: ../src/MainWindow.vala:64
+msgid "ASCII"
+msgstr "ASCII"
+
+#: ../src/MainWindow.vala:64
+msgid "HEX"
+msgstr "HEX"
+
+#: ../src/MainWindow.vala:165
+msgid "Port configuration"
+msgstr "Configurazion puarte"
+
+#: ../src/MainWindow.vala:170
+msgid "Read the manual"
+msgstr "Lei il manuâl"
+
+#: ../src/MainWindow.vala:180
+msgid "TX: 0, RX: 0"
+msgstr "TX: 0, RX: 0"
+
+#: ../src/MainWindow.vala:191
+msgid "Send a file"
+msgstr "Invie un file"
+
+#: ../src/MainWindow.vala:200
+msgid "Receive a file"
+msgstr "Ricêf un file"
+
+#: ../src/MainWindow.vala:210
+msgid "Record sent and/or received data"
+msgstr "Regjistre dâts inviâts e/o ricevûts"
+
+#: ../src/MainWindow.vala:221
+msgid "Other preferences"
+msgstr "Altris preferencis"
+
+#: ../src/MainWindow.vala:226
+msgid "Open/close port"
+msgstr "Vierç/siere puarte"
+
+#: ../src/MainWindow.vala:274
+msgid "Send the outgoing data now."
+msgstr "Invie i dâts in jessude cumò."
+
+#: ../src/MainWindow.vala:277
+msgid "Type outgoing data here. Press Enter or Send to send it."
+msgstr ""
+"Inserìs i dâts di jessude achì. Frache il tast Invie o il boton Invie par "
+"inviâ."
+
+#: ../src/MainWindow.vala:564 ../src/Profile.vala:76 ../src/Profile.vala:107
+msgid "Error: Could not open file"
+msgstr "Erôr: impussibil vierzi il file"
+
+#: ../src/MainWindow.vala:642
+msgid "Error: Could not open device"
+msgstr "Erôr: impussibil vierzi il dispositîf"
+
+#: ../src/MainWindow.vala:764
+#, c-format
+msgid "Unable to display help file: %s"
+msgstr "Impussibil mostrâ il file di jutori: %s"
+
+#: ../src/MainWindow.vala:775
+msgid ""
+"A serial terminal for the GNOME desktop, optimized for logging and file "
+"capture."
+msgstr ""
+"Un terminâl seriâl pal scritori GNOME, perfezionât pe regjistrazion e la "
+"cature di file."
+
+#: ../src/MainWindow.vala:828
+msgid ""
+"You have changed your setting or preferences. Do you want to save these "
+"changes to the loaded profile?"
+msgstr ""
+"Si à modificât lis impostazions o lis preferencis. Salvâ chestis modifichis "
+"tal profîl cjariât?"
+
+#: ../src/PreferencesDialog.vala:49
+msgid ""
+"If this option is enabled, a recorded file will be opened immediately after "
+"it is saved, using the default application for the file type. The default "
+"application is defined by the desktop environment."
+msgstr ""
+"Se cheste opzion e je abilitade, un file regjistrât al vignarà viert daurman "
+"dopo vêlu salvât; e vignarà doprade la aplicazion predefinide par chel "
+"gjenar di file. La aplicazion predefinide e je definide dal ambient scritori."
+
+#: ../src/PreferencesDialog.vala:52
+msgid ""
+"If this option is enabled, recording will be automatically stopped after an "
+"adjustable period of inactivity after receiving some data. Moserial will "
+"wait indefinitely to record the first data byte before activating the "
+"inactivity timer."
+msgstr ""
+"Se cheste opzion e je abilitade, la regjistrazion e vignarà fermade in "
+"automatic dopo un periodi stabilît di inativitât daspò vê ricevût un pôcs di "
+"dâts. Moserieal al spietarà di regjistrâ il prin byte di dâts prime di ativâ "
+"il timer di inativitât."
+
+#: ../src/Preferences.vala:65
+msgid "Unable to retrieve system font setting"
+msgstr "Impussibil otignî lis impostazions dal caratar dal sisteme"
+
+#: ../src/Rzwrapper.vala:24 ../src/Szwrapper.vala:24
+msgid "Xmodem"
+msgstr "Xmodem"
+
+#: ../src/Rzwrapper.vala:25 ../src/Szwrapper.vala:25
+msgid "Ymodem"
+msgstr "Ymodem"
+
+#: ../src/Rzwrapper.vala:26 ../src/Szwrapper.vala:26
+msgid "Zmodem"
+msgstr "Zmodem"
+
+#: ../src/SendProgressDialog.vala:42
+msgid "Waiting for remote host"
+msgstr "In spiete pal host rimot"
+
+#: ../src/SerialConnection.vala:43
+msgid "CR+LF end"
+msgstr "CR+LF fin"
+
+#: ../src/SerialConnection.vala:44
+msgid "CR end"
+msgstr "CR fin"
+
+#: ../src/SerialConnection.vala:45
+msgid "LF end"
+msgstr "LF fin"
+
+#: ../src/SerialConnection.vala:46
+msgid "TAB end"
+msgstr "TAB fin"
+
+#: ../src/SerialConnection.vala:47
+msgid "ESC end"
+msgstr "ESC fin"
+
+#: ../src/SerialConnection.vala:48
+msgid "No end"
+msgstr "Cence fin"
+
+#: ../src/SerialConnection.vala:302
+#, c-format
+msgid "TX: %lu, RX: %lu (%lu unprintable)"
+msgstr "TX: %lu, RX: %lu (%lu no stampabil)"
+
+#: ../src/SerialConnection.vala:304
+#, c-format
+msgid "TX: %lu, RX: %lu"
+msgstr "TX: %lu, RX: %lu"
+
+#: ../src/SerialStreamRecorder.vala:29
+msgid "Incoming"
+msgstr "In jentrade"
+
+#: ../src/SerialStreamRecorder.vala:31
+msgid "Incoming and Outgoing"
+msgstr "In jentrade e in jessude"
+
+#: ../src/SerialStreamRecorder.vala:57 ../src/SerialStreamRecorder.vala:68
+#: ../src/SerialStreamRecorder.vala:89
+#, c-format
+msgid "error: %s\n"
+msgstr "erôr: %s\n"
+
+#: ../src/SerialStreamRecorder.vala:98
+#, c-format
+msgid "Unable to launch %s: %s"
+msgstr "Impussibil inviâ %s: %s"
+
+#: ../src/SettingsDialog.vala:66
+msgid "Also known as RTS/CTS handshaking"
+msgstr "Ancje cognossût come negoziazion RTS/CTS"
+
+#: ../src/SettingsDialog.vala:69
+msgid "Also known as XON/XOFF handshaking"
+msgstr "Ancje cognossût come negoziazion XON/XOFF"
+
+#: ../src/SettingsDialog.vala:75
+msgid "Normally disabled"
+msgstr "Di solit disabilitât"
+
+#: ../src/Settings.vala:25
+msgid "None"
+msgstr "Nissun"
+
+#: ../src/Settings.vala:26
+msgid "Odd"
+msgstr "Dispar"
+
+#: ../src/Settings.vala:27
+msgid "Even"
+msgstr "Pâr"
+
+#: ../src/Settings.vala:28
+msgid "Mark"
+msgstr "Segne"
+
+#: ../src/Settings.vala:29
+msgid "Space"
+msgstr "Spazi"
+
+#: ../src/Settings.vala:34
+msgid "Read and Write"
+msgstr "Lei e scrîf"
+
+#: ../src/Settings.vala:35
+msgid "Read Only"
+msgstr "Dome leture"
+
+#: ../src/Settings.vala:36
+msgid "Write Only"
+msgstr "Dome scriture"
+
+#. TRANSLATORS: first letter of "None", a serial port parity setting
+#: ../src/Settings.vala:89
+msgid "N"
+msgstr "N"
+
+#. TRANSLATORS: first letter of "Odd", a serial port parity setting
+#: ../src/Settings.vala:93
+msgid "O"
+msgstr "O"
+
+#. TRANSLATORS: first letter of "Even", a serial port parity setting
+#: ../src/Settings.vala:97
+msgid "E"
+msgstr "E"
+
+#. TRANSLATORS: first letter of "Mark", a serial port parity setting
+#: ../src/Settings.vala:101
+msgid "M"
+msgstr "M"
+
+#. TRANSLATORS: first letter of "Space", a serial port parity setting
+#: ../src/Settings.vala:105
+msgid "S"
+msgstr "S"
+
+#: ../src/Settings.vala:115
+msgid "OPEN"
+msgstr "VIERÇ"
+
+#: ../src/Settings.vala:116
+msgid "CLOSED"
+msgstr "SIERÂT"
+
+#: ../src/Szwrapper.vala:27
+msgid "None (straight binary)"
+msgstr "Nissun (binari diret)"
+
+#: ../src/Szwrapper.vala:185
+msgid "canceled"
+msgstr "anulât"
