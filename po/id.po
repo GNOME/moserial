@@ -1,0 +1,565 @@
+# Indonesian translation for moserial.
+# Copyright (C) 2017 moserial's COPYRIGHT HOLDER
+# This file is distributed under the same license as the moserial package.
+# Andika Triwidada <atriwidada@gnome.org>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: moserial master\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
+"product=moserial&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2017-04-14 08:52+0000\n"
+"PO-Revision-Date: 2017-04-26 20:55+0700\n"
+"Language-Team: Indonesian <gnome-l10n-id@googlegroups.com>\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
+"X-Generator: Poedit 2.0\n"
+
+#: ../data/ui/mainwindow.ui.h:1 ../data/moserial.appdata.xml.in.h:1
+msgid "moserial"
+msgstr "moserial"
+
+#: ../data/ui/mainwindow.ui.h:2
+msgid "_File"
+msgstr "_Berkas"
+
+#: ../data/ui/mainwindow.ui.h:3
+msgid "Open _Recent"
+msgstr "Buka Te_rkini"
+
+#: ../data/ui/mainwindow.ui.h:4
+msgid "_Edit"
+msgstr "_Sunting"
+
+#: ../data/ui/mainwindow.ui.h:5
+msgid "_Help"
+msgstr "_Bantuan"
+
+#: ../data/ui/mainwindow.ui.h:6
+msgid "Connect"
+msgstr "Sambung"
+
+#: ../data/ui/mainwindow.ui.h:7
+msgid "Record"
+msgstr "Rekam"
+
+#: ../data/ui/mainwindow.ui.h:8
+msgid "Send File"
+msgstr "Kirim Berkas"
+
+#: ../data/ui/mainwindow.ui.h:9
+msgid "Receive File"
+msgstr "Terima Berkas"
+
+#: ../data/ui/mainwindow.ui.h:10 ../data/ui/settings_dialog.ui.h:1
+msgid "Port Setup"
+msgstr "Siapkan Port"
+
+#: ../data/ui/mainwindow.ui.h:11 ../data/ui/preferences.ui.h:1
+msgid "Preferences"
+msgstr "Preferensi"
+
+#: ../data/ui/mainwindow.ui.h:12
+msgid "Help"
+msgstr "Bantuan"
+
+#: ../data/ui/mainwindow.ui.h:13
+msgid "Received ASCII"
+msgstr "ASCII yang Diterima"
+
+#: ../data/ui/mainwindow.ui.h:14
+msgid "Received HEX"
+msgstr "HEX yang Diterima"
+
+#: ../data/ui/mainwindow.ui.h:15
+msgid "Sent ASCII"
+msgstr "ASCII yang Dikirim"
+
+#: ../data/ui/mainwindow.ui.h:16
+msgid "Sent HEX"
+msgstr "HEX yang Dikirim"
+
+#: ../data/ui/mainwindow.ui.h:17 ../src/SerialStreamRecorder.vala:30
+msgid "Outgoing"
+msgstr "Keluar"
+
+#: ../data/ui/mainwindow.ui.h:18
+msgid "Send"
+msgstr "Kirim"
+
+#: ../data/ui/mainwindow.ui.h:19
+msgid "Disconnect"
+msgstr "Putuskan"
+
+#: ../data/ui/mainwindow.ui.h:20
+msgid "Stop Recording"
+msgstr "Berhenti Merekam"
+
+#: ../data/ui/preferences.ui.h:2
+msgid "Font"
+msgstr "Fonta"
+
+#: ../data/ui/preferences.ui.h:3
+msgid "_Use the system fixed width font"
+msgstr "G_unakan fonta lebar tetap sistem"
+
+#: ../data/ui/preferences.ui.h:4
+msgid "Display Font"
+msgstr "Fonta Tampilan"
+
+#: ../data/ui/preferences.ui.h:5
+msgid "Font Color"
+msgstr "Warna Fonta"
+
+#: ../data/ui/preferences.ui.h:6
+msgid "Background Color"
+msgstr "Warna Latar"
+
+#: ../data/ui/preferences.ui.h:7
+msgid "Highlight Color"
+msgstr "Warna Sorot"
+
+#: ../data/ui/preferences.ui.h:8
+msgid "Recording"
+msgstr "Merekam"
+
+#: ../data/ui/preferences.ui.h:9
+msgid "_Launch recorded files"
+msgstr "_Luncurkan berkas yang direkam"
+
+#: ../data/ui/preferences.ui.h:10
+msgid "Enable timeout after"
+msgstr "Fungsikan tenggat waktu setelah"
+
+#: ../data/ui/preferences.ui.h:11
+msgid "seconds"
+msgstr "detik"
+
+#: ../data/ui/receive_chooser.ui.h:1
+msgid "Select Folder for Received Files"
+msgstr "Pilih Folder untuk Berkas Diterima"
+
+#: ../data/ui/receive_chooser.ui.h:2 ../data/ui/send_chooser_dialog.ui.h:2
+msgid "Error Correction Protocol"
+msgstr "Protokol Koreksi Kesalahan"
+
+#: ../data/ui/receive_progress.ui.h:1
+msgid "Receive File Progress"
+msgstr "Kemajuan Penerimaan Berkas"
+
+#: ../data/ui/record_dialog.ui.h:1
+msgid "Record Incoming and/or Outgoing Data"
+msgstr "Rekam Data Masuk dan/atau Keluar"
+
+#: ../data/ui/record_dialog.ui.h:2
+msgid "Stream to record"
+msgstr "Stream yang akan direkam"
+
+#: ../data/ui/send_chooser_dialog.ui.h:1
+msgid "Select File to Send"
+msgstr "Pilih Berkas yang akan Dikirim"
+
+#: ../data/ui/send_progress_dialog.ui.h:1
+msgid "Send File Progress"
+msgstr "Kemajuan Pengirimin Berkas"
+
+#: ../data/ui/settings_dialog.ui.h:2
+msgid "Port Settings"
+msgstr "Pengaturan Port"
+
+#: ../data/ui/settings_dialog.ui.h:3
+msgid "Hardware"
+msgstr "Perangkat Keras"
+
+#: ../data/ui/settings_dialog.ui.h:4
+msgid "Software"
+msgstr "Perangkat Lunak"
+
+#: ../data/ui/settings_dialog.ui.h:5
+msgid "Access Mode"
+msgstr "Mode Akses"
+
+#: ../data/ui/settings_dialog.ui.h:6
+msgid "Handshake"
+msgstr "Jabat Tangan"
+
+#: ../data/ui/settings_dialog.ui.h:7
+msgid "Parity"
+msgstr "Parity"
+
+#: ../data/ui/settings_dialog.ui.h:8
+msgid "Stop Bits"
+msgstr "Stop Bit"
+
+#: ../data/ui/settings_dialog.ui.h:9
+msgid "Data Bits"
+msgstr "Data Bit"
+
+#: ../data/ui/settings_dialog.ui.h:10
+msgid "Baud Rate"
+msgstr "Baud Rate"
+
+#: ../data/ui/settings_dialog.ui.h:11
+msgid "Device"
+msgstr "Perangkat"
+
+#: ../data/ui/settings_dialog.ui.h:12
+msgid "Local Echo"
+msgstr "Local Echo"
+
+#: ../data/ui/settings_dialog.ui.h:13
+msgid "Echo received data"
+msgstr "Gemakan data yang diterima"
+
+#: ../data/ui/xmodem_filename_dialog.ui.h:1
+msgid "Filename required for XMODEM"
+msgstr "Nama berkas diperlukan untuk XMODEM"
+
+#: ../data/moserial.desktop.in.h:1
+msgid "moserial Terminal"
+msgstr "Terminal moserial"
+
+#: ../data/moserial.desktop.in.h:2
+msgid "Serial Terminal"
+msgstr "Terminal Serial"
+
+#: ../data/moserial.desktop.in.h:3
+msgid "A serial terminal optimized for logging and file capture"
+msgstr ""
+"Sebuah terminal serial yang dioptimasi untuk penangkapan berkas dan log"
+
+#: ../data/moserial.appdata.xml.in.h:2
+msgid "Serial terminal"
+msgstr "Terminal serial"
+
+#: ../data/moserial.appdata.xml.in.h:3
+msgid ""
+"Moserial is a serial terminal used for interacting with serial consoles and "
+"embedded devices. It supports the view of incoming and outgoing data in both "
+"ASCII and hexadecimal formats with the option to log this data. It also "
+"supports sending and receiving of x, y, and z-modem files, and has profiles "
+"to easily switch between configurations for different devices you are "
+"communicating with."
+msgstr ""
+"Moserial adalah sebuah terminal serial yang dipakai untuk berinteraksi "
+"dengan konsol serial dan perangkat tertanam. Mendukung tilikan data masuk "
+"dan keluar dalam format ASCII dan heksadesimal dengan opsi mencatat log data "
+"ini. Mendukung juga pengiriman dan penerimaan berkas x, y, dan z-modem, dan "
+"punya profil agar dengan mudah bertukar antar konfigurasi untuk perangkat "
+"yang berbeda yang sedang berkomunikasi dengan Anda."
+
+#: ../src/InputParser.vala:44 ../src/InputParser.vala:54
+msgid "Invalid Input"
+msgstr "Masukan Tidak Valid"
+
+#: ../src/Main.vala:26
+msgid "Profile file to load"
+msgstr "Berkas profil yang akan dimuat"
+
+#: ../src/Main.vala:45
+msgid "- moserial serial terminal"
+msgstr "- moserial terminal serial"
+
+#: ../src/Main.vala:50 ../src/Main.vala:58
+#, c-format
+msgid "Run '%s --help' to see a full list of available command line options.\n"
+msgstr ""
+"Jalankan '%s --help' untuk melihat daftar lengkap opsi barsi perintah yang "
+"tersedia.\n"
+
+#: ../src/MainWindow.vala:30
+msgid "translator-credits"
+msgstr "Andika Triwidada <andika@gmail.com>, 2017"
+
+#: ../src/MainWindow.vala:32
+msgid ""
+"moserial is free software: you can redistribute it and/or modify it under "
+"the terms of the GNU General Public License as published by the Free "
+"Software Foundation, either version 3 of the License, or (at your option) "
+"any later version.\n"
+msgstr ""
+"moserial adalah perangkat lunak bebas; Anda dapat menyebarluaskannya dan/"
+"atau mengubahnya di bawah syarat GNU Lesser General Public License "
+"sebagaimana dipublikasikan oleh Free Software Foundation; baik versi 3 dari "
+"Lisensi, atau (terserah pilihan Anda) versi setelahnya.\n"
+
+#: ../src/MainWindow.vala:33
+msgid ""
+"moserial is distributed in the hope that it will be useful, but WITHOUT ANY "
+"WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
+"FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
+"details.\n"
+msgstr ""
+"moserial didistribusikan dengan harapan dapat berguna, tetapi TANPA ADANYA "
+"JAMINAN; termasuk tanpa jaminan DAYA JUAL atau KELAIKAN UNTUK TUJUAN "
+"TERTENTU. Lihat GNU Lesser General Public License untuk rincian lebih "
+"lanjut.\n"
+
+#: ../src/MainWindow.vala:34
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"this program.  If not, see <http://www.gnu.org/licenses/>."
+msgstr ""
+"Anda seharusnya menerima salinan dari GNU General Public License bersama "
+"dengan program ini. Jika tidak, lihat <http://www.gnu.org/licenses/>."
+
+#: ../src/MainWindow.vala:64
+msgid "ASCII"
+msgstr "ASCII"
+
+#: ../src/MainWindow.vala:64
+msgid "HEX"
+msgstr "HEX"
+
+#: ../src/MainWindow.vala:165
+msgid "Port configuration"
+msgstr "Konfigurasi port"
+
+#: ../src/MainWindow.vala:170
+msgid "Read the manual"
+msgstr "Bacalah manual"
+
+#: ../src/MainWindow.vala:180
+msgid "TX: 0, RX: 0"
+msgstr "TX: 0, RX: 0"
+
+#: ../src/MainWindow.vala:191
+msgid "Send a file"
+msgstr "Kirim sebuah berkas"
+
+#: ../src/MainWindow.vala:200
+msgid "Receive a file"
+msgstr "Terima sebuah berkas"
+
+#: ../src/MainWindow.vala:210
+msgid "Record sent and/or received data"
+msgstr "Rekam data yang terkirim dan/atau diterima"
+
+#: ../src/MainWindow.vala:221
+msgid "Other preferences"
+msgstr "Preferensi lain"
+
+#: ../src/MainWindow.vala:226
+msgid "Open/close port"
+msgstr "Buka/tutup port"
+
+#: ../src/MainWindow.vala:274
+msgid "Send the outgoing data now."
+msgstr "Kirim data keluar sekarang."
+
+#: ../src/MainWindow.vala:277
+msgid "Type outgoing data here. Press Enter or Send to send it."
+msgstr ""
+"Ketikkan data keluar di sini. Tekan Enter atau Kirim untuk mengirimnya."
+
+#: ../src/MainWindow.vala:564 ../src/Profile.vala:76 ../src/Profile.vala:107
+msgid "Error: Could not open file"
+msgstr "Kesalahan: Tidak bisa membuka berkas"
+
+#: ../src/MainWindow.vala:642
+msgid "Error: Could not open device"
+msgstr "Kesalahan: Tidak bisa membuka perangkat"
+
+#: ../src/MainWindow.vala:764
+#, c-format
+msgid "Unable to display help file: %s"
+msgstr "Tidak bisa menampilkan berkas bantuan: %s"
+
+#: ../src/MainWindow.vala:775
+msgid ""
+"A serial terminal for the GNOME desktop, optimized for logging and file "
+"capture."
+msgstr ""
+"Sebuah terminal serial untuk desktop GNOME, dioptimasi untuk penangkapan "
+"berkas dan log."
+
+#: ../src/MainWindow.vala:828
+msgid ""
+"You have changed your setting or preferences. Do you want to save these "
+"changes to the loaded profile?"
+msgstr ""
+"Anda telah mengubah preferensi atau pengaturan. Apakah hendak menyimpan "
+"perubahan ini ke profil yang dimuat?"
+
+#: ../src/PreferencesDialog.vala:49
+msgid ""
+"If this option is enabled, a recorded file will be opened immediately after "
+"it is saved, using the default application for the file type. The default "
+"application is defined by the desktop environment."
+msgstr ""
+"Bila opsi ini difungsikan, suatu berkas yang direkam akan dibuka seketika "
+"setelah itu disimpan, memakai aplikasi baku untuk tipe berkas itu. Aplikasi "
+"baku didefinisikan oleh lingkungan desktop."
+
+#: ../src/PreferencesDialog.vala:52
+msgid ""
+"If this option is enabled, recording will be automatically stopped after an "
+"adjustable period of inactivity after receiving some data. Moserial will "
+"wait indefinitely to record the first data byte before activating the "
+"inactivity timer."
+msgstr ""
+"Bila opsi ini difungsikan, perekaman akan dihentikan secara otomatis setelah "
+"suatu perioda ketidakaktifan yang dapat diatur setelah menerima beberapa "
+"data. Moserial akan menunggu selamanya untuk merekam byte data pertama "
+"sebelum mengaktifkan pewaktu ketidakaktifan."
+
+#: ../src/Preferences.vala:65
+msgid "Unable to retrieve system font setting"
+msgstr "Tidak bisa mengambil pengaturan fonta sistem"
+
+#: ../src/Rzwrapper.vala:24 ../src/Szwrapper.vala:24
+msgid "Xmodem"
+msgstr "Xmodem"
+
+#: ../src/Rzwrapper.vala:25 ../src/Szwrapper.vala:25
+msgid "Ymodem"
+msgstr "Ymodem"
+
+#: ../src/Rzwrapper.vala:26 ../src/Szwrapper.vala:26
+msgid "Zmodem"
+msgstr "Zmodem"
+
+#: ../src/SendProgressDialog.vala:42
+msgid "Waiting for remote host"
+msgstr "Menunggu host jauh"
+
+#: ../src/SerialConnection.vala:43
+msgid "CR+LF end"
+msgstr "Akhir CR+LF"
+
+#: ../src/SerialConnection.vala:44
+msgid "CR end"
+msgstr "Akhir CR"
+
+#: ../src/SerialConnection.vala:45
+msgid "LF end"
+msgstr "Akhir LF"
+
+#: ../src/SerialConnection.vala:46
+msgid "TAB end"
+msgstr "Akhir TAB"
+
+#: ../src/SerialConnection.vala:47
+msgid "ESC end"
+msgstr "Akhir ESC"
+
+#: ../src/SerialConnection.vala:48
+msgid "No end"
+msgstr "Tanpa akhiran"
+
+#: ../src/SerialConnection.vala:302
+#, c-format
+msgid "TX: %lu, RX: %lu (%lu unprintable)"
+msgstr "TX: %lu, RX: %lu (%lu tak bisa dicetak)"
+
+#: ../src/SerialConnection.vala:304
+#, c-format
+msgid "TX: %lu, RX: %lu"
+msgstr "TX: %lu, RX: %lu"
+
+#: ../src/SerialStreamRecorder.vala:29
+msgid "Incoming"
+msgstr "Masuk"
+
+#: ../src/SerialStreamRecorder.vala:31
+msgid "Incoming and Outgoing"
+msgstr "Masuk dan Keluar"
+
+#: ../src/SerialStreamRecorder.vala:57 ../src/SerialStreamRecorder.vala:68
+#: ../src/SerialStreamRecorder.vala:89
+#, c-format
+msgid "error: %s\n"
+msgstr "galat: %s\n"
+
+#: ../src/SerialStreamRecorder.vala:98
+#, c-format
+msgid "Unable to launch %s: %s"
+msgstr "Tidak bisa meluncurkan %s: %s"
+
+#: ../src/SettingsDialog.vala:66
+msgid "Also known as RTS/CTS handshaking"
+msgstr "Juga dikenal sebagai jabat tangan RTS/CTS"
+
+#: ../src/SettingsDialog.vala:69
+msgid "Also known as XON/XOFF handshaking"
+msgstr "Juga dikenal sebagai jabat tangan XON/XOFF"
+
+#: ../src/SettingsDialog.vala:75
+msgid "Normally disabled"
+msgstr "Normalnya dinonaktifkan"
+
+#: ../src/Settings.vala:25
+msgid "None"
+msgstr "None"
+
+#: ../src/Settings.vala:26
+msgid "Odd"
+msgstr "Odd"
+
+#: ../src/Settings.vala:27
+msgid "Even"
+msgstr "Even"
+
+#: ../src/Settings.vala:28
+msgid "Mark"
+msgstr "Mark"
+
+#: ../src/Settings.vala:29
+msgid "Space"
+msgstr "Space"
+
+#: ../src/Settings.vala:34
+msgid "Read and Write"
+msgstr "Baca dan Tulis"
+
+#: ../src/Settings.vala:35
+msgid "Read Only"
+msgstr "Hanya Baca"
+
+#: ../src/Settings.vala:36
+msgid "Write Only"
+msgstr "Hanya Tulis"
+
+#. TRANSLATORS: first letter of "None", a serial port parity setting
+#: ../src/Settings.vala:89
+msgid "N"
+msgstr "N"
+
+#. TRANSLATORS: first letter of "Odd", a serial port parity setting
+#: ../src/Settings.vala:93
+msgid "O"
+msgstr "O"
+
+#. TRANSLATORS: first letter of "Even", a serial port parity setting
+#: ../src/Settings.vala:97
+msgid "E"
+msgstr "E"
+
+#. TRANSLATORS: first letter of "Mark", a serial port parity setting
+#: ../src/Settings.vala:101
+msgid "M"
+msgstr "M"
+
+#. TRANSLATORS: first letter of "Space", a serial port parity setting
+#: ../src/Settings.vala:105
+msgid "S"
+msgstr "S"
+
+#: ../src/Settings.vala:115
+msgid "OPEN"
+msgstr "BUKA"
+
+#: ../src/Settings.vala:116
+msgid "CLOSED"
+msgstr "TERTUTUP"
+
+#: ../src/Szwrapper.vala:27
+msgid "None (straight binary)"
+msgstr "Nihil (biner langsung)"
+
+#: ../src/Szwrapper.vala:185
+msgid "canceled"
+msgstr "dibatalkan"
