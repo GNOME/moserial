@@ -3,15 +3,15 @@
 # This file is distributed under the same license as the moserial package.
 #
 # Andrej Žnidaršič <andrej.znidarsic@gmail.com>, 2010.
-# Matej Urbančič <mateju@svn.gnome.org>, 2016
+# Matej Urbančič <mateju@svn.gnome.org>, 2016–2017
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: moserial master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=moserial&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2016-03-12 21:50+0100\n"
-"PO-Revision-Date: 2016-03-12 21:50+0100\n"
+"POT-Creation-Date: 2017-05-04 08:40+0200\n"
+"PO-Revision-Date: 2017-05-04 08:41+0200\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: sl_SI\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Poedit 1.8.4\n"
+"X-Generator: Poedit 2.0.1\n"
 
 #: ../data/ui/mainwindow.ui.h:1 ../data/moserial.appdata.xml.in.h:1
 msgid "moserial"
