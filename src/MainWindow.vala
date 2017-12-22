@@ -106,8 +106,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 		GLib.Object(startupProfileFilename: profileFilename);
         }
         construct {
-                Builder builder = new Builder();
-                builder.add_from_resource(Config.UIROOT + "mainwindow.ui");
+                var builder = new Gtk.Builder.from_resource(Config.UIROOT + "mainwindow.ui");
 
                 //setup window
                 gtkWindow = (Gtk.Window)builder.get_object("window");

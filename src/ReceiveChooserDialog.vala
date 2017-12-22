@@ -26,8 +26,7 @@ public class moserial.ReceiveChooserDialog : GLib.Object
         public string path;
 
         construct {
-                Builder builder = new Builder();
-                builder.add_from_resource(Config.UIROOT + "receive_chooser.ui");
+                var builder = new Gtk.Builder.from_resource(Config.UIROOT + "receive_chooser.ui");
 
                 dialog = (FileChooserDialog)builder.get_object("receive_chooser_dialog");
 

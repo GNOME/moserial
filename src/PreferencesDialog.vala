@@ -33,8 +33,7 @@ public class moserial.PreferencesDialog : GLib.Object
         private SpinButton timeout;
         public signal void updatePreferences(Preferences preferences);
         construct {
-                Builder builder = new Builder();
-                builder.add_from_resource(Config.UIROOT + "preferences.ui");
+                var builder = new Gtk.Builder.from_resource(Config.UIROOT + "preferences.ui");
 
                 dialog = (Dialog)builder.get_object("preferences_dialog");
                 okButton = (Button)builder.get_object("preferences_ok");
