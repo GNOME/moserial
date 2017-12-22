@@ -93,7 +93,7 @@ public class moserial.SerialStreamRecorder {
 			/* TODO: allow this feature to be enabled / disabled */
 			if(launch && (MoUtils.fileSize(uri)>0)) {
 				try {
-					show_uri(null, uri,  Gdk.CURRENT_TIME);
+					show_uri_on_window(null, uri,  Gdk.CURRENT_TIME);
 				} catch (GLib.Error e) {
 					warning(_("Unable to launch %s: %s"), uri, e.message);
 				}
