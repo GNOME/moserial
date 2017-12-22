@@ -25,17 +25,14 @@ public class moserial.HexTextBuffer : TextBuffer
 	private TextMark nextHexMark;
         private TextMark nextCharMark;
         private TextTag addressTag;
-        private TextTag oddTag;
         private int hexBytes;
         construct {
 		setup();
      	        addressTag = this.create_tag("hex_address", "foreground", "#2020ff", null);
-     	        oddTag = this.create_tag("hex_odd", "foreground", "#2020ff", null);
      	        
         }
         public void applyPreferences(Preferences preferences) {
         	addressTag.foreground=preferences.highlightColor;
-	       	oddTag.foreground=preferences.highlightColor;
         }
         public void clear() {
         	this.delete_mark(nextHexMark);
