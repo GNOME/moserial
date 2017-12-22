@@ -69,11 +69,7 @@ public class moserial.HexTextBuffer : TextBuffer
                         	this.add_mark(startMark, nextCharIter);
 
                         	// Insert offset info (hexBytes)
-#if VALA_0_16
 				this.insert(ref nextCharIter, "\n%08x".printf(hexBytes), 9);
-#else
-				this.insert(nextCharIter, "\n%08x".printf(hexBytes), 9);
-#endif
 				this.get_end_iter (out nextCharIter);	
 
 				// Format offset info
@@ -82,11 +78,7 @@ public class moserial.HexTextBuffer : TextBuffer
 	                        this.delete_mark(startMark);
 
 	                        // Blank space
-#if VALA_0_16
 				this.insert(ref nextCharIter, " ", 1);
-#else
-				this.insert(nextCharIter, " ", 1);
-#endif
 				this.get_end_iter (out nextCharIter);
 
 	                        // Save current position in nextHexMark
@@ -96,11 +88,7 @@ public class moserial.HexTextBuffer : TextBuffer
 	                        this.add_mark(nextHexMark, nextHexIter);
 
 				// Put 51 blank spaces
-#if VALA_0_16
 				this.insert(ref nextCharIter, "                                                   ", 51);
-#else
-				this.insert(nextCharIter, "                                                   ", 51);
-#endif
 				this.get_end_iter (out nextCharIter);
 				// Save current nextCharMark
 	                        this.delete_mark(nextCharMark);
@@ -110,11 +98,7 @@ public class moserial.HexTextBuffer : TextBuffer
                         else if((hexBytes % 8)==0) {
                         	// Every 8 characters put a separation of 2 spaces
 	                        this.get_iter_at_mark(out nextHexIter, nextHexMark);
-#if VALA_0_16
 				this.insert(ref nextHexIter, "  ", 2);
-#else
-				this.insert(nextHexIter, "  ", 2);
-#endif
 	                        this.get_iter_at_mark(out nextHexIter, nextHexMark);
 	                        nextHexIter.forward_chars(2);
 				// Save current nextHexMark
@@ -125,20 +109,12 @@ public class moserial.HexTextBuffer : TextBuffer
 	                        TextIter tempIter;
 	                        tempIter = nextHexIter;
         	                tempIter.forward_chars(2);
-#if VALA_0_16
 				this.delete(ref nextHexIter, ref tempIter);
-#else
-				this.delete(nextHexIter, tempIter);
-#endif
 			}
 			// Put hex data at nextHexMark
 			this.get_iter_at_mark(out nextHexIter, nextHexMark);
                         incomingHexBuffer += "%02X ".printf(data);
-#if VALA_0_16
 			this.insert(ref nextHexIter, incomingHexBuffer, (int)incomingHexBuffer.length);
-#else
-			this.insert(nextHexIter, incomingHexBuffer, (int)incomingHexBuffer.length);
-#endif
 
                         this.get_iter_at_mark(out nextHexIter, nextHexMark);
                         nextHexIter.forward_chars(incomingHexBuffer.length);
@@ -150,11 +126,7 @@ public class moserial.HexTextBuffer : TextBuffer
                         TextIter tempIter;
                         tempIter = nextHexIter;
                         tempIter.forward_chars(3);
-#if VALA_0_16
 			this.delete(ref nextHexIter, ref tempIter);
-#else
-			this.delete(nextHexIter, tempIter);
-#endif                
                         incomingHexBuffer = "";
                         hexBytes++;
                         
@@ -163,20 +135,12 @@ public class moserial.HexTextBuffer : TextBuffer
                         unichar c = "%c".printf(data).get_char();
                         string s = "%c".printf(data);
                         if (s.validate() && c.isprint()) {
-#if VALA_0_16
 				this.insert(ref nextCharIter, s, (int)s.length);
-#else
-				this.insert(nextCharIter, s, (int)s.length);
-#endif
 	                        this.get_iter_at_mark(out nextCharIter, nextCharMark);
 	                        nextCharIter.forward_chars(s.length);
 	                }
                         else {
-#if VALA_0_16
 				this.insert(ref nextCharIter, ".", 1);
-#else
-				this.insert(nextCharIter, ".", 1);
-#endif
 	                        this.get_iter_at_mark(out nextCharIter, nextCharMark);
 	                        nextCharIter.forward_chars(1);
 	                }

@@ -39,11 +39,7 @@ public class MoUtils : GLib.Object
 	public static int64 fileSize (string path) {
 		GLib.File file=newFile(path);
 		try {
-#if VALA_0_16
 			GLib.FileInfo info=file.query_info(FileAttribute.STANDARD_SIZE,0,null);
-#else
-			GLib.FileInfo info=file.query_info(GLib.FILE_ATTRIBUTE_STANDARD_SIZE,0,null);
-#endif
 			return info.get_size();
                 } catch (GLib.Error e) {
                         warning("%s", e.message);
