@@ -104,7 +104,7 @@ public class MoUtils : GLib.Object
                 foreach (string val_item in val_array) {
                         TreeIter iter;
                         Model.append(out iter);
-                        Model.set(iter,0,val_item);
+                        Model.set(iter, 0, _(val_item));
                 }
                 Combo.set_model(Model);
                 CellRenderer Cell = new CellRendererText();

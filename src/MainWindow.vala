@@ -762,14 +762,14 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
 
         private void showAboutDialog () {
 
-                string license_trans = license[0] + "\n" + license[1] + "\n" + license[2];
+                string license_trans = _(license[0]) + "\n" + _(license[1]) + "\n" + _(license[2]);
 
                 show_about_dialog (gtkWindow,
                                    "version", Config.VERSION,
                                    "copyright", "Copyright © 2009-2017\nMichael J. Chudobiak\n<mjc@svn.gnome.org>",
                                    "comments", _("A serial terminal for the GNOME desktop, optimized for logging and file capture."),
                                    "authors", authors,
-                                   "translator-credits", translators,
+                                   "translator-credits", _(translators),
                                    "logo-icon-name", "moserial",
                                    "wrap-license", true,
                                    "license", license_trans,
