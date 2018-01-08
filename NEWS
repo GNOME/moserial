@@ -1,3 +1,13 @@
+Version 3.0.12
+--------------
+
+	* correctly call gettext
+	* remove #if support for old vala versions
+	* removed some deprecated calls
+	* removed the OMF file
+	* add Ctrl+L shortcut to clear screen (similar to bash)
+
+
 Version 3.0.11
 --------------
 
