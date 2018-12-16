@@ -9,7 +9,7 @@
   <homepage rdf:resource="http://live.gnome.org/moserial" />
   <mailing-list rdf:resource="http://mail.gnome.org/mailman/listinfo/desktop-devel-list" />
   <download-page rdf:resource="http://download.gnome.org/sources/moserial/"/>
-  <bug-database rdf:resource="http://bugzilla.gnome.org/browse.cgi?product=moserial"/>
+  <bug-database rdf:resource="https://gitlab.gnome.org/GNOME/moserial/issues/" />
 
   <maintainer>
     <foaf:Person>
