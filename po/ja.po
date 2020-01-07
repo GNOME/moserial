@@ -229,8 +229,6 @@ msgid "A serial terminal optimized for logging and file capture"
 msgstr "ログの記録やファイルのキャプチャが可能なシリアル端末です"
 
 #: ../data/moserial.appdata.xml.in.h:2
-#, fuzzy
-#| msgid "Serial Terminal"
 msgid "Serial terminal"
 msgstr "シリアル端末"
 
