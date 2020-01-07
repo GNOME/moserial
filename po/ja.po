@@ -6,231 +6,245 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: moserial master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=moserial&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-10-09 10:10+0000\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/moserial/issues\n"
+"POT-Creation-Date: 2019-11-18 15:27+0000\n"
 "PO-Revision-Date: 2012-01-01 19:55+0900\n"
 "Last-Translator: Jiro Matsuzawa <jmatsuzawa@src.gnome.org>\n"
 "Language-Team: Japanese <takeshi.aihana@gmail.com>\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
 
-#: ../data/glade/moserial.ui.h:1
-msgid "Access Mode"
-msgstr "アクセス・モード"
-
-#: ../data/glade/moserial.ui.h:2
-msgid "Background Color"
-msgstr "背景の色"
-
-#: ../data/glade/moserial.ui.h:3
-msgid "Baud Rate"
-msgstr "ボーレート"
-
-#: ../data/glade/moserial.ui.h:4
-msgid "Connect"
-msgstr "接続"
-
-#: ../data/glade/moserial.ui.h:5
-msgid "Data Bits"
-msgstr "データのビット"
-
-#: ../data/glade/moserial.ui.h:6
-msgid "Device"
-msgstr "デバイス"
-
-#: ../data/glade/moserial.ui.h:7
-msgid "Disconnect"
-msgstr "接続断"
-
-#: ../data/glade/moserial.ui.h:8
-msgid "Display Font"
-msgstr "フォント"
-
-#: ../data/glade/moserial.ui.h:9
-msgid "Echo received data"
-msgstr "受信したデータをエコーする"
-
-#: ../data/glade/moserial.ui.h:10
-msgid "Enable timeout after"
-msgstr "次の時間を経過したら記録を停止する: "
-
-#: ../data/glade/moserial.ui.h:11
-msgid "Error Correction Protocol"
-msgstr "エラー時の接続プロトコル:"
-
-#: ../data/glade/moserial.ui.h:12
-msgid "Filename required for XMODEM"
-msgstr "XMODEM 用のファイル名が必要です"
-
-#: ../data/glade/moserial.ui.h:13
-msgid "Font"
-msgstr "フォント"
-
-#: ../data/glade/moserial.ui.h:14
-msgid "Font Color"
-msgstr "文字の色"
-
-#: ../data/glade/moserial.ui.h:15
-msgid "Handshake"
-msgstr "ハンドシェイク"
-
-#: ../data/glade/moserial.ui.h:16
-msgid "Hardware"
-msgstr "ハードウェア"
-
-#: ../data/glade/moserial.ui.h:17
-msgid "Help"
-msgstr "ヘルプ"
-
-#: ../data/glade/moserial.ui.h:18
-msgid "Highlight Color"
-msgstr "強調表示の色"
-
-#: ../data/glade/moserial.ui.h:19
-msgid "Local Echo"
-msgstr "ローカルのエコー"
-
-#: ../data/glade/moserial.ui.h:20
-msgid "Open _Recent"
-msgstr "最近の接続(_R)"
-
-#: ../data/glade/moserial.ui.h:21 ../src/SerialStreamRecorder.vala:30
-msgid "Outgoing"
-msgstr "送信データ"
-
-#: ../data/glade/moserial.ui.h:22
-msgid "Parity"
-msgstr "パリティ"
-
-#: ../data/glade/moserial.ui.h:23
-msgid "Port Settings"
-msgstr "シリアル・ポートの設定"
-
-#: ../data/glade/moserial.ui.h:24
-msgid "Port Setup"
-msgstr "ポートの設定"
-
-#: ../data/glade/moserial.ui.h:25
-msgid "Preferences"
-msgstr "設定"
-
-#: ../data/glade/moserial.ui.h:26
-msgid "Receive File"
-msgstr "ファイルの受信"
-
-#: ../data/glade/moserial.ui.h:27
-msgid "Receive File Progress"
-msgstr "ファイル受信の経過"
-
-#: ../data/glade/moserial.ui.h:28
-msgid "Received ASCII"
-msgstr "受信 (ASCII)"
-
-#: ../data/glade/moserial.ui.h:29
-msgid "Received HEX"
-msgstr "受信 (16進)"
-
-#: ../data/glade/moserial.ui.h:30
-msgid "Record"
-msgstr "記録"
-
-#: ../data/glade/moserial.ui.h:31
-msgid "Record Incoming and/or Outgoing Data"
-msgstr "ファイルの選択"
-
-#: ../data/glade/moserial.ui.h:32
-msgid "Recording"
-msgstr "記録"
-
-#: ../data/glade/moserial.ui.h:33
-msgid "Select File to Send"
-msgstr "送信するファイルの選択"
-
-#: ../data/glade/moserial.ui.h:34
-msgid "Select Folder for Received Files"
-msgstr "フォルダーの選択"
-
-#: ../data/glade/moserial.ui.h:35
-msgid "Send"
-msgstr "送信する"
-
-#: ../data/glade/moserial.ui.h:36
-msgid "Send File"
-msgstr "ファイルの送信"
-
-#: ../data/glade/moserial.ui.h:37
-msgid "Send File Progress"
-msgstr "ファイル送信の経過"
-
-#: ../data/glade/moserial.ui.h:38
-msgid "Sent ASCII"
-msgstr "送信 (ASCII)"
-
-#: ../data/glade/moserial.ui.h:39
-msgid "Sent HEX"
-msgstr "送信 (16進)"
-
-#: ../data/glade/moserial.ui.h:40
-msgid "Software"
-msgstr "ソフトウェア"
-
-#: ../data/glade/moserial.ui.h:41
-msgid "Stop Bits"
-msgstr "ストップ・ビット"
-
-#: ../data/glade/moserial.ui.h:42
-msgid "Stop Recording"
-msgstr "停止"
-
-#: ../data/glade/moserial.ui.h:43
-msgid "Stream to record"
-msgstr "記録するストリーム"
-
-#: ../data/glade/moserial.ui.h:44
-msgid "_Edit"
-msgstr "編集(_E)"
-
-#: ../data/glade/moserial.ui.h:45
-msgid "_File"
-msgstr "ファイル(_F)"
-
-#: ../data/glade/moserial.ui.h:46
-msgid "_Help"
-msgstr "ヘルプ(_H)"
-
-#: ../data/glade/moserial.ui.h:47
-msgid "_Launch recorded files"
-msgstr "ログ・ファイルを開く(_L)"
-
-#: ../data/glade/moserial.ui.h:48
-msgid "_Use the system fixed width font"
-msgstr "システムの固定幅フォントを使う(_U)"
-
-#: ../data/glade/moserial.ui.h:49
+#: ../data/ui/mainwindow.ui.h:1 ../data/moserial.appdata.xml.in.h:1
 msgid "moserial"
 msgstr "moserial"
 
-#: ../data/glade/moserial.ui.h:50
+#: ../data/ui/mainwindow.ui.h:2
+msgid "_File"
+msgstr "ファイル(_F)"
+
+#: ../data/ui/mainwindow.ui.h:3
+msgid "Open _Recent"
+msgstr "最近の接続(_R)"
+
+#: ../data/ui/mainwindow.ui.h:4
+msgid "_Edit"
+msgstr "編集(_E)"
+
+#: ../data/ui/mainwindow.ui.h:5
+msgid "_Help"
+msgstr "ヘルプ(_H)"
+
+#: ../data/ui/mainwindow.ui.h:6
+msgid "Connect"
+msgstr "接続"
+
+#: ../data/ui/mainwindow.ui.h:7
+msgid "Record"
+msgstr "記録"
+
+#: ../data/ui/mainwindow.ui.h:8
+msgid "Send File"
+msgstr "ファイルの送信"
+
+#: ../data/ui/mainwindow.ui.h:9
+msgid "Receive File"
+msgstr "ファイルの受信"
+
+#: ../data/ui/mainwindow.ui.h:10 ../data/ui/settings_dialog.ui.h:1
+msgid "Port Setup"
+msgstr "ポートの設定"
+
+#: ../data/ui/mainwindow.ui.h:11 ../data/ui/preferences.ui.h:1
+msgid "Preferences"
+msgstr "設定"
+
+#: ../data/ui/mainwindow.ui.h:12
+msgid "Help"
+msgstr "ヘルプ"
+
+#: ../data/ui/mainwindow.ui.h:13
+msgid "Received ASCII"
+msgstr "受信 (ASCII)"
+
+#: ../data/ui/mainwindow.ui.h:14
+msgid "Received HEX"
+msgstr "受信 (16進)"
+
+#: ../data/ui/mainwindow.ui.h:15
+msgid "Sent ASCII"
+msgstr "送信 (ASCII)"
+
+#: ../data/ui/mainwindow.ui.h:16
+msgid "Sent HEX"
+msgstr "送信 (16進)"
+
+#: ../data/ui/mainwindow.ui.h:17 ../src/SerialStreamRecorder.vala:30
+msgid "Outgoing"
+msgstr "送信データ"
+
+#: ../data/ui/mainwindow.ui.h:18
+msgid "Send"
+msgstr "送信する"
+
+#: ../data/ui/mainwindow.ui.h:19
+msgid "Disconnect"
+msgstr "接続断"
+
+#: ../data/ui/mainwindow.ui.h:20
+msgid "Stop Recording"
+msgstr "停止"
+
+#: ../data/ui/preferences.ui.h:2
+msgid "Font"
+msgstr "フォント"
+
+#: ../data/ui/preferences.ui.h:3
+msgid "_Use the system fixed width font"
+msgstr "システムの固定幅フォントを使う(_U)"
+
+#: ../data/ui/preferences.ui.h:4
+msgid "Display Font"
+msgstr "フォント"
+
+#: ../data/ui/preferences.ui.h:5
+msgid "Font Color"
+msgstr "文字の色"
+
+#: ../data/ui/preferences.ui.h:6
+msgid "Background Color"
+msgstr "背景の色"
+
+#: ../data/ui/preferences.ui.h:7
+msgid "Highlight Color"
+msgstr "強調表示の色"
+
+#: ../data/ui/preferences.ui.h:8
+msgid "Recording"
+msgstr "記録"
+
+#: ../data/ui/preferences.ui.h:9
+msgid "_Launch recorded files"
+msgstr "ログ・ファイルを開く(_L)"
+
+#: ../data/ui/preferences.ui.h:10
+msgid "Enable timeout after"
+msgstr "次の時間を経過したら記録を停止する: "
+
+#: ../data/ui/preferences.ui.h:11
 msgid "seconds"
 msgstr "秒後"
 
+#: ../data/ui/receive_chooser.ui.h:1
+msgid "Select Folder for Received Files"
+msgstr "フォルダーの選択"
+
+#: ../data/ui/receive_chooser.ui.h:2 ../data/ui/send_chooser_dialog.ui.h:2
+msgid "Error Correction Protocol"
+msgstr "エラー時の接続プロトコル:"
+
+#: ../data/ui/receive_progress.ui.h:1
+msgid "Receive File Progress"
+msgstr "ファイル受信の経過"
+
+#: ../data/ui/record_dialog.ui.h:1
+msgid "Record Incoming and/or Outgoing Data"
+msgstr "ファイルの選択"
+
+#: ../data/ui/record_dialog.ui.h:2
+msgid "Stream to record"
+msgstr "記録するストリーム"
+
+#: ../data/ui/send_chooser_dialog.ui.h:1
+msgid "Select File to Send"
+msgstr "送信するファイルの選択"
+
+#: ../data/ui/send_progress_dialog.ui.h:1
+msgid "Send File Progress"
+msgstr "ファイル送信の経過"
+
+#: ../data/ui/settings_dialog.ui.h:2
+msgid "Port Settings"
+msgstr "シリアル・ポートの設定"
+
+#: ../data/ui/settings_dialog.ui.h:3
+msgid "Hardware"
+msgstr "ハードウェア"
+
+#: ../data/ui/settings_dialog.ui.h:4
+msgid "Software"
+msgstr "ソフトウェア"
+
+#: ../data/ui/settings_dialog.ui.h:5
+msgid "Access Mode"
+msgstr "アクセス・モード"
+
+#: ../data/ui/settings_dialog.ui.h:6
+msgid "Handshake"
+msgstr "ハンドシェイク"
+
+#: ../data/ui/settings_dialog.ui.h:7
+msgid "Parity"
+msgstr "パリティ"
+
+#: ../data/ui/settings_dialog.ui.h:8
+msgid "Stop Bits"
+msgstr "ストップ・ビット"
+
+#: ../data/ui/settings_dialog.ui.h:9
+msgid "Data Bits"
+msgstr "データのビット"
+
+#: ../data/ui/settings_dialog.ui.h:10
+msgid "Baud Rate"
+msgstr "ボーレート"
+
+#: ../data/ui/settings_dialog.ui.h:11
+msgid "Device"
+msgstr "デバイス"
+
+#: ../data/ui/settings_dialog.ui.h:12
+msgid "Local Echo"
+msgstr "ローカルのエコー"
+
+#: ../data/ui/settings_dialog.ui.h:13
+msgid "Echo received data"
+msgstr "受信したデータをエコーする"
+
+#: ../data/ui/xmodem_filename_dialog.ui.h:1
+msgid "Filename required for XMODEM"
+msgstr "XMODEM 用のファイル名が必要です"
+
 #: ../data/moserial.desktop.in.h:1
-msgid "A serial terminal optimized for logging and file capture"
-msgstr "ログの記録やファイルのキャプチャが可能なシリアル端末です"
+msgid "moserial Terminal"
+msgstr "Moserial 端末"
 
 #: ../data/moserial.desktop.in.h:2
 msgid "Serial Terminal"
 msgstr "シリアル端末"
 
 #: ../data/moserial.desktop.in.h:3
-msgid "moserial Terminal"
-msgstr "Moserial 端末"
+msgid "A serial terminal optimized for logging and file capture"
+msgstr "ログの記録やファイルのキャプチャが可能なシリアル端末です"
 
-#: ../src/InputParser.vala:45 ../src/InputParser.vala:52
-#: ../src/InputParser.vala:58
+#: ../data/moserial.appdata.xml.in.h:2
+#, fuzzy
+#| msgid "Serial Terminal"
+msgid "Serial terminal"
+msgstr "シリアル端末"
+
+#: ../data/moserial.appdata.xml.in.h:3
+msgid ""
+"Moserial is a serial terminal used for interacting with serial consoles and "
+"embedded devices. It supports the view of incoming and outgoing data in both "
+"ASCII and hexadecimal formats with the option to log this data. It also "
+"supports sending and receiving of x, y, and z-modem files, and has profiles "
+"to easily switch between configurations for different devices you are "
+"communicating with."
+msgstr ""
+
+#: ../src/InputParser.vala:44 ../src/InputParser.vala:54
 msgid "Invalid Input"
 msgstr "入力したデータが間違っています"
 
@@ -238,20 +252,11 @@ msgstr "入力したデータが間違っています"
 msgid "Profile file to load"
 msgstr "読み込むプロファイルを指定する"
 
-#: ../src/Main.vala:36
-#, c-format
-msgid ""
-"Failed to load UI\n"
-"%s"
-msgstr ""
-"UI の読み込みに失敗しました\n"
-"%s"
-
-#: ../src/Main.vala:52
+#: ../src/Main.vala:45
 msgid "- moserial serial terminal"
 msgstr "- moserial シリアル端末"
 
-#: ../src/Main.vala:57 ../src/Main.vala:65
+#: ../src/Main.vala:50 ../src/Main.vala:58
 #, c-format
 msgid "Run '%s --help' to see a full list of available command line options.\n"
 msgstr "'%s --help' で利用可能なコマンドラインのオプションを表示します\n"
@@ -290,72 +295,70 @@ msgstr ""
 "あなたは本プログラムと一緒に GNU 一般公衆利用許諾契約書の写しを受け取っている"
 "はずです。そうでない場合は <http://www.gnu.org/licenses/> をご覧下さい。"
 
-#: ../src/MainWindow.vala:65
+#: ../src/MainWindow.vala:64
 msgid "ASCII"
 msgstr "ASCII"
 
-#: ../src/MainWindow.vala:65
+#: ../src/MainWindow.vala:64
 msgid "HEX"
 msgstr "16進"
 
-#: ../src/MainWindow.vala:163
+#: ../src/MainWindow.vala:164
 msgid "Port configuration"
 msgstr "ポートの設定です"
 
-#: ../src/MainWindow.vala:168
+#: ../src/MainWindow.vala:169
 msgid "Read the manual"
 msgstr "ユーザー・マニュアルを表示します"
 
-#: ../src/MainWindow.vala:178
+#: ../src/MainWindow.vala:179
 msgid "TX: 0, RX: 0"
 msgstr "送信: 0 受信: 0"
 
-#: ../src/MainWindow.vala:189
+#: ../src/MainWindow.vala:190
 msgid "Send a file"
 msgstr "ファイルを送信します"
 
-#: ../src/MainWindow.vala:198
+#: ../src/MainWindow.vala:199
 msgid "Receive a file"
 msgstr "ファイルを受信します"
 
-#: ../src/MainWindow.vala:208
+#: ../src/MainWindow.vala:209
 msgid "Record sent and/or received data"
 msgstr "送受信データを記録します"
 
-#: ../src/MainWindow.vala:219
+#: ../src/MainWindow.vala:220
 msgid "Other preferences"
 msgstr "その他の設定です"
 
-#: ../src/MainWindow.vala:224
+#: ../src/MainWindow.vala:225
 msgid "Open/close port"
 msgstr "ポートをオープン/クローズします"
 
-#: ../src/MainWindow.vala:272
+#: ../src/MainWindow.vala:273
 msgid "Send the outgoing data now."
 msgstr "このデータを今すぐ送信します"
 
-#: ../src/MainWindow.vala:275
+#: ../src/MainWindow.vala:276
 msgid "Type outgoing data here. Press Enter or Send to send it."
 msgstr ""
 "送信するデータを入力し、送信の準備が整ったら [Enter] キーまたは右側の [送信] "
 "ボタンを押下して下さい"
 
-#: ../src/MainWindow.vala:557 ../src/Profile.vala:76 ../src/Profile.vala:107
-#, c-format
+#: ../src/MainWindow.vala:559 ../src/Profile.vala:76 ../src/Profile.vala:107
 msgid "Error: Could not open file"
 msgstr "エラー: ファイルを開けませんでした"
 
-#: ../src/MainWindow.vala:635
-#, c-format
+#: ../src/MainWindow.vala:637
 msgid "Error: Could not open device"
 msgstr "エラー: デバイスをオープンできませんでした"
 
-#: ../src/MainWindow.vala:757
+#: ../src/MainWindow.vala:759
 #, c-format
 msgid "Unable to display help file: %s"
 msgstr "ヘルプを表示できません: %s"
 
-#: ../src/MainWindow.vala:768
+#: ../src/MainWindow.vala:770
 msgid ""
 "A serial terminal for the GNOME desktop, optimized for logging and file "
 "capture."
@@ -363,13 +366,13 @@ msgstr ""
 "GNOME デスクトップ向けのシリアル端末で、ログの記録やファイルのキャプチャ機能"
 "を搭載しています。"
 
-#: ../src/MainWindow.vala:820
+#: ../src/MainWindow.vala:823
 msgid ""
 "You have changed your setting or preferences. Do you want to save these "
 "changes to the loaded profile?"
 msgstr "設定を変更しています。それらの変更をプロファイルに保存しますか？"
 
-#: ../src/PreferencesDialog.vala:50
+#: ../src/PreferencesDialog.vala:48
 msgid ""
 "If this option is enabled, a recorded file will be opened immediately after "
 "it is saved, using the default application for the file type. The default "
@@ -379,7 +382,7 @@ msgstr ""
 "フォルトのアプリケーションで開きます (デフォルトのアプリケーションはデスク"
 "トップ環境で定義されています)"
 
-#: ../src/PreferencesDialog.vala:53
+#: ../src/PreferencesDialog.vala:51
 msgid ""
 "If this option is enabled, recording will be automatically stopped after an "
 "adjustable period of inactivity after receiving some data. Moserial will "
@@ -406,7 +409,7 @@ msgstr "Ymodem"
 msgid "Zmodem"
 msgstr "Zmodem"
 
-#: ../src/SendProgressDialog.vala:43
+#: ../src/SendProgressDialog.vala:41
 msgid "Waiting for remote host"
 msgstr "リモート・ホストが準備できるまで待機中です"
 
@@ -434,12 +437,12 @@ msgstr "終端は ESC"
 msgid "No end"
 msgstr "終端なし"
 
-#: ../src/SerialConnection.vala:285
+#: ../src/SerialConnection.vala:291
 #, c-format
 msgid "TX: %lu, RX: %lu (%lu unprintable)"
 msgstr "送信: %lu 受信: %lu (%lu 個表示不可)"
 
-#: ../src/SerialConnection.vala:287
+#: ../src/SerialConnection.vala:293
 #, c-format
 msgid "TX: %lu, RX: %lu"
 msgstr "送信: %lu 受信: %lu"
@@ -452,25 +455,26 @@ msgstr "受信"
 msgid "Incoming and Outgoing"
 msgstr "送信と受信"
 
-#: ../src/SerialStreamRecorder.vala:57 ../src/SerialStreamRecorder.vala:78
+#: ../src/SerialStreamRecorder.vala:57 ../src/SerialStreamRecorder.vala:68
+#: ../src/SerialStreamRecorder.vala:89
 #, c-format
 msgid "error: %s\n"
 msgstr "エラー: %s\n"
 
-#: ../src/SerialStreamRecorder.vala:87
+#: ../src/SerialStreamRecorder.vala:98
 #, c-format
 msgid "Unable to launch %s: %s"
 msgstr "%s を起動できません: %s"
 
-#: ../src/SettingsDialog.vala:67
+#: ../src/SettingsDialog.vala:65
 msgid "Also known as RTS/CTS handshaking"
 msgstr "RTS/CTS のハンドシェイクを有効にします"
 
-#: ../src/SettingsDialog.vala:70
+#: ../src/SettingsDialog.vala:68
 msgid "Also known as XON/XOFF handshaking"
 msgstr "XON/XOFF のハンドシェイクを有効にします"
 
-#: ../src/SettingsDialog.vala:76
+#: ../src/SettingsDialog.vala:74
 msgid "Normally disabled"
 msgstr "通常は無効にして下さい"
 
@@ -546,6 +550,13 @@ msgstr "なし (バイナリ)"
 #: ../src/Szwrapper.vala:185
 msgid "canceled"
 msgstr "キャンセルしました"
+
+#~ msgid ""
+#~ "Failed to load UI\n"
+#~ "%s"
+#~ msgstr ""
+#~ "UI の読み込みに失敗しました\n"
+#~ "%s"
 
 #~ msgid ""
 #~ "/dev/ttyS0\n"
