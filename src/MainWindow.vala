@@ -121,7 +121,6 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 profile=new Profile();
                 profile.load(null, gtkWindow);
 		currentSettings=Settings.loadFromProfile(profile);
-
                 int width = profile.getWindowWidth();
                 int height = profile.getWindowHeight();
                 int panedPosition = profile.getWindowPanedPosition();
@@ -302,7 +301,7 @@ public class moserial.MainWindow : Gtk.Window //Have to extend Gtk.Winow to get 
                 Gtk.MenuItem recentFileItem = (Gtk.MenuItem)builder.get_object("menubar_open_recent");
                	recentFileItem.set_submenu(recentChooserMenu);
 
-                //take currentSettings into account for entry are
+                //take currentSettings into account for entry area
                 updateEntryArea();
 
                 //load and apply preferences
