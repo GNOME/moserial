@@ -1,0 +1,569 @@
+# Ukrainian translation for moserial.
+# Copyright (C) 2020 moserial's COPYRIGHT HOLDER
+# This file is distributed under the same license as the moserial package.
+#
+# Yuri Chornoivan <yurchor@ukr.net>, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: moserial master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/moserial/issues\n"
+"POT-Creation-Date: 2020-01-07 14:32+0000\n"
+"PO-Revision-Date: 2020-04-07 22:03+0300\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Lokalize 20.07.70\n"
+
+#: ../data/ui/mainwindow.ui.h:1 ../data/moserial.appdata.xml.in.h:1
+msgid "moserial"
+msgstr "moserial"
+
+#: ../data/ui/mainwindow.ui.h:2
+msgid "_File"
+msgstr "_Файл"
+
+#: ../data/ui/mainwindow.ui.h:3
+msgid "Open _Recent"
+msgstr "Відкрити н_едавні"
+
+#: ../data/ui/mainwindow.ui.h:4
+msgid "_Edit"
+msgstr "З_міни"
+
+#: ../data/ui/mainwindow.ui.h:5
+msgid "_Help"
+msgstr "_Довідка"
+
+#: ../data/ui/mainwindow.ui.h:6
+msgid "Connect"
+msgstr "З'єднатися"
+
+#: ../data/ui/mainwindow.ui.h:7
+msgid "Record"
+msgstr "Записати"
+
+#: ../data/ui/mainwindow.ui.h:8
+msgid "Send File"
+msgstr "Надіслати файл"
+
+#: ../data/ui/mainwindow.ui.h:9
+msgid "Receive File"
+msgstr "Отримати файл"
+
+#: ../data/ui/mainwindow.ui.h:10 ../data/ui/settings_dialog.ui.h:1
+msgid "Port Setup"
+msgstr "Налаштування порту"
+
+#: ../data/ui/mainwindow.ui.h:11 ../data/ui/preferences.ui.h:1
+msgid "Preferences"
+msgstr "Налаштування"
+
+#: ../data/ui/mainwindow.ui.h:12
+msgid "Help"
+msgstr "Довідка"
+
+#: ../data/ui/mainwindow.ui.h:13
+msgid "Received ASCII"
+msgstr "Отримано ASCII"
+
+#: ../data/ui/mainwindow.ui.h:14
+msgid "Received HEX"
+msgstr "Отримано HEX"
+
+#: ../data/ui/mainwindow.ui.h:15
+msgid "Sent ASCII"
+msgstr "Надіслано ASCII"
+
+#: ../data/ui/mainwindow.ui.h:16
+msgid "Sent HEX"
+msgstr "Надіслано HEX"
+
+#: ../data/ui/mainwindow.ui.h:17 ../src/SerialStreamRecorder.vala:30
+msgid "Outgoing"
+msgstr "Вихідні"
+
+#: ../data/ui/mainwindow.ui.h:18
+msgid "Send"
+msgstr "Надіслати"
+
+#: ../data/ui/mainwindow.ui.h:19
+msgid "Disconnect"
+msgstr "Від'єднатись"
+
+#: ../data/ui/mainwindow.ui.h:20
+msgid "Stop Recording"
+msgstr "Припинити запис"
+
+#: ../data/ui/preferences.ui.h:2
+msgid "Font"
+msgstr "Шрифт"
+
+#: ../data/ui/preferences.ui.h:3
+msgid "_Use the system fixed width font"
+msgstr "_Використовувати системний моноширинний шрифт"
+
+#: ../data/ui/preferences.ui.h:4
+msgid "Display Font"
+msgstr "Шрифт для показу"
+
+#: ../data/ui/preferences.ui.h:5
+msgid "Font Color"
+msgstr "Колір шрифту"
+
+#: ../data/ui/preferences.ui.h:6
+msgid "Background Color"
+msgstr "Колір тла"
+
+#: ../data/ui/preferences.ui.h:7
+msgid "Highlight Color"
+msgstr "Колір підсвічування"
+
+#: ../data/ui/preferences.ui.h:8
+msgid "Recording"
+msgstr "Запис"
+
+#: ../data/ui/preferences.ui.h:9
+msgid "_Launch recorded files"
+msgstr "З_апустити записані файли"
+
+#: ../data/ui/preferences.ui.h:10
+msgid "Enable timeout after"
+msgstr "Час очікування"
+
+#: ../data/ui/preferences.ui.h:11
+msgid "seconds"
+msgstr "секунд"
+
+#: ../data/ui/receive_chooser.ui.h:1
+msgid "Select Folder for Received Files"
+msgstr "Виберіть теку для отриманих файлів"
+
+#: ../data/ui/receive_chooser.ui.h:2 ../data/ui/send_chooser_dialog.ui.h:2
+msgid "Error Correction Protocol"
+msgstr "Протокол виправлення помилок"
+
+#: ../data/ui/receive_progress.ui.h:1
+msgid "Receive File Progress"
+msgstr "Поступ отримання файла"
+
+#: ../data/ui/record_dialog.ui.h:1
+msgid "Record Incoming and/or Outgoing Data"
+msgstr "Запис вхідних і/або вихідних даних"
+
+#: ../data/ui/record_dialog.ui.h:2
+msgid "Stream to record"
+msgstr "Потік даних для запису"
+
+#: ../data/ui/send_chooser_dialog.ui.h:1
+msgid "Select File to Send"
+msgstr "Виберіть файл для надсилання"
+
+#: ../data/ui/send_progress_dialog.ui.h:1
+msgid "Send File Progress"
+msgstr "Поступ надсилання файла"
+
+#: ../data/ui/settings_dialog.ui.h:2
+msgid "Port Settings"
+msgstr "Параметри порту"
+
+#: ../data/ui/settings_dialog.ui.h:3
+msgid "Hardware"
+msgstr "Апаратний"
+
+#: ../data/ui/settings_dialog.ui.h:4
+msgid "Software"
+msgstr "Програмний"
+
+#: ../data/ui/settings_dialog.ui.h:5
+msgid "Access Mode"
+msgstr "Режим доступу"
+
+#: ../data/ui/settings_dialog.ui.h:6
+msgid "Handshake"
+msgstr "Узгодження"
+
+#: ../data/ui/settings_dialog.ui.h:7
+msgid "Parity"
+msgstr "Парність"
+
+#: ../data/ui/settings_dialog.ui.h:8
+msgid "Stop Bits"
+msgstr "Стоп-біти"
+
+#: ../data/ui/settings_dialog.ui.h:9
+msgid "Data Bits"
+msgstr "Біти даних"
+
+#: ../data/ui/settings_dialog.ui.h:10
+msgid "Baud Rate"
+msgstr "Швидкість передавання"
+
+#: ../data/ui/settings_dialog.ui.h:11
+msgid "Device"
+msgstr "Пристрій"
+
+#: ../data/ui/settings_dialog.ui.h:12
+msgid "Local Echo"
+msgstr "Локальна луна"
+
+#: ../data/ui/settings_dialog.ui.h:13
+msgid "Echo received data"
+msgstr "Надсилати луною отримані дані"
+
+#: ../data/ui/xmodem_filename_dialog.ui.h:1
+msgid "Filename required for XMODEM"
+msgstr "Слід вказати назву файла для XMODEM"
+
+#: ../data/moserial.desktop.in.h:1
+msgid "moserial Terminal"
+msgstr "Термінал moserial"
+
+#: ../data/moserial.desktop.in.h:2
+msgid "Serial Terminal"
+msgstr "Термінал для послідовного порту"
+
+#: ../data/moserial.desktop.in.h:3
+msgid "A serial terminal optimized for logging and file capture"
+msgstr ""
+"Послідовний термінал. Оптимізовано для запису журналу та захоплення файлів"
+
+#: ../data/moserial.appdata.xml.in.h:2
+msgid "Serial terminal"
+msgstr "Послідовний термінал"
+
+#: ../data/moserial.appdata.xml.in.h:3
+msgid ""
+"Moserial is a serial terminal used for interacting with serial consoles and "
+"embedded devices. It supports the view of incoming and outgoing data in both "
+"ASCII and hexadecimal formats with the option to log this data. It also "
+"supports sending and receiving of x, y, and z-modem files, and has profiles "
+"to easily switch between configurations for different devices you are "
+"communicating with."
+msgstr ""
+"Moserial — послідовний термінал, який використовується для взаємодії із"
+" послідовними консолями та вбудованими пристроями. У програмі передбачено"
+" перегляд вхідних і вихідних даних у форматі ASCII та шістнадцятковому"
+" форматі із можливістю запису цих даних до журналу. Також передбачено"
+" підтримку надсилання і отримання файлів x, y та z-модемів і профілі для"
+" спрощення перемикання між налаштуваннями для різних пристроїв, з якими ви"
+" обмінюєтеся даними."
+
+#: ../src/InputParser.vala:44 ../src/InputParser.vala:54
+msgid "Invalid Input"
+msgstr "Некоректні вхідні дані"
+
+#: ../src/Main.vala:26
+msgid "Profile file to load"
+msgstr "Файл профілю, який слід завантажити"
+
+#: ../src/Main.vala:45
+msgid "- moserial serial terminal"
+msgstr "– послідовний термінал moserial"
+
+#: ../src/Main.vala:50 ../src/Main.vala:58
+#, c-format
+msgid "Run '%s --help' to see a full list of available command line options.\n"
+msgstr ""
+"Щоб переглянути повний список можливих параметрів командного рядка, віддайте "
+"команду «%s --help».\n"
+
+#: ../src/MainWindow.vala:30
+msgid "translator-credits"
+msgstr "Юрій Чорноіван <yurchor@ukr.net>"
+
+#: ../src/MainWindow.vala:32
+msgid ""
+"moserial is free software: you can redistribute it and/or modify it under "
+"the terms of the GNU General Public License as published by the Free "
+"Software Foundation, either version 3 of the License, or (at your option) "
+"any later version.\n"
+msgstr ""
+"moserial ― вільне програмне забезпечення. Ви можете його розповсюджувати чи "
+"змінювати на умовах ліцензії GNU General Public License, що опублікована "
+"Free Software Foundation; або версії 3 ліцензії, або (на ваш розсуд) будь-"
+"якій більш пізній версії.\n"
+
+#: ../src/MainWindow.vala:33
+msgid ""
+"moserial is distributed in the hope that it will be useful, but WITHOUT ANY "
+"WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
+"FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
+"details.\n"
+msgstr ""
+"moserial розповсюджується зі сподіванням, що програма буде корисною, але БЕЗ"
+" БУДЬ-"
+"ЯКИХ ГАРАНТІЙ; не гарантується навіть ПРИДАТНІСТЬ чи ВІДПОВІДНІСТЬ ПЕВНІЙ "
+"МЕТІ. Для отримання додаткової інформації ознайомтесь з GNU General Public "
+"License.\n"
+
+#: ../src/MainWindow.vala:34
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"this program.  If not, see <http://www.gnu.org/licenses/>."
+msgstr ""
+"Ви мали отримати копію GNU General Public License разом з %s. Якщо цього не "
+"сталося, дивіться <http://www.gnu.org/licenses/>."
+
+#: ../src/MainWindow.vala:64
+msgid "ASCII"
+msgstr "ASCII"
+
+#: ../src/MainWindow.vala:64
+msgid "HEX"
+msgstr "HEX"
+
+#: ../src/MainWindow.vala:164
+msgid "Port configuration"
+msgstr "Налаштування порту"
+
+#: ../src/MainWindow.vala:169
+msgid "Read the manual"
+msgstr "Прочитати підручник"
+
+#: ../src/MainWindow.vala:179
+msgid "TX: 0, RX: 0"
+msgstr "TX: 0, RX: 0"
+
+#: ../src/MainWindow.vala:190
+msgid "Send a file"
+msgstr "Надіслати файл"
+
+#: ../src/MainWindow.vala:199
+msgid "Receive a file"
+msgstr "Отримати файл"
+
+#: ../src/MainWindow.vala:209
+msgid "Record sent and/or received data"
+msgstr "Записувати надіслані і/або отримані дані"
+
+#: ../src/MainWindow.vala:220
+msgid "Other preferences"
+msgstr "Інші налаштування"
+
+#: ../src/MainWindow.vala:225
+msgid "Open/close port"
+msgstr "Відкрити/закрити порт"
+
+#: ../src/MainWindow.vala:273
+msgid "Send the outgoing data now."
+msgstr "Надіслати вихідні дані зараз."
+
+#: ../src/MainWindow.vala:276
+msgid "Type outgoing data here. Press Enter or Send to send it."
+msgstr ""
+"Тут можна ввести вихідні дані. Натисніть Enter або «Надіслати», щоб їх"
+" надіслати."
+
+#: ../src/MainWindow.vala:559 ../src/Profile.vala:76 ../src/Profile.vala:107
+msgid "Error: Could not open file"
+msgstr "Помилка: не вдалося відкрити файл"
+
+#: ../src/MainWindow.vala:637
+msgid "Error: Could not open device"
+msgstr "Помилка: не вдалося відкрити пристрій"
+
+#: ../src/MainWindow.vala:759
+#, c-format
+msgid "Unable to display help file: %s"
+msgstr "Не вдалося показати файл довідки: %s"
+
+#: ../src/MainWindow.vala:770
+msgid ""
+"A serial terminal for the GNOME desktop, optimized for logging and file "
+"capture."
+msgstr ""
+"Послідовний термінал для стільниці GNOME. Оптимізовано для запису журналу та"
+" захоплення файлів."
+
+#: ../src/MainWindow.vala:823
+msgid ""
+"You have changed your setting or preferences. Do you want to save these "
+"changes to the loaded profile?"
+msgstr ""
+"Вами внесено зміни до параметра або налаштувань. Хочете зберегти ці зміни до"
+" завантаженого профілю?"
+
+#: ../src/PreferencesDialog.vala:48
+msgid ""
+"If this option is enabled, a recorded file will be opened immediately after "
+"it is saved, using the default application for the file type. The default "
+"application is defined by the desktop environment."
+msgstr ""
+"Якщо позначено цей пункт, записаний файл буде відкрито негайно після"
+" збереження за допомогою програми, яку пов'язано із цим типом файлів. Типова"
+" програма визначається стільничним середовищем."
+
+#: ../src/PreferencesDialog.vala:51
+msgid ""
+"If this option is enabled, recording will be automatically stopped after an "
+"adjustable period of inactivity after receiving some data. Moserial will "
+"wait indefinitely to record the first data byte before activating the "
+"inactivity timer."
+msgstr ""
+"Якщо позначено цей пункт, записування буде автоматично зупинено після"
+" вказаного періоду неактивності з моменту останнього отримання якихось даних."
+" Moserial очікуватиме протягом необмеженого періоду часу на запис першого"
+" байта даних, перш ніж активувати таймер бездіяльності."
+
+#: ../src/Preferences.vala:65
+msgid "Unable to retrieve system font setting"
+msgstr "Не вдалося отримати параметр шрифту системи"
+
+#: ../src/Rzwrapper.vala:24 ../src/Szwrapper.vala:24
+msgid "Xmodem"
+msgstr "X-модем"
+
+#: ../src/Rzwrapper.vala:25 ../src/Szwrapper.vala:25
+msgid "Ymodem"
+msgstr "Y-модем"
+
+#: ../src/Rzwrapper.vala:26 ../src/Szwrapper.vala:26
+msgid "Zmodem"
+msgstr "Z-модем"
+
+#: ../src/SendProgressDialog.vala:41
+msgid "Waiting for remote host"
+msgstr "Очікуємо на віддалений вузол"
+
+#: ../src/SerialConnection.vala:43
+msgid "CR+LF end"
+msgstr "Завершення CR+LF"
+
+#: ../src/SerialConnection.vala:44
+msgid "CR end"
+msgstr "Завершення CR"
+
+#: ../src/SerialConnection.vala:45
+msgid "LF end"
+msgstr "Завершення LF"
+
+#: ../src/SerialConnection.vala:46
+msgid "TAB end"
+msgstr "Завершення TAB"
+
+#: ../src/SerialConnection.vala:47
+msgid "ESC end"
+msgstr "Завершення ESC"
+
+#: ../src/SerialConnection.vala:48
+msgid "No end"
+msgstr "Без завершення"
+
+#: ../src/SerialConnection.vala:291
+#, c-format
+msgid "TX: %lu, RX: %lu (%lu unprintable)"
+msgstr "TX: %lu, RX: %lu (непридатних до друку %lu)"
+
+#: ../src/SerialConnection.vala:293
+#, c-format
+msgid "TX: %lu, RX: %lu"
+msgstr "TX: %lu, RX: %lu"
+
+#: ../src/SerialStreamRecorder.vala:29
+msgid "Incoming"
+msgstr "Вхідні"
+
+#: ../src/SerialStreamRecorder.vala:31
+msgid "Incoming and Outgoing"
+msgstr "Вхідні і вихідні"
+
+#: ../src/SerialStreamRecorder.vala:57 ../src/SerialStreamRecorder.vala:68
+#: ../src/SerialStreamRecorder.vala:89
+#, c-format
+msgid "error: %s\n"
+msgstr "помилка: %s.\n"
+
+#: ../src/SerialStreamRecorder.vala:98
+#, c-format
+msgid "Unable to launch %s: %s"
+msgstr "Не вдалося запустити %s: %s"
+
+#: ../src/SettingsDialog.vala:65
+msgid "Also known as RTS/CTS handshaking"
+msgstr "Також відоме як узгодження RTS/CTS"
+
+#: ../src/SettingsDialog.vala:68
+msgid "Also known as XON/XOFF handshaking"
+msgstr "Також відоме як узгодження XON/XOFF"
+
+#: ../src/SettingsDialog.vala:74
+msgid "Normally disabled"
+msgstr "Зазвичай вимкнено"
+
+#: ../src/Settings.vala:25
+msgid "None"
+msgstr "Жоден"
+
+#: ../src/Settings.vala:26
+msgid "Odd"
+msgstr "Непарний"
+
+#: ../src/Settings.vala:27
+msgid "Even"
+msgstr "Парний"
+
+#: ../src/Settings.vala:28
+msgid "Mark"
+msgstr "Мітка"
+
+#: ../src/Settings.vala:29
+msgid "Space"
+msgstr "Пробіл"
+
+#: ../src/Settings.vala:34
+msgid "Read and Write"
+msgstr "Читання та запис"
+
+#: ../src/Settings.vala:35
+msgid "Read Only"
+msgstr "Лише для читання"
+
+#: ../src/Settings.vala:36
+msgid "Write Only"
+msgstr "Лише запис"
+
+#. TRANSLATORS: first letter of "None", a serial port parity setting
+#: ../src/Settings.vala:89
+msgid "N"
+msgstr "Ж"
+
+#. TRANSLATORS: first letter of "Odd", a serial port parity setting
+#: ../src/Settings.vala:93
+msgid "O"
+msgstr "Н"
+
+#. TRANSLATORS: first letter of "Even", a serial port parity setting
+#: ../src/Settings.vala:97
+msgid "E"
+msgstr "П"
+
+#. TRANSLATORS: first letter of "Mark", a serial port parity setting
+#: ../src/Settings.vala:101
+msgid "M"
+msgstr "М"
+
+#. TRANSLATORS: first letter of "Space", a serial port parity setting
+#: ../src/Settings.vala:105
+msgid "S"
+msgstr "S"
+
+#: ../src/Settings.vala:115
+msgid "OPEN"
+msgstr "ВІДКРИТО"
+
+#: ../src/Settings.vala:116
+msgid "CLOSED"
+msgstr "ЗАКРИТО"
+
+#: ../src/Szwrapper.vala:27
+msgid "None (straight binary)"
+msgstr "Немає (простий двійковий)"
+
+#: ../src/Szwrapper.vala:185
+msgid "canceled"
+msgstr "скасовано"
