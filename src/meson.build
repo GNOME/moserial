@@ -1,0 +1,36 @@
+sources += files(
+    'MainWindow.vala' ,
+    'Main.vala' ,
+    'SettingsDialog.vala' ,
+    'Settings.vala' ,
+    'SendProgressDialog.vala' ,
+    'ReceiveChooserDialog.vala' ,
+    'ReceiveProgressDialog.vala' ,
+    'RecordDialog.vala' ,
+    'PreferencesDialog.vala' ,
+    'SerialConnection.vala' ,
+    'HexTextBuffer.vala' ,
+    'SerialStreamRecorder.vala' ,
+    'InputParser.vala' ,
+    'Rzwrapper.vala' ,
+    'XmodemFilenameDialog.vala' ,
+    'SendChooserDialog.vala' ,
+    'Szwrapper.vala' ,
+    'AutoScroll.vala' ,
+    'Preferences.vala' ,
+    'Profile.vala' ,
+    'DefaultPaths.vala' ,
+    'MoUtils.vala' ,
+)
+
+executable(
+    'moserial',
+    sources,
+    dependencies: dependencies,
+    include_directories: config_h_dir,
+    vala_args: vala_args,
+    c_args: c_args,
+    install: true,
+    install_dir: bin_dir,
+)
+
