@@ -2,6 +2,8 @@ NULL =
 
 AUTOMAKE_OPTIONS = subdir-objects
 
+ACLOCAL_AMFLAGS = --install -I m4
+
 SUBDIRS = \
 	data \
 	doc \
