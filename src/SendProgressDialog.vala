@@ -18,41 +18,40 @@
  */
 
 using Gtk;
-public class moserial.SendProgressDialog : GLib.Object
-{
-        private Dialog dialog;
-        private Button cancelButton;
-        private Gtk.Label status;
-        private ProgressBar progressBar;
-        public signal void transferCanceled();
-        construct {
-                var builder = new Gtk.Builder.from_resource(Config.UIROOT + "send_progress_dialog.ui");
+public class moserial.SendProgressDialog : GLib.Object {
+    private Dialog dialog;
+    private Button cancelButton;
+    private Gtk.Label status;
+    private ProgressBar progressBar;
+    public signal void transferCanceled ();
 
-                dialog = (Dialog)builder.get_object("send_progress_dialog");
-                cancelButton = (Button)builder.get_object("send_progress_cancel");
-                cancelButton.clicked.connect( this.cancel);
-                status = (Gtk.Label)builder.get_object("send_statusbox");
-                progressBar = (ProgressBar)builder.get_object("send_progressbar");
-                dialog.delete_event.connect(hide);
+    construct {
+        var builder = new Gtk.Builder.from_resource (Config.UIROOT + "send_progress_dialog.ui");
 
-        }
-        public void show() {
-                dialog.show_all();
-                status.set_text(_("Waiting for remote host"));
-        }
+        dialog = (Dialog) builder.get_object ("send_progress_dialog");
+        cancelButton = (Button) builder.get_object ("send_progress_cancel");
+        cancelButton.clicked.connect (this.cancel);
+        status = (Gtk.Label)builder.get_object ("send_statusbox");
+        progressBar = (ProgressBar) builder.get_object ("send_progressbar");
+        dialog.delete_event.connect (hide);
+    }
+    public void show () {
+        dialog.show_all ();
+        status.set_text (_("Waiting for remote host"));
+    }
 
-        public bool hide() {
-                dialog.hide();
-                return true;
-        }
-        
-        public void updateStatus(GLib.Object o, string newStatus) {
-        	status.set_text(newStatus);
-        	progressBar.pulse();
-        }
-        
-        public void cancel(GLib.Object o) {
-        	//TODO: make canceling transfers actually work
-        	transferCanceled();
-        }
+    public bool hide () {
+        dialog.hide ();
+        return true;
+    }
+
+    public void updateStatus (GLib.Object o, string newStatus) {
+        status.set_text (newStatus);
+        progressBar.pulse ();
+    }
+
+    public void cancel (GLib.Object o) {
+        // TODO: make canceling transfers actually work
+        transferCanceled ();
+    }
 }

@@ -20,220 +20,219 @@
 using Gtk;
 using GLib;
 
-public class moserial.SettingsDialog : GLib.Object
-{
-	// Does anyone have more than 32 serial ports?
-	const int max_devices = 32;
+public class moserial.SettingsDialog : GLib.Object {
+    // Does anyone have more than 32 serial ports?
+    const int max_devices = 32;
 
-        private Settings currentSettings;
-        private Dialog dialog;
-        private Button cancelButton;
-        private Button okButton;
-        private Settings settings;
-        private ComboBox deviceCombo;
-        private ComboBox baudRateCombo;
-        private ComboBox dataBitsCombo;
-        private ComboBox stopBitsCombo;
-        private ComboBox parityCombo;
-        private CheckButton hardwareHandshake;
-        private CheckButton softwareHandshake;
-        private ComboBox accessModeCombo;
-        private CheckButton localEcho;
-	private Gtk.ListStore deviceModel;
-        public signal void updateSettings(Settings settings);
+    private Settings currentSettings;
+    private Dialog dialog;
+    private Button cancelButton;
+    private Button okButton;
+    private Settings settings;
+    private ComboBox deviceCombo;
+    private ComboBox baudRateCombo;
+    private ComboBox dataBitsCombo;
+    private ComboBox stopBitsCombo;
+    private ComboBox parityCombo;
+    private CheckButton hardwareHandshake;
+    private CheckButton softwareHandshake;
+    private ComboBox accessModeCombo;
+    private CheckButton localEcho;
+    private Gtk.ListStore deviceModel;
+    public signal void updateSettings (Settings settings);
 
-        construct {
-                var builder = new Gtk.Builder.from_resource(Config.UIROOT + "settings_dialog.ui");
+    construct {
+        var builder = new Gtk.Builder.from_resource (Config.UIROOT + "settings_dialog.ui");
 
-                dialog = (Dialog)builder.get_object("settings_dialog");
-                cancelButton = (Button)builder.get_object("settings_cancel_button");
-                okButton = (Button)builder.get_object("settings_ok_button");
+        dialog = (Dialog) builder.get_object ("settings_dialog");
+        cancelButton = (Button) builder.get_object ("settings_cancel_button");
+        okButton = (Button) builder.get_object ("settings_ok_button");
 
-                baudRateCombo = (ComboBox)builder.get_object("settings_baud_rate");
-		MoUtils.populateComboBox (baudRateCombo, Settings.BaudRateItems);
+        baudRateCombo = (ComboBox) builder.get_object ("settings_baud_rate");
+        MoUtils.populateComboBox (baudRateCombo, Settings.BaudRateItems);
 
-                dataBitsCombo = (ComboBox)builder.get_object("settings_data_bits");
-                MoUtils.populateComboBox (dataBitsCombo, Settings.DataBitItems);
+        dataBitsCombo = (ComboBox) builder.get_object ("settings_data_bits");
+        MoUtils.populateComboBox (dataBitsCombo, Settings.DataBitItems);
 
-                stopBitsCombo = (ComboBox)builder.get_object("settings_stop_bits");
-                MoUtils.populateComboBox (stopBitsCombo, Settings.StopBitItems);
+        stopBitsCombo = (ComboBox) builder.get_object ("settings_stop_bits");
+        MoUtils.populateComboBox (stopBitsCombo, Settings.StopBitItems);
 
-                parityCombo = (ComboBox)builder.get_object("settings_parity");
-                MoUtils.populateComboBox (parityCombo, Settings.ParityModeStrings);
+        parityCombo = (ComboBox) builder.get_object ("settings_parity");
+        MoUtils.populateComboBox (parityCombo, Settings.ParityModeStrings);
 
-                hardwareHandshake = (CheckButton)builder.get_object("settings_hardware_handshake");
-		hardwareHandshake.set_tooltip_text (_("Also known as RTS/CTS handshaking"));
+        hardwareHandshake = (CheckButton) builder.get_object ("settings_hardware_handshake");
+        hardwareHandshake.set_tooltip_text (_("Also known as RTS/CTS handshaking"));
 
-                softwareHandshake = (CheckButton)builder.get_object("settings_software_handshake");
-		softwareHandshake.set_tooltip_text (_("Also known as XON/XOFF handshaking"));
+        softwareHandshake = (CheckButton) builder.get_object ("settings_software_handshake");
+        softwareHandshake.set_tooltip_text (_("Also known as XON/XOFF handshaking"));
 
-                accessModeCombo = (ComboBox)builder.get_object("settings_open_for");
-		MoUtils.populateComboBox (accessModeCombo, Settings.AccessModeStrings);
+        accessModeCombo = (ComboBox) builder.get_object ("settings_open_for");
+        MoUtils.populateComboBox (accessModeCombo, Settings.AccessModeStrings);
 
-                localEcho = (CheckButton)builder.get_object("settings_local_echo");
-		localEcho.set_tooltip_text (_("Normally disabled"));
+        localEcho = (CheckButton) builder.get_object ("settings_local_echo");
+        localEcho.set_tooltip_text (_("Normally disabled"));
 
-                dialog.delete_event.connect(hide);
-                cancelButton.clicked.connect(this.cancel);
-                okButton.clicked.connect(this.ok);
+        dialog.delete_event.connect (hide);
+        cancelButton.clicked.connect (this.cancel);
+        okButton.clicked.connect (this.ok);
 
-                deviceCombo = (ComboBox)builder.get_object("settings_device");	
-                deviceModel = new Gtk.ListStore(1, typeof( string ));
-                deviceCombo.set_model(deviceModel);
-                CellRenderer deviceCell = new CellRendererText();
-                deviceCombo.pack_start( deviceCell, false );
-                deviceCombo.set_attributes( deviceCell, "text", 0 );
-        }
+        deviceCombo = (ComboBox) builder.get_object ("settings_device");
+        deviceModel = new Gtk.ListStore (1, typeof (string));
+        deviceCombo.set_model (deviceModel);
+        CellRenderer deviceCell = new CellRendererText ();
+        deviceCombo.pack_start (deviceCell, false);
+        deviceCombo.set_attributes (deviceCell, "text", 0);
+    }
 
-        private void populateDevices(){
-		List<string> deviceTypes = new List<string> ();
-		deviceTypes.append ("/dev/ttyS");
-		deviceTypes.append ("/dev/ttyUSB");
-                deviceTypes.append ("/dev/ttyACM");
-		deviceTypes.append ("/dev/rfcomm");
-		deviceTypes.append ("/dev/cuaU");
-		deviceTypes.append ("/dev/cua");
+    private void populateDevices () {
+        List<string> deviceTypes = new List<string> ();
+        deviceTypes.append ("/dev/ttyS");
+        deviceTypes.append ("/dev/ttyUSB");
+        deviceTypes.append ("/dev/ttyACM");
+        deviceTypes.append ("/dev/rfcomm");
+        deviceTypes.append ("/dev/cuaU");
+        deviceTypes.append ("/dev/cua");
 
-		deviceModel.clear();
-                TreeIter iter;
-		
-		foreach (string devType in deviceTypes) {
-			for (int i = 0; i < max_devices; i++) {
-				string dev = "%s%d".printf(devType,i);
-				if (FileUtils.test (dev, FileTest.EXISTS)) {
-		 			deviceModel.append(out iter);
-        		        	deviceModel.set(iter, 0, dev);
-				}
-			}
-		}
-        }
+        deviceModel.clear ();
+        TreeIter iter;
 
-        public void show(Settings settings) {
-		populateDevices();
-                this.currentSettings = settings;
-                loadSettings();
-                dialog.show_all();
-        }
-
-        // Load the current settings into the dialog
-        public void loadSettings() {
-                TreeModel t;
-                TreeIter ti;
-                bool success;
-                
-                //Device
-                t = deviceCombo.get_model();
-                success = t.get_iter_first(out ti);
-                while (success) {
-                        Value str_data;
-                        t.get_value(ti, 0, out str_data);
-                        if (str_data.get_string()==currentSettings.device)
-                                deviceCombo.set_active_iter(ti);
-                        success = t.iter_next (ref ti);
+        foreach (string devType in deviceTypes) {
+            for (int i = 0; i < max_devices; i++) {
+                string dev = "%s%d".printf (devType, i);
+                if (FileUtils.test (dev, FileTest.EXISTS)) {
+                    deviceModel.append (out iter);
+                    deviceModel.set (iter, 0, dev);
                 }
+            }
+        }
+    }
 
-                //Baud Rate
-                t = baudRateCombo.get_model();
-                success = t.get_iter_first(out ti);
-                while (success) {
-                        Value str_data;
-                        t.get_value(ti, 0, out str_data);
-                        if (str_data.get_string()=="%i".printf(currentSettings.baudRate))
-                                baudRateCombo.set_active_iter(ti);
-                        success = t.iter_next (ref ti);
-                }
+    public void show (Settings settings) {
+        populateDevices ();
+        this.currentSettings = settings;
+        loadSettings ();
+        dialog.show_all ();
+    }
 
-                //Data Bits
-                t = dataBitsCombo.get_model();
-                success = t.get_iter_first(out ti);
-                while (success) {
-                        Value str_data;
-                        t.get_value(ti, 0, out str_data);
-                        if (str_data.get_string()=="%i".printf(currentSettings.dataBits))
-                                dataBitsCombo.set_active_iter(ti);
-                        success = t.iter_next (ref ti);
-                }
+    // Load the current settings into the dialog
+    public void loadSettings () {
+        TreeModel t;
+        TreeIter ti;
+        bool success;
 
-                //Stop Bits
-                t = stopBitsCombo.get_model();
-                success = t.get_iter_first(out ti);
-                while (success) {
-                        Value str_data;
-                        t.get_value(ti, 0, out str_data);
-                        if (str_data.get_string()=="%i".printf(currentSettings.stopBits))
-                                stopBitsCombo.set_active_iter(ti);
-                        success = t.iter_next (ref ti);
-                }
-
-		parityCombo.set_active((int)currentSettings.parity);
-		accessModeCombo.set_active((int)currentSettings.accessMode);
-
-                hardwareHandshake.set_active(false);
-                softwareHandshake.set_active(false);
-                if (currentSettings.handshake==Settings.Handshake.BOTH || currentSettings.handshake==Settings.Handshake.HARDWARE)
-                        hardwareHandshake.set_active(true);
-                if (currentSettings.handshake==Settings.Handshake.BOTH || currentSettings.handshake==Settings.Handshake.SOFTWARE)
-                        softwareHandshake.set_active(true);
-                if(currentSettings.localEcho)
-                	localEcho.set_active(true);
-                else
-                	localEcho.set_active(false);
+        // Device
+        t = deviceCombo.get_model ();
+        success = t.get_iter_first (out ti);
+        while (success) {
+            Value str_data;
+            t.get_value (ti, 0, out str_data);
+            if (str_data.get_string () == currentSettings.device)
+                deviceCombo.set_active_iter (ti);
+            success = t.iter_next (ref ti);
         }
 
-        public bool hide () {
-                dialog.hide ();
-                return true;
+        // Baud Rate
+        t = baudRateCombo.get_model ();
+        success = t.get_iter_first (out ti);
+        while (success) {
+            Value str_data;
+            t.get_value (ti, 0, out str_data);
+            if (str_data.get_string () == "%i".printf (currentSettings.baudRate))
+                baudRateCombo.set_active_iter (ti);
+            success = t.iter_next (ref ti);
         }
 
-        public void cancel (Widget w) {
-                currentSettings=null;
-		dialog.hide ();
+        // Data Bits
+        t = dataBitsCombo.get_model ();
+        success = t.get_iter_first (out ti);
+        while (success) {
+            Value str_data;
+            t.get_value (ti, 0, out str_data);
+            if (str_data.get_string () == "%i".printf (currentSettings.dataBits))
+                dataBitsCombo.set_active_iter (ti);
+            success = t.iter_next (ref ti);
         }
 
-        public void ok (Widget w) {
-
-                string device;
-                int baudRate;
-                int dataBits;
-                int stopBits;
-                Settings.Parity parity;
-                Settings.Handshake handshake;
-                Settings.AccessMode accessMode;
-                bool pLocalEcho;
-
-		TreeModel t;
-		TreeIter iter;
-		bool success;
-
-                t = deviceCombo.get_model();
-                success = deviceCombo.get_active_iter (out iter);
-                if (success) {
-                        Value str_data;
-                        t.get_value(iter, 0, out str_data);
-                        device = str_data.get_string();
-                } else {
-			device = Settings.DEFAULT_DEVICEFILE;
-		}
-		
-                baudRate = int.parse (Settings.BaudRateItems[baudRateCombo.get_active()]);
-                dataBits = int.parse (Settings.DataBitItems[dataBitsCombo.get_active()]);
-                stopBits = int.parse (Settings.StopBitItems[stopBitsCombo.get_active()]);
-
-                parity = (Settings.Parity)parityCombo.get_active();
-                accessMode = (Settings.AccessMode)accessModeCombo.get_active();
-
-                if (hardwareHandshake.get_active() && softwareHandshake.get_active())
-                        handshake=Settings.Handshake.BOTH;
-                else if (hardwareHandshake.get_active())
-                        handshake=Settings.Handshake.HARDWARE;
-                else if (softwareHandshake.get_active())
-                        handshake=Settings.Handshake.SOFTWARE;
-                else
-                        handshake=Settings.Handshake.NONE;
-		pLocalEcho = localEcho.get_active();
-                settings = new Settings(device, baudRate, dataBits, stopBits, parity, handshake, accessMode, pLocalEcho);
-                currentSettings = settings;
-                this.updateSettings(currentSettings);
-                dialog.hide ();
+        // Stop Bits
+        t = stopBitsCombo.get_model ();
+        success = t.get_iter_first (out ti);
+        while (success) {
+            Value str_data;
+            t.get_value (ti, 0, out str_data);
+            if (str_data.get_string () == "%i".printf (currentSettings.stopBits))
+                stopBitsCombo.set_active_iter (ti);
+            success = t.iter_next (ref ti);
         }
+
+        parityCombo.set_active ((int) currentSettings.parity);
+        accessModeCombo.set_active ((int) currentSettings.accessMode);
+
+        hardwareHandshake.set_active (false);
+        softwareHandshake.set_active (false);
+        if (currentSettings.handshake == Settings.Handshake.BOTH || currentSettings.handshake == Settings.Handshake.HARDWARE)
+            hardwareHandshake.set_active (true);
+        if (currentSettings.handshake == Settings.Handshake.BOTH || currentSettings.handshake == Settings.Handshake.SOFTWARE)
+            softwareHandshake.set_active (true);
+        if (currentSettings.localEcho)
+            localEcho.set_active (true);
+        else
+            localEcho.set_active (false);
+    }
+
+    public bool hide () {
+        dialog.hide ();
+        return true;
+    }
+
+    public void cancel (Widget w) {
+        currentSettings = null;
+        dialog.hide ();
+    }
+
+    public void ok (Widget w) {
+
+        string device;
+        int baudRate;
+        int dataBits;
+        int stopBits;
+        Settings.Parity parity;
+        Settings.Handshake handshake;
+        Settings.AccessMode accessMode;
+        bool pLocalEcho;
+
+        TreeModel t;
+        TreeIter iter;
+        bool success;
+
+        t = deviceCombo.get_model ();
+        success = deviceCombo.get_active_iter (out iter);
+        if (success) {
+            Value str_data;
+            t.get_value (iter, 0, out str_data);
+            device = str_data.get_string ();
+        } else {
+            device = Settings.DEFAULT_DEVICEFILE;
+        }
+
+        baudRate = int.parse (Settings.BaudRateItems[baudRateCombo.get_active ()]);
+        dataBits = int.parse (Settings.DataBitItems[dataBitsCombo.get_active ()]);
+        stopBits = int.parse (Settings.StopBitItems[stopBitsCombo.get_active ()]);
+
+        parity = (Settings.Parity)parityCombo.get_active ();
+        accessMode = (Settings.AccessMode)accessModeCombo.get_active ();
+
+        if (hardwareHandshake.get_active () && softwareHandshake.get_active ())
+            handshake = Settings.Handshake.BOTH;
+        else if (hardwareHandshake.get_active ())
+            handshake = Settings.Handshake.HARDWARE;
+        else if (softwareHandshake.get_active ())
+            handshake = Settings.Handshake.SOFTWARE;
+        else
+            handshake = Settings.Handshake.NONE;
+        pLocalEcho = localEcho.get_active ();
+        settings = new Settings (device, baudRate, dataBits, stopBits, parity, handshake, accessMode, pLocalEcho);
+        currentSettings = settings;
+        this.updateSettings (currentSettings);
+        dialog.hide ();
+    }
 }

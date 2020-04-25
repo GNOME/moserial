@@ -18,32 +18,31 @@
  */
 
 using Gtk;
-public class moserial.XmodemFilenameDialog : GLib.Object
-{
-        private Dialog dialog;
-	private Gtk.Entry xmodemFilename;
-	public string filename;
-	construct {
-		var builder = new Gtk.Builder.from_resource(Config.UIROOT + "xmodem_filename_dialog.ui");
+public class moserial.XmodemFilenameDialog : GLib.Object {
+    private Dialog dialog;
+    private Gtk.Entry xmodemFilename;
+    public string filename;
+    construct {
+        var builder = new Gtk.Builder.from_resource (Config.UIROOT + "xmodem_filename_dialog.ui");
 
-		dialog = (Dialog)builder.get_object("xmodem_filename_dialog");
-		xmodemFilename = (Gtk.Entry)builder.get_object("xmodem_filename");
-		dialog.delete_event.connect(hide);
-                dialog.response.connect(response);
-	}
-	public void show() {
-                dialog.run();
-        }
+        dialog = (Dialog) builder.get_object ("xmodem_filename_dialog");
+        xmodemFilename = (Gtk.Entry)builder.get_object ("xmodem_filename");
+        dialog.delete_event.connect (hide);
+        dialog.response.connect (response);
+    }
+    public void show () {
+        dialog.run ();
+    }
 
-        public bool hide() {
-                dialog.hide();
-                return true;
-        }
-        
-        private void response(Widget w, int r){
-        	filename = xmodemFilename.get_text();
-		hide();
-		if(filename=="")
-			filename="xmodem.file";
-        }
+    public bool hide () {
+        dialog.hide ();
+        return true;
+    }
+
+    private void response (Widget w, int r) {
+        filename = xmodemFilename.get_text ();
+        hide ();
+        if (filename == "")
+            filename = "xmodem.file";
+    }
 }

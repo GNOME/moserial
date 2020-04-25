@@ -20,87 +20,85 @@
 using Gtk;
 
 public class moserial.SerialStreamRecorder {
-	private GLib.File? file;
-	private string uri;
-	private bool isOpen=false;
-	private FileOutputStream? fos;
+    private GLib.File ? file;
+    private string uri;
+    private bool isOpen = false;
+    private FileOutputStream ? fos;
 
-	public enum Direction { INCOMING, OUTGOING, BOTH }
-	public const string[] DirectionStrings = { GLib.N_("Incoming"),
-                                                   GLib.N_("Outgoing"),
-                                                   GLib.N_("Incoming and Outgoing") };
+    public enum Direction { INCOMING, OUTGOING, BOTH }
+    public const string[] DirectionStrings = { GLib.N_ ("Incoming"),
+                                               GLib.N_ ("Outgoing"),
+                                               GLib.N_ ("Incoming and Outgoing") };
 
-	private Direction direction;
-	public void open (string filename, Direction direction) throws GLib.Error {
-		try {
-			file = File.new_for_path(filename);
-			fos = file.replace(null, false, GLib.FileCreateFlags.NONE, null);
-			isOpen=true;
-			uri = file.get_uri();
-			this.direction=direction;
-		}
-		catch(GLib.Error e) {
-			isOpen=false;
-			file=null;
-			fos=null;
-			throw e;
-		}
-	}
-	private void write(uchar data) {
-		if(isOpen) {
-			uchar[] o = new uchar[1];
-			o[0]=data;
-			try {
-	                        fos.write(o, null);
-			}
-			catch(GLib.Error e) {
-				stdout.printf(_("error: %s\n"), e.message);
-			}
-		}
-	
-	}
-	private void write_array(uchar[] data) {
-		if(isOpen) {
-			try {
-	                        fos.write(data, null);
-			}
-			catch(GLib.Error e) {
-				stdout.printf(_("error: %s\n"), e.message);
-			}
-		}
-	
-	}
+    private Direction direction;
+    public void open (string filename, Direction direction) throws GLib.Error {
+        try {
+            file = File.new_for_path (filename);
+            fos = file.replace (null, false, GLib.FileCreateFlags.NONE, null);
+            isOpen = true;
+            uri = file.get_uri ();
+            this.direction = direction;
+        } catch (GLib.Error e) {
+            isOpen = false;
+            file = null;
+            fos = null;
+            throw e;
+        }
+    }
 
-	public void writeOutgoing(uchar data) {
-		if(isOpen && (direction==Direction.OUTGOING || direction==Direction.BOTH))
-			write(data);
-	}
-	public void writeIncoming(uchar[] data) {
-		if(isOpen && (direction==Direction.INCOMING || direction==Direction.BOTH))
-			write_array(data);
-	}
-	public void close (bool launch){
-		if(isOpen) {
-			try {
-				fos.flush(null);
-				fos.close(null);
-			}
-			catch(GLib.Error e) {
-				stdout.printf(_("error: %s\n"), e.message);
-				// Error closing the file?
-			}
+    private void write (uchar data) {
+        if (isOpen) {
+            uchar[] o = new uchar[1];
+            o[0] = data;
+            try {
+                fos.write (o, null);
+            } catch (GLib.Error e) {
+                stdout.printf (_("error: %s\n"), e.message);
+            }
+        }
+    }
 
-			/* TODO: allow this feature to be enabled / disabled */
-			if(launch && (MoUtils.fileSize(uri)>0)) {
-				try {
-					show_uri_on_window(null, uri,  Gdk.CURRENT_TIME);
-				} catch (GLib.Error e) {
-					warning(_("Unable to launch %s: %s"), uri, e.message);
-				}
-			}
-			fos=null;
-			file = null;
-			isOpen=false;
-		}
-	}
+    private void write_array (uchar[] data) {
+        if (isOpen) {
+            try {
+                fos.write (data, null);
+            } catch (GLib.Error e) {
+                stdout.printf (_("error: %s\n"), e.message);
+            }
+        }
+    }
+
+    public void writeOutgoing (uchar data) {
+        if (isOpen && (direction == Direction.OUTGOING || direction == Direction.BOTH))
+            write (data);
+    }
+
+    public void writeIncoming (uchar[] data) {
+        if (isOpen && (direction == Direction.INCOMING || direction == Direction.BOTH))
+            write_array (data);
+    }
+
+    public void close (bool launch) {
+        if (isOpen) {
+            try {
+                fos.flush (null);
+                fos.close (null);
+            } catch (GLib.Error e) {
+                stdout.printf (_("error: %s\n"), e.message);
+                // Error closing the file?
+            }
+
+            /* TODO: allow this feature to be enabled / disabled */
+            if (launch && (MoUtils.fileSize (uri) > 0)) {
+                try {
+                    show_uri_on_window (null, uri, Gdk.CURRENT_TIME);
+                } catch (GLib.Error e) {
+                    warning (_("Unable to launch %s: %s"), uri, e.message);
+                }
+            }
+            fos = null;
+            file = null;
+            isOpen = false;
+        }
+    }
 }

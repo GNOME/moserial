@@ -18,48 +18,46 @@
  */
 
 using Gtk;
-public class moserial.SendChooserDialog : GLib.Object
-{
-        private FileChooserDialog dialog;
-        public ComboBox protocolCombo;
-        public signal void startTransfer();
-        public string filename;
-        construct {
-                var builder = new Gtk.Builder.from_resource(Config.UIROOT + "send_chooser_dialog.ui");
+public class moserial.SendChooserDialog : GLib.Object {
+    private FileChooserDialog dialog;
+    public ComboBox protocolCombo;
+    public signal void startTransfer ();
 
-                dialog = (FileChooserDialog)builder.get_object("send_chooser_dialog");
+    public string filename;
+    construct {
+        var builder = new Gtk.Builder.from_resource (Config.UIROOT + "send_chooser_dialog.ui");
 
-                protocolCombo = (ComboBox)builder.get_object("send_chooser_protocol");
-		MoUtils.populateComboBox (protocolCombo, Szwrapper.ProtocolStrings);
+        dialog = (FileChooserDialog) builder.get_object ("send_chooser_dialog");
 
-                dialog.delete_event.connect(hide);
-                dialog.add_buttons(Gtk.Stock.CANCEL, Gtk.ResponseType.CANCEL, Gtk.Stock.OK, Gtk.ResponseType.ACCEPT, null);
-                protocolCombo.set_active(Szwrapper.Protocol.ZMODEM);
-                dialog.response.connect(response);
+        protocolCombo = (ComboBox) builder.get_object ("send_chooser_protocol");
+        MoUtils.populateComboBox (protocolCombo, Szwrapper.ProtocolStrings);
+
+        dialog.delete_event.connect (hide);
+        dialog.add_buttons (Gtk.Stock.CANCEL, Gtk.ResponseType.CANCEL, Gtk.Stock.OK, Gtk.ResponseType.ACCEPT, null);
+        protocolCombo.set_active (Szwrapper.Protocol.ZMODEM);
+        dialog.response.connect (response);
+    }
+
+    public void show (string ? folder) {
+        if ((folder != null) && MoUtils.fileExists (folder))
+            dialog.set_current_folder (folder);
+        dialog.run ();
+    }
+
+    public bool hide () {
+        dialog.hide ();
+        return true;
+    }
+
+    private void response (Widget w, int r) {
+        if (r == Gtk.ResponseType.CANCEL) {
+            hide ();
+        } else if (r == Gtk.ResponseType.ACCEPT) {
+            hide ();
+            filename = dialog.get_filename ();
+            startTransfer ();
+        } else {
+            //
         }
-
-        public void show(string? folder) {
-                if ((folder != null) && MoUtils.fileExists(folder))
-                        dialog.set_current_folder(folder);
-                dialog.run();
-        }
-
-        public bool hide() {
-                dialog.hide();
-                return true;
-        }
-
-        private void response(Widget w, int r){
-        	if(r == Gtk.ResponseType.CANCEL) {
-        		hide();
-	        }
-	        else if(r == Gtk.ResponseType.ACCEPT) {
-		        hide();
-		        filename = dialog.get_filename();
-		        startTransfer();
-	        }
-	        else {
-		        //
-	        }
-        }
+    }
 }

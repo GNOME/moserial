@@ -18,71 +18,68 @@
  */
 
 using Gtk;
-public class moserial.RecordDialog : GLib.Object
-{
-        private FileChooserDialog dialog;
-        private Button cancelButton;
-        private ComboBox streamCombo;
-        public string fileName { get; private set;}
-        public signal void startRecording(string fileName, SerialStreamRecorder.Direction direction);
-        public signal void stopRecording();
-        public SerialStreamRecorder.Direction direction;
-        construct {
-                var builder = new Gtk.Builder.from_resource(Config.UIROOT + "record_dialog.ui");
+public class moserial.RecordDialog : GLib.Object {
+    private FileChooserDialog dialog;
+    private Button cancelButton;
+    private ComboBox streamCombo;
+    public string fileName { get; private set; }
+    public signal void startRecording (string fileName, SerialStreamRecorder.Direction direction);
+    public signal void stopRecording ();
 
-                dialog = (FileChooserDialog)builder.get_object("record_dialog");
-                cancelButton = (Button)builder.get_object("record_cancel");
+    public SerialStreamRecorder.Direction direction;
+    construct {
+        var builder = new Gtk.Builder.from_resource (Config.UIROOT + "record_dialog.ui");
 
-                streamCombo = (ComboBox)builder.get_object("record_stream");
-		MoUtils.populateComboBox (streamCombo, SerialStreamRecorder.DirectionStrings);
-                streamCombo.set_active(SerialStreamRecorder.Direction.INCOMING);
+        dialog = (FileChooserDialog) builder.get_object ("record_dialog");
+        cancelButton = (Button) builder.get_object ("record_cancel");
 
-                dialog.delete_event.connect(hide);
-                dialog.response.connect(response);
-                dialog.add_buttons(Gtk.Stock.CANCEL, Gtk.ResponseType.CANCEL, Gtk.Stock.SAVE, Gtk.ResponseType.ACCEPT, null);
-                dialog.set_do_overwrite_confirmation(true);
-		dialog.set_local_only(false);
+        streamCombo = (ComboBox) builder.get_object ("record_stream");
+        MoUtils.populateComboBox (streamCombo, SerialStreamRecorder.DirectionStrings);
+        streamCombo.set_active (SerialStreamRecorder.Direction.INCOMING);
 
-                fileName=null;
+        dialog.delete_event.connect (hide);
+        dialog.response.connect (response);
+        dialog.add_buttons (Gtk.Stock.CANCEL, Gtk.ResponseType.CANCEL, Gtk.Stock.SAVE, Gtk.ResponseType.ACCEPT, null);
+        dialog.set_do_overwrite_confirmation (true);
+        dialog.set_local_only (false);
+
+        fileName = null;
+    }
+
+    public void show (string ? folder) {
+        if ((folder != null) && MoUtils.fileExists (folder))
+            dialog.set_current_folder (folder);
+        dialog.run ();
+    }
+
+    public bool hide () {
+        dialog.hide ();
+        return true;
+    }
+
+    private void response (Widget w, int r) {
+        if (r == Gtk.ResponseType.CANCEL) {
+            fileName = null;
+            hide ();
+            stopRecording ();
+        } else if (r == Gtk.ResponseType.ACCEPT) {
+            fileName = dialog.get_filename ();
+            switch (streamCombo.get_active ()) {
+                case 0:
+                default:
+                    direction = SerialStreamRecorder.Direction.INCOMING;
+                    break;
+                case 1:
+                    direction = SerialStreamRecorder.Direction.OUTGOING;
+                    break;
+                case 2:
+                    direction = SerialStreamRecorder.Direction.BOTH;
+                    break;
+            }
+            hide ();
+            startRecording (this.fileName, direction);
+        } else {
+            stopRecording ();
         }
-
-        public void show(string? folder) {
-		if ((folder != null) && MoUtils.fileExists(folder))
-			dialog.set_current_folder(folder);
-                dialog.run();
-        }
-
-        public bool hide() {
-                dialog.hide();
-                return true;
-        }
-        
-        private void response(Widget w, int r){
-        	if(r == Gtk.ResponseType.CANCEL) {
-        		fileName=null;
-        		hide();
-        		stopRecording();
-	        }
-	        else if(r == Gtk.ResponseType.ACCEPT) {
-		        fileName=dialog.get_filename();
-		        switch(streamCombo.get_active())
-		        {
-		        	case 0:
-		        	default:
-		        		direction=SerialStreamRecorder.Direction.INCOMING;
-		        		break;
-		        	case 1:
-		        		direction=SerialStreamRecorder.Direction.OUTGOING;
-		        		break;
-		        	case 2:
-		        		direction=SerialStreamRecorder.Direction.BOTH;
-		        		break;
-		        }
-		        hide();
-		        startRecording(this.fileName, direction);
-	        }
-	        else {
-		        stopRecording();
-	        }
-        }
+    }
 }

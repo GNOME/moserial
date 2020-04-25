@@ -18,139 +18,138 @@
  */
 
 using Gtk;
-public class moserial.PreferencesDialog : GLib.Object
-{
-        private Dialog dialog;
-        private Button cancelButton;
-        private Button okButton;
-        private CheckButton systemFont;
-        private FontButton fontButton;
-        private ColorButton fontColorButton;
-        private ColorButton backgroundColorButton;
-        private ColorButton highlightColorButton;
-        private CheckButton recordLaunch;
-        private CheckButton enableTimeout;
-        private SpinButton timeout;
-        public signal void updatePreferences(Preferences preferences);
-        construct {
-                var builder = new Gtk.Builder.from_resource(Config.UIROOT + "preferences.ui");
+public class moserial.PreferencesDialog : GLib.Object {
+    private Dialog dialog;
+    private Button cancelButton;
+    private Button okButton;
+    private CheckButton systemFont;
+    private FontButton fontButton;
+    private ColorButton fontColorButton;
+    private ColorButton backgroundColorButton;
+    private ColorButton highlightColorButton;
+    private CheckButton recordLaunch;
+    private CheckButton enableTimeout;
+    private SpinButton timeout;
+    public signal void updatePreferences (Preferences preferences);
 
-                dialog = (Dialog)builder.get_object("preferences_dialog");
-                okButton = (Button)builder.get_object("preferences_ok");
-                cancelButton = (Button)builder.get_object("preferences_cancel");
-                systemFont = (CheckButton)builder.get_object("preferences_use_system_font");
-                fontButton = (FontButton)builder.get_object("preferences_font_button");
-                fontColorButton = (ColorButton)builder.get_object("preferences_font_color_button");
-                backgroundColorButton = (ColorButton)builder.get_object("preferences_background_color_button");
-                highlightColorButton = (ColorButton)builder.get_object("preferences_highlight_color_button");
+    construct {
+        var builder = new Gtk.Builder.from_resource (Config.UIROOT + "preferences.ui");
 
-                recordLaunch = (CheckButton)builder.get_object("preferences_record_launch");
-		recordLaunch.set_tooltip_text (_("If this option is enabled, a recorded file will be opened immediately after it is saved, using the default application for the file type. The default application is defined by the desktop environment."));
+        dialog = (Dialog) builder.get_object ("preferences_dialog");
+        okButton = (Button) builder.get_object ("preferences_ok");
+        cancelButton = (Button) builder.get_object ("preferences_cancel");
+        systemFont = (CheckButton) builder.get_object ("preferences_use_system_font");
+        fontButton = (FontButton) builder.get_object ("preferences_font_button");
+        fontColorButton = (ColorButton) builder.get_object ("preferences_font_color_button");
+        backgroundColorButton = (ColorButton) builder.get_object ("preferences_background_color_button");
+        highlightColorButton = (ColorButton) builder.get_object ("preferences_highlight_color_button");
 
-                enableTimeout = (CheckButton)builder.get_object("preferences_record_enable_timeout");
-		enableTimeout.set_tooltip_text (_("If this option is enabled, recording will be automatically stopped after an adjustable period of inactivity after receiving some data. Moserial will wait indefinitely to record the first data byte before activating the inactivity timer."));
+        recordLaunch = (CheckButton) builder.get_object ("preferences_record_launch");
+        recordLaunch.set_tooltip_text (_("If this option is enabled, a recorded file will be opened immediately after it is saved, using the default application for the file type. The default application is defined by the desktop environment."));
 
-                timeout = (SpinButton)builder.get_object("preferences_record_timeout");
-		timeout.adjustment.lower = 0;
-		timeout.adjustment.upper = 600;
-		timeout.adjustment.step_increment = 1;
-                timeout.adjustment.page_increment = 60;
+        enableTimeout = (CheckButton) builder.get_object ("preferences_record_enable_timeout");
+        enableTimeout.set_tooltip_text (_("If this option is enabled, recording will be automatically stopped after an adjustable period of inactivity after receiving some data. Moserial will wait indefinitely to record the first data byte before activating the inactivity timer."));
 
-                systemFont.toggled.connect(this.systemFontToggled);
-                enableTimeout.toggled.connect(this.enableTimeoutToggled);
-                okButton.clicked.connect(ok);
-                cancelButton.clicked.connect(cancel);
-                dialog.delete_event.connect(hide);
+        timeout = (SpinButton) builder.get_object ("preferences_record_timeout");
+        timeout.adjustment.lower = 0;
+        timeout.adjustment.upper = 600;
+        timeout.adjustment.step_increment = 1;
+        timeout.adjustment.page_increment = 60;
+
+        systemFont.toggled.connect (this.systemFontToggled);
+        enableTimeout.toggled.connect (this.enableTimeoutToggled);
+        okButton.clicked.connect (ok);
+        cancelButton.clicked.connect (cancel);
+        dialog.delete_event.connect (hide);
+    }
+    public void ok (Button button) {
+        hide ();
+        bool pSystemFont;
+        string pFont;
+        string pFontColor;
+        string pBackgroundColor;
+        string pHighlightColor;
+        bool pRecordLaunch;
+        bool pEnableTimeout;
+        int pTimeout;
+        if (systemFont.get_active ())
+            pSystemFont = true;
+        else
+            pSystemFont = false;
+        pFont = fontButton.get_font_name ();
+        Gdk.Color c;
+        fontColorButton.get_color (out c);
+        pFontColor = c.to_string ();
+        backgroundColorButton.get_color (out c);
+        pBackgroundColor = c.to_string ();
+        highlightColorButton.get_color (out c);
+        pHighlightColor = c.to_string ();
+        if (recordLaunch.get_active ())
+            pRecordLaunch = true;
+        else
+            pRecordLaunch = false;
+        if (enableTimeout.get_active ())
+            pEnableTimeout = true;
+        else
+            pEnableTimeout = false;
+        pTimeout = (int) timeout.get_value ();
+        Preferences preferences = new Preferences (pSystemFont, pFont, pFontColor, pBackgroundColor, pHighlightColor, pRecordLaunch, pEnableTimeout, pTimeout);
+        this.updatePreferences (preferences);
+    }
+
+    public void show (Preferences preferences, bool recording) {
+        if (preferences.useSystemMonospaceFont) {
+            fontButton.set_sensitive (false);
+            systemFont.set_active (true);
+        } else {
+            fontButton.set_sensitive (true);
+            systemFont.set_active (false);
         }
-        public void ok(Button button) {
-        	hide();
-        	bool pSystemFont;
-        	string pFont;
-        	string pFontColor;
-        	string pBackgroundColor;
-        	string pHighlightColor;
-        	bool pRecordLaunch;
-        	bool pEnableTimeout;
-        	int pTimeout;
-		if(systemFont.get_active())
-			pSystemFont=true;
-		else
-			pSystemFont=false;
-		pFont=fontButton.get_font_name();
-		Gdk.Color c;
-		fontColorButton.get_color(out c);
-		pFontColor=c.to_string();
-		backgroundColorButton.get_color(out c);
-		pBackgroundColor=c.to_string();
-		highlightColorButton.get_color(out c);
-		pHighlightColor=c.to_string();
-		if(recordLaunch.get_active())
-			pRecordLaunch=true;
-		else
-			pRecordLaunch=false;
-		if(enableTimeout.get_active())
-			pEnableTimeout=true;
-		else
-			pEnableTimeout=false;
-		pTimeout=(int)timeout.get_value();
-        	Preferences preferences=new Preferences(pSystemFont, pFont, pFontColor,pBackgroundColor,pHighlightColor, pRecordLaunch, pEnableTimeout, pTimeout);
-		this.updatePreferences(preferences);
+        fontButton.set_font_name (preferences.font);
+        fontColorButton.set_color (Preferences.getGdkColor (preferences.fontColor));
+        backgroundColorButton.set_color (Preferences.getGdkColor (preferences.backgroundColor));
+        highlightColorButton.set_color (Preferences.getGdkColor (preferences.highlightColor));
+        if (preferences.recordLaunch)
+            recordLaunch.set_active (true);
+        else
+            recordLaunch.set_active (false);
+        if (preferences.enableTimeout) {
+            enableTimeout.set_active (true);
+            timeout.set_sensitive (true);
+        } else {
+            enableTimeout.set_active (false);
+            timeout.set_sensitive (false);
         }
-        
-        public void show(Preferences preferences, bool recording) {
-         	if(preferences.useSystemMonospaceFont) {
-        		fontButton.set_sensitive(false);
-        		systemFont.set_active(true);
-        	}
-        	else {
-        	 	fontButton.set_sensitive(true);
-        		systemFont.set_active(false);
-        	}
-        	fontButton.set_font_name(preferences.font);
-        	fontColorButton.set_color(Preferences.getGdkColor(preferences.fontColor));
-        	backgroundColorButton.set_color(Preferences.getGdkColor(preferences.backgroundColor));
-        	highlightColorButton.set_color(Preferences.getGdkColor(preferences.highlightColor));
-        	if(preferences.recordLaunch)
-        		recordLaunch.set_active(true);
-        	else
-	        	recordLaunch.set_active(false);
-        	if(preferences.enableTimeout) {
-        		enableTimeout.set_active(true);
-        		timeout.set_sensitive(true);
-        	}
-        	else {
-	        	enableTimeout.set_active(false);
-        		timeout.set_sensitive(false);
-	        }
-       		if(recording) {
-	        	enableTimeout.set_sensitive(false);
-	        	timeout.set_sensitive(false);
-	        }
-	        else
-		        enableTimeout.set_sensitive(true);
-	        timeout.set_value(preferences.timeout); 		
-                dialog.show_all();
-        }
-        public void cancel(Widget w) {
-                //currentPreferences=null;
-                hide();
-        }
-        public bool hide() {
-                dialog.hide();
-                return true;
-        }
-        public void systemFontToggled(ToggleButton button)
-        {
-        	if(button.get_active())
-        		fontButton.set_sensitive(false);
-        	else
-	        	fontButton.set_sensitive(true);
-        }
-        public void enableTimeoutToggled(ToggleButton button)
-        {
-        	if(button.get_active())
-        		timeout.set_sensitive(true);
-        	else
-	        	timeout.set_sensitive(false);
-        }
+        if (recording) {
+            enableTimeout.set_sensitive (false);
+            timeout.set_sensitive (false);
+        } else
+            enableTimeout.set_sensitive (true);
+        timeout.set_value (preferences.timeout);
+        dialog.show_all ();
+    }
+
+    public void cancel (Widget w) {
+        // currentPreferences=null;
+        hide ();
+    }
+
+    public bool hide () {
+        dialog.hide ();
+        return true;
+    }
+
+    public void systemFontToggled (ToggleButton button) {
+        if (button.get_active ())
+            fontButton.set_sensitive (false);
+        else
+            fontButton.set_sensitive (true);
+    }
+
+    public void enableTimeoutToggled (ToggleButton button) {
+        if (button.get_active ())
+            timeout.set_sensitive (true);
+        else
+            timeout.set_sensitive (false);
+    }
 }
