@@ -121,6 +121,10 @@ public class moserial.SerialConnection : GLib.Object {
         }
     }
 
+    public bool isConnected () {
+        return connected;
+    }
+
     private bool readBytes (GLib.IOChannel source, GLib.IOCondition condition) {
         uchar[] m_buf = new uchar[max_buf_size];
         int bytesRead = (int) Posix.read (m_fd, m_buf, max_buf_size);
@@ -258,7 +262,7 @@ public class moserial.SerialConnection : GLib.Object {
 
         // Some other port settings from minicom.
 
-// newtio.c_iflag &= ~(IGNBRK | IGNCR | INLCR | ICRNL | IUCLC | IXANY | IXON | IXOFF | INPCK | ISTRIP);
+        // newtio.c_iflag &= ~(IGNBRK | IGNCR | INLCR | ICRNL | IUCLC | IXANY | IXON | IXOFF | INPCK | ISTRIP);
         // newtio.c_iflag &= ~(Posix.IGNBRK | Posix.IGNCR | Posix.InputMode.INLCR | Posix.InputMode.ICRNL | Posix.IXANY | Posix.IXON | Posix.IXOFF | Posix.INPCK | Posix.ISTRIP);
         // newtio.c_iflag |= (Posix.BRKINT | Posix.IGNPAR);
         // newtio.c_oflag &= ~Posix.OPOST;
@@ -277,6 +281,60 @@ public class moserial.SerialConnection : GLib.Object {
             newtio.c_cflag |= Linux.Termios.CRTSCTS;
         else
             newtio.c_cflag &= ~Linux.Termios.CRTSCTS;
+    }
+
+    public void controlDTR (bool y) {
+        int mcs = 0;
+        Posix.ioctl (m_fd, Linux.Termios.TIOCMGET, out mcs);
+        if (y) {
+            mcs |= Linux.Termios.TIOCM_DTR;
+        } else {
+            mcs &= ~Linux.Termios.TIOCM_DTR;
+        }
+        Posix.ioctl (m_fd, Linux.Termios.TIOCMSET, out mcs);
+    }
+
+    public void controlRTS (bool y) {
+        int mcs = 0;
+        Posix.ioctl (m_fd, Linux.Termios.TIOCMGET, out mcs);
+        if (y) {
+            mcs |= Linux.Termios.TIOCM_RTS;
+        } else {
+            mcs &= ~Linux.Termios.TIOCM_RTS;
+        }
+        Posix.ioctl (m_fd, Linux.Termios.TIOCMSET, out mcs);
+    }
+
+    public bool[] getStatus () {
+        bool mcs[6];
+        int stat;
+        Posix.ioctl (m_fd, Linux.Termios.TIOCMGET, out stat);
+        // GLib.print("stat%x\r\n",stat);
+        if ((stat & 0x080) == 0) // Linux.Termios.TIOCM_RI=0x080
+            mcs[0] = false;
+        else
+            mcs[0] = true;
+        if ((stat & Linux.Termios.TIOCM_DSR) == 0)
+            mcs[1] = false;
+        else
+            mcs[1] = true;
+        if ((stat & 0x040) == 0) // Linux.Termios.TIOCM_CD=0x040
+            mcs[2] = false;
+        else
+            mcs[2] = true;
+        if ((stat & Linux.Termios.TIOCM_CTS) == 0)
+            mcs[3] = false;
+        else
+            mcs[3] = true;
+        if ((stat & Linux.Termios.TIOCM_RTS) == 0)
+            mcs[4] = false;
+        else
+            mcs[4] = true;
+        if ((stat & Linux.Termios.TIOCM_DTR) == 0)
+            mcs[5] = false;
+        else
+            mcs[5] = true;
+        return mcs;
     }
 
     public string getBytecountbarString () {

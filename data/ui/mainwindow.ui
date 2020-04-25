@@ -2,7 +2,6 @@
 <!-- Generated with glade 3.22.1 -->
 <interface>
   <requires lib="gtk+" version="3.20"/>
-  <!-- interface-naming-policy toplevel-contextual -->
   <object class="GtkAccelGroup" id="accelgroup1"/>
   <object class="GtkWindow" id="window">
     <property name="can_focus">False</property>
@@ -504,8 +503,6 @@
                     <property name="invisible_char">●</property>
                     <property name="primary_icon_activatable">False</property>
                     <property name="secondary_icon_activatable">False</property>
-                    <property name="primary_icon_sensitive">True</property>
-                    <property name="secondary_icon_sensitive">True</property>
                   </object>
                   <packing>
                     <property name="expand">True</property>
@@ -592,20 +589,23 @@
               </packing>
             </child>
             <child>
-              <object class="GtkHBox" id="hbox-control">
+              <object class="GtkBox" id="hbox-control">
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>
                 <property name="spacing">2</property>
+                <property name="homogeneous">True</property>
                 <child>
                   <object class="GtkLabel" id="labelStatusDTR">
                     <property name="visible">True</property>
                     <property name="sensitive">False</property>
                     <property name="can_focus">False</property>
                     <property name="label" translatable="yes">DTR</property>
+                    <property name="width_chars">4</property>
+                    <property name="max_width_chars">4</property>
                     <property name="track_visited_links">False</property>
                   </object>
                   <packing>
-                    <property name="expand">True</property>
+                    <property name="expand">False</property>
                     <property name="fill">True</property>
                     <property name="position">0</property>
                   </packing>
@@ -616,10 +616,12 @@
                     <property name="sensitive">False</property>
                     <property name="can_focus">False</property>
                     <property name="label" translatable="yes">RTS</property>
+                    <property name="width_chars">4</property>
+                    <property name="max_width_chars">4</property>
                     <property name="track_visited_links">False</property>
                   </object>
                   <packing>
-                    <property name="expand">True</property>
+                    <property name="expand">False</property>
                     <property name="fill">True</property>
                     <property name="position">1</property>
                   </packing>
@@ -630,10 +632,12 @@
                     <property name="sensitive">False</property>
                     <property name="can_focus">False</property>
                     <property name="label" translatable="yes">CTS</property>
+                    <property name="width_chars">4</property>
+                    <property name="max_width_chars">4</property>
                     <property name="track_visited_links">False</property>
                   </object>
                   <packing>
-                    <property name="expand">True</property>
+                    <property name="expand">False</property>
                     <property name="fill">True</property>
                     <property name="position">2</property>
                   </packing>
@@ -644,10 +648,12 @@
                     <property name="sensitive">False</property>
                     <property name="can_focus">False</property>
                     <property name="label" translatable="yes">CD</property>
+                    <property name="width_chars">4</property>
+                    <property name="max_width_chars">4</property>
                     <property name="track_visited_links">False</property>
                   </object>
                   <packing>
-                    <property name="expand">True</property>
+                    <property name="expand">False</property>
                     <property name="fill">True</property>
                     <property name="position">3</property>
                   </packing>
@@ -658,10 +664,12 @@
                     <property name="sensitive">False</property>
                     <property name="can_focus">False</property>
                     <property name="label" translatable="yes">DSR</property>
+                    <property name="width_chars">4</property>
+                    <property name="max_width_chars">4</property>
                     <property name="track_visited_links">False</property>
                   </object>
                   <packing>
-                    <property name="expand">True</property>
+                    <property name="expand">False</property>
                     <property name="fill">True</property>
                     <property name="position">4</property>
                   </packing>
@@ -672,10 +680,12 @@
                     <property name="sensitive">False</property>
                     <property name="can_focus">False</property>
                     <property name="label" translatable="yes">RI</property>
+                    <property name="width_chars">4</property>
+                    <property name="max_width_chars">4</property>
                     <property name="track_visited_links">False</property>
                   </object>
                   <packing>
-                    <property name="expand">True</property>
+                    <property name="expand">False</property>
                     <property name="fill">True</property>
                     <property name="position">5</property>
                   </packing>

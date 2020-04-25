@@ -24,7 +24,7 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
 {
     const string[] authors = {
         "Michael J. Chudobiak <mjc@svn.gnome.org>",
-        "marlodavampire",
+        "mdarlodavampire",
         null
     };
     const string translators = N_ ("translator-credits");
@@ -101,6 +101,8 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
 
     private const string recentGroup = "moserial-configs";
     private Gtk.RecentData recentData;
+    // RTS status
+    private Label SerialStatusSignals[6];
 
     public MainWindow (string ? profileFilename) {
         GLib.Object (startupProfileFilename: profileFilename);
@@ -112,7 +114,7 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         gtkWindow = (Gtk.Window)builder.get_object ("window");
         ag = (Gtk.AccelGroup)builder.get_object ("accelgroup1");
         gtkWindow.add_accel_group (ag);
-
+        // gtkWindow.add_accelerator(gtkWindow, "<Control>b", signal="backspace")
         gtkWindow.destroy.connect (quitSave);
         gtkWindow.delete_event.connect (deleteSaveSize);
         gtkWindow.key_press_event.connect (keyPress);
@@ -300,6 +302,28 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         recentChooserMenu.show_not_found = false;
         Gtk.MenuItem recentFileItem = (Gtk.MenuItem)builder.get_object ("menubar_open_recent");
         recentFileItem.set_submenu (recentChooserMenu);
+
+        // setup status bar for serial
+        Label label = (Label) builder.get_object ("labelStatusRI");
+        label.set_sensitive (false);
+        SerialStatusSignals[0] = label;
+        label = (Label) builder.get_object ("labelStatusDSR");
+        label.set_sensitive (false);
+        SerialStatusSignals[1] = label;
+        label = (Label) builder.get_object ("labelStatusCD");
+        label.set_sensitive (false);
+        SerialStatusSignals[2] = label;
+        label = (Label) builder.get_object ("labelStatusCTS");
+        label.set_sensitive (false);
+        SerialStatusSignals[3] = label;
+        label = (Label) builder.get_object ("labelStatusRTS");
+        label.set_sensitive (false);
+        SerialStatusSignals[4] = label;
+        label = (Label) builder.get_object ("labelStatusDTR");
+        label.set_sensitive (false);
+        SerialStatusSignals[5] = label;
+        // public uint add (uint interval, owned SourceFunc function, int priority = DEFAULT)
+        GLib.Timeout.add (200, (GLib.SourceFunc)showSerialStatus, 0);
 
         // load and apply preferences
         currentPreferences = Preferences.loadFromProfile (profile);
@@ -655,14 +679,35 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
             serialConnection.newData.disconnect (this.updateIncoming);
             bytecountbar.pop (bytecountbarContext);
             bytecountbar.push (bytecountbarContext, serialConnection.getBytecountbarString ());
-            // serialConnection = new SerialConnection();
             statusbar.pop (statusbarContext);
             statusbar.push (statusbarContext, currentSettings.getStatusbarString (false));
             button.set_label_widget (connectLabel);
 
+            SerialStatusSignals[0].set_sensitive (false);
+            SerialStatusSignals[1].set_sensitive (false);
+            SerialStatusSignals[2].set_sensitive (false);
+            SerialStatusSignals[3].set_sensitive (false);
+            SerialStatusSignals[4].set_sensitive (false);
+            SerialStatusSignals[5].set_sensitive (false);
             if (recordButton.get_active ())
                 recordButton.set_active (false);
         }
+    }
+
+    private bool showSerialStatus () {
+        if (!serialConnection.isConnected ()) {
+
+            return true;
+        }
+
+        bool[] state = serialConnection.getStatus ();
+        SerialStatusSignals[0].set_sensitive (state[0]);
+        SerialStatusSignals[1].set_sensitive (state[1]);
+        SerialStatusSignals[2].set_sensitive (state[2]);
+        SerialStatusSignals[3].set_sensitive (state[3]);
+        SerialStatusSignals[4].set_sensitive (state[4]);
+        SerialStatusSignals[5].set_sensitive (state[5]);
+        return true;
     }
 
     private void updateIncoming (SerialConnection sc, uchar[] data, int size) {
@@ -785,6 +830,7 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
     }
 
     private bool keyPress (Widget widget, EventKey key) {
+        // GLib.print("key:%x\r\n",key.keyval);
         if (key.keyval == Gdk.keyval_from_name ("Escape")) {
             AutoScroll.scroll (va1);
             AutoScroll.scroll (va2);
@@ -792,6 +838,24 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
             AutoScroll.scroll (va4);
             entry.grab_focus ();
             entry.set_position (-1);
+            return true;
+        }
+
+        if (key.keyval == Gdk.keyval_from_name ("F7")) {
+            bool[] state = serialConnection.getStatus ();
+            if (state[5] && serialConnection.isConnected ())
+                serialConnection.controlDTR (false);
+            else
+                serialConnection.controlDTR (true);
+            return true;
+        }
+        
+        if (key.keyval == Gdk.keyval_from_name ("F8")) {
+            bool[] state = serialConnection.getStatus ();
+            if (state[4] && serialConnection.isConnected ())
+                serialConnection.controlRTS (false);
+            else
+                serialConnection.controlRTS (true);
             return true;
         }
 
