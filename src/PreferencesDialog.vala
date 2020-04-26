@@ -76,13 +76,13 @@ public class moserial.PreferencesDialog : GLib.Object {
             pSystemFont = true;
         else
             pSystemFont = false;
-        pFont = fontButton.get_font_name ();
-        Gdk.Color c;
-        fontColorButton.get_color (out c);
+        pFont = fontButton.get_font ();
+        Gdk.RGBA c = Gdk.RGBA ();
+        c= fontColorButton.get_rgba();
         pFontColor = c.to_string ();
-        backgroundColorButton.get_color (out c);
+        backgroundColorButton.get_rgba ();
         pBackgroundColor = c.to_string ();
-        highlightColorButton.get_color (out c);
+        highlightColorButton.get_rgba ();
         pHighlightColor = c.to_string ();
         if (recordLaunch.get_active ())
             pRecordLaunch = true;
@@ -105,10 +105,10 @@ public class moserial.PreferencesDialog : GLib.Object {
             fontButton.set_sensitive (true);
             systemFont.set_active (false);
         }
-        fontButton.set_font_name (preferences.font);
-        fontColorButton.set_color (Preferences.getGdkColor (preferences.fontColor));
-        backgroundColorButton.set_color (Preferences.getGdkColor (preferences.backgroundColor));
-        highlightColorButton.set_color (Preferences.getGdkColor (preferences.highlightColor));
+        fontButton.set_font (preferences.font);
+        fontColorButton.set_rgba (Preferences.getGdkRGBA (preferences.fontColor));
+        backgroundColorButton.set_rgba(Preferences.getGdkRGBA (preferences.backgroundColor));
+        highlightColorButton.set_rgba (Preferences.getGdkRGBA (preferences.highlightColor));
         if (preferences.recordLaunch)
             recordLaunch.set_active (true);
         else
