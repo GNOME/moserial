@@ -91,8 +91,8 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
     public string ? startupProfileFilename { get; construct; }
     private string profileFilename = null;
     private bool profileChanged = false;
-    private Gtk.ImageMenuItem cutMenuItem;
-    private Gtk.ImageMenuItem copyMenuItem;
+    private Gtk.MenuItem cutMenuItem;
+    private Gtk.MenuItem copyMenuItem;
     private Adjustment va1;
     private Adjustment va2;
     private Adjustment va3;
@@ -135,29 +135,29 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
             paned.set_position (-1);
 
         // setup menu items
-        Gtk.ImageMenuItem quit = (Gtk.ImageMenuItem)builder.get_object ("menubar_quit");
+        Gtk.MenuItem quit = (Gtk.MenuItem)builder.get_object ("menubar_quit");
         quit.activate.connect (quitSizeSave);
-        Gtk.ImageMenuItem saveAs = (Gtk.ImageMenuItem)builder.get_object ("menubar_save_settings_as");
+        Gtk.MenuItem saveAs = (Gtk.MenuItem)builder.get_object ("menubar_save_settings_as");
         saveAs.activate.connect (saveProfileAs);
-        Gtk.ImageMenuItem save = (Gtk.ImageMenuItem)builder.get_object ("menubar_save_settings");
+        Gtk.MenuItem save = (Gtk.MenuItem)builder.get_object ("menubar_save_settings");
         save.activate.connect (saveProfile);
-        Gtk.ImageMenuItem open = (Gtk.ImageMenuItem)builder.get_object ("menubar_open_settings");
+        Gtk.MenuItem open = (Gtk.MenuItem)builder.get_object ("menubar_open_settings");
         open.activate.connect (loadProfile);
-        copyMenuItem = (Gtk.ImageMenuItem)builder.get_object ("menubar_copy");
+        copyMenuItem = (Gtk.MenuItem)builder.get_object ("menubar_copy");
         copyMenuItem.activate.connect (this.copy);
         Gtk.MenuItem editMenuItem = (Gtk.MenuItem)builder.get_object ("menubar_edit");
         editMenuItem.activate.connect (this.editMenu);
-        cutMenuItem = (Gtk.ImageMenuItem)builder.get_object ("menubar_cut");
+        cutMenuItem = (Gtk.MenuItem)builder.get_object ("menubar_cut");
         copyMenuItem.set_sensitive (false);
         cutMenuItem.set_sensitive (false);
         cutMenuItem.activate.connect (this.cut);
-        Gtk.ImageMenuItem pasteMenuItem = (Gtk.ImageMenuItem)builder.get_object ("menubar_paste");
+        Gtk.MenuItem pasteMenuItem = (Gtk.MenuItem)builder.get_object ("menubar_paste");
         pasteMenuItem.activate.connect (this.paste);
-        Gtk.ImageMenuItem clearMenuItem = (Gtk.ImageMenuItem)builder.get_object ("menubar_clear");
+        Gtk.MenuItem clearMenuItem = (Gtk.MenuItem)builder.get_object ("menubar_clear");
         clearMenuItem.activate.connect (this.clear);
 
         // setup the Port Settings Dialog
-        settingsDialog = new SettingsDialog ();
+        settingsDialog = new SettingsDialog (this.gtkWindow);
         settingsDialog.updateSettings.connect (this.updateSettings);
         settingsButton = (ToolButton) builder.get_object ("toolbar_settings");
         settingsButton.clicked.connect (this.showSettingsDialog);
@@ -179,12 +179,12 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         bytecountbar.push (bytecountbarContext, _("TX: 0, RX: 0"));
 
         // setup the about dialog
-        Gtk.ImageMenuItem about = (Gtk.ImageMenuItem)builder.get_object ("menubar_about");
+        Gtk.MenuItem about = (Gtk.MenuItem)builder.get_object ("menubar_about");
         about.activate.connect (showAboutDialog);
 
         // setup send
-        sendProgressDialog = new SendProgressDialog ();
-        sendChooserDialog = new SendChooserDialog ();
+        sendProgressDialog = new SendProgressDialog (this.gtkWindow);
+        sendChooserDialog = new SendChooserDialog (this.gtkWindow);
         send = (ToolButton) builder.get_object ("toolbar_send");
         send.clicked.connect (doSendChooser);
         send.set_tooltip_text (_("Send a file"));
@@ -192,18 +192,18 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         sz = new Szwrapper (Szwrapper.Protocol.NULL, null, null);
 
         // setup receive
-        receiveProgressDialog = new ReceiveProgressDialog ();
-        receiveChooserDialog = new ReceiveChooserDialog ();
+        receiveProgressDialog = new ReceiveProgressDialog (this.gtkWindow);
+        receiveChooserDialog = new ReceiveChooserDialog (this.gtkWindow);
         receive = (ToolButton) builder.get_object ("toolbar_receive");
         receive.clicked.connect (doReceiveChooser);
         receive.set_tooltip_text (_("Receive a file"));
         receiveChooserDialog.startTransfer.connect (this.doReceive);
-        xmodemFilenameDialog = new XmodemFilenameDialog ();
+        xmodemFilenameDialog = new XmodemFilenameDialog (this.gtkWindow);
         rz = new Rzwrapper (Rzwrapper.Protocol.NULL, null, null, null);
 
 
         // setup recording
-        recordDialog = new RecordDialog ();
+        recordDialog = new RecordDialog (this.gtkWindow);
         recordButton = (ToggleToolButton) builder.get_object ("toolbar_logging");
         recordButton.toggled.connect (this.record);
         recordButton.set_tooltip_text (_("Record sent and/or received data"));
@@ -213,7 +213,7 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         stopRecordingLabel = (Label) builder.get_object ("stop_recording_label");
 
         // setup preferences
-        preferencesDialog = new PreferencesDialog ();
+        preferencesDialog = new PreferencesDialog (this.gtkWindow);
         preferencesDialog.updatePreferences.connect (this.updatePreferences);
         ToolButton preferences = (ToolButton) builder.get_object ("toolbar_preferences");
         preferences.clicked.connect (this.showPreferencesDialog);
@@ -227,7 +227,7 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         connectLabel = (Label) builder.get_object ("connect_label");
 
         // setup help
-        Gtk.ImageMenuItem contents = (Gtk.ImageMenuItem)builder.get_object ("menubar_contents");
+        Gtk.MenuItem contents = (Gtk.MenuItem)builder.get_object ("menubar_contents");
         contents.activate.connect (showHelpAction);
 
         // setup incoming notebook
@@ -580,21 +580,21 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
             font = Preferences.getSystemDefaultMonospaceFont ();
         else
             font = currentPreferences.font;
-        incomingAsciiTextView.modify_font (Pango.FontDescription.from_string (font));
+        incomingAsciiTextView.override_font (Pango.FontDescription.from_string (font));
         incomingAsciiTextView.modify_text (Gtk.StateType.NORMAL, Preferences.getGdkColor (currentPreferences.fontColor));
         incomingAsciiTextView.modify_base (Gtk.StateType.NORMAL, Preferences.getGdkColor (currentPreferences.backgroundColor));
         echoTag.foreground = currentPreferences.highlightColor;
 
-        incomingHexTextView.modify_font (Pango.FontDescription.from_string (font));
+        incomingHexTextView.override_font (Pango.FontDescription.from_string (font));
         incomingHexTextView.modify_text (Gtk.StateType.NORMAL, Preferences.getGdkColor (currentPreferences.fontColor));
         incomingHexTextView.modify_base (Gtk.StateType.NORMAL, Preferences.getGdkColor (currentPreferences.backgroundColor));
         incomingHexTextBuffer.applyPreferences (currentPreferences);
 
-        outgoingAsciiTextView.modify_font (Pango.FontDescription.from_string (font));
+        outgoingAsciiTextView.override_font (Pango.FontDescription.from_string (font));
         outgoingAsciiTextView.modify_text (Gtk.StateType.NORMAL, Preferences.getGdkColor (currentPreferences.fontColor));
         outgoingAsciiTextView.modify_base (Gtk.StateType.NORMAL, Preferences.getGdkColor (currentPreferences.backgroundColor));
 
-        outgoingHexTextView.modify_font (Pango.FontDescription.from_string (font));
+        outgoingHexTextView.override_font (Pango.FontDescription.from_string (font));
         outgoingHexTextView.modify_text (Gtk.StateType.NORMAL, Preferences.getGdkColor (currentPreferences.fontColor));
         outgoingHexTextView.modify_base (Gtk.StateType.NORMAL, Preferences.getGdkColor (currentPreferences.backgroundColor));
         outgoingHexTextBuffer.applyPreferences (currentPreferences);
