@@ -27,10 +27,12 @@ public class moserial.RecordDialog : GLib.Object {
     public signal void stopRecording ();
 
     public SerialStreamRecorder.Direction direction;
-    construct {
+    
+    public RecordDialog (Window parent){
         var builder = new Gtk.Builder.from_resource (Config.UIROOT + "record_dialog.ui");
 
         dialog = (FileChooserDialog) builder.get_object ("record_dialog");
+        dialog.set_transient_for(parent);
         cancelButton = (Button) builder.get_object ("record_cancel");
 
         streamCombo = (ComboBox) builder.get_object ("record_stream");

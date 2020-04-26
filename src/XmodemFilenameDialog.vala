@@ -22,10 +22,12 @@ public class moserial.XmodemFilenameDialog : GLib.Object {
     private Dialog dialog;
     private Gtk.Entry xmodemFilename;
     public string filename;
-    construct {
+    
+    public XmodemFilenameDialog (Window parent) {
         var builder = new Gtk.Builder.from_resource (Config.UIROOT + "xmodem_filename_dialog.ui");
 
         dialog = (Dialog) builder.get_object ("xmodem_filename_dialog");
+        dialog.set_transient_for(parent);
         xmodemFilename = (Gtk.Entry)builder.get_object ("xmodem_filename");
         dialog.delete_event.connect (hide);
         dialog.response.connect (response);

@@ -25,10 +25,11 @@ public class moserial.ReceiveChooserDialog : GLib.Object {
 
     public string path;
 
-    construct {
+    public ReceiveChooserDialog (Window parent) {
         var builder = new Gtk.Builder.from_resource (Config.UIROOT + "receive_chooser.ui");
 
         dialog = (FileChooserDialog) builder.get_object ("receive_chooser_dialog");
+        dialog.set_transient_for(parent);
 
         protocolCombo = (ComboBox) builder.get_object ("receive_chooser_protocol");
         MoUtils.populateComboBox (protocolCombo, Rzwrapper.ProtocolStrings);

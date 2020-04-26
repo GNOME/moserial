@@ -41,10 +41,11 @@ public class moserial.SettingsDialog : GLib.Object {
     private Gtk.ListStore deviceModel;
     public signal void updateSettings (Settings settings);
 
-    construct {
+    public SettingsDialog(Window parent) {
         var builder = new Gtk.Builder.from_resource (Config.UIROOT + "settings_dialog.ui");
 
         dialog = (Dialog) builder.get_object ("settings_dialog");
+        dialog.set_transient_for(parent);
         cancelButton = (Button) builder.get_object ("settings_cancel_button");
         okButton = (Button) builder.get_object ("settings_ok_button");
 

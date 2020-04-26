@@ -22,12 +22,13 @@ public class moserial.SendChooserDialog : GLib.Object {
     private FileChooserDialog dialog;
     public ComboBox protocolCombo;
     public signal void startTransfer ();
-
     public string filename;
-    construct {
+    
+    public SendChooserDialog (Window parent) {
         var builder = new Gtk.Builder.from_resource (Config.UIROOT + "send_chooser_dialog.ui");
 
         dialog = (FileChooserDialog) builder.get_object ("send_chooser_dialog");
+        dialog.set_transient_for(parent);
 
         protocolCombo = (ComboBox) builder.get_object ("send_chooser_protocol");
         MoUtils.populateComboBox (protocolCombo, Szwrapper.ProtocolStrings);

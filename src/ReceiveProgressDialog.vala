@@ -25,16 +25,18 @@ public class moserial.ReceiveProgressDialog : GLib.Object {
     private ProgressBar progressBar;
     public signal void transferCanceled ();
 
-    construct {
+    public ReceiveProgressDialog (Window parent)  {
         var builder = new Gtk.Builder.from_resource (Config.UIROOT + "receive_progress.ui");
 
         dialog = (Dialog) builder.get_object ("receive_progress_dialog");
+        dialog.set_transient_for(parent);
         cancelButton = (Button) builder.get_object ("receive_progress_cancel");
         cancelButton.clicked.connect (this.cancel);
         status = (Gtk.Label)builder.get_object ("receive_statusbox");
         progressBar = (ProgressBar) builder.get_object ("receive_progressbar");
         dialog.delete_event.connect (hide);
     }
+    
     public void show () {
         dialog.show_all ();
         status.set_text ("");

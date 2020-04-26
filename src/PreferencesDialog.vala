@@ -32,10 +32,11 @@ public class moserial.PreferencesDialog : GLib.Object {
     private SpinButton timeout;
     public signal void updatePreferences (Preferences preferences);
 
-    construct {
+    public PreferencesDialog (Window parent) {
         var builder = new Gtk.Builder.from_resource (Config.UIROOT + "preferences.ui");
 
         dialog = (Dialog) builder.get_object ("preferences_dialog");
+        dialog.set_transient_for(parent);
         okButton = (Button) builder.get_object ("preferences_ok");
         cancelButton = (Button) builder.get_object ("preferences_cancel");
         systemFont = (CheckButton) builder.get_object ("preferences_use_system_font");
@@ -62,6 +63,7 @@ public class moserial.PreferencesDialog : GLib.Object {
         cancelButton.clicked.connect (cancel);
         dialog.delete_event.connect (hide);
     }
+
     public void ok (Button button) {
         hide ();
         bool pSystemFont;
