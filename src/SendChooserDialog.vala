@@ -33,7 +33,7 @@ public class moserial.SendChooserDialog : GLib.Object {
         MoUtils.populateComboBox (protocolCombo, Szwrapper.ProtocolStrings);
 
         dialog.delete_event.connect (hide);
-        dialog.add_buttons (Gtk.Stock.CANCEL, Gtk.ResponseType.CANCEL, Gtk.Stock.OK, Gtk.ResponseType.ACCEPT, null);
+        dialog.add_buttons ("gtk-cancel", Gtk.ResponseType.CANCEL, "gtk-ok", Gtk.ResponseType.ACCEPT, null);
         protocolCombo.set_active (Szwrapper.Protocol.ZMODEM);
         dialog.response.connect (response);
     }

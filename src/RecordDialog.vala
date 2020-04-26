@@ -39,7 +39,7 @@ public class moserial.RecordDialog : GLib.Object {
 
         dialog.delete_event.connect (hide);
         dialog.response.connect (response);
-        dialog.add_buttons (Gtk.Stock.CANCEL, Gtk.ResponseType.CANCEL, Gtk.Stock.SAVE, Gtk.ResponseType.ACCEPT, null);
+        dialog.add_buttons ("gtk-cancel", Gtk.ResponseType.CANCEL, "gtk-save", Gtk.ResponseType.ACCEPT, null);
         dialog.set_do_overwrite_confirmation (true);
         dialog.set_local_only (false);
 

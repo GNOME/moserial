@@ -849,7 +849,7 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
 
     private void saveProfileAs () {
         var dialog = new FileChooserDialog (null, gtkWindow, Gtk.FileChooserAction.SAVE);
-        dialog.add_buttons (Gtk.Stock.CANCEL, Gtk.ResponseType.CANCEL, Gtk.Stock.SAVE, Gtk.ResponseType.ACCEPT, null);
+        dialog.add_buttons ("gtk-cancel", Gtk.ResponseType.CANCEL, "gtk-save", Gtk.ResponseType.ACCEPT, null);
         dialog.set_do_overwrite_confirmation (true);
         dialog.set_local_only (false);
         int response = dialog.run ();
@@ -867,7 +867,7 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
 
     private void loadProfile () {
         var dialog = new FileChooserDialog (null, gtkWindow, Gtk.FileChooserAction.OPEN);
-        dialog.add_buttons (Gtk.Stock.CANCEL, Gtk.ResponseType.CANCEL, Gtk.Stock.OPEN, Gtk.ResponseType.ACCEPT, null);
+        dialog.add_buttons ("gtk-cancel", Gtk.ResponseType.CANCEL, "gtk-open", Gtk.ResponseType.ACCEPT, null);
         dialog.set_local_only (false);
         int response = dialog.run ();
         if (response == Gtk.ResponseType.ACCEPT) {
