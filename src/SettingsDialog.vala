@@ -87,6 +87,7 @@ public class moserial.SettingsDialog : GLib.Object {
 
     private void populateDevices () {
         List<string> deviceTypes = new List<string> ();
+        deviceTypes.append ("/dev/ttyAMA");
         deviceTypes.append ("/dev/ttyS");
         deviceTypes.append ("/dev/ttyUSB");
         deviceTypes.append ("/dev/ttyACM");
