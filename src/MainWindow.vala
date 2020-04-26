@@ -343,6 +343,9 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         outgoingClearButton.clicked.connect (clearOutgoing);
         outgoingClearButton.set_tooltip_text (_("Clear outgoing text box."));
 
+        //take currentSettings into account for outgoing input area
+        updateOutgoingInputArea();
+
         // load and apply preferences
         currentPreferences = Preferences.loadFromProfile (profile);
         updatePreferences (null, currentPreferences);
@@ -396,6 +399,7 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
             currentSettings = Settings.loadFromProfile (profile);
             currentPreferences = Preferences.loadFromProfile (profile);
             currentPaths = DefaultPaths.loadFromProfile (profile);
+            updateOutgoingInputArea();
             updatePreferences (null, currentPreferences);
             statusbar.pop (statusbarContext);
             statusbar.push (statusbarContext, currentSettings.getStatusbarString (false));
@@ -648,7 +652,18 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         currentSettings = newSettings;
         statusbar.pop (statusbarContext);
         statusbar.push (statusbarContext, currentSettings.getStatusbarString (false));
+        updateOutgoingInputArea();
         profileChanged = true;
+    }
+
+    private void updateOutgoingInputArea () {
+        if (currentSettings.accessMode == READONLY) {
+            entry.set_sensitive (false);
+            sendButton.set_sensitive (false);
+        } else {
+            entry.set_sensitive (true);
+            sendButton.set_sensitive (true);
+        }
     }
 
     private void updatePreferences (PreferencesDialog ? d, Preferences newPreferences) {
