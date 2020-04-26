@@ -80,11 +80,11 @@ public class moserial.PreferencesDialog : GLib.Object {
             pSystemFont = false;
         pFont = fontButton.get_font ();
         Gdk.RGBA c = Gdk.RGBA ();
-        c= fontColorButton.get_rgba();
+        c = fontColorButton.get_rgba();
         pFontColor = c.to_string ();
-        backgroundColorButton.get_rgba ();
+        c = backgroundColorButton.get_rgba ();
         pBackgroundColor = c.to_string ();
-        highlightColorButton.get_rgba ();
+        c = highlightColorButton.get_rgba ();
         pHighlightColor = c.to_string ();
         if (recordLaunch.get_active ())
             pRecordLaunch = true;
