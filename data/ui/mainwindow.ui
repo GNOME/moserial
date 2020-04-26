@@ -440,6 +440,10 @@
                             <property name="wrap_mode">word-char</property>
                             <property name="left_margin">2</property>
                             <property name="right_margin">2</property>
+                            <style>
+                              <class name="TextviewColor"/>
+                              <class name="TextFont"/>
+                            </style>
                           </object>
                         </child>
                       </object>
@@ -467,6 +471,10 @@
                             <property name="editable">False</property>
                             <property name="left_margin">2</property>
                             <property name="right_margin">2</property>
+                            <style>
+                              <class name="TextviewColor"/>
+                              <class name="TextFont"/>
+                            </style>
                           </object>
                         </child>
                       </object>
@@ -578,6 +586,10 @@
                             <property name="wrap_mode">word-char</property>
                             <property name="left_margin">2</property>
                             <property name="right_margin">2</property>
+                            <style>
+                              <class name="TextviewColor"/>
+                              <class name="TextFont"/>
+                            </style>
                           </object>
                         </child>
                       </object>
@@ -605,6 +617,10 @@
                             <property name="editable">False</property>
                             <property name="left_margin">2</property>
                             <property name="right_margin">2</property>
+                            <style>
+                              <class name="TextviewColor"/>
+                              <class name="TextFont"/>
+                            </style>
                           </object>
                         </child>
                       </object>
@@ -677,6 +693,10 @@
                     <property name="invisible_char">●</property>
                     <property name="primary_icon_activatable">False</property>
                     <property name="secondary_icon_activatable">False</property>
+                    <style>
+                      <class name="TextInputColor"/>
+                      <class name="TextFont"/>
+                    </style>
                   </object>
                   <packing>
                     <property name="expand">True</property>

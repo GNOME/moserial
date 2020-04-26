@@ -69,9 +69,9 @@ public class Preferences : GLib.Object {
         return value;
     }
 
-    public static Gdk.Color getGdkColor (string color) {
-        Gdk.Color c;
-        Gdk.Color.parse (color, out c);
+    public static Gdk.RGBA getGdkRGBA (string color) {
+        Gdk.RGBA c = Gdk.RGBA ();
+        c.parse(color);
         return c;
     }
 

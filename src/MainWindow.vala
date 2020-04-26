@@ -379,13 +379,13 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         }
     }
 
-    private void clearIncoming() {
-        incomingHexTextBuffer.clear();
+    private void clearIncoming () {
+        incomingHexTextBuffer.clear ();
         incomingAsciiTextBuffer.set_text ("", 0);
     }
 
-    private void clearOutgoing() {
-        outgoingHexTextBuffer.clear();
+    private void clearOutgoing () {
+        outgoingHexTextBuffer.clear ();
         outgoingAsciiTextBuffer.set_text ("", 0);
     }
 
@@ -658,29 +658,60 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
             font = Preferences.getSystemDefaultMonospaceFont ();
         else
             font = currentPreferences.font;
-        incomingAsciiTextView.override_font (Pango.FontDescription.from_string (font));
-        incomingAsciiTextView.modify_text (Gtk.StateType.NORMAL, Preferences.getGdkColor (currentPreferences.fontColor));
-        incomingAsciiTextView.modify_base (Gtk.StateType.NORMAL, Preferences.getGdkColor (currentPreferences.backgroundColor));
+
+        Pango.FontDescription fd = Pango.FontDescription.from_string (font);
+
+        string unit = "px";
+        if (Gtk.check_version (3, 22, 0) == null) {
+            unit = "pt";
+        }
+
+        var family = fd.get_family ().split (",")[0];
+        int size = (int) Math.round (fd.get_size () / Pango.SCALE);
+        int weight = (int) fd.get_weight ();
+
+        var style = """
+            .TextviewColor text {
+                color: %s;
+                background-color: %s;
+            }
+            .TextInputColor {
+                color: %s;
+                background-color: %s;
+            }
+            .TextFont {
+                font-family: %s;
+                font-size: %d%s;
+                font-weight: %d;
+            }
+        """.printf (
+            currentPreferences.fontColor,
+            currentPreferences.backgroundColor,
+            currentPreferences.fontColor,
+            currentPreferences.backgroundColor,
+            family,
+            size,
+            unit,
+            weight
+                    );
+
+        var css_provider = new Gtk.CssProvider ();
+
+        try {
+            css_provider.load_from_data (style, -1);
+        } catch (GLib.Error e) {
+            warning ("Failed to parse CSS style : %s", e.message);
+        }
+
+        Gtk.StyleContext.add_provider_for_screen (
+            Gdk.Screen.get_default (),
+            css_provider,
+            Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
+        );
+
         echoTag.foreground = currentPreferences.highlightColor;
-
-        incomingHexTextView.override_font (Pango.FontDescription.from_string (font));
-        incomingHexTextView.modify_text (Gtk.StateType.NORMAL, Preferences.getGdkColor (currentPreferences.fontColor));
-        incomingHexTextView.modify_base (Gtk.StateType.NORMAL, Preferences.getGdkColor (currentPreferences.backgroundColor));
         incomingHexTextBuffer.applyPreferences (currentPreferences);
-
-        outgoingAsciiTextView.override_font (Pango.FontDescription.from_string (font));
-        outgoingAsciiTextView.modify_text (Gtk.StateType.NORMAL, Preferences.getGdkColor (currentPreferences.fontColor));
-        outgoingAsciiTextView.modify_base (Gtk.StateType.NORMAL, Preferences.getGdkColor (currentPreferences.backgroundColor));
-
-        outgoingHexTextView.override_font (Pango.FontDescription.from_string (font));
-        outgoingHexTextView.modify_text (Gtk.StateType.NORMAL, Preferences.getGdkColor (currentPreferences.fontColor));
-        outgoingHexTextView.modify_base (Gtk.StateType.NORMAL, Preferences.getGdkColor (currentPreferences.backgroundColor));
         outgoingHexTextBuffer.applyPreferences (currentPreferences);
-
-        entry.modify_font (Pango.FontDescription.from_string (font));
-        entry.modify_text (Gtk.StateType.NORMAL, Preferences.getGdkColor (currentPreferences.fontColor));
-        entry.modify_base (Gtk.StateType.NORMAL, Preferences.getGdkColor (currentPreferences.backgroundColor));
-
         profileChanged = true;
     }
 
@@ -1018,8 +1049,8 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
     }
 
     private void clear () {
-        this.clearOutgoing();
-        this.clearIncoming();
+        this.clearOutgoing ();
+        this.clearIncoming ();
         entry.set_text ("");
     }
 }
