@@ -39,15 +39,17 @@ public class moserial.SettingsDialog : GLib.Object {
     private ComboBox accessModeCombo;
     private CheckButton localEcho;
     private Gtk.ListStore deviceModel;
+    private Gtk.Entry deviceInput;
     public signal void updateSettings (Settings settings);
 
-    public SettingsDialog(Window parent) {
+    public SettingsDialog (Window parent) {
         var builder = new Gtk.Builder.from_resource (Config.UIROOT + "settings_dialog.ui");
 
         dialog = (Dialog) builder.get_object ("settings_dialog");
-        dialog.set_transient_for(parent);
+        dialog.set_transient_for (parent);
         cancelButton = (Button) builder.get_object ("settings_cancel_button");
         okButton = (Button) builder.get_object ("settings_ok_button");
+        deviceInput = (Gtk.Entry)builder.get_object ("settings_device_input");
 
         baudRateCombo = (ComboBox) builder.get_object ("settings_baud_rate");
         MoUtils.populateComboBox (baudRateCombo, Settings.BaudRateItems);
@@ -202,18 +204,10 @@ public class moserial.SettingsDialog : GLib.Object {
         Settings.AccessMode accessMode;
         bool pLocalEcho;
 
-        TreeModel t;
-        TreeIter iter;
-        bool success;
-
-        t = deviceCombo.get_model ();
-        success = deviceCombo.get_active_iter (out iter);
-        if (success) {
-            Value str_data;
-            t.get_value (iter, 0, out str_data);
-            device = str_data.get_string ();
-        } else {
+        if (deviceInput.get_text_length () == 0) {
             device = Settings.DEFAULT_DEVICEFILE;
+        } else {
+            device = deviceInput.get_text ();
         }
 
         baudRate = int.parse (Settings.BaudRateItems[baudRateCombo.get_active ()]);
