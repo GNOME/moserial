@@ -100,6 +100,18 @@ public class Profile : GLib.Object {
         }
     }
 
+    public void setInputLineEnd (int end) {
+        keyFile.set_integer ("window", "input_line_end", end);
+    }
+
+    public int getInputLineEnd () {
+        try {
+            return keyFile.get_integer ("window", "input_line_end");
+        } catch (GLib.KeyFileError e) {
+            return 0;
+        }
+    }
+
     public bool load (string ? filename, Gtk.Window window) {
         string f;
         bool default_profile = false;

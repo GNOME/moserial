@@ -298,7 +298,8 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
 
         lineEndModeCombo = (ComboBox) builder.get_object ("termination_mode");
         MoUtils.populateComboBox (lineEndModeCombo, SerialConnection.LineEndStrings);
-        lineEndModeCombo.set_active (SerialConnection.LineEnd.CRLF);
+        lineEndModeCombo.set_active (profile.getInputLineEnd ());
+        lineEndModeCombo.changed.connect (lineEndChanged);
 
         // setup recent chooser
         recentData.groups = { recentGroup };
@@ -900,6 +901,10 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
             profile.setNotebookTab (true, 0);
             profile.setInputModeHex (false);
         }
+    }
+
+    private void lineEndChanged (ComboBox lineEndCombo) {
+        profile.setInputLineEnd (lineEndCombo.get_active ());
     }
 
     private void showHelpButton (ToolButton button) {
