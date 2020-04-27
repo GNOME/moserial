@@ -95,5 +95,6 @@ ChangeLog:
 	fi
 
 dist: ChangeLog
+README: README.md
 
 .PHONY: ChangeLog
