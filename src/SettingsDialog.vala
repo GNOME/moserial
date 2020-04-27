@@ -82,9 +82,7 @@ public class moserial.SettingsDialog : GLib.Object {
         deviceCombo = (ComboBox) builder.get_object ("settings_device");
         deviceModel = new Gtk.ListStore (1, typeof (string));
         deviceCombo.set_model (deviceModel);
-        CellRenderer deviceCell = new CellRendererText ();
-        deviceCombo.pack_start (deviceCell, false);
-        deviceCombo.set_attributes (deviceCell, "text", 0);
+        // CellRenderText on deviceCombo provided by GtkEntry field.
     }
 
     private void populateDevices () {
