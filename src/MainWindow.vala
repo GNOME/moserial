@@ -131,8 +131,9 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         int width = profile.getWindowWidth ();
         int height = profile.getWindowHeight ();
         int panedPosition = profile.getWindowPanedPosition ();
-        if ((width > 0) && (height > 0))
+        if ((width > 0) && (height > 0)) {
             gtkWindow.resize (width, height);
+        }
 
         // setup paned
         paned = (Paned) builder.get_object ("vpaned");
@@ -239,9 +240,13 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
 
         // setup incoming notebook
         incoming_notebook = (Notebook) builder.get_object ("incoming_notebook");
+        incoming_notebook.set_current_page (profile.getNotebookTab (false));
+        incoming_notebook.switch_page.connect (onIncomingNotebookSwitchPage);
 
         // setup outgoing notebook
         outgoing_notebook = (Notebook) builder.get_object ("outgoing_notebook");
+        outgoing_notebook.set_current_page (profile.getNotebookTab (true));
+        outgoing_notebook.switch_page.connect (onOutgoingNotebookSwitchPage);
 
         // setup textBuffers;
         incomingHexTextBuffer = new HexTextBuffer ();
@@ -343,8 +348,8 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         outgoingClearButton.clicked.connect (clearOutgoing);
         outgoingClearButton.set_tooltip_text (_("Clear outgoing text box."));
 
-        //take currentSettings into account for outgoing input area
-        updateOutgoingInputArea();
+        // take currentSettings into account for outgoing input area
+        updateOutgoingInputArea ();
 
         // load and apply preferences
         currentPreferences = Preferences.loadFromProfile (profile);
@@ -354,6 +359,14 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
             loadProfileOnStartup (startupProfileFilename);
 
         currentPaths = DefaultPaths.loadFromProfile (profile);
+    }
+
+    private void onIncomingNotebookSwitchPage (Widget page, uint page_num) {
+        profile.setNotebookTab (false, page_num);
+    }
+
+    private void onOutgoingNotebookSwitchPage (Widget page, uint page_num) {
+        profile.setNotebookTab (true, page_num);
     }
 
     private void toggleRTS (ToggleButton button) {
@@ -399,7 +412,7 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
             currentSettings = Settings.loadFromProfile (profile);
             currentPreferences = Preferences.loadFromProfile (profile);
             currentPaths = DefaultPaths.loadFromProfile (profile);
-            updateOutgoingInputArea();
+            updateOutgoingInputArea ();
             updatePreferences (null, currentPreferences);
             statusbar.pop (statusbarContext);
             statusbar.push (statusbarContext, currentSettings.getStatusbarString (false));
@@ -652,7 +665,7 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         currentSettings = newSettings;
         statusbar.pop (statusbarContext);
         statusbar.push (statusbarContext, currentSettings.getStatusbarString (false));
-        updateOutgoingInputArea();
+        updateOutgoingInputArea ();
         profileChanged = true;
     }
 
@@ -855,6 +868,7 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
                 if ((sc.rx > 32) && (sc.nonprintable > 0) && (sc.rx / sc.nonprintable < 4) && !sc.forced_hex_view) {
                     sc.forced_hex_view = true;
                     incoming_notebook.set_current_page (1);
+                    profile.setNotebookTab (false, 1);
                 }
 
                 if (currentPreferences.enableTimeout && recordButton.get_active ()) {
@@ -873,10 +887,13 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
     }
 
     private void inputModeChanged (ComboBox inputModeCombo) {
-        if (inputModeCombo.get_active () == inputModeValues.HEX)
+        if (inputModeCombo.get_active () == inputModeValues.HEX) {
             outgoing_notebook.set_current_page (1);
-        else
+            profile.setNotebookTab (true, 1);
+        } else {
             outgoing_notebook.set_current_page (0);
+            profile.setNotebookTab (true, 0);
+        }
     }
 
     private void showHelpButton (ToolButton button) {

@@ -59,6 +59,35 @@ public class Profile : GLib.Object {
         }
     }
 
+    public void setNotebookTab (bool outgoing, uint tab) {
+        string n = "incoming_tab";
+        if (outgoing) {
+            n = "outgoing_tab";
+        }
+
+        if (tab != 0) {
+            keyFile.set_integer ("window", n, 1);
+        } else {
+            keyFile.set_integer ("window", n, 0);
+        }
+    }
+
+    public int getNotebookTab (bool outgoing) {
+        string n = "incoming_tab";
+        if (outgoing) {
+            n = "outgoing_tab";
+        }
+
+        try {
+            if (keyFile.get_integer ("window", n) != 0) {
+                return 1;
+            }
+            return 0;
+        } catch (GLib.KeyFileError e) {
+            return 0;
+        }
+    }
+
     public bool load (string ? filename, Gtk.Window window) {
         string f;
         bool default_profile = false;

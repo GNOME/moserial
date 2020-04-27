@@ -71,7 +71,7 @@ public class Preferences : GLib.Object {
 
     public static Gdk.RGBA getGdkRGBA (string color) {
         Gdk.RGBA c = Gdk.RGBA ();
-        c.parse(color);
+        c.parse (color);
         return c;
     }
 
