@@ -88,6 +88,18 @@ public class Profile : GLib.Object {
         }
     }
 
+    public void setInputModeHex (bool hex) {
+        keyFile.set_boolean ("window", "input_mode_hex", hex);
+    }
+
+    public bool getInputModeHex () {
+        try {
+            return keyFile.get_boolean ("window", "input_mode_hex");
+        } catch (GLib.KeyFileError e) {
+            return false;
+        }
+    }
+
     public bool load (string ? filename, Gtk.Window window) {
         string f;
         bool default_profile = false;

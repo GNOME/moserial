@@ -289,7 +289,11 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
 
         inputModeCombo = (ComboBox) builder.get_object ("input_mode");
         MoUtils.populateComboBox (inputModeCombo, inputModeStrings);
-        inputModeCombo.set_active (inputModeValues.ASCII);
+        if (profile.getInputModeHex ()) {
+            inputModeCombo.set_active (inputModeValues.HEX);
+        } else {
+            inputModeCombo.set_active (inputModeValues.ASCII);
+        }
         inputModeCombo.changed.connect (inputModeChanged);
 
         lineEndModeCombo = (ComboBox) builder.get_object ("termination_mode");
@@ -890,9 +894,11 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         if (inputModeCombo.get_active () == inputModeValues.HEX) {
             outgoing_notebook.set_current_page (1);
             profile.setNotebookTab (true, 1);
+            profile.setInputModeHex (true);
         } else {
             outgoing_notebook.set_current_page (0);
             profile.setNotebookTab (true, 0);
+            profile.setInputModeHex (false);
         }
     }
 
