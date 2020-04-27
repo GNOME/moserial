@@ -95,7 +95,7 @@ public class MoUtils : GLib.Object {
         return message;
     }
 
-    public static void populateComboBox (ComboBox Combo, string[] val_array) {
+    public static void populateComboBox (ComboBox Combo, string[] val_array, bool render_cell = true) {
         Gtk.ListStore Model = new Gtk.ListStore (1, typeof (string));
         foreach (string val_item in val_array) {
             TreeIter iter;
@@ -103,9 +103,13 @@ public class MoUtils : GLib.Object {
             Model.set (iter, 0, _(val_item));
         }
         Combo.set_model (Model);
-        CellRenderer Cell = new CellRendererText ();
-        Combo.pack_start (Cell, true);
-        Combo.set_attributes (Cell, "text", 0);
+        // Make cell rendering optional
+        // Required for standard ComboBox, but not for ComboBox/Entry combination.
+        if (render_cell) {
+            CellRenderer Cell = new CellRendererText ();
+            Combo.pack_start (Cell, true);
+            Combo.set_attributes (Cell, "text", 0);
+        }
     }
 }
 

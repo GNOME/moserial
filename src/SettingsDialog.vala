@@ -24,6 +24,7 @@ public class moserial.SettingsDialog : GLib.Object {
     // Does anyone have more than 32 serial ports?
     const int max_devices = 32;
 
+    private Window parent;
     private Settings currentSettings;
     private Dialog dialog;
     private Button cancelButton;
@@ -40,9 +41,11 @@ public class moserial.SettingsDialog : GLib.Object {
     private CheckButton localEcho;
     private Gtk.ListStore deviceModel;
     private Gtk.Entry deviceInput;
+    private Gtk.Entry baudRateInput;
     public signal void updateSettings (Settings settings);
 
     public SettingsDialog (Window parent) {
+        this.parent = parent;
         var builder = new Gtk.Builder.from_resource (Config.UIROOT + "settings_dialog.ui");
 
         dialog = (Dialog) builder.get_object ("settings_dialog");
@@ -50,9 +53,10 @@ public class moserial.SettingsDialog : GLib.Object {
         cancelButton = (Button) builder.get_object ("settings_cancel_button");
         okButton = (Button) builder.get_object ("settings_ok_button");
         deviceInput = (Gtk.Entry)builder.get_object ("settings_device_input");
+        baudRateInput = (Gtk.Entry)builder.get_object ("settings_baudrate_input");
 
         baudRateCombo = (ComboBox) builder.get_object ("settings_baud_rate");
-        MoUtils.populateComboBox (baudRateCombo, Settings.BaudRateItems);
+        MoUtils.populateComboBox (baudRateCombo, Settings.BaudRateItems, false);
 
         dataBitsCombo = (ComboBox) builder.get_object ("settings_data_bits");
         MoUtils.populateComboBox (dataBitsCombo, Settings.DataBitItems);
@@ -134,15 +138,7 @@ public class moserial.SettingsDialog : GLib.Object {
         }
 
         // Baud Rate
-        t = baudRateCombo.get_model ();
-        success = t.get_iter_first (out ti);
-        while (success) {
-            Value str_data;
-            t.get_value (ti, 0, out str_data);
-            if (str_data.get_string () == "%i".printf (currentSettings.baudRate))
-                baudRateCombo.set_active_iter (ti);
-            success = t.iter_next (ref ti);
-        }
+        baudRateInput.set_text ("%i".printf (currentSettings.baudRate));
 
         // Data Bits
         t = dataBitsCombo.get_model ();
@@ -208,7 +204,18 @@ public class moserial.SettingsDialog : GLib.Object {
             device = deviceInput.get_text ();
         }
 
-        baudRate = int.parse (Settings.BaudRateItems[baudRateCombo.get_active ()]);
+        string unparsed = null;
+        if (!int.try_parse (baudRateInput.get_text (), out baudRate, out unparsed, 10)) {
+            var dialog = new MessageDialog (
+                this.parent,
+                DialogFlags.DESTROY_WITH_PARENT,
+                MessageType.ERROR,
+                ButtonsType.CLOSE, "Please enter valid baud rate!");
+            dialog.run ();
+            dialog.destroy ();
+            return;
+        }
+
         dataBits = int.parse (Settings.DataBitItems[dataBitsCombo.get_active ()]);
         stopBits = int.parse (Settings.StopBitItems[stopBitsCombo.get_active ()]);
 
