@@ -199,6 +199,9 @@ public class moserial.SerialConnection : GLib.Object {
             case 2000000:
                 baudRate = Linux.Termios.B2000000;
                 break;
+            case 3000000:
+                baudRate = Linux.Termios.B3000000;
+                break;
         }
 
         Posix.cfsetospeed (ref newtio, baudRate);
