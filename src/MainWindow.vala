@@ -284,6 +284,7 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         sendButton.clicked.connect (sendString);
         sendButton.set_tooltip_text (_("Send the outgoing data now."));
         entry = (Gtk.Entry)builder.get_object ("entry");
+        entry.set_text (profile.getInputString ());
         entry.activate.connect (sendString);
         entry.set_tooltip_text (_("Type outgoing data here. Press Enter or Send to send it."));
 
@@ -474,12 +475,14 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
     }
 
     public void sendString (Widget w) {
-
-        if (!ensureConnected ())
-            return;
-
         string s;
         s = entry.get_text ();
+        profile.setInputString (s);
+        warning ("test");
+        if (!ensureConnected ()) {
+            return;
+        }
+
         serialConnection.echoReference = s;
 
         long len;

@@ -112,6 +112,18 @@ public class Profile : GLib.Object {
         }
     }
 
+    public void setInputString (string s) {
+        keyFile.set_string ("window", "input_string", s);
+    }
+
+    public string getInputString () {
+        try {
+            return keyFile.get_string ("window", "input_string");
+        } catch (GLib.KeyFileError e) {
+            return "";
+        }
+    }
+
     public bool load (string ? filename, Gtk.Window window) {
         string f;
         bool default_profile = false;
