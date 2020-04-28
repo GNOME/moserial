@@ -278,15 +278,15 @@ public class moserial.SerialConnection : GLib.Object {
         // newtio.c_cflag |= CREAD;
         // newtio.c_cc[VTIME] = 5;
 
-        int mcs = 0;
-        Posix.ioctl (m_fd, Linux.Termios.TIOCMGET, out mcs);
-        mcs |= Linux.Termios.TIOCM_RTS;
-        Posix.ioctl (m_fd, Linux.Termios.TIOCMSET, out mcs);
-
         if (settings.handshake == Settings.Handshake.HARDWARE || settings.handshake == Settings.Handshake.BOTH)
             newtio.c_cflag |= Linux.Termios.CRTSCTS;
         else
             newtio.c_cflag &= ~Linux.Termios.CRTSCTS;
+
+        int mcs = 0;
+        Posix.ioctl (m_fd, Linux.Termios.TIOCMGET, out mcs);
+        mcs |= Linux.Termios.TIOCM_RTS | Linux.Termios.TIOCM_DTR;
+        Posix.ioctl (m_fd, Linux.Termios.TIOCMSET, ref mcs);
     }
 
     public void controlDTR (bool y) {
@@ -297,7 +297,7 @@ public class moserial.SerialConnection : GLib.Object {
         } else {
             mcs &= ~Linux.Termios.TIOCM_DTR;
         }
-        Posix.ioctl (m_fd, Linux.Termios.TIOCMSET, out mcs);
+        Posix.ioctl (m_fd, Linux.Termios.TIOCMSET, ref mcs);
     }
 
     public void controlRTS (bool y) {
@@ -308,14 +308,14 @@ public class moserial.SerialConnection : GLib.Object {
         } else {
             mcs &= ~Linux.Termios.TIOCM_RTS;
         }
-        Posix.ioctl (m_fd, Linux.Termios.TIOCMSET, out mcs);
+        Posix.ioctl (m_fd, Linux.Termios.TIOCMSET, ref mcs);
     }
 
     public bool[] getStatus () {
         bool mcs[6];
         int stat;
         Posix.ioctl (m_fd, Linux.Termios.TIOCMGET, out stat);
-        // GLib.print("stat%x\r\n",stat);
+        // GLib.print("stat %x\r\n",stat);
         if ((stat & 0x080) == 0) // Linux.Termios.TIOCM_RI=0x080
             mcs[0] = false;
         else

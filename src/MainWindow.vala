@@ -478,7 +478,6 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         string s;
         s = entry.get_text ();
         profile.setInputString (s);
-        warning ("test");
         if (!ensureConnected ()) {
             return;
         }
@@ -782,6 +781,10 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         incomingAsciiTextBuffer.set_text ("", 0);
         outgoingHexTextBuffer.clear ();
         outgoingAsciiTextBuffer.set_text ("", 0);
+        // Feedback signal status back to button.
+        bool[] state = serialConnection.getStatus ();
+        rtsButton.set_active (state[4]);
+        dtrButton.set_active (state[5]);
 
         settingsButton.set_sensitive (false);
         statusbar.pop (statusbarContext);
@@ -815,15 +818,14 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
 
     private bool showSerialStatus () {
         if (!serialConnection.isConnected ()) {
-
             return true;
         }
 
         bool[] state = serialConnection.getStatus ();
-        serialStatusSignals[0].set_sensitive (state[0]);
-        serialStatusSignals[1].set_sensitive (state[1]);
-        serialStatusSignals[2].set_sensitive (state[2]);
-        serialStatusSignals[3].set_sensitive (state[3]);
+        serialStatusSignals[0].set_sensitive (state[0]); // RI
+        serialStatusSignals[1].set_sensitive (state[1]); // DSR
+        serialStatusSignals[2].set_sensitive (state[2]); // CD
+        serialStatusSignals[3].set_sensitive (state[3]); // CTS
         return true;
     }
 
