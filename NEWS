@@ -1,3 +1,23 @@
+Version 3.0.13
+--------------
+
+	* Add transmission macros
+	* Save and restore outgoing input string from profile.
+	* Save and restore input line ending from profile
+	* Save and restore input mode from profile
+	* Save and restore selected notebook tabs from profile
+	* Allow custom baud rate input
+	* Add 3MBaud rate
+	* Don't use legacy path for AppStream metainfo file
+	* Fix outgoing input field and send button are sensitive while port is readonly
+	* Add ttyAMA filter for example on Raspberry Pi	
+	* Fix GtkDialog mapped without a transient parent
+	* Add language zh_TW
+	* Add indication and control of serial port signals
+	* Fix deprecated objects for use with GTK v3.2.0
+	* Require modern version of Vala compiler and GTK3
+
+
 Version 3.0.12
 --------------
 
