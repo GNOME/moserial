@@ -6,229 +6,222 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: moserial master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=moserial&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-03-02 19:15+0000\n"
-"PO-Revision-Date: 2010-12-22 20:09+0200\n"
-"Last-Translator: Tudor Vio <tudor_dude93@yahoo.com>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/moserial/issues\n"
+"POT-Creation-Date: 2020-04-07 19:04+0000\n"
+"PO-Revision-Date: 2020-07-15 17:20+0300\n"
+"Last-Translator: Florentina Mușat <florentina.musat.28@gmail.com>\n"
 "Language-Team: Romanian <gnomero-list@lists.sourceforge.net>\n"
+"Language: ro\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ro\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2);;\n"
-"X-Generator: Virtaal 0.6.1\n"
+"X-Generator: Poedit 2.3.1\n"
 
-#: ../data/glade/moserial.ui.h:1
-msgid "Preferences"
-msgstr "Preferințe"
-
-#: ../data/glade/moserial.ui.h:2
-msgid "Font"
-msgstr ""
-
-#: ../data/glade/moserial.ui.h:3
-msgid "_Use the system fixed width font"
-msgstr "_Utilizaţi fontul sistemului de lăţime fixă"
-
-#: ../data/glade/moserial.ui.h:4
-msgid "Display Font"
-msgstr "Font de afișare"
-
-#: ../data/glade/moserial.ui.h:5
-msgid "Font Color"
-msgstr "Culoarea fontului"
-
-#: ../data/glade/moserial.ui.h:6
-msgid "Background Color"
-msgstr "Culoare de fundal"
-
-#: ../data/glade/moserial.ui.h:7
-msgid "Highlight Color"
-msgstr "Culoare de evidențiere"
-
-#: ../data/glade/moserial.ui.h:8
-#, fuzzy
-#| msgid "Record"
-msgid "Recording"
-msgstr "Înregistrează"
-
-#: ../data/glade/moserial.ui.h:9
-msgid "_Launch recorded files"
-msgstr "_Lansează fișiere înregistrate"
-
-#: ../data/glade/moserial.ui.h:10
-msgid "Enable timeout after"
-msgstr "Permite pauză în conectare după"
-
-#: ../data/glade/moserial.ui.h:11
-msgid "seconds"
-msgstr "secunde"
-
-#: ../data/glade/moserial.ui.h:12
-msgid "Select Folder for Received Files"
-msgstr "Selectează directorul pentru fișiere primite"
-
-#: ../data/glade/moserial.ui.h:13
-msgid "Error Correction Protocol"
-msgstr "Protocol de corecție a erorilor"
-
-#: ../data/glade/moserial.ui.h:14
-msgid "Receive File Progress"
-msgstr "Progresul primirii fișierului"
-
-#: ../data/glade/moserial.ui.h:15
-msgid "Record Incoming and/or Outgoing Data"
-msgstr "Înregistrează date de intrare și/sau de ieșire"
-
-#: ../data/glade/moserial.ui.h:16
-msgid "Stream to record"
-msgstr "Flux de înregistrat"
-
-#: ../data/glade/moserial.ui.h:17
-msgid "Select File to Send"
-msgstr "Selectează fișierul de trimis"
-
-#: ../data/glade/moserial.ui.h:18
-msgid "Send File Progress"
-msgstr "Progresul trimiterii fișierului"
-
-#: ../data/glade/moserial.ui.h:19
-msgid "Port Setup"
-msgstr "Setare port"
-
-#: ../data/glade/moserial.ui.h:20
-#, fuzzy
-#| msgid "<b>Port Settings</b>"
-msgid "Port Settings"
-msgstr "<b>Configurări port</b>"
-
-#: ../data/glade/moserial.ui.h:21
-msgid "Hardware"
-msgstr "Hardware"
-
-#: ../data/glade/moserial.ui.h:22
-msgid "Software"
-msgstr "Software"
-
-#: ../data/glade/moserial.ui.h:23
-msgid "Access Mode"
-msgstr "Mod de accesare"
-
-#: ../data/glade/moserial.ui.h:24
-msgid "Handshake"
-msgstr "Stabilirea conexiunii"
-
-#: ../data/glade/moserial.ui.h:25
-msgid "Parity"
-msgstr "Paritate"
-
-#: ../data/glade/moserial.ui.h:26
-msgid "Stop Bits"
-msgstr "Biți de stop"
-
-#: ../data/glade/moserial.ui.h:27
-msgid "Data Bits"
-msgstr "Biți de date"
-
-#: ../data/glade/moserial.ui.h:28
-msgid "Baud Rate"
-msgstr "Rata baud"
-
-#: ../data/glade/moserial.ui.h:29
-msgid "Device"
-msgstr "Dispozitiv"
-
-#: ../data/glade/moserial.ui.h:30
-msgid "Local Echo"
-msgstr "Ecou local"
-
-#: ../data/glade/moserial.ui.h:31
-msgid "Echo received data"
-msgstr "Anunță primirea datelor"
-
-#: ../data/glade/moserial.ui.h:32
+#: ../data/ui/mainwindow.ui.h:1 ../data/moserial.appdata.xml.in.h:1
 msgid "moserial"
 msgstr "moserial"
 
-#: ../data/glade/moserial.ui.h:33
+#: ../data/ui/mainwindow.ui.h:2
 msgid "_File"
 msgstr "_Fișier"
 
-#: ../data/glade/moserial.ui.h:34
+#: ../data/ui/mainwindow.ui.h:3
 msgid "Open _Recent"
 msgstr "Deschide document _recent"
 
-#: ../data/glade/moserial.ui.h:35
+#: ../data/ui/mainwindow.ui.h:4
 msgid "_Edit"
 msgstr "_Editare"
 
-#: ../data/glade/moserial.ui.h:36
+#: ../data/ui/mainwindow.ui.h:5
 msgid "_Help"
 msgstr "_Ajutor"
 
-#: ../data/glade/moserial.ui.h:37
+#: ../data/ui/mainwindow.ui.h:6
 msgid "Connect"
 msgstr "Conectare"
 
-#: ../data/glade/moserial.ui.h:38
+#: ../data/ui/mainwindow.ui.h:7
 msgid "Record"
 msgstr "Înregistrează"
 
-#: ../data/glade/moserial.ui.h:39
+#: ../data/ui/mainwindow.ui.h:8
 msgid "Send File"
 msgstr "Trimite fișier"
 
-#: ../data/glade/moserial.ui.h:40
+#: ../data/ui/mainwindow.ui.h:9
 msgid "Receive File"
 msgstr "Primește fișier"
 
-#: ../data/glade/moserial.ui.h:41
+#: ../data/ui/mainwindow.ui.h:10 ../data/ui/settings_dialog.ui.h:1
+msgid "Port Setup"
+msgstr "Setare port"
+
+#: ../data/ui/mainwindow.ui.h:11 ../data/ui/preferences.ui.h:1
+msgid "Preferences"
+msgstr "Preferințe"
+
+#: ../data/ui/mainwindow.ui.h:12
 msgid "Help"
 msgstr "Ajutor"
 
-#: ../data/glade/moserial.ui.h:42
+#: ../data/ui/mainwindow.ui.h:13
 msgid "Received ASCII"
 msgstr "S-a primit ASCII"
 
-#: ../data/glade/moserial.ui.h:43
+#: ../data/ui/mainwindow.ui.h:14
 msgid "Received HEX"
 msgstr "S-a primit HEX"
 
-#: ../data/glade/moserial.ui.h:44
+#: ../data/ui/mainwindow.ui.h:15
 msgid "Sent ASCII"
 msgstr "S-a trimis ASCII"
 
-#: ../data/glade/moserial.ui.h:45
+#: ../data/ui/mainwindow.ui.h:16
 msgid "Sent HEX"
 msgstr "S-a trimis HEX"
 
-#: ../data/glade/moserial.ui.h:46 ../src/SerialStreamRecorder.vala:30
-#, fuzzy
-#| msgid "<i>Outgoing</i>"
+#: ../data/ui/mainwindow.ui.h:17 ../src/SerialStreamRecorder.vala:30
 msgid "Outgoing"
-msgstr "<i>De ieșire</i>"
+msgstr "De ieșire"
 
-#: ../data/glade/moserial.ui.h:47
+#: ../data/ui/mainwindow.ui.h:18
 msgid "Send"
 msgstr "Trimite"
 
-#: ../data/glade/moserial.ui.h:48
+#: ../data/ui/mainwindow.ui.h:19
 msgid "Disconnect"
 msgstr "Deconectare"
 
-#: ../data/glade/moserial.ui.h:49
+#: ../data/ui/mainwindow.ui.h:20
 msgid "Stop Recording"
 msgstr "Oprește înregistrarea"
 
-#: ../data/glade/moserial.ui.h:50
+#: ../data/ui/preferences.ui.h:2
+msgid "Font"
+msgstr "Font"
+
+#: ../data/ui/preferences.ui.h:3
+msgid "_Use the system fixed width font"
+msgstr "_Utilizaţi fontul sistemului de lăţime fixă"
+
+#: ../data/ui/preferences.ui.h:4
+msgid "Display Font"
+msgstr "Font de afișare"
+
+#: ../data/ui/preferences.ui.h:5
+msgid "Font Color"
+msgstr "Culoarea fontului"
+
+#: ../data/ui/preferences.ui.h:6
+msgid "Background Color"
+msgstr "Culoare de fundal"
+
+#: ../data/ui/preferences.ui.h:7
+msgid "Highlight Color"
+msgstr "Culoare de evidențiere"
+
+#: ../data/ui/preferences.ui.h:8
+msgid "Recording"
+msgstr "Înregistrare"
+
+#: ../data/ui/preferences.ui.h:9
+msgid "_Launch recorded files"
+msgstr "_Lansează fișiere înregistrate"
+
+#: ../data/ui/preferences.ui.h:10
+msgid "Enable timeout after"
+msgstr "Permite pauză în conectare după"
+
+#: ../data/ui/preferences.ui.h:11
+msgid "seconds"
+msgstr "secunde"
+
+#: ../data/ui/receive_chooser.ui.h:1
+msgid "Select Folder for Received Files"
+msgstr "Selectează directorul pentru fișiere primite"
+
+#: ../data/ui/receive_chooser.ui.h:2 ../data/ui/send_chooser_dialog.ui.h:2
+msgid "Error Correction Protocol"
+msgstr "Protocol de corecție a erorilor"
+
+#: ../data/ui/receive_progress.ui.h:1
+msgid "Receive File Progress"
+msgstr "Progresul primirii fișierului"
+
+#: ../data/ui/record_dialog.ui.h:1
+msgid "Record Incoming and/or Outgoing Data"
+msgstr "Înregistrează date de intrare și/sau de ieșire"
+
+#: ../data/ui/record_dialog.ui.h:2
+msgid "Stream to record"
+msgstr "Flux de înregistrat"
+
+#: ../data/ui/send_chooser_dialog.ui.h:1
+msgid "Select File to Send"
+msgstr "Selectează fișierul de trimis"
+
+#: ../data/ui/send_progress_dialog.ui.h:1
+msgid "Send File Progress"
+msgstr "Progresul trimiterii fișierului"
+
+#: ../data/ui/settings_dialog.ui.h:2
+msgid "Port Settings"
+msgstr "Configurări port"
+
+#: ../data/ui/settings_dialog.ui.h:3
+msgid "Hardware"
+msgstr "Hardware"
+
+#: ../data/ui/settings_dialog.ui.h:4
+msgid "Software"
+msgstr "Software"
+
+#: ../data/ui/settings_dialog.ui.h:5
+msgid "Access Mode"
+msgstr "Mod de accesare"
+
+#: ../data/ui/settings_dialog.ui.h:6
+msgid "Handshake"
+msgstr "Stabilirea conexiunii"
+
+#: ../data/ui/settings_dialog.ui.h:7
+msgid "Parity"
+msgstr "Paritate"
+
+#: ../data/ui/settings_dialog.ui.h:8
+msgid "Stop Bits"
+msgstr "Biți de stop"
+
+#: ../data/ui/settings_dialog.ui.h:9
+msgid "Data Bits"
+msgstr "Biți de date"
+
+#: ../data/ui/settings_dialog.ui.h:10
+msgid "Baud Rate"
+msgstr "Rata baud"
+
+#: ../data/ui/settings_dialog.ui.h:11
+msgid "Device"
+msgstr "Dispozitiv"
+
+#: ../data/ui/settings_dialog.ui.h:12
+msgid "Local Echo"
+msgstr "Ecou local"
+
+#: ../data/ui/settings_dialog.ui.h:13
+msgid "Echo received data"
+msgstr "Anunță primirea datelor"
+
+#: ../data/ui/xmodem_filename_dialog.ui.h:1
 msgid "Filename required for XMODEM"
 msgstr "Numele fișierului necesar pentru XMODEM"
 
 #: ../data/moserial.desktop.in.h:1
 msgid "moserial Terminal"
-msgstr "Terminal moserial"
+msgstr "terminal moserial"
 
 #: ../data/moserial.desktop.in.h:2
 msgid "Serial Terminal"
@@ -239,8 +232,27 @@ msgid "A serial terminal optimized for logging and file capture"
 msgstr ""
 "Un terminal serial optimizat pentru înregistrarea și captarea fișierelor"
 
-#: ../src/InputParser.vala:45 ../src/InputParser.vala:52
-#: ../src/InputParser.vala:58
+#: ../data/moserial.appdata.xml.in.h:2
+msgid "Serial terminal"
+msgstr "Terminal serial"
+
+#: ../data/moserial.appdata.xml.in.h:3
+msgid ""
+"Moserial is a serial terminal used for interacting with serial consoles and "
+"embedded devices. It supports the view of incoming and outgoing data in both "
+"ASCII and hexadecimal formats with the option to log this data. It also "
+"supports sending and receiving of x, y, and z-modem files, and has profiles "
+"to easily switch between configurations for different devices you are "
+"communicating with."
+msgstr ""
+"Moserial este un terminal serial utilizat pentru interacțiunea cu consolele "
+"seriale și dispozitivele încorporate. Suportă vizualizarea datelor de "
+"primire și de ieșire în amândouă formatele ASCII and hexadecimal cu opțiunea "
+"de a înregistra aceste date. Suportă, de asemenea, și trimiterea și primirea "
+"a x, y, și z fișiere moderne, și are profile pentru a comuta ușor între "
+"configurări pentru dispozitivele diferite cu care comunicați."
+
+#: ../src/InputParser.vala:44 ../src/InputParser.vala:54
 msgid "Invalid Input"
 msgstr "Input nevalid"
 
@@ -248,20 +260,11 @@ msgstr "Input nevalid"
 msgid "Profile file to load"
 msgstr "Fișierul profilului de încărcat"
 
-#: ../src/Main.vala:36
-#, c-format
-msgid ""
-"Failed to load UI\n"
-"%s"
-msgstr ""
-"Încărcarea interfeței a eșuat\n"
-"%s"
-
-#: ../src/Main.vala:52
+#: ../src/Main.vala:45
 msgid "- moserial serial terminal"
 msgstr "- moserial terminal serial"
 
-#: ../src/Main.vala:57 ../src/Main.vala:65
+#: ../src/Main.vala:50 ../src/Main.vala:58
 #, c-format
 msgid "Run '%s --help' to see a full list of available command line options.\n"
 msgstr ""
@@ -270,7 +273,9 @@ msgstr ""
 
 #: ../src/MainWindow.vala:30
 msgid "translator-credits"
-msgstr "Tudor Vioreanu <tudor_dude93@yahoo.com>"
+msgstr ""
+"Tudor Vioreanu <tudor_dude93@yahoo.com>\n"
+"Florentina Mușat <florentina [dot] musat [dot] 28 [at] gmail [dot] com>, 2020"
 
 #: ../src/MainWindow.vala:32
 msgid ""
@@ -304,77 +309,69 @@ msgstr ""
 "Ar fi trebuit să primiți o copie a GNU General Public License împreună cu "
 "acest program. Dacă nu, vedeți <http://www.gnu.org/licenses/>."
 
-#: ../src/MainWindow.vala:65
-#, fuzzy
-#| msgid ""
-#| "ASCII\n"
-#| "HEX"
+#: ../src/MainWindow.vala:64
 msgid "ASCII"
-msgstr ""
-"ASCII\n"
-"HEX"
+msgstr "ASCII"
 
-#: ../src/MainWindow.vala:65
+#: ../src/MainWindow.vala:64
 msgid "HEX"
-msgstr ""
+msgstr "HEX"
 
-#: ../src/MainWindow.vala:163
+#: ../src/MainWindow.vala:164
 msgid "Port configuration"
 msgstr "Configurare port"
 
-#: ../src/MainWindow.vala:168
+#: ../src/MainWindow.vala:169
 msgid "Read the manual"
-msgstr ""
+msgstr "Citește manualul"
 
-#: ../src/MainWindow.vala:178
+#: ../src/MainWindow.vala:179
 msgid "TX: 0, RX: 0"
 msgstr "TX: 0, RX: 0"
 
-#: ../src/MainWindow.vala:189
+#: ../src/MainWindow.vala:190
 msgid "Send a file"
 msgstr "Trimite un fișier"
 
-#: ../src/MainWindow.vala:198
+#: ../src/MainWindow.vala:199
 msgid "Receive a file"
 msgstr "Primește un fișier"
 
-#: ../src/MainWindow.vala:208
+#: ../src/MainWindow.vala:209
 msgid "Record sent and/or received data"
 msgstr "Înregistrează date trimise și/sau primite"
 
-#: ../src/MainWindow.vala:219
+#: ../src/MainWindow.vala:220
 msgid "Other preferences"
 msgstr "Alte preferințe"
 
-#: ../src/MainWindow.vala:224
+#: ../src/MainWindow.vala:225
 msgid "Open/close port"
 msgstr "Deschide/închide port"
 
-#: ../src/MainWindow.vala:272
+#: ../src/MainWindow.vala:273
 msgid "Send the outgoing data now."
 msgstr "Trimite datele de ieșire acum."
 
-#: ../src/MainWindow.vala:275
+#: ../src/MainWindow.vala:276
 msgid "Type outgoing data here. Press Enter or Send to send it."
 msgstr ""
 "Scrieți datele de ieșire aici. Apasați Enter sau Trimite pentru a le trimite."
 
-#: ../src/MainWindow.vala:558 ../src/Profile.vala:76 ../src/Profile.vala:107
-#, c-format
+#: ../src/MainWindow.vala:559 ../src/Profile.vala:76 ../src/Profile.vala:107
 msgid "Error: Could not open file"
 msgstr "Eroare: Nu s-a putut deschide fișierul"
 
-#: ../src/MainWindow.vala:636
-#, c-format
+#: ../src/MainWindow.vala:637
 msgid "Error: Could not open device"
 msgstr "Eroare: Nu s-a putut deschide dispozitivul"
 
-#: ../src/MainWindow.vala:758
+#: ../src/MainWindow.vala:759
 #, c-format
 msgid "Unable to display help file: %s"
 msgstr "Nu s-a putut afișa fișierul de ajutor: %s"
 
-#: ../src/MainWindow.vala:769
+#: ../src/MainWindow.vala:770
 msgid ""
 "A serial terminal for the GNOME desktop, optimized for logging and file "
 "capture."
@@ -382,7 +379,7 @@ msgstr ""
 "Un terminal serial pentru desktopul GNOME, optimizat pentru înregistrarea și "
 "captarea fișierelor."
 
-#: ../src/MainWindow.vala:822
+#: ../src/MainWindow.vala:823
 msgid ""
 "You have changed your setting or preferences. Do you want to save these "
 "changes to the loaded profile?"
@@ -390,7 +387,7 @@ msgstr ""
 "Ați schimbat configurările sau preferințele. Doriți să salvați aceste "
 "schimbări pentru profilul încărcat?"
 
-#: ../src/PreferencesDialog.vala:50
+#: ../src/PreferencesDialog.vala:48
 msgid ""
 "If this option is enabled, a recorded file will be opened immediately after "
 "it is saved, using the default application for the file type. The default "
@@ -400,97 +397,79 @@ msgstr ""
 "imediat după ce este salvat, folosind aplicația implicită pentru acel tip de "
 "fișier. Aplicația implicită este definită de mediul desktop."
 
-#: ../src/PreferencesDialog.vala:53
-#, fuzzy
-#| msgid ""
-#| "If this option is enabled, recording will be automatically stopped after "
-#| "an adjustable period of inactivity after receiving some data. That is, "
-#| "moserial will wait indefinitely to record the first data byte before "
-#| "activating the inactivity timer."
+#: ../src/PreferencesDialog.vala:51
 msgid ""
 "If this option is enabled, recording will be automatically stopped after an "
 "adjustable period of inactivity after receiving some data. Moserial will "
 "wait indefinitely to record the first data byte before activating the "
 "inactivity timer."
 msgstr ""
-"Dacă această opțiune este activată, înregistrarea se va opri automat după o "
-"perioadă ajustabilă de inactivitate după primirea unor date. Moserial va "
-"aştepta la nesfârşit să înregistreze primul octet de date înainte de a "
-"activa cronometrul de inactivitate."
+"Dacă această opțiune este activată, înregistrarea va fi automat oprită după "
+"o perioadă ajustabilă de inactivitate după ce se primesc niște date. "
+"Moserial va aștepta pe termen nelimitat să înregistreze primul octet de date "
+"înaintea activării cronometrului pentru inactivitate."
 
 #: ../src/Preferences.vala:65
-#, fuzzy
-#| msgid "Unable to retrieve gconf key: %s"
 msgid "Unable to retrieve system font setting"
-msgstr "Obținerea cheii gconf a eșuat: %s"
+msgstr "Nu se poate obține configurarea de font a sistemului"
 
 #: ../src/Rzwrapper.vala:24 ../src/Szwrapper.vala:24
 msgid "Xmodem"
-msgstr ""
+msgstr "Xmodem"
 
 #: ../src/Rzwrapper.vala:25 ../src/Szwrapper.vala:25
 msgid "Ymodem"
-msgstr ""
+msgstr "Ymodem"
 
 #: ../src/Rzwrapper.vala:26 ../src/Szwrapper.vala:26
 msgid "Zmodem"
-msgstr ""
+msgstr "Zmodem"
 
-#: ../src/SendProgressDialog.vala:43
+#: ../src/SendProgressDialog.vala:41
 msgid "Waiting for remote host"
 msgstr "Se așteaptă gazdă la distanță"
 
 #: ../src/SerialConnection.vala:43
 msgid "CR+LF end"
-msgstr ""
+msgstr "Sfârșit CR+LF"
 
 #: ../src/SerialConnection.vala:44
-#, fuzzy
-#| msgid "Send"
 msgid "CR end"
-msgstr "Trimite"
+msgstr "Sfârșit CR"
 
 #: ../src/SerialConnection.vala:45
-#, fuzzy
-#| msgid "Send"
 msgid "LF end"
-msgstr "Trimite"
+msgstr "Sfârșit LF"
 
 #: ../src/SerialConnection.vala:46
 msgid "TAB end"
-msgstr ""
+msgstr "Sfârșit TAB"
 
 #: ../src/SerialConnection.vala:47
-#, fuzzy
-#| msgid "Send"
 msgid "ESC end"
-msgstr "Trimite"
+msgstr "Sfârșit ESC"
 
 #: ../src/SerialConnection.vala:48
-#, fuzzy
-#| msgid "Send"
 msgid "No end"
-msgstr "Trimite"
+msgstr "Niciun sfârșit"
 
-#: ../src/SerialConnection.vala:302
+#: ../src/SerialConnection.vala:291
 #, c-format
 msgid "TX: %lu, RX: %lu (%lu unprintable)"
 msgstr "TX: %lu, RX: %lu (%lu neprintabil)"
 
-#: ../src/SerialConnection.vala:304
+#: ../src/SerialConnection.vala:293
 #, c-format
 msgid "TX: %lu, RX: %lu"
 msgstr "TX: %lu, RX: %lu"
 
 #: ../src/SerialStreamRecorder.vala:29
 msgid "Incoming"
-msgstr ""
+msgstr "De primire"
 
 #: ../src/SerialStreamRecorder.vala:31
-#, fuzzy
-#| msgid "Record Incoming and/or Outgoing Data"
 msgid "Incoming and Outgoing"
-msgstr "Înregistrează date de intrare și/sau de ieșire"
+msgstr "De primire și de ieșire"
 
 #: ../src/SerialStreamRecorder.vala:57 ../src/SerialStreamRecorder.vala:68
 #: ../src/SerialStreamRecorder.vala:89
@@ -503,49 +482,49 @@ msgstr "eroare: %s\n"
 msgid "Unable to launch %s: %s"
 msgstr "Nu s-a putut lansa %s: %s"
 
-#: ../src/SettingsDialog.vala:67
+#: ../src/SettingsDialog.vala:65
 msgid "Also known as RTS/CTS handshaking"
 msgstr "Cunoscut și ca stabilirea conexiunii RTS/CTS"
 
-#: ../src/SettingsDialog.vala:70
+#: ../src/SettingsDialog.vala:68
 msgid "Also known as XON/XOFF handshaking"
 msgstr "Cunoscut și ca stabilirea conexiunii XON/XOFF"
 
-#: ../src/SettingsDialog.vala:76
+#: ../src/SettingsDialog.vala:74
 msgid "Normally disabled"
 msgstr "Dezactivat în mod normal"
 
 #: ../src/Settings.vala:25
 msgid "None"
-msgstr ""
+msgstr "Nimic"
 
 #: ../src/Settings.vala:26
 msgid "Odd"
-msgstr ""
+msgstr "Impar"
 
 #: ../src/Settings.vala:27
 msgid "Even"
-msgstr ""
+msgstr "Par"
 
 #: ../src/Settings.vala:28
 msgid "Mark"
-msgstr ""
+msgstr "Semn"
 
 #: ../src/Settings.vala:29
 msgid "Space"
-msgstr ""
+msgstr "Spațiu"
 
 #: ../src/Settings.vala:34
 msgid "Read and Write"
-msgstr ""
+msgstr "Citește și scrie"
 
 #: ../src/Settings.vala:35
 msgid "Read Only"
-msgstr ""
+msgstr "Doar citire"
 
 #: ../src/Settings.vala:36
 msgid "Write Only"
-msgstr ""
+msgstr "Doar scriere"
 
 #. TRANSLATORS: first letter of "None", a serial port parity setting
 #: ../src/Settings.vala:89
@@ -581,22 +560,19 @@ msgid "CLOSED"
 msgstr "ÎNCHIS"
 
 #: ../src/Szwrapper.vala:27
-#, fuzzy
-#| msgid ""
-#| "Xmodem\n"
-#| "Ymodem\n"
-#| "Zmodem\n"
-#| "None (straight binary)"
 msgid "None (straight binary)"
-msgstr ""
-"Xmodem\n"
-"Ymodem\n"
-"Zmodem\n"
-"Nespecificat (direct binar)"
+msgstr "Nimic (binar drept)"
 
 #: ../src/Szwrapper.vala:185
 msgid "canceled"
 msgstr "anulat"
+
+#~ msgid ""
+#~ "Failed to load UI\n"
+#~ "%s"
+#~ msgstr ""
+#~ "Încărcarea interfeței a eșuat\n"
+#~ "%s"
 
 #~ msgid ""
 #~ "/dev/ttyS0\n"
