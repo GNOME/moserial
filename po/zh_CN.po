@@ -7,214 +7,214 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: moserial master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=moserial&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-01-15 01:24+0000\n"
-"PO-Revision-Date: 2013-12-03 23:00+0800\n"
-"Last-Translator: 玉堂白鹤 <yjwork.xfce@gmail.com>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/moserial/issues\n"
+"POT-Creation-Date: 2018-06-10 17:52+0000\n"
+"PO-Revision-Date: 2020-09-02 22:00-0400\n"
+"Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.1\n"
 
-#: ../data/glade/moserial.ui.h:1
-msgid "Preferences"
-msgstr "首选项"
-
-#: ../data/glade/moserial.ui.h:2
-msgid "Font"
-msgstr "字体"
-
-#: ../data/glade/moserial.ui.h:3
-msgid "_Use the system fixed width font"
-msgstr "使用系统的等宽字体(_U)"
-
-#: ../data/glade/moserial.ui.h:4
-msgid "Display Font"
-msgstr "显示字体"
-
-#: ../data/glade/moserial.ui.h:5
-msgid "Font Color"
-msgstr "字体颜色"
-
-#: ../data/glade/moserial.ui.h:6
-msgid "Background Color"
-msgstr "背景颜色"
-
-#: ../data/glade/moserial.ui.h:7
-msgid "Highlight Color"
-msgstr "高亮颜色"
-
-#: ../data/glade/moserial.ui.h:8
-msgid "Recording"
-msgstr "记录"
-
-#: ../data/glade/moserial.ui.h:9
-msgid "_Launch recorded files"
-msgstr "打开记录的文件(_L)"
-
-#: ../data/glade/moserial.ui.h:10
-msgid "Enable timeout after"
-msgstr "启用超时，时限"
-
-#: ../data/glade/moserial.ui.h:11
-msgid "seconds"
-msgstr "秒"
-
-#: ../data/glade/moserial.ui.h:12
-msgid "Select Folder for Received Files"
-msgstr "选择接收文件的目录"
-
-#: ../data/glade/moserial.ui.h:13
-msgid "Error Correction Protocol"
-msgstr "错误修正协议"
-
-#: ../data/glade/moserial.ui.h:14
-msgid "Receive File Progress"
-msgstr "接收文件进度"
-
-#: ../data/glade/moserial.ui.h:15
-msgid "Record Incoming and/or Outgoing Data"
-msgstr "记录传入/传出的数据"
-
-#: ../data/glade/moserial.ui.h:16
-msgid "Stream to record"
-msgstr "要记录的流"
-
-#: ../data/glade/moserial.ui.h:17
-msgid "Select File to Send"
-msgstr "选择要发送的文件"
-
-#: ../data/glade/moserial.ui.h:18
-msgid "Send File Progress"
-msgstr "发送文件进度"
-
-#: ../data/glade/moserial.ui.h:19
-msgid "Port Setup"
-msgstr "端口设置"
-
-#: ../data/glade/moserial.ui.h:20
-msgid "Port Settings"
-msgstr "端口设置"
-
-#: ../data/glade/moserial.ui.h:21
-msgid "Hardware"
-msgstr "硬件"
-
-#: ../data/glade/moserial.ui.h:22
-msgid "Software"
-msgstr "软件"
-
-#: ../data/glade/moserial.ui.h:23
-msgid "Access Mode"
-msgstr "访问模式"
-
-#: ../data/glade/moserial.ui.h:24
-msgid "Handshake"
-msgstr "握手"
-
-#: ../data/glade/moserial.ui.h:25
-msgid "Parity"
-msgstr "奇偶校验"
-
-#: ../data/glade/moserial.ui.h:26
-msgid "Stop Bits"
-msgstr "停止位"
-
-#: ../data/glade/moserial.ui.h:27
-msgid "Data Bits"
-msgstr "数据位"
-
-#: ../data/glade/moserial.ui.h:28
-msgid "Baud Rate"
-msgstr "波特率"
-
-#: ../data/glade/moserial.ui.h:29
-msgid "Device"
-msgstr "设备"
-
-#: ../data/glade/moserial.ui.h:30
-msgid "Local Echo"
-msgstr "本地回显"
-
-#: ../data/glade/moserial.ui.h:31
-msgid "Echo received data"
-msgstr "回显接收的数据"
-
-#: ../data/glade/moserial.ui.h:32
+#: ../data/ui/mainwindow.ui.h:1 ../data/moserial.appdata.xml.in.h:1
 msgid "moserial"
 msgstr "moserial"
 
-#: ../data/glade/moserial.ui.h:33
+#: ../data/ui/mainwindow.ui.h:2
 msgid "_File"
 msgstr "文件(_F)"
 
-#: ../data/glade/moserial.ui.h:34
+#: ../data/ui/mainwindow.ui.h:3
 msgid "Open _Recent"
 msgstr "打开最近文件(_R)"
 
-#: ../data/glade/moserial.ui.h:35
+#: ../data/ui/mainwindow.ui.h:4
 msgid "_Edit"
 msgstr "编辑(_E)"
 
-#: ../data/glade/moserial.ui.h:36
+#: ../data/ui/mainwindow.ui.h:5
 msgid "_Help"
 msgstr "帮助(_H)"
 
-#: ../data/glade/moserial.ui.h:37
+#: ../data/ui/mainwindow.ui.h:6
 msgid "Connect"
 msgstr "连接"
 
-#: ../data/glade/moserial.ui.h:38
+#: ../data/ui/mainwindow.ui.h:7
 msgid "Record"
 msgstr "记录"
 
-#: ../data/glade/moserial.ui.h:39
+#: ../data/ui/mainwindow.ui.h:8
 msgid "Send File"
 msgstr "发送文件"
 
-#: ../data/glade/moserial.ui.h:40
+#: ../data/ui/mainwindow.ui.h:9
 msgid "Receive File"
 msgstr "接收文件"
 
-#: ../data/glade/moserial.ui.h:41
+#: ../data/ui/mainwindow.ui.h:10 ../data/ui/settings_dialog.ui.h:1
+msgid "Port Setup"
+msgstr "端口设置"
+
+#: ../data/ui/mainwindow.ui.h:11 ../data/ui/preferences.ui.h:1
+msgid "Preferences"
+msgstr "首选项"
+
+#: ../data/ui/mainwindow.ui.h:12
 msgid "Help"
 msgstr "帮助"
 
-#: ../data/glade/moserial.ui.h:42
+#: ../data/ui/mainwindow.ui.h:13
 msgid "Received ASCII"
 msgstr "接收的 ASCII"
 
-#: ../data/glade/moserial.ui.h:43
+#: ../data/ui/mainwindow.ui.h:14
 msgid "Received HEX"
 msgstr "接收的 HEX"
 
-#: ../data/glade/moserial.ui.h:44
+#: ../data/ui/mainwindow.ui.h:15
 msgid "Sent ASCII"
 msgstr "发送的 ASCII"
 
-#: ../data/glade/moserial.ui.h:45
+#: ../data/ui/mainwindow.ui.h:16
 msgid "Sent HEX"
 msgstr "发送的 HEX"
 
-#: ../data/glade/moserial.ui.h:46 ../src/SerialStreamRecorder.vala:30
+#: ../data/ui/mainwindow.ui.h:17 ../src/SerialStreamRecorder.vala:30
 msgid "Outgoing"
 msgstr "上传"
 
-#: ../data/glade/moserial.ui.h:47
+#: ../data/ui/mainwindow.ui.h:18
 msgid "Send"
 msgstr "发送"
 
-#: ../data/glade/moserial.ui.h:48
+#: ../data/ui/mainwindow.ui.h:19
 msgid "Disconnect"
 msgstr "断开"
 
-#: ../data/glade/moserial.ui.h:49
+#: ../data/ui/mainwindow.ui.h:20
 msgid "Stop Recording"
 msgstr "停止记录"
 
-#: ../data/glade/moserial.ui.h:50
+#: ../data/ui/preferences.ui.h:2
+msgid "Font"
+msgstr "字体"
+
+#: ../data/ui/preferences.ui.h:3
+msgid "_Use the system fixed width font"
+msgstr "使用系统的等宽字体(_U)"
+
+#: ../data/ui/preferences.ui.h:4
+msgid "Display Font"
+msgstr "显示字体"
+
+#: ../data/ui/preferences.ui.h:5
+msgid "Font Color"
+msgstr "字体颜色"
+
+#: ../data/ui/preferences.ui.h:6
+msgid "Background Color"
+msgstr "背景颜色"
+
+#: ../data/ui/preferences.ui.h:7
+msgid "Highlight Color"
+msgstr "高亮颜色"
+
+#: ../data/ui/preferences.ui.h:8
+msgid "Recording"
+msgstr "记录"
+
+#: ../data/ui/preferences.ui.h:9
+msgid "_Launch recorded files"
+msgstr "打开记录的文件(_L)"
+
+#: ../data/ui/preferences.ui.h:10
+msgid "Enable timeout after"
+msgstr "启用超时，时限"
+
+#: ../data/ui/preferences.ui.h:11
+msgid "seconds"
+msgstr "秒"
+
+#: ../data/ui/receive_chooser.ui.h:1
+msgid "Select Folder for Received Files"
+msgstr "选择接收文件的目录"
+
+#: ../data/ui/receive_chooser.ui.h:2 ../data/ui/send_chooser_dialog.ui.h:2
+msgid "Error Correction Protocol"
+msgstr "错误修正协议"
+
+#: ../data/ui/receive_progress.ui.h:1
+msgid "Receive File Progress"
+msgstr "接收文件进度"
+
+#: ../data/ui/record_dialog.ui.h:1
+msgid "Record Incoming and/or Outgoing Data"
+msgstr "记录传入/传出的数据"
+
+#: ../data/ui/record_dialog.ui.h:2
+msgid "Stream to record"
+msgstr "要记录的流"
+
+#: ../data/ui/send_chooser_dialog.ui.h:1
+msgid "Select File to Send"
+msgstr "选择要发送的文件"
+
+#: ../data/ui/send_progress_dialog.ui.h:1
+msgid "Send File Progress"
+msgstr "发送文件进度"
+
+#: ../data/ui/settings_dialog.ui.h:2
+msgid "Port Settings"
+msgstr "端口设置"
+
+#: ../data/ui/settings_dialog.ui.h:3
+msgid "Hardware"
+msgstr "硬件"
+
+#: ../data/ui/settings_dialog.ui.h:4
+msgid "Software"
+msgstr "软件"
+
+#: ../data/ui/settings_dialog.ui.h:5
+msgid "Access Mode"
+msgstr "访问模式"
+
+#: ../data/ui/settings_dialog.ui.h:6
+msgid "Handshake"
+msgstr "握手"
+
+#: ../data/ui/settings_dialog.ui.h:7
+msgid "Parity"
+msgstr "奇偶校验"
+
+#: ../data/ui/settings_dialog.ui.h:8
+msgid "Stop Bits"
+msgstr "停止位"
+
+#: ../data/ui/settings_dialog.ui.h:9
+msgid "Data Bits"
+msgstr "数据位"
+
+#: ../data/ui/settings_dialog.ui.h:10
+msgid "Baud Rate"
+msgstr "波特率"
+
+#: ../data/ui/settings_dialog.ui.h:11
+msgid "Device"
+msgstr "设备"
+
+#: ../data/ui/settings_dialog.ui.h:12
+msgid "Local Echo"
+msgstr "本地回显"
+
+#: ../data/ui/settings_dialog.ui.h:13
+msgid "Echo received data"
+msgstr "回显接收的数据"
+
+#: ../data/ui/xmodem_filename_dialog.ui.h:1
 msgid "Filename required for XMODEM"
 msgstr "XMODEM 要求有文件名"
 
@@ -230,8 +230,25 @@ msgstr "串口终端"
 msgid "A serial terminal optimized for logging and file capture"
 msgstr "为登录和文件获取专门优化的串行终端"
 
-#: ../src/InputParser.vala:45 ../src/InputParser.vala:52
-#: ../src/InputParser.vala:58
+#: ../data/moserial.appdata.xml.in.h:2
+msgid "Serial terminal"
+msgstr "串口终端"
+
+#: ../data/moserial.appdata.xml.in.h:3
+msgid ""
+"Moserial is a serial terminal used for interacting with serial consoles and "
+"embedded devices. It supports the view of incoming and outgoing data in both "
+"ASCII and hexadecimal formats with the option to log this data. It also "
+"supports sending and receiving of x, y, and z-modem files, and has profiles "
+"to easily switch between configurations for different devices you are "
+"communicating with."
+msgstr ""
+"Moserial 是一个用于与串行控制台和嵌入式设备交互的串行终端。它支持以 ASCII 或"
+"十六进制格式显示数据传入和数据传出, 并可以选择记录这些数据到日志。它还支持发"
+"送和接收 x, y, z-modem 文件, 并且您可以设置配置文件, 这样您可以轻松地在不同的"
+"设备之间切换。"
+
+#: ../src/InputParser.vala:44 ../src/InputParser.vala:54
 msgid "Invalid Input"
 msgstr "无效的输入"
 
@@ -239,20 +256,11 @@ msgstr "无效的输入"
 msgid "Profile file to load"
 msgstr "加载的配置文件"
 
-#: ../src/Main.vala:36
-#, c-format
-msgid ""
-"Failed to load UI\n"
-"%s"
-msgstr ""
-"载入用户界面失败\n"
-"%s"
-
-#: ../src/Main.vala:52
+#: ../src/Main.vala:45
 msgid "- moserial serial terminal"
 msgstr "- moserial 串行终端"
 
-#: ../src/Main.vala:57 ../src/Main.vala:65
+#: ../src/Main.vala:50 ../src/Main.vala:58
 #, c-format
 msgid "Run '%s --help' to see a full list of available command line options.\n"
 msgstr "运行 '%s --help' 可以查看完整的命令选项。\n"
@@ -292,80 +300,80 @@ msgstr ""
 "您应该在收到 Nautilus 的同时收到了 GNU GPL 协议的副本；如果您没有收到的话，请"
 "访问 <http://www.gnu.org/licenses/>。"
 
-#: ../src/MainWindow.vala:65
+#: ../src/MainWindow.vala:64
 msgid "ASCII"
 msgstr "ASCII"
 
-#: ../src/MainWindow.vala:65
+#: ../src/MainWindow.vala:64
 msgid "HEX"
 msgstr "HEX"
 
-#: ../src/MainWindow.vala:163
+#: ../src/MainWindow.vala:164
 msgid "Port configuration"
 msgstr "端口配置"
 
-#: ../src/MainWindow.vala:168
+#: ../src/MainWindow.vala:169
 msgid "Read the manual"
 msgstr "阅读手册"
 
-#: ../src/MainWindow.vala:178
+#: ../src/MainWindow.vala:179
 msgid "TX: 0, RX: 0"
 msgstr "发送：0，接收：0"
 
-#: ../src/MainWindow.vala:189
+#: ../src/MainWindow.vala:190
 msgid "Send a file"
 msgstr "发送一个文件"
 
-#: ../src/MainWindow.vala:198
+#: ../src/MainWindow.vala:199
 msgid "Receive a file"
 msgstr "接收一个文件"
 
-#: ../src/MainWindow.vala:208
+#: ../src/MainWindow.vala:209
 msgid "Record sent and/or received data"
 msgstr "记录发送接收数据"
 
-#: ../src/MainWindow.vala:219
+#: ../src/MainWindow.vala:220
 msgid "Other preferences"
 msgstr "其他属性"
 
-#: ../src/MainWindow.vala:224
+#: ../src/MainWindow.vala:225
 msgid "Open/close port"
 msgstr "打开/关闭端口"
 
-#: ../src/MainWindow.vala:272
+#: ../src/MainWindow.vala:273
 msgid "Send the outgoing data now."
-msgstr "现在发送输出栏数据"
+msgstr "现在发送输出栏数据。"
 
-#: ../src/MainWindow.vala:275
+#: ../src/MainWindow.vala:276
 msgid "Type outgoing data here. Press Enter or Send to send it."
 msgstr "在这里显示输出的数据。按回车或发送键发送数据。"
 
-#: ../src/MainWindow.vala:562 ../src/Profile.vala:76 ../src/Profile.vala:107
+#: ../src/MainWindow.vala:559 ../src/Profile.vala:76 ../src/Profile.vala:107
 msgid "Error: Could not open file"
 msgstr "错误，不能打开文件"
 
-#: ../src/MainWindow.vala:640
+#: ../src/MainWindow.vala:637
 msgid "Error: Could not open device"
 msgstr "错误：不能打开设备"
 
-#: ../src/MainWindow.vala:762
+#: ../src/MainWindow.vala:759
 #, c-format
 msgid "Unable to display help file: %s"
 msgstr "不能显示帮助文件：%s"
 
-#: ../src/MainWindow.vala:773
+#: ../src/MainWindow.vala:770
 msgid ""
 "A serial terminal for the GNOME desktop, optimized for logging and file "
 "capture."
 msgstr "GNOME桌面环境的串行终端，优化记录与文件捕获。"
 
-#: ../src/MainWindow.vala:826
+#: ../src/MainWindow.vala:823
 msgid ""
 "You have changed your setting or preferences. Do you want to save these "
 "changes to the loaded profile?"
 msgstr "您已经更改了设置。您想要保存它到引导配置文件吗？"
 
-#: ../src/PreferencesDialog.vala:50
+#: ../src/PreferencesDialog.vala:48
 msgid ""
 "If this option is enabled, a recorded file will be opened immediately after "
 "it is saved, using the default application for the file type. The default "
@@ -374,7 +382,7 @@ msgstr ""
 "如果勾选该选项，记录文件将在保存后立即使用默认程序打开。默认的应用程序由桌面"
 "环境指定。"
 
-#: ../src/PreferencesDialog.vala:53
+#: ../src/PreferencesDialog.vala:51
 msgid ""
 "If this option is enabled, recording will be automatically stopped after an "
 "adjustable period of inactivity after receiving some data. Moserial will "
@@ -400,7 +408,7 @@ msgstr "Ymodem"
 msgid "Zmodem"
 msgstr "Zmodem"
 
-#: ../src/SendProgressDialog.vala:43
+#: ../src/SendProgressDialog.vala:41
 msgid "Waiting for remote host"
 msgstr "等待远程主机"
 
@@ -428,12 +436,12 @@ msgstr "ESC 结束"
 msgid "No end"
 msgstr "不结束"
 
-#: ../src/SerialConnection.vala:302
+#: ../src/SerialConnection.vala:291
 #, c-format
 msgid "TX: %lu, RX: %lu (%lu unprintable)"
 msgstr "发送：%lu，接收：%lu (%lu 无法显示)"
 
-#: ../src/SerialConnection.vala:304
+#: ../src/SerialConnection.vala:293
 #, c-format
 msgid "TX: %lu, RX: %lu"
 msgstr "发送：%lu，接收：%lu"
@@ -457,15 +465,15 @@ msgstr "错误： %s\n"
 msgid "Unable to launch %s: %s"
 msgstr "无法启动 %s: %s"
 
-#: ../src/SettingsDialog.vala:67
+#: ../src/SettingsDialog.vala:65
 msgid "Also known as RTS/CTS handshaking"
-msgstr "也称为 RTS/CTS "
+msgstr "也称为 RTS/CTS 握手"
 
-#: ../src/SettingsDialog.vala:70
+#: ../src/SettingsDialog.vala:68
 msgid "Also known as XON/XOFF handshaking"
 msgstr "也称为 XON/XOFF"
 
-#: ../src/SettingsDialog.vala:76
+#: ../src/SettingsDialog.vala:74
 msgid "Normally disabled"
 msgstr "通常禁用"
 
@@ -541,6 +549,13 @@ msgstr "None (straight binary)"
 #: ../src/Szwrapper.vala:185
 msgid "canceled"
 msgstr "取消"
+
+#~ msgid ""
+#~ "Failed to load UI\n"
+#~ "%s"
+#~ msgstr ""
+#~ "载入用户界面失败\n"
+#~ "%s"
 
 #~ msgid ""
 #~ "/dev/ttyS0\n"
