@@ -513,7 +513,8 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
             }
         } else {
             try {
-                uchar[] h = InputParser.parseHex (s);
+                Regex rex = new Regex("[^0123456789ABCDEFabcdef]");
+                uchar[] h = InputParser.parseHex (rex.replace(s, s.length, 0, ""));
                 len = h.length;
                 for (int x = 0; x < len; x++) {
                     serialConnection.sendByte (h[x]);
@@ -521,7 +522,7 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
                     outgoingHexTextBuffer.add (h[x]);
                     insertBufferEnd (outgoingAsciiTextBuffer, "%c".printf (h[x]));
                 }
-            } catch (HexParseError e) {
+            } catch (Error e) {
                 var errorDialog = new MessageDialog (gtkWindow, DialogFlags.DESTROY_WITH_PARENT, MessageType.ERROR, ButtonsType.CLOSE, "%s", e.message);
                 errorDialog.run ();
                 errorDialog.destroy ();
