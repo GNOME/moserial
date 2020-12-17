@@ -42,4 +42,7 @@ po/Makefile.in.in
 doc/*/.xml2po.mo
 doc/*/moserial.xml
 doc/*.omf
+debian/*
+config.sub.dh-orig
+config.guess.dh-orig
 
