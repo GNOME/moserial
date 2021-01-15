@@ -14,7 +14,7 @@
   <maintainer>
     <foaf:Person>
       <foaf:name>Michael J. Chudobiak</foaf:name>
-      <foaf:mbox rdf:resource="mailto:mjc@src.gnome.org" />
+      <foaf:mbox rdf:resource="mailto:mjc@avtechpulse.com" />
       <gnome:userid>mjc</gnome:userid>
     </foaf:Person>
   </maintainer>
