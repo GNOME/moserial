@@ -1,19 +1,22 @@
 # Swedish translation for moserial help.
-# Copyright © 2009-2015 Free Software Foundation, Inc.
+# Copyright © 2009-2021 Free Software Foundation, Inc.
+# Daniel Nylander <po@danielnylander.se>, 2009.
 # Josef Andersson <josef.andersson@fripost.org>, 2015.
+# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2021.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: moserial doc\n"
-"POT-Creation-Date: 2015-12-26 13:31+0000\n"
-"PO-Revision-Date: 2015-12-20 17:24+0200\n"
-"Last-Translator: Josef Andersson <josef.andersson@fripost.org>\n"
+"POT-Creation-Date: 2021-01-16 15:13+0000\n"
+"PO-Revision-Date: 2021-01-16 18:41+0100\n"
+"Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Virtaal 0.7.1\n"
+"X-Generator: Poedit 2.4.2\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -25,7 +28,7 @@ msgstr ""
 #. (itstool) path: articleinfo/title
 #: C/index.docbook:19
 msgid "<application>moserial</application> Manual V3.0.0"
-msgstr "Handbok för <application>moserial</application> V3.0.0"
+msgstr "Handbok för <application>moserial</application> v3.0.0"
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:20
@@ -152,12 +155,15 @@ msgstr ""
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:44
+#| msgid ""
+#| "<firstname>Michael</firstname> <surname>Chudobiak</surname> <affiliation> "
+#| "<address> <email>mjc@svn.gnome.org</email> </address> </affiliation>"
 msgid ""
 "<firstname>Michael</firstname> <surname>Chudobiak</surname> <affiliation> "
-"<address> <email>mjc@svn.gnome.org</email> </address> </affiliation>"
+"<address> <email>mjc@avtechpulse.com</email> </address> </affiliation>"
 msgstr ""
 "<firstname>Michael</firstname> <surname>Chudobiak</surname> <affiliation> "
-"<address> <email>mjc@svn.gnome.org</email> </address> </affiliation>"
+"<address> <email>mjc@avtechpulse.com</email> </address> </affiliation>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:59
@@ -478,7 +484,7 @@ msgid ""
 msgstr ""
 "Statusfältet längst ned i huvudfönstret visar portens tillstånd och en "
 "räknare över antalet skickade (TX) och mottagna (RX) byte. Om någon del av "
-"den mottagna datan inte är utskrivbar kommer att antal av dessa objekt också "
+"mottagna data inte är utskrivbara kommer en räkning av dessa objekt också "
 "visas."
 
 #. (itstool) path: sect1/title
@@ -523,9 +529,9 @@ msgid ""
 "file that you wanted to download."
 msgstr ""
 "När inspelningen börjar kommer knappen <guibutton>Spela in</guibutton> att "
-"ändras till <guibutton>Sluta spela in</guibutton>. Du kommer att behöva klicka på "
-"denna när du vill sluta spela in eller har mottagit hela den binärfil du "
-"ville hämta."
+"ändras till <guibutton>Sluta spela in</guibutton>. Du kommer att behöva "
+"klicka på denna när du vill sluta spela in eller har mottagit hela den "
+"binärfil du ville hämta."
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:274
@@ -829,30 +835,3 @@ msgstr "<keycap>Esc</keycap>"
 msgid ""
 "Moves the focus to the <guilabel>Outgoing</guilabel> single-line text box."
 msgstr "Flyttar fokus till enkelradstextfältet <guilabel>Utgående</guilabel>."
-
-#~ msgid "2009"
-#~ msgstr "2009"
-
-#~ msgid "Michael"
-#~ msgstr "Michael"
-
-#~ msgid "Chudobiak"
-#~ msgstr "Chudobiak"
-
-#~ msgid "mjc@svn.gnome.org"
-#~ msgstr "mjc@svn.gnome.org"
-
-#~ msgid "1.0.0"
-#~ msgstr "1.0.0"
-
-#~ msgid "February 2009"
-#~ msgstr "Februari 2009"
-
-#~ msgid "moserial"
-#~ msgstr "moserial"
-
-#~ msgid "serial"
-#~ msgstr "serie"
-
-#~ msgid "terminal"
-#~ msgstr "terminal"
