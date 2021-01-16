@@ -1,15 +1,16 @@
 # Swedish translation for moserial.
-# Copyright © 2009-2015 Free Software Foundation, Inc.
+# Copyright © 2009-2021 Free Software Foundation, Inc.
 # This file is distributed under the same license as the moserial package.
 # Daniel Nylander <po@danielnylander.se>, 2009.
 # Josef Andersson <josef.andersson@fripost.org>, 2015.
+# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2017, 2021.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: moserial\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=moserial&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-03-03 13:49+0000\n"
-"PO-Revision-Date: 2017-03-03 15:04+0100\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/moserial/issues\n"
+"POT-Creation-Date: 2021-01-16 13:47+0000\n"
+"PO-Revision-Date: 2021-01-17 00:43+0100\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Poedit 2.4.2\n"
 "X-Project-Style: gnome\n"
 
 #: ../data/ui/mainwindow.ui.h:1 ../data/moserial.appdata.xml.in.h:1
@@ -69,34 +70,62 @@ msgid "Help"
 msgstr "Hjälp"
 
 #: ../data/ui/mainwindow.ui.h:13
+msgid "RI"
+msgstr "RI"
+
+#: ../data/ui/mainwindow.ui.h:14
+msgid "DSR"
+msgstr "DSR"
+
+#: ../data/ui/mainwindow.ui.h:15
+msgid "CD"
+msgstr "CD"
+
+#: ../data/ui/mainwindow.ui.h:16
+msgid "CTS"
+msgstr "CTS"
+
+#: ../data/ui/mainwindow.ui.h:17
+msgid "Clear"
+msgstr "Rensa"
+
+#: ../data/ui/mainwindow.ui.h:18
 msgid "Received ASCII"
 msgstr "Mottagen ASCII"
 
-#: ../data/ui/mainwindow.ui.h:14
+#: ../data/ui/mainwindow.ui.h:19
 msgid "Received HEX"
 msgstr "Mottagen HEX"
 
-#: ../data/ui/mainwindow.ui.h:15
+#: ../data/ui/mainwindow.ui.h:20
+msgid "RTS"
+msgstr "RTS"
+
+#: ../data/ui/mainwindow.ui.h:21
+msgid "DTR"
+msgstr "DTR"
+
+#: ../data/ui/mainwindow.ui.h:22
 msgid "Sent ASCII"
 msgstr "Skickad ASCII"
 
-#: ../data/ui/mainwindow.ui.h:16
+#: ../data/ui/mainwindow.ui.h:23
 msgid "Sent HEX"
 msgstr "Skickad HEX"
 
-#: ../data/ui/mainwindow.ui.h:17 ../src/SerialStreamRecorder.vala:30
+#: ../data/ui/mainwindow.ui.h:24 ../src/SerialStreamRecorder.vala:30
 msgid "Outgoing"
 msgstr "Utgående"
 
-#: ../data/ui/mainwindow.ui.h:18
+#: ../data/ui/mainwindow.ui.h:25
 msgid "Send"
 msgstr "Skicka"
 
-#: ../data/ui/mainwindow.ui.h:19
+#: ../data/ui/mainwindow.ui.h:26
 msgid "Disconnect"
 msgstr "Koppla från"
 
-#: ../data/ui/mainwindow.ui.h:20
+#: ../data/ui/mainwindow.ui.h:27
 msgid "Stop Recording"
 msgstr "Sluta spela in"
 
@@ -181,40 +210,40 @@ msgid "Software"
 msgstr "Program"
 
 #: ../data/ui/settings_dialog.ui.h:5
-msgid "Access Mode"
-msgstr "Åtkomstläge"
+msgid "Echo received data"
+msgstr "Upprepar mottagna data"
 
 #: ../data/ui/settings_dialog.ui.h:6
-msgid "Handshake"
-msgstr "Handskakning"
-
-#: ../data/ui/settings_dialog.ui.h:7
-msgid "Parity"
-msgstr "Paritet"
-
-#: ../data/ui/settings_dialog.ui.h:8
-msgid "Stop Bits"
-msgstr "Stoppbitar"
-
-#: ../data/ui/settings_dialog.ui.h:9
-msgid "Data Bits"
-msgstr "Databitar"
-
-#: ../data/ui/settings_dialog.ui.h:10
-msgid "Baud Rate"
-msgstr "Överföringshastighet"
-
-#: ../data/ui/settings_dialog.ui.h:11
 msgid "Device"
 msgstr "Enhet"
 
+#: ../data/ui/settings_dialog.ui.h:7
+msgid "Baud Rate"
+msgstr "Överföringshastighet"
+
+#: ../data/ui/settings_dialog.ui.h:8
+msgid "Data Bits"
+msgstr "Databitar"
+
+#: ../data/ui/settings_dialog.ui.h:9
+msgid "Stop Bits"
+msgstr "Stoppbitar"
+
+#: ../data/ui/settings_dialog.ui.h:10
+msgid "Parity"
+msgstr "Paritet"
+
+#: ../data/ui/settings_dialog.ui.h:11
+msgid "Handshake"
+msgstr "Handskakning"
+
 #: ../data/ui/settings_dialog.ui.h:12
-msgid "Local Echo"
-msgstr "Lokalt eko"
+msgid "Access Mode"
+msgstr "Åtkomstläge"
 
 #: ../data/ui/settings_dialog.ui.h:13
-msgid "Echo received data"
-msgstr "Upprepar mottaget data"
+msgid "Local Echo"
+msgstr "Lokalt eko"
 
 #: ../data/ui/xmodem_filename_dialog.ui.h:1
 msgid "Filename required for XMODEM"
@@ -252,11 +281,11 @@ msgstr ""
 "har profiler för att växla mellan konfigurationer mellan olika enheter du "
 "kommunicerar med."
 
-#: ../src/InputParser.vala:44 ../src/InputParser.vala:54
+#: ../src/InputParser.vala:43 ../src/InputParser.vala:53
 msgid "Invalid Input"
 msgstr "Ogiltig inmatning"
 
-#: ../src/Main.vala:26
+#: ../src/Main.vala:25
 msgid "Profile file to load"
 msgstr "Profilfil att läsa in"
 
@@ -271,7 +300,7 @@ msgstr ""
 "Kör ”%s --help” för att se en komplett lista över tillgängliga "
 "kommandoradsflaggor.\n"
 
-#: ../src/MainWindow.vala:30
+#: ../src/MainWindow.vala:31
 msgid "translator-credits"
 msgstr ""
 "Josef Andersson <josef.andersson@fripost.org>\n"
@@ -280,7 +309,7 @@ msgstr ""
 "Skicka synpunkter på översättningen till\n"
 "<tp-sv@listor.tp-sv.se>."
 
-#: ../src/MainWindow.vala:32
+#: ../src/MainWindow.vala:33
 msgid ""
 "moserial is free software: you can redistribute it and/or modify it under "
 "the terms of the GNU General Public License as published by the Free "
@@ -291,7 +320,7 @@ msgstr ""
 "under villkoren i GNU General Public License, publicerad av Free Software "
 "Foundation, antingen version 3 eller (om du så vill) någon senare version.\n"
 
-#: ../src/MainWindow.vala:33
+#: ../src/MainWindow.vala:34
 msgid ""
 "moserial is distributed in the hope that it will be useful, but WITHOUT ANY "
 "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
@@ -303,7 +332,7 @@ msgstr ""
 "LÄMPLIGHET FÖR NÅGOT SPECIELLT ÄNDAMÅL.  Se GNU General Public License för "
 "ytterligare information.\n"
 
-#: ../src/MainWindow.vala:34
+#: ../src/MainWindow.vala:35
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "this program.  If not, see <http://www.gnu.org/licenses/>."
@@ -311,69 +340,85 @@ msgstr ""
 "Du bör ha fått en kopia av GNU General Public License tillsammans med detta "
 "program.  Om inte, se <http://www.gnu.org/licenses/>."
 
-#: ../src/MainWindow.vala:64
+#: ../src/MainWindow.vala:65
 msgid "ASCII"
 msgstr "ASCII"
 
-#: ../src/MainWindow.vala:64
+#: ../src/MainWindow.vala:65
 msgid "HEX"
 msgstr "HEX"
 
-#: ../src/MainWindow.vala:165
+#: ../src/MainWindow.vala:172
 msgid "Port configuration"
 msgstr "Portinställningar"
 
-#: ../src/MainWindow.vala:170
+#: ../src/MainWindow.vala:177
 msgid "Read the manual"
 msgstr "Läs handboken"
 
-#: ../src/MainWindow.vala:180
+#: ../src/MainWindow.vala:187
 msgid "TX: 0, RX: 0"
 msgstr "TX: 0, RX: 0"
 
-#: ../src/MainWindow.vala:191
+#: ../src/MainWindow.vala:198
 msgid "Send a file"
 msgstr "Skicka en fil"
 
-#: ../src/MainWindow.vala:200
+#: ../src/MainWindow.vala:207
 msgid "Receive a file"
 msgstr "Ta emot en fil"
 
-#: ../src/MainWindow.vala:210
+#: ../src/MainWindow.vala:217
 msgid "Record sent and/or received data"
-msgstr "Spela in skickad och/eller mottagen data"
+msgstr "Spela in skickade och/eller mottagna data"
 
-#: ../src/MainWindow.vala:221
+#: ../src/MainWindow.vala:228
 msgid "Other preferences"
 msgstr "Övriga inställningar"
 
-#: ../src/MainWindow.vala:226
+#: ../src/MainWindow.vala:233
 msgid "Open/close port"
 msgstr "Öppna/stäng port"
 
-#: ../src/MainWindow.vala:274
+#: ../src/MainWindow.vala:285
 msgid "Send the outgoing data now."
-msgstr "Skicka den utgående datan nu."
+msgstr "Skicka utgående data nu."
 
-#: ../src/MainWindow.vala:277
+#: ../src/MainWindow.vala:289
 msgid "Type outgoing data here. Press Enter or Send to send it."
 msgstr ""
 "Skriv in utgående data här. Tryck Retur eller Skicka för att skicka det."
 
-#: ../src/MainWindow.vala:564 ../src/Profile.vala:76 ../src/Profile.vala:107
+#: ../src/MainWindow.vala:340
+msgid "Toggle DTR signal status."
+msgstr "Växla DTR-signalstatus."
+
+#: ../src/MainWindow.vala:345
+msgid "Toggle RTS signal status."
+msgstr "Växla RTS-signalstatus."
+
+#: ../src/MainWindow.vala:350
+msgid "Clear incoming text box."
+msgstr "Rensa inkommande textruta."
+
+#: ../src/MainWindow.vala:355
+msgid "Clear outgoing text box."
+msgstr "Rensa utgående textruta."
+
+#: ../src/MainWindow.vala:656 ../src/Profile.vala:145 ../src/Profile.vala:178
 msgid "Error: Could not open file"
 msgstr "Fel: Kunde inte öppna filen"
 
-#: ../src/MainWindow.vala:642
+#: ../src/MainWindow.vala:776
 msgid "Error: Could not open device"
 msgstr "Fel: Kunde inte öppna enheten"
 
-#: ../src/MainWindow.vala:764
+#: ../src/MainWindow.vala:928
 #, c-format
 msgid "Unable to display help file: %s"
 msgstr "Kunde inte visa hjälpfilen: %s"
 
-#: ../src/MainWindow.vala:775
+#: ../src/MainWindow.vala:939
 msgid ""
 "A serial terminal for the GNOME desktop, optimized for logging and file "
 "capture."
@@ -381,7 +426,7 @@ msgstr ""
 "En seriell terminal för GNOME-skrivbordet, optimerad för loggning och "
 "filfångst."
 
-#: ../src/MainWindow.vala:828
+#: ../src/MainWindow.vala:993
 msgid ""
 "You have changed your setting or preferences. Do you want to save these "
 "changes to the loaded profile?"
@@ -415,19 +460,19 @@ msgstr ""
 msgid "Unable to retrieve system font setting"
 msgstr "Kunde inte hämta systemtypsnittsinställning"
 
-#: ../src/Rzwrapper.vala:24 ../src/Szwrapper.vala:24
+#: ../src/Rzwrapper.vala:23 ../src/Szwrapper.vala:23
 msgid "Xmodem"
 msgstr "Xmodem"
 
-#: ../src/Rzwrapper.vala:25 ../src/Szwrapper.vala:25
+#: ../src/Rzwrapper.vala:24 ../src/Szwrapper.vala:24
 msgid "Ymodem"
 msgstr "Ymodem"
 
-#: ../src/Rzwrapper.vala:26 ../src/Szwrapper.vala:26
+#: ../src/Rzwrapper.vala:25 ../src/Szwrapper.vala:25
 msgid "Zmodem"
 msgstr "Zmodem"
 
-#: ../src/SendProgressDialog.vala:42
+#: ../src/SendProgressDialog.vala:41
 msgid "Waiting for remote host"
 msgstr "Väntar på fjärrvärden"
 
@@ -455,12 +500,12 @@ msgstr "ESC-avslut"
 msgid "No end"
 msgstr "Inget avslut"
 
-#: ../src/SerialConnection.vala:302
+#: ../src/SerialConnection.vala:350
 #, c-format
 msgid "TX: %lu, RX: %lu (%lu unprintable)"
 msgstr "TX: %lu, RX: %lu (%lu inte utskrivbara)"
 
-#: ../src/SerialConnection.vala:304
+#: ../src/SerialConnection.vala:352
 #, c-format
 msgid "TX: %lu, RX: %lu"
 msgstr "TX: %lu, RX: %lu"
@@ -473,242 +518,98 @@ msgstr "Inkommande"
 msgid "Incoming and Outgoing"
 msgstr "Inkommande och utgående"
 
-#: ../src/SerialStreamRecorder.vala:57 ../src/SerialStreamRecorder.vala:68
-#: ../src/SerialStreamRecorder.vala:89
+#: ../src/SerialStreamRecorder.vala:56 ../src/SerialStreamRecorder.vala:66
+#: ../src/SerialStreamRecorder.vala:87
 #, c-format
 msgid "error: %s\n"
 msgstr "fel: %s\n"
 
-#: ../src/SerialStreamRecorder.vala:98
+#: ../src/SerialStreamRecorder.vala:96
 #, c-format
 msgid "Unable to launch %s: %s"
 msgstr "Kunde inte starta %s: %s"
 
-#: ../src/SettingsDialog.vala:66
+#: ../src/SettingsDialog.vala:71
 msgid "Also known as RTS/CTS handshaking"
 msgstr "Också känt som RTS/CTS-handskakning"
 
-#: ../src/SettingsDialog.vala:69
+#: ../src/SettingsDialog.vala:74
 msgid "Also known as XON/XOFF handshaking"
 msgstr "Också känt som XON/XOFF-handskakning"
 
-#: ../src/SettingsDialog.vala:75
+#: ../src/SettingsDialog.vala:80
 msgid "Normally disabled"
 msgstr "Vanligen inaktiverat"
 
-#: ../src/Settings.vala:25
+#: ../src/Settings.vala:24
 msgid "None"
 msgstr "Ingen"
 
-#: ../src/Settings.vala:26
+#: ../src/Settings.vala:25
 msgid "Odd"
 msgstr "Udda"
 
-#: ../src/Settings.vala:27
+#: ../src/Settings.vala:26
 msgid "Even"
 msgstr "Jämn"
 
-#: ../src/Settings.vala:28
+#: ../src/Settings.vala:27
 msgid "Mark"
 msgstr "Markera"
 
-#: ../src/Settings.vala:29
+#: ../src/Settings.vala:28
 msgid "Space"
 msgstr "Utrymme"
 
-#: ../src/Settings.vala:34
+#: ../src/Settings.vala:33
 msgid "Read and Write"
 msgstr "Läsa och skriva"
 
-#: ../src/Settings.vala:35
+#: ../src/Settings.vala:34
 msgid "Read Only"
 msgstr "Endast läsa"
 
-#: ../src/Settings.vala:36
+#: ../src/Settings.vala:35
 msgid "Write Only"
 msgstr "Endast skriva"
 
 #. TRANSLATORS: first letter of "None", a serial port parity setting
-#: ../src/Settings.vala:89
+#: ../src/Settings.vala:88
 msgid "N"
 msgstr "N"
 
 #. TRANSLATORS: first letter of "Odd", a serial port parity setting
-#: ../src/Settings.vala:93
+#: ../src/Settings.vala:92
 msgid "O"
 msgstr "O"
 
 #. TRANSLATORS: first letter of "Even", a serial port parity setting
-#: ../src/Settings.vala:97
+#: ../src/Settings.vala:96
 msgid "E"
 msgstr "E"
 
 #. TRANSLATORS: first letter of "Mark", a serial port parity setting
-#: ../src/Settings.vala:101
+#: ../src/Settings.vala:100
 msgid "M"
 msgstr "M"
 
 #. TRANSLATORS: first letter of "Space", a serial port parity setting
-#: ../src/Settings.vala:105
+#: ../src/Settings.vala:104
 msgid "S"
 msgstr "S"
 
-#: ../src/Settings.vala:115
+#: ../src/Settings.vala:114
 msgid "OPEN"
 msgstr "ÖPPEN"
 
-#: ../src/Settings.vala:116
+#: ../src/Settings.vala:115
 msgid "CLOSED"
 msgstr "STÄNGD"
 
-#: ../src/Szwrapper.vala:27
+#: ../src/Szwrapper.vala:26
 msgid "None (straight binary)"
 msgstr "Ingen (rak binär)"
 
-#: ../src/Szwrapper.vala:185
+#: ../src/Szwrapper.vala:170
 msgid "canceled"
 msgstr "avbruten"
-
-#~ msgid ""
-#~ "/dev/ttyS0\n"
-#~ "/dev/ttyS1\n"
-#~ "/dev/ttyS2\n"
-#~ "/dev/ttyS3\n"
-#~ "/dev/ttyUSB0\n"
-#~ "/dev/ttyUSB1\n"
-#~ "/dev/ttyUSB2\n"
-#~ "/dev/ttyUSB3"
-#~ msgstr ""
-#~ "/dev/ttyS0\n"
-#~ "/dev/ttyS1\n"
-#~ "/dev/ttyS2\n"
-#~ "/dev/ttyS3\n"
-#~ "/dev/ttyUSB0\n"
-#~ "/dev/ttyUSB1\n"
-#~ "/dev/ttyUSB2\n"
-#~ "/dev/ttyUSB3"
-
-#~ msgid ""
-#~ "1\n"
-#~ "2"
-#~ msgstr ""
-#~ "1\n"
-#~ "2"
-
-#~ msgid ""
-#~ "300\n"
-#~ "600\n"
-#~ "1200\n"
-#~ "2400\n"
-#~ "4800\n"
-#~ "9600\n"
-#~ "19200\n"
-#~ "38400\n"
-#~ "57600\n"
-#~ "115200\n"
-#~ "230400\n"
-#~ "460800\n"
-#~ "576000\n"
-#~ "927600"
-#~ msgstr ""
-#~ "300\n"
-#~ "600\n"
-#~ "1200\n"
-#~ "2400\n"
-#~ "4800\n"
-#~ "9600\n"
-#~ "19200\n"
-#~ "38400\n"
-#~ "57600\n"
-#~ "115200\n"
-#~ "230400\n"
-#~ "460800\n"
-#~ "576000\n"
-#~ "927600"
-
-#~ msgid ""
-#~ "5\n"
-#~ "6\n"
-#~ "7\n"
-#~ "8"
-#~ msgstr ""
-#~ "5\n"
-#~ "6\n"
-#~ "7\n"
-#~ "8"
-
-#~ msgid "<b>Font</b>"
-#~ msgstr "<b>Typsnitt</b>"
-
-#~ msgid "<b>Recording</b>"
-#~ msgstr "<b>Inspelning</b>"
-
-#~ msgid "Save Settings _As"
-#~ msgstr "Spara inställningar so_m"
-
-#~ msgid ""
-#~ "Xmodem\n"
-#~ "Ymodem\n"
-#~ "Zmodem"
-#~ msgstr ""
-#~ "Xmodem\n"
-#~ "Ymodem\n"
-#~ "Zmodem"
-
-#~ msgid "_Contents"
-#~ msgstr "_Innehåll"
-
-#~ msgid "_Open Settings"
-#~ msgstr "_Öppna inställningar"
-
-#~ msgid "_Save Settings"
-#~ msgstr "_Spara inställningar"
-
-#~ msgid "gtk-about"
-#~ msgstr "Om"
-
-#~ msgid "gtk-apply"
-#~ msgstr "Verkställ"
-
-#~ msgid "gtk-cancel"
-#~ msgstr "Avbryt"
-
-#~ msgid "gtk-clear"
-#~ msgstr "Töm"
-
-#~ msgid "gtk-copy"
-#~ msgstr "Kopiera"
-
-#~ msgid "gtk-cut"
-#~ msgstr "Klipp ut"
-
-#~ msgid "gtk-discard"
-#~ msgstr "Förkasta"
-
-#~ msgid "gtk-ok"
-#~ msgstr "OK"
-
-#~ msgid "gtk-paste"
-#~ msgstr "Klistra in"
-
-#~ msgid "gtk-quit"
-#~ msgstr "Avsluta"
-
-#~ msgid "menuitem3"
-#~ msgstr "menyobjekt3"
-
-#~ msgid "menuitem5"
-#~ msgstr "menyobjekt5"
-
-#~ msgid "Error: Could not open %s\n"
-#~ msgstr "Fel: Kunde inte öppna %s\n"
-
-#~ msgid "Can't display a clickable URL: %s"
-#~ msgstr "Kan inte visa en klickbar URL: %s"
-
-#~ msgid ""
-#~ "Failed to load UI\n"
-#~ "%s"
-#~ msgstr ""
-#~ "Misslyckades med att läsa in användargränssnitt\n"
-#~ "%s"
