@@ -33,7 +33,6 @@ public class moserial.SerialConnection : GLib.Object
     public string echoCompare = "";
 
     private Posix.termios newtio;
-    private Posix.termios restoretio;
     private int m_fd = -1;
     private GLib.IOChannel IOChannelFd;
     public signal void newData (uchar[] data, int size);
@@ -72,7 +71,6 @@ public class moserial.SerialConnection : GLib.Object
         }
         Posix.tcflush (m_fd, Posix.TCIOFLUSH);
 
-        tcgetattr (m_fd, out restoretio);
         applySettings (settings);
         tcsetattr (m_fd, Posix.TCSANOW, newtio);
 
@@ -219,6 +217,10 @@ public class moserial.SerialConnection : GLib.Object
         Posix.cfsetospeed (ref newtio, baudRate);
         Posix.cfsetispeed (ref newtio, baudRate);
 
+        Posix.cfmakeraw(ref newtio);
+        newtio.c_cc[Posix.VTIME]=0;
+        newtio.c_cc[Posix.VMIN]=1;
+
         // DataBits
         int dataBits;
         dataBits = settings.dataBits;
@@ -250,42 +252,17 @@ public class moserial.SerialConnection : GLib.Object
         else if (settings.parity == Settings.Parity.ODD)
             newtio.c_cflag |= (Posix.PARENB | Posix.PARODD);
 
-        newtio.c_cflag &= ~Linux.Termios.CRTSCTS;
-
-
         // Stop Bits
         if (settings.stopBits == 2)
             newtio.c_cflag |= Posix.CSTOPB;
         else
             newtio.c_cflag &= ~Posix.CSTOPB;
 
-        // Input Settings
-        newtio.c_iflag = Posix.IGNBRK;
-
         // Handshake
         if (settings.handshake == Settings.Handshake.SOFTWARE || settings.handshake == Settings.Handshake.BOTH)
             newtio.c_iflag |= Posix.IXON | Posix.IXOFF;
         else
             newtio.c_iflag &= ~(Posix.IXON | Posix.IXOFF | Posix.IXANY);
-
-        newtio.c_lflag = 0;
-        newtio.c_oflag = 0;
-
-        newtio.c_cc[Posix.VTIME] = 1;
-        newtio.c_cc[Posix.VMIN] = 1;
-
-
-        // Some other port settings from minicom.
-
-        // newtio.c_iflag &= ~(IGNBRK | IGNCR | INLCR | ICRNL | IUCLC | IXANY | IXON | IXOFF | INPCK | ISTRIP);
-        // newtio.c_iflag &= ~(Posix.IGNBRK | Posix.IGNCR | Posix.InputMode.INLCR | Posix.InputMode.ICRNL | Posix.IXANY | Posix.IXON | Posix.IXOFF | Posix.INPCK | Posix.ISTRIP);
-        // newtio.c_iflag |= (Posix.BRKINT | Posix.IGNPAR);
-        // newtio.c_oflag &= ~Posix.OPOST;
-        // newtio.c_lflag &= ~(XCASE|ECHONL|NOFLSH);
-        newtio.c_lflag &= ~(Posix.ECHONL | Posix.NOFLSH);
-        // newtio.c_lflag &= ~(Posix.ICANON | Posix.ISIG | Posix.ECHO);
-        // newtio.c_cflag |= CREAD;
-        // newtio.c_cc[VTIME] = 5;
 
         if (settings.handshake == Settings.Handshake.HARDWARE || settings.handshake == Settings.Handshake.BOTH)
             newtio.c_cflag |= Linux.Termios.CRTSCTS;
