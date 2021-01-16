@@ -23,7 +23,7 @@ using Gdk;
 public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get signals working. Why?
 {
     const string[] authors = {
-        "Michael J. Chudobiak <mjc@svn.gnome.org>",
+        "Michael J. Chudobiak <mjc@avtechpulse.com>",
         "mdarlodavampire",
         "Michael Wolf <michael.wolf@mictronics.de>",
         null
@@ -935,7 +935,7 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
 
         show_about_dialog (gtkWindow,
                            "version", Config.VERSION,
-                           "copyright", "Copyright © 2009-2020\nMichael J. Chudobiak\n<mjc@svn.gnome.org>",
+                           "copyright", "Copyright © 2009-2021\nMichael J. Chudobiak\n<mjc@avtechpulse.com>",
                            "comments", _("A serial terminal for the GNOME desktop, optimized for logging and file capture."),
                            "authors", authors,
                            "translator-credits", _(translators),
