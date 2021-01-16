@@ -19,13 +19,15 @@
 
 using Gtk;
 
-class moserial.Main : GLib.Object {
+class moserial.Main : GLib.Object
+{
     static string profileFilename;
     const OptionEntry[] options = {
         { "profile", 'p', 0, OptionArg.FILENAME, out profileFilename, N_ ("Profile file to load"), "foo.conf" },
         { null }
     };
-    public void run () {
+    public void run ()
+    {
 
         moserial.MainWindow mainWindow;
         if (!(profileFilename == null) && (!GLib.Path.is_absolute (profileFilename)))
@@ -34,7 +36,8 @@ class moserial.Main : GLib.Object {
         mainWindow.showWindow ();
     }
 
-    public static int main (string[] args) {
+    public static int main (string[] args)
+    {
         OptionContext context;
         Gtk.init (ref args);
 

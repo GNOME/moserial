@@ -20,7 +20,8 @@
 using Posix;
 using Linux;
 
-public class moserial.SerialConnection : GLib.Object {
+public class moserial.SerialConnection : GLib.Object
+{
     private bool connected;
     public ulong tx = 0;
     public ulong rx = 0;
@@ -45,14 +46,16 @@ public class moserial.SerialConnection : GLib.Object {
                                              GLib.N_ ("LF end"),
                                              GLib.N_ ("TAB end"),
                                              GLib.N_ ("ESC end"),
-                                             GLib.N_ ("No end") };
+                                             GLib.N_ ("No end")
+                                           };
     public const string[] LineEndValues = { "\r\n", "\r", "\n", "\t", "\x1b", "" };
     public const int max_buf_size = 128;
 
 
     uint ? sourceId;
     bool localEcho;
-    public bool doConnect (Settings settings) {
+    public bool doConnect (Settings settings)
+    {
 
         if (settings.accessMode == Settings.AccessMode.READWRITE)
             flags = Posix.O_RDWR;
@@ -81,7 +84,8 @@ public class moserial.SerialConnection : GLib.Object {
         return true;
     }
 
-    public void sendByte (uchar byte) {
+    public void sendByte (uchar byte)
+    {
         if (connected) {
             uchar[] b = new uchar[1];
             b[0] = byte;
@@ -92,7 +96,8 @@ public class moserial.SerialConnection : GLib.Object {
         }
     }
 
-    public void sendBytes (char[] bytes, size_t size) {
+    public void sendBytes (char[] bytes, size_t size)
+    {
         if (connected) {
             size_t x = Posix.write (m_fd, bytes, size);
             Posix.tcdrain (m_fd);
@@ -100,7 +105,8 @@ public class moserial.SerialConnection : GLib.Object {
         }
     }
 
-    public void doDisconnect () {
+    public void doDisconnect ()
+    {
         if (connected) {
             GLib.Source.remove (sourceId);
             sourceId = null;
@@ -121,11 +127,13 @@ public class moserial.SerialConnection : GLib.Object {
         }
     }
 
-    public bool isConnected () {
+    public bool isConnected ()
+    {
         return connected;
     }
 
-    private bool readBytes (GLib.IOChannel source, GLib.IOCondition condition) {
+    private bool readBytes (GLib.IOChannel source, GLib.IOCondition condition)
+    {
         uchar[] m_buf = new uchar[max_buf_size];
         int bytesRead = (int) Posix.read (m_fd, m_buf, max_buf_size);
         rx += (ulong) bytesRead;
@@ -147,64 +155,65 @@ public class moserial.SerialConnection : GLib.Object {
         return connected;
     }
 
-    private void applySettings (Settings settings) {
+    private void applySettings (Settings settings)
+    {
         // BaudRate
         uint baudRate = 0;
         switch (settings.baudRate) {
-            case 300:
-                baudRate = Posix.B300;
-                break;
-            case 600:
-                baudRate = Posix.B600;
-                break;
-            case 1200:
-                baudRate = Posix.B1200;
-                break;
-            case 2400:
-                baudRate = Posix.B2400;
-                break;
-            case 4800:
-                baudRate = Posix.B4800;
-                break;
-            case 9600:
-                baudRate = Posix.B9600;
-                break;
-            case 19200:
-                baudRate = Posix.B19200;
-                break;
-            case 38400:
-                baudRate = Posix.B38400;
-                break;
-            case 57600:
-                baudRate = Posix.B57600;
-                break;
-            case 115200:
-                baudRate = Posix.B115200;
-                break;
-            case 230400:
-                baudRate = Posix.B230400;
-                break;
-            case 460800:
-                baudRate = Linux.Termios.B460800;
-                break;
-            case 576000:
-                baudRate = Linux.Termios.B576000;
-                break;
-            case 921600:
-                baudRate = Linux.Termios.B921600;
-                break;
-            case 1000000:
-                baudRate = Linux.Termios.B1000000;
-                break;
-            case 2000000:
-                baudRate = Linux.Termios.B2000000;
-                break;
-            case 3000000:
-                baudRate = Linux.Termios.B3000000;
-                break;
-            default:
-                baudRate = settings.baudRate;
-                break;
+        case 300:
+            baudRate = Posix.B300;
+            break;
+        case 600:
+            baudRate = Posix.B600;
+            break;
+        case 1200:
+            baudRate = Posix.B1200;
+            break;
+        case 2400:
+            baudRate = Posix.B2400;
+            break;
+        case 4800:
+            baudRate = Posix.B4800;
+            break;
+        case 9600:
+            baudRate = Posix.B9600;
+            break;
+        case 19200:
+            baudRate = Posix.B19200;
+            break;
+        case 38400:
+            baudRate = Posix.B38400;
+            break;
+        case 57600:
+            baudRate = Posix.B57600;
+            break;
+        case 115200:
+            baudRate = Posix.B115200;
+            break;
+        case 230400:
+            baudRate = Posix.B230400;
+            break;
+        case 460800:
+            baudRate = Linux.Termios.B460800;
+            break;
+        case 576000:
+            baudRate = Linux.Termios.B576000;
+            break;
+        case 921600:
+            baudRate = Linux.Termios.B921600;
+            break;
+        case 1000000:
+            baudRate = Linux.Termios.B1000000;
+            break;
+        case 2000000:
+            baudRate = Linux.Termios.B2000000;
+            break;
+        case 3000000:
+            baudRate = Linux.Termios.B3000000;
+            break;
+        default:
+            baudRate = settings.baudRate;
+            break;
         }
 
         Posix.cfsetospeed (ref newtio, baudRate);
@@ -218,19 +227,19 @@ public class moserial.SerialConnection : GLib.Object {
             dataBits = 8;
 
         switch (dataBits) {
-            case 5:
-                newtio.c_cflag = (newtio.c_cflag & ~Posix.CSIZE) | Posix.CS5;
-                break;
-            case 6:
-                newtio.c_cflag = (newtio.c_cflag & ~Posix.CSIZE) | Posix.CS6;
-                break;
-            case 7:
-                newtio.c_cflag = (newtio.c_cflag & ~Posix.CSIZE) | Posix.CS7;
-                break;
-            case 8:
-            default:
-                newtio.c_cflag = (newtio.c_cflag & ~Posix.CSIZE) | Posix.CS8;
-                break;
+        case 5:
+            newtio.c_cflag = (newtio.c_cflag & ~Posix.CSIZE) | Posix.CS5;
+            break;
+        case 6:
+            newtio.c_cflag = (newtio.c_cflag & ~Posix.CSIZE) | Posix.CS6;
+            break;
+        case 7:
+            newtio.c_cflag = (newtio.c_cflag & ~Posix.CSIZE) | Posix.CS7;
+            break;
+        case 8:
+        default:
+            newtio.c_cflag = (newtio.c_cflag & ~Posix.CSIZE) | Posix.CS8;
+            break;
         }
         newtio.c_cflag |= Posix.CLOCAL | Posix.CREAD;
 
@@ -289,7 +298,8 @@ public class moserial.SerialConnection : GLib.Object {
         Posix.ioctl (m_fd, Linux.Termios.TIOCMSET, ref mcs);
     }
 
-    public void controlDTR (bool y) {
+    public void controlDTR (bool y)
+    {
         int mcs = 0;
         Posix.ioctl (m_fd, Linux.Termios.TIOCMGET, out mcs);
         if (y) {
@@ -300,7 +310,8 @@ public class moserial.SerialConnection : GLib.Object {
         Posix.ioctl (m_fd, Linux.Termios.TIOCMSET, ref mcs);
     }
 
-    public void controlRTS (bool y) {
+    public void controlRTS (bool y)
+    {
         int mcs = 0;
         Posix.ioctl (m_fd, Linux.Termios.TIOCMGET, out mcs);
         if (y) {
@@ -311,7 +322,8 @@ public class moserial.SerialConnection : GLib.Object {
         Posix.ioctl (m_fd, Linux.Termios.TIOCMSET, ref mcs);
     }
 
-    public bool[] getStatus () {
+    public bool[] getStatus ()
+    {
         bool mcs[6];
         int stat;
         Posix.ioctl (m_fd, Linux.Termios.TIOCMGET, out stat);
@@ -343,7 +355,8 @@ public class moserial.SerialConnection : GLib.Object {
         return mcs;
     }
 
-    public string getBytecountbarString () {
+    public string getBytecountbarString ()
+    {
         string r;
 
         if (nonprintable > 0)

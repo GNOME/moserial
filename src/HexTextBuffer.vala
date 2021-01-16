@@ -20,7 +20,8 @@
 using Gtk;
 using GLib;
 
-public class moserial.HexTextBuffer : TextBuffer {
+public class moserial.HexTextBuffer : TextBuffer
+{
     private TextMark nextHexMark;
     private TextMark nextCharMark;
     private TextTag addressTag;
@@ -29,18 +30,21 @@ public class moserial.HexTextBuffer : TextBuffer {
         setup ();
         addressTag = this.create_tag ("hex_address", "foreground", "#2020ff", null);
     }
-    public void applyPreferences (Preferences preferences) {
+    public void applyPreferences (Preferences preferences)
+    {
         addressTag.foreground = preferences.highlightColor;
     }
 
-    public void clear () {
+    public void clear ()
+    {
         this.delete_mark (nextHexMark);
         this.delete_mark (nextCharMark);
         this.set_text ("", 0);
         setup ();
     }
 
-    private void setup () {
+    private void setup ()
+    {
         TextIter nextHexIter;
         TextIter nextCharIter;
         this.get_end_iter (out nextHexIter);
@@ -52,7 +56,8 @@ public class moserial.HexTextBuffer : TextBuffer {
         hexBytes = 0;
     }
 
-    public void add (uchar data) {
+    public void add (uchar data)
+    {
         TextIter nextHexIter;
         TextIter nextCharIter;
         string incomingHexBuffer = "";

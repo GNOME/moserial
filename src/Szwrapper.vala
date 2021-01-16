@@ -18,12 +18,14 @@
  */
 
 // Class for communicating with the sz program
-public class moserial.Szwrapper : GLib.Object {
+public class moserial.Szwrapper : GLib.Object
+{
     public enum Protocol { XMODEM, YMODEM, ZMODEM, RAW, NULL }
     public const string[] ProtocolStrings = { GLib.N_ ("Xmodem"),
                                               GLib.N_ ("Ymodem"),
                                               GLib.N_ ("Zmodem"),
-                                              GLib.N_ ("None (straight binary)") };
+                                              GLib.N_ ("None (straight binary)")
+                                            };
 
     public Protocol protocol { get; construct; }
     public SerialConnection ? sc { get; construct; }
@@ -40,16 +42,19 @@ public class moserial.Szwrapper : GLib.Object {
     public bool running = false;
 
     public string filename { get; construct; }
-    public Szwrapper (Protocol ? protocol, SerialConnection ? sc, string ? filename) {
+    public Szwrapper (Protocol ? protocol, SerialConnection ? sc, string ? filename)
+    {
         Protocol pro = protocol;
         GLib.Object (protocol: pro,
                      sc: sc,
                      filename: filename);
     }
     construct {
-        if (protocol == Protocol.NULL || filename == null) {
+        if (protocol == Protocol.NULL || filename == null)
+        {
             running = false;
-        } else {
+        } else
+        {
             string[] argv;
             if (protocol == Protocol.RAW) {
                 argv = new string[2];
@@ -59,16 +64,16 @@ public class moserial.Szwrapper : GLib.Object {
                 argv = new string[4];
                 argv[0] = "sz";
                 switch (protocol) {
-                    case Protocol.XMODEM:
-                        argv[1] = "--xmodem";
-                        break;
-                    case Protocol.YMODEM:
-                        argv[1] = "--ymodem";
-                        break;
-                    case Protocol.ZMODEM:
-                    default:
-                        argv[1] = "--zmodem";
-                        break;
+                case Protocol.XMODEM:
+                    argv[1] = "--xmodem";
+                    break;
+                case Protocol.YMODEM:
+                    argv[1] = "--ymodem";
+                    break;
+                case Protocol.ZMODEM:
+                default:
+                    argv[1] = "--zmodem";
+                    break;
                 }
                 argv[2] = "-vv";
                 argv[3] = filename;
@@ -106,7 +111,8 @@ public class moserial.Szwrapper : GLib.Object {
             }
         }
     }
-    public void writeChar (uchar byte) {
+    public void writeChar (uchar byte)
+    {
         if (running) {
             size_t bytesWritten;
             char[] b = new char[1];
@@ -125,7 +131,8 @@ public class moserial.Szwrapper : GLib.Object {
         }
     }
 
-    private bool readError (GLib.IOChannel source, GLib.IOCondition condition) {
+    private bool readError (GLib.IOChannel source, GLib.IOCondition condition)
+    {
         while (Gtk.events_pending () || Gdk.events_pending ())
             Gtk.main_iteration_do (false);
         if (running) {
@@ -163,7 +170,8 @@ public class moserial.Szwrapper : GLib.Object {
             return false;
     }
 
-    public void transferCanceled (GLib.Object o) {
+    public void transferCanceled (GLib.Object o)
+    {
         // send cancel string to remote client and rz
 
         if (running) {
@@ -182,12 +190,14 @@ public class moserial.Szwrapper : GLib.Object {
         }
     }
 
-    private bool shutdown_timeout () {
+    private bool shutdown_timeout ()
+    {
         shutdown ();
         return false;
     }
 
-    private void shutdown () {
+    private void shutdown ()
+    {
         if (running) {
             running = false;
             GLib.Source.remove (outputChannelId);
@@ -197,7 +207,8 @@ public class moserial.Szwrapper : GLib.Object {
         }
     }
 
-    private bool readBytes (GLib.IOChannel source, GLib.IOCondition condition) {
+    private bool readBytes (GLib.IOChannel source, GLib.IOCondition condition)
+    {
         while (Gtk.events_pending () || Gdk.events_pending ())
             Gtk.main_iteration_do (false);
         if (running) {

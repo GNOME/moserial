@@ -18,19 +18,23 @@
  */
 
 using Gtk;
-public class moserial.AutoScroll : GLib.Object {
-    public static void scroll (Gtk.Adjustment va) {
+public class moserial.AutoScroll : GLib.Object
+{
+    public static void scroll (Gtk.Adjustment va)
+    {
         va.value = va.upper - va.page_size;
     }
 
-    public static void doAutoScroll (Gtk.Adjustment va) {
+    public static void doAutoScroll (Gtk.Adjustment va)
+    {
         if (va.value == va.upper - va.page_size)
             va.changed.connect (scroll);
         else
             va.changed.disconnect (scroll);
     }
 
-    public static void setup (Gtk.Adjustment incomingAsciiVerticalAdjuster, Gtk.Adjustment incomingHexVerticalAdjuster, Gtk.Adjustment outgoingAsciiVerticalAdjuster, Gtk.Adjustment outgoingHexVerticalAdjuster) {
+    public static void setup (Gtk.Adjustment incomingAsciiVerticalAdjuster, Gtk.Adjustment incomingHexVerticalAdjuster, Gtk.Adjustment outgoingAsciiVerticalAdjuster, Gtk.Adjustment outgoingHexVerticalAdjuster)
+    {
         incomingAsciiVerticalAdjuster.changed.connect (scroll);
         incomingAsciiVerticalAdjuster.value_changed.connect (doAutoScroll);
 

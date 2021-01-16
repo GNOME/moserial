@@ -18,14 +18,16 @@
  */
 
 using Gtk;
-public class moserial.SendProgressDialog : GLib.Object {
+public class moserial.SendProgressDialog : GLib.Object
+{
     private Dialog dialog;
     private Button cancelButton;
     private Gtk.Label status;
     private ProgressBar progressBar;
     public signal void transferCanceled ();
 
-    public SendProgressDialog (Window parent) {
+    public SendProgressDialog (Window parent)
+    {
         var builder = new Gtk.Builder.from_resource (Config.UIROOT + "send_progress_dialog.ui");
 
         dialog = (Dialog) builder.get_object ("send_progress_dialog");
@@ -36,22 +38,26 @@ public class moserial.SendProgressDialog : GLib.Object {
         progressBar = (ProgressBar) builder.get_object ("send_progressbar");
         dialog.delete_event.connect (hide);
     }
-    public void show () {
+    public void show ()
+    {
         dialog.show_all ();
         status.set_text (_("Waiting for remote host"));
     }
 
-    public bool hide () {
+    public bool hide ()
+    {
         dialog.hide ();
         return true;
     }
 
-    public void updateStatus (GLib.Object o, string newStatus) {
+    public void updateStatus (GLib.Object o, string newStatus)
+    {
         status.set_text (newStatus);
         progressBar.pulse ();
     }
 
-    public void cancel (GLib.Object o) {
+    public void cancel (GLib.Object o)
+    {
         // TODO: make canceling transfers actually work
         transferCanceled ();
     }

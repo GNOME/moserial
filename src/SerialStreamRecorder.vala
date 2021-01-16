@@ -19,7 +19,8 @@
 
 using Gtk;
 
-public class moserial.SerialStreamRecorder {
+public class moserial.SerialStreamRecorder
+{
     private GLib.File ? file;
     private string uri;
     private bool isOpen = false;
@@ -28,17 +29,20 @@ public class moserial.SerialStreamRecorder {
     public enum Direction { INCOMING, OUTGOING, BOTH }
     public const string[] DirectionStrings = { GLib.N_ ("Incoming"),
                                                GLib.N_ ("Outgoing"),
-                                               GLib.N_ ("Incoming and Outgoing") };
+                                               GLib.N_ ("Incoming and Outgoing")
+                                             };
 
     private Direction direction;
     public void open (string filename, Direction direction) throws GLib.Error {
-        try {
+        try
+        {
             file = File.new_for_path (filename);
             fos = file.replace (null, false, GLib.FileCreateFlags.NONE, null);
             isOpen = true;
             uri = file.get_uri ();
             this.direction = direction;
-        } catch (GLib.Error e) {
+        } catch (GLib.Error e)
+        {
             isOpen = false;
             file = null;
             fos = null;
@@ -46,7 +50,8 @@ public class moserial.SerialStreamRecorder {
         }
     }
 
-    private void write (uchar data) {
+    private void write (uchar data)
+    {
         if (isOpen) {
             uchar[] o = new uchar[1];
             o[0] = data;
@@ -58,7 +63,8 @@ public class moserial.SerialStreamRecorder {
         }
     }
 
-    private void write_array (uchar[] data) {
+    private void write_array (uchar[] data)
+    {
         if (isOpen) {
             try {
                 fos.write (data, null);
@@ -68,17 +74,20 @@ public class moserial.SerialStreamRecorder {
         }
     }
 
-    public void writeOutgoing (uchar data) {
+    public void writeOutgoing (uchar data)
+    {
         if (isOpen && (direction == Direction.OUTGOING || direction == Direction.BOTH))
             write (data);
     }
 
-    public void writeIncoming (uchar[] data) {
+    public void writeIncoming (uchar[] data)
+    {
         if (isOpen && (direction == Direction.INCOMING || direction == Direction.BOTH))
             write_array (data);
     }
 
-    public void close (bool launch) {
+    public void close (bool launch)
+    {
         if (isOpen) {
             try {
                 fos.flush (null);

@@ -18,11 +18,13 @@
  */
 
 // Class for communicating with the rz program
-public class moserial.Rzwrapper : GLib.Object {
+public class moserial.Rzwrapper : GLib.Object
+{
     public enum Protocol { XMODEM, YMODEM, ZMODEM, NULL }
     public const string[] ProtocolStrings = { GLib.N_ ("Xmodem"),
                                               GLib.N_ ("Ymodem"),
-                                              GLib.N_ ("Zmodem") };
+                                              GLib.N_ ("Zmodem")
+                                            };
 
     public Protocol protocol { get; construct; }
     public SerialConnection ? sc { get; construct; }
@@ -39,16 +41,19 @@ public class moserial.Rzwrapper : GLib.Object {
     public bool running = false;
     public string ? path { get; construct; }
     public string filename { get; construct; }
-    public Rzwrapper (Protocol ? protocol, SerialConnection ? sc, string ? p, string ? filename) {
+    public Rzwrapper (Protocol ? protocol, SerialConnection ? sc, string ? p, string ? filename)
+    {
         Protocol pro = protocol;
         GLib.Object (protocol: pro,
                      sc: sc, path: p,
                      filename: filename);
     }
     construct {
-        if (protocol == Protocol.NULL || path == null) {
+        if (protocol == Protocol.NULL || path == null)
+        {
             running = false;
-        } else {
+        } else
+        {
             string[] argv;
             if (protocol == Protocol.XMODEM)
                 argv = new string[4];
@@ -56,16 +61,16 @@ public class moserial.Rzwrapper : GLib.Object {
                 argv = new string[3];
             argv[0] = "rz";
             switch (protocol) {
-                case Protocol.XMODEM:
-                    argv[1] = "--xmodem";
-                    break;
-                case Protocol.YMODEM:
-                    argv[1] = "--ymodem";
-                    break;
-                case Protocol.ZMODEM:
-                default:
-                    argv[1] = "--zmodem";
-                    break;
+            case Protocol.XMODEM:
+                argv[1] = "--xmodem";
+                break;
+            case Protocol.YMODEM:
+                argv[1] = "--ymodem";
+                break;
+            case Protocol.ZMODEM:
+            default:
+                argv[1] = "--zmodem";
+                break;
             }
             argv[2] = "-vv";
             if (protocol == Protocol.XMODEM)
@@ -102,7 +107,8 @@ public class moserial.Rzwrapper : GLib.Object {
             }
         }
     }
-    public void writeChar (uchar byte) {
+    public void writeChar (uchar byte)
+    {
         if (running) {
             size_t bytesWritten;
             char[] b = new char[1];
@@ -121,7 +127,8 @@ public class moserial.Rzwrapper : GLib.Object {
         }
     }
 
-    public void flush () {
+    public void flush ()
+    {
         if (running) {
             try {
                 if (running)
@@ -133,7 +140,8 @@ public class moserial.Rzwrapper : GLib.Object {
         }
     }
 
-    private bool readError (GLib.IOChannel source, GLib.IOCondition condition) {
+    private bool readError (GLib.IOChannel source, GLib.IOCondition condition)
+    {
         if (running) {
             char[] m_buf = new char[1000];
             string message = "";
@@ -169,7 +177,8 @@ public class moserial.Rzwrapper : GLib.Object {
             return false;
     }
 
-    public void transferCanceled (GLib.Object o) {
+    public void transferCanceled (GLib.Object o)
+    {
         // send cancel string to remote client and rz
 
         if (running) {
@@ -185,12 +194,14 @@ public class moserial.Rzwrapper : GLib.Object {
         }
     }
 
-    private bool shutdown_timeout () {
+    private bool shutdown_timeout ()
+    {
         shutdown ();
         return false;
     }
 
-    private void shutdown () {
+    private void shutdown ()
+    {
         if (running) {
             running = false;
             GLib.Source.remove (outputChannelId);
@@ -200,7 +211,8 @@ public class moserial.Rzwrapper : GLib.Object {
         }
     }
 
-    private bool readBytes (GLib.IOChannel source, GLib.IOCondition condition) {
+    private bool readBytes (GLib.IOChannel source, GLib.IOCondition condition)
+    {
         if (running) {
             char[] m_buf = new char[1000];
 

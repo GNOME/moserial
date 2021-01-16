@@ -19,20 +19,23 @@
 
 using GLib;
 
-public class Settings : GLib.Object {
+public class Settings : GLib.Object
+{
     public enum Parity { NONE, ODD, EVEN, MARK, SPACE }
     public const string[] ParityModeStrings = { GLib.N_ ("None"),
                                                 GLib.N_ ("Odd"),
                                                 GLib.N_ ("Even"),
                                                 GLib.N_ ("Mark"),
-                                                GLib.N_ ("Space") };
+                                                GLib.N_ ("Space")
+                                              };
 
     public enum Handshake { NONE, HARDWARE, SOFTWARE, BOTH }
 
     public enum AccessMode { READWRITE, READONLY, WRITEONLY }
     public const string[] AccessModeStrings = { GLib.N_ ("Read and Write"),
                                                 GLib.N_ ("Read Only"),
-                                                GLib.N_ ("Write Only") };
+                                                GLib.N_ ("Write Only")
+                                              };
 
     public const string[] DataBitItems = { "5", "6", "7", "8" };
     public const string[] StopBitItems = { "1", "2" };
@@ -41,7 +44,8 @@ public class Settings : GLib.Object {
                                             "38400", "57600", "115200",
                                             "230400", "460800", "576000",
                                             "921600", "1000000", "2000000",
-                                            "3000000" };
+                                            "3000000"
+                                          };
 
     public static string DEFAULT_DEVICEFILE = "/dev/ttyS0";
     public static int DEFAULT_BAUDRATE = 1200;
@@ -59,7 +63,8 @@ public class Settings : GLib.Object {
     public Handshake handshake { get; construct; }
     public AccessMode accessMode { get; construct; }
     public bool localEcho { get; construct; }
-    public Settings (string ? device, int baudRate, int dataBits, int stopBits, Parity parity, Handshake handshake, AccessMode accessMode, bool localEcho) {
+    public Settings (string ? device, int baudRate, int dataBits, int stopBits, Parity parity, Handshake handshake, AccessMode accessMode, bool localEcho)
+    {
         GLib.Object (device: device,
                      baudRate: baudRate,
                      dataBits: dataBits,
@@ -81,33 +86,35 @@ public class Settings : GLib.Object {
             stopBits = DEFAULT_STOPBITS;
     }
 
-    public string parityToChar () {
+    public string parityToChar ()
+    {
         switch (parity) {
-            case Parity.NONE: {
-                /* TRANSLATORS: first letter of "None", a serial port parity setting */
-                return _("N");
-            }
-            case Parity.ODD: {
-                /* TRANSLATORS: first letter of "Odd", a serial port parity setting */
-                return _("O");
-            }
-            case Parity.EVEN: {
-                /* TRANSLATORS: first letter of "Even", a serial port parity setting */
-                return _("E");
-            }
-            case Parity.MARK: {
-                /* TRANSLATORS: first letter of "Mark", a serial port parity setting */
-                return _("M");
-            }
-            case Parity.SPACE: {
-                /* TRANSLATORS: first letter of "Space", a serial port parity setting */
-                return _("S");
-            }
+        case Parity.NONE: {
+            /* TRANSLATORS: first letter of "None", a serial port parity setting */
+            return _("N");
+        }
+        case Parity.ODD: {
+            /* TRANSLATORS: first letter of "Odd", a serial port parity setting */
+            return _("O");
+        }
+        case Parity.EVEN: {
+            /* TRANSLATORS: first letter of "Even", a serial port parity setting */
+            return _("E");
+        }
+        case Parity.MARK: {
+            /* TRANSLATORS: first letter of "Mark", a serial port parity setting */
+            return _("M");
+        }
+        case Parity.SPACE: {
+            /* TRANSLATORS: first letter of "Space", a serial port parity setting */
+            return _("S");
+        }
         }
         return "?";
     }
 
-    public string getStatusbarString (bool open) {
+    public string getStatusbarString (bool open)
+    {
         string r;
         r = "%s".printf (device);
         if (open)
@@ -117,7 +124,8 @@ public class Settings : GLib.Object {
         return r;
     }
 
-    public void saveToProfile (Profile profile) {
+    public void saveToProfile (Profile profile)
+    {
         profile.keyFile.set_string ("port_settings", "device", device);
         profile.keyFile.set_integer ("port_settings", "baud_rate", baudRate);
         profile.keyFile.set_integer ("port_settings", "data_bits", dataBits);
@@ -128,7 +136,8 @@ public class Settings : GLib.Object {
         profile.keyFile.set_boolean ("port_settings", "local_echo", localEcho);
     }
 
-    public static Settings loadFromProfile (Profile profile) {
+    public static Settings loadFromProfile (Profile profile)
+    {
         string ? device = Settings.DEFAULT_DEVICEFILE;
         int baudRate;
         int dataBits;

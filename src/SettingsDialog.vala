@@ -20,7 +20,8 @@
 using Gtk;
 using GLib;
 
-public class moserial.SettingsDialog : GLib.Object {
+public class moserial.SettingsDialog : GLib.Object
+{
     // Does anyone have more than 32 serial ports?
     const int max_devices = 32;
 
@@ -44,7 +45,8 @@ public class moserial.SettingsDialog : GLib.Object {
     private Gtk.Entry baudRateInput;
     public signal void updateSettings (Settings settings);
 
-    public SettingsDialog (Window parent) {
+    public SettingsDialog (Window parent)
+    {
         this.parent = parent;
         var builder = new Gtk.Builder.from_resource (Config.UIROOT + "settings_dialog.ui");
 
@@ -89,7 +91,8 @@ public class moserial.SettingsDialog : GLib.Object {
         // CellRenderText on deviceCombo provided by GtkEntry field.
     }
 
-    private void populateDevices () {
+    private void populateDevices ()
+    {
         List<string> deviceTypes = new List<string> ();
         deviceTypes.append ("/dev/ttyAMA");
         deviceTypes.append ("/dev/ttyS");
@@ -113,7 +116,8 @@ public class moserial.SettingsDialog : GLib.Object {
         }
     }
 
-    public void show (Settings settings) {
+    public void show (Settings settings)
+    {
         populateDevices ();
         this.currentSettings = settings;
         loadSettings ();
@@ -121,7 +125,8 @@ public class moserial.SettingsDialog : GLib.Object {
     }
 
     // Load the current settings into the dialog
-    public void loadSettings () {
+    public void loadSettings ()
+    {
         TreeModel t;
         TreeIter ti;
         bool success;
@@ -177,17 +182,20 @@ public class moserial.SettingsDialog : GLib.Object {
             localEcho.set_active (false);
     }
 
-    public bool hide () {
+    public bool hide ()
+    {
         dialog.hide ();
         return true;
     }
 
-    public void cancel (Widget w) {
+    public void cancel (Widget w)
+    {
         currentSettings = null;
         dialog.hide ();
     }
 
-    public void ok (Widget w) {
+    public void ok (Widget w)
+    {
 
         string device;
         int baudRate;

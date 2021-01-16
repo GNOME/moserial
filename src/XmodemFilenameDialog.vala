@@ -18,12 +18,14 @@
  */
 
 using Gtk;
-public class moserial.XmodemFilenameDialog : GLib.Object {
+public class moserial.XmodemFilenameDialog : GLib.Object
+{
     private Dialog dialog;
     private Gtk.Entry xmodemFilename;
     public string filename;
-    
-    public XmodemFilenameDialog (Window parent) {
+
+    public XmodemFilenameDialog (Window parent)
+    {
         var builder = new Gtk.Builder.from_resource (Config.UIROOT + "xmodem_filename_dialog.ui");
 
         dialog = (Dialog) builder.get_object ("xmodem_filename_dialog");
@@ -32,16 +34,19 @@ public class moserial.XmodemFilenameDialog : GLib.Object {
         dialog.delete_event.connect (hide);
         dialog.response.connect (response);
     }
-    public void show () {
+    public void show ()
+    {
         dialog.run ();
     }
 
-    public bool hide () {
+    public bool hide ()
+    {
         dialog.hide ();
         return true;
     }
 
-    private void response (Widget w, int r) {
+    private void response (Widget w, int r)
+    {
         filename = xmodemFilename.get_text ();
         hide ();
         if (filename == "")

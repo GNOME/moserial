@@ -18,18 +18,21 @@
  */
 
 using GLib;
-public class DefaultPaths : GLib.Object {
+public class DefaultPaths : GLib.Object
+{
     public string ? recordTo { get; set; }
     public string ? receiveTo { get; set; }
     public string ? sendFrom { get; set; }
 
-    public DefaultPaths (string ? RecordTo, string ? ReceiveTo, string ? SendFrom) {
+    public DefaultPaths (string ? RecordTo, string ? ReceiveTo, string ? SendFrom)
+    {
         this.recordTo = RecordTo;
         this.receiveTo = ReceiveTo;
         this.sendFrom = SendFrom;
     }
 
-    public void saveToProfile (Profile profile) {
+    public void saveToProfile (Profile profile)
+    {
         if (recordTo != null)
             profile.keyFile.set_string ("paths", "last_record_path", recordTo);
         if (receiveTo != null)
@@ -38,7 +41,8 @@ public class DefaultPaths : GLib.Object {
             profile.keyFile.set_string ("paths", "last_send_path", sendFrom);
     }
 
-    public static DefaultPaths loadFromProfile (Profile profile) {
+    public static DefaultPaths loadFromProfile (Profile profile)
+    {
         string ? RecordTo = null;
         string ? ReceiveTo = null;
         string ? SendFrom = null;
@@ -50,7 +54,8 @@ public class DefaultPaths : GLib.Object {
         return new DefaultPaths (RecordTo, ReceiveTo, SendFrom);
     }
 
-    public static string ? getPath (Profile profile, string group, string key) {
+    public static string ? getPath (Profile profile, string group, string key)
+    {
         string ? path = null;
         try {
             path = profile.keyFile.get_string (group, key);

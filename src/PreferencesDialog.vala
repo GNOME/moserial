@@ -18,7 +18,8 @@
  */
 
 using Gtk;
-public class moserial.PreferencesDialog : GLib.Object {
+public class moserial.PreferencesDialog : GLib.Object
+{
     private Dialog dialog;
     private Button cancelButton;
     private Button okButton;
@@ -32,7 +33,8 @@ public class moserial.PreferencesDialog : GLib.Object {
     private SpinButton timeout;
     public signal void updatePreferences (Preferences preferences);
 
-    public PreferencesDialog (Window parent) {
+    public PreferencesDialog (Window parent)
+    {
         var builder = new Gtk.Builder.from_resource (Config.UIROOT + "preferences.ui");
 
         dialog = (Dialog) builder.get_object ("preferences_dialog");
@@ -64,7 +66,8 @@ public class moserial.PreferencesDialog : GLib.Object {
         dialog.delete_event.connect (hide);
     }
 
-    public void ok (Button button) {
+    public void ok (Button button)
+    {
         hide ();
         bool pSystemFont;
         string pFont;
@@ -99,7 +102,8 @@ public class moserial.PreferencesDialog : GLib.Object {
         this.updatePreferences (preferences);
     }
 
-    public void show (Preferences preferences, bool recording) {
+    public void show (Preferences preferences, bool recording)
+    {
         if (preferences.useSystemMonospaceFont) {
             fontButton.set_sensitive (false);
             systemFont.set_active (true);
@@ -131,24 +135,28 @@ public class moserial.PreferencesDialog : GLib.Object {
         dialog.show_all ();
     }
 
-    public void cancel (Widget w) {
+    public void cancel (Widget w)
+    {
         // currentPreferences=null;
         hide ();
     }
 
-    public bool hide () {
+    public bool hide ()
+    {
         dialog.hide ();
         return true;
     }
 
-    public void systemFontToggled (ToggleButton button) {
+    public void systemFontToggled (ToggleButton button)
+    {
         if (button.get_active ())
             fontButton.set_sensitive (false);
         else
             fontButton.set_sensitive (true);
     }
 
-    public void enableTimeoutToggled (ToggleButton button) {
+    public void enableTimeoutToggled (ToggleButton button)
+    {
         if (button.get_active ())
             timeout.set_sensitive (true);
         else

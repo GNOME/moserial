@@ -109,7 +109,8 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
 
     private Label serialStatusSignals[4];
 
-    public MainWindow (string ? profileFilename) {
+    public MainWindow (string ? profileFilename)
+    {
         GLib.Object (startupProfileFilename: profileFilename);
     }
     construct {
@@ -131,7 +132,8 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         int width = profile.getWindowWidth ();
         int height = profile.getWindowHeight ();
         int panedPosition = profile.getWindowPanedPosition ();
-        if ((width > 0) && (height > 0)) {
+        if ((width > 0) && (height > 0))
+        {
             gtkWindow.resize (width, height);
         }
 
@@ -290,9 +292,11 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
 
         inputModeCombo = (ComboBox) builder.get_object ("input_mode");
         MoUtils.populateComboBox (inputModeCombo, inputModeStrings);
-        if (profile.getInputModeHex ()) {
+        if (profile.getInputModeHex ())
+        {
             inputModeCombo.set_active (inputModeValues.HEX);
-        } else {
+        } else
+        {
             inputModeCombo.set_active (inputModeValues.ASCII);
         }
         inputModeCombo.changed.connect (inputModeChanged);
@@ -367,15 +371,18 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         currentPaths = DefaultPaths.loadFromProfile (profile);
     }
 
-    private void onIncomingNotebookSwitchPage (Widget page, uint page_num) {
+    private void onIncomingNotebookSwitchPage (Widget page, uint page_num)
+    {
         profile.setNotebookTab (false, page_num);
     }
 
-    private void onOutgoingNotebookSwitchPage (Widget page, uint page_num) {
+    private void onOutgoingNotebookSwitchPage (Widget page, uint page_num)
+    {
         profile.setNotebookTab (true, page_num);
     }
 
-    private void toggleRTS (ToggleButton button) {
+    private void toggleRTS (ToggleButton button)
+    {
         // Toogle only when connected
         if (!serialConnection.isConnected ()) {
             return;
@@ -388,7 +395,8 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         }
     }
 
-    private void toggleDTR (ToggleButton button) {
+    private void toggleDTR (ToggleButton button)
+    {
         // Toogle only when connected
         if (!serialConnection.isConnected ()) {
             return;
@@ -401,17 +409,20 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         }
     }
 
-    private void clearIncoming () {
+    private void clearIncoming ()
+    {
         incomingHexTextBuffer.clear ();
         incomingAsciiTextBuffer.set_text ("", 0);
     }
 
-    private void clearOutgoing () {
+    private void clearOutgoing ()
+    {
         outgoingHexTextBuffer.clear ();
         outgoingAsciiTextBuffer.set_text ("", 0);
     }
 
-    private void applyProfile (string filename) {
+    private void applyProfile (string filename)
+    {
         if (profile.load (filename, gtkWindow)) {
             profileFilename = filename;
             ensureDisconnected ();
@@ -433,7 +444,8 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         }
     }
 
-    private void setWindowTitle (string ? recordingFilename) {
+    private void setWindowTitle (string ? recordingFilename)
+    {
         var builder = new StringBuilder ();
         builder.append ("moserial");
 
@@ -450,7 +462,8 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         gtkWindow.set_title (builder.str);
     }
 
-    private void recentItemOpen (RecentChooser r) {
+    private void recentItemOpen (RecentChooser r)
+    {
         try {
             applyProfile (GLib.Filename.from_uri (r.get_current_uri ()));
         } catch (GLib.ConvertError e) {
@@ -458,7 +471,8 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         }
     }
 
-    private void insertBufferEnd (TextBuffer buf, string s) {
+    private void insertBufferEnd (TextBuffer buf, string s)
+    {
         TextIter iter;
         int i;
         var builder = new StringBuilder ();
@@ -474,7 +488,8 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         buf.insert (ref iter, builder.str, (int) builder.str.length);
     }
 
-    public void sendString (Widget w) {
+    public void sendString (Widget w)
+    {
         string s;
         s = entry.get_text ();
 //      profile.setInputString (s);
@@ -539,31 +554,33 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         echoStartMark = incomingAsciiTextBuffer.create_mark ("echo", echoStartIter, true);
     }
 
-    private void doSendChooser (ToolButton button) {
+    private void doSendChooser (ToolButton button)
+    {
         if (!ensureConnected ())
             return;
         sendChooserDialog.show (currentPaths.sendFrom);
     }
 
-    private void doSend (SendChooserDialog dialog) {
+    private void doSend (SendChooserDialog dialog)
+    {
         Szwrapper.Protocol protocol;
         string filename;
         filename = dialog.filename;
         currentPaths.sendFrom = MoUtils.getParentFolder (filename);
         switch (dialog.protocolCombo.get_active ()) {
-            case 0:
-                protocol = Szwrapper.Protocol.XMODEM;
-                break;
-            case 1:
-                protocol = Szwrapper.Protocol.YMODEM;
-                break;
-            case 2:
-            default:
-                protocol = Szwrapper.Protocol.ZMODEM;
-                break;
-            case 3:
-                protocol = Szwrapper.Protocol.RAW;
-                break;
+        case 0:
+            protocol = Szwrapper.Protocol.XMODEM;
+            break;
+        case 1:
+            protocol = Szwrapper.Protocol.YMODEM;
+            break;
+        case 2:
+        default:
+            protocol = Szwrapper.Protocol.ZMODEM;
+            break;
+        case 3:
+            protocol = Szwrapper.Protocol.RAW;
+            break;
         }
         sz = new Szwrapper (protocol, serialConnection, filename);
         if (sz.running) {
@@ -574,20 +591,23 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         }
     }
 
-    public void sendComplete (GLib.Object o) {
+    public void sendComplete (GLib.Object o)
+    {
         sz.updateStatus.disconnect (sendProgressDialog.updateStatus);
         sendProgressDialog.transferCanceled.disconnect (sz.transferCanceled);
         sendProgressDialog.hide ();
     }
 
-    private void doReceiveChooser (ToolButton button) {
+    private void doReceiveChooser (ToolButton button)
+    {
         if (!ensureConnected ())
             return;
 
         receiveChooserDialog.show (currentPaths.receiveTo);
     }
 
-    private void doReceive (ReceiveChooserDialog dialog) {
+    private void doReceive (ReceiveChooserDialog dialog)
+    {
         string filename = "";
         currentPaths.receiveTo = dialog.path;
         if (dialog.protocolCombo.get_active () == 0) { // get the filename for xmodem
@@ -596,16 +616,16 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         }
         Rzwrapper.Protocol protocol;
         switch (dialog.protocolCombo.get_active ()) {
-            case 0:
-                protocol = Rzwrapper.Protocol.XMODEM;
-                break;
-            case 1:
-                protocol = Rzwrapper.Protocol.YMODEM;
-                break;
-            case 2:
-            default:
-                protocol = Rzwrapper.Protocol.ZMODEM;
-                break;
+        case 0:
+            protocol = Rzwrapper.Protocol.XMODEM;
+            break;
+        case 1:
+            protocol = Rzwrapper.Protocol.YMODEM;
+            break;
+        case 2:
+        default:
+            protocol = Rzwrapper.Protocol.ZMODEM;
+            break;
         }
         rz = new Rzwrapper (protocol, serialConnection, dialog.path, filename);
         if (rz.running) {
@@ -616,13 +636,15 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         }
     }
 
-    public void receiveComplete (GLib.Object o) {
+    public void receiveComplete (GLib.Object o)
+    {
         rz.updateStatus.disconnect (receiveProgressDialog.updateStatus);
         receiveProgressDialog.transferCanceled.disconnect (rz.transferCanceled);
         receiveProgressDialog.hide ();
     }
 
-    public void record (ToggleToolButton button) {
+    public void record (ToggleToolButton button)
+    {
         if (button.get_active ()) {
             if (!ensureConnected ()) {
                 button.set_active (false);
@@ -641,11 +663,13 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         }
     }
 
-    public void stopRecording (moserial.RecordDialog dialog) {
+    public void stopRecording (moserial.RecordDialog dialog)
+    {
         recordButton.set_active (false); // this generates recordButton.clicked signal
     }
 
-    public void startRecording (moserial.RecordDialog dialog, string filename, moserial.SerialStreamRecorder.Direction direction) {
+    public void startRecording (moserial.RecordDialog dialog, string filename, moserial.SerialStreamRecorder.Direction direction)
+    {
         try {
             streamRecorder.open (filename, direction);
             currentPaths.recordTo = MoUtils.getParentFolder (filename);
@@ -660,16 +684,19 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         }
     }
 
-    public bool recordTimeout () {
+    public bool recordTimeout ()
+    {
         recordButton.set_active (false);
         return false;
     }
 
-    public void showWindow () {
+    public void showWindow ()
+    {
         gtkWindow.show_all ();
     }
 
-    private void updateSettings (SettingsDialog d, Settings newSettings) {
+    private void updateSettings (SettingsDialog d, Settings newSettings)
+    {
         currentSettings = newSettings;
         statusbar.pop (statusbarContext);
         statusbar.push (statusbarContext, currentSettings.getStatusbarString (false));
@@ -677,7 +704,8 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         profileChanged = true;
     }
 
-    private void updateOutgoingInputArea () {
+    private void updateOutgoingInputArea ()
+    {
         if (currentSettings.accessMode == READONLY) {
             entry.set_sensitive (false);
             sendButton.set_sensitive (false);
@@ -687,7 +715,8 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         }
     }
 
-    private void updatePreferences (PreferencesDialog ? d, Preferences newPreferences) {
+    private void updatePreferences (PreferencesDialog ? d, Preferences newPreferences)
+    {
         currentPreferences = newPreferences;
         string font;
         if (currentPreferences.useSystemMonospaceFont)
@@ -707,42 +736,51 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         int weight = (int) fd.get_weight ();
 
         var style = """
-            .TextviewColor text {
-                color: %s;
-                background-color: %s;
-            }
-            .TextInputColor {
-                color: %s;
-                background-color: %s;
-            }
-            .TextFont {
-                font-family: %s;
-                font-size: %d%s;
-                font-weight: %d;
-            }
+                    .TextviewColor text {
+                        color:
+                        %s;
+                        background-color:
+                        %s;
+                    }
+        .TextInputColor {
+color:
+            %s;
+background-color:
+            %s;
+        }
+        .TextFont {
+font-family:
+            %s;
+font-size:
+            %d%s;
+font-weight:
+            %d;
+        }
         """.printf (
-            currentPreferences.fontColor,
-            currentPreferences.backgroundColor,
-            currentPreferences.fontColor,
-            currentPreferences.backgroundColor,
-            family,
-            size,
-            unit,
-            weight
-                    );
+        currentPreferences.fontColor,
+        currentPreferences.backgroundColor,
+        currentPreferences.fontColor,
+        currentPreferences.backgroundColor,
+        family,
+        size,
+        unit,
+        weight
+        );
 
         var css_provider = new Gtk.CssProvider ();
 
-        try {
+        try
+        {
             css_provider.load_from_data (style, -1);
-        } catch (GLib.Error e) {
+        } catch (GLib.Error e)
+        {
             warning ("Failed to parse CSS style : %s", e.message);
         }
 
         Gtk.StyleContext.add_provider_for_screen (
             Gdk.Screen.get_default (),
-            css_provider,
-            Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
+                                   css_provider,
+                                   Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
         );
 
         echoTag.foreground = currentPreferences.highlightColor;
@@ -751,26 +789,31 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         profileChanged = true;
     }
 
-    private void showSettingsDialog (GLib.Object o) {
+    private void showSettingsDialog (GLib.Object o)
+    {
         settingsDialog.show (currentSettings);
     }
 
-    private void showPreferencesDialog (GLib.Object o) {
+    private void showPreferencesDialog (GLib.Object o)
+    {
         preferencesDialog.show (currentPreferences, recordButton.get_active ());
     }
 
-    public bool ensureConnected () {
+    public bool ensureConnected ()
+    {
         if (!connectButton.get_active ())
             connectButton.set_active (true);
         return connectButton.get_active ();
     }
 
-    public void ensureDisconnected () {
+    public void ensureDisconnected ()
+    {
         if (connectButton.get_active ())
             connectButton.set_active (false);
     }
 
-    private bool startConnection () {
+    private bool startConnection ()
+    {
         if (!(serialConnection.doConnect (currentSettings))) {
             connectButton.set_active (false);
             var dialog = new MessageDialog (gtkWindow, DialogFlags.DESTROY_WITH_PARENT, MessageType.ERROR, ButtonsType.CLOSE, "%s: %s", _("Error: Could not open device"), currentSettings.device);
@@ -795,7 +838,8 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         return true;
     }
 
-    private void connectButtonClick (ToggleToolButton button) {
+    private void connectButtonClick (ToggleToolButton button)
+    {
         if (button.get_active ()) {
             startConnection ();
         } else {
@@ -817,7 +861,8 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         }
     }
 
-    private bool showSerialStatus () {
+    private bool showSerialStatus ()
+    {
         if (!serialConnection.isConnected ()) {
             return true;
         }
@@ -830,7 +875,8 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         return true;
     }
 
-    private void updateIncoming (SerialConnection sc, uchar[] data, int size) {
+    private void updateIncoming (SerialConnection sc, uchar[] data, int size)
+    {
         if (rz.running) {
             for (int x = 0; x < size; x++) {
                 rz.writeChar (data[x]);
@@ -897,7 +943,8 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         }
     }
 
-    private void inputModeChanged (ComboBox inputModeCombo) {
+    private void inputModeChanged (ComboBox inputModeCombo)
+    {
         if (inputModeCombo.get_active () == inputModeValues.HEX) {
             outgoing_notebook.set_current_page (1);
             profile.setNotebookTab (true, 1);
@@ -909,19 +956,23 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         }
     }
 
-    private void lineEndChanged (ComboBox lineEndCombo) {
+    private void lineEndChanged (ComboBox lineEndCombo)
+    {
         profile.setInputLineEnd (lineEndCombo.get_active ());
     }
 
-    private void showHelpButton (ToolButton button) {
+    private void showHelpButton (ToolButton button)
+    {
         showHelp ();
     }
 
-    private void showHelpAction () {
+    private void showHelpAction ()
+    {
         showHelp ();
     }
 
-    private void showHelp () {
+    private void showHelp ()
+    {
         try {
             show_uri_on_window (null, "help:moserial", Gdk.CURRENT_TIME);
         } catch (GLib.Error e) {
@@ -929,7 +980,8 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         }
     }
 
-    private void showAboutDialog () {
+    private void showAboutDialog ()
+    {
 
         string license_trans = _(license[0]) + "\n" + _(license[1]) + "\n" + _(license[2]);
 
@@ -947,19 +999,22 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
                            null);
     }
 
-    private void quitSizeSave () {
+    private void quitSizeSave ()
+    {
         windowSizeSave ();
         quitSave ();
     }
 
-    private bool deleteSaveSize () {
+    private bool deleteSaveSize ()
+    {
         windowSizeSave ();
         quitSave ();
         Gtk.main_quit ();
         return true;
     }
 
-    private bool keyPress (Widget widget, EventKey key) {
+    private bool keyPress (Widget widget, EventKey key)
+    {
         // GLib.print("key:%x\r\n",key.keyval);
         if (key.keyval == Gdk.keyval_from_name ("Escape")) {
             AutoScroll.scroll (va1);
@@ -974,7 +1029,8 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         return false;
     }
 
-    private void windowSizeSave () {
+    private void windowSizeSave ()
+    {
         int width = 0;
         int height = 0;
 
@@ -984,7 +1040,8 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         profile.saveWindowPanedPosition (pos);
     }
 
-    private void quitSave () {
+    private void quitSave ()
+    {
         currentPreferences.saveToProfile (profile);
         currentSettings.saveToProfile (profile);
         currentPaths.saveToProfile (profile);
@@ -1005,7 +1062,8 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         Gtk.main_quit ();
     }
 
-    private void saveProfile () {
+    private void saveProfile ()
+    {
         currentPreferences.saveToProfile (profile);
         currentSettings.saveToProfile (profile);
         currentPaths.saveToProfile (profile);
@@ -1023,7 +1081,8 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         }
     }
 
-    private void saveProfileAs () {
+    private void saveProfileAs ()
+    {
         var dialog = new FileChooserDialog (null, gtkWindow, Gtk.FileChooserAction.SAVE);
         dialog.add_buttons ("gtk-cancel", Gtk.ResponseType.CANCEL, "gtk-save", Gtk.ResponseType.ACCEPT, null);
         dialog.set_do_overwrite_confirmation (true);
@@ -1037,11 +1096,13 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
             saveProfile ();
     }
 
-    private void loadProfileOnStartup (string profileFilename) {
+    private void loadProfileOnStartup (string profileFilename)
+    {
         applyProfile (profileFilename);
     }
 
-    private void loadProfile () {
+    private void loadProfile ()
+    {
         var dialog = new FileChooserDialog (null, gtkWindow, Gtk.FileChooserAction.OPEN);
         dialog.add_buttons ("gtk-cancel", Gtk.ResponseType.CANCEL, "gtk-open", Gtk.ResponseType.ACCEPT, null);
         dialog.set_local_only (false);
@@ -1052,7 +1113,8 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         dialog.destroy ();
     }
 
-    private void copy () {
+    private void copy ()
+    {
         if (gtkWindow.get_focus () == (Gtk.Widget)outgoingAsciiTextView || gtkWindow.get_focus () == (Gtk.Widget)incomingAsciiTextView || gtkWindow.get_focus () == (Gtk.Widget)outgoingHexTextView || gtkWindow.get_focus () == (Gtk.Widget)incomingHexTextView) {
             TextView tv = (TextView) gtkWindow.get_focus ();
             tv.buffer.copy_clipboard (Gtk.Clipboard.get (Gdk.SELECTION_CLIPBOARD));
@@ -1061,13 +1123,15 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         }
     }
 
-    private void cut () {
+    private void cut ()
+    {
         if (gtkWindow.get_focus () == (Gtk.Widget)entry) {
             entry.cut_clipboard ();
         }
     }
 
-    private void editMenu () {
+    private void editMenu ()
+    {
         if (gtkWindow.get_focus () == (Gtk.Widget)outgoingAsciiTextView || gtkWindow.get_focus () == (Gtk.Widget)incomingAsciiTextView || gtkWindow.get_focus () == (Gtk.Widget)outgoingHexTextView || gtkWindow.get_focus () == (Gtk.Widget)incomingHexTextView) {
             cutMenuItem.set_sensitive (false);
             TextView tv = (TextView) gtkWindow.get_focus ();
@@ -1089,7 +1153,8 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         }
     }
 
-    private void paste () {
+    private void paste ()
+    {
         entry.paste_clipboard ();
         if (!entry.has_focus) {
             entry.grab_focus ();
@@ -1097,7 +1162,8 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         }
     }
 
-    private void clear () {
+    private void clear ()
+    {
         this.clearOutgoing ();
         this.clearIncoming ();
         entry.set_text ("");

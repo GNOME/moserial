@@ -18,7 +18,8 @@
  */
 
 using GLib;
-public class Preferences : GLib.Object {
+public class Preferences : GLib.Object
+{
     public static bool DEFAULT_USE_SYSTEM_MONOSPACE_FONT = true;
     public static string DEFAULT_FONT = "Monospace 10";
     public static string DEFAULT_FONT_COLOR = "black";
@@ -35,7 +36,8 @@ public class Preferences : GLib.Object {
     public bool enableTimeout { get; construct; }
     public int timeout { get; construct; }
 
-    public Preferences (bool useSystemMonospaceFont, string ? font, string ? fontColor, string ? backgroundColor, string ? highlightColor, bool recordLaunch, bool enableTimeout, int timeout) {
+    public Preferences (bool useSystemMonospaceFont, string ? font, string ? fontColor, string ? backgroundColor, string ? highlightColor, bool recordLaunch, bool enableTimeout, int timeout)
+    {
         GLib.Object (useSystemMonospaceFont: useSystemMonospaceFont,
                      font: font,
                      recordLaunch: recordLaunch,
@@ -56,7 +58,8 @@ public class Preferences : GLib.Object {
         if (highlightColor == null)
             highlightColor = DEFAULT_HIGHLIGHT_COLOR;
     }
-    public static string getSystemDefaultMonospaceFont () {
+    public static string getSystemDefaultMonospaceFont ()
+    {
 
         var settings = new GLib.Settings ("org.gnome.desktop.interface");
         string value = settings.get_string ("monospace-font-name");
@@ -69,13 +72,15 @@ public class Preferences : GLib.Object {
         return value;
     }
 
-    public static Gdk.RGBA getGdkRGBA (string color) {
+    public static Gdk.RGBA getGdkRGBA (string color)
+    {
         Gdk.RGBA c = Gdk.RGBA ();
         c.parse (color);
         return c;
     }
 
-    public void toString () {
+    public void toString ()
+    {
         stdout.printf ("useSystemMonospaceFont: ");
         if (useSystemMonospaceFont)
             stdout.printf ("true\n");
@@ -92,7 +97,8 @@ public class Preferences : GLib.Object {
             stdout.printf ("false\n");
     }
 
-    public void saveToProfile (Profile profile) {
+    public void saveToProfile (Profile profile)
+    {
         profile.keyFile.set_boolean ("preferences", "use_system_monospace_font", useSystemMonospaceFont);
         profile.keyFile.set_string ("preferences", "font", font);
         profile.keyFile.set_string ("preferences", "font_color", fontColor);
@@ -103,7 +109,8 @@ public class Preferences : GLib.Object {
         profile.keyFile.set_integer ("preferences", "timeout", timeout);
     }
 
-    public static Preferences loadFromProfile (Profile profile) {
+    public static Preferences loadFromProfile (Profile profile)
+    {
         bool useSystemMonospaceFont;
         string ? font = null;
         string ? fontColor = null;

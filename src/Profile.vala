@@ -19,23 +19,27 @@
 
 using Gtk;
 
-public class Profile : GLib.Object {
+public class Profile : GLib.Object
+{
     public KeyFile keyFile;
     construct {
         keyFile = new KeyFile ();
     }
-    public void saveWindowSize (int w, int h) {
+    public void saveWindowSize (int w, int h)
+    {
         if (w > 0)
             keyFile.set_integer ("window", "width", w);
         if (h > 0)
             keyFile.set_integer ("window", "height", h);
     }
 
-    public void saveWindowPanedPosition (int pos) {
+    public void saveWindowPanedPosition (int pos)
+    {
         keyFile.set_integer ("window", "paned_pos", pos);
     }
 
-    public int getWindowPanedPosition () {
+    public int getWindowPanedPosition ()
+    {
         try {
             return keyFile.get_integer ("window", "paned_pos");
         } catch (GLib.KeyFileError e) {
@@ -43,7 +47,8 @@ public class Profile : GLib.Object {
         }
     }
 
-    public int getWindowWidth () {
+    public int getWindowWidth ()
+    {
         try {
             return keyFile.get_integer ("window", "width");
         } catch (GLib.KeyFileError e) {
@@ -51,7 +56,8 @@ public class Profile : GLib.Object {
         }
     }
 
-    public int getWindowHeight () {
+    public int getWindowHeight ()
+    {
         try {
             return keyFile.get_integer ("window", "height");
         } catch (GLib.KeyFileError e) {
@@ -59,7 +65,8 @@ public class Profile : GLib.Object {
         }
     }
 
-    public void setNotebookTab (bool outgoing, uint tab) {
+    public void setNotebookTab (bool outgoing, uint tab)
+    {
         string n = "incoming_tab";
         if (outgoing) {
             n = "outgoing_tab";
@@ -72,7 +79,8 @@ public class Profile : GLib.Object {
         }
     }
 
-    public int getNotebookTab (bool outgoing) {
+    public int getNotebookTab (bool outgoing)
+    {
         string n = "incoming_tab";
         if (outgoing) {
             n = "outgoing_tab";
@@ -88,11 +96,13 @@ public class Profile : GLib.Object {
         }
     }
 
-    public void setInputModeHex (bool hex) {
+    public void setInputModeHex (bool hex)
+    {
         keyFile.set_boolean ("window", "input_mode_hex", hex);
     }
 
-    public bool getInputModeHex () {
+    public bool getInputModeHex ()
+    {
         try {
             return keyFile.get_boolean ("window", "input_mode_hex");
         } catch (GLib.KeyFileError e) {
@@ -100,11 +110,13 @@ public class Profile : GLib.Object {
         }
     }
 
-    public void setInputLineEnd (int end) {
+    public void setInputLineEnd (int end)
+    {
         keyFile.set_integer ("window", "input_line_end", end);
     }
 
-    public int getInputLineEnd () {
+    public int getInputLineEnd ()
+    {
         try {
             return keyFile.get_integer ("window", "input_line_end");
         } catch (GLib.KeyFileError e) {
@@ -112,11 +124,13 @@ public class Profile : GLib.Object {
         }
     }
 
-    public void setInputString (string s) {
+    public void setInputString (string s)
+    {
         keyFile.set_string ("window", "input_string", s);
     }
 
-    public string getInputString () {
+    public string getInputString ()
+    {
         try {
             return keyFile.get_string ("window", "input_string");
         } catch (GLib.KeyFileError e) {
@@ -124,7 +138,8 @@ public class Profile : GLib.Object {
         }
     }
 
-    public bool load (string ? filename, Gtk.Window window) {
+    public bool load (string ? filename, Gtk.Window window)
+    {
         string f;
         bool default_profile = false;
 
@@ -150,12 +165,14 @@ public class Profile : GLib.Object {
         }
     }
 
-    public void toString () {
+    public void toString ()
+    {
         size_t s;
         stdout.printf ("%s\n", keyFile.to_data (out s));
     }
 
-    public void save (string ? filename, Gtk.Window window) {
+    public void save (string ? filename, Gtk.Window window)
+    {
         GLib.File ? file;
         FileOutputStream ? fos;
         string f;

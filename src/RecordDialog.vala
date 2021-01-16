@@ -18,7 +18,8 @@
  */
 
 using Gtk;
-public class moserial.RecordDialog : GLib.Object {
+public class moserial.RecordDialog : GLib.Object
+{
     private FileChooserDialog dialog;
     private Button cancelButton;
     private ComboBox streamCombo;
@@ -27,8 +28,9 @@ public class moserial.RecordDialog : GLib.Object {
     public signal void stopRecording ();
 
     public SerialStreamRecorder.Direction direction;
-    
-    public RecordDialog (Window parent){
+
+    public RecordDialog (Window parent)
+    {
         var builder = new Gtk.Builder.from_resource (Config.UIROOT + "record_dialog.ui");
 
         dialog = (FileChooserDialog) builder.get_object ("record_dialog");
@@ -48,18 +50,21 @@ public class moserial.RecordDialog : GLib.Object {
         fileName = null;
     }
 
-    public void show (string ? folder) {
+    public void show (string ? folder)
+    {
         if ((folder != null) && MoUtils.fileExists (folder))
             dialog.set_current_folder (folder);
         dialog.run ();
     }
 
-    public bool hide () {
+    public bool hide ()
+    {
         dialog.hide ();
         return true;
     }
 
-    private void response (Widget w, int r) {
+    private void response (Widget w, int r)
+    {
         if (r == Gtk.ResponseType.CANCEL) {
             fileName = null;
             hide ();
@@ -67,16 +72,16 @@ public class moserial.RecordDialog : GLib.Object {
         } else if (r == Gtk.ResponseType.ACCEPT) {
             fileName = dialog.get_filename ();
             switch (streamCombo.get_active ()) {
-                case 0:
-                default:
-                    direction = SerialStreamRecorder.Direction.INCOMING;
-                    break;
-                case 1:
-                    direction = SerialStreamRecorder.Direction.OUTGOING;
-                    break;
-                case 2:
-                    direction = SerialStreamRecorder.Direction.BOTH;
-                    break;
+            case 0:
+            default:
+                direction = SerialStreamRecorder.Direction.INCOMING;
+                break;
+            case 1:
+                direction = SerialStreamRecorder.Direction.OUTGOING;
+                break;
+            case 2:
+                direction = SerialStreamRecorder.Direction.BOTH;
+                break;
             }
             hide ();
             startRecording (this.fileName, direction);

@@ -18,14 +18,16 @@
  */
 
 using Gtk;
-public class moserial.ReceiveChooserDialog : GLib.Object {
+public class moserial.ReceiveChooserDialog : GLib.Object
+{
     private FileChooserDialog dialog;
     public ComboBox protocolCombo;
     public signal void startTransfer ();
 
     public string path;
 
-    public ReceiveChooserDialog (Window parent) {
+    public ReceiveChooserDialog (Window parent)
+    {
         var builder = new Gtk.Builder.from_resource (Config.UIROOT + "receive_chooser.ui");
 
         dialog = (FileChooserDialog) builder.get_object ("receive_chooser_dialog");
@@ -40,18 +42,21 @@ public class moserial.ReceiveChooserDialog : GLib.Object {
         dialog.response.connect (response);
     }
 
-    public void show (string ? folder) {
+    public void show (string ? folder)
+    {
         if ((folder != null) && MoUtils.fileExists (folder))
             dialog.set_current_folder (folder);
         dialog.run ();
     }
 
-    public bool hide () {
+    public bool hide ()
+    {
         dialog.hide ();
         return true;
     }
 
-    private void response (Widget w, int r) {
+    private void response (Widget w, int r)
+    {
         if (r == Gtk.ResponseType.CANCEL) {
             hide ();
         } else if (r == Gtk.ResponseType.ACCEPT) {
