@@ -1,15 +1,15 @@
 # Polish translation for moserial.
-# Copyright © 2012-2017 the moserial authors.
+# Copyright © 2012-2021 the moserial authors.
 # This file is distributed under the same license as the moserial package.
-# Piotr Drąg <piotrdrag@gmail.com>, 2012-2017.
-# Aviary.pl <community-poland@mozilla.org>, 2012-2017.
+# Piotr Drąg <piotrdrag@gmail.com>, 2012-2021.
+# Aviary.pl <community-poland@mozilla.org>, 2012-2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: moserial\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-04 07:41+0100\n"
-"PO-Revision-Date: 2017-03-04 07:44+0100\n"
+"POT-Creation-Date: 2021-01-17 12:57+0100\n"
+"PO-Revision-Date: 2021-01-17 12:58+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -68,34 +68,62 @@ msgid "Help"
 msgstr "Pomoc"
 
 #: ../data/ui/mainwindow.ui.h:13
+msgid "RI"
+msgstr "RI"
+
+#: ../data/ui/mainwindow.ui.h:14
+msgid "DSR"
+msgstr "DSR"
+
+#: ../data/ui/mainwindow.ui.h:15
+msgid "CD"
+msgstr "CD"
+
+#: ../data/ui/mainwindow.ui.h:16
+msgid "CTS"
+msgstr "CTS"
+
+#: ../data/ui/mainwindow.ui.h:17
+msgid "Clear"
+msgstr "Wyczyść"
+
+#: ../data/ui/mainwindow.ui.h:18
 msgid "Received ASCII"
 msgstr "Odebrane ASCII"
 
-#: ../data/ui/mainwindow.ui.h:14
+#: ../data/ui/mainwindow.ui.h:19
 msgid "Received HEX"
 msgstr "Odebrane HEX"
 
-#: ../data/ui/mainwindow.ui.h:15
+#: ../data/ui/mainwindow.ui.h:20
+msgid "RTS"
+msgstr "RTS"
+
+#: ../data/ui/mainwindow.ui.h:21
+msgid "DTR"
+msgstr "DTR"
+
+#: ../data/ui/mainwindow.ui.h:22
 msgid "Sent ASCII"
 msgstr "Wysłane ASCII"
 
-#: ../data/ui/mainwindow.ui.h:16
+#: ../data/ui/mainwindow.ui.h:23
 msgid "Sent HEX"
 msgstr "Wysłane HEX"
 
-#: ../data/ui/mainwindow.ui.h:17 ../src/SerialStreamRecorder.vala:30
+#: ../data/ui/mainwindow.ui.h:24 ../src/SerialStreamRecorder.vala:31
 msgid "Outgoing"
 msgstr "Wychodzące"
 
-#: ../data/ui/mainwindow.ui.h:18
+#: ../data/ui/mainwindow.ui.h:25
 msgid "Send"
 msgstr "Wyślij"
 
-#: ../data/ui/mainwindow.ui.h:19
+#: ../data/ui/mainwindow.ui.h:26
 msgid "Disconnect"
 msgstr "Rozłącz"
 
-#: ../data/ui/mainwindow.ui.h:20
+#: ../data/ui/mainwindow.ui.h:27
 msgid "Stop Recording"
 msgstr "Zatrzymaj nagrywanie"
 
@@ -180,40 +208,40 @@ msgid "Software"
 msgstr "Oprogramowanie"
 
 #: ../data/ui/settings_dialog.ui.h:5
-msgid "Access Mode"
-msgstr "Tryb dostępu"
+msgid "Echo received data"
+msgstr "Powtarzanie odebranych danych"
 
 #: ../data/ui/settings_dialog.ui.h:6
-msgid "Handshake"
-msgstr "Powitanie"
-
-#: ../data/ui/settings_dialog.ui.h:7
-msgid "Parity"
-msgstr "Parzystość"
-
-#: ../data/ui/settings_dialog.ui.h:8
-msgid "Stop Bits"
-msgstr "Bity zatrzymania"
-
-#: ../data/ui/settings_dialog.ui.h:9
-msgid "Data Bits"
-msgstr "Bity danych"
-
-#: ../data/ui/settings_dialog.ui.h:10
-msgid "Baud Rate"
-msgstr "Prędkość w baudach"
-
-#: ../data/ui/settings_dialog.ui.h:11
 msgid "Device"
 msgstr "Urządzenie"
 
+#: ../data/ui/settings_dialog.ui.h:7
+msgid "Baud Rate"
+msgstr "Prędkość w baudach"
+
+#: ../data/ui/settings_dialog.ui.h:8
+msgid "Data Bits"
+msgstr "Bity danych"
+
+#: ../data/ui/settings_dialog.ui.h:9
+msgid "Stop Bits"
+msgstr "Bity zatrzymania"
+
+#: ../data/ui/settings_dialog.ui.h:10
+msgid "Parity"
+msgstr "Parzystość"
+
+#: ../data/ui/settings_dialog.ui.h:11
+msgid "Handshake"
+msgstr "Powitanie"
+
 #: ../data/ui/settings_dialog.ui.h:12
-msgid "Local Echo"
-msgstr "Lokalne powtarzanie"
+msgid "Access Mode"
+msgstr "Tryb dostępu"
 
 #: ../data/ui/settings_dialog.ui.h:13
-msgid "Echo received data"
-msgstr "Powtarzanie odebranych danych"
+msgid "Local Echo"
+msgstr "Lokalne powtarzanie"
 
 #: ../data/ui/xmodem_filename_dialog.ui.h:1
 msgid "Filename required for XMODEM"
@@ -252,7 +280,7 @@ msgstr ""
 "oraz ma profile do łatwego przełączania się między konfiguracjami dla "
 "różnych urządzeń."
 
-#: ../src/InputParser.vala:44 ../src/InputParser.vala:54
+#: ../src/InputParser.vala:46 ../src/InputParser.vala:56
 msgid "Invalid Input"
 msgstr "Nieprawidłowe wejście"
 
@@ -260,24 +288,24 @@ msgstr "Nieprawidłowe wejście"
 msgid "Profile file to load"
 msgstr "Plik profilu do wczytania"
 
-#: ../src/Main.vala:45
+#: ../src/Main.vala:48
 msgid "- moserial serial terminal"
 msgstr "— terminal szeregowy moserial"
 
-#: ../src/Main.vala:50 ../src/Main.vala:58
+#: ../src/Main.vala:53 ../src/Main.vala:61
 #, c-format
 msgid "Run '%s --help' to see a full list of available command line options.\n"
 msgstr ""
 "Polecenie „%s --help” wyświetli pełną listę dostępnych opcji wiersza "
 "poleceń.\n"
 
-#: ../src/MainWindow.vala:30
+#: ../src/MainWindow.vala:31
 msgid "translator-credits"
 msgstr ""
-"Piotr Drąg <piotrdrag@gmail.com>, 2012-2017\n"
-"Aviary.pl <community-poland@mozilla.org>, 2012-2017"
+"Piotr Drąg <piotrdrag@gmail.com>, 2012-2021\n"
+"Aviary.pl <community-poland@mozilla.org>, 2012-2021"
 
-#: ../src/MainWindow.vala:32
+#: ../src/MainWindow.vala:33
 msgid ""
 "moserial is free software: you can redistribute it and/or modify it under "
 "the terms of the GNU General Public License as published by the Free "
@@ -289,7 +317,7 @@ msgstr ""
 "przez Fundację Wolnego Oprogramowania — według wersji trzeciej tej Licencji "
 "lub którejś z późniejszych wersji.\n"
 
-#: ../src/MainWindow.vala:33
+#: ../src/MainWindow.vala:34
 msgid ""
 "moserial is distributed in the hope that it will be useful, but WITHOUT ANY "
 "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
@@ -302,7 +330,7 @@ msgstr ""
 "bliższych informacji należy zapoznać się z Powszechną Licencją Publiczną "
 "GNU.\n"
 
-#: ../src/MainWindow.vala:34
+#: ../src/MainWindow.vala:35
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "this program.  If not, see <http://www.gnu.org/licenses/>."
@@ -311,70 +339,87 @@ msgstr ""
 "Powszechnej Licencji Publicznej GNU (GNU General Public License); jeśli nie "
 "— proszę odwiedzić stronę internetową <http://www.gnu.org/licenses/>."
 
-#: ../src/MainWindow.vala:64
+#: ../src/MainWindow.vala:65
 msgid "ASCII"
 msgstr "ASCII"
 
-#: ../src/MainWindow.vala:64
+#: ../src/MainWindow.vala:65
 msgid "HEX"
 msgstr "HEX"
 
-#: ../src/MainWindow.vala:165
+#: ../src/MainWindow.vala:174
 msgid "Port configuration"
 msgstr "Konfiguracja portu"
 
-#: ../src/MainWindow.vala:170
+#: ../src/MainWindow.vala:179
 msgid "Read the manual"
-msgstr "Podręcznik"
+msgstr "Otwiera podręcznik"
 
-#: ../src/MainWindow.vala:180
+#: ../src/MainWindow.vala:189
 msgid "TX: 0, RX: 0"
 msgstr "Wysyłanie: 0, odbieranie: 0"
 
-#: ../src/MainWindow.vala:191
-msgid "Send a file"
-msgstr "Wyślij plik"
-
 #: ../src/MainWindow.vala:200
+msgid "Send a file"
+msgstr "Wysyła plik"
+
+#: ../src/MainWindow.vala:209
 msgid "Receive a file"
-msgstr "Odbierz plik"
+msgstr "Odbiera plik"
 
-#: ../src/MainWindow.vala:210
+#: ../src/MainWindow.vala:219
 msgid "Record sent and/or received data"
-msgstr "Nagraj wysłane lub odebrane dane"
+msgstr "Nagrywa wysłane lub odebrane dane"
 
-#: ../src/MainWindow.vala:221
+#: ../src/MainWindow.vala:230
 msgid "Other preferences"
 msgstr "Inne preferencje"
 
-#: ../src/MainWindow.vala:226
+#: ../src/MainWindow.vala:235
 msgid "Open/close port"
-msgstr "Otwórz/zamknij port"
+msgstr "Otwiera/zamyka port"
 
-#: ../src/MainWindow.vala:274
+#: ../src/MainWindow.vala:287
 msgid "Send the outgoing data now."
-msgstr "Wyślij wychodzące dane teraz."
+msgstr "Wysyła wychodzące dane teraz"
 
-#: ../src/MainWindow.vala:277
+#. entry.set_text (profile.getInputString ());
+#: ../src/MainWindow.vala:291
 msgid "Type outgoing data here. Press Enter or Send to send it."
 msgstr ""
 "Tutaj można wpisać dane wychodzące. Naciśnięcie klawisza Enter lub przycisku "
 "Wyślij spowoduje ich wysłanie."
 
-#: ../src/MainWindow.vala:564 ../src/Profile.vala:76 ../src/Profile.vala:107
+#: ../src/MainWindow.vala:344
+msgid "Toggle DTR signal status."
+msgstr "Przełącza stan sygnału DTR"
+
+#: ../src/MainWindow.vala:349
+msgid "Toggle RTS signal status."
+msgstr "Przełącza stan sygnału RTS"
+
+#: ../src/MainWindow.vala:354
+msgid "Clear incoming text box."
+msgstr "Czyści pole tekstu przychodzącego"
+
+#: ../src/MainWindow.vala:359
+msgid "Clear outgoing text box."
+msgstr "Czyści pole tekstu wychodzącego"
+
+#: ../src/MainWindow.vala:680 ../src/Profile.vala:160 ../src/Profile.vala:195
 msgid "Error: Could not open file"
 msgstr "Błąd: nie można otworzyć pliku"
 
-#: ../src/MainWindow.vala:642
+#: ../src/MainWindow.vala:819
 msgid "Error: Could not open device"
 msgstr "Błąd: nie można otworzyć urządzenia"
 
-#: ../src/MainWindow.vala:764
+#: ../src/MainWindow.vala:979
 #, c-format
 msgid "Unable to display help file: %s"
 msgstr "Nie można wyświetlić pliku pomocy: %s"
 
-#: ../src/MainWindow.vala:775
+#: ../src/MainWindow.vala:991
 msgid ""
 "A serial terminal for the GNOME desktop, optimized for logging and file "
 "capture."
@@ -382,14 +427,14 @@ msgstr ""
 "Terminal szeregowy dla środowiska GNOME, zoptymalizowane do nagrywania "
 "i przechwytywania plików."
 
-#: ../src/MainWindow.vala:828
+#: ../src/MainWindow.vala:1050
 msgid ""
 "You have changed your setting or preferences. Do you want to save these "
 "changes to the loaded profile?"
 msgstr ""
 "Zmieniono ustawienia lu preferencje. Zapisać te zmiany we wczytanym profilu?"
 
-#: ../src/PreferencesDialog.vala:49
+#: ../src/PreferencesDialog.vala:51
 msgid ""
 "If this option is enabled, a recorded file will be opened immediately after "
 "it is saved, using the default application for the file type. The default "
@@ -399,7 +444,7 @@ msgstr ""
 "jego zapisaniu za pomocą domyślnego programu dla danego typu pliku. Domyślny "
 "program jest konfigurowany w środowisku graficznym."
 
-#: ../src/PreferencesDialog.vala:52
+#: ../src/PreferencesDialog.vala:54
 msgid ""
 "If this option is enabled, recording will be automatically stopped after an "
 "adjustable period of inactivity after receiving some data. Moserial will "
@@ -411,7 +456,7 @@ msgstr ""
 "moserial będzie czekał w nieskończoność na nagranie pierwszego bajtu danych "
 "przed aktywowaniem zegara nieaktywności."
 
-#: ../src/Preferences.vala:65
+#: ../src/Preferences.vala:68
 msgid "Unable to retrieve system font setting"
 msgstr "Nie można odebrać systemowego ustawienia czcionki"
 
@@ -427,7 +472,7 @@ msgstr "Ymodem"
 msgid "Zmodem"
 msgstr "Zmodem"
 
-#: ../src/SendProgressDialog.vala:42
+#: ../src/SendProgressDialog.vala:44
 msgid "Waiting for remote host"
 msgstr "Oczekiwanie na zdalny komputer"
 
@@ -455,44 +500,44 @@ msgstr "Esc kończy"
 msgid "No end"
 msgstr "Bez kończenia"
 
-#: ../src/SerialConnection.vala:302
+#: ../src/SerialConnection.vala:340
 #, c-format
 msgid "TX: %lu, RX: %lu (%lu unprintable)"
 msgstr "Wysyłanie: %lu, odbieranie: %lu (%lu nie można wyświetlić)"
 
-#: ../src/SerialConnection.vala:304
+#: ../src/SerialConnection.vala:342
 #, c-format
 msgid "TX: %lu, RX: %lu"
 msgstr "Wysyłanie: %lu, odbieranie: %lu"
 
-#: ../src/SerialStreamRecorder.vala:29
+#: ../src/SerialStreamRecorder.vala:30
 msgid "Incoming"
 msgstr "Przychodzące"
 
-#: ../src/SerialStreamRecorder.vala:31
+#: ../src/SerialStreamRecorder.vala:32
 msgid "Incoming and Outgoing"
 msgstr "Przychodzące i wychodzące"
 
-#: ../src/SerialStreamRecorder.vala:57 ../src/SerialStreamRecorder.vala:68
-#: ../src/SerialStreamRecorder.vala:89
+#: ../src/SerialStreamRecorder.vala:61 ../src/SerialStreamRecorder.vala:72
+#: ../src/SerialStreamRecorder.vala:96
 #, c-format
 msgid "error: %s\n"
 msgstr "błąd: %s\n"
 
-#: ../src/SerialStreamRecorder.vala:98
+#: ../src/SerialStreamRecorder.vala:105
 #, c-format
 msgid "Unable to launch %s: %s"
 msgstr "Nie można uruchomić %s: %s"
 
-#: ../src/SettingsDialog.vala:66
+#: ../src/SettingsDialog.vala:73
 msgid "Also known as RTS/CTS handshaking"
 msgstr "Znane także jako powitanie RTS/CTS"
 
-#: ../src/SettingsDialog.vala:69
+#: ../src/SettingsDialog.vala:76
 msgid "Also known as XON/XOFF handshaking"
 msgstr "Znane także jako powitanie XON/XOFF"
 
-#: ../src/SettingsDialog.vala:75
+#: ../src/SettingsDialog.vala:82
 msgid "Normally disabled"
 msgstr "Zwykle wyłączone"
 
@@ -516,48 +561,48 @@ msgstr "Znak"
 msgid "Space"
 msgstr "Spacja"
 
-#: ../src/Settings.vala:34
+#: ../src/Settings.vala:35
 msgid "Read and Write"
 msgstr "Odczyt i zapis"
 
-#: ../src/Settings.vala:35
+#: ../src/Settings.vala:36
 msgid "Read Only"
 msgstr "Tylko odczyt"
 
-#: ../src/Settings.vala:36
+#: ../src/Settings.vala:37
 msgid "Write Only"
 msgstr "Tylko zapis"
 
 #. TRANSLATORS: first letter of "None", a serial port parity setting
-#: ../src/Settings.vala:89
+#: ../src/Settings.vala:94
 msgid "N"
 msgstr "B"
 
 #. TRANSLATORS: first letter of "Odd", a serial port parity setting
-#: ../src/Settings.vala:93
+#: ../src/Settings.vala:98
 msgid "O"
 msgstr "N"
 
 #. TRANSLATORS: first letter of "Even", a serial port parity setting
-#: ../src/Settings.vala:97
+#: ../src/Settings.vala:102
 msgid "E"
 msgstr "P"
 
 #. TRANSLATORS: first letter of "Mark", a serial port parity setting
-#: ../src/Settings.vala:101
+#: ../src/Settings.vala:106
 msgid "M"
 msgstr "Z"
 
 #. TRANSLATORS: first letter of "Space", a serial port parity setting
-#: ../src/Settings.vala:105
+#: ../src/Settings.vala:110
 msgid "S"
 msgstr "S"
 
-#: ../src/Settings.vala:115
+#: ../src/Settings.vala:121
 msgid "OPEN"
 msgstr "OTWARTE"
 
-#: ../src/Settings.vala:116
+#: ../src/Settings.vala:122
 msgid "CLOSED"
 msgstr "ZAMKNIĘTE"
 
@@ -565,6 +610,6 @@ msgstr "ZAMKNIĘTE"
 msgid "None (straight binary)"
 msgstr "Brak (po prostu binarne)"
 
-#: ../src/Szwrapper.vala:185
+#: ../src/Szwrapper.vala:178
 msgid "canceled"
 msgstr "anulowane"
