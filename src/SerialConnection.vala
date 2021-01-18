@@ -36,6 +36,7 @@ public class moserial.SerialConnection : GLib.Object
     private int m_fd = -1;
     private GLib.IOChannel IOChannelFd;
     public signal void newData (uchar[] data, int size);
+    public signal void onError();
 
     private int flags = 0;
 
@@ -52,6 +53,9 @@ public class moserial.SerialConnection : GLib.Object
 
 
     uint ? sourceId;
+    uint? sourceIdErr;
+    uint? sourceIdHup;
+    uint? sourceIdNval;
     bool localEcho;
     public bool doConnect (Settings settings)
     {
@@ -78,6 +82,12 @@ public class moserial.SerialConnection : GLib.Object
 
         IOChannelFd = new GLib.IOChannel.unix_new (m_fd);
         sourceId = IOChannelFd.add_watch (GLib.IOCondition.IN, this.readBytes);
+        // G_IO_ERR is sometimes faster than G_IO_HUP when device is unplugged
+        sourceIdErr = IOChannelFd.add_watch(GLib.IOCondition.ERR, this.onUnplugged);
+        // G_IO_HUP is received when the serial port vanishes (unplugged USB)
+        sourceIdHup = IOChannelFd.add_watch(GLib.IOCondition.HUP, this.onUnplugged);
+        // G_IO_NVAL is the last resort when device is unplugged and you want to write
+        sourceIdNval = IOChannelFd.add_watch(GLib.IOCondition.NVAL, this.onUnplugged);
         localEcho = settings.localEcho;
         return true;
     }
@@ -106,8 +116,14 @@ public class moserial.SerialConnection : GLib.Object
     public void doDisconnect ()
     {
         if (connected) {
-            GLib.Source.remove (sourceId);
+            GLib.Source.remove(sourceId);
+            GLib.Source.remove(sourceIdHup);
+            GLib.Source.remove(sourceIdErr);
+            GLib.Source.remove(sourceIdNval);
             sourceId = null;
+            sourceIdHup = null;
+            sourceIdErr = null;
+            sourceIdNval = null;
             try {
                 IOChannelFd.shutdown (true);
             } catch (GLib.IOChannelError e) {
@@ -128,6 +144,12 @@ public class moserial.SerialConnection : GLib.Object
     public bool isConnected ()
     {
         return connected;
+    }
+
+    private bool onUnplugged(GLib.IOChannel source, GLib.IOCondition condition)
+    {
+        onError();
+        return false;
     }
 
     private bool readBytes (GLib.IOChannel source, GLib.IOCondition condition)

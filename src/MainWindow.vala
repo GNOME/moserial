@@ -866,6 +866,7 @@ font-weight:
         statusbar.pop (statusbarContext);
         statusbar.push (statusbarContext, currentSettings.getStatusbarString (true));
         serialConnection.newData.connect (this.updateIncoming);
+        serialConnection.onError.connect(this.connectionError);
         connectButton.set_label_widget (disconnectLabel);
         return true;
     }
@@ -878,6 +879,7 @@ font-weight:
             settingsButton.set_sensitive (true);
             serialConnection.doDisconnect ();
             serialConnection.newData.disconnect (this.updateIncoming);
+            serialConnection.onError.disconnect(this.connectionError);
             bytecountbar.pop (bytecountbarContext);
             bytecountbar.push (bytecountbarContext, serialConnection.getBytecountbarString ());
             statusbar.pop (statusbarContext);
@@ -905,6 +907,23 @@ font-weight:
         serialStatusSignals[2].set_sensitive (state[2]); // CD
         serialStatusSignals[3].set_sensitive (state[3]); // CTS
         return true;
+    }
+
+    private void connectionError()
+    {
+        settingsButton.set_sensitive(true);
+        serialConnection.doDisconnect();
+        serialConnection.newData.disconnect(this.updateIncoming);
+        serialConnection.onError.disconnect(this.connectionError);
+        bytecountbar.pop(bytecountbarContext);
+        bytecountbar.push(bytecountbarContext, serialConnection.getBytecountbarString());
+        statusbar.pop(statusbarContext);
+        statusbar.push(statusbarContext, currentSettings.getStatusbarString(false));
+        connectButton.set_label_widget(connectLabel);
+        connectButton.set_active(false);
+
+        if (recordButton.get_active())
+            recordButton.set_active(false);
     }
 
     private void updateIncoming (SerialConnection sc, uchar[] data, int size)
