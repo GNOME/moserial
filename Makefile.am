@@ -75,7 +75,7 @@ EXTRA_DIST = \
 	src/moserial.vala.stamp \
         xmldocs.make            \
 	ChangeLog.pre-git	\
-	README.md		\
+	README \
 	$(NULL)
 
 CLEANFILES = \
