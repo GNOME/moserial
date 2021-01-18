@@ -1,6 +1,7 @@
 Version 3.0.13
 --------------
 
+	* Added detection of detached serial devices
 	* Added automatic file name option for recording
 	* Save and restore outgoing input string from profile.
 	* Save and restore input line ending from profile
