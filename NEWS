@@ -1,7 +1,7 @@
 Version 3.0.13
 --------------
 
-	* Add transmission macros
+	* Added automatic file name option for recording
 	* Save and restore outgoing input string from profile.
 	* Save and restore input line ending from profile
 	* Save and restore input mode from profile
