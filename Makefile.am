@@ -74,7 +74,6 @@ EXTRA_DIST = \
 	src/Config.vapi		\
 	src/moserial.vala.stamp \
         xmldocs.make            \
-	MAINTAINERS		\
 	ChangeLog.pre-git	\
 	README.md		\
 	$(NULL)
