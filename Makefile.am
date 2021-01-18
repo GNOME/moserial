@@ -76,6 +76,7 @@ EXTRA_DIST = \
         xmldocs.make            \
 	MAINTAINERS		\
 	ChangeLog.pre-git	\
+	README.md		\
 	$(NULL)
 
 CLEANFILES = \
@@ -95,6 +96,5 @@ ChangeLog:
 	fi
 
 dist: ChangeLog
-README: README.md
 
 .PHONY: ChangeLog
