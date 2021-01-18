@@ -341,22 +341,22 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         // setup DTR toggle button
         dtrButton = (ToggleButton) builder.get_object ("buttonDTR");
         dtrButton.toggled.connect (this.toggleDTR);
-        dtrButton.set_tooltip_text (_("Toggle DTR signal status."));
+        dtrButton.set_tooltip_text (_("Shows and toggles the DTR output (Data Terminal Ready)"));
 
         // setup RTS toggle button
         rtsButton = (ToggleButton) builder.get_object ("buttonRTS");
         rtsButton.toggled.connect (this.toggleRTS);
-        rtsButton.set_tooltip_text (_("Toggle RTS signal status."));
+        rtsButton.set_tooltip_text (_("Shows and toggles the RTS output (Request To Send)"));
 
         // setup incoming clear button
         incomingClearButton = (Button) builder.get_object ("buttonIncomingClear");
         incomingClearButton.clicked.connect (clearIncoming);
-        incomingClearButton.set_tooltip_text (_("Clear incoming text box."));
+        incomingClearButton.set_tooltip_text (_("Clear incoming text box"));
 
         // setup outgoing clear button
         outgoingClearButton = (Button) builder.get_object ("buttonOutgoingClear");
         outgoingClearButton.clicked.connect (clearOutgoing);
-        outgoingClearButton.set_tooltip_text (_("Clear outgoing text box."));
+        outgoingClearButton.set_tooltip_text (_("Clear outgoing text box"));
 
         // take currentSettings into account for outgoing input area
         updateOutgoingInputArea ();
