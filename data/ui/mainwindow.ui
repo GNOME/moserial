@@ -342,6 +342,7 @@
                         <property name="visible">True</property>
                         <property name="sensitive">False</property>
                         <property name="can-focus">False</property>
+                        <property name="tooltip-text" translatable="yes">Shows RI input (Ring Indicator)</property>
                         <property name="label" translatable="yes">RI</property>
                         <property name="width-chars">4</property>
                         <property name="max-width-chars">4</property>
@@ -357,6 +358,7 @@
                         <property name="visible">True</property>
                         <property name="sensitive">False</property>
                         <property name="can-focus">False</property>
+                        <property name="tooltip-text" translatable="yes">Shows DSR input (Data Set Ready)</property>
                         <property name="label" translatable="yes">DSR</property>
                         <property name="width-chars">4</property>
                         <property name="max-width-chars">4</property>
@@ -372,6 +374,7 @@
                         <property name="visible">True</property>
                         <property name="sensitive">False</property>
                         <property name="can-focus">False</property>
+                        <property name="tooltip-text" translatable="yes">Shows CD input (Carrier Detect)</property>
                         <property name="label" translatable="yes">CD</property>
                         <property name="width-chars">4</property>
                         <property name="max-width-chars">4</property>
@@ -387,6 +390,7 @@
                         <property name="visible">True</property>
                         <property name="sensitive">False</property>
                         <property name="can-focus">False</property>
+                        <property name="tooltip-text" translatable="yes">Shows CTS input (Clear To Send)</property>
                         <property name="label" translatable="yes">CTS</property>
                         <property name="width-chars">4</property>
                         <property name="max-width-chars">4</property>
