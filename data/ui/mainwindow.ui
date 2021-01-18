@@ -32,7 +32,7 @@
                       <object class="GtkMenuItem" id="menubar_open_settings">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="label">Open Settings</property>
+                        <property name="label" translatable="yes">Open Settings</property>
                       </object>
                     </child>
                     <child>
@@ -53,14 +53,14 @@
                       <object class="GtkMenuItem" id="menubar_save_settings">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="label">Save Settings</property>
+                        <property name="label" translatable="yes">Save Settings</property>
                       </object>
                     </child>
                     <child>
                       <object class="GtkMenuItem" id="menubar_save_settings_as">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="label">Save Settings As</property>
+                        <property name="label" translatable="yes">Save Settings As</property>
                       </object>
                     </child>
                     <child>
@@ -73,7 +73,7 @@
                       <object class="GtkMenuItem" id="menubar_quit">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="label">Quit</property>
+                        <property name="label" translatable="yes">Quit</property>
                         <property name="use-underline">True</property>
                       </object>
                     </child>
@@ -95,7 +95,7 @@
                       <object class="GtkMenuItem" id="menubar_cut">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="label">Cut</property>
+                        <property name="label" translatable="yes">Cut</property>
                         <property name="use-underline">True</property>
                       </object>
                     </child>
@@ -103,7 +103,7 @@
                       <object class="GtkMenuItem" id="menubar_copy">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="label">Copy</property>
+                        <property name="label" translatable="yes">Copy</property>
                         <property name="use-underline">True</property>
                       </object>
                     </child>
@@ -111,7 +111,7 @@
                       <object class="GtkMenuItem" id="menubar_paste">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="label">Paste</property>
+                        <property name="label" translatable="yes">Paste</property>
                         <property name="use-underline">True</property>
                       </object>
                     </child>
@@ -125,7 +125,7 @@
                       <object class="GtkMenuItem" id="menubar_clear">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="label">Clear</property>
+                        <property name="label" translatable="yes">Clear</property>
                         <property name="use-underline">True</property>
                         <accelerator key="l" signal="activate" modifiers="GDK_CONTROL_MASK"/>
                       </object>
@@ -148,7 +148,7 @@
                       <object class="GtkMenuItem" id="menubar_about">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="label">About</property>
+                        <property name="label" translatable="yes">About</property>
                         <property name="use-underline">True</property>
                       </object>
                     </child>
@@ -156,7 +156,7 @@
                       <object class="GtkMenuItem" id="menubar_contents">
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
-                        <property name="label">Help</property>
+                        <property name="label" translatable="yes">Help</property>
                         <property name="use-underline">True</property>
                         <accelerator key="F1" signal="activate"/>
                       </object>
