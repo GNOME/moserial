@@ -31,6 +31,11 @@ public class moserial.PreferencesDialog : GLib.Object
     private CheckButton recordLaunch;
     private CheckButton enableTimeout;
     private SpinButton timeout;
+    private CheckButton recordAutoName;
+    private ComboBox recordAutoDirection;
+    private Entry recordAutoExtension;
+    private Widget recordAutoFolder;
+
     public signal void updatePreferences (Preferences preferences);
 
     public PreferencesDialog (Window parent)
@@ -59,6 +64,14 @@ public class moserial.PreferencesDialog : GLib.Object
         timeout.adjustment.step_increment = 1;
         timeout.adjustment.page_increment = 60;
 
+        recordAutoName = (CheckButton)builder.get_object("preferences_record_auto_name");
+        recordAutoName.toggled.connect(this.recordAutoToggled);
+        recordAutoDirection = (ComboBox)builder.get_object("preferences_record_auto_direction");
+        MoUtils.populateComboBox (recordAutoDirection, SerialStreamRecorder.DirectionStrings);
+        recordAutoDirection.set_active(SerialStreamRecorder.Direction.INCOMING);
+        recordAutoExtension = (Entry)builder.get_object("preferences_record_auto_extension");
+        recordAutoFolder = (Widget)builder.get_object("preferences_record_auto_folder");
+
         systemFont.toggled.connect (this.systemFontToggled);
         enableTimeout.toggled.connect (this.enableTimeoutToggled);
         okButton.clicked.connect (ok);
@@ -77,6 +90,11 @@ public class moserial.PreferencesDialog : GLib.Object
         bool pRecordLaunch;
         bool pEnableTimeout;
         int pTimeout;
+        bool pRecordAutoName;
+        int pRecordAutoDirection;
+        string pRecordAutoExtension;
+        string pRecordAutoFolder;
+
         if (systemFont.get_active ())
             pSystemFont = true;
         else
@@ -98,7 +116,21 @@ public class moserial.PreferencesDialog : GLib.Object
         else
             pEnableTimeout = false;
         pTimeout = (int) timeout.get_value ();
-        Preferences preferences = new Preferences (pSystemFont, pFont, pFontColor, pBackgroundColor, pHighlightColor, pRecordLaunch, pEnableTimeout, pTimeout);
+        if(recordAutoName.get_active())
+            pRecordAutoName=true;
+        else
+            pRecordAutoName=false;
+        pRecordAutoDirection = recordAutoDirection.get_active();
+        pRecordAutoExtension = recordAutoExtension.get_text();
+
+        pRecordAutoFolder = ((FileChooser)recordAutoFolder).get_filename ();
+
+        Preferences preferences=new Preferences(
+            pSystemFont, pFont, pFontColor, pBackgroundColor,
+            pHighlightColor, pRecordLaunch, pEnableTimeout,
+            pTimeout, pRecordAutoName, pRecordAutoDirection,
+            pRecordAutoExtension, pRecordAutoFolder);
+
         this.updatePreferences (preferences);
     }
 
@@ -132,10 +164,16 @@ public class moserial.PreferencesDialog : GLib.Object
         } else
             enableTimeout.set_sensitive (true);
         timeout.set_value (preferences.timeout);
+        recordAutoName.set_active(preferences.recordAutoName);
+        recordAutoDirection.set_active(preferences.recordAutoDirection);
+        recordAutoExtension.set_text(preferences.recordAutoExtension);
+
+        ((FileChooser)recordAutoFolder).set_current_folder(preferences.recordAutoFolder);
+
         dialog.show_all ();
     }
 
-    public void cancel (Widget w)
+    public void cancel (Button button)
     {
         // currentPreferences=null;
         hide ();
@@ -161,5 +199,18 @@ public class moserial.PreferencesDialog : GLib.Object
             timeout.set_sensitive (true);
         else
             timeout.set_sensitive (false);
+    }
+
+    public void recordAutoToggled(ToggleButton button)
+    {
+        if (button.get_active()) {
+            recordAutoExtension.set_sensitive(true);
+            recordAutoDirection.set_sensitive(true);
+            recordAutoFolder.set_sensitive(true);
+        } else {
+            recordAutoExtension.set_sensitive(false);
+            recordAutoDirection.set_sensitive(false);
+            recordAutoFolder.set_sensitive(false);
+        }
     }
 }

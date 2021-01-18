@@ -35,8 +35,18 @@ public class Preferences : GLib.Object
     public bool recordLaunch { get; construct; }
     public bool enableTimeout { get; construct; }
     public int timeout { get; construct; }
+    public bool recordAutoName{get; construct;}
+    public int recordAutoDirection{get; construct;}
+    public string recordAutoExtension{get; construct;}
+    public string recordAutoFolder{get; construct;}
 
-    public Preferences (bool useSystemMonospaceFont, string ? font, string ? fontColor, string ? backgroundColor, string ? highlightColor, bool recordLaunch, bool enableTimeout, int timeout)
+    public Preferences (bool useSystemMonospaceFont, string? font,
+                        string? fontColor,string? backgroundColor,
+                        string? highlightColor, bool recordLaunch,
+                        bool enableTimeout, int timeout,
+                        bool recordAutoName, int recordAutoDirection,
+                        string? recordAutoExtension,
+                        string? recordAutoFolder)
     {
         GLib.Object (useSystemMonospaceFont: useSystemMonospaceFont,
                      font: font,
@@ -45,7 +55,11 @@ public class Preferences : GLib.Object
                      backgroundColor: backgroundColor,
                      highlightColor: highlightColor,
                      enableTimeout: enableTimeout,
-                     timeout: timeout);
+                     timeout: timeout,
+                     recordAutoName: recordAutoName,
+                     recordAutoDirection: recordAutoDirection,
+                     recordAutoExtension: recordAutoExtension,
+                     recordAutoFolder: recordAutoFolder);
     }
 
     construct {
@@ -57,6 +71,10 @@ public class Preferences : GLib.Object
             backgroundColor = DEFAULT_BACKGROUND_COLOR;
         if (highlightColor == null)
             highlightColor = DEFAULT_HIGHLIGHT_COLOR;
+        if(recordAutoExtension==null)
+            recordAutoExtension="";
+        if(recordAutoFolder==null)
+            recordAutoFolder=Environment.get_home_dir ();
     }
     public static string getSystemDefaultMonospaceFont ()
     {
@@ -95,6 +113,14 @@ public class Preferences : GLib.Object
             stdout.printf ("true\n");
         else
             stdout.printf ("false\n");
+        stdout.printf("recordAutoName: ");
+        if(recordAutoName)
+            stdout.printf("true\n");
+        else
+            stdout.printf("false\n");
+        stdout.printf("recordAutoDirection: %d\n", recordAutoDirection);
+        stdout.printf("recordAutoExtension: %s\n", recordAutoExtension);
+        stdout.printf("recordAutoFolder: %s\n", recordAutoFolder);
     }
 
     public void saveToProfile (Profile profile)
@@ -107,6 +133,10 @@ public class Preferences : GLib.Object
         profile.keyFile.set_boolean ("preferences", "record_launch", recordLaunch);
         profile.keyFile.set_boolean ("preferences", "enable_timeout", enableTimeout);
         profile.keyFile.set_integer ("preferences", "timeout", timeout);
+        profile.keyFile.set_boolean("preferences", "record_auto_name", recordAutoName);
+        profile.keyFile.set_integer("preferences", "record_auto_direction", recordAutoDirection);
+        profile.keyFile.set_string("preferences", "record_auto_extension", recordAutoExtension);
+        profile.keyFile.set_string("preferences", "record_auto_folder", recordAutoFolder);
     }
 
     public static Preferences loadFromProfile (Profile profile)
@@ -119,6 +149,10 @@ public class Preferences : GLib.Object
         bool recordLaunch;
         bool enableTimeout;
         int timeout;
+        bool recordAutoName;
+        int recordAutoDirection;
+        string recordAutoExtension;
+        string recordAutoFolder;
 
         useSystemMonospaceFont = MoUtils.getKeyBoolean (profile, "preferences", "use_system_monospace_font", Preferences.DEFAULT_USE_SYSTEM_MONOSPACE_FONT);
         font = MoUtils.getKeyString (profile, "preferences", "font");
@@ -128,6 +162,14 @@ public class Preferences : GLib.Object
         recordLaunch = MoUtils.getKeyBoolean (profile, "preferences", "record_launch", true);
         enableTimeout = MoUtils.getKeyBoolean (profile, "preferences", "enable_timeout", false);
         timeout = MoUtils.getKeyInteger (profile, "preferences", "timeout", 30);
-        return new Preferences (useSystemMonospaceFont, font, fontColor, backgroundColor, highlightColor, recordLaunch, enableTimeout, timeout);
+        recordAutoName = MoUtils.getKeyBoolean(profile, "preferences", "record_auto_name", false);
+        recordAutoDirection = MoUtils.getKeyInteger(profile, "preferences", "record_auto_direction", 0);
+        recordAutoExtension = MoUtils.getKeyString(profile, "preferences", "record_auto_extension");
+        recordAutoFolder = MoUtils.getKeyString(profile, "preferences", "record_auto_folder");
+        return new Preferences (useSystemMonospaceFont, font, fontColor,
+                                backgroundColor, highlightColor, recordLaunch,
+                                enableTimeout, timeout, recordAutoName,
+                                recordAutoDirection, recordAutoExtension,
+                                recordAutoFolder);
     }
 }

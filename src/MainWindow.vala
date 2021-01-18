@@ -650,8 +650,40 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
                 button.set_active (false);
                 return;
             }
-            button.set_label_widget (stopRecordingLabel);
-            recordDialog.show (currentPaths.recordTo);
+            button.set_label_widget(stopRecordingLabel);
+            if (currentPreferences.recordAutoName) {
+                var now = new DateTime.now_local();
+                var year = now.get_year();
+                var month = now.get_month();
+                var day = now.get_day_of_month();
+                var hour = now.get_hour();
+                var minute = now.get_minute();
+                var second = now.get_second();
+                string folder = currentPreferences.recordAutoFolder;
+                string pExtension = currentPreferences.recordAutoExtension;
+                string extension = "";
+                if (pExtension!="") {
+                    extension = ".%s".printf(pExtension);
+                }
+                string filename = "%s/moserial_%04d-%02d-%02d_%02d-%02d-%02d%s".printf(
+                                      folder, year, month, day, hour, minute, second, extension);
+                SerialStreamRecorder.Direction direction;
+                switch(currentPreferences.recordAutoDirection) {
+                case 0:
+                default:
+                    direction=SerialStreamRecorder.Direction.INCOMING;
+                    break;
+                case 1:
+                    direction=SerialStreamRecorder.Direction.OUTGOING;
+                    break;
+                case 2:
+                    direction=SerialStreamRecorder.Direction.BOTH;
+                    break;
+                }
+                startRecording(filename, direction);
+            } else {
+                recordDialog.show(currentPaths.recordTo);
+            }
         } else {
             streamRecorder.close (currentPreferences.recordLaunch);
             button.set_label_widget (recordLabel);
@@ -663,24 +695,24 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         }
     }
 
-    public void stopRecording (moserial.RecordDialog dialog)
+    public void stopRecording ()
     {
         recordButton.set_active (false); // this generates recordButton.clicked signal
     }
 
-    public void startRecording (moserial.RecordDialog dialog, string filename, moserial.SerialStreamRecorder.Direction direction)
+    public void startRecording (string filename, moserial.SerialStreamRecorder.Direction direction)
     {
         try {
             streamRecorder.open (filename, direction);
             currentPaths.recordTo = MoUtils.getParentFolder (filename);
             if (!ensureConnected ())
-                stopRecording (dialog);
+                stopRecording ();
             setWindowTitle (filename);
         } catch (GLib.Error e) {
             var errorDialog = new MessageDialog (gtkWindow, DialogFlags.DESTROY_WITH_PARENT, MessageType.ERROR, ButtonsType.CLOSE, "%s: %s\n%s", _("Error: Could not open file"), filename, e.message);
             errorDialog.run ();
             errorDialog.destroy ();
-            stopRecording (dialog);
+            stopRecording ();
         }
     }
 
