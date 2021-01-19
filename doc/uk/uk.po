@@ -1,0 +1,846 @@
+# Ukrainian translation for moserial.
+# Copyright (C) 2021 moserial's COPYRIGHT HOLDER
+# This file is distributed under the same license as the moserial package.
+#
+# Yuri Chornoivan <yurchor@ukr.net>, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: moserial master\n"
+"POT-Creation-Date: 2021-01-19 07:18+0000\n"
+"PO-Revision-Date: 2021-01-19 16:04+0200\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: uk\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Lokalize 20.11.70\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr "Юрій Чорноіван <yurchor@ukr.net>, 2021"
+
+#. (itstool) path: articleinfo/title
+#: C/index.docbook:19
+msgid "<application>moserial</application> Manual V3.0.0"
+msgstr "Підручник з <application>moserial</application>, версія 3.0.0"
+
+#. (itstool) path: articleinfo/copyright
+#: C/index.docbook:20
+msgid "<year>2009</year> <holder>Michael J. Chudobiak</holder>"
+msgstr "<year>2009</year> <holder>Michael J. Chudobiak</holder>"
+
+#. (itstool) path: publisher/publishername
+#. (itstool) path: revdescription/para
+#: C/index.docbook:38 C/index.docbook:60
+msgid "GNOME Documentation Project"
+msgstr "Проект документування GNOME"
+
+#. (itstool) path: legalnotice/para
+#: C/index.docbook:2
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
+"later version published by the Free Software Foundation with no Invariant "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or "
+"in the file COPYING-DOCS distributed with this manual."
+msgstr ""
+"Дозволяється копіювати, розповсюджувати та/або змінювати цей документ на "
+"умовах ліцензії GNU Free Documentation License (GFDL), версії 1.1 або будь-"
+"якої старшої версії, що опублікована Free Software Foundation без "
+"інваріантних розділів, тексту титульної сторінки, та тексту фінальної "
+"сторінки. Копію GFDL можна знайти <ulink type=\"help\" url=\"ghelp:fdl\">за "
+"адресою</ulink> або у файлі COPYING-DOCS, що постачається з цією довідкою."
+
+#. (itstool) path: legalnotice/para
+#: C/index.docbook:12
+msgid ""
+"This manual is part of a collection of GNOME manuals distributed under the "
+"GFDL. If you want to distribute this manual separately from the collection, "
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
+msgstr ""
+"Цей посібник є частиною документації GNOME яка поширюється під ліцензією "
+"GFDL. Якщо Ви бажаєте розповсюджувати цей посібник окремо від іншої "
+"документації, можете це зробити додавши до нього копію ліцензії, як описано "
+"в пункті 6 ліцензії."
+
+#. (itstool) path: legalnotice/para
+#: C/index.docbook:19
+msgid ""
+"Many of the names used by companies to distinguish their products and "
+"services are claimed as trademarks. Where those names appear in any GNOME "
+"documentation, and the members of the GNOME Documentation Project are made "
+"aware of those trademarks, then the names are in capital letters or initial "
+"capital letters."
+msgstr ""
+"Багато назв, які використовуються компаніями для позначення своїх продуктів "
+"та послуг, заявлені в якості товарних знаків. Якщо такі назви зустрічаються "
+"в будь-якій документації GNOME, і члени проєкту документування GNOME знають "
+"про них, то назви пишуться великими літерами, або з великої літери."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:35
+msgid ""
+"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
+"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
+"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
+"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr ""
+"ДОКУМЕНТ НАДАЄТЬСЯ \"ЯК Є\", БЕЗ БУДЬ-ЯКИХ ГАРАНТІЇ, ЯВНИХ ЧИ НЕЯВНИХ, "
+"ВКЛЮЧАЮЧИ, АЛЕ НЕ ОБМЕЖУЮЧИСЬ, ГАРАНТІЙ ЩО ЦЕЙ ДОКУМЕНТ ЧИ ЗМІНЕНА ВЕРСІЯ "
+"ДОКУМЕНТА ВІЛЬНІ ВІД ДЕФЕКТІВ, ПРИДАТНІ ДО ПРОДАЖУ, ВІДПОВІДАЮТЬ ПЕВНІЙ МЕТІ "
+"АБО НЕ ПОРУШУЮТЬ ЧИЇСЬ ПРАВА. ВЕСЬ РИЗИК ЗА ЯКІСТЬ, ТОЧНІСТЬ, ТА ЧИННІСТЬ "
+"ЦЬОГО ДОКУМЕНТУ АБО ЙОГО ЗМІНЕНИХ ВЕРСІЙ ЛЕЖИТЬ НА ВАС.  ЯКЩО БУДЬ-ЯКИЙ "
+"ДОКУМЕНТ ЧИ ЗМІНЕНА ВЕРСІЯ БУДУТЬ ВИЗНАНІ ДЕФЕКТНИМИ У БУДЬ-ЯКОМУ "
+"ВІДНОШЕННІ, ВИ (НЕ ПОЧАТКОВИЙ УКЛАДАЧ, АВТОР АБО БУДЬ-ЯКИЙ СПІВАВТОР) БЕРЕТЕ "
+"НА СЕБЕ ВИТРАТИ ЗА БУДЬ-ЯКЕ НЕОБХІДНЕ ОБСЛУГОВУВАННЯ, РЕМОНТ ЧИ ВИПРАВЛЕННЯ. "
+"ЦЯ ВІДМОВА ВІД ГАРАНТІЙ СКЛАДАЄ ВАЖЛИВУ ЧАСТИНУ ЦІЄЇ ЛІЦЕНЗІЇ. НЕ "
+"ДОПУСКАЄТЬСЯ ВИКОРИСТАННЯ ЦЬОГО ДОКУМЕНТУ АБО ЙОГО ЗМІНЕНОЇ ВЕРСІЇ БЕЗ "
+"ПРИЙНЯТТЯ ЦІЄЇ ВІДМОВИ; ТА"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:55
+msgid ""
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
+"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
+"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
+"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
+msgstr ""
+"НІ ЗА ЯКИХ ОБСТАВИН ТА ЗА БУДЬ-ЯКОГО ЗАКОНОДАВСТВА, ЧИ ТО ГРОМАДЯНСЬКОЇ "
+"ВІДПОВІДАЛЬНОСТІ (ВКЛЮЧАЮЧИ ХАЛАТНІСТЬ), ДОГОВОРУ, ЧИ ЧОГОСЬ ІНШОГО, АВТОР, "
+"ПОЧАТКОВИЙ УКЛАДАЧ, БУДЬ-ЯКИЙ СПІВАВТОР, АБО ДИСТРИБ'ЮТОР ДОКУМЕНТУ ЧИ "
+"ЗМІНЕНОЇ ВЕРСІЇ ДОКУМЕНТУ, АБО БУДЬ-ЯКИЙ ПОСТАЧАЛЬНИК БУДЬ-ЯКОЇ З ЦИХ "
+"СТОРІН, НЕ НЕСЕ ВІДПОВІДАЛЬНІСТЬ ПЕРЕД БУДЬ-ЯКОЮ ОСОБОЮ ЗА БУДЬ-ЯКІ ПРЯМІ, "
+"НЕПРЯМІ, ОСОБЛИВІ, ВИПАДКОВІ, АБО ІСТОТНІ ЗБИТКИ БУДЬ-ЯКОГО ХАРАКТЕРУ "
+"ВКЛЮЧАЮЧИ, АЛЕ НЕ ОБМЕЖУЮЧИСЬ, ЗБИТКАМИ ВІД ВТРАТИ ПРЕСТИЖУ, ЗУПИНКИ РОБОТИ, "
+"ЗБОЇВ АБО НЕСПРАВНОСТЕЙ КОМП'ЮТЕРА, АБО БУДЬ-ЯКІ ІНШІ ЗБИТКИ АБО ВТРАТИ ЩО "
+"ВИНИКЛИ БЕЗВІДНОСНО АБО ВНАСЛІДОК ВИКОРИСТАННЯ ЦЬОГО ДОКУМЕНТУ ТА ЗМІНЕНИХ "
+"ВЕРСІЙ ЦЬОГО ДОКУМЕНТУ, НАВІТЬ ЯКЩО ЦІ СТОРОНИ, МОЖЛИВО, БУЛИ ПРОІНФОРМОВАНІ "
+"ПРО МОЖЛИВІСТЬ ТАКИХ ЗБИТКІВ."
+
+#. (itstool) path: legalnotice/para
+#: C/index.docbook:28
+msgid ""
+"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
+"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
+"<_:orderedlist-1/>"
+msgstr ""
+"ДОКУМЕНТ ТА ЗМІНЕНІ ВЕРСІЇ ДОКУМЕНТУ НАДАЮТЬСЯ КОРИСТУВАЧУ ЗА УМОВАМИ "
+"ЛІЦЕНЗІЇ GNU FREE DOCUMENTATION LICENSE З ПОДАЛЬШИМ РОЗУМІННЯМ ПРО ТЕ, ЩО: "
+"<_:orderedlist-1/>"
+
+#. (itstool) path: authorgroup/author
+#: C/index.docbook:44
+msgid ""
+"<firstname>Michael</firstname> <surname>Chudobiak</surname> <affiliation> "
+"<address> <email>mjc@avtechpulse.com</email> </address> </affiliation>"
+msgstr ""
+"<firstname>Michael</firstname> <surname>Chudobiak</surname> <affiliation> "
+"<address> <email>mjc@avtechpulse.com</email> </address> </affiliation>"
+
+#. (itstool) path: revdescription/para
+#: C/index.docbook:59
+msgid "Michael J. Chudobiak"
+msgstr "Michael J. Chudobiak"
+
+#. (itstool) path: revhistory/revision
+#: C/index.docbook:55
+msgid ""
+"<revnumber>3.0.0</revnumber> <date>April 2009</date> <_:revdescription-1/>"
+msgstr ""
+"<revnumber>3.0.0</revnumber> <date>квітень 2009 року</date> <"
+"_:revdescription-1/>"
+
+#. (itstool) path: articleinfo/releaseinfo
+#: C/index.docbook:67
+msgid "This is manual describes version 3.0.0 of moserial"
+msgstr "У цьому підручнику описано версію 3.0.0 програми moserial"
+
+#. (itstool) path: abstract/para
+#: C/index.docbook:70
+msgid ""
+"<application>moserial</application> is a serial terminal for the GNOME "
+"desktop, optimized for logging and file capture."
+msgstr ""
+"<application>moserial</application> — послідовний термінал для стільниці"
+" GNOME, оптимізований для записування журналу та отримання файлів."
+
+#. (itstool) path: article/indexterm
+#: C/index.docbook:73
+msgid "<primary>moserial</primary>"
+msgstr "<primary>moserial</primary>"
+
+#. (itstool) path: article/indexterm
+#: C/index.docbook:76
+msgid "<primary>serial</primary>"
+msgstr "<primary>послідовний</primary>"
+
+#. (itstool) path: article/indexterm
+#: C/index.docbook:79
+msgid "<secondary>terminal</secondary>"
+msgstr "<secondary>термінал</secondary>"
+
+#. (itstool) path: sect1/title
+#: C/index.docbook:88
+msgid "Introduction"
+msgstr "Вступ"
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:89
+msgid ""
+"<application>moserial</application> is a serial terminal for the GNOME "
+"desktop, optimized for logging and file capture. <application>moserial</"
+"application> is primarily intended for technical users who need to "
+"communicate with embedded systems, consoles, and electronic test equipment."
+msgstr ""
+"<application>moserial</application> — послідовний термінал для стільниці"
+" GNOME, оптимізований для ведення журналу та отримання файлів. <application"
+">moserial</application> призначено передусім для користувачів-інженерів, у"
+" яких виникає потреба в обміні даними із вбудованими системами, консолями та"
+" електронним вимірювальним обладнанням."
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:95
+msgid ""
+"Despite the technical orientation of the intended audience, "
+"<application>moserial</application> is designed to be user-friendly. Care "
+"has been taken to ensure that operations are simple to execute, by "
+"minimizing the number of clicks needed. The number of configuration options "
+"has also been kept small."
+msgstr ""
+"Незважаючи на технологічне призначення програми, <application>moserial<"
+"/application> створено зручною у користуванні. Автори подбали про простоту"
+" виконання дій, мінімізувавши кількість потрібних для їхнього виконання"
+" клацань кнопками миші. Також мінімізовано кількість параметрів"
+" налаштовування."
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:102
+msgid ""
+"To further improve efficiency, <application>moserial</application> also "
+"supports profile files to store frequently-used configurations."
+msgstr ""
+"Для удосконалення ефективності у <application>moserial</application>"
+" передбачено файли профілів для зберігання налаштувань, якими найчастіше"
+" користуються."
+
+#. (itstool) path: sect1/title
+#: C/index.docbook:109
+msgid "System Port Permissions"
+msgstr "Права доступу до портів системи"
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:110
+msgid ""
+"Before using <application>moserial</application> with a serial port, you "
+"need to make sure that you actually have permission to read and/or write to "
+"the port."
+msgstr ""
+"Перш ніж користуватися <application>moserial</application> для послідовного"
+" порту, вам слід переконатися, що ви маєте права доступу до читання і/або"
+" запису до порту."
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:114
+msgid ""
+"On some systems, you may need to do something like \"sudo chmod o+rw /dev/"
+"ttyS*\" and \"sudo chmod o+rw /dev/ttyUSB*\" to obtain read/write "
+"permissions (for all users) on the serial ports. Unfortunately, this may not "
+"be persistent after reboots."
+msgstr ""
+"У деяких системах вам слід віддати подібну до «sudo chmod o+rw /dev/ttyS*»"
+" або «sudo chmod o+rw /dev/ttyUSB*» команду для отримання прав доступу на"
+" читання або запис (для усіх користувачів) до послідовних портів. На жаль,"
+" такі права доступу може бути скинути після перезавантаження системи."
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:119
+msgid ""
+"Alternatively, you can see what group the devices belong to, and make your "
+"account a member of that group. In Fedora 15, for example, you should add "
+"yourself to the \"dialout\" group."
+msgstr ""
+"Крім того, ви можете дізнатися, якій групі належать пристрої, і додати ваш"
+" обліковий запис до переліку учасників цієї групи. Наприклад, у Fedora 15,"
+" вам слід додати ваш обліковий запис до групи «dialout»."
+
+#. (itstool) path: sect1/title
+#: C/index.docbook:126
+msgid "Basic Usage"
+msgstr "Основні прийоми користування"
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:128
+msgid "The Main Toolbar"
+msgstr "Головна панель інструментів"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:129
+msgid ""
+"Most <application>moserial</application> functions are accessed through the "
+"main toolbar, shown below:"
+msgstr ""
+"Доступ до більшості функціональних можливостей <application>moserial<"
+"/application> можна отримати за допомогою панелі інструментів, яку показано"
+" нижче:"
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:137
+msgid "Port Setup"
+msgstr "Налаштування порту"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:138
+msgid ""
+"The first step in using <application>moserial</application> is to configure "
+"the serial port parameters. Click <guibutton>Port Setup</guibutton> to do "
+"this. In the port setup dialog, you will set the port to use, whether the "
+"port should be open for reads, writes, or both, its baud rate, its parity, "
+"the number of data and stop bits, and the handshaking method. The settings "
+"specified in this dialog will override any system default settings for the "
+"port."
+msgstr ""
+"Першим кроком у користуванні <application>moserial</application> є"
+" налаштовування параметрів послідовного порту. Для цього скористайтеся <"
+"guibutton>Налаштування порту</guibutton>. У діалоговому вікні налаштовування"
+" ви зможете вказати порт, яким слід скористатися, те, чи буде відкрито порт"
+" для читання, запису або в обох напрямках, вказати швидкість передавання"
+" даних, контроль парності та кількість бітів даних та стоп-бітів, а також"
+" спосіб узгодження з'єднання. Параметри, які вказано у цьому діалоговому"
+" вікні, матимуть пріоритет над будь-якими типовими параметрами системи для"
+" цього порту."
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:146
+msgid ""
+"The <application>moserial</application> port setup dialog will only list "
+"the /dev/ttySnn, /dev/ttyUSBnn, and /dev/rfcommnn ports that actually exist "
+"on the system, for values of \"nn\" between 0 and 31."
+msgstr ""
+"У вікні налаштовування порту <application>moserial</application> буде"
+" показано лише ті порти /dev/ttySnn, /dev/ttyUSBnn і /dev/rfcommnn, які"
+" насправді існують у системі для значень «nn» від 0 до 31."
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:151
+msgid ""
+"A local echo can be enabled from this dialog. If enabled, all data that "
+"<application>moserial</application> receives will be echoed back to the "
+"sending device. This should normally be disabled, as it can cause unexpected "
+"behaviour, especially if the remote device also has echo enabled. (This "
+"would cause an infinite loop of echoes!)"
+msgstr ""
+"За допомогою цього діалогового вікна можна увімкнути локальну луну. Якщо луну"
+" увімкнено, усі дані, які отримує <application>moserial</application>, буде"
+" надіслано відлунням на пристрій, з якого вони надходять. Зазвичай, таку луну"
+" вимикають, оскільки вона може спричинити хибну поведінку пристрою, особливо,"
+" якщо луну увімкнено на віддаленому пристрої. (Це спричинить нескінченну"
+" циклічну луну!)"
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:162
+msgid "Open the Connection"
+msgstr "Відкриття з'єднання"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:163
+msgid ""
+"The next step in communicating with your remote device is to click "
+"<guibutton>Connect</guibutton>. This opens the port. If you do not have the "
+"necessary privileges to open the port, an error will be reported."
+msgstr ""
+"Наступним кроком у обміні даними з вашим віддаленим пристроєм є натискання"
+" кнопки <guibutton>З'єднатися</guibutton>. Після цього порт буде відкрито."
+" Якщо у вас немає достатніх прав доступу для відкриття порту, програма"
+" повідомить про помилку."
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:171
+msgid ""
+"This step is optional. If you skip it, <application>moserial</application> "
+"will try to connect automatically when needed."
+msgstr ""
+"Цей крок не є обов'язковим. Якщо ви пропустите його, <application>moserial<"
+"/application> спробує встановити з'єднання автоматично, коли у цьому виникне"
+" потреба."
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:175
+msgid ""
+"Once you have connected, the <guibutton>Connect</guibutton> button will "
+"change into a <guibutton>Disconnect</guibutton> button. Clicking "
+"<guibutton>Disconnect</guibutton> closes the port, and resets the TX and RX "
+"counters."
+msgstr ""
+"Після встановлення з'єднання напис на кнопці <guibutton>З'єднатися</guibutton"
+"> буде замінено на <guibutton>Від'єднатись</guibutton>. Натискання кнопки <"
+"guibutton>Від'єднатись</guibutton> закриє порт і скине лічильники TX і RX."
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:186
+msgid "Basic Input and Output"
+msgstr "Основи введення і виведення даних"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:187
+msgid ""
+"Once the port has been opened, any text received from the remote device will "
+"be displayed in the <guilabel>Received ASCII</guilabel> text area. If "
+"<application>moserial</application> detects a large number of unprintable "
+"characters, it will switch automatically to the <guilabel>Received HEX</"
+"guilabel> view."
+msgstr ""
+"Після відкриття порту будь-який текст, який буде отримано з віддаленого"
+" пристрою буде показано у текстовому полі <guilabel>Отримано ASCII</guilabel"
+">. Якщо <application>moserial</application> буде виявлено велику кількість"
+" непридатних до друку символів, програма автоматично перемкнеться на панель"
+" перегляду <guilabel>Отримано HEX</guilabel>."
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:197
+msgid ""
+"To switch between HEX and ASCII views, simply click on the appropriate tabs."
+msgstr ""
+"Для перемикання між панелями перегляду HEX і ASCII просто натисніть на"
+" заголовку потрібної вам вкладки."
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:201
+msgid ""
+"To send data to the remote device, you can type text into the "
+"<guilabel>Outgoing</guilabel> single-line text box, and click the "
+"<guibutton>Send</guibutton> button. Your line of text will be terminated "
+"with the sequence selected in the area to the right of the <guibutton>Send</"
+"guibutton> button. If you aren't sure which termination sequence is best, "
+"start with \"CR+LF end\". The <guibutton>ASCII/HEX</guibutton> button should "
+"be set to ASCII to send text."
+msgstr ""
+"Щоб надіслати дані на віддалений пристрій, ви можете ввести текст до"
+" однорядкового текстового поля <guilabel>Вихідні</guilabel> і натиснути"
+" кнопку <guibutton>Надіслати</guibutton>. Ваш рядок тексту буде завершено"
+" послідовністю, яку вибрано у області, розташованій праворуч від кнопки <"
+"guibutton>Надіслати</guibutton>. Якщо ви не знаєте, яку послідовність слід"
+" вибрати, почніть з «Завершення CR+LF». Для надсилання тексту кнопку <"
+"guibutton>ASCII/HEX</guibutton> має бути встановлено у позицію ASCII."
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:214
+msgid ""
+"If the <guibutton>ASCII/HEX</guibutton> button is set to HEX, do not enter "
+"text in the <guilabel>Outgoing</guilabel> area. Instead, enter hexadecimal "
+"numbers in the form \"1234ABCD....\"."
+msgstr ""
+"Якщо кнопку <guibutton>ASCII/HEX</guibutton> встановлено у позицію HEX, не"
+" слід вводити до області <guilabel>Вихідні</guilabel> текст. Замість цього,"
+" слід ввести шістнадцяткові числа у форматі «1234ABCD....»."
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:219
+msgid ""
+"Once your data has been transmitted, a record of it will exist in the "
+"<guilabel>Sent ASCII</guilabel> and <guilabel>Sent HEX</guilabel> text "
+"areas. These text areas are not editable."
+msgstr ""
+"Щойно ваші дані буде передано, їхній запис буде показано на текстовій панелі"
+" <guilabel>Надіслано ASCII</guilabel> або <guilabel>Надіслано HEX</guilabel>."
+" Редагувати текст на цих панелях не можна."
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:227
+msgid ""
+"The remote device may echo your sent data. If <application>moserial</"
+"application> detects echoed text in the <guilabel>Received ASCII</guilabel> "
+"text area, it will highlight the echoed text (using the highlight color "
+"defined in the preferences dialog)."
+msgstr ""
+"Віддалений пристрій може відлунювати надіслані вами дані. Якщо <application"
+">moserial</application> буде виявлено відлунений текст у області тексту <"
+"guilabel>Отримано ASCII</guilabel>, програма підсвітить відлунений текст (з"
+" використанням кольору підсвічування, який визначено у діалоговому вікні"
+" налаштувань)."
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:233
+msgid ""
+"The statusbar at the bottom of the main window shows the state of port, and "
+"a count of the sent (TX) and received (RX) bytes. If some of the received "
+"data is unprintable, a count of these items is shown as well."
+msgstr ""
+"На смужці стану у нижній частині головного вікна буде показано стан порту та"
+" кількість надісланих (TX) і отриманих (RX) байтів. Якщо деякі з отриманих"
+" даних виявляться символами, які не є придатними до друку, буде також"
+" показано кількість таких символів."
+
+#. (itstool) path: sect1/title
+#: C/index.docbook:245
+msgid "Recording Input and Output"
+msgstr "Записування вхідних і вихідних даних"
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:246
+msgid ""
+"<application>moserial</application> can be used to record your sent and "
+"received data to a file. This function is also useful for receiving and "
+"storing straight binary data dumped from a remote device. For instance, some "
+"oscilloscopes will dump screenshots to a serial port, without using any "
+"error correction protocols (like the Tektronix 11801)."
+msgstr ""
+"<application>moserial</application> можна скористатися для запису надісланих"
+" та отриманих даних до файла. Ця функціональна можливість також корисна для"
+" отримання та збереження необроблених двійкових дампів даних з віддаленого"
+" пристрою. Наприклад, деякі осцилографи надсилають знімки екрана на"
+" послідовний порт без використання протоколів виправлення помилок (прикладом"
+" таких приладів є Tektronix 11801)."
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:256
+msgid ""
+"When you are ready to record to a file, simply click <guibutton>Record</"
+"guibutton>, select the desired data to record (Incoming and/or Outgoing) in "
+"the <guilabel>Stream to Record</guilabel> selection box, and enter the "
+"filename in the filechooser area."
+msgstr ""
+"Коли ви будете готові до запису даних до файла, просто натисніть кнопку <"
+"guibutton>Записати</guibutton>, виберіть бажані дані для запису (вхідні і/або"
+" вихідні) у полі для вибору <guilabel>Потік даних для запису</guilabel> і"
+" введіть назву файла у полі вибору файла."
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:265
+msgid ""
+"When recording begins, the <guibutton>Record</guibutton> button will change "
+"into a <guibutton>Stop Recording</guibutton> button. You will need to click "
+"this when you wish to stop recording, or you have received the entire binary "
+"file that you wanted to download."
+msgstr ""
+"Коли розпочнеться записування, напис <guibutton>Записати</guibutton> на"
+" кнопці буде замінено на <guibutton>Припинити запис</guibutton>. Вам слід"
+" натиснути цю кнопку, якщо ви захочете припинити запис. Якщо ви не натиснете"
+" цю кнопку, ви отримаєте увесь двійковий файл."
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:274
+msgid ""
+"<application>moserial</application> can optionally launch the recorded file "
+"with the default application for its file type, when recording has finished. "
+"It can also terminate recording after a period of inactivity. Use the <link "
+"linkend=\"preferences\">Preferences</link> dialog to enable or disable these "
+"features."
+msgstr ""
+"<application>moserial</application> може, якщо хочете, відкрити записаний"
+" файл у типовій програмі для цього типу файлів, коли записування буде"
+" завершено. Також запис може бути перервано, якщо програма виявить період"
+" неактивності. Для вмикання або вимикання відповідних можливостей можете"
+" скористатися діалоговим вікном <link linkend=\"preferences\">Параметри</link"
+">."
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:281
+msgid ""
+"Note that if you wish to receive files using an error correction protocol "
+"(xmodem, ymodem, or zmodem), you will need to use the <link linkend="
+"\"receiving\">Receive File</link> function instead. Unlike the "
+"<guibutton>Record</guibutton> function, the <guibutton>Receive File</"
+"guibutton> function can automatically determine when the file download is "
+"complete."
+msgstr ""
+"Зауважте, що якщо ви хочете отримати файли за допомогою протоколу виправлення"
+" помилок (xmodem, ymodem або zmodem), вам слід скористатися функціональною"
+" можливістю <link linkend=\"receiving\">Отримати файл</link>. На відміну від"
+" функціональної можливості <guibutton>Записати</guibutton>, функціональна"
+" можливість <guibutton>Отримати файл</guibutton> може автоматично визначати,"
+" коли отримання файла буде завершено."
+
+#. (itstool) path: sect1/title
+#: C/index.docbook:294
+msgid "Sending Files"
+msgstr "Надсилання файлів"
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:295
+msgid ""
+"<application>moserial</application> can transmit files in a straight binary "
+"data stream, and it can also send files using the xmodem, ymodem, and zmodem "
+"error correction protocols. During file transmission, the sent data is not "
+"logged to the <guilabel>Sent ASCII</guilabel> or <guilabel>Sent HEX</"
+"guilabel> text areas."
+msgstr ""
+"<application>moserial</application> може передавати файли у форматі простого"
+" двійкового потоку даних, а також може надсилати файли за допомогою"
+" протоколів виправлення помилок xmodem, ymodem і zmodem. Під час перенесення"
+" даних файла надіслані дані не записуватимуться у текстових областях <"
+"guilabel>Надіслано ASCII</guilabel> або <guilabel>Надіслано HEX</guilabel>."
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:305
+msgid ""
+"When you are ready to send a file, simply click <guibutton>Send File</"
+"guibutton>, select the desired file to send. You will also need to select "
+"the appropriate protocol below."
+msgstr ""
+"Коли ви будете готові до надсилання файла, просто натисніть кнопку <guibutton"
+">Надіслати файл</guibutton>, виберіть бажаний файл для надсилання. Вам також"
+" слід нижче вибрати відповідний протокол."
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:313
+msgid ""
+"When recording begins, a progress bar will display the status of the file "
+"transmission."
+msgstr ""
+"Щойно буде розпочато запис, на смужці поступу буде показано стан передавання"
+" файла."
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:320 C/index.docbook:363
+msgid ""
+"moserial does not implement the xmodem, ymodem, or zmodem protocols "
+"directly. It relies on the standard rz and sz utilities to send and receive "
+"data. These utilities, part of the lrzsz package, must be installed on your "
+"system."
+msgstr ""
+"У moserial не реалізовано безпосередньо xmodem, ymodem і zmodem. Для"
+" надсилання і отримання даних програма покладається на стандартні програми rz"
+" і sz. Ці програми є частиною пакунка lrzsz, який має бути встановлено у"
+" вашій системі."
+
+#. (itstool) path: sect1/title
+#: C/index.docbook:329
+msgid "Receiving Files"
+msgstr "Отримання файлів"
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:330
+msgid ""
+"<application>moserial</application> can receive files sent in a straight "
+"binary data stream, and it can also receive files using the xmodem, ymodem, "
+"and zmodem error correction protocols. During file transmission, the "
+"received data is not logged to the <guilabel>Sent ASCII</guilabel> or "
+"<guilabel>Sent HEX</guilabel> text areas."
+msgstr ""
+"<application>moserial</application> може отримувати надіслані файли у форматі"
+" простого двійкового потоку даних, а також може отримувати файли за допомогою"
+" протоколів виправлення помилок xmodem, ymodem і zmodem. Під час перенесення"
+" даних файла отримані дані не записуватимуться у текстових областях <guilabel"
+">Надіслано ASCII</guilabel> або <guilabel>Надіслано HEX</guilabel>."
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:337
+msgid ""
+"To receive straight binary data streams, use the <link linkend=\"recording"
+"\">Record</link> function instead of the <guibutton>Receive File</guibutton> "
+"function."
+msgstr ""
+"Щоб отримати необроблений потік двійкових даних, скористайтеся можливістю <"
+"link linkend=\"recording\">Записати</link> замість можливості <guibutton"
+">Отримати файл</guibutton>."
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:341
+msgid ""
+"To receive files sent with the xmodem, ymodem, or zmodem error correction "
+"protocols, using the <guibutton>Receive File</guibutton> function."
+msgstr ""
+"Щоб отримати файли з використанням протоколів виправлення помилок xmodem,"
+" ymodem і zmodem, скористайтеся функціональною можливістю <guibutton>Отримати"
+" файл</guibutton>."
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:348
+msgid ""
+"When you are ready to receive a file, simply click <guibutton>Receive File</"
+"guibutton>, select a folder to store the received file. You will also need "
+"to select the appropriate protocol below."
+msgstr ""
+"Коли ви будете готові до отримання файла, просто натисніть кнопку <guibutton"
+">Отримати файл</guibutton> і виберіть теку для зберігання отриманого файла."
+" Вам також слід нижче вибрати відповідний протокол."
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:356
+msgid ""
+"When recording begins, a progress bar will display the status of the file "
+"reception."
+msgstr ""
+"Щойно буде розпочато запис, на смужці поступу буде показано стан отримання"
+" файла."
+
+#. (itstool) path: sect1/title
+#: C/index.docbook:372
+msgid "Other Preferences"
+msgstr "Інші налаштування"
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:373
+msgid ""
+"<application>moserial</application> has several options that can be "
+"configured from the <guilabel>Preferences</guilabel> dialog."
+msgstr ""
+"У <application>moserial</application> передбачено декілька параметрів,"
+" налаштувати які можна за допомогою діалогового вікна <guilabel>Параметри<"
+"/guilabel>."
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:380
+msgid ""
+"The color of the text area foreground, background, and highlighting can be "
+"configured, as can the font type and size."
+msgstr ""
+"Можна налаштувати кольори тексту, тла та підсвічування, а також гарнітуру і"
+" розмір шрифту."
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:384
+msgid ""
+"If <guilabel>Launch recorded files</guilabel> is enabled, a recorded file "
+"will be opened immediately after it is saved, using the default application "
+"for the file type. The default application is defined by the desktop "
+"environment."
+msgstr ""
+"Якщо позначено пункт <guilabel>Запустити записані файли</guilabel>, записаний"
+" файл буде відкрито негайно після "
+"збереження за допомогою програми, яку пов'язано із цим типом файлів. Типова "
+"програма визначається стільничним середовищем."
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:389
+msgid ""
+"If <guilabel>Enable timeout</guilabel> is enabled, recording will be "
+"automatically stopped after an adjustable period of inactivity after "
+"receiving some data. That is, moserial will wait indefinitely to record the "
+"first data byte before activating the inactivity timer."
+msgstr ""
+"Якщо позначено пункт <guilabel>Увімкнути час очікування</guilabel>,"
+" записування буде автоматично зупинено після "
+"вказаного періоду неактивності з моменту останнього отримання якихось даних. "
+"Moserial очікуватиме протягом необмеженого періоду часу на запис першого "
+"байта даних, перш ніж активувати таймер бездіяльності."
+
+#. (itstool) path: sect1/title
+#: C/index.docbook:398
+msgid "Using Profiles"
+msgstr "Користування профілями"
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:399
+msgid ""
+"<application>moserial</application> can load and save its settings from "
+"profile files, so that you can store and recall commonly used "
+"configurations. To save a profile, simply use the "
+"<menuchoice><guisubmenu>File</guisubmenu><guimenuitem>Save</guimenuitem></"
+"menuchoice> or <menuchoice><guisubmenu>File</guisubmenu><guimenuitem>Save "
+"As</guimenuitem></menuchoice> dialogs. To load a profile, use the "
+"<menuchoice><guisubmenu>File</guisubmenu><guimenuitem>Open</guimenuitem></"
+"menuchoice> dialog."
+msgstr ""
+"<application>moserial</application> може завантажувати параметри програми з"
+" файла профілю або зберігати ці параметри до файла профілю. Таким чином, ви"
+" можете зберігати і відновлювати бажані для вас налаштування. Щоб зберегти"
+" профіль, скористайтеся пунктом меню <menuchoice><guisubmenu>Файл</guisubmenu"
+"><guimenuitem>Зберегти</guimenuitem></menuchoice> або <menuchoice><guisubmenu"
+">Файл</guisubmenu><guimenuitem>Зберегти як</guimenuitem></menuchoice>. Щоб"
+" завантажити профіль, скористайтеся пунктом меню <menuchoice><guisubmenu"
+">Файл</guisubmenu><guimenuitem>Відкрити</guimenuitem></menuchoice>."
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:408
+msgid "Loading a profile will automatically disconnect any connected port."
+msgstr ""
+"У результаті завантаження профілю буде автоматично від'єднано усі з'єднані"
+" порти."
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:411
+msgid ""
+"When you quit <application>moserial</application>, the settings currently in "
+"use are stored in a default profile file. These settings will automatically "
+"be recalled the next time you launch <application>moserial</application>."
+msgstr ""
+"При виході з <application>moserial</application> поточні використані значення"
+" параметрів буде записано до файла типового профілю. Ці значення буде"
+" автоматично завантажено під час наступного запуску <application>moserial<"
+"/application>."
+
+#. (itstool) path: sect1/title
+#. (itstool) path: table/title
+#: C/index.docbook:419 C/index.docbook:422
+msgid "Special Keys"
+msgstr "Спеціалізовані комбінації клавіш"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:429
+msgid "Keyboard Shortcut"
+msgstr "Клавіатурне скорочення"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:431
+msgid "Description"
+msgstr "Опис"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:437
+msgid "<keycombo><keycap>Ctrl</keycap><keycap>C</keycap></keycombo>"
+msgstr "<keycombo><keycap>Ctrl</keycap><keycap>C</keycap></keycombo>"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:442
+msgid "Copies text. This can be used in any of the text areas."
+msgstr "Копіює текст. Цим можна скористатися на будь-яких текстових панелях."
+
+#. (itstool) path: entry/para
+#: C/index.docbook:447
+msgid "<keycombo><keycap>Ctrl</keycap><keycap>X</keycap></keycombo>"
+msgstr "<keycombo><keycap>Ctrl</keycap><keycap>X</keycap></keycombo>"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:452
+msgid ""
+"Cuts text. This only works in the <guilabel>Outgoing</guilabel> single-line "
+"text box."
+msgstr ""
+"Вирізає текст. Ця комбінацію працює лише у однорядковому текстовому полі <"
+"guilabel>Вихідні</guilabel>."
+
+#. (itstool) path: entry/para
+#: C/index.docbook:457
+msgid "<keycombo><keycap>Ctrl</keycap><keycap>V</keycap></keycombo>"
+msgstr "<keycombo><keycap>Ctrl</keycap><keycap>V</keycap></keycombo>"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:462
+msgid ""
+"Pastes text into the <guilabel>Outgoing</guilabel> single-line text box, and "
+"moves the focus to that text box."
+msgstr ""
+"Вставляє текст до однорядкового текстового поля <guilabel>Вихідні</guilabel>"
+" і пересуває фокус на це текстове поле."
+
+#. (itstool) path: entry/para
+#: C/index.docbook:470
+msgid "<keycap>Esc</keycap>"
+msgstr "<keycap>Esc</keycap>"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:475
+msgid ""
+"Moves the focus to the <guilabel>Outgoing</guilabel> single-line text box."
+msgstr ""
+"Пересуває фокус на однорядкове текстове поле <guilabel>Вихідні</guilabel>."
