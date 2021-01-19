@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: moserial master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/moserial/issues\n"
-"POT-Creation-Date: 2021-01-18 15:11+0000\n"
-"PO-Revision-Date: 2021-01-18 20:41+0200\n"
+"POT-Creation-Date: 2021-01-18 18:57+0000\n"
+"PO-Revision-Date: 2021-01-19 09:17+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -24,12 +24,10 @@ msgid "moserial"
 msgstr "moserial"
 
 #: ../data/ui/mainwindow.ui.h:2
-#| msgid "_File"
 msgid "File"
 msgstr "Файл"
 
 #: ../data/ui/mainwindow.ui.h:3
-#| msgid "Port Settings"
 msgid "Open Settings"
 msgstr "Відкрити налаштування"
 
@@ -38,12 +36,10 @@ msgid "Open _Recent"
 msgstr "Відкрити н_едавні"
 
 #: ../data/ui/mainwindow.ui.h:5
-#| msgid "Port Settings"
 msgid "Save Settings"
 msgstr "Зберегти параметри"
 
 #: ../data/ui/mainwindow.ui.h:6
-#| msgid "Port Settings"
 msgid "Save Settings As"
 msgstr "Зберегти параметри як"
 
@@ -52,7 +48,6 @@ msgid "Quit"
 msgstr "Вийти"
 
 #: ../data/ui/mainwindow.ui.h:8
-#| msgid "_Edit"
 msgid "Edit"
 msgstr "Зміни"
 
@@ -178,13 +173,11 @@ msgstr "Припинити запис"
 
 #: ../data/ui/preferences.ui.h:2 ../data/ui/receive_progress.ui.h:2
 #: ../data/ui/send_progress_dialog.ui.h:2 ../data/ui/settings_dialog.ui.h:2
-#| msgid "canceled"
 msgid "Cancel"
 msgstr "Скасувати"
 
 #: ../data/ui/preferences.ui.h:3 ../data/ui/settings_dialog.ui.h:3
 #: ../data/ui/xmodem_filename_dialog.ui.h:1
-#| msgid "O"
 msgid "OK"
 msgstr "Гаразд"
 
@@ -193,7 +186,6 @@ msgid "Font"
 msgstr "Шрифт"
 
 #: ../data/ui/preferences.ui.h:5
-#| msgid "_Use the system fixed width font"
 msgid "Use the system fixed width font"
 msgstr "Використовувати системний моноширинний шрифт"
 
@@ -218,7 +210,6 @@ msgid "Recording"
 msgstr "Запис"
 
 #: ../data/ui/preferences.ui.h:11
-#| msgid "_Launch recorded files"
 msgid "Launch recorded files"
 msgstr "Запустити записані файли"
 
@@ -229,6 +220,22 @@ msgstr "Час очікування"
 #: ../data/ui/preferences.ui.h:13
 msgid "seconds"
 msgstr "секунд"
+
+#: ../data/ui/preferences.ui.h:14
+msgid "Use automatic timestamped filename"
+msgstr "Назва файла із автоматичною часовою позначкою"
+
+#: ../data/ui/preferences.ui.h:15
+msgid "In this folder"
+msgstr "У цій теці"
+
+#: ../data/ui/preferences.ui.h:16
+msgid "With this extension"
+msgstr "З цим суфіксом назви"
+
+#: ../data/ui/preferences.ui.h:17
+msgid "Direction"
+msgstr "Напрямок"
 
 #: ../data/ui/receive_chooser.ui.h:1
 msgid "Select Folder for Received Files"
@@ -459,29 +466,27 @@ msgid "Shows and toggles the RTS output (Request To Send)"
 msgstr "Показує і перемикає вихід RTS (запит щодо надсилання)"
 
 #: ../src/MainWindow.vala:354
-#| msgid "Clear incoming text box."
 msgid "Clear incoming text box"
 msgstr "Спорожнити поле вхідного тексту"
 
 #: ../src/MainWindow.vala:359
-#| msgid "Clear outgoing text box."
 msgid "Clear outgoing text box"
 msgstr "Спорожнити поле вихідного тексту"
 
-#: ../src/MainWindow.vala:680 ../src/Profile.vala:160 ../src/Profile.vala:195
+#: ../src/MainWindow.vala:712 ../src/Profile.vala:160 ../src/Profile.vala:195
 msgid "Error: Could not open file"
 msgstr "Помилка: не вдалося відкрити файл"
 
-#: ../src/MainWindow.vala:819
+#: ../src/MainWindow.vala:851
 msgid "Error: Could not open device"
 msgstr "Помилка: не вдалося відкрити пристрій"
 
-#: ../src/MainWindow.vala:979
+#: ../src/MainWindow.vala:1011
 #, c-format
 msgid "Unable to display help file: %s"
 msgstr "Не вдалося показати файл довідки: %s"
 
-#: ../src/MainWindow.vala:991
+#: ../src/MainWindow.vala:1023
 msgid ""
 "A serial terminal for the GNOME desktop, optimized for logging and file "
 "capture."
@@ -489,7 +494,7 @@ msgstr ""
 "Послідовний термінал для стільниці GNOME. Оптимізовано для запису журналу та "
 "захоплення файлів."
 
-#: ../src/MainWindow.vala:1050
+#: ../src/MainWindow.vala:1082
 msgid ""
 "You have changed your setting or preferences. Do you want to save these "
 "changes to the loaded profile?"
@@ -497,7 +502,7 @@ msgstr ""
 "Вами внесено зміни до параметра або налаштувань. Хочете зберегти ці зміни до "
 "завантаженого профілю?"
 
-#: ../src/PreferencesDialog.vala:51
+#: ../src/PreferencesDialog.vala:56
 msgid ""
 "If this option is enabled, a recorded file will be opened immediately after "
 "it is saved, using the default application for the file type. The default "
@@ -507,7 +512,7 @@ msgstr ""
 "збереження за допомогою програми, яку пов'язано із цим типом файлів. Типова "
 "програма визначається стільничним середовищем."
 
-#: ../src/PreferencesDialog.vala:54
+#: ../src/PreferencesDialog.vala:59
 msgid ""
 "If this option is enabled, recording will be automatically stopped after an "
 "adjustable period of inactivity after receiving some data. Moserial will "
@@ -519,7 +524,7 @@ msgstr ""
 "Moserial очікуватиме протягом необмеженого періоду часу на запис першого "
 "байта даних, перш ніж активувати таймер бездіяльності."
 
-#: ../src/Preferences.vala:68
+#: ../src/Preferences.vala:86
 msgid "Unable to retrieve system font setting"
 msgstr "Не вдалося отримати параметр шрифту системи"
 
