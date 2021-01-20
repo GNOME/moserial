@@ -1,9 +1,17 @@
 Version 3.0.13
 --------------
 
+	* many code clean-ups, deprecated code removal
+	* many translation updates. Thank you translators!
+
+	Thanks to Simeon Felis <simeonfelis@gmail.com>:
 	* Added detection of detached serial devices
 	* Added automatic file name option for recording
-	* Save and restore outgoing input string from profile.
+
+	Thanks to Danny <danny@35g.tw> and Michael Wolf <michael.wolf@mictronics.de>:
+	* Add indication and control of serial port signals
+
+	Thanks to Michael Wolf <michael.wolf@mictronics.de>:
 	* Save and restore input line ending from profile
 	* Save and restore input mode from profile
 	* Save and restore selected notebook tabs from profile
@@ -13,8 +21,6 @@ Version 3.0.13
 	* Fix outgoing input field and send button are sensitive while port is readonly
 	* Add ttyAMA filter for example on Raspberry Pi	
 	* Fix GtkDialog mapped without a transient parent
-	* Add language zh_TW
-	* Add indication and control of serial port signals
 	* Fix deprecated objects for use with GTK v3.2.0
 	* Require modern version of Vala compiler and GTK3
 
