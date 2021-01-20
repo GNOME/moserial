@@ -21,4 +21,4 @@ HELP_MEDIA = figures/main-toolbar.png \
 		figures/receive-progress.png \
 		figures/receive-file-dialog.png \
 		figures/preferences.png
-HELP_LINGUAS = cs de el es fr pl sl sv
+HELP_LINGUAS = cs de el es fr pl sl sv uk
