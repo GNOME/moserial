@@ -21,6 +21,8 @@ using Gtk;
 
 public class Profile : GLib.Object
 {
+    public bool profileChanged = false;
+
     public KeyFile keyFile;
     construct {
         keyFile = new KeyFile ();

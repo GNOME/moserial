@@ -91,7 +91,6 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
     private Profile profile;
     public string ? startupProfileFilename { get; construct; }
     private string profileFilename = null;
-    private bool profileChanged = false;
     private Gtk.MenuItem cutMenuItem;
     private Gtk.MenuItem copyMenuItem;
     private Adjustment va1;
@@ -364,7 +363,6 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         // load and apply preferences
         currentPreferences = Preferences.loadFromProfile (profile);
         updatePreferences (null, currentPreferences);
-        profileChanged = false;
         if (!(startupProfileFilename == null))
             loadProfileOnStartup (startupProfileFilename);
 
@@ -434,7 +432,7 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
             statusbar.pop (statusbarContext);
             statusbar.push (statusbarContext, currentSettings.getStatusbarString (false));
             setWindowTitle (null);
-            profileChanged = false;
+            profile.profileChanged = false;
             RecentManager recentManager = RecentManager.get_default ();
             try {
                 recentManager.add_full (GLib.Filename.to_uri (filename), recentData);
@@ -733,7 +731,7 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         statusbar.pop (statusbarContext);
         statusbar.push (statusbarContext, currentSettings.getStatusbarString (false));
         updateOutgoingInputArea ();
-        profileChanged = true;
+        profile.profileChanged = true;
     }
 
     private void updateOutgoingInputArea ()
@@ -818,7 +816,7 @@ font-weight:
         echoTag.foreground = currentPreferences.highlightColor;
         incomingHexTextBuffer.applyPreferences (currentPreferences);
         outgoingHexTextBuffer.applyPreferences (currentPreferences);
-        profileChanged = true;
+        profile.profileChanged = true;
     }
 
     private void showSettingsDialog (GLib.Object o)
@@ -1097,7 +1095,7 @@ font-weight:
         currentSettings.saveToProfile (profile);
         currentPaths.saveToProfile (profile);
         if (profileFilename != null) {
-            if (profileChanged) {
+            if (profile.profileChanged) {
                 var dialog = new MessageDialog (gtkWindow, DialogFlags.DESTROY_WITH_PARENT, MessageType.QUESTION, ButtonsType.YES_NO, "%s", _("You have changed your setting or preferences. Do you want to save these changes to the loaded profile?"));
                 int response = dialog.run ();
                 if (response == Gtk.ResponseType.YES)
@@ -1123,7 +1121,7 @@ font-weight:
         if (profileFilename == null)
             return;
         profile.save (profileFilename, gtkWindow);
-        profileChanged = false;
+        profile.profileChanged = false;
         RecentManager recentManager = RecentManager.get_default ();
         try {
             recentManager.add_full (GLib.Filename.to_uri (profileFilename), recentData);
