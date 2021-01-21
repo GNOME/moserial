@@ -285,7 +285,6 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         sendButton.clicked.connect (sendString);
         sendButton.set_tooltip_text (_("Send the outgoing data now."));
         entry = (Gtk.Entry)builder.get_object ("entry");
-//      entry.set_text (profile.getInputString ());
         entry.activate.connect (sendString);
         entry.set_tooltip_text (_("Type outgoing data here. Press Enter or Send to send it."));
 
@@ -364,7 +363,7 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         currentPreferences = Preferences.loadFromProfile (profile);
         updatePreferences (null, currentPreferences);
         if (!(startupProfileFilename == null))
-            loadProfileOnStartup (startupProfileFilename);
+            applyProfile (startupProfileFilename);
 
         currentPaths = DefaultPaths.loadFromProfile (profile);
     }
@@ -490,7 +489,6 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
     {
         string s;
         s = entry.get_text ();
-//      profile.setInputString (s);
         if (!ensureConnected ()) {
             return;
         }
@@ -1096,7 +1094,7 @@ font-weight:
         currentPaths.saveToProfile (profile);
         if (profileFilename != null) {
             if (profile.profileChanged) {
-                var dialog = new MessageDialog (gtkWindow, DialogFlags.DESTROY_WITH_PARENT, MessageType.QUESTION, ButtonsType.YES_NO, "%s", _("You have changed your setting or preferences. Do you want to save these changes to the loaded profile?"));
+                var dialog = new MessageDialog (gtkWindow, DialogFlags.DESTROY_WITH_PARENT, MessageType.QUESTION, ButtonsType.YES_NO, "%s", _("Save modified settings to the loaded profile?"));
                 int response = dialog.run ();
                 if (response == Gtk.ResponseType.YES)
                     saveProfile ();
@@ -1143,11 +1141,6 @@ font-weight:
         dialog.destroy ();
         if (response == Gtk.ResponseType.ACCEPT)
             saveProfile ();
-    }
-
-    private void loadProfileOnStartup (string profileFilename)
-    {
-        applyProfile (profileFilename);
     }
 
     private void loadProfile ()

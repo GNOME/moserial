@@ -75,10 +75,12 @@ public class Profile : GLib.Object
         }
 
         if (tab != 0) {
-            keyFile.set_integer ("window", n, 1);
+            keyFile.set_integer ("main_ui_controls", n, 1);
         } else {
-            keyFile.set_integer ("window", n, 0);
+            keyFile.set_integer ("main_ui_controls", n, 0);
         }
+
+        profileChanged = true;
     }
 
     public int getNotebookTab (bool outgoing)
@@ -89,7 +91,7 @@ public class Profile : GLib.Object
         }
 
         try {
-            if (keyFile.get_integer ("window", n) != 0) {
+            if (keyFile.get_integer ("main_ui_controls", n) != 0) {
                 return 1;
             }
             return 0;
@@ -100,13 +102,14 @@ public class Profile : GLib.Object
 
     public void setInputModeHex (bool hex)
     {
-        keyFile.set_boolean ("window", "input_mode_hex", hex);
+        keyFile.set_boolean ("main_ui_controls", "input_mode_hex", hex);
+        profileChanged = true;
     }
 
     public bool getInputModeHex ()
     {
         try {
-            return keyFile.get_boolean ("window", "input_mode_hex");
+            return keyFile.get_boolean ("main_ui_controls", "input_mode_hex");
         } catch (GLib.KeyFileError e) {
             return false;
         }
@@ -114,29 +117,16 @@ public class Profile : GLib.Object
 
     public void setInputLineEnd (int end)
     {
-        keyFile.set_integer ("window", "input_line_end", end);
+        keyFile.set_integer ("main_ui_controls", "input_line_end", end);
+        profileChanged = true;
     }
 
     public int getInputLineEnd ()
     {
         try {
-            return keyFile.get_integer ("window", "input_line_end");
+            return keyFile.get_integer ("main_ui_controls", "input_line_end");
         } catch (GLib.KeyFileError e) {
             return 0;
-        }
-    }
-
-    public void setInputString (string s)
-    {
-        keyFile.set_string ("window", "input_string", s);
-    }
-
-    public string getInputString ()
-    {
-        try {
-            return keyFile.get_string ("window", "input_string");
-        } catch (GLib.KeyFileError e) {
-            return "";
         }
     }
 
