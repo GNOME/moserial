@@ -129,7 +129,7 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         profile.load (null, gtkWindow);
         currentSettings = Settings.loadFromProfile (profile);
         int width = profile.getInteger("window", "width", -1);
-        int height = profile.getInteger("window", "height", -1);;
+        int height = profile.getInteger("window", "height", -1);
         int panedPosition = profile.getInteger("window", "paned_pos", -1);
         if ((width > 0) && (height > 0))
         {
@@ -370,12 +370,12 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
 
     private void onIncomingNotebookSwitchPage (Widget page, uint page_num)
     {
-        profile.setNotebookTab (false, page_num);
+        profile.setInteger ("main_ui_controls", "incoming_tab", (int) page_num);
     }
 
     private void onOutgoingNotebookSwitchPage (Widget page, uint page_num)
     {
-        profile.setNotebookTab (true, page_num);
+        profile.setInteger ("main_ui_controls", "outgoing_tab", (int) page_num);
     }
 
     private void toggleRTS (ToggleButton button)
@@ -970,7 +970,7 @@ font-weight:
                 if ((sc.rx > 32) && (sc.nonprintable > 0) && (sc.rx / sc.nonprintable < 4) && !sc.forced_hex_view) {
                     sc.forced_hex_view = true;
                     incoming_notebook.set_current_page (1);
-                    profile.setNotebookTab (false, 1);
+                    profile.setInteger ("main_ui_controls", "incoming_tab", 1);
                 }
 
                 if (currentPreferences.enableTimeout && recordButton.get_active ()) {
@@ -992,18 +992,18 @@ font-weight:
     {
         if (inputModeCombo.get_active () == inputModeValues.HEX) {
             outgoing_notebook.set_current_page (1);
-            profile.setNotebookTab (true, 1);
-            profile.setInputModeHex (true);
+            profile.setInteger ("main_ui_controls", "outgoing_tab", 1);
+            profile.setBoolean ("main_ui_controls", "input_mode_hex", true);
         } else {
             outgoing_notebook.set_current_page (0);
-            profile.setNotebookTab (true, 0);
-            profile.setInputModeHex (false);
+            profile.setInteger ("main_ui_controls", "outgoing_tab", 0);
+            profile.setBoolean ("main_ui_controls", "input_mode_hex", false);
         }
     }
 
     private void lineEndChanged (ComboBox lineEndCombo)
     {
-        profile.setInputLineEnd (lineEndCombo.get_active ());
+        profile.setInteger ("main_ui_controls", "input_line_end", lineEndCombo.get_active ());
     }
 
     private void showHelpButton (ToolButton button)
@@ -1081,8 +1081,9 @@ font-weight:
 
         int pos = paned.get_position ();
         gtkWindow.get_size (out width, out height);
-        profile.saveWindowSize (width, height);
-        profile.saveWindowPanedPosition (pos);
+        profile.setInteger ("window", "width", width);
+        profile.setInteger ("window", "height", height);
+        profile.setInteger ("window", "paned_pos", pos);
     }
 
     private void quitSave ()

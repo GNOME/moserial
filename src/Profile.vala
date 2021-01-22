@@ -88,43 +88,6 @@ public class Profile : GLib.Object
         }
     }
 
-    public void saveWindowSize (int w, int h)
-    {
-        if (w > 0)
-            setInteger ("window", "width", w);
-        if (h > 0)
-            setInteger ("window", "height", h);
-    }
-
-    public void saveWindowPanedPosition (int pos)
-    {
-        setInteger ("window", "paned_pos", pos);
-    }
-
-    public void setNotebookTab (bool outgoing, uint tab)
-    {
-        string n = "incoming_tab";
-        if (outgoing) {
-            n = "outgoing_tab";
-        }
-
-        if (tab != 0) {
-            setInteger ("main_ui_controls", n, 1);
-        } else {
-            setInteger ("main_ui_controls", n, 0);
-        }
-    }
-
-    public void setInputModeHex (bool hex)
-    {
-        setBoolean ("main_ui_controls", "input_mode_hex", hex);
-    }
-
-    public void setInputLineEnd (int end)
-    {
-        setInteger ("main_ui_controls", "input_line_end", end);
-    }
-
     public bool load (string ? filename, Gtk.Window window)
     {
         string f;
