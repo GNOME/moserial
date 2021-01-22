@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: moserial master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/moserial/issues\n"
-"POT-Creation-Date: 2021-01-18 18:57+0000\n"
-"PO-Revision-Date: 2021-01-19 09:17+0200\n"
+"POT-Creation-Date: 2021-01-21 20:52+0000\n"
+"PO-Revision-Date: 2021-01-22 08:32+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -414,79 +414,78 @@ msgstr "ASCII"
 msgid "HEX"
 msgstr "HEX"
 
-#: ../src/MainWindow.vala:174
+#: ../src/MainWindow.vala:173
 msgid "Port configuration"
 msgstr "Налаштування порту"
 
-#: ../src/MainWindow.vala:179
+#: ../src/MainWindow.vala:178
 msgid "Read the manual"
 msgstr "Прочитати підручник"
 
-#: ../src/MainWindow.vala:189
+#: ../src/MainWindow.vala:188
 msgid "TX: 0, RX: 0"
 msgstr "TX: 0, RX: 0"
 
-#: ../src/MainWindow.vala:200
+#: ../src/MainWindow.vala:199
 msgid "Send a file"
 msgstr "Надіслати файл"
 
-#: ../src/MainWindow.vala:209
+#: ../src/MainWindow.vala:208
 msgid "Receive a file"
 msgstr "Отримати файл"
 
-#: ../src/MainWindow.vala:219
+#: ../src/MainWindow.vala:218
 msgid "Record sent and/or received data"
 msgstr "Записувати надіслані і/або отримані дані"
 
-#: ../src/MainWindow.vala:230
+#: ../src/MainWindow.vala:229
 msgid "Other preferences"
 msgstr "Інші налаштування"
 
-#: ../src/MainWindow.vala:235
+#: ../src/MainWindow.vala:234
 msgid "Open/close port"
 msgstr "Відкрити/закрити порт"
 
-#: ../src/MainWindow.vala:287
+#: ../src/MainWindow.vala:286
 msgid "Send the outgoing data now."
 msgstr "Надіслати вихідні дані зараз."
 
-#. entry.set_text (profile.getInputString ());
-#: ../src/MainWindow.vala:291
+#: ../src/MainWindow.vala:289
 msgid "Type outgoing data here. Press Enter or Send to send it."
 msgstr ""
 "Тут можна ввести вихідні дані. Натисніть Enter або «Надіслати», щоб їх "
 "надіслати."
 
-#: ../src/MainWindow.vala:344
+#: ../src/MainWindow.vala:342
 msgid "Shows and toggles the DTR output (Data Terminal Ready)"
 msgstr "Показує і перемикає вихід DTR (готовність термінала даних)"
 
-#: ../src/MainWindow.vala:349
+#: ../src/MainWindow.vala:347
 msgid "Shows and toggles the RTS output (Request To Send)"
 msgstr "Показує і перемикає вихід RTS (запит щодо надсилання)"
 
-#: ../src/MainWindow.vala:354
+#: ../src/MainWindow.vala:352
 msgid "Clear incoming text box"
 msgstr "Спорожнити поле вхідного тексту"
 
-#: ../src/MainWindow.vala:359
+#: ../src/MainWindow.vala:357
 msgid "Clear outgoing text box"
 msgstr "Спорожнити поле вихідного тексту"
 
-#: ../src/MainWindow.vala:712 ../src/Profile.vala:160 ../src/Profile.vala:195
+#: ../src/MainWindow.vala:708 ../src/Profile.vala:152 ../src/Profile.vala:187
 msgid "Error: Could not open file"
 msgstr "Помилка: не вдалося відкрити файл"
 
-#: ../src/MainWindow.vala:851
+#: ../src/MainWindow.vala:847
 msgid "Error: Could not open device"
 msgstr "Помилка: не вдалося відкрити пристрій"
 
-#: ../src/MainWindow.vala:1011
+#: ../src/MainWindow.vala:1026
 #, c-format
 msgid "Unable to display help file: %s"
 msgstr "Не вдалося показати файл довідки: %s"
 
-#: ../src/MainWindow.vala:1023
+#: ../src/MainWindow.vala:1038
 msgid ""
 "A serial terminal for the GNOME desktop, optimized for logging and file "
 "capture."
@@ -494,13 +493,9 @@ msgstr ""
 "Послідовний термінал для стільниці GNOME. Оптимізовано для запису журналу та "
 "захоплення файлів."
 
-#: ../src/MainWindow.vala:1082
-msgid ""
-"You have changed your setting or preferences. Do you want to save these "
-"changes to the loaded profile?"
-msgstr ""
-"Вами внесено зміни до параметра або налаштувань. Хочете зберегти ці зміни до "
-"завантаженого профілю?"
+#: ../src/MainWindow.vala:1097
+msgid "Save modified settings to the loaded profile?"
+msgstr "Зберегти змінені параметри до завантаженого профілю?"
 
 #: ../src/PreferencesDialog.vala:56
 msgid ""
@@ -544,36 +539,36 @@ msgstr "Z-модем"
 msgid "Waiting for remote host"
 msgstr "Очікуємо на віддалений вузол"
 
-#: ../src/SerialConnection.vala:43
+#: ../src/SerialConnection.vala:44
 msgid "CR+LF end"
 msgstr "Завершення CR+LF"
 
-#: ../src/SerialConnection.vala:44
+#: ../src/SerialConnection.vala:45
 msgid "CR end"
 msgstr "Завершення CR"
 
-#: ../src/SerialConnection.vala:45
+#: ../src/SerialConnection.vala:46
 msgid "LF end"
 msgstr "Завершення LF"
 
-#: ../src/SerialConnection.vala:46
+#: ../src/SerialConnection.vala:47
 msgid "TAB end"
 msgstr "Завершення TAB"
 
-#: ../src/SerialConnection.vala:47
+#: ../src/SerialConnection.vala:48
 msgid "ESC end"
 msgstr "Завершення ESC"
 
-#: ../src/SerialConnection.vala:48
+#: ../src/SerialConnection.vala:49
 msgid "No end"
 msgstr "Без завершення"
 
-#: ../src/SerialConnection.vala:340
+#: ../src/SerialConnection.vala:362
 #, c-format
 msgid "TX: %lu, RX: %lu (%lu unprintable)"
 msgstr "TX: %lu, RX: %lu (непридатних до друку %lu)"
 
-#: ../src/SerialConnection.vala:342
+#: ../src/SerialConnection.vala:364
 #, c-format
 msgid "TX: %lu, RX: %lu"
 msgstr "TX: %lu, RX: %lu"
@@ -681,6 +676,13 @@ msgstr "Немає (простий двійковий)"
 #: ../src/Szwrapper.vala:178
 msgid "canceled"
 msgstr "скасовано"
+
+#~ msgid ""
+#~ "You have changed your setting or preferences. Do you want to save these "
+#~ "changes to the loaded profile?"
+#~ msgstr ""
+#~ "Вами внесено зміни до параметра або налаштувань. Хочете зберегти ці зміни "
+#~ "до завантаженого профілю?"
 
 #~ msgid "_Help"
 #~ msgstr "_Довідка"
