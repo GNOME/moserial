@@ -147,14 +147,14 @@ public class Settings : GLib.Object
         AccessMode accessMode;
         bool localEcho;
 
-        device = MoUtils.getKeyString (profile, "port_settings", "device");
-        baudRate = MoUtils.getKeyInteger (profile, "port_settings", "baud_rate", Settings.DEFAULT_BAUDRATE);
-        dataBits = MoUtils.getKeyInteger (profile, "port_settings", "data_bits", Settings.DEFAULT_DATABITS);
-        stopBits = MoUtils.getKeyInteger (profile, "port_settings", "stop_bits", Settings.DEFAULT_STOPBITS);
-        parity = (Settings.Parity)MoUtils.getKeyInteger (profile, "port_settings", "parity", Settings.DEFAULT_PARITY);
-        handshake = (Settings.Handshake)MoUtils.getKeyInteger (profile, "port_settings", "handshake", Settings.DEFAULT_HANDSHAKE);
-        accessMode = (Settings.AccessMode)MoUtils.getKeyInteger (profile, "port_settings", "access_mode", Settings.DEFAULT_ACCESSMODE);
-        localEcho = MoUtils.getKeyBoolean (profile, "port_settings", "local_echo", Settings.DEFAULT_LOCAL_ECHO);
+        device = profile.getString ("port_settings", "device");
+        baudRate = profile.getInteger ("port_settings", "baud_rate", Settings.DEFAULT_BAUDRATE);
+        dataBits = profile.getInteger ("port_settings", "data_bits", Settings.DEFAULT_DATABITS);
+        stopBits = profile.getInteger ("port_settings", "stop_bits", Settings.DEFAULT_STOPBITS);
+        parity = (Settings.Parity)profile.getInteger ("port_settings", "parity", Settings.DEFAULT_PARITY);
+        handshake = (Settings.Handshake)profile.getInteger ("port_settings", "handshake", Settings.DEFAULT_HANDSHAKE);
+        accessMode = (Settings.AccessMode)profile.getInteger ("port_settings", "access_mode", Settings.DEFAULT_ACCESSMODE);
+        localEcho = profile.getBoolean ("port_settings", "local_echo", Settings.DEFAULT_LOCAL_ECHO);
 
         return new Settings (device, baudRate, dataBits, stopBits, parity, handshake, accessMode, localEcho);
     }

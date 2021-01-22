@@ -154,18 +154,18 @@ public class Preferences : GLib.Object
         string recordAutoExtension;
         string recordAutoFolder;
 
-        useSystemMonospaceFont = MoUtils.getKeyBoolean (profile, "preferences", "use_system_monospace_font", Preferences.DEFAULT_USE_SYSTEM_MONOSPACE_FONT);
-        font = MoUtils.getKeyString (profile, "preferences", "font");
-        fontColor = MoUtils.getKeyString (profile, "preferences", "font_color");
-        backgroundColor = MoUtils.getKeyString (profile, "preferences", "background_color");
-        highlightColor = MoUtils.getKeyString (profile, "preferences", "highlight_color");
-        recordLaunch = MoUtils.getKeyBoolean (profile, "preferences", "record_launch", true);
-        enableTimeout = MoUtils.getKeyBoolean (profile, "preferences", "enable_timeout", false);
-        timeout = MoUtils.getKeyInteger (profile, "preferences", "timeout", 30);
-        recordAutoName = MoUtils.getKeyBoolean(profile, "preferences", "record_auto_name", false);
-        recordAutoDirection = MoUtils.getKeyInteger(profile, "preferences", "record_auto_direction", 0);
-        recordAutoExtension = MoUtils.getKeyString(profile, "preferences", "record_auto_extension");
-        recordAutoFolder = MoUtils.getKeyString(profile, "preferences", "record_auto_folder");
+        useSystemMonospaceFont = profile.getBoolean ("preferences", "use_system_monospace_font", Preferences.DEFAULT_USE_SYSTEM_MONOSPACE_FONT);
+        font = profile.getString ("preferences", "font");
+        fontColor = profile.getString ("preferences", "font_color");
+        backgroundColor = profile.getString ("preferences", "background_color");
+        highlightColor = profile.getString ("preferences", "highlight_color");
+        recordLaunch = profile.getBoolean ("preferences", "record_launch", true);
+        enableTimeout = profile.getBoolean ("preferences", "enable_timeout", false);
+        timeout = profile.getInteger ("preferences", "timeout", 30);
+        recordAutoName = profile.getBoolean("preferences", "record_auto_name", false);
+        recordAutoDirection = profile.getInteger("preferences", "record_auto_direction", 0);
+        recordAutoExtension = profile.getString("preferences", "record_auto_extension");
+        recordAutoFolder = profile.getString("preferences", "record_auto_folder");
         return new Preferences (useSystemMonospaceFont, font, fontColor,
                                 backgroundColor, highlightColor, recordLaunch,
                                 enableTimeout, timeout, recordAutoName,

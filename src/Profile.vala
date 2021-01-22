@@ -27,6 +27,40 @@ public class Profile : GLib.Object
     construct {
         keyFile = new KeyFile ();
     }
+
+    public string ? getString (string group, string key)
+    {
+        string ? result = null;
+        try {
+            result = keyFile.get_string (group, key);
+        } catch (GLib.KeyFileError e) {
+            stdout.printf ("%s\n", e.message);
+        }
+        return result;
+    }
+
+    public int getInteger (string group, string key, int default_val)
+    {
+        int result = default_val;
+        try {
+            result = keyFile.get_integer (group, key);
+        } catch (GLib.KeyFileError e) {
+            stdout.printf ("%s\n", e.message);
+        }
+        return result;
+    }
+
+    public bool getBoolean (string group, string key, bool default_val)
+    {
+        bool result = default_val;
+        try {
+            result = keyFile.get_boolean (group, key);
+        } catch (GLib.KeyFileError e) {
+            stdout.printf ("%s\n", e.message);
+        }
+        return result;
+    }
+
     public void saveWindowSize (int w, int h)
     {
         if (w > 0)

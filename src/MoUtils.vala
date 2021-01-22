@@ -57,39 +57,6 @@ public class MoUtils : GLib.Object
         return parent.get_parse_name ();
     }
 
-    public static string ? getKeyString (Profile profile, string group, string key)
-    {
-        string ? result = null;
-        try {
-            result = profile.keyFile.get_string (group, key);
-        } catch (GLib.KeyFileError e) {
-            stdout.printf ("%s\n", e.message);
-        }
-        return result;
-    }
-
-    public static int getKeyInteger (Profile profile, string group, string key, int default_val)
-    {
-        int result = default_val;
-        try {
-            result = profile.keyFile.get_integer (group, key);
-        } catch (GLib.KeyFileError e) {
-            stdout.printf ("%s\n", e.message);
-        }
-        return result;
-    }
-
-    public static bool getKeyBoolean (Profile profile, string group, string key, bool default_val)
-    {
-        bool result = default_val;
-        try {
-            result = profile.keyFile.get_boolean (group, key);
-        } catch (GLib.KeyFileError e) {
-            stdout.printf ("%s\n", e.message);
-        }
-        return result;
-    }
-
     public static string ? getLastMessage (string ? messages)
     {
         string ? message = null;
