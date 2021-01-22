@@ -135,6 +135,28 @@
               </object>
             </child>
             <child>
+              <object class="GtkMenuItem" id="menuitemview">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">View</property>
+                <property name="use-underline">True</property>
+                <child type="submenu">
+                  <object class="GtkMenu" id="menuview">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <child>
+                      <object class="GtkCheckMenuItem" id="menubar_extracontrols">
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Extra Controls</property>
+                        <property name="use-underline">True</property>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
               <object class="GtkMenuItem" id="menuitem4">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
@@ -330,7 +352,7 @@
                 <property name="baseline-position">top</property>
                 <child>
                   <!-- n-columns=6 n-rows=3 -->
-                  <object class="GtkGrid">
+                  <object class="GtkGrid" id="incoming_signals">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
                     <property name="valign">start</property>
@@ -553,7 +575,7 @@
                 <property name="baseline-position">top</property>
                 <child>
                   <!-- n-columns=4 n-rows=3 -->
-                  <object class="GtkGrid">
+                  <object class="GtkGrid" id="outgoing_signals">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
                     <property name="valign">start</property>

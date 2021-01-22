@@ -102,6 +102,9 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
     private Button outgoingClearButton;
     private ToggleButton dtrButton;
     private ToggleButton rtsButton;
+    private Grid incoming_signals;
+    private Grid outgoing_signals;
+    private CheckMenuItem extraControlsCheck;
 
     private const string recentGroup = "moserial-configs";
     private Gtk.RecentData recentData;
@@ -123,11 +126,20 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         gtkWindow.destroy.connect (quitSave);
         gtkWindow.delete_event.connect (deleteSaveSize);
         gtkWindow.key_press_event.connect (keyPress);
+        gtkWindow.realize.connect (checkExtraVisible);
+
         paned = (Paned) builder.get_object ("vpaned");
 
         // load defaults
         profile = new Profile ();
         profile.load (null, gtkWindow);
+
+        // setup extra controls optional view
+        incoming_signals = (Grid) builder.get_object ("incoming_signals");
+        outgoing_signals = (Grid) builder.get_object ("outgoing_signals");
+
+        extraControlsCheck = (CheckMenuItem) builder.get_object ("menubar_extracontrols");
+        extraControlsCheck.toggled.connect (this.toggleExtraControls);
 
         // setup menu items
         Gtk.MenuItem quit = (Gtk.MenuItem)builder.get_object ("menubar_quit");
@@ -344,6 +356,19 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         profile.setInteger ("main_ui_controls", "outgoing_tab", (int) page_num);
     }
 
+    private void checkExtraVisible (Widget widget)
+    {
+        bool new_state = profile.getBoolean ("main_ui_controls", "show_extra_controls", true);
+        incoming_signals.visible = new_state;
+        outgoing_signals.visible = new_state;
+    }
+
+    private void toggleExtraControls (CheckMenuItem check)
+    {
+        profile.setBoolean ("main_ui_controls", "show_extra_controls", check.get_active ());
+        checkExtraVisible (gtkWindow);
+    }
+
     private void toggleRTS (ToggleButton button)
     {
         // Toogle only when connected
@@ -424,6 +449,10 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         // update status bar
         statusbar.pop (statusbarContext);
         statusbar.push (statusbarContext, currentSettings.getStatusbarString (false));
+
+        // update optional views
+        extraControlsCheck.set_active (profile.getBoolean ("main_ui_controls", "show_extra_controls", true));
+        checkExtraVisible (gtkWindow);
 
         // update window title
         setWindowTitle (null);
