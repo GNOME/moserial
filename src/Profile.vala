@@ -40,33 +40,6 @@ public class Profile : GLib.Object
         keyFile.set_integer ("window", "paned_pos", pos);
     }
 
-    public int getWindowPanedPosition ()
-    {
-        try {
-            return keyFile.get_integer ("window", "paned_pos");
-        } catch (GLib.KeyFileError e) {
-            return -1;
-        }
-    }
-
-    public int getWindowWidth ()
-    {
-        try {
-            return keyFile.get_integer ("window", "width");
-        } catch (GLib.KeyFileError e) {
-            return -1;
-        }
-    }
-
-    public int getWindowHeight ()
-    {
-        try {
-            return keyFile.get_integer ("window", "height");
-        } catch (GLib.KeyFileError e) {
-            return -1;
-        }
-    }
-
     public void setNotebookTab (bool outgoing, uint tab)
     {
         string n = "incoming_tab";
@@ -83,51 +56,16 @@ public class Profile : GLib.Object
         profileChanged = true;
     }
 
-    public int getNotebookTab (bool outgoing)
-    {
-        string n = "incoming_tab";
-        if (outgoing) {
-            n = "outgoing_tab";
-        }
-
-        try {
-            if (keyFile.get_integer ("main_ui_controls", n) != 0) {
-                return 1;
-            }
-            return 0;
-        } catch (GLib.KeyFileError e) {
-            return 0;
-        }
-    }
-
     public void setInputModeHex (bool hex)
     {
         keyFile.set_boolean ("main_ui_controls", "input_mode_hex", hex);
         profileChanged = true;
     }
 
-    public bool getInputModeHex ()
-    {
-        try {
-            return keyFile.get_boolean ("main_ui_controls", "input_mode_hex");
-        } catch (GLib.KeyFileError e) {
-            return false;
-        }
-    }
-
     public void setInputLineEnd (int end)
     {
         keyFile.set_integer ("main_ui_controls", "input_line_end", end);
         profileChanged = true;
-    }
-
-    public int getInputLineEnd ()
-    {
-        try {
-            return keyFile.get_integer ("main_ui_controls", "input_line_end");
-        } catch (GLib.KeyFileError e) {
-            return 0;
-        }
     }
 
     public bool load (string ? filename, Gtk.Window window)

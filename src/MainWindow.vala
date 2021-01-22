@@ -128,9 +128,9 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         profile = new Profile ();
         profile.load (null, gtkWindow);
         currentSettings = Settings.loadFromProfile (profile);
-        int width = profile.getWindowWidth ();
-        int height = profile.getWindowHeight ();
-        int panedPosition = profile.getWindowPanedPosition ();
+        int width = MoUtils.getKeyInteger(profile, "window", "width", -1);
+        int height = MoUtils.getKeyInteger(profile, "window", "height", -1);;
+        int panedPosition = MoUtils.getKeyInteger(profile, "window", "paned_pos", -1);
         if ((width > 0) && (height > 0))
         {
             gtkWindow.resize (width, height);
@@ -241,12 +241,12 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
 
         // setup incoming notebook
         incoming_notebook = (Notebook) builder.get_object ("incoming_notebook");
-        incoming_notebook.set_current_page (profile.getNotebookTab (false));
+        incoming_notebook.set_current_page (MoUtils.getKeyInteger(profile, "main_ui_controls", "incoming_tab", 0));
         incoming_notebook.switch_page.connect (onIncomingNotebookSwitchPage);
 
         // setup outgoing notebook
         outgoing_notebook = (Notebook) builder.get_object ("outgoing_notebook");
-        outgoing_notebook.set_current_page (profile.getNotebookTab (true));
+        outgoing_notebook.set_current_page (MoUtils.getKeyInteger(profile, "main_ui_controls", "outgoing_tab", 0));
         outgoing_notebook.switch_page.connect (onOutgoingNotebookSwitchPage);
 
         // setup textBuffers;
@@ -290,7 +290,7 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
 
         inputModeCombo = (ComboBox) builder.get_object ("input_mode");
         MoUtils.populateComboBox (inputModeCombo, inputModeStrings);
-        if (profile.getInputModeHex ())
+        if (MoUtils.getKeyBoolean(profile, "main_ui_controls", "input_mode_hex", false))
         {
             inputModeCombo.set_active (inputModeValues.HEX);
         } else
@@ -301,7 +301,7 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
 
         lineEndModeCombo = (ComboBox) builder.get_object ("termination_mode");
         MoUtils.populateComboBox (lineEndModeCombo, SerialConnection.LineEndStrings);
-        lineEndModeCombo.set_active (profile.getInputLineEnd ());
+        lineEndModeCombo.set_active (MoUtils.getKeyInteger(profile, "main_ui_controls", "input_line_end", 0));
         lineEndModeCombo.changed.connect (lineEndChanged);
 
         // setup recent chooser

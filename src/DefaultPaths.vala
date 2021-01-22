@@ -57,13 +57,9 @@ public class DefaultPaths : GLib.Object
     public static string ? getPath (Profile profile, string group, string key)
     {
         string ? path = null;
-        try {
-            path = profile.keyFile.get_string (group, key);
-            if (!MoUtils.fileExists (path))
-                return null;
-        } catch (GLib.KeyFileError e) {
-            // stdout.printf("%s\n", e.message);
-        }
+        path = MoUtils.getKeyString (profile, group, key);
+        if ((path==null) || !MoUtils.fileExists (path))
+            return null;
         return path;
     }
 }
