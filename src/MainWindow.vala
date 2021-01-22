@@ -431,7 +431,6 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
             statusbar.pop (statusbarContext);
             statusbar.push (statusbarContext, currentSettings.getStatusbarString (false));
             setWindowTitle (null);
-            profile.profileChanged = false;
             RecentManager recentManager = RecentManager.get_default ();
             try {
                 recentManager.add_full (GLib.Filename.to_uri (filename), recentData);
@@ -1118,7 +1117,6 @@ font-weight:
         if (profileFilename == null)
             return;
         profile.save (profileFilename, gtkWindow);
-        profile.profileChanged = false;
         RecentManager recentManager = RecentManager.get_default ();
         try {
             recentManager.add_full (GLib.Filename.to_uri (profileFilename), recentData);

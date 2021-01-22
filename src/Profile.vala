@@ -21,7 +21,7 @@ using Gtk;
 
 public class Profile : GLib.Object
 {
-    public bool profileChanged = false;
+    public bool profileChanged {get; private set; default = false; }
 
     private KeyFile keyFile;
     construct {
@@ -98,12 +98,15 @@ public class Profile : GLib.Object
             f = "%s/moserial.conf".printf (GLib.Environment.get_user_config_dir ());
         } else
             f = filename;
+
         try {
             keyFile.load_from_file (f, GLib.KeyFileFlags.NONE);
+            profileChanged = false;
             return true;
         } catch (GLib.KeyFileError e) {
             stdout.printf ("%s\n", e.message);
             /* try loading the non-broken parts of the profile - return true */
+            profileChanged = false;
             return true;
         } catch (GLib.FileError e) {
             if (!default_profile) {
@@ -147,5 +150,6 @@ public class Profile : GLib.Object
                 errorDialog.destroy ();
             }
         }
+        profileChanged = false;
     }
 }
