@@ -123,25 +123,11 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         gtkWindow.destroy.connect (quitSave);
         gtkWindow.delete_event.connect (deleteSaveSize);
         gtkWindow.key_press_event.connect (keyPress);
+        paned = (Paned) builder.get_object ("vpaned");
 
         // load defaults
         profile = new Profile ();
         profile.load (null, gtkWindow);
-        currentSettings = Settings.loadFromProfile (profile);
-        int width = profile.getInteger("window", "width", -1);
-        int height = profile.getInteger("window", "height", -1);
-        int panedPosition = profile.getInteger("window", "paned_pos", -1);
-        if ((width > 0) && (height > 0))
-        {
-            gtkWindow.resize (width, height);
-        }
-
-        // setup paned
-        paned = (Paned) builder.get_object ("vpaned");
-        if (panedPosition >= -1)
-            paned.set_position (panedPosition);
-        else
-            paned.set_position (-1);
 
         // setup menu items
         Gtk.MenuItem quit = (Gtk.MenuItem)builder.get_object ("menubar_quit");
@@ -180,7 +166,6 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         // setup the statusbar
         statusbar = (Statusbar) builder.get_object ("statusbar");
         statusbarContext = statusbar.get_context_id ("moserial port status");
-        statusbar.push (statusbarContext, currentSettings.getStatusbarString (false));
 
         // setup the byte count bar
         bytecountbar = (Statusbar) builder.get_object ("bytecountbar");
@@ -209,7 +194,6 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         receiveChooserDialog.startTransfer.connect (this.doReceive);
         xmodemFilenameDialog = new XmodemFilenameDialog (this.gtkWindow);
         rz = new Rzwrapper (Rzwrapper.Protocol.NULL, null, null, null);
-
 
         // setup recording
         recordDialog = new RecordDialog (this.gtkWindow);
@@ -241,12 +225,10 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
 
         // setup incoming notebook
         incoming_notebook = (Notebook) builder.get_object ("incoming_notebook");
-        incoming_notebook.set_current_page (profile.getInteger("main_ui_controls", "incoming_tab", 0));
         incoming_notebook.switch_page.connect (onIncomingNotebookSwitchPage);
 
         // setup outgoing notebook
         outgoing_notebook = (Notebook) builder.get_object ("outgoing_notebook");
-        outgoing_notebook.set_current_page (profile.getInteger("main_ui_controls", "outgoing_tab", 0));
         outgoing_notebook.switch_page.connect (onOutgoingNotebookSwitchPage);
 
         // setup textBuffers;
@@ -290,18 +272,10 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
 
         inputModeCombo = (ComboBox) builder.get_object ("input_mode");
         MoUtils.populateComboBox (inputModeCombo, inputModeStrings);
-        if (profile.getBoolean("main_ui_controls", "input_mode_hex", false))
-        {
-            inputModeCombo.set_active (inputModeValues.HEX);
-        } else
-        {
-            inputModeCombo.set_active (inputModeValues.ASCII);
-        }
         inputModeCombo.changed.connect (inputModeChanged);
 
         lineEndModeCombo = (ComboBox) builder.get_object ("termination_mode");
         MoUtils.populateComboBox (lineEndModeCombo, SerialConnection.LineEndStrings);
-        lineEndModeCombo.set_active (profile.getInteger("main_ui_controls", "input_line_end", 0));
         lineEndModeCombo.changed.connect (lineEndChanged);
 
         // setup recent chooser
@@ -356,16 +330,8 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         outgoingClearButton.clicked.connect (clearOutgoing);
         outgoingClearButton.set_tooltip_text (_("Clear outgoing text box"));
 
-        // take currentSettings into account for outgoing input area
-        updateOutgoingInputArea ();
-
         // load and apply preferences
-        currentPreferences = Preferences.loadFromProfile (profile);
-        updatePreferences (null, currentPreferences);
-        if (!(startupProfileFilename == null))
-            applyProfile (startupProfileFilename);
-
-        currentPaths = DefaultPaths.loadFromProfile (profile);
+        applyProfile (startupProfileFilename);
     }
 
     private void onIncomingNotebookSwitchPage (Widget page, uint page_num)
@@ -418,19 +384,52 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         outgoingAsciiTextBuffer.set_text ("", 0);
     }
 
-    private void applyProfile (string filename)
+    private void applyProfile (string ? filename)
     {
-        if (profile.load (filename, gtkWindow)) {
-            profileFilename = filename;
-            ensureDisconnected ();
-            currentSettings = Settings.loadFromProfile (profile);
-            currentPreferences = Preferences.loadFromProfile (profile);
-            currentPaths = DefaultPaths.loadFromProfile (profile);
-            updateOutgoingInputArea ();
-            updatePreferences (null, currentPreferences);
-            statusbar.pop (statusbarContext);
-            statusbar.push (statusbarContext, currentSettings.getStatusbarString (false));
-            setWindowTitle (null);
+        profile.load (filename, gtkWindow);
+        profileFilename = filename;
+        ensureDisconnected ();
+        currentSettings = Settings.loadFromProfile (profile);
+        currentPreferences = Preferences.loadFromProfile (profile);
+        currentPaths = DefaultPaths.loadFromProfile (profile);
+
+        int width = profile.getInteger("window", "width", -1);
+        int height = profile.getInteger("window", "height", -1);
+        int panedPosition = profile.getInteger("window", "paned_pos", -1);
+        if ((width > 0) && (height > 0)) {
+            gtkWindow.resize (width, height);
+        }
+
+        // setup paned
+        if (panedPosition >= -1) {
+            paned.set_position (panedPosition);
+        } else {
+            paned.set_position (-1);
+        }
+
+        // update misc main UI settigns
+        incoming_notebook.set_current_page (profile.getInteger("main_ui_controls", "incoming_tab", 0));
+        outgoing_notebook.set_current_page (profile.getInteger("main_ui_controls", "outgoing_tab", 0));
+        if (profile.getBoolean("main_ui_controls", "input_mode_hex", false)) {
+            inputModeCombo.set_active (inputModeValues.HEX);
+        } else {
+            inputModeCombo.set_active (inputModeValues.ASCII);
+        }
+        lineEndModeCombo.set_active (profile.getInteger("main_ui_controls", "input_line_end", 0));
+        updateOutgoingInputArea ();
+
+        // update preferences dialog
+        updatePreferences (null, currentPreferences);
+
+        // update status bar
+        statusbar.pop (statusbarContext);
+        statusbar.push (statusbarContext, currentSettings.getStatusbarString (false));
+
+        // update window title
+        setWindowTitle (null);
+
+        // update recents
+        if (filename != null) {
             RecentManager recentManager = RecentManager.get_default ();
             try {
                 recentManager.add_full (GLib.Filename.to_uri (filename), recentData);
@@ -1100,9 +1099,11 @@ font-weight:
             } else {
                 /* Save the profile even if settings or preferences have not
                    changed, to save the default file locations */
+                // update the non-default profile, if it has change
                 saveProfile ();
             }
         }
+        // update the default profile, always
         profile.save (null, gtkWindow);
         Gtk.main_quit ();
     }
