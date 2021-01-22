@@ -34,11 +34,11 @@ public class DefaultPaths : GLib.Object
     public void saveToProfile (Profile profile)
     {
         if (recordTo != null)
-            profile.keyFile.set_string ("paths", "last_record_path", recordTo);
+            profile.setString ("paths", "last_record_path", recordTo);
         if (receiveTo != null)
-            profile.keyFile.set_string ("paths", "last_receive_path", receiveTo);
+            profile.setString ("paths", "last_receive_path", receiveTo);
         if (sendFrom != null)
-            profile.keyFile.set_string ("paths", "last_send_path", sendFrom);
+            profile.setString ("paths", "last_send_path", sendFrom);
     }
 
     public static DefaultPaths loadFromProfile (Profile profile)

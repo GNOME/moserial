@@ -125,18 +125,18 @@ public class Preferences : GLib.Object
 
     public void saveToProfile (Profile profile)
     {
-        profile.keyFile.set_boolean ("preferences", "use_system_monospace_font", useSystemMonospaceFont);
-        profile.keyFile.set_string ("preferences", "font", font);
-        profile.keyFile.set_string ("preferences", "font_color", fontColor);
-        profile.keyFile.set_string ("preferences", "background_color", backgroundColor);
-        profile.keyFile.set_string ("preferences", "highlight_color", highlightColor);
-        profile.keyFile.set_boolean ("preferences", "record_launch", recordLaunch);
-        profile.keyFile.set_boolean ("preferences", "enable_timeout", enableTimeout);
-        profile.keyFile.set_integer ("preferences", "timeout", timeout);
-        profile.keyFile.set_boolean("preferences", "record_auto_name", recordAutoName);
-        profile.keyFile.set_integer("preferences", "record_auto_direction", recordAutoDirection);
-        profile.keyFile.set_string("preferences", "record_auto_extension", recordAutoExtension);
-        profile.keyFile.set_string("preferences", "record_auto_folder", recordAutoFolder);
+        profile.setBoolean ("preferences", "use_system_monospace_font", useSystemMonospaceFont);
+        profile.setString ("preferences", "font", font);
+        profile.setString ("preferences", "font_color", fontColor);
+        profile.setString ("preferences", "background_color", backgroundColor);
+        profile.setString ("preferences", "highlight_color", highlightColor);
+        profile.setBoolean ("preferences", "record_launch", recordLaunch);
+        profile.setBoolean ("preferences", "enable_timeout", enableTimeout);
+        profile.setInteger ("preferences", "timeout", timeout);
+        profile.setBoolean("preferences", "record_auto_name", recordAutoName);
+        profile.setInteger("preferences", "record_auto_direction", recordAutoDirection);
+        profile.setString("preferences", "record_auto_extension", recordAutoExtension);
+        profile.setString("preferences", "record_auto_folder", recordAutoFolder);
     }
 
     public static Preferences loadFromProfile (Profile profile)

@@ -126,14 +126,14 @@ public class Settings : GLib.Object
 
     public void saveToProfile (Profile profile)
     {
-        profile.keyFile.set_string ("port_settings", "device", device);
-        profile.keyFile.set_integer ("port_settings", "baud_rate", baudRate);
-        profile.keyFile.set_integer ("port_settings", "data_bits", dataBits);
-        profile.keyFile.set_integer ("port_settings", "stop_bits", stopBits);
-        profile.keyFile.set_integer ("port_settings", "parity", parity);
-        profile.keyFile.set_integer ("port_settings", "handshake", handshake);
-        profile.keyFile.set_integer ("port_settings", "access_mode", accessMode);
-        profile.keyFile.set_boolean ("port_settings", "local_echo", localEcho);
+        profile.setString ("port_settings", "device", device);
+        profile.setInteger ("port_settings", "baud_rate", baudRate);
+        profile.setInteger ("port_settings", "data_bits", dataBits);
+        profile.setInteger ("port_settings", "stop_bits", stopBits);
+        profile.setInteger ("port_settings", "parity", parity);
+        profile.setInteger ("port_settings", "handshake", handshake);
+        profile.setInteger ("port_settings", "access_mode", accessMode);
+        profile.setBoolean ("port_settings", "local_echo", localEcho);
     }
 
     public static Settings loadFromProfile (Profile profile)

@@ -729,7 +729,6 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
         statusbar.pop (statusbarContext);
         statusbar.push (statusbarContext, currentSettings.getStatusbarString (false));
         updateOutgoingInputArea ();
-        profile.profileChanged = true;
     }
 
     private void updateOutgoingInputArea ()
@@ -814,7 +813,6 @@ font-weight:
         echoTag.foreground = currentPreferences.highlightColor;
         incomingHexTextBuffer.applyPreferences (currentPreferences);
         outgoingHexTextBuffer.applyPreferences (currentPreferences);
-        profile.profileChanged = true;
     }
 
     private void showSettingsDialog (GLib.Object o)

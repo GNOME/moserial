@@ -23,7 +23,7 @@ public class Profile : GLib.Object
 {
     public bool profileChanged = false;
 
-    public KeyFile keyFile;
+    private KeyFile keyFile;
     construct {
         keyFile = new KeyFile ();
     }
@@ -39,6 +39,15 @@ public class Profile : GLib.Object
         return result;
     }
 
+    public void setString (string group, string key, string new_val)
+    {
+        bool changed = (getString (group, key) != new_val);
+        keyFile.set_string (group, key, new_val);
+        if (changed) {
+            profileChanged = true;
+        }
+    }
+
     public int getInteger (string group, string key, int default_val)
     {
         int result = default_val;
@@ -48,6 +57,15 @@ public class Profile : GLib.Object
             stdout.printf ("%s\n", e.message);
         }
         return result;
+    }
+
+    public void setInteger (string group, string key, int new_val)
+    {
+        bool changed = (getInteger (group, key, 0) != new_val);
+        keyFile.set_integer (group, key, new_val);
+        if (changed) {
+            profileChanged = true;
+        }
     }
 
     public bool getBoolean (string group, string key, bool default_val)
@@ -61,17 +79,26 @@ public class Profile : GLib.Object
         return result;
     }
 
+    public void setBoolean (string group, string key, bool new_val)
+    {
+        bool changed = (getBoolean (group, key, false) != new_val);
+        keyFile.set_boolean (group, key, new_val);
+        if (changed) {
+            profileChanged = true;
+        }
+    }
+
     public void saveWindowSize (int w, int h)
     {
         if (w > 0)
-            keyFile.set_integer ("window", "width", w);
+            setInteger ("window", "width", w);
         if (h > 0)
-            keyFile.set_integer ("window", "height", h);
+            setInteger ("window", "height", h);
     }
 
     public void saveWindowPanedPosition (int pos)
     {
-        keyFile.set_integer ("window", "paned_pos", pos);
+        setInteger ("window", "paned_pos", pos);
     }
 
     public void setNotebookTab (bool outgoing, uint tab)
@@ -82,24 +109,20 @@ public class Profile : GLib.Object
         }
 
         if (tab != 0) {
-            keyFile.set_integer ("main_ui_controls", n, 1);
+            setInteger ("main_ui_controls", n, 1);
         } else {
-            keyFile.set_integer ("main_ui_controls", n, 0);
+            setInteger ("main_ui_controls", n, 0);
         }
-
-        profileChanged = true;
     }
 
     public void setInputModeHex (bool hex)
     {
-        keyFile.set_boolean ("main_ui_controls", "input_mode_hex", hex);
-        profileChanged = true;
+        setBoolean ("main_ui_controls", "input_mode_hex", hex);
     }
 
     public void setInputLineEnd (int end)
     {
-        keyFile.set_integer ("main_ui_controls", "input_line_end", end);
-        profileChanged = true;
+        setInteger ("main_ui_controls", "input_line_end", end);
     }
 
     public bool load (string ? filename, Gtk.Window window)
