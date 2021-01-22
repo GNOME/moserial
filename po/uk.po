@@ -7,16 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: moserial master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/moserial/issues\n"
-"POT-Creation-Date: 2021-01-21 20:52+0000\n"
-"PO-Revision-Date: 2021-01-22 08:32+0200\n"
+"POT-Creation-Date: 2021-01-22 18:43+0000\n"
+"PO-Revision-Date: 2021-01-22 21:16+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
-"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Lokalize 20.11.70\n"
 
 #: ../data/ui/mainwindow.ui.h:1 ../data/moserial.appdata.xml.in.h:1
@@ -68,106 +67,116 @@ msgid "Clear"
 msgstr "Очистити"
 
 #: ../data/ui/mainwindow.ui.h:13
+msgid "View"
+msgstr ""
+"Переглянути"
+
+#: ../data/ui/mainwindow.ui.h:14
+msgid "Extra Controls"
+msgstr ""
+"Додаткове керування"
+
+#: ../data/ui/mainwindow.ui.h:15
 msgid "Help"
 msgstr "Довідка"
 
-#: ../data/ui/mainwindow.ui.h:14
+#: ../data/ui/mainwindow.ui.h:16
 msgid "About"
 msgstr "Про програму"
 
-#: ../data/ui/mainwindow.ui.h:15
+#: ../data/ui/mainwindow.ui.h:17
 msgid "Connect"
 msgstr "З'єднатися"
 
-#: ../data/ui/mainwindow.ui.h:16
+#: ../data/ui/mainwindow.ui.h:18
 msgid "Record"
 msgstr "Записати"
 
-#: ../data/ui/mainwindow.ui.h:17
+#: ../data/ui/mainwindow.ui.h:19
 msgid "Send File"
 msgstr "Надіслати файл"
 
-#: ../data/ui/mainwindow.ui.h:18
+#: ../data/ui/mainwindow.ui.h:20
 msgid "Receive File"
 msgstr "Отримати файл"
 
-#: ../data/ui/mainwindow.ui.h:19 ../data/ui/settings_dialog.ui.h:1
+#: ../data/ui/mainwindow.ui.h:21 ../data/ui/settings_dialog.ui.h:1
 msgid "Port Setup"
 msgstr "Налаштування порту"
 
-#: ../data/ui/mainwindow.ui.h:20 ../data/ui/preferences.ui.h:1
+#: ../data/ui/mainwindow.ui.h:22 ../data/ui/preferences.ui.h:1
 msgid "Preferences"
 msgstr "Налаштування"
 
-#: ../data/ui/mainwindow.ui.h:21
+#: ../data/ui/mainwindow.ui.h:23
 msgid "Shows RI input (Ring Indicator)"
 msgstr "Показує вхід RI (кільцевий індикатор)"
 
-#: ../data/ui/mainwindow.ui.h:22
+#: ../data/ui/mainwindow.ui.h:24
 msgid "RI"
 msgstr "RI"
 
-#: ../data/ui/mainwindow.ui.h:23
+#: ../data/ui/mainwindow.ui.h:25
 msgid "Shows DSR input (Data Set Ready)"
 msgstr "Показує вхід DSR (готовність набору даних)"
 
-#: ../data/ui/mainwindow.ui.h:24
+#: ../data/ui/mainwindow.ui.h:26
 msgid "DSR"
 msgstr "DSR"
 
-#: ../data/ui/mainwindow.ui.h:25
+#: ../data/ui/mainwindow.ui.h:27
 msgid "Shows CD input (Carrier Detect)"
 msgstr "Показує вхід CD (виявлення носія)"
 
-#: ../data/ui/mainwindow.ui.h:26
+#: ../data/ui/mainwindow.ui.h:28
 msgid "CD"
 msgstr "CD"
 
-#: ../data/ui/mainwindow.ui.h:27
+#: ../data/ui/mainwindow.ui.h:29
 msgid "Shows CTS input (Clear To Send)"
 msgstr "Показує вхід CTS (очищено для надсилання)"
 
-#: ../data/ui/mainwindow.ui.h:28
+#: ../data/ui/mainwindow.ui.h:30
 msgid "CTS"
 msgstr "CTS"
 
-#: ../data/ui/mainwindow.ui.h:29
+#: ../data/ui/mainwindow.ui.h:31
 msgid "Received ASCII"
 msgstr "Отримано ASCII"
 
-#: ../data/ui/mainwindow.ui.h:30
+#: ../data/ui/mainwindow.ui.h:32
 msgid "Received HEX"
 msgstr "Отримано HEX"
 
-#: ../data/ui/mainwindow.ui.h:31
+#: ../data/ui/mainwindow.ui.h:33
 msgid "RTS"
 msgstr "RTS"
 
-#: ../data/ui/mainwindow.ui.h:32
+#: ../data/ui/mainwindow.ui.h:34
 msgid "DTR"
 msgstr "DTR"
 
-#: ../data/ui/mainwindow.ui.h:33
+#: ../data/ui/mainwindow.ui.h:35
 msgid "Sent ASCII"
 msgstr "Надіслано ASCII"
 
-#: ../data/ui/mainwindow.ui.h:34
+#: ../data/ui/mainwindow.ui.h:36
 msgid "Sent HEX"
 msgstr "Надіслано HEX"
 
-#: ../data/ui/mainwindow.ui.h:35 ../src/SerialStreamRecorder.vala:31
+#: ../data/ui/mainwindow.ui.h:37 ../src/SerialStreamRecorder.vala:31
 msgid "Outgoing"
 msgstr "Вихідні"
 
-#: ../data/ui/mainwindow.ui.h:36
+#: ../data/ui/mainwindow.ui.h:38
 msgid "Send"
 msgstr "Надіслати"
 
-#: ../data/ui/mainwindow.ui.h:37
+#: ../data/ui/mainwindow.ui.h:39
 msgid "Disconnect"
 msgstr "Від'єднатись"
 
-#: ../data/ui/mainwindow.ui.h:38
+#: ../data/ui/mainwindow.ui.h:40
 msgid "Stop Recording"
 msgstr "Припинити запис"
 
@@ -414,78 +423,78 @@ msgstr "ASCII"
 msgid "HEX"
 msgstr "HEX"
 
-#: ../src/MainWindow.vala:173
+#: ../src/MainWindow.vala:171
 msgid "Port configuration"
 msgstr "Налаштування порту"
 
-#: ../src/MainWindow.vala:178
+#: ../src/MainWindow.vala:176
 msgid "Read the manual"
 msgstr "Прочитати підручник"
 
-#: ../src/MainWindow.vala:188
+#: ../src/MainWindow.vala:185
 msgid "TX: 0, RX: 0"
 msgstr "TX: 0, RX: 0"
 
-#: ../src/MainWindow.vala:199
+#: ../src/MainWindow.vala:196
 msgid "Send a file"
 msgstr "Надіслати файл"
 
-#: ../src/MainWindow.vala:208
+#: ../src/MainWindow.vala:205
 msgid "Receive a file"
 msgstr "Отримати файл"
 
-#: ../src/MainWindow.vala:218
+#: ../src/MainWindow.vala:214
 msgid "Record sent and/or received data"
 msgstr "Записувати надіслані і/або отримані дані"
 
-#: ../src/MainWindow.vala:229
+#: ../src/MainWindow.vala:225
 msgid "Other preferences"
 msgstr "Інші налаштування"
 
-#: ../src/MainWindow.vala:234
+#: ../src/MainWindow.vala:230
 msgid "Open/close port"
 msgstr "Відкрити/закрити порт"
 
-#: ../src/MainWindow.vala:286
+#: ../src/MainWindow.vala:280
 msgid "Send the outgoing data now."
 msgstr "Надіслати вихідні дані зараз."
 
-#: ../src/MainWindow.vala:289
+#: ../src/MainWindow.vala:283
 msgid "Type outgoing data here. Press Enter or Send to send it."
 msgstr ""
 "Тут можна ввести вихідні дані. Натисніть Enter або «Надіслати», щоб їх "
 "надіслати."
 
-#: ../src/MainWindow.vala:342
+#: ../src/MainWindow.vala:328
 msgid "Shows and toggles the DTR output (Data Terminal Ready)"
 msgstr "Показує і перемикає вихід DTR (готовність термінала даних)"
 
-#: ../src/MainWindow.vala:347
+#: ../src/MainWindow.vala:333
 msgid "Shows and toggles the RTS output (Request To Send)"
 msgstr "Показує і перемикає вихід RTS (запит щодо надсилання)"
 
-#: ../src/MainWindow.vala:352
+#: ../src/MainWindow.vala:338
 msgid "Clear incoming text box"
 msgstr "Спорожнити поле вхідного тексту"
 
-#: ../src/MainWindow.vala:357
+#: ../src/MainWindow.vala:343
 msgid "Clear outgoing text box"
 msgstr "Спорожнити поле вихідного тексту"
 
-#: ../src/MainWindow.vala:708 ../src/Profile.vala:152 ../src/Profile.vala:187
+#: ../src/MainWindow.vala:735 ../src/Profile.vala:113 ../src/Profile.vala:148
 msgid "Error: Could not open file"
 msgstr "Помилка: не вдалося відкрити файл"
 
-#: ../src/MainWindow.vala:847
+#: ../src/MainWindow.vala:872
 msgid "Error: Could not open device"
 msgstr "Помилка: не вдалося відкрити пристрій"
 
-#: ../src/MainWindow.vala:1026
+#: ../src/MainWindow.vala:1051
 #, c-format
 msgid "Unable to display help file: %s"
 msgstr "Не вдалося показати файл довідки: %s"
 
-#: ../src/MainWindow.vala:1038
+#: ../src/MainWindow.vala:1063
 msgid ""
 "A serial terminal for the GNOME desktop, optimized for logging and file "
 "capture."
@@ -493,7 +502,7 @@ msgstr ""
 "Послідовний термінал для стільниці GNOME. Оптимізовано для запису журналу та "
 "захоплення файлів."
 
-#: ../src/MainWindow.vala:1097
+#: ../src/MainWindow.vala:1123
 msgid "Save modified settings to the loaded profile?"
 msgstr "Зберегти змінені параметри до завантаженого профілю?"
 
