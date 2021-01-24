@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: moserial\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-17 12:57+0100\n"
-"PO-Revision-Date: 2021-01-17 12:58+0100\n"
+"POT-Creation-Date: 2021-01-24 13:28+0100\n"
+"PO-Revision-Date: 2021-01-24 13:35+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -24,148 +24,226 @@ msgid "moserial"
 msgstr "moserial"
 
 #: ../data/ui/mainwindow.ui.h:2
-msgid "_File"
-msgstr "_Plik"
+msgid "File"
+msgstr "Plik"
 
 #: ../data/ui/mainwindow.ui.h:3
+msgid "Open Settings"
+msgstr "Otwórz ustawienia"
+
+#: ../data/ui/mainwindow.ui.h:4
 msgid "Open _Recent"
 msgstr "_Otwórz ostatnie"
 
-#: ../data/ui/mainwindow.ui.h:4
-msgid "_Edit"
-msgstr "_Edycja"
-
 #: ../data/ui/mainwindow.ui.h:5
-msgid "_Help"
-msgstr "Pomo_c"
+msgid "Save Settings"
+msgstr "Zapisz ustawienia"
 
 #: ../data/ui/mainwindow.ui.h:6
-msgid "Connect"
-msgstr "Połącz"
+msgid "Save Settings As"
+msgstr "Zapisz ustawienia jako"
 
 #: ../data/ui/mainwindow.ui.h:7
-msgid "Record"
-msgstr "Nagraj"
+msgid "Quit"
+msgstr "Zakończ"
 
 #: ../data/ui/mainwindow.ui.h:8
-msgid "Send File"
-msgstr "Wyślij plik"
+msgid "Edit"
+msgstr "Edycja"
 
 #: ../data/ui/mainwindow.ui.h:9
-msgid "Receive File"
-msgstr "Odbierz plik"
+msgid "Cut"
+msgstr "Wytnij"
 
-#: ../data/ui/mainwindow.ui.h:10 ../data/ui/settings_dialog.ui.h:1
-msgid "Port Setup"
-msgstr "Ustawienia portu"
+#: ../data/ui/mainwindow.ui.h:10
+msgid "Copy"
+msgstr "Skopiuj"
 
-#: ../data/ui/mainwindow.ui.h:11 ../data/ui/preferences.ui.h:1
-msgid "Preferences"
-msgstr "Preferencje"
+#: ../data/ui/mainwindow.ui.h:11
+msgid "Paste"
+msgstr "Wklej"
 
 #: ../data/ui/mainwindow.ui.h:12
-msgid "Help"
-msgstr "Pomoc"
-
-#: ../data/ui/mainwindow.ui.h:13
-msgid "RI"
-msgstr "RI"
-
-#: ../data/ui/mainwindow.ui.h:14
-msgid "DSR"
-msgstr "DSR"
-
-#: ../data/ui/mainwindow.ui.h:15
-msgid "CD"
-msgstr "CD"
-
-#: ../data/ui/mainwindow.ui.h:16
-msgid "CTS"
-msgstr "CTS"
-
-#: ../data/ui/mainwindow.ui.h:17
 msgid "Clear"
 msgstr "Wyczyść"
 
+#: ../data/ui/mainwindow.ui.h:13
+msgid "View"
+msgstr "Widok"
+
+#: ../data/ui/mainwindow.ui.h:14
+msgid "Extra Controls"
+msgstr "Dodatkowe sterowanie"
+
+#: ../data/ui/mainwindow.ui.h:15
+msgid "Help"
+msgstr "Pomoc"
+
+#: ../data/ui/mainwindow.ui.h:16
+msgid "About"
+msgstr "O programie"
+
+#: ../data/ui/mainwindow.ui.h:17
+msgid "Connect"
+msgstr "Połącz"
+
 #: ../data/ui/mainwindow.ui.h:18
+msgid "Record"
+msgstr "Nagraj"
+
+#: ../data/ui/mainwindow.ui.h:19
+msgid "Send File"
+msgstr "Wyślij plik"
+
+#: ../data/ui/mainwindow.ui.h:20
+msgid "Receive File"
+msgstr "Odbierz plik"
+
+#: ../data/ui/mainwindow.ui.h:21 ../data/ui/settings_dialog.ui.h:1
+msgid "Port Setup"
+msgstr "Ustawienia portu"
+
+#: ../data/ui/mainwindow.ui.h:22 ../data/ui/preferences.ui.h:1
+msgid "Preferences"
+msgstr "Preferencje"
+
+#: ../data/ui/mainwindow.ui.h:23
+msgid "Shows RI input (Ring Indicator)"
+msgstr "Wyświetla wejście RI („Ring Indicator”)"
+
+#: ../data/ui/mainwindow.ui.h:24
+msgid "RI"
+msgstr "RI"
+
+#: ../data/ui/mainwindow.ui.h:25
+msgid "Shows DSR input (Data Set Ready)"
+msgstr "Wyświetla wejście DSR („Data Set Ready”)"
+
+#: ../data/ui/mainwindow.ui.h:26
+msgid "DSR"
+msgstr "DSR"
+
+#: ../data/ui/mainwindow.ui.h:27
+msgid "Shows CD input (Carrier Detect)"
+msgstr "Wyświetla wejście CD („Carrier Detect”)"
+
+#: ../data/ui/mainwindow.ui.h:28
+msgid "CD"
+msgstr "CD"
+
+#: ../data/ui/mainwindow.ui.h:29
+msgid "Shows CTS input (Clear To Send)"
+msgstr "Wyświetla wejście CTS („Clear To Send”)"
+
+#: ../data/ui/mainwindow.ui.h:30
+msgid "CTS"
+msgstr "CTS"
+
+#: ../data/ui/mainwindow.ui.h:31
 msgid "Received ASCII"
 msgstr "Odebrane ASCII"
 
-#: ../data/ui/mainwindow.ui.h:19
+#: ../data/ui/mainwindow.ui.h:32
 msgid "Received HEX"
 msgstr "Odebrane HEX"
 
-#: ../data/ui/mainwindow.ui.h:20
+#: ../data/ui/mainwindow.ui.h:33
 msgid "RTS"
 msgstr "RTS"
 
-#: ../data/ui/mainwindow.ui.h:21
+#: ../data/ui/mainwindow.ui.h:34
 msgid "DTR"
 msgstr "DTR"
 
-#: ../data/ui/mainwindow.ui.h:22
+#: ../data/ui/mainwindow.ui.h:35
 msgid "Sent ASCII"
 msgstr "Wysłane ASCII"
 
-#: ../data/ui/mainwindow.ui.h:23
+#: ../data/ui/mainwindow.ui.h:36
 msgid "Sent HEX"
 msgstr "Wysłane HEX"
 
-#: ../data/ui/mainwindow.ui.h:24 ../src/SerialStreamRecorder.vala:31
+#: ../data/ui/mainwindow.ui.h:37 ../src/SerialStreamRecorder.vala:31
 msgid "Outgoing"
 msgstr "Wychodzące"
 
-#: ../data/ui/mainwindow.ui.h:25
+#: ../data/ui/mainwindow.ui.h:38
 msgid "Send"
 msgstr "Wyślij"
 
-#: ../data/ui/mainwindow.ui.h:26
+#: ../data/ui/mainwindow.ui.h:39
 msgid "Disconnect"
 msgstr "Rozłącz"
 
-#: ../data/ui/mainwindow.ui.h:27
+#: ../data/ui/mainwindow.ui.h:40
 msgid "Stop Recording"
 msgstr "Zatrzymaj nagrywanie"
 
-#: ../data/ui/preferences.ui.h:2
+#: ../data/ui/preferences.ui.h:2 ../data/ui/receive_progress.ui.h:2
+#: ../data/ui/send_progress_dialog.ui.h:2 ../data/ui/settings_dialog.ui.h:2
+msgid "Cancel"
+msgstr "Anuluj"
+
+#: ../data/ui/preferences.ui.h:3 ../data/ui/settings_dialog.ui.h:3
+#: ../data/ui/xmodem_filename_dialog.ui.h:1
+msgid "OK"
+msgstr "OK"
+
+#: ../data/ui/preferences.ui.h:4
 msgid "Font"
 msgstr "Czcionka"
 
-#: ../data/ui/preferences.ui.h:3
-msgid "_Use the system fixed width font"
-msgstr "Czci_onka systemowa o stałej szerokości"
+#: ../data/ui/preferences.ui.h:5
+msgid "Use the system fixed width font"
+msgstr "Czcionka systemowa o stałej szerokości"
 
-#: ../data/ui/preferences.ui.h:4
+#: ../data/ui/preferences.ui.h:6
 msgid "Display Font"
 msgstr "Wyświetlana czcionka"
 
-#: ../data/ui/preferences.ui.h:5
+#: ../data/ui/preferences.ui.h:7
 msgid "Font Color"
 msgstr "Kolor czcionki"
 
-#: ../data/ui/preferences.ui.h:6
+#: ../data/ui/preferences.ui.h:8
 msgid "Background Color"
 msgstr "Kolor tła"
 
-#: ../data/ui/preferences.ui.h:7
+#: ../data/ui/preferences.ui.h:9
 msgid "Highlight Color"
 msgstr "Kolor wyróżnienia"
 
-#: ../data/ui/preferences.ui.h:8
+#: ../data/ui/preferences.ui.h:10
 msgid "Recording"
 msgstr "Nagrywanie"
 
-#: ../data/ui/preferences.ui.h:9
-msgid "_Launch recorded files"
-msgstr "_Uruchamianie nagranych plików"
-
-#: ../data/ui/preferences.ui.h:10
-msgid "Enable timeout after"
-msgstr "Włączenie czasu oczekiwania po"
-
 #: ../data/ui/preferences.ui.h:11
+msgid "Launch recorded files"
+msgstr "Uruchamianie nagranych plików"
+
+#: ../data/ui/preferences.ui.h:12
+msgid "Enable timeout after"
+msgstr "Czas oczekiwania po"
+
+#: ../data/ui/preferences.ui.h:13
 msgid "seconds"
 msgstr "s"
+
+#: ../data/ui/preferences.ui.h:14
+msgid "Use automatic timestamped filename"
+msgstr "Automatyczna nazwa pliku z datą"
+
+#: ../data/ui/preferences.ui.h:15
+msgid "In this folder"
+msgstr "W tym katalogu"
+
+#: ../data/ui/preferences.ui.h:16
+msgid "With this extension"
+msgstr "Przy tym rozszerzeniu"
+
+#: ../data/ui/preferences.ui.h:17
+msgid "Direction"
+msgstr "Kierunek"
 
 #: ../data/ui/receive_chooser.ui.h:1
 msgid "Select Folder for Received Files"
@@ -195,55 +273,55 @@ msgstr "Wybór pliku do wysłania"
 msgid "Send File Progress"
 msgstr "Postęp wysyłania pliku"
 
-#: ../data/ui/settings_dialog.ui.h:2
+#: ../data/ui/settings_dialog.ui.h:4
 msgid "Port Settings"
 msgstr "Ustawienia portu"
 
-#: ../data/ui/settings_dialog.ui.h:3
+#: ../data/ui/settings_dialog.ui.h:5
 msgid "Hardware"
 msgstr "Sprzęt"
 
-#: ../data/ui/settings_dialog.ui.h:4
+#: ../data/ui/settings_dialog.ui.h:6
 msgid "Software"
 msgstr "Oprogramowanie"
 
-#: ../data/ui/settings_dialog.ui.h:5
+#: ../data/ui/settings_dialog.ui.h:7
 msgid "Echo received data"
 msgstr "Powtarzanie odebranych danych"
 
-#: ../data/ui/settings_dialog.ui.h:6
+#: ../data/ui/settings_dialog.ui.h:8
 msgid "Device"
 msgstr "Urządzenie"
 
-#: ../data/ui/settings_dialog.ui.h:7
+#: ../data/ui/settings_dialog.ui.h:9
 msgid "Baud Rate"
 msgstr "Prędkość w baudach"
 
-#: ../data/ui/settings_dialog.ui.h:8
+#: ../data/ui/settings_dialog.ui.h:10
 msgid "Data Bits"
 msgstr "Bity danych"
 
-#: ../data/ui/settings_dialog.ui.h:9
+#: ../data/ui/settings_dialog.ui.h:11
 msgid "Stop Bits"
 msgstr "Bity zatrzymania"
 
-#: ../data/ui/settings_dialog.ui.h:10
+#: ../data/ui/settings_dialog.ui.h:12
 msgid "Parity"
 msgstr "Parzystość"
 
-#: ../data/ui/settings_dialog.ui.h:11
+#: ../data/ui/settings_dialog.ui.h:13
 msgid "Handshake"
 msgstr "Powitanie"
 
-#: ../data/ui/settings_dialog.ui.h:12
+#: ../data/ui/settings_dialog.ui.h:14
 msgid "Access Mode"
 msgstr "Tryb dostępu"
 
-#: ../data/ui/settings_dialog.ui.h:13
+#: ../data/ui/settings_dialog.ui.h:15
 msgid "Local Echo"
 msgstr "Lokalne powtarzanie"
 
-#: ../data/ui/xmodem_filename_dialog.ui.h:1
+#: ../data/ui/xmodem_filename_dialog.ui.h:2
 msgid "Filename required for XMODEM"
 msgstr "Wymagana jest nazwa pliku dla XMODEM"
 
@@ -347,94 +425,90 @@ msgstr "ASCII"
 msgid "HEX"
 msgstr "HEX"
 
-#: ../src/MainWindow.vala:174
+#: ../src/MainWindow.vala:171
 msgid "Port configuration"
 msgstr "Konfiguracja portu"
 
-#: ../src/MainWindow.vala:179
+#: ../src/MainWindow.vala:176
 msgid "Read the manual"
 msgstr "Otwiera podręcznik"
 
-#: ../src/MainWindow.vala:189
+#: ../src/MainWindow.vala:185
 msgid "TX: 0, RX: 0"
 msgstr "Wysyłanie: 0, odbieranie: 0"
 
-#: ../src/MainWindow.vala:200
+#: ../src/MainWindow.vala:196
 msgid "Send a file"
 msgstr "Wysyła plik"
 
-#: ../src/MainWindow.vala:209
+#: ../src/MainWindow.vala:205
 msgid "Receive a file"
 msgstr "Odbiera plik"
 
-#: ../src/MainWindow.vala:219
+#: ../src/MainWindow.vala:214
 msgid "Record sent and/or received data"
 msgstr "Nagrywa wysłane lub odebrane dane"
 
-#: ../src/MainWindow.vala:230
+#: ../src/MainWindow.vala:225
 msgid "Other preferences"
 msgstr "Inne preferencje"
 
-#: ../src/MainWindow.vala:235
+#: ../src/MainWindow.vala:230
 msgid "Open/close port"
 msgstr "Otwiera/zamyka port"
 
-#: ../src/MainWindow.vala:287
+#: ../src/MainWindow.vala:280
 msgid "Send the outgoing data now."
 msgstr "Wysyła wychodzące dane teraz"
 
-#. entry.set_text (profile.getInputString ());
-#: ../src/MainWindow.vala:291
+#: ../src/MainWindow.vala:283
 msgid "Type outgoing data here. Press Enter or Send to send it."
 msgstr ""
 "Tutaj można wpisać dane wychodzące. Naciśnięcie klawisza Enter lub przycisku "
 "Wyślij spowoduje ich wysłanie."
 
-#: ../src/MainWindow.vala:344
-msgid "Toggle DTR signal status."
-msgstr "Przełącza stan sygnału DTR"
+#: ../src/MainWindow.vala:328
+msgid "Shows and toggles the DTR output (Data Terminal Ready)"
+msgstr "Wyświetla i przełącza wyjście DTR („Data Terminal Ready”)"
 
-#: ../src/MainWindow.vala:349
-msgid "Toggle RTS signal status."
-msgstr "Przełącza stan sygnału RTS"
+#: ../src/MainWindow.vala:333
+msgid "Shows and toggles the RTS output (Request To Send)"
+msgstr "Wyświetla i przełącza wyjście RTS („Request To Send”)"
 
-#: ../src/MainWindow.vala:354
-msgid "Clear incoming text box."
+#: ../src/MainWindow.vala:338
+msgid "Clear incoming text box"
 msgstr "Czyści pole tekstu przychodzącego"
 
-#: ../src/MainWindow.vala:359
-msgid "Clear outgoing text box."
+#: ../src/MainWindow.vala:343
+msgid "Clear outgoing text box"
 msgstr "Czyści pole tekstu wychodzącego"
 
-#: ../src/MainWindow.vala:680 ../src/Profile.vala:160 ../src/Profile.vala:195
+#: ../src/MainWindow.vala:735 ../src/Profile.vala:113 ../src/Profile.vala:148
 msgid "Error: Could not open file"
 msgstr "Błąd: nie można otworzyć pliku"
 
-#: ../src/MainWindow.vala:819
+#: ../src/MainWindow.vala:872
 msgid "Error: Could not open device"
 msgstr "Błąd: nie można otworzyć urządzenia"
 
-#: ../src/MainWindow.vala:979
+#: ../src/MainWindow.vala:1051
 #, c-format
 msgid "Unable to display help file: %s"
 msgstr "Nie można wyświetlić pliku pomocy: %s"
 
-#: ../src/MainWindow.vala:991
+#: ../src/MainWindow.vala:1063
 msgid ""
 "A serial terminal for the GNOME desktop, optimized for logging and file "
 "capture."
 msgstr ""
-"Terminal szeregowy dla środowiska GNOME, zoptymalizowane do nagrywania "
+"Terminal szeregowy dla środowiska GNOME, zoptymalizowany do nagrywania "
 "i przechwytywania plików."
 
-#: ../src/MainWindow.vala:1050
-msgid ""
-"You have changed your setting or preferences. Do you want to save these "
-"changes to the loaded profile?"
-msgstr ""
-"Zmieniono ustawienia lu preferencje. Zapisać te zmiany we wczytanym profilu?"
+#: ../src/MainWindow.vala:1123
+msgid "Save modified settings to the loaded profile?"
+msgstr "Zapisać zmodyfikowane ustawienia we wczytanym profilu?"
 
-#: ../src/PreferencesDialog.vala:51
+#: ../src/PreferencesDialog.vala:56
 msgid ""
 "If this option is enabled, a recorded file will be opened immediately after "
 "it is saved, using the default application for the file type. The default "
@@ -444,7 +518,7 @@ msgstr ""
 "jego zapisaniu za pomocą domyślnego programu dla danego typu pliku. Domyślny "
 "program jest konfigurowany w środowisku graficznym."
 
-#: ../src/PreferencesDialog.vala:54
+#: ../src/PreferencesDialog.vala:59
 msgid ""
 "If this option is enabled, recording will be automatically stopped after an "
 "adjustable period of inactivity after receiving some data. Moserial will "
@@ -456,7 +530,7 @@ msgstr ""
 "moserial będzie czekał w nieskończoność na nagranie pierwszego bajtu danych "
 "przed aktywowaniem zegara nieaktywności."
 
-#: ../src/Preferences.vala:68
+#: ../src/Preferences.vala:86
 msgid "Unable to retrieve system font setting"
 msgstr "Nie można odebrać systemowego ustawienia czcionki"
 
@@ -476,36 +550,36 @@ msgstr "Zmodem"
 msgid "Waiting for remote host"
 msgstr "Oczekiwanie na zdalny komputer"
 
-#: ../src/SerialConnection.vala:43
+#: ../src/SerialConnection.vala:44
 msgid "CR+LF end"
 msgstr "CR+LF kończy"
 
-#: ../src/SerialConnection.vala:44
+#: ../src/SerialConnection.vala:45
 msgid "CR end"
 msgstr "CR kończy"
 
-#: ../src/SerialConnection.vala:45
+#: ../src/SerialConnection.vala:46
 msgid "LF end"
 msgstr "LF kończy"
 
-#: ../src/SerialConnection.vala:46
+#: ../src/SerialConnection.vala:47
 msgid "TAB end"
 msgstr "Tab kończy"
 
-#: ../src/SerialConnection.vala:47
+#: ../src/SerialConnection.vala:48
 msgid "ESC end"
 msgstr "Esc kończy"
 
-#: ../src/SerialConnection.vala:48
+#: ../src/SerialConnection.vala:49
 msgid "No end"
 msgstr "Bez kończenia"
 
-#: ../src/SerialConnection.vala:340
+#: ../src/SerialConnection.vala:362
 #, c-format
 msgid "TX: %lu, RX: %lu (%lu unprintable)"
 msgstr "Wysyłanie: %lu, odbieranie: %lu (%lu nie można wyświetlić)"
 
-#: ../src/SerialConnection.vala:342
+#: ../src/SerialConnection.vala:364
 #, c-format
 msgid "TX: %lu, RX: %lu"
 msgstr "Wysyłanie: %lu, odbieranie: %lu"
