@@ -55,6 +55,7 @@ public class Settings : GLib.Object
     public static Handshake DEFAULT_HANDSHAKE = Handshake.HARDWARE;
     public static AccessMode DEFAULT_ACCESSMODE = AccessMode.READWRITE;
     public static bool DEFAULT_LOCAL_ECHO = false;
+    public static bool DEFAULT_AUTO_CONNECT = false;
     public string ? device { get; construct; }
     public int baudRate { get; construct; }
     public int dataBits { get; construct; }
@@ -63,7 +64,8 @@ public class Settings : GLib.Object
     public Handshake handshake { get; construct; }
     public AccessMode accessMode { get; construct; }
     public bool localEcho { get; construct; }
-    public Settings (string ? device, int baudRate, int dataBits, int stopBits, Parity parity, Handshake handshake, AccessMode accessMode, bool localEcho)
+    public bool autoConnect {get; construct; }
+    public Settings (string ? device, int baudRate, int dataBits, int stopBits, Parity parity, Handshake handshake, AccessMode accessMode, bool localEcho, bool autoConnect)
     {
         GLib.Object (device: device,
                      baudRate: baudRate,
@@ -72,7 +74,8 @@ public class Settings : GLib.Object
                      parity: parity,
                      handshake: handshake,
                      accessMode: accessMode,
-                     localEcho: localEcho);
+                     localEcho: localEcho,
+                     autoConnect: autoConnect);
     }
 
     construct {
@@ -134,6 +137,7 @@ public class Settings : GLib.Object
         profile.setInteger ("port_settings", "handshake", handshake);
         profile.setInteger ("port_settings", "access_mode", accessMode);
         profile.setBoolean ("port_settings", "local_echo", localEcho);
+        profile.setBoolean ("port_settings", "auto_connect", autoConnect);
     }
 
     public static Settings loadFromProfile (Profile profile)
@@ -146,6 +150,7 @@ public class Settings : GLib.Object
         Handshake handshake;
         AccessMode accessMode;
         bool localEcho;
+        bool autoConnect;
 
         device = profile.getString ("port_settings", "device");
         baudRate = profile.getInteger ("port_settings", "baud_rate", Settings.DEFAULT_BAUDRATE);
@@ -155,7 +160,8 @@ public class Settings : GLib.Object
         handshake = (Settings.Handshake)profile.getInteger ("port_settings", "handshake", Settings.DEFAULT_HANDSHAKE);
         accessMode = (Settings.AccessMode)profile.getInteger ("port_settings", "access_mode", Settings.DEFAULT_ACCESSMODE);
         localEcho = profile.getBoolean ("port_settings", "local_echo", Settings.DEFAULT_LOCAL_ECHO);
+        autoConnect = profile.getBoolean ("port_settings", "auto_connect", Settings.DEFAULT_AUTO_CONNECT);
 
-        return new Settings (device, baudRate, dataBits, stopBits, parity, handshake, accessMode, localEcho);
+        return new Settings (device, baudRate, dataBits, stopBits, parity, handshake, accessMode, localEcho, autoConnect);
     }
 }

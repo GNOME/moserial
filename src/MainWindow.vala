@@ -466,6 +466,11 @@ public class moserial.MainWindow : Gtk.Window // Have to extend Gtk.Winow to get
                 stdout.printf ("%s\n", e.message);
             }
         }
+
+        // auto-connect
+        if (currentSettings.autoConnect) {
+            ensureConnected ();
+        }
     }
 
     private void setWindowTitle (string ? recordingFilename)

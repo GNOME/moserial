@@ -77,7 +77,7 @@
               </packing>
             </child>
             <child>
-              <!-- n-columns=3 n-rows=8 -->
+              <!-- n-columns=2 n-rows=9 -->
               <object class="GtkGrid" id="table1">
                 <property name="visible">True</property>
                 <property name="can-focus">False</property>
@@ -104,6 +104,7 @@
                         <property name="visible">True</property>
                         <property name="can-focus">True</property>
                         <property name="receives-default">False</property>
+                        <property name="halign">start</property>
                         <property name="use-underline">True</property>
                         <property name="draw-indicator">True</property>
                       </object>
@@ -120,6 +121,7 @@
                         <property name="visible">True</property>
                         <property name="can-focus">True</property>
                         <property name="receives-default">False</property>
+                        <property name="halign">start</property>
                         <property name="use-underline">True</property>
                         <property name="draw-indicator">True</property>
                       </object>
@@ -172,6 +174,7 @@
                     <property name="visible">True</property>
                     <property name="can-focus">True</property>
                     <property name="receives-default">False</property>
+                    <property name="halign">start</property>
                     <property name="use-underline">True</property>
                     <property name="draw-indicator">True</property>
                   </object>
@@ -184,6 +187,7 @@
                   <object class="GtkLabel" id="label1">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
+                    <property name="halign">end</property>
                     <property name="label" translatable="yes">Device</property>
                     <property name="xalign">1</property>
                   </object>
@@ -196,6 +200,7 @@
                   <object class="GtkLabel" id="label2">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
+                    <property name="halign">end</property>
                     <property name="label" translatable="yes">Baud Rate</property>
                     <property name="xalign">1</property>
                   </object>
@@ -208,6 +213,7 @@
                   <object class="GtkLabel" id="label3">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
+                    <property name="halign">end</property>
                     <property name="label" translatable="yes">Data Bits</property>
                     <property name="xalign">1</property>
                   </object>
@@ -220,6 +226,7 @@
                   <object class="GtkLabel" id="label4">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
+                    <property name="halign">end</property>
                     <property name="label" translatable="yes">Stop Bits</property>
                     <property name="xalign">1</property>
                   </object>
@@ -232,6 +239,7 @@
                   <object class="GtkLabel" id="label5">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
+                    <property name="halign">end</property>
                     <property name="label" translatable="yes">Parity</property>
                     <property name="xalign">1</property>
                   </object>
@@ -244,6 +252,7 @@
                   <object class="GtkLabel" id="label7">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
+                    <property name="halign">end</property>
                     <property name="label" translatable="yes">Handshake</property>
                     <property name="xalign">1</property>
                   </object>
@@ -256,6 +265,7 @@
                   <object class="GtkLabel" id="label8">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
+                    <property name="halign">end</property>
                     <property name="label" translatable="yes">Access Mode</property>
                     <property name="xalign">1</property>
                   </object>
@@ -268,6 +278,7 @@
                   <object class="GtkLabel" id="label26">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
+                    <property name="halign">end</property>
                     <property name="label" translatable="yes">Local Echo</property>
                     <property name="xalign">1</property>
                   </object>
@@ -320,28 +331,32 @@
                   </packing>
                 </child>
                 <child>
-                  <placeholder/>
+                  <object class="GtkLabel">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="halign">end</property>
+                    <property name="label" translatable="yes">On Startup</property>
+                    <property name="xalign">1</property>
+                  </object>
+                  <packing>
+                    <property name="left-attach">0</property>
+                    <property name="top-attach">8</property>
+                  </packing>
                 </child>
                 <child>
-                  <placeholder/>
-                </child>
-                <child>
-                  <placeholder/>
-                </child>
-                <child>
-                  <placeholder/>
-                </child>
-                <child>
-                  <placeholder/>
-                </child>
-                <child>
-                  <placeholder/>
-                </child>
-                <child>
-                  <placeholder/>
-                </child>
-                <child>
-                  <placeholder/>
+                  <object class="GtkCheckButton" id="settings_auto_connect">
+                    <property name="label" translatable="yes">Connect immediately</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">False</property>
+                    <property name="halign">start</property>
+                    <property name="use-underline">True</property>
+                    <property name="draw-indicator">True</property>
+                  </object>
+                  <packing>
+                    <property name="left-attach">1</property>
+                    <property name="top-attach">8</property>
+                  </packing>
                 </child>
               </object>
               <packing>
