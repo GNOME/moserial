@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: moserial master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/moserial/issues\n"
-"POT-Creation-Date: 2021-01-22 18:43+0000\n"
-"PO-Revision-Date: 2021-01-22 21:16+0200\n"
+"POT-Creation-Date: 2021-01-26 14:31+0000\n"
+"PO-Revision-Date: 2021-01-26 20:23+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -68,13 +68,11 @@ msgstr "Очистити"
 
 #: ../data/ui/mainwindow.ui.h:13
 msgid "View"
-msgstr ""
-"Переглянути"
+msgstr "Переглянути"
 
 #: ../data/ui/mainwindow.ui.h:14
 msgid "Extra Controls"
-msgstr ""
-"Додаткове керування"
+msgstr "Додаткове керування"
 
 #: ../data/ui/mainwindow.ui.h:15
 msgid "Help"
@@ -322,6 +320,16 @@ msgstr "Режим доступу"
 msgid "Local Echo"
 msgstr "Локальна луна"
 
+#: ../data/ui/settings_dialog.ui.h:16
+msgid "On Startup"
+msgstr ""
+"Після запуску"
+
+#: ../data/ui/settings_dialog.ui.h:17
+msgid "Connect immediately"
+msgstr ""
+"З'єднуватися негайно"
+
 #: ../data/ui/xmodem_filename_dialog.ui.h:2
 msgid "Filename required for XMODEM"
 msgstr "Слід вказати назву файла для XMODEM"
@@ -481,20 +489,20 @@ msgstr "Спорожнити поле вхідного тексту"
 msgid "Clear outgoing text box"
 msgstr "Спорожнити поле вихідного тексту"
 
-#: ../src/MainWindow.vala:735 ../src/Profile.vala:113 ../src/Profile.vala:148
+#: ../src/MainWindow.vala:740 ../src/Profile.vala:113 ../src/Profile.vala:148
 msgid "Error: Could not open file"
 msgstr "Помилка: не вдалося відкрити файл"
 
-#: ../src/MainWindow.vala:872
+#: ../src/MainWindow.vala:877
 msgid "Error: Could not open device"
 msgstr "Помилка: не вдалося відкрити пристрій"
 
-#: ../src/MainWindow.vala:1051
+#: ../src/MainWindow.vala:1056
 #, c-format
 msgid "Unable to display help file: %s"
 msgstr "Не вдалося показати файл довідки: %s"
 
-#: ../src/MainWindow.vala:1063
+#: ../src/MainWindow.vala:1068
 msgid ""
 "A serial terminal for the GNOME desktop, optimized for logging and file "
 "capture."
@@ -502,7 +510,7 @@ msgstr ""
 "Послідовний термінал для стільниці GNOME. Оптимізовано для запису журналу та "
 "захоплення файлів."
 
-#: ../src/MainWindow.vala:1123
+#: ../src/MainWindow.vala:1128
 msgid "Save modified settings to the loaded profile?"
 msgstr "Зберегти змінені параметри до завантаженого профілю?"
 
@@ -601,17 +609,22 @@ msgstr "помилка: %s.\n"
 msgid "Unable to launch %s: %s"
 msgstr "Не вдалося запустити %s: %s"
 
-#: ../src/SettingsDialog.vala:73
+#: ../src/SettingsDialog.vala:74
 msgid "Also known as RTS/CTS handshaking"
 msgstr "Також відоме як узгодження RTS/CTS"
 
-#: ../src/SettingsDialog.vala:76
+#: ../src/SettingsDialog.vala:77
 msgid "Also known as XON/XOFF handshaking"
 msgstr "Також відоме як узгодження XON/XOFF"
 
-#: ../src/SettingsDialog.vala:82
+#: ../src/SettingsDialog.vala:83
 msgid "Normally disabled"
 msgstr "Зазвичай вимкнено"
+
+#: ../src/SettingsDialog.vala:86
+msgid "Enable to automatically connect on startup or when a profile is loaded"
+msgstr ""
+"Увімкнути автоматичне з'єднання під час запуску або завантаження профілю"
 
 #: ../src/Settings.vala:25
 msgid "None"
@@ -646,35 +659,35 @@ msgid "Write Only"
 msgstr "Лише запис"
 
 #. TRANSLATORS: first letter of "None", a serial port parity setting
-#: ../src/Settings.vala:94
+#: ../src/Settings.vala:97
 msgid "N"
 msgstr "Ж"
 
 #. TRANSLATORS: first letter of "Odd", a serial port parity setting
-#: ../src/Settings.vala:98
+#: ../src/Settings.vala:101
 msgid "O"
 msgstr "Н"
 
 #. TRANSLATORS: first letter of "Even", a serial port parity setting
-#: ../src/Settings.vala:102
+#: ../src/Settings.vala:105
 msgid "E"
 msgstr "П"
 
 #. TRANSLATORS: first letter of "Mark", a serial port parity setting
-#: ../src/Settings.vala:106
+#: ../src/Settings.vala:109
 msgid "M"
 msgstr "М"
 
 #. TRANSLATORS: first letter of "Space", a serial port parity setting
-#: ../src/Settings.vala:110
+#: ../src/Settings.vala:113
 msgid "S"
 msgstr "S"
 
-#: ../src/Settings.vala:121
+#: ../src/Settings.vala:124
 msgid "OPEN"
 msgstr "ВІДКРИТО"
 
-#: ../src/Settings.vala:122
+#: ../src/Settings.vala:125
 msgid "CLOSED"
 msgstr "ЗАКРИТО"
 
