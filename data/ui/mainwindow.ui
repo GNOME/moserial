@@ -207,7 +207,7 @@
                 <property name="is-important">True</property>
                 <property name="label" translatable="yes">Connect</property>
                 <property name="use-underline">True</property>
-                <property name="icon-name">network-transmit</property>
+                <property name="icon-name">network-offline</property>
               </object>
               <packing>
                 <property name="expand">False</property>

@@ -894,6 +894,7 @@ font-weight:
         serialConnection.newData.connect (this.updateIncoming);
         serialConnection.onError.connect(this.connectionError);
         connectButton.set_label_widget (disconnectLabel);
+        connectButton.set_icon_name ("network-transmit-receive");
         return true;
     }
 
@@ -911,6 +912,7 @@ font-weight:
             statusbar.pop (statusbarContext);
             statusbar.push (statusbarContext, currentSettings.getStatusbarString (false));
             button.set_label_widget (connectLabel);
+            button.set_icon_name ("network-offline");
 
             serialStatusSignals[0].set_sensitive (false);
             serialStatusSignals[1].set_sensitive (false);
@@ -946,6 +948,7 @@ font-weight:
         statusbar.pop(statusbarContext);
         statusbar.push(statusbarContext, currentSettings.getStatusbarString(false));
         connectButton.set_label_widget(connectLabel);
+        connectButton.set_icon_name ("network-offline");
         connectButton.set_active(false);
 
         if (recordButton.get_active())
