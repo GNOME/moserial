@@ -97,6 +97,7 @@
                         <property name="can-focus">False</property>
                         <property name="label" translatable="yes">Cut</property>
                         <property name="use-underline">True</property>
+                        <accelerator key="x" signal="activate" modifiers="GDK_CONTROL_MASK"/>
                       </object>
                     </child>
                     <child>
@@ -105,6 +106,7 @@
                         <property name="can-focus">False</property>
                         <property name="label" translatable="yes">Copy</property>
                         <property name="use-underline">True</property>
+                        <accelerator key="c" signal="activate" modifiers="GDK_CONTROL_MASK"/>
                       </object>
                     </child>
                     <child>
@@ -113,6 +115,7 @@
                         <property name="can-focus">False</property>
                         <property name="label" translatable="yes">Paste</property>
                         <property name="use-underline">True</property>
+                        <accelerator key="v" signal="activate" modifiers="GDK_CONTROL_MASK"/>
                       </object>
                     </child>
                     <child>
