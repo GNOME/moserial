@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: moserial\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-24 13:28+0100\n"
-"PO-Revision-Date: 2021-01-24 13:35+0100\n"
+"POT-Creation-Date: 2021-01-31 10:19+0100\n"
+"PO-Revision-Date: 2021-01-31 10:21+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -321,6 +321,14 @@ msgstr "Tryb dostępu"
 msgid "Local Echo"
 msgstr "Lokalne powtarzanie"
 
+#: ../data/ui/settings_dialog.ui.h:16
+msgid "On Startup"
+msgstr "Podczas uruchamiania"
+
+#: ../data/ui/settings_dialog.ui.h:17
+msgid "Connect immediately"
+msgstr "Łączenie od razu"
+
 #: ../data/ui/xmodem_filename_dialog.ui.h:2
 msgid "Filename required for XMODEM"
 msgstr "Wymagana jest nazwa pliku dla XMODEM"
@@ -483,20 +491,20 @@ msgstr "Czyści pole tekstu przychodzącego"
 msgid "Clear outgoing text box"
 msgstr "Czyści pole tekstu wychodzącego"
 
-#: ../src/MainWindow.vala:735 ../src/Profile.vala:113 ../src/Profile.vala:148
+#: ../src/MainWindow.vala:740 ../src/Profile.vala:113 ../src/Profile.vala:148
 msgid "Error: Could not open file"
 msgstr "Błąd: nie można otworzyć pliku"
 
-#: ../src/MainWindow.vala:872
+#: ../src/MainWindow.vala:877
 msgid "Error: Could not open device"
 msgstr "Błąd: nie można otworzyć urządzenia"
 
-#: ../src/MainWindow.vala:1051
+#: ../src/MainWindow.vala:1059
 #, c-format
 msgid "Unable to display help file: %s"
 msgstr "Nie można wyświetlić pliku pomocy: %s"
 
-#: ../src/MainWindow.vala:1063
+#: ../src/MainWindow.vala:1071
 msgid ""
 "A serial terminal for the GNOME desktop, optimized for logging and file "
 "capture."
@@ -504,7 +512,7 @@ msgstr ""
 "Terminal szeregowy dla środowiska GNOME, zoptymalizowany do nagrywania "
 "i przechwytywania plików."
 
-#: ../src/MainWindow.vala:1123
+#: ../src/MainWindow.vala:1131
 msgid "Save modified settings to the loaded profile?"
 msgstr "Zapisać zmodyfikowane ustawienia we wczytanym profilu?"
 
@@ -603,17 +611,21 @@ msgstr "błąd: %s\n"
 msgid "Unable to launch %s: %s"
 msgstr "Nie można uruchomić %s: %s"
 
-#: ../src/SettingsDialog.vala:73
+#: ../src/SettingsDialog.vala:74
 msgid "Also known as RTS/CTS handshaking"
 msgstr "Znane także jako powitanie RTS/CTS"
 
-#: ../src/SettingsDialog.vala:76
+#: ../src/SettingsDialog.vala:77
 msgid "Also known as XON/XOFF handshaking"
 msgstr "Znane także jako powitanie XON/XOFF"
 
-#: ../src/SettingsDialog.vala:82
+#: ../src/SettingsDialog.vala:83
 msgid "Normally disabled"
 msgstr "Zwykle wyłączone"
+
+#: ../src/SettingsDialog.vala:86
+msgid "Enable to automatically connect on startup or when a profile is loaded"
+msgstr "Automatycznie łączy podczas uruchamiania lub po wczytywaniu profilu"
 
 #: ../src/Settings.vala:25
 msgid "None"
@@ -648,35 +660,35 @@ msgid "Write Only"
 msgstr "Tylko zapis"
 
 #. TRANSLATORS: first letter of "None", a serial port parity setting
-#: ../src/Settings.vala:94
+#: ../src/Settings.vala:97
 msgid "N"
 msgstr "B"
 
 #. TRANSLATORS: first letter of "Odd", a serial port parity setting
-#: ../src/Settings.vala:98
+#: ../src/Settings.vala:101
 msgid "O"
 msgstr "N"
 
 #. TRANSLATORS: first letter of "Even", a serial port parity setting
-#: ../src/Settings.vala:102
+#: ../src/Settings.vala:105
 msgid "E"
 msgstr "P"
 
 #. TRANSLATORS: first letter of "Mark", a serial port parity setting
-#: ../src/Settings.vala:106
+#: ../src/Settings.vala:109
 msgid "M"
 msgstr "Z"
 
 #. TRANSLATORS: first letter of "Space", a serial port parity setting
-#: ../src/Settings.vala:110
+#: ../src/Settings.vala:113
 msgid "S"
 msgstr "S"
 
-#: ../src/Settings.vala:121
+#: ../src/Settings.vala:124
 msgid "OPEN"
 msgstr "OTWARTE"
 
-#: ../src/Settings.vala:122
+#: ../src/Settings.vala:125
 msgid "CLOSED"
 msgstr "ZAMKNIĘTE"
 
