@@ -1,4 +1,4 @@
-AC_INIT([moserial],[3.0.15],[https://gitlab.gnome.org/GNOME/moserial/issues/])
+AC_INIT([moserial],[3.0.16],[https://gitlab.gnome.org/GNOME/moserial/issues/])
 AC_CONFIG_SRCDIR([Makefile.am])
 AC_CONFIG_HEADERS(config.h)
 AM_INIT_AUTOMAKE([dist-xz tar-ustar no-dist-gzip])
