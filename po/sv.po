@@ -9,8 +9,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: moserial\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/moserial/issues\n"
-"POT-Creation-Date: 2021-01-16 13:47+0000\n"
-"PO-Revision-Date: 2021-01-17 00:43+0100\n"
+"POT-Creation-Date: 2021-01-26 14:31+0000\n"
+"PO-Revision-Date: 2021-02-13 13:12+0100\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -26,148 +26,226 @@ msgid "moserial"
 msgstr "moserial"
 
 #: ../data/ui/mainwindow.ui.h:2
-msgid "_File"
-msgstr "_Arkiv"
+msgid "File"
+msgstr "Arkiv"
 
 #: ../data/ui/mainwindow.ui.h:3
+msgid "Open Settings"
+msgstr "Öppna inställningar"
+
+#: ../data/ui/mainwindow.ui.h:4
 msgid "Open _Recent"
 msgstr "Öppna _senaste"
 
-#: ../data/ui/mainwindow.ui.h:4
-msgid "_Edit"
-msgstr "_Redigera"
-
 #: ../data/ui/mainwindow.ui.h:5
-msgid "_Help"
-msgstr "_Hjälp"
+msgid "Save Settings"
+msgstr "Spara inställningar"
 
 #: ../data/ui/mainwindow.ui.h:6
-msgid "Connect"
-msgstr "Anslut"
+msgid "Save Settings As"
+msgstr "Spara inställningar som"
 
 #: ../data/ui/mainwindow.ui.h:7
-msgid "Record"
-msgstr "Spela in"
+msgid "Quit"
+msgstr "Avsluta"
 
 #: ../data/ui/mainwindow.ui.h:8
-msgid "Send File"
-msgstr "Skicka fil"
+msgid "Edit"
+msgstr "Redigera"
 
 #: ../data/ui/mainwindow.ui.h:9
-msgid "Receive File"
-msgstr "Ta emot fil"
+msgid "Cut"
+msgstr "Klipp ut"
 
-#: ../data/ui/mainwindow.ui.h:10 ../data/ui/settings_dialog.ui.h:1
-msgid "Port Setup"
-msgstr "Portinställningar"
+#: ../data/ui/mainwindow.ui.h:10
+msgid "Copy"
+msgstr "Kopiera"
 
-#: ../data/ui/mainwindow.ui.h:11 ../data/ui/preferences.ui.h:1
-msgid "Preferences"
-msgstr "Inställningar"
+#: ../data/ui/mainwindow.ui.h:11
+msgid "Paste"
+msgstr "Klistra in"
 
 #: ../data/ui/mainwindow.ui.h:12
-msgid "Help"
-msgstr "Hjälp"
-
-#: ../data/ui/mainwindow.ui.h:13
-msgid "RI"
-msgstr "RI"
-
-#: ../data/ui/mainwindow.ui.h:14
-msgid "DSR"
-msgstr "DSR"
-
-#: ../data/ui/mainwindow.ui.h:15
-msgid "CD"
-msgstr "CD"
-
-#: ../data/ui/mainwindow.ui.h:16
-msgid "CTS"
-msgstr "CTS"
-
-#: ../data/ui/mainwindow.ui.h:17
 msgid "Clear"
 msgstr "Rensa"
 
+#: ../data/ui/mainwindow.ui.h:13
+msgid "View"
+msgstr "Visa"
+
+#: ../data/ui/mainwindow.ui.h:14
+msgid "Extra Controls"
+msgstr "Extra kontroller"
+
+#: ../data/ui/mainwindow.ui.h:15
+msgid "Help"
+msgstr "Hjälp"
+
+#: ../data/ui/mainwindow.ui.h:16
+msgid "About"
+msgstr "Om"
+
+#: ../data/ui/mainwindow.ui.h:17
+msgid "Connect"
+msgstr "Anslut"
+
 #: ../data/ui/mainwindow.ui.h:18
+msgid "Record"
+msgstr "Spela in"
+
+#: ../data/ui/mainwindow.ui.h:19
+msgid "Send File"
+msgstr "Skicka fil"
+
+#: ../data/ui/mainwindow.ui.h:20
+msgid "Receive File"
+msgstr "Ta emot fil"
+
+#: ../data/ui/mainwindow.ui.h:21 ../data/ui/settings_dialog.ui.h:1
+msgid "Port Setup"
+msgstr "Portinställningar"
+
+#: ../data/ui/mainwindow.ui.h:22 ../data/ui/preferences.ui.h:1
+msgid "Preferences"
+msgstr "Inställningar"
+
+#: ../data/ui/mainwindow.ui.h:23
+msgid "Shows RI input (Ring Indicator)"
+msgstr "Visar RI-inmatning (Ring Indicator)"
+
+#: ../data/ui/mainwindow.ui.h:24
+msgid "RI"
+msgstr "RI"
+
+#: ../data/ui/mainwindow.ui.h:25
+msgid "Shows DSR input (Data Set Ready)"
+msgstr "Visar DSR-inmatning (Data Set Ready)"
+
+#: ../data/ui/mainwindow.ui.h:26
+msgid "DSR"
+msgstr "DSR"
+
+#: ../data/ui/mainwindow.ui.h:27
+msgid "Shows CD input (Carrier Detect)"
+msgstr "Visar CD-inmatning (Carrier Detect)"
+
+#: ../data/ui/mainwindow.ui.h:28
+msgid "CD"
+msgstr "CD"
+
+#: ../data/ui/mainwindow.ui.h:29
+msgid "Shows CTS input (Clear To Send)"
+msgstr "Visar CTS-inmatning (Clear To Send)"
+
+#: ../data/ui/mainwindow.ui.h:30
+msgid "CTS"
+msgstr "CTS"
+
+#: ../data/ui/mainwindow.ui.h:31
 msgid "Received ASCII"
 msgstr "Mottagen ASCII"
 
-#: ../data/ui/mainwindow.ui.h:19
+#: ../data/ui/mainwindow.ui.h:32
 msgid "Received HEX"
 msgstr "Mottagen HEX"
 
-#: ../data/ui/mainwindow.ui.h:20
+#: ../data/ui/mainwindow.ui.h:33
 msgid "RTS"
 msgstr "RTS"
 
-#: ../data/ui/mainwindow.ui.h:21
+#: ../data/ui/mainwindow.ui.h:34
 msgid "DTR"
 msgstr "DTR"
 
-#: ../data/ui/mainwindow.ui.h:22
+#: ../data/ui/mainwindow.ui.h:35
 msgid "Sent ASCII"
 msgstr "Skickad ASCII"
 
-#: ../data/ui/mainwindow.ui.h:23
+#: ../data/ui/mainwindow.ui.h:36
 msgid "Sent HEX"
 msgstr "Skickad HEX"
 
-#: ../data/ui/mainwindow.ui.h:24 ../src/SerialStreamRecorder.vala:30
+#: ../data/ui/mainwindow.ui.h:37 ../src/SerialStreamRecorder.vala:31
 msgid "Outgoing"
 msgstr "Utgående"
 
-#: ../data/ui/mainwindow.ui.h:25
+#: ../data/ui/mainwindow.ui.h:38
 msgid "Send"
 msgstr "Skicka"
 
-#: ../data/ui/mainwindow.ui.h:26
+#: ../data/ui/mainwindow.ui.h:39
 msgid "Disconnect"
 msgstr "Koppla från"
 
-#: ../data/ui/mainwindow.ui.h:27
+#: ../data/ui/mainwindow.ui.h:40
 msgid "Stop Recording"
 msgstr "Sluta spela in"
 
-#: ../data/ui/preferences.ui.h:2
+#: ../data/ui/preferences.ui.h:2 ../data/ui/receive_progress.ui.h:2
+#: ../data/ui/send_progress_dialog.ui.h:2 ../data/ui/settings_dialog.ui.h:2
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: ../data/ui/preferences.ui.h:3 ../data/ui/settings_dialog.ui.h:3
+#: ../data/ui/xmodem_filename_dialog.ui.h:1
+msgid "OK"
+msgstr "OK"
+
+#: ../data/ui/preferences.ui.h:4
 msgid "Font"
 msgstr "Typsnitt"
 
-#: ../data/ui/preferences.ui.h:3
-msgid "_Use the system fixed width font"
-msgstr "_Använd systemets typsnitt med fast breddsteg"
+#: ../data/ui/preferences.ui.h:5
+msgid "Use the system fixed width font"
+msgstr "Använd systemets typsnitt med fast breddsteg"
 
-#: ../data/ui/preferences.ui.h:4
+#: ../data/ui/preferences.ui.h:6
 msgid "Display Font"
 msgstr "Visa typsnitt"
 
-#: ../data/ui/preferences.ui.h:5
+#: ../data/ui/preferences.ui.h:7
 msgid "Font Color"
 msgstr "Typsnittsfärg"
 
-#: ../data/ui/preferences.ui.h:6
+#: ../data/ui/preferences.ui.h:8
 msgid "Background Color"
 msgstr "Bakgrundsfärg"
 
-#: ../data/ui/preferences.ui.h:7
+#: ../data/ui/preferences.ui.h:9
 msgid "Highlight Color"
 msgstr "Markeringsfärg"
 
-#: ../data/ui/preferences.ui.h:8
+#: ../data/ui/preferences.ui.h:10
 msgid "Recording"
 msgstr "Spelar in"
 
-#: ../data/ui/preferences.ui.h:9
-msgid "_Launch recorded files"
-msgstr "_Starta inspelade filer"
+#: ../data/ui/preferences.ui.h:11
+msgid "Launch recorded files"
+msgstr "Starta inspelade filer"
 
-#: ../data/ui/preferences.ui.h:10
+#: ../data/ui/preferences.ui.h:12
 msgid "Enable timeout after"
 msgstr "Aktivera tidsgräns efter"
 
-#: ../data/ui/preferences.ui.h:11
+#: ../data/ui/preferences.ui.h:13
 msgid "seconds"
 msgstr "sekunder"
+
+#: ../data/ui/preferences.ui.h:14
+msgid "Use automatic timestamped filename"
+msgstr "Använd filnamn med automatisk tidsstämpel"
+
+#: ../data/ui/preferences.ui.h:15
+msgid "In this folder"
+msgstr "I denna mapp"
+
+#: ../data/ui/preferences.ui.h:16
+msgid "With this extension"
+msgstr "Med denna filändelse"
+
+#: ../data/ui/preferences.ui.h:17
+msgid "Direction"
+msgstr "Riktning"
 
 #: ../data/ui/receive_chooser.ui.h:1
 msgid "Select Folder for Received Files"
@@ -197,55 +275,63 @@ msgstr "Välj fil att skicka"
 msgid "Send File Progress"
 msgstr "Förlopp för filsändning"
 
-#: ../data/ui/settings_dialog.ui.h:2
+#: ../data/ui/settings_dialog.ui.h:4
 msgid "Port Settings"
 msgstr "Portinställningar"
 
-#: ../data/ui/settings_dialog.ui.h:3
+#: ../data/ui/settings_dialog.ui.h:5
 msgid "Hardware"
 msgstr "Maskinvara"
 
-#: ../data/ui/settings_dialog.ui.h:4
+#: ../data/ui/settings_dialog.ui.h:6
 msgid "Software"
 msgstr "Program"
 
-#: ../data/ui/settings_dialog.ui.h:5
+#: ../data/ui/settings_dialog.ui.h:7
 msgid "Echo received data"
 msgstr "Upprepar mottagna data"
 
-#: ../data/ui/settings_dialog.ui.h:6
+#: ../data/ui/settings_dialog.ui.h:8
 msgid "Device"
 msgstr "Enhet"
 
-#: ../data/ui/settings_dialog.ui.h:7
+#: ../data/ui/settings_dialog.ui.h:9
 msgid "Baud Rate"
 msgstr "Överföringshastighet"
 
-#: ../data/ui/settings_dialog.ui.h:8
+#: ../data/ui/settings_dialog.ui.h:10
 msgid "Data Bits"
 msgstr "Databitar"
 
-#: ../data/ui/settings_dialog.ui.h:9
+#: ../data/ui/settings_dialog.ui.h:11
 msgid "Stop Bits"
 msgstr "Stoppbitar"
 
-#: ../data/ui/settings_dialog.ui.h:10
+#: ../data/ui/settings_dialog.ui.h:12
 msgid "Parity"
 msgstr "Paritet"
 
-#: ../data/ui/settings_dialog.ui.h:11
+#: ../data/ui/settings_dialog.ui.h:13
 msgid "Handshake"
 msgstr "Handskakning"
 
-#: ../data/ui/settings_dialog.ui.h:12
+#: ../data/ui/settings_dialog.ui.h:14
 msgid "Access Mode"
 msgstr "Åtkomstläge"
 
-#: ../data/ui/settings_dialog.ui.h:13
+#: ../data/ui/settings_dialog.ui.h:15
 msgid "Local Echo"
 msgstr "Lokalt eko"
 
-#: ../data/ui/xmodem_filename_dialog.ui.h:1
+#: ../data/ui/settings_dialog.ui.h:16
+msgid "On Startup"
+msgstr "Vid uppstart"
+
+#: ../data/ui/settings_dialog.ui.h:17
+msgid "Connect immediately"
+msgstr "Anslut omedelbart"
+
+#: ../data/ui/xmodem_filename_dialog.ui.h:2
 msgid "Filename required for XMODEM"
 msgstr "Filnamn krävs för XMODEM"
 
@@ -281,19 +367,19 @@ msgstr ""
 "har profiler för att växla mellan konfigurationer mellan olika enheter du "
 "kommunicerar med."
 
-#: ../src/InputParser.vala:43 ../src/InputParser.vala:53
+#: ../src/InputParser.vala:46 ../src/InputParser.vala:56
 msgid "Invalid Input"
 msgstr "Ogiltig inmatning"
 
-#: ../src/Main.vala:25
+#: ../src/Main.vala:26
 msgid "Profile file to load"
 msgstr "Profilfil att läsa in"
 
-#: ../src/Main.vala:45
+#: ../src/Main.vala:48
 msgid "- moserial serial terminal"
 msgstr "- moserial seriell terminal"
 
-#: ../src/Main.vala:50 ../src/Main.vala:58
+#: ../src/Main.vala:53 ../src/Main.vala:61
 #, c-format
 msgid "Run '%s --help' to see a full list of available command line options.\n"
 msgstr ""
@@ -348,77 +434,77 @@ msgstr "ASCII"
 msgid "HEX"
 msgstr "HEX"
 
-#: ../src/MainWindow.vala:172
+#: ../src/MainWindow.vala:171
 msgid "Port configuration"
 msgstr "Portinställningar"
 
-#: ../src/MainWindow.vala:177
+#: ../src/MainWindow.vala:176
 msgid "Read the manual"
 msgstr "Läs handboken"
 
-#: ../src/MainWindow.vala:187
+#: ../src/MainWindow.vala:185
 msgid "TX: 0, RX: 0"
 msgstr "TX: 0, RX: 0"
 
-#: ../src/MainWindow.vala:198
+#: ../src/MainWindow.vala:196
 msgid "Send a file"
 msgstr "Skicka en fil"
 
-#: ../src/MainWindow.vala:207
+#: ../src/MainWindow.vala:205
 msgid "Receive a file"
 msgstr "Ta emot en fil"
 
-#: ../src/MainWindow.vala:217
+#: ../src/MainWindow.vala:214
 msgid "Record sent and/or received data"
 msgstr "Spela in skickade och/eller mottagna data"
 
-#: ../src/MainWindow.vala:228
+#: ../src/MainWindow.vala:225
 msgid "Other preferences"
 msgstr "Övriga inställningar"
 
-#: ../src/MainWindow.vala:233
+#: ../src/MainWindow.vala:230
 msgid "Open/close port"
 msgstr "Öppna/stäng port"
 
-#: ../src/MainWindow.vala:285
+#: ../src/MainWindow.vala:280
 msgid "Send the outgoing data now."
 msgstr "Skicka utgående data nu."
 
-#: ../src/MainWindow.vala:289
+#: ../src/MainWindow.vala:283
 msgid "Type outgoing data here. Press Enter or Send to send it."
 msgstr ""
 "Skriv in utgående data här. Tryck Retur eller Skicka för att skicka det."
 
-#: ../src/MainWindow.vala:340
-msgid "Toggle DTR signal status."
-msgstr "Växla DTR-signalstatus."
+#: ../src/MainWindow.vala:328
+msgid "Shows and toggles the DTR output (Data Terminal Ready)"
+msgstr "Visar och aktiverar/inaktiverar DTR-utmatningen (Data Terminal Ready)"
 
-#: ../src/MainWindow.vala:345
-msgid "Toggle RTS signal status."
-msgstr "Växla RTS-signalstatus."
+#: ../src/MainWindow.vala:333
+msgid "Shows and toggles the RTS output (Request To Send)"
+msgstr "Visar och aktiverar/inaktiverar RTS-utmatningen (Request To Send)"
 
-#: ../src/MainWindow.vala:350
-msgid "Clear incoming text box."
-msgstr "Rensa inkommande textruta."
+#: ../src/MainWindow.vala:338
+msgid "Clear incoming text box"
+msgstr "Rensa inkommande textruta"
 
-#: ../src/MainWindow.vala:355
-msgid "Clear outgoing text box."
-msgstr "Rensa utgående textruta."
+#: ../src/MainWindow.vala:343
+msgid "Clear outgoing text box"
+msgstr "Rensa utgående textruta"
 
-#: ../src/MainWindow.vala:656 ../src/Profile.vala:145 ../src/Profile.vala:178
+#: ../src/MainWindow.vala:740 ../src/Profile.vala:113 ../src/Profile.vala:148
 msgid "Error: Could not open file"
 msgstr "Fel: Kunde inte öppna filen"
 
-#: ../src/MainWindow.vala:776
+#: ../src/MainWindow.vala:877
 msgid "Error: Could not open device"
 msgstr "Fel: Kunde inte öppna enheten"
 
-#: ../src/MainWindow.vala:928
+#: ../src/MainWindow.vala:1056
 #, c-format
 msgid "Unable to display help file: %s"
 msgstr "Kunde inte visa hjälpfilen: %s"
 
-#: ../src/MainWindow.vala:939
+#: ../src/MainWindow.vala:1068
 msgid ""
 "A serial terminal for the GNOME desktop, optimized for logging and file "
 "capture."
@@ -426,15 +512,11 @@ msgstr ""
 "En seriell terminal för GNOME-skrivbordet, optimerad för loggning och "
 "filfångst."
 
-#: ../src/MainWindow.vala:993
-msgid ""
-"You have changed your setting or preferences. Do you want to save these "
-"changes to the loaded profile?"
-msgstr ""
-"Du har ändrat dina inställningar. Vill du spara dessa ändringar till den "
-"inlästa profilen?"
+#: ../src/MainWindow.vala:1128
+msgid "Save modified settings to the loaded profile?"
+msgstr "Spara ändrade inställningar till den inlästa profilen?"
 
-#: ../src/PreferencesDialog.vala:49
+#: ../src/PreferencesDialog.vala:56
 msgid ""
 "If this option is enabled, a recorded file will be opened immediately after "
 "it is saved, using the default application for the file type. The default "
@@ -444,7 +526,7 @@ msgstr ""
 "omedelbart efter att den sparats och använda standardprogrammet för "
 "filtypen. Standardprogrammet definieras av skrivbordsmiljön."
 
-#: ../src/PreferencesDialog.vala:52
+#: ../src/PreferencesDialog.vala:59
 msgid ""
 "If this option is enabled, recording will be automatically stopped after an "
 "adjustable period of inactivity after receiving some data. Moserial will "
@@ -456,160 +538,182 @@ msgstr ""
 "Moserial kommer att vänta för evigt på att spela in den första databyten "
 "innan aktivering av inaktivitetstiden."
 
-#: ../src/Preferences.vala:65
+#: ../src/Preferences.vala:86
 msgid "Unable to retrieve system font setting"
 msgstr "Kunde inte hämta systemtypsnittsinställning"
 
-#: ../src/Rzwrapper.vala:23 ../src/Szwrapper.vala:23
+#: ../src/Rzwrapper.vala:24 ../src/Szwrapper.vala:24
 msgid "Xmodem"
 msgstr "Xmodem"
 
-#: ../src/Rzwrapper.vala:24 ../src/Szwrapper.vala:24
+#: ../src/Rzwrapper.vala:25 ../src/Szwrapper.vala:25
 msgid "Ymodem"
 msgstr "Ymodem"
 
-#: ../src/Rzwrapper.vala:25 ../src/Szwrapper.vala:25
+#: ../src/Rzwrapper.vala:26 ../src/Szwrapper.vala:26
 msgid "Zmodem"
 msgstr "Zmodem"
 
-#: ../src/SendProgressDialog.vala:41
+#: ../src/SendProgressDialog.vala:44
 msgid "Waiting for remote host"
 msgstr "Väntar på fjärrvärden"
 
-#: ../src/SerialConnection.vala:43
+#: ../src/SerialConnection.vala:44
 msgid "CR+LF end"
 msgstr "CR+LF-avslut"
 
-#: ../src/SerialConnection.vala:44
+#: ../src/SerialConnection.vala:45
 msgid "CR end"
 msgstr "CR-avslut"
 
-#: ../src/SerialConnection.vala:45
+#: ../src/SerialConnection.vala:46
 msgid "LF end"
 msgstr "LF-avslut"
 
-#: ../src/SerialConnection.vala:46
+#: ../src/SerialConnection.vala:47
 msgid "TAB end"
 msgstr "TAB-avslut"
 
-#: ../src/SerialConnection.vala:47
+#: ../src/SerialConnection.vala:48
 msgid "ESC end"
 msgstr "ESC-avslut"
 
-#: ../src/SerialConnection.vala:48
+#: ../src/SerialConnection.vala:49
 msgid "No end"
 msgstr "Inget avslut"
 
-#: ../src/SerialConnection.vala:350
+#: ../src/SerialConnection.vala:362
 #, c-format
 msgid "TX: %lu, RX: %lu (%lu unprintable)"
 msgstr "TX: %lu, RX: %lu (%lu inte utskrivbara)"
 
-#: ../src/SerialConnection.vala:352
+#: ../src/SerialConnection.vala:364
 #, c-format
 msgid "TX: %lu, RX: %lu"
 msgstr "TX: %lu, RX: %lu"
 
-#: ../src/SerialStreamRecorder.vala:29
+#: ../src/SerialStreamRecorder.vala:30
 msgid "Incoming"
 msgstr "Inkommande"
 
-#: ../src/SerialStreamRecorder.vala:31
+#: ../src/SerialStreamRecorder.vala:32
 msgid "Incoming and Outgoing"
 msgstr "Inkommande och utgående"
 
-#: ../src/SerialStreamRecorder.vala:56 ../src/SerialStreamRecorder.vala:66
-#: ../src/SerialStreamRecorder.vala:87
+#: ../src/SerialStreamRecorder.vala:61 ../src/SerialStreamRecorder.vala:72
+#: ../src/SerialStreamRecorder.vala:96
 #, c-format
 msgid "error: %s\n"
 msgstr "fel: %s\n"
 
-#: ../src/SerialStreamRecorder.vala:96
+#: ../src/SerialStreamRecorder.vala:105
 #, c-format
 msgid "Unable to launch %s: %s"
 msgstr "Kunde inte starta %s: %s"
 
-#: ../src/SettingsDialog.vala:71
+#: ../src/SettingsDialog.vala:74
 msgid "Also known as RTS/CTS handshaking"
 msgstr "Också känt som RTS/CTS-handskakning"
 
-#: ../src/SettingsDialog.vala:74
+#: ../src/SettingsDialog.vala:77
 msgid "Also known as XON/XOFF handshaking"
 msgstr "Också känt som XON/XOFF-handskakning"
 
-#: ../src/SettingsDialog.vala:80
+#: ../src/SettingsDialog.vala:83
 msgid "Normally disabled"
 msgstr "Vanligen inaktiverat"
 
-#: ../src/Settings.vala:24
+#: ../src/SettingsDialog.vala:86
+msgid "Enable to automatically connect on startup or when a profile is loaded"
+msgstr ""
+"Aktivera för att automatiskt ansluta vid uppstart eller när en profil läses "
+"in"
+
+#: ../src/Settings.vala:25
 msgid "None"
 msgstr "Ingen"
 
-#: ../src/Settings.vala:25
+#: ../src/Settings.vala:26
 msgid "Odd"
 msgstr "Udda"
 
-#: ../src/Settings.vala:26
+#: ../src/Settings.vala:27
 msgid "Even"
 msgstr "Jämn"
 
-#: ../src/Settings.vala:27
+#: ../src/Settings.vala:28
 msgid "Mark"
 msgstr "Markera"
 
-#: ../src/Settings.vala:28
+#: ../src/Settings.vala:29
 msgid "Space"
 msgstr "Utrymme"
 
-#: ../src/Settings.vala:33
+#: ../src/Settings.vala:35
 msgid "Read and Write"
 msgstr "Läsa och skriva"
 
-#: ../src/Settings.vala:34
+#: ../src/Settings.vala:36
 msgid "Read Only"
 msgstr "Endast läsa"
 
-#: ../src/Settings.vala:35
+#: ../src/Settings.vala:37
 msgid "Write Only"
 msgstr "Endast skriva"
 
 #. TRANSLATORS: first letter of "None", a serial port parity setting
-#: ../src/Settings.vala:88
+#: ../src/Settings.vala:97
 msgid "N"
 msgstr "N"
 
 #. TRANSLATORS: first letter of "Odd", a serial port parity setting
-#: ../src/Settings.vala:92
+#: ../src/Settings.vala:101
 msgid "O"
 msgstr "O"
 
 #. TRANSLATORS: first letter of "Even", a serial port parity setting
-#: ../src/Settings.vala:96
+#: ../src/Settings.vala:105
 msgid "E"
 msgstr "E"
 
 #. TRANSLATORS: first letter of "Mark", a serial port parity setting
-#: ../src/Settings.vala:100
+#: ../src/Settings.vala:109
 msgid "M"
 msgstr "M"
 
 #. TRANSLATORS: first letter of "Space", a serial port parity setting
-#: ../src/Settings.vala:104
+#: ../src/Settings.vala:113
 msgid "S"
 msgstr "S"
 
-#: ../src/Settings.vala:114
+#: ../src/Settings.vala:124
 msgid "OPEN"
 msgstr "ÖPPEN"
 
-#: ../src/Settings.vala:115
+#: ../src/Settings.vala:125
 msgid "CLOSED"
 msgstr "STÄNGD"
 
-#: ../src/Szwrapper.vala:26
+#: ../src/Szwrapper.vala:27
 msgid "None (straight binary)"
 msgstr "Ingen (rak binär)"
 
-#: ../src/Szwrapper.vala:170
+#: ../src/Szwrapper.vala:178
 msgid "canceled"
 msgstr "avbruten"
+
+#~ msgid "_Help"
+#~ msgstr "_Hjälp"
+
+#~ msgid "Toggle DTR signal status."
+#~ msgstr "Växla DTR-signalstatus."
+
+#~ msgid "Toggle RTS signal status."
+#~ msgstr "Växla RTS-signalstatus."
+
+#~ msgid ""
+#~ "You have changed your setting or preferences. Do you want to save these "
+#~ "changes to the loaded profile?"
+#~ msgstr ""
+#~ "Du har ändrat dina inställningar. Vill du spara dessa ändringar till den "
+#~ "inlästa profilen?"
