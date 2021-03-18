@@ -1,221 +1,343 @@
 # Hungarian translation for moserial.
-# Copyright (C) 2014 moserial's COPYRIGHT HOLDER
+# Copyright (C) 2014, 2021 Free Software Foundation, Inc.
 # This file is distributed under the same license as the moserial package.
 #
-# Balázs Úr <urbalazs@gmail.com>, 2014.
+# Balázs Úr <ur.balazs at fsf dot hu>, 2014, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: moserial master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=moserial&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-12-29 10:58+0000\n"
-"PO-Revision-Date: 2014-12-29 19:01+0100\n"
-"Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
-"Language-Team: Hungarian <gnome-hu-list@gnome.org>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/moserial/issues\n"
+"POT-Creation-Date: 2021-01-26 14:31+0000\n"
+"PO-Revision-Date: 2021-03-18 07:59+0100\n"
+"Last-Translator: Balázs Úr <ur.balazs at fsf dot hu>\n"
+"Language-Team: Hungarian <gnome-hu-list at gnome dot org>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 1.2\n"
+"X-Generator: Lokalize 19.12.3\n"
 
-#: ../data/glade/moserial.ui.h:1
-msgid "Preferences"
-msgstr "Beállítások"
-
-#: ../data/glade/moserial.ui.h:2
-msgid "Font"
-msgstr "Betűkészlet"
-
-#: ../data/glade/moserial.ui.h:3
-msgid "_Use the system fixed width font"
-msgstr "A rendszer rögzített szélességű betűkészletének _használata"
-
-#: ../data/glade/moserial.ui.h:4
-msgid "Display Font"
-msgstr "Betűkészlet megjelenítése"
-
-#: ../data/glade/moserial.ui.h:5
-msgid "Font Color"
-msgstr "Betűszín"
-
-#: ../data/glade/moserial.ui.h:6
-msgid "Background Color"
-msgstr "Háttérszín"
-
-#: ../data/glade/moserial.ui.h:7
-msgid "Highlight Color"
-msgstr "Kiemelés színe"
-
-#: ../data/glade/moserial.ui.h:8
-msgid "Recording"
-msgstr "Felvétel"
-
-#: ../data/glade/moserial.ui.h:9
-msgid "_Launch recorded files"
-msgstr "Rögzített fájlok _indítása"
-
-#: ../data/glade/moserial.ui.h:10
-msgid "Enable timeout after"
-msgstr "Időtúllépés engedélyezése ez után:"
-
-#: ../data/glade/moserial.ui.h:11
-msgid "seconds"
-msgstr "másodperc"
-
-#: ../data/glade/moserial.ui.h:12
-msgid "Select Folder for Received Files"
-msgstr "Válasszon mappát a fogadott fájlokhoz"
-
-#: ../data/glade/moserial.ui.h:13
-msgid "Error Correction Protocol"
-msgstr "Hibajavító protokoll"
-
-#: ../data/glade/moserial.ui.h:14
-msgid "Receive File Progress"
-msgstr "Fájl fogadása folyamat"
-
-#: ../data/glade/moserial.ui.h:15
-msgid "Record Incoming and/or Outgoing Data"
-msgstr "Bejövő és/vagy kimenő adatok rögzítése"
-
-#: ../data/glade/moserial.ui.h:16
-msgid "Stream to record"
-msgstr "Rögzítendő adatfolyam"
-
-#: ../data/glade/moserial.ui.h:17
-msgid "Select File to Send"
-msgstr "Válassza ki a küldendő fájlt"
-
-#: ../data/glade/moserial.ui.h:18
-msgid "Send File Progress"
-msgstr "Fájl küldése folyamat"
-
-#: ../data/glade/moserial.ui.h:19
-msgid "Port Setup"
-msgstr "Portbeállítás"
-
-#: ../data/glade/moserial.ui.h:20
-msgid "Port Settings"
-msgstr "Portbeállítások"
-
-#: ../data/glade/moserial.ui.h:21
-msgid "Hardware"
-msgstr "Hardver"
-
-#: ../data/glade/moserial.ui.h:22
-msgid "Software"
-msgstr "Szoftver"
-
-#: ../data/glade/moserial.ui.h:23
-msgid "Access Mode"
-msgstr "Hozzáférési mód"
-
-#: ../data/glade/moserial.ui.h:24
-msgid "Handshake"
-msgstr "Kézfogás"
-
-#: ../data/glade/moserial.ui.h:25
-msgid "Parity"
-msgstr "Paritás"
-
-#: ../data/glade/moserial.ui.h:26
-msgid "Stop Bits"
-msgstr "Stop bitek"
-
-#: ../data/glade/moserial.ui.h:27
-msgid "Data Bits"
-msgstr "Adatbitek"
-
-#: ../data/glade/moserial.ui.h:28
-msgid "Baud Rate"
-msgstr "Átviteli sebesség"
-
-#: ../data/glade/moserial.ui.h:29
-msgid "Device"
-msgstr "Eszköz"
-
-#: ../data/glade/moserial.ui.h:30
-msgid "Local Echo"
-msgstr "Helyi visszhang"
-
-#: ../data/glade/moserial.ui.h:31
-msgid "Echo received data"
-msgstr "Fogadott adatok visszhangja"
-
-#: ../data/glade/moserial.ui.h:32
+#: ../data/ui/mainwindow.ui.h:1 ../data/moserial.appdata.xml.in.h:1
 msgid "moserial"
 msgstr "moserial"
 
-#: ../data/glade/moserial.ui.h:33
-msgid "_File"
-msgstr "_Fájl"
+#: ../data/ui/mainwindow.ui.h:2
+#| msgid "_File"
+msgid "File"
+msgstr "Fájl"
 
-#: ../data/glade/moserial.ui.h:34
+#: ../data/ui/mainwindow.ui.h:3
+#| msgid "Port Settings"
+msgid "Open Settings"
+msgstr "Beállítások megnyitása"
+
+#: ../data/ui/mainwindow.ui.h:4
 msgid "Open _Recent"
 msgstr "Leg_utóbbi megnyitása"
 
-#: ../data/glade/moserial.ui.h:35
-msgid "_Edit"
-msgstr "S_zerkesztés"
+#: ../data/ui/mainwindow.ui.h:5
+#| msgid "Port Settings"
+msgid "Save Settings"
+msgstr "Beállítások mentése"
 
-#: ../data/glade/moserial.ui.h:36
-msgid "_Help"
-msgstr "_Súgó"
+#: ../data/ui/mainwindow.ui.h:6
+#| msgid "Port Settings"
+msgid "Save Settings As"
+msgstr "Beállítások mentése másként"
 
-#: ../data/glade/moserial.ui.h:37
-msgid "Connect"
-msgstr "Csatlakozás"
+#: ../data/ui/mainwindow.ui.h:7
+msgid "Quit"
+msgstr "Kilépés"
 
-#: ../data/glade/moserial.ui.h:38
-msgid "Record"
-msgstr "Felvétel"
+#: ../data/ui/mainwindow.ui.h:8
+#| msgid "_Edit"
+msgid "Edit"
+msgstr "Szerkesztés"
 
-#: ../data/glade/moserial.ui.h:39
-msgid "Send File"
-msgstr "Fájl küldése"
+#: ../data/ui/mainwindow.ui.h:9
+msgid "Cut"
+msgstr "Kivágás"
 
-#: ../data/glade/moserial.ui.h:40
-msgid "Receive File"
-msgstr "Fájl fogadása"
+#: ../data/ui/mainwindow.ui.h:10
+msgid "Copy"
+msgstr "Másolás"
 
-#: ../data/glade/moserial.ui.h:41
+#: ../data/ui/mainwindow.ui.h:11
+msgid "Paste"
+msgstr "Beillesztés"
+
+#: ../data/ui/mainwindow.ui.h:12
+msgid "Clear"
+msgstr "Törlés"
+
+#: ../data/ui/mainwindow.ui.h:13
+msgid "View"
+msgstr "Nézet"
+
+#: ../data/ui/mainwindow.ui.h:14
+msgid "Extra Controls"
+msgstr "További vezérlők"
+
+#: ../data/ui/mainwindow.ui.h:15
 msgid "Help"
 msgstr "Súgó"
 
-#: ../data/glade/moserial.ui.h:42
+#: ../data/ui/mainwindow.ui.h:16
+msgid "About"
+msgstr "Névjegy"
+
+#: ../data/ui/mainwindow.ui.h:17
+msgid "Connect"
+msgstr "Csatlakozás"
+
+#: ../data/ui/mainwindow.ui.h:18
+msgid "Record"
+msgstr "Felvétel"
+
+#: ../data/ui/mainwindow.ui.h:19
+msgid "Send File"
+msgstr "Fájl küldése"
+
+#: ../data/ui/mainwindow.ui.h:20
+msgid "Receive File"
+msgstr "Fájl fogadása"
+
+#: ../data/ui/mainwindow.ui.h:21 ../data/ui/settings_dialog.ui.h:1
+msgid "Port Setup"
+msgstr "Portbeállítás"
+
+#: ../data/ui/mainwindow.ui.h:22 ../data/ui/preferences.ui.h:1
+msgid "Preferences"
+msgstr "Beállítások"
+
+#: ../data/ui/mainwindow.ui.h:23
+msgid "Shows RI input (Ring Indicator)"
+msgstr "Megjeleníti a RI bemenetet (Ring Indicator – csöngésjelző)"
+
+#: ../data/ui/mainwindow.ui.h:24
+msgid "RI"
+msgstr "RI"
+
+#: ../data/ui/mainwindow.ui.h:25
+msgid "Shows DSR input (Data Set Ready)"
+msgstr "Megjeleníti a DSR bemenetet (Data Set Ready – adathalmaz kész)"
+
+#: ../data/ui/mainwindow.ui.h:26
+msgid "DSR"
+msgstr "DSR"
+
+#: ../data/ui/mainwindow.ui.h:27
+msgid "Shows CD input (Carrier Detect)"
+msgstr "Megjeleníti a CD bemenetet (Carrier Detect – hordozóészlelés)"
+
+#: ../data/ui/mainwindow.ui.h:28
+msgid "CD"
+msgstr "CD"
+
+#: ../data/ui/mainwindow.ui.h:29
+msgid "Shows CTS input (Clear To Send)"
+msgstr "Megjeleníti a CTS bemenetet (Clear To Send – törlés a küldéshez)"
+
+#: ../data/ui/mainwindow.ui.h:30
+msgid "CTS"
+msgstr "CTS"
+
+#: ../data/ui/mainwindow.ui.h:31
 msgid "Received ASCII"
 msgstr "ASCII érkezett"
 
-#: ../data/glade/moserial.ui.h:43
+#: ../data/ui/mainwindow.ui.h:32
 msgid "Received HEX"
 msgstr "HEX érkezett"
 
-#: ../data/glade/moserial.ui.h:44
+#: ../data/ui/mainwindow.ui.h:33
+msgid "RTS"
+msgstr "RTS"
+
+#: ../data/ui/mainwindow.ui.h:34
+msgid "DTR"
+msgstr "DTR"
+
+#: ../data/ui/mainwindow.ui.h:35
 msgid "Sent ASCII"
 msgstr "ASCII elküldve"
 
-#: ../data/glade/moserial.ui.h:45
+#: ../data/ui/mainwindow.ui.h:36
 msgid "Sent HEX"
 msgstr "HEX elküldve"
 
-#: ../data/glade/moserial.ui.h:46 ../src/SerialStreamRecorder.vala:30
+#: ../data/ui/mainwindow.ui.h:37 ../src/SerialStreamRecorder.vala:31
 msgid "Outgoing"
 msgstr "Kimenő"
 
-#: ../data/glade/moserial.ui.h:47
+#: ../data/ui/mainwindow.ui.h:38
 msgid "Send"
 msgstr "Küldés"
 
-#: ../data/glade/moserial.ui.h:48
+#: ../data/ui/mainwindow.ui.h:39
 msgid "Disconnect"
 msgstr "Kapcsolat bontása"
 
-#: ../data/glade/moserial.ui.h:49
+#: ../data/ui/mainwindow.ui.h:40
 msgid "Stop Recording"
 msgstr "Felvétel leállítása"
 
-#: ../data/glade/moserial.ui.h:50
+#: ../data/ui/preferences.ui.h:2 ../data/ui/receive_progress.ui.h:2
+#: ../data/ui/send_progress_dialog.ui.h:2 ../data/ui/settings_dialog.ui.h:2
+#| msgid "canceled"
+msgid "Cancel"
+msgstr "Mégse"
+
+#: ../data/ui/preferences.ui.h:3 ../data/ui/settings_dialog.ui.h:3
+#: ../data/ui/xmodem_filename_dialog.ui.h:1
+#| msgid "O"
+msgid "OK"
+msgstr "OK"
+
+#: ../data/ui/preferences.ui.h:4
+msgid "Font"
+msgstr "Betűkészlet"
+
+#: ../data/ui/preferences.ui.h:5
+#| msgid "_Use the system fixed width font"
+msgid "Use the system fixed width font"
+msgstr "A rendszer rögzített szélességű betűkészletének használata"
+
+#: ../data/ui/preferences.ui.h:6
+msgid "Display Font"
+msgstr "Betűkészlet megjelenítése"
+
+#: ../data/ui/preferences.ui.h:7
+msgid "Font Color"
+msgstr "Betűszín"
+
+#: ../data/ui/preferences.ui.h:8
+msgid "Background Color"
+msgstr "Háttérszín"
+
+#: ../data/ui/preferences.ui.h:9
+msgid "Highlight Color"
+msgstr "Kiemelés színe"
+
+#: ../data/ui/preferences.ui.h:10
+msgid "Recording"
+msgstr "Felvétel"
+
+#: ../data/ui/preferences.ui.h:11
+#| msgid "_Launch recorded files"
+msgid "Launch recorded files"
+msgstr "Rögzített fájlok indítása"
+
+#: ../data/ui/preferences.ui.h:12
+msgid "Enable timeout after"
+msgstr "Időtúllépés engedélyezése ez után:"
+
+#: ../data/ui/preferences.ui.h:13
+msgid "seconds"
+msgstr "másodperc"
+
+#: ../data/ui/preferences.ui.h:14
+msgid "Use automatic timestamped filename"
+msgstr "Időbélyeggel automatikus ellátott fájlnév használata"
+
+#: ../data/ui/preferences.ui.h:15
+msgid "In this folder"
+msgstr "Ebben a mappában"
+
+#: ../data/ui/preferences.ui.h:16
+msgid "With this extension"
+msgstr "Ezzel a kiterjesztéssel"
+
+#: ../data/ui/preferences.ui.h:17
+msgid "Direction"
+msgstr "Irány"
+
+#: ../data/ui/receive_chooser.ui.h:1
+msgid "Select Folder for Received Files"
+msgstr "Válasszon mappát a fogadott fájlokhoz"
+
+#: ../data/ui/receive_chooser.ui.h:2 ../data/ui/send_chooser_dialog.ui.h:2
+msgid "Error Correction Protocol"
+msgstr "Hibajavító protokoll"
+
+#: ../data/ui/receive_progress.ui.h:1
+msgid "Receive File Progress"
+msgstr "Fájl fogadása folyamat"
+
+#: ../data/ui/record_dialog.ui.h:1
+msgid "Record Incoming and/or Outgoing Data"
+msgstr "Bejövő és/vagy kimenő adatok rögzítése"
+
+#: ../data/ui/record_dialog.ui.h:2
+msgid "Stream to record"
+msgstr "Rögzítendő adatfolyam"
+
+#: ../data/ui/send_chooser_dialog.ui.h:1
+msgid "Select File to Send"
+msgstr "Válassza ki a küldendő fájlt"
+
+#: ../data/ui/send_progress_dialog.ui.h:1
+msgid "Send File Progress"
+msgstr "Fájl küldése folyamat"
+
+#: ../data/ui/settings_dialog.ui.h:4
+msgid "Port Settings"
+msgstr "Portbeállítások"
+
+#: ../data/ui/settings_dialog.ui.h:5
+msgid "Hardware"
+msgstr "Hardver"
+
+#: ../data/ui/settings_dialog.ui.h:6
+msgid "Software"
+msgstr "Szoftver"
+
+#: ../data/ui/settings_dialog.ui.h:7
+msgid "Echo received data"
+msgstr "Fogadott adatok visszhangja"
+
+#: ../data/ui/settings_dialog.ui.h:8
+msgid "Device"
+msgstr "Eszköz"
+
+#: ../data/ui/settings_dialog.ui.h:9
+msgid "Baud Rate"
+msgstr "Átviteli sebesség"
+
+#: ../data/ui/settings_dialog.ui.h:10
+msgid "Data Bits"
+msgstr "Adatbitek"
+
+#: ../data/ui/settings_dialog.ui.h:11
+msgid "Stop Bits"
+msgstr "Stop bitek"
+
+#: ../data/ui/settings_dialog.ui.h:12
+msgid "Parity"
+msgstr "Paritás"
+
+#: ../data/ui/settings_dialog.ui.h:13
+msgid "Handshake"
+msgstr "Kézfogás"
+
+#: ../data/ui/settings_dialog.ui.h:14
+msgid "Access Mode"
+msgstr "Hozzáférési mód"
+
+#: ../data/ui/settings_dialog.ui.h:15
+msgid "Local Echo"
+msgstr "Helyi visszhang"
+
+#: ../data/ui/settings_dialog.ui.h:16
+msgid "On Startup"
+msgstr "Indításkor"
+
+#: ../data/ui/settings_dialog.ui.h:17
+msgid "Connect immediately"
+msgstr "Kapcsolódás azonnal"
+
+#: ../data/ui/xmodem_filename_dialog.ui.h:2
 msgid "Filename required for XMODEM"
 msgstr "Fájlnév szükséges az XMODEM-hez"
 
@@ -231,11 +353,11 @@ msgstr "Soros terminál"
 msgid "A serial terminal optimized for logging and file capture"
 msgstr "Naplózáshoz és fájlrögzítéshez optimalizált soros terminál"
 
-#: ../data/moserial.appdata.xml.in.h:1
+#: ../data/moserial.appdata.xml.in.h:2
 msgid "Serial terminal"
 msgstr "Soros terminál"
 
-#: ../data/moserial.appdata.xml.in.h:2
+#: ../data/moserial.appdata.xml.in.h:3
 msgid ""
 "Moserial is a serial terminal used for interacting with serial consoles and "
 "embedded devices. It supports the view of incoming and outgoing data in both "
@@ -245,14 +367,13 @@ msgid ""
 "communicating with."
 msgstr ""
 "A Moserial soros konzolokkal és beágyazott eszközökkel való interakcióhoz "
-"használható soros terminál. Támogatja a bejövő és kimenő adatok megtekintését "
-"mind ASCII, mind hexadecimális formátumban az adatok naplózásának "
-"lehetőségével. Támogatja továbbá az x, y és z-modem fájlok küldését és "
-"fogadását, valamint profilokkal rendelkezik, hogy könnyen átválthasson a "
-"különféle eszközök beállításai között, amelyekkel kommunikál."
+"használható soros terminál. Támogatja a bejövő és kimenő adatok "
+"megtekintését mind ASCII, mind hexadecimális formátumban az adatok "
+"naplózásának lehetőségével. Támogatja továbbá az x, y és z-modem fájlok "
+"küldését és fogadását, valamint profilokkal rendelkezik, hogy könnyen "
+"átválthasson a különféle eszközök beállításai között, amelyekkel kommunikál."
 
-#: ../src/InputParser.vala:45 ../src/InputParser.vala:52
-#: ../src/InputParser.vala:58
+#: ../src/InputParser.vala:46 ../src/InputParser.vala:56
 msgid "Invalid Input"
 msgstr "Érvénytelen bemenet"
 
@@ -260,31 +381,22 @@ msgstr "Érvénytelen bemenet"
 msgid "Profile file to load"
 msgstr "Betöltendő profilfájl"
 
-#: ../src/Main.vala:36
-#, c-format
-msgid ""
-"Failed to load UI\n"
-"%s"
-msgstr ""
-"Az UI betöltése sikertelen\n"
-"%s"
-
-#: ../src/Main.vala:52
+#: ../src/Main.vala:48
 msgid "- moserial serial terminal"
 msgstr "- moserial soros terminál"
 
-#: ../src/Main.vala:57 ../src/Main.vala:65
+#: ../src/Main.vala:53 ../src/Main.vala:61
 #, c-format
 msgid "Run '%s --help' to see a full list of available command line options.\n"
 msgstr ""
 "Futtassa a(z) „%s --help” parancsot az elérhető parancssori kapcsolók teljes "
 "listájáért.\n"
 
-#: ../src/MainWindow.vala:30
+#: ../src/MainWindow.vala:31
 msgid "translator-credits"
 msgstr "Úr Balázs <urbalazs@gmail.com>, 2014."
 
-#: ../src/MainWindow.vala:32
+#: ../src/MainWindow.vala:33
 msgid ""
 "moserial is free software: you can redistribute it and/or modify it under "
 "the terms of the GNU General Public License as published by the Free "
@@ -295,7 +407,7 @@ msgstr ""
 "Foundation által kiadott GNU General Public License dokumentumában leírtak; "
 "akár a licenc 3-as, akár (tetszőleges) későbbi változata szerint.\n"
 
-#: ../src/MainWindow.vala:33
+#: ../src/MainWindow.vala:34
 msgid ""
 "moserial is distributed in the hope that it will be useful, but WITHOUT ANY "
 "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
@@ -307,14 +419,14 @@ msgstr ""
 "ALKALMAZHATÓSÁGRA való származtatott garanciát is beleértve. További "
 "részleteket a GNU General Public License tartalmaz.\n"
 
-#: ../src/MainWindow.vala:34
+#: ../src/MainWindow.vala:35
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "this program.  If not, see <http://www.gnu.org/licenses/>."
 msgstr ""
 "A programmal együtt meg kellett kapnia a GNU General Public License egy "
-"példányát; ha mégsem kapta meg, akkor tekintse meg a <http://www.gnu."
-"org/licenses/> oldalon."
+"példányát; ha mégsem kapta meg, akkor tekintse meg a <http://www.gnu.org/"
+"licenses/> oldalon."
 
 #: ../src/MainWindow.vala:65
 msgid "ASCII"
@@ -324,77 +436,93 @@ msgstr "ASCII"
 msgid "HEX"
 msgstr "HEX"
 
-#: ../src/MainWindow.vala:163
+#: ../src/MainWindow.vala:171
 msgid "Port configuration"
 msgstr "Portbeállítás"
 
-#: ../src/MainWindow.vala:168
+#: ../src/MainWindow.vala:176
 msgid "Read the manual"
 msgstr "Olvassa el a kézikönyvet"
 
-#: ../src/MainWindow.vala:178
+#: ../src/MainWindow.vala:185
 msgid "TX: 0, RX: 0"
 msgstr "TX: 0, RX: 0"
 
-#: ../src/MainWindow.vala:189
+#: ../src/MainWindow.vala:196
 msgid "Send a file"
 msgstr "Fájl küldése"
 
-#: ../src/MainWindow.vala:198
+#: ../src/MainWindow.vala:205
 msgid "Receive a file"
 msgstr "Fájl fogadása"
 
-#: ../src/MainWindow.vala:208
+#: ../src/MainWindow.vala:214
 msgid "Record sent and/or received data"
 msgstr "Elküldött és/vagy fogadott adatok rögzítése"
 
-#: ../src/MainWindow.vala:219
+#: ../src/MainWindow.vala:225
 msgid "Other preferences"
 msgstr "Egyéb beállítások"
 
-#: ../src/MainWindow.vala:224
+#: ../src/MainWindow.vala:230
 msgid "Open/close port"
 msgstr "Port megnyitása/lezárása"
 
-#: ../src/MainWindow.vala:272
+#: ../src/MainWindow.vala:280
 msgid "Send the outgoing data now."
 msgstr "A kimenő adatok küldése most."
 
-#: ../src/MainWindow.vala:275
+#: ../src/MainWindow.vala:283
 msgid "Type outgoing data here. Press Enter or Send to send it."
 msgstr ""
-"Gépelje be ide a kimenő adatokat. Nyomja meg az Entert vagy a Küldés gombot a "
-"küldéshez."
+"Gépelje be ide a kimenő adatokat. Nyomja meg az Entert vagy a Küldés gombot "
+"a küldéshez."
 
-#: ../src/MainWindow.vala:562 ../src/Profile.vala:76 ../src/Profile.vala:107
+#: ../src/MainWindow.vala:328
+msgid "Shows and toggles the DTR output (Data Terminal Ready)"
+msgstr ""
+"Megjeleníti és átkapcsolja a DTR kimenetet (Data Terminal Ready –"
+" adatvégződés kész)"
+
+#: ../src/MainWindow.vala:333
+msgid "Shows and toggles the RTS output (Request To Send)"
+msgstr ""
+"Megjeleníti és átkapcsolja az RTS kimenetet (Request To Send – kérés"
+" küldéshez)"
+
+#: ../src/MainWindow.vala:338
+msgid "Clear incoming text box"
+msgstr "Bejövő szöveg mezőjének törlése"
+
+#: ../src/MainWindow.vala:343
+msgid "Clear outgoing text box"
+msgstr "Kimenő szöveg mezőjének törlése"
+
+#: ../src/MainWindow.vala:740 ../src/Profile.vala:113 ../src/Profile.vala:148
 msgid "Error: Could not open file"
 msgstr "Hiba: Nem lehet megnyitni a fájlt"
 
-#: ../src/MainWindow.vala:640
+#: ../src/MainWindow.vala:877
 msgid "Error: Could not open device"
 msgstr "Hiba: Nem lehet megnyitni az eszközt"
 
-#: ../src/MainWindow.vala:762
+#: ../src/MainWindow.vala:1056
 #, c-format
 msgid "Unable to display help file: %s"
 msgstr "Nem lehet megjeleníteni a súgófájlt: %s"
 
-#: ../src/MainWindow.vala:773
+#: ../src/MainWindow.vala:1068
 msgid ""
 "A serial terminal for the GNOME desktop, optimized for logging and file "
 "capture."
 msgstr ""
 "Naplózáshoz és fájlrögzítéshez optimalizált soros terminál a GNOME asztalhoz."
 
-#: ../src/MainWindow.vala:826
-msgid ""
-"You have changed your setting or preferences. Do you want to save these "
-"changes to the loaded profile?"
-msgstr ""
-"Megváltoztatta a beállítást vagy a tulajdonságokat. El szeretné menteni "
-"ezeket a módosításokat a betöltött profilba?"
+#: ../src/MainWindow.vala:1128
+msgid "Save modified settings to the loaded profile?"
+msgstr "Menti a módosított beállításokat a betöltött profilba?"
 
-#: ../src/PreferencesDialog.vala:50
+#: ../src/PreferencesDialog.vala:56
 msgid ""
 "If this option is enabled, a recorded file will be opened immediately after "
 "it is saved, using the default application for the file type. The default "
@@ -404,7 +532,7 @@ msgstr ""
 "a mentés után a fájltípushoz használt alapértelmezett alkalmazással. Az "
 "alapértelmezett alkalmazást az asztali környezet határozza meg."
 
-#: ../src/PreferencesDialog.vala:53
+#: ../src/PreferencesDialog.vala:59
 msgid ""
 "If this option is enabled, recording will be automatically stopped after an "
 "adjustable period of inactivity after receiving some data. Moserial will "
@@ -412,11 +540,11 @@ msgid ""
 "inactivity timer."
 msgstr ""
 "Ha ez a lehetőség engedélyezve van, a rögzítés automatikusan le lesz állítva "
-"az adatok fogadása után beállítható időszaknyi inaktivitás után. A Moserial a "
-"végtelenségig fog várni az első adatbájt rögzítéséhez, mielőtt aktiválná az "
-"inaktivitási időzítőt."
+"az adatok fogadása után beállítható időszaknyi inaktivitás után. A Moserial "
+"a végtelenségig fog várni az első adatbájt rögzítéséhez, mielőtt aktiválná "
+"az inaktivitási időzítőt."
 
-#: ../src/Preferences.vala:65
+#: ../src/Preferences.vala:86
 msgid "Unable to retrieve system font setting"
 msgstr "Nem kérhető le a rendszer betűkészlet beállítása"
 
@@ -432,74 +560,80 @@ msgstr "Ymodem"
 msgid "Zmodem"
 msgstr "Zmodem"
 
-#: ../src/SendProgressDialog.vala:43
+#: ../src/SendProgressDialog.vala:44
 msgid "Waiting for remote host"
 msgstr "Várakozás a távoli gépre"
 
-#: ../src/SerialConnection.vala:43
+#: ../src/SerialConnection.vala:44
 msgid "CR+LF end"
 msgstr "CR+LF vég"
 
-#: ../src/SerialConnection.vala:44
+#: ../src/SerialConnection.vala:45
 msgid "CR end"
 msgstr "CR vég"
 
-#: ../src/SerialConnection.vala:45
+#: ../src/SerialConnection.vala:46
 msgid "LF end"
 msgstr "LF vég"
 
-#: ../src/SerialConnection.vala:46
+#: ../src/SerialConnection.vala:47
 msgid "TAB end"
 msgstr "TAB vég"
 
-#: ../src/SerialConnection.vala:47
+#: ../src/SerialConnection.vala:48
 msgid "ESC end"
 msgstr "ESC vég"
 
-#: ../src/SerialConnection.vala:48
+#: ../src/SerialConnection.vala:49
 msgid "No end"
 msgstr "Nincs vég"
 
-#: ../src/SerialConnection.vala:302
+#: ../src/SerialConnection.vala:362
 #, c-format
 msgid "TX: %lu, RX: %lu (%lu unprintable)"
 msgstr "TX: %lu, RX: %lu (%lu nem nyomtatható)"
 
-#: ../src/SerialConnection.vala:304
+#: ../src/SerialConnection.vala:364
 #, c-format
 msgid "TX: %lu, RX: %lu"
 msgstr "TX: %lu, RX: %lu"
 
-#: ../src/SerialStreamRecorder.vala:29
+#: ../src/SerialStreamRecorder.vala:30
 msgid "Incoming"
 msgstr "Bejövő"
 
-#: ../src/SerialStreamRecorder.vala:31
+#: ../src/SerialStreamRecorder.vala:32
 msgid "Incoming and Outgoing"
 msgstr "Bejövő és kimenő"
 
-#: ../src/SerialStreamRecorder.vala:57 ../src/SerialStreamRecorder.vala:68
-#: ../src/SerialStreamRecorder.vala:89
+#: ../src/SerialStreamRecorder.vala:61 ../src/SerialStreamRecorder.vala:72
+#: ../src/SerialStreamRecorder.vala:96
 #, c-format
 msgid "error: %s\n"
 msgstr "hiba: %s\n"
 
-#: ../src/SerialStreamRecorder.vala:98
+#: ../src/SerialStreamRecorder.vala:105
 #, c-format
 msgid "Unable to launch %s: %s"
 msgstr "A(z) %s nem indítható: %s"
 
-#: ../src/SettingsDialog.vala:67
+#: ../src/SettingsDialog.vala:74
 msgid "Also known as RTS/CTS handshaking"
 msgstr "Ismert még RTS/CTS kézfogásként is"
 
-#: ../src/SettingsDialog.vala:70
+#: ../src/SettingsDialog.vala:77
 msgid "Also known as XON/XOFF handshaking"
 msgstr "Ismert még XON/XOFF kézfogásként is"
 
-#: ../src/SettingsDialog.vala:76
+#: ../src/SettingsDialog.vala:83
 msgid "Normally disabled"
 msgstr "Általában letiltva"
+
+#: ../src/SettingsDialog.vala:86
+msgid "Enable to automatically connect on startup or when a profile is loaded"
+msgstr ""
+"Engedélyezés az indításkor vagy egy profil betöltődése esetén történő"
+" automatikus kapcsolódáshoz"
 
 #: ../src/Settings.vala:25
 msgid "None"
@@ -521,48 +655,48 @@ msgstr "Jelölés"
 msgid "Space"
 msgstr "Hely"
 
-#: ../src/Settings.vala:34
+#: ../src/Settings.vala:35
 msgid "Read and Write"
 msgstr "Olvasás és írás"
 
-#: ../src/Settings.vala:35
+#: ../src/Settings.vala:36
 msgid "Read Only"
 msgstr "Csak olvasható"
 
-#: ../src/Settings.vala:36
+#: ../src/Settings.vala:37
 msgid "Write Only"
 msgstr "Csak írható"
 
 #. TRANSLATORS: first letter of "None", a serial port parity setting
-#: ../src/Settings.vala:89
+#: ../src/Settings.vala:97
 msgid "N"
 msgstr "N"
 
 #. TRANSLATORS: first letter of "Odd", a serial port parity setting
-#: ../src/Settings.vala:93
+#: ../src/Settings.vala:101
 msgid "O"
 msgstr "Pn"
 
 #. TRANSLATORS: first letter of "Even", a serial port parity setting
-#: ../src/Settings.vala:97
+#: ../src/Settings.vala:105
 msgid "E"
 msgstr "Ps"
 
 #. TRANSLATORS: first letter of "Mark", a serial port parity setting
-#: ../src/Settings.vala:101
+#: ../src/Settings.vala:109
 msgid "M"
 msgstr "J"
 
 #. TRANSLATORS: first letter of "Space", a serial port parity setting
-#: ../src/Settings.vala:105
+#: ../src/Settings.vala:113
 msgid "S"
 msgstr "H"
 
-#: ../src/Settings.vala:115
+#: ../src/Settings.vala:124
 msgid "OPEN"
 msgstr "NYITOTT"
 
-#: ../src/Settings.vala:116
+#: ../src/Settings.vala:125
 msgid "CLOSED"
 msgstr "LEZÁRT"
 
@@ -570,7 +704,6 @@ msgstr "LEZÁRT"
 msgid "None (straight binary)"
 msgstr "Nincs (tiszta bináris)"
 
-#: ../src/Szwrapper.vala:185
+#: ../src/Szwrapper.vala:178
 msgid "canceled"
 msgstr "megszakítva"
-
