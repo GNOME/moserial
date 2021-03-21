@@ -4,141 +4,257 @@
 #
 # Sabri Ünal <libreajans@gmail.com>, 2019.
 # Emin Tufan Çetin <etcetin@gmail.com>, 2019.
+# Muhammet Kara <muhammetk@gmail.com>, 2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: moserial master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/moserial/issues\n"
-"POT-Creation-Date: 2018-12-16 19:13+0000\n"
-"PO-Revision-Date: 2019-11-18 18:25+0300\n"
-"Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
-"Language-Team: Turkish <gnome-turk@gnome.org>\n"
+"POT-Creation-Date: 2021-01-26 14:31+0000\n"
+"PO-Revision-Date: 2021-03-21 20:21+0300\n"
+"Last-Translator: Muhammet Kara <muhammetk@gmail.com>\n"
+"Language-Team: Turkish <gnometurk@gnome.org>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0\n"
-"X-Generator: Gtranslator 3.32.1\n"
+"X-Generator: Gtranslator 3.38.0\n"
 
 #: ../data/ui/mainwindow.ui.h:1 ../data/moserial.appdata.xml.in.h:1
 msgid "moserial"
 msgstr "moserial"
 
 #: ../data/ui/mainwindow.ui.h:2
-msgid "_File"
-msgstr "_Dosya"
+#| msgid "_File"
+msgid "File"
+msgstr "Dosya"
 
 #: ../data/ui/mainwindow.ui.h:3
+#| msgid "Port Settings"
+msgid "Open Settings"
+msgstr "Ayarları Aç"
+
+#: ../data/ui/mainwindow.ui.h:4
 msgid "Open _Recent"
 msgstr "Son _Kullanılanları Aç"
 
-#: ../data/ui/mainwindow.ui.h:4
-msgid "_Edit"
-msgstr "Düz_enle"
-
 #: ../data/ui/mainwindow.ui.h:5
-msgid "_Help"
-msgstr "_Yardım"
+#| msgid "Port Settings"
+msgid "Save Settings"
+msgstr "Ayarları Kaydet"
 
 #: ../data/ui/mainwindow.ui.h:6
-msgid "Connect"
-msgstr "Bağlan"
+#| msgid "Port Settings"
+msgid "Save Settings As"
+msgstr "Ayarları Farklı Kaydet"
 
 #: ../data/ui/mainwindow.ui.h:7
-msgid "Record"
-msgstr "Kaydet"
+msgid "Quit"
+msgstr "Kapat"
 
 #: ../data/ui/mainwindow.ui.h:8
-msgid "Send File"
-msgstr "Dosya Gönder"
+#| msgid "_Edit"
+msgid "Edit"
+msgstr "Düzenle"
 
 #: ../data/ui/mainwindow.ui.h:9
-msgid "Receive File"
-msgstr "Dosya Al"
+msgid "Cut"
+msgstr "Kes"
 
-#: ../data/ui/mainwindow.ui.h:10 ../data/ui/settings_dialog.ui.h:1
-msgid "Port Setup"
-msgstr "Bağlantı Noktası Ayarı"
+#: ../data/ui/mainwindow.ui.h:10
+msgid "Copy"
+msgstr "Kopyala"
 
-#: ../data/ui/mainwindow.ui.h:11 ../data/ui/preferences.ui.h:1
-msgid "Preferences"
-msgstr "Tercihler"
+#: ../data/ui/mainwindow.ui.h:11
+msgid "Paste"
+msgstr "Yapıştır"
 
 #: ../data/ui/mainwindow.ui.h:12
+msgid "Clear"
+msgstr "Temizle"
+
+#: ../data/ui/mainwindow.ui.h:13
+msgid "View"
+msgstr ""
+
+#: ../data/ui/mainwindow.ui.h:14
+msgid "Extra Controls"
+msgstr "Ek Denetimler"
+
+#: ../data/ui/mainwindow.ui.h:15
 msgid "Help"
 msgstr "Yardım"
 
-#: ../data/ui/mainwindow.ui.h:13
+#: ../data/ui/mainwindow.ui.h:16
+msgid "About"
+msgstr "Hakkında"
+
+#: ../data/ui/mainwindow.ui.h:17
+msgid "Connect"
+msgstr "Bağlan"
+
+#: ../data/ui/mainwindow.ui.h:18
+msgid "Record"
+msgstr "Kaydet"
+
+#: ../data/ui/mainwindow.ui.h:19
+msgid "Send File"
+msgstr "Dosya Gönder"
+
+#: ../data/ui/mainwindow.ui.h:20
+msgid "Receive File"
+msgstr "Dosya Al"
+
+#: ../data/ui/mainwindow.ui.h:21 ../data/ui/settings_dialog.ui.h:1
+msgid "Port Setup"
+msgstr "Bağlantı Noktası Ayarı"
+
+#: ../data/ui/mainwindow.ui.h:22 ../data/ui/preferences.ui.h:1
+msgid "Preferences"
+msgstr "Tercihler"
+
+#: ../data/ui/mainwindow.ui.h:23
+msgid "Shows RI input (Ring Indicator)"
+msgstr ""
+
+#: ../data/ui/mainwindow.ui.h:24
+msgid "RI"
+msgstr ""
+
+#: ../data/ui/mainwindow.ui.h:25
+msgid "Shows DSR input (Data Set Ready)"
+msgstr ""
+
+#: ../data/ui/mainwindow.ui.h:26
+msgid "DSR"
+msgstr ""
+
+#: ../data/ui/mainwindow.ui.h:27
+msgid "Shows CD input (Carrier Detect)"
+msgstr ""
+
+#: ../data/ui/mainwindow.ui.h:28
+msgid "CD"
+msgstr ""
+
+#: ../data/ui/mainwindow.ui.h:29
+msgid "Shows CTS input (Clear To Send)"
+msgstr ""
+
+#: ../data/ui/mainwindow.ui.h:30
+msgid "CTS"
+msgstr ""
+
+#: ../data/ui/mainwindow.ui.h:31
 msgid "Received ASCII"
 msgstr "Alınan ASCII"
 
-#: ../data/ui/mainwindow.ui.h:14
+#: ../data/ui/mainwindow.ui.h:32
 msgid "Received HEX"
 msgstr "Alınan HEX"
 
-#: ../data/ui/mainwindow.ui.h:15
+#: ../data/ui/mainwindow.ui.h:33
+msgid "RTS"
+msgstr ""
+
+#: ../data/ui/mainwindow.ui.h:34
+msgid "DTR"
+msgstr ""
+
+#: ../data/ui/mainwindow.ui.h:35
 msgid "Sent ASCII"
 msgstr "Gönderilen ASCII"
 
-#: ../data/ui/mainwindow.ui.h:16
+#: ../data/ui/mainwindow.ui.h:36
 msgid "Sent HEX"
 msgstr "Gönderilen HEX"
 
-#: ../data/ui/mainwindow.ui.h:17 ../src/SerialStreamRecorder.vala:30
+#: ../data/ui/mainwindow.ui.h:37 ../src/SerialStreamRecorder.vala:31
 msgid "Outgoing"
 msgstr "Giden"
 
-#: ../data/ui/mainwindow.ui.h:18
+#: ../data/ui/mainwindow.ui.h:38
 msgid "Send"
 msgstr "Gönder"
 
-#: ../data/ui/mainwindow.ui.h:19
+#: ../data/ui/mainwindow.ui.h:39
 msgid "Disconnect"
 msgstr "Bağlantıyı Kes"
 
-#: ../data/ui/mainwindow.ui.h:20
+#: ../data/ui/mainwindow.ui.h:40
 msgid "Stop Recording"
 msgstr "Kaydetmeyi Durdur"
 
-#: ../data/ui/preferences.ui.h:2
+#: ../data/ui/preferences.ui.h:2 ../data/ui/receive_progress.ui.h:2
+#: ../data/ui/send_progress_dialog.ui.h:2 ../data/ui/settings_dialog.ui.h:2
+#| msgid "canceled"
+msgid "Cancel"
+msgstr "Vazgeç"
+
+#: ../data/ui/preferences.ui.h:3 ../data/ui/settings_dialog.ui.h:3
+#: ../data/ui/xmodem_filename_dialog.ui.h:1
+#| msgid "O"
+msgid "OK"
+msgstr "Tamam"
+
+#: ../data/ui/preferences.ui.h:4
 msgid "Font"
 msgstr "Yazı Tipi"
 
-#: ../data/ui/preferences.ui.h:3
-msgid "_Use the system fixed width font"
-msgstr "Sabit genişlikli sistem yazı tipini _kullan"
+#: ../data/ui/preferences.ui.h:5
+#| msgid "_Use the system fixed width font"
+msgid "Use the system fixed width font"
+msgstr "Sabit genişlikli sistem yazı tipini kullan"
 
-#: ../data/ui/preferences.ui.h:4
+#: ../data/ui/preferences.ui.h:6
 msgid "Display Font"
 msgstr "Ekran Yazı Tipi"
 
-#: ../data/ui/preferences.ui.h:5
+#: ../data/ui/preferences.ui.h:7
 msgid "Font Color"
 msgstr "Yazı Tipi Rengi"
 
-#: ../data/ui/preferences.ui.h:6
+#: ../data/ui/preferences.ui.h:8
 msgid "Background Color"
 msgstr "Arka Plan Rengi"
 
-#: ../data/ui/preferences.ui.h:7
+#: ../data/ui/preferences.ui.h:9
 msgid "Highlight Color"
 msgstr "Vurgulama Rengi"
 
-#: ../data/ui/preferences.ui.h:8
+#: ../data/ui/preferences.ui.h:10
 msgid "Recording"
 msgstr "Kaydetme"
 
-#: ../data/ui/preferences.ui.h:9
-msgid "_Launch recorded files"
-msgstr "_Kaydedilen dosyaları başlat"
+#: ../data/ui/preferences.ui.h:11
+#| msgid "_Launch recorded files"
+msgid "Launch recorded files"
+msgstr "Kaydedilen dosyaları başlat"
 
-#: ../data/ui/preferences.ui.h:10
+#: ../data/ui/preferences.ui.h:12
 msgid "Enable timeout after"
 msgstr "Zaman aşımı süresi"
 
-#: ../data/ui/preferences.ui.h:11
+#: ../data/ui/preferences.ui.h:13
 msgid "seconds"
 msgstr "saniye"
+
+#: ../data/ui/preferences.ui.h:14
+msgid "Use automatic timestamped filename"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:15
+msgid "In this folder"
+msgstr "Bu klasörde"
+
+#: ../data/ui/preferences.ui.h:16
+msgid "With this extension"
+msgstr ""
+
+#: ../data/ui/preferences.ui.h:17
+msgid "Direction"
+msgstr "Yön"
 
 #: ../data/ui/receive_chooser.ui.h:1
 msgid "Select Folder for Received Files"
@@ -168,55 +284,63 @@ msgstr "Göndermek İçin Dosya Seç"
 msgid "Send File Progress"
 msgstr "Dosya Gönderim Süreci"
 
-#: ../data/ui/settings_dialog.ui.h:2
+#: ../data/ui/settings_dialog.ui.h:4
 msgid "Port Settings"
 msgstr "Bağlantı Noktası Ayarları"
 
-#: ../data/ui/settings_dialog.ui.h:3
+#: ../data/ui/settings_dialog.ui.h:5
 msgid "Hardware"
 msgstr "Donanım"
 
-#: ../data/ui/settings_dialog.ui.h:4
+#: ../data/ui/settings_dialog.ui.h:6
 msgid "Software"
 msgstr "Yazılım"
 
-#: ../data/ui/settings_dialog.ui.h:5
-msgid "Access Mode"
-msgstr "Erişim Kipi"
-
-#: ../data/ui/settings_dialog.ui.h:6
-msgid "Handshake"
-msgstr "El Sıkışma"
-
 #: ../data/ui/settings_dialog.ui.h:7
-msgid "Parity"
-msgstr "Parite"
-
-#: ../data/ui/settings_dialog.ui.h:8
-msgid "Stop Bits"
-msgstr "Durak Bitleri"
-
-#: ../data/ui/settings_dialog.ui.h:9
-msgid "Data Bits"
-msgstr "Veri Bitleri"
-
-#: ../data/ui/settings_dialog.ui.h:10
-msgid "Baud Rate"
-msgstr "Baud Hızı"
-
-#: ../data/ui/settings_dialog.ui.h:11
-msgid "Device"
-msgstr "Aygıt"
-
-#: ../data/ui/settings_dialog.ui.h:12
-msgid "Local Echo"
-msgstr "Yerel Yankı"
-
-#: ../data/ui/settings_dialog.ui.h:13
 msgid "Echo received data"
 msgstr "Alınan verileri yankıla"
 
-#: ../data/ui/xmodem_filename_dialog.ui.h:1
+#: ../data/ui/settings_dialog.ui.h:8
+msgid "Device"
+msgstr "Aygıt"
+
+#: ../data/ui/settings_dialog.ui.h:9
+msgid "Baud Rate"
+msgstr "Baud Hızı"
+
+#: ../data/ui/settings_dialog.ui.h:10
+msgid "Data Bits"
+msgstr "Veri Bitleri"
+
+#: ../data/ui/settings_dialog.ui.h:11
+msgid "Stop Bits"
+msgstr "Durak Bitleri"
+
+#: ../data/ui/settings_dialog.ui.h:12
+msgid "Parity"
+msgstr "Parite"
+
+#: ../data/ui/settings_dialog.ui.h:13
+msgid "Handshake"
+msgstr "El Sıkışma"
+
+#: ../data/ui/settings_dialog.ui.h:14
+msgid "Access Mode"
+msgstr "Erişim Kipi"
+
+#: ../data/ui/settings_dialog.ui.h:15
+msgid "Local Echo"
+msgstr "Yerel Yankı"
+
+#: ../data/ui/settings_dialog.ui.h:16
+msgid "On Startup"
+msgstr ""
+
+#: ../data/ui/settings_dialog.ui.h:17
+msgid "Connect immediately"
+msgstr "Hemen bağlan"
+
+#: ../data/ui/xmodem_filename_dialog.ui.h:2
 msgid "Filename required for XMODEM"
 msgstr "XMODEM için dosya adı gerekli"
 
@@ -252,7 +376,7 @@ msgstr ""
 "iletişim kurduğunuz farklı aygıt yapılandırmaları arasında kolayca geçiş "
 "yapmanızı sağlayan profil desteğine de sahiptir."
 
-#: ../src/InputParser.vala:44 ../src/InputParser.vala:54
+#: ../src/InputParser.vala:46 ../src/InputParser.vala:56
 msgid "Invalid Input"
 msgstr "Geçersiz Girdi"
 
@@ -260,22 +384,22 @@ msgstr "Geçersiz Girdi"
 msgid "Profile file to load"
 msgstr "Yüklenecek profil dosyası"
 
-#: ../src/Main.vala:45
+#: ../src/Main.vala:48
 msgid "- moserial serial terminal"
 msgstr "- moserial seri uçbirim"
 
-#: ../src/Main.vala:50 ../src/Main.vala:58
+#: ../src/Main.vala:53 ../src/Main.vala:61
 #, c-format
 msgid "Run '%s --help' to see a full list of available command line options.\n"
 msgstr ""
 "Kullanılabilir komut satırı seçeneklerinin tam listesi için '%s --help'  "
 "komutunu çalıştırın.\n"
 
-#: ../src/MainWindow.vala:30
+#: ../src/MainWindow.vala:31
 msgid "translator-credits"
 msgstr "Sabri Ünal <libreajans@gmail.com>"
 
-#: ../src/MainWindow.vala:32
+#: ../src/MainWindow.vala:33
 msgid ""
 "moserial is free software: you can redistribute it and/or modify it under "
 "the terms of the GNU General Public License as published by the Free "
@@ -286,7 +410,7 @@ msgstr ""
 "Genel Kamu Lisansı'nın 3. veya (tercihinize bağlı olarak) daha sonraki bir "
 "sürümü altında yeniden dağıtabilir ve/veya değiştirebilirsiniz.\n"
 
-#: ../src/MainWindow.vala:33
+#: ../src/MainWindow.vala:34
 msgid ""
 "moserial is distributed in the hope that it will be useful, but WITHOUT ANY "
 "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
@@ -297,7 +421,7 @@ msgstr ""
 "YOKTUR; hatta SATILABİLİRLİK ya da BİR AMACA HİZMET gibi garantisi de "
 "yoktur.  Daha çok ayrıntı için GNU Genel Kamu Lisansı'na bakın.\n"
 
-#: ../src/MainWindow.vala:34
+#: ../src/MainWindow.vala:35
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "this program.  If not, see <http://www.gnu.org/licenses/>."
@@ -305,85 +429,97 @@ msgstr ""
 "Bu programla birlikte GNU Genel Kamu Lisansının bir kopyasını almış "
 "olmalısınız. Almadıysanız, <http://www.gnu.org/licenses/> adresine bakın."
 
-#: ../src/MainWindow.vala:64
+#: ../src/MainWindow.vala:65
 msgid "ASCII"
 msgstr "ASCII"
 
-#: ../src/MainWindow.vala:64
+#: ../src/MainWindow.vala:65
 msgid "HEX"
 msgstr "HEX"
 
-#: ../src/MainWindow.vala:164
+#: ../src/MainWindow.vala:171
 msgid "Port configuration"
 msgstr "Bağlantı noktası yapılandırması"
 
-#: ../src/MainWindow.vala:169
+#: ../src/MainWindow.vala:176
 msgid "Read the manual"
 msgstr "Kullanıcı kılavuzuna bak"
 
-#: ../src/MainWindow.vala:179
+#: ../src/MainWindow.vala:185
 msgid "TX: 0, RX: 0"
 msgstr "TX: 0, RX: 0"
 
-#: ../src/MainWindow.vala:190
+#: ../src/MainWindow.vala:196
 msgid "Send a file"
 msgstr "Dosya gönder"
 
-#: ../src/MainWindow.vala:199
+#: ../src/MainWindow.vala:205
 msgid "Receive a file"
 msgstr "Dosya al"
 
-#: ../src/MainWindow.vala:209
+#: ../src/MainWindow.vala:214
 msgid "Record sent and/or received data"
 msgstr "Gönderilen ve/veya alınan veriyi kaydet"
 
-#: ../src/MainWindow.vala:220
+#: ../src/MainWindow.vala:225
 msgid "Other preferences"
 msgstr "Diğer tercihler"
 
-#: ../src/MainWindow.vala:225
+#: ../src/MainWindow.vala:230
 msgid "Open/close port"
 msgstr "Bağlantı noktası aç/kapat"
 
-#: ../src/MainWindow.vala:273
+#: ../src/MainWindow.vala:280
 msgid "Send the outgoing data now."
 msgstr "Giden veriyi şimdi gönder."
 
-#: ../src/MainWindow.vala:276
+#: ../src/MainWindow.vala:283
 msgid "Type outgoing data here. Press Enter or Send to send it."
 msgstr ""
 "Giden veriyi buraya yazın. Göndermek için Enter tuşuna veya Gönder düğmesine "
 "basın."
 
-#: ../src/MainWindow.vala:559 ../src/Profile.vala:76 ../src/Profile.vala:107
+#: ../src/MainWindow.vala:328
+msgid "Shows and toggles the DTR output (Data Terminal Ready)"
+msgstr ""
+
+#: ../src/MainWindow.vala:333
+msgid "Shows and toggles the RTS output (Request To Send)"
+msgstr ""
+
+#: ../src/MainWindow.vala:338
+msgid "Clear incoming text box"
+msgstr ""
+
+#: ../src/MainWindow.vala:343
+msgid "Clear outgoing text box"
+msgstr ""
+
+#: ../src/MainWindow.vala:740 ../src/Profile.vala:113 ../src/Profile.vala:148
 msgid "Error: Could not open file"
 msgstr "Hata: Dosya açılamadı"
 
-#: ../src/MainWindow.vala:637
+#: ../src/MainWindow.vala:877
 msgid "Error: Could not open device"
 msgstr "Hata: Aygıt açılamadı"
 
-#: ../src/MainWindow.vala:759
+#: ../src/MainWindow.vala:1056
 #, c-format
 msgid "Unable to display help file: %s"
 msgstr "Yardım dosyası görüntülenemiyor: %s"
 
-#: ../src/MainWindow.vala:770
+#: ../src/MainWindow.vala:1068
 msgid ""
 "A serial terminal for the GNOME desktop, optimized for logging and file "
 "capture."
 msgstr ""
 "Günlükleme ve dosya yakalamada eniyilenmiş, GNOME masaüstü için seri uçbirim."
 
-#: ../src/MainWindow.vala:823
-msgid ""
-"You have changed your setting or preferences. Do you want to save these "
-"changes to the loaded profile?"
+#: ../src/MainWindow.vala:1128
+msgid "Save modified settings to the loaded profile?"
 msgstr ""
-"Ayar veya tercihlerinizi değiştirdiniz. Bu değişiklikleri yüklü profile "
-"kaydetmek ister misiniz?"
 
-#: ../src/PreferencesDialog.vala:48
+#: ../src/PreferencesDialog.vala:56
 msgid ""
 "If this option is enabled, a recorded file will be opened immediately after "
 "it is saved, using the default application for the file type. The default "
@@ -393,7 +529,7 @@ msgstr ""
 "dosya türü için öntanımlı uygulama kullanılarak açılır. Öntanımlı uygulama, "
 "masaüstü ortamı tarafından tanımlanır."
 
-#: ../src/PreferencesDialog.vala:51
+#: ../src/PreferencesDialog.vala:59
 msgid ""
 "If this option is enabled, recording will be automatically stopped after an "
 "adjustable period of inactivity after receiving some data. Moserial will "
@@ -405,7 +541,7 @@ msgstr ""
 "zamanlayıcısını etkinleştirmeden önce ilk veri baytını kaydetmek için "
 "süresiz olarak bekleyecektir."
 
-#: ../src/Preferences.vala:65
+#: ../src/Preferences.vala:86
 msgid "Unable to retrieve system font setting"
 msgstr "Sistem yazı tipi ayarı alınamadı"
 
@@ -421,74 +557,78 @@ msgstr "Ymodem"
 msgid "Zmodem"
 msgstr "Zmodem"
 
-#: ../src/SendProgressDialog.vala:41
+#: ../src/SendProgressDialog.vala:44
 msgid "Waiting for remote host"
 msgstr "Uzak anabilgisayar için bekleniyor"
 
-#: ../src/SerialConnection.vala:43
+#: ../src/SerialConnection.vala:44
 msgid "CR+LF end"
 msgstr "CR+LF son"
 
-#: ../src/SerialConnection.vala:44
+#: ../src/SerialConnection.vala:45
 msgid "CR end"
 msgstr "CR son"
 
-#: ../src/SerialConnection.vala:45
+#: ../src/SerialConnection.vala:46
 msgid "LF end"
 msgstr "LF son"
 
-#: ../src/SerialConnection.vala:46
+#: ../src/SerialConnection.vala:47
 msgid "TAB end"
 msgstr "TAB son"
 
-#: ../src/SerialConnection.vala:47
+#: ../src/SerialConnection.vala:48
 msgid "ESC end"
 msgstr "ESC son"
 
-#: ../src/SerialConnection.vala:48
+#: ../src/SerialConnection.vala:49
 msgid "No end"
 msgstr "Son yok"
 
-#: ../src/SerialConnection.vala:291
+#: ../src/SerialConnection.vala:362
 #, c-format
 msgid "TX: %lu, RX: %lu (%lu unprintable)"
 msgstr "TX: %lu, RX: %lu (%lu yazdırılamaz)"
 
-#: ../src/SerialConnection.vala:293
+#: ../src/SerialConnection.vala:364
 #, c-format
 msgid "TX: %lu, RX: %lu"
 msgstr "TX: %lu, RX: %lu"
 
-#: ../src/SerialStreamRecorder.vala:29
+#: ../src/SerialStreamRecorder.vala:30
 msgid "Incoming"
 msgstr "Gelen"
 
-#: ../src/SerialStreamRecorder.vala:31
+#: ../src/SerialStreamRecorder.vala:32
 msgid "Incoming and Outgoing"
 msgstr "Gelen ve Giden"
 
-#: ../src/SerialStreamRecorder.vala:57 ../src/SerialStreamRecorder.vala:68
-#: ../src/SerialStreamRecorder.vala:89
+#: ../src/SerialStreamRecorder.vala:61 ../src/SerialStreamRecorder.vala:72
+#: ../src/SerialStreamRecorder.vala:96
 #, c-format
 msgid "error: %s\n"
 msgstr "hata: %s\n"
 
-#: ../src/SerialStreamRecorder.vala:98
+#: ../src/SerialStreamRecorder.vala:105
 #, c-format
 msgid "Unable to launch %s: %s"
 msgstr "%s başlatılamıyor: %s"
 
-#: ../src/SettingsDialog.vala:65
+#: ../src/SettingsDialog.vala:74
 msgid "Also known as RTS/CTS handshaking"
 msgstr "RTS/CTS el sıkışması olarak da bilinir"
 
-#: ../src/SettingsDialog.vala:68
+#: ../src/SettingsDialog.vala:77
 msgid "Also known as XON/XOFF handshaking"
 msgstr "XON/XOFF el sıkışması olarak da bilinir"
 
-#: ../src/SettingsDialog.vala:74
+#: ../src/SettingsDialog.vala:83
 msgid "Normally disabled"
 msgstr "Normal olarak devre dışı"
+
+#: ../src/SettingsDialog.vala:86
+msgid "Enable to automatically connect on startup or when a profile is loaded"
+msgstr ""
 
 #: ../src/Settings.vala:25
 msgid "None"
@@ -510,48 +650,48 @@ msgstr "İşaret"
 msgid "Space"
 msgstr "Boyluk"
 
-#: ../src/Settings.vala:34
+#: ../src/Settings.vala:35
 msgid "Read and Write"
 msgstr "Oku ve Yaz"
 
-#: ../src/Settings.vala:35
+#: ../src/Settings.vala:36
 msgid "Read Only"
 msgstr "Salt Okunur"
 
-#: ../src/Settings.vala:36
+#: ../src/Settings.vala:37
 msgid "Write Only"
 msgstr "Salt Yazılır"
 
 #. TRANSLATORS: first letter of "None", a serial port parity setting
-#: ../src/Settings.vala:89
+#: ../src/Settings.vala:97
 msgid "N"
 msgstr "N"
 
 #. TRANSLATORS: first letter of "Odd", a serial port parity setting
-#: ../src/Settings.vala:93
+#: ../src/Settings.vala:101
 msgid "O"
 msgstr "O"
 
 #. TRANSLATORS: first letter of "Even", a serial port parity setting
-#: ../src/Settings.vala:97
+#: ../src/Settings.vala:105
 msgid "E"
 msgstr "E"
 
 #. TRANSLATORS: first letter of "Mark", a serial port parity setting
-#: ../src/Settings.vala:101
+#: ../src/Settings.vala:109
 msgid "M"
 msgstr "M"
 
 #. TRANSLATORS: first letter of "Space", a serial port parity setting
-#: ../src/Settings.vala:105
+#: ../src/Settings.vala:113
 msgid "S"
 msgstr "S"
 
-#: ../src/Settings.vala:115
+#: ../src/Settings.vala:124
 msgid "OPEN"
 msgstr "AÇIK"
 
-#: ../src/Settings.vala:116
+#: ../src/Settings.vala:125
 msgid "CLOSED"
 msgstr "KAPALI"
 
@@ -559,6 +699,16 @@ msgstr "KAPALI"
 msgid "None (straight binary)"
 msgstr "Hiçbiri (direk ikilik)"
 
-#: ../src/Szwrapper.vala:185
+#: ../src/Szwrapper.vala:178
 msgid "canceled"
 msgstr "iptal edildi"
+
+#~ msgid "_Help"
+#~ msgstr "_Yardım"
+
+#~ msgid ""
+#~ "You have changed your setting or preferences. Do you want to save these "
+#~ "changes to the loaded profile?"
+#~ msgstr ""
+#~ "Ayar veya tercihlerinizi değiştirdiniz. Bu değişiklikleri yüklü profile "
+#~ "kaydetmek ister misiniz?"
