@@ -1,14 +1,15 @@
 # Basque translation for moserial.
 # Copyright (C) 2019 moserial's COPYRIGHT HOLDER
 # This file is distributed under the same license as the moserial package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Asier Sarasua Garmendia <asiersarasua@ni.eus>, 2021.
 #
 msgid ""
 msgstr "Project-Id-Version: moserial master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/moserial/issues\n"
-"POT-Creation-Date: 2018-12-16 19:13+0000\n"
-"PO-Revision-Date: 2019-10-17 10:00+0100\n"
-"Last-Translator: Asier Sarasua Garmendia <asier.sarasua@gmail.com>\n"
+"POT-Creation-Date: 2021-01-26 14:31+0000\n"
+"PO-Revision-Date: 2021-04-06 10:00+0100\n"
+"Last-Translator: Asier Sarasua Garmendia <asiersarasua@ni.eus>\n"
 "Language-Team: Basque <librezale@librezale.eus>\n"
 "Language: eu\n"
 "MIME-Version: 1.0\n"
@@ -20,120 +21,226 @@ msgid "moserial"
 msgstr "moserial"
 
 #: ../data/ui/mainwindow.ui.h:2
-msgid "_File"
-msgstr "_Fitxategia"
+msgid "File"
+msgstr "Fitxategia"
 
 #: ../data/ui/mainwindow.ui.h:3
+msgid "Open Settings"
+msgstr "Ireki ezarpenak"
+
+#: ../data/ui/mainwindow.ui.h:4
 msgid "Open _Recent"
 msgstr "A_zken fitxategiak"
 
-#: ../data/ui/mainwindow.ui.h:4
-msgid "_Edit"
-msgstr "_Editatu"
-
 #: ../data/ui/mainwindow.ui.h:5
-msgid "_Help"
-msgstr "_Laguntza"
+msgid "Save Settings"
+msgstr "Gorde ezarpenak"
 
 #: ../data/ui/mainwindow.ui.h:6
-msgid "Connect"
-msgstr "Konektatu"
+msgid "Save Settings As"
+msgstr "Gorde ezarpenak honela"
 
 #: ../data/ui/mainwindow.ui.h:7
-msgid "Record"
-msgstr "Grabatu"
+msgid "Quit"
+msgstr "Irten"
 
 #: ../data/ui/mainwindow.ui.h:8
-msgid "Send File"
-msgstr "Bidali fitxategia"
+msgid "Edit"
+msgstr "Editatu"
 
 #: ../data/ui/mainwindow.ui.h:9
-msgid "Receive File"
-msgstr "Jaso fitxategia"
+msgid "Cut"
+msgstr "Ebaki"
 
-#: ../data/ui/mainwindow.ui.h:10 ../data/ui/settings_dialog.ui.h:1
-msgid "Port Setup"
-msgstr "Atakaren konfigurazioa"
+#: ../data/ui/mainwindow.ui.h:10
+msgid "Copy"
+msgstr "Kopiatu"
 
-#: ../data/ui/mainwindow.ui.h:11 ../data/ui/preferences.ui.h:1
-msgid "Preferences"
-msgstr "Hobespenak"
+#: ../data/ui/mainwindow.ui.h:11
+msgid "Paste"
+msgstr "Itsatsi"
 
 #: ../data/ui/mainwindow.ui.h:12
+msgid "Clear"
+msgstr "Garbitu"
+
+#: ../data/ui/mainwindow.ui.h:13
+msgid "View"
+msgstr "Ikusi"
+
+#: ../data/ui/mainwindow.ui.h:14
+msgid "Extra Controls"
+msgstr "Kontrol gehigarriak"
+
+#: ../data/ui/mainwindow.ui.h:15
 msgid "Help"
 msgstr "Laguntza"
 
-#: ../data/ui/mainwindow.ui.h:13
+#: ../data/ui/mainwindow.ui.h:16
+msgid "About"
+msgstr "Honi buruz"
+
+#: ../data/ui/mainwindow.ui.h:17
+msgid "Connect"
+msgstr "Konektatu"
+
+#: ../data/ui/mainwindow.ui.h:18
+msgid "Record"
+msgstr "Grabatu"
+
+#: ../data/ui/mainwindow.ui.h:19
+msgid "Send File"
+msgstr "Bidali fitxategia"
+
+#: ../data/ui/mainwindow.ui.h:20
+msgid "Receive File"
+msgstr "Jaso fitxategia"
+
+#: ../data/ui/mainwindow.ui.h:21 ../data/ui/settings_dialog.ui.h:1
+msgid "Port Setup"
+msgstr "Atakaren konfigurazioa"
+
+#: ../data/ui/mainwindow.ui.h:22 ../data/ui/preferences.ui.h:1
+msgid "Preferences"
+msgstr "Hobespenak"
+
+#: ../data/ui/mainwindow.ui.h:23
+msgid "Shows RI input (Ring Indicator)"
+msgstr "RI (Ring Indicator) sarrera erakusten du"
+
+#: ../data/ui/mainwindow.ui.h:24
+msgid "RI"
+msgstr "RI"
+
+#: ../data/ui/mainwindow.ui.h:25
+msgid "Shows DSR input (Data Set Ready)"
+msgstr "DSR (Data Set Ready) sarrera erakusten du"
+
+#: ../data/ui/mainwindow.ui.h:26
+msgid "DSR"
+msgstr "DSR"
+
+#: ../data/ui/mainwindow.ui.h:27
+msgid "Shows CD input (Carrier Detect)"
+msgstr "CD (Carrier Detect) sarrera erakusten du"
+
+#: ../data/ui/mainwindow.ui.h:28
+msgid "CD"
+msgstr "CD"
+
+#: ../data/ui/mainwindow.ui.h:29
+msgid "Shows CTS input (Clear To Send)"
+msgstr "CTS (Clear To Send) sarrera erakusten du"
+
+#: ../data/ui/mainwindow.ui.h:30
+msgid "CTS"
+msgstr "CTS"
+
+#: ../data/ui/mainwindow.ui.h:31
 msgid "Received ASCII"
 msgstr "ASCIIa jaso da"
 
-#: ../data/ui/mainwindow.ui.h:14
+#: ../data/ui/mainwindow.ui.h:32
 msgid "Received HEX"
 msgstr "HEXa jaso da"
 
-#: ../data/ui/mainwindow.ui.h:15
+#: ../data/ui/mainwindow.ui.h:33
+msgid "RTS"
+msgstr "RTS"
+
+#: ../data/ui/mainwindow.ui.h:34
+msgid "DTR"
+msgstr "DTR"
+
+#: ../data/ui/mainwindow.ui.h:35
 msgid "Sent ASCII"
 msgstr "ASCIIa bidali da"
 
-#: ../data/ui/mainwindow.ui.h:16
+#: ../data/ui/mainwindow.ui.h:36
 msgid "Sent HEX"
 msgstr "HEXa bidali da"
 
-#: ../data/ui/mainwindow.ui.h:17 ../src/SerialStreamRecorder.vala:30
+#: ../data/ui/mainwindow.ui.h:37 ../src/SerialStreamRecorder.vala:31
 msgid "Outgoing"
 msgstr "Irteerakoa"
 
-#: ../data/ui/mainwindow.ui.h:18
+#: ../data/ui/mainwindow.ui.h:38
 msgid "Send"
 msgstr "Bidali"
 
-#: ../data/ui/mainwindow.ui.h:19
+#: ../data/ui/mainwindow.ui.h:39
 msgid "Disconnect"
 msgstr "Deskonektatu"
 
-#: ../data/ui/mainwindow.ui.h:20
+#: ../data/ui/mainwindow.ui.h:40
 msgid "Stop Recording"
 msgstr "Utzi grabatzeari"
 
-#: ../data/ui/preferences.ui.h:2
+#: ../data/ui/preferences.ui.h:2 ../data/ui/receive_progress.ui.h:2
+#: ../data/ui/send_progress_dialog.ui.h:2 ../data/ui/settings_dialog.ui.h:2
+msgid "Cancel"
+msgstr "Utzi"
+
+#: ../data/ui/preferences.ui.h:3 ../data/ui/settings_dialog.ui.h:3
+#: ../data/ui/xmodem_filename_dialog.ui.h:1
+msgid "OK"
+msgstr "Ados"
+
+#: ../data/ui/preferences.ui.h:4
 msgid "Font"
 msgstr "Letra-tipoa"
 
-#: ../data/ui/preferences.ui.h:3
-msgid "_Use the system fixed width font"
-msgstr "_Erabili sistemaren zabalera finkoko letra-tipoa"
+#: ../data/ui/preferences.ui.h:5
+msgid "Use the system fixed width font"
+msgstr "Erabili sistemaren zabalera finkoko letra-tipoa"
 
-#: ../data/ui/preferences.ui.h:4
+#: ../data/ui/preferences.ui.h:6
 msgid "Display Font"
 msgstr "Bistaratu letra-tipoa"
 
-#: ../data/ui/preferences.ui.h:5
+#: ../data/ui/preferences.ui.h:7
 msgid "Font Color"
 msgstr "Letra-kolorea"
 
-#: ../data/ui/preferences.ui.h:6
+#: ../data/ui/preferences.ui.h:8
 msgid "Background Color"
 msgstr "Atzeko planoaren kolorea"
 
-#: ../data/ui/preferences.ui.h:7
+#: ../data/ui/preferences.ui.h:9
 msgid "Highlight Color"
 msgstr "Nabarmentze-kolorea"
 
-#: ../data/ui/preferences.ui.h:8
+#: ../data/ui/preferences.ui.h:10
 msgid "Recording"
 msgstr "Grabazioa"
 
-#: ../data/ui/preferences.ui.h:9
-msgid "_Launch recorded files"
-msgstr "A_biarazi grabatutako fitxategiak"
+#: ../data/ui/preferences.ui.h:11
+msgid "Launch recorded files"
+msgstr "Abiarazi grabatutako fitxategiak"
 
-#: ../data/ui/preferences.ui.h:10
+#: ../data/ui/preferences.ui.h:12
 msgid "Enable timeout after"
 msgstr "Gaitu denbora-muga hau:"
 
-#: ../data/ui/preferences.ui.h:11
+#: ../data/ui/preferences.ui.h:13
 msgid "seconds"
 msgstr "segundo"
+
+#: ../data/ui/preferences.ui.h:14
+msgid "Use automatic timestamped filename"
+msgstr "Erabili denbora-zigilu automatikodun fitxategi-izena"
+
+#: ../data/ui/preferences.ui.h:15
+msgid "In this folder"
+msgstr "Karpeta honetan"
+
+#: ../data/ui/preferences.ui.h:16
+msgid "With this extension"
+msgstr "Luzapen honekin"
+
+#: ../data/ui/preferences.ui.h:17
+msgid "Direction"
+msgstr "Norabidea"
 
 #: ../data/ui/receive_chooser.ui.h:1
 msgid "Select Folder for Received Files"
@@ -163,57 +270,65 @@ msgstr "Hautatu bidaliko den fitxategia"
 msgid "Send File Progress"
 msgstr "Fitxategia bidaltzearen aurrerapena"
 
-#: ../data/ui/settings_dialog.ui.h:2
+#: ../data/ui/settings_dialog.ui.h:4
 msgid "Port Settings"
 msgstr "Ataka-ezarpenak"
 
-#: ../data/ui/settings_dialog.ui.h:3
+#: ../data/ui/settings_dialog.ui.h:5
 msgid "Hardware"
 msgstr "Hardwarea"
 
-#: ../data/ui/settings_dialog.ui.h:4
+#: ../data/ui/settings_dialog.ui.h:6
 msgid "Software"
 msgstr "Softwarea"
 
-#: ../data/ui/settings_dialog.ui.h:5
-msgid "Access Mode"
-msgstr "Atzitze modua"
-
-#: ../data/ui/settings_dialog.ui.h:6
-msgid "Handshake"
-msgstr "Esku ematea"
-
 #: ../data/ui/settings_dialog.ui.h:7
-msgid "Parity"
-msgstr "Parekidetasuna"
-
-#: ../data/ui/settings_dialog.ui.h:8
-msgid "Stop Bits"
-msgstr "Gelditze-bitak"
-
-#: ../data/ui/settings_dialog.ui.h:9
-msgid "Data Bits"
-msgstr "Datu-bitak"
-
-#: ../data/ui/settings_dialog.ui.h:10
-msgid "Baud Rate"
-msgstr ""
-
-#: ../data/ui/settings_dialog.ui.h:11
-msgid "Device"
-msgstr "Gailua"
-
-#: ../data/ui/settings_dialog.ui.h:12
-msgid "Local Echo"
-msgstr "Oihartzun lokala"
-
-#: ../data/ui/settings_dialog.ui.h:13
 msgid "Echo received data"
 msgstr "Jasotako datuen oihartzuna"
 
-#: ../data/ui/xmodem_filename_dialog.ui.h:1
+#: ../data/ui/settings_dialog.ui.h:8
+msgid "Device"
+msgstr "Gailua"
+
+#: ../data/ui/settings_dialog.ui.h:9
+msgid "Baud Rate"
+msgstr "Baud-emaria"
+
+#: ../data/ui/settings_dialog.ui.h:10
+msgid "Data Bits"
+msgstr "Datu-bitak"
+
+#: ../data/ui/settings_dialog.ui.h:11
+msgid "Stop Bits"
+msgstr "Gelditze-bitak"
+
+#: ../data/ui/settings_dialog.ui.h:12
+msgid "Parity"
+msgstr "Parekidetasuna"
+
+#: ../data/ui/settings_dialog.ui.h:13
+msgid "Handshake"
+msgstr "Esku ematea"
+
+#: ../data/ui/settings_dialog.ui.h:14
+msgid "Access Mode"
+msgstr "Atzitze modua"
+
+#: ../data/ui/settings_dialog.ui.h:15
+msgid "Local Echo"
+msgstr "Oihartzun lokala"
+
+#: ../data/ui/settings_dialog.ui.h:16
+msgid "On Startup"
+msgstr "Abioan"
+
+#: ../data/ui/settings_dialog.ui.h:17
+msgid "Connect immediately"
+msgstr "Konektatu berehala"
+
+#: ../data/ui/xmodem_filename_dialog.ui.h:2
 msgid "Filename required for XMODEM"
-msgstr ""
+msgstr "Fitxategi-izena behar da XMODEMerako"
 
 #: ../data/moserial.desktop.in.h:1
 msgid "moserial Terminal"
@@ -225,7 +340,7 @@ msgstr "Serieko terminala"
 
 #: ../data/moserial.desktop.in.h:3
 msgid "A serial terminal optimized for logging and file capture"
-msgstr ""
+msgstr "Egunkarian idazteko eta fitxategiak kapturatzeko optimizatutako serieko terminala"
 
 #: ../data/moserial.appdata.xml.in.h:2
 msgid "Serial terminal"
@@ -241,7 +356,7 @@ msgid ""
 "communicating with."
 msgstr ""
 
-#: ../src/InputParser.vala:44 ../src/InputParser.vala:54
+#: ../src/InputParser.vala:46 ../src/InputParser.vala:56
 msgid "Invalid Input"
 msgstr "Baliogabeko sarrera"
 
@@ -249,122 +364,136 @@ msgstr "Baliogabeko sarrera"
 msgid "Profile file to load"
 msgstr "Kargatuko den profil-fitxategia"
 
-#: ../src/Main.vala:45
+#: ../src/Main.vala:48
 msgid "- moserial serial terminal"
-msgstr ""
+msgstr "- moserial serial terminal"
 
-#: ../src/Main.vala:50 ../src/Main.vala:58
+#: ../src/Main.vala:53 ../src/Main.vala:61
 #, c-format
 msgid "Run '%s --help' to see a full list of available command line options.\n"
-msgstr ""
+msgstr "Exekutatu '%s --help' komando-lerroko aukera guztiak zerrendatzeko.\n"
 
-#: ../src/MainWindow.vala:30
+#: ../src/MainWindow.vala:31
 msgid "translator-credits"
-msgstr "Asier Sarasua Garmendia <asier.sarasua@gmail.com>"
+msgstr "translator-credits"
 
-#: ../src/MainWindow.vala:32
+#: ../src/MainWindow.vala:33
 msgid ""
 "moserial is free software: you can redistribute it and/or modify it under "
 "the terms of the GNU General Public License as published by the Free "
 "Software Foundation, either version 3 of the License, or (at your option) "
 "any later version.\n"
-msgstr ""
+msgstr "moserial software librea da: birbanatu eta/edo alda dezakezu Free Software Foundation-ek argitaratutako GNU Lizentzia Publiko Orokorraren 3. bertsioan, edo (nahiago baduzu) bertsio berriago batean, jasotako\n"
 
-#: ../src/MainWindow.vala:33
+#: ../src/MainWindow.vala:34
 msgid ""
 "moserial is distributed in the hope that it will be useful, but WITHOUT ANY "
 "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
 "FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
 "details.\n"
-msgstr ""
+msgstr "Baliagarria izateko asmoz banatzen da moserial, baina INOLAKO BERMERIK GABE; era berean, ez da bermatzen beraren EGOKITASUNA MERKATURATZEKO edo HELBURU PARTIKULARRETARAKO ERABILTZEKO.  Argibide gehiago nahi izanez gero, ikus GNU Lizentzia Publiko Orokorra.\n"
 
-#: ../src/MainWindow.vala:34
+#: ../src/MainWindow.vala:35
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "this program.  If not, see <http://www.gnu.org/licenses/>."
 msgstr "GNU Lizentzia Publiko Orokorraren kopia bat jasoko zenuen %s(r)ekin batera; halakorik jaso ez baduzu, ikusi <http://www.gnu.org/licenses/>."
 
-#: ../src/MainWindow.vala:64
+#: ../src/MainWindow.vala:65
 msgid "ASCII"
 msgstr "ASCII"
 
-#: ../src/MainWindow.vala:64
+#: ../src/MainWindow.vala:65
 msgid "HEX"
 msgstr "HEX"
 
-#: ../src/MainWindow.vala:164
+#: ../src/MainWindow.vala:171
 msgid "Port configuration"
 msgstr "Ataken konfigurazioa"
 
-#: ../src/MainWindow.vala:169
+#: ../src/MainWindow.vala:176
 msgid "Read the manual"
 msgstr "Irakurri eskuliburua"
 
-#: ../src/MainWindow.vala:179
+#: ../src/MainWindow.vala:185
 msgid "TX: 0, RX: 0"
 msgstr "TX: 0, RX: 0"
 
-#: ../src/MainWindow.vala:190
+#: ../src/MainWindow.vala:196
 msgid "Send a file"
 msgstr "Bidali fitxategi bat"
 
-#: ../src/MainWindow.vala:199
+#: ../src/MainWindow.vala:205
 msgid "Receive a file"
 msgstr "Jaso fitxategi bat"
 
-#: ../src/MainWindow.vala:209
+#: ../src/MainWindow.vala:214
 msgid "Record sent and/or received data"
 msgstr "Grabatu bidalitako eta/edo jasotako datuak"
 
-#: ../src/MainWindow.vala:220
+#: ../src/MainWindow.vala:225
 msgid "Other preferences"
 msgstr "Beste hobespen batzuk"
 
-#: ../src/MainWindow.vala:225
+#: ../src/MainWindow.vala:230
 msgid "Open/close port"
 msgstr "Ireki/itxi ataka"
 
-#: ../src/MainWindow.vala:273
+#: ../src/MainWindow.vala:280
 msgid "Send the outgoing data now."
-msgstr ""
+msgstr "Bidali irteerako datuak orain."
 
-#: ../src/MainWindow.vala:276
+#: ../src/MainWindow.vala:283
 msgid "Type outgoing data here. Press Enter or Send to send it."
-msgstr ""
+msgstr "Idatzi irteerako datuak hemen. Sakatu 'Enter' edo 'Bidali' haiek bidaltzeko."
 
-#: ../src/MainWindow.vala:559 ../src/Profile.vala:76 ../src/Profile.vala:107
+#: ../src/MainWindow.vala:328
+msgid "Shows and toggles the DTR output (Data Terminal Ready)"
+msgstr "DTR (Data Terminal Ready) irteera erakusten eta aktibatzen/desaktibatzen du"
+
+#: ../src/MainWindow.vala:333
+msgid "Shows and toggles the RTS output (Request To Send)"
+msgstr "RTS (Request to Send) irteera erakusten eta aktibatzen/desaktibatzen du"
+
+#: ../src/MainWindow.vala:338
+msgid "Clear incoming text box"
+msgstr "Garbitu sarrerako testu-koadroa"
+
+#: ../src/MainWindow.vala:343
+msgid "Clear outgoing text box"
+msgstr "Garbitu irteerako testu-koadroa"
+
+#: ../src/MainWindow.vala:740 ../src/Profile.vala:113 ../src/Profile.vala:148
 msgid "Error: Could not open file"
 msgstr "Errora: ezin da fitxategia ireki"
 
-#: ../src/MainWindow.vala:637
+#: ../src/MainWindow.vala:877
 msgid "Error: Could not open device"
 msgstr "Errorea: Ezin da gailua ireki"
 
-#: ../src/MainWindow.vala:759
+#: ../src/MainWindow.vala:1056
 #, c-format
 msgid "Unable to display help file: %s"
 msgstr "Ezin izan da laguntza-fitxategia bistaratu: %s"
 
-#: ../src/MainWindow.vala:770
+#: ../src/MainWindow.vala:1068
 msgid ""
 "A serial terminal for the GNOME desktop, optimized for logging and file "
 "capture."
-msgstr ""
+msgstr "Egunkarian idazteko eta fitxategiak kapturatzeko optimizatutako serieko terminala GNOME mahaigainerako."
 
-#: ../src/MainWindow.vala:823
-msgid ""
-"You have changed your setting or preferences. Do you want to save these "
-"changes to the loaded profile?"
-msgstr ""
+#: ../src/MainWindow.vala:1128
+msgid "Save modified settings to the loaded profile?"
+msgstr "Gorde aldatutako ezarpenak kargatutako profilean?"
 
-#: ../src/PreferencesDialog.vala:48
+#: ../src/PreferencesDialog.vala:56
 msgid ""
 "If this option is enabled, a recorded file will be opened immediately after "
 "it is saved, using the default application for the file type. The default "
 "application is defined by the desktop environment."
-msgstr ""
+msgstr "Aukera gaituta badago, grabatutako fitxategia berehala irekiko da hura gorde ondoren, fitxategi motarako lehenetsia den aplikazioa erabilita. Aplikazio lehenetsia mahaigaineko inguruneak definitzen du."
 
-#: ../src/PreferencesDialog.vala:51
+#: ../src/PreferencesDialog.vala:59
 msgid ""
 "If this option is enabled, recording will be automatically stopped after an "
 "adjustable period of inactivity after receiving some data. Moserial will "
@@ -372,7 +501,7 @@ msgid ""
 "inactivity timer."
 msgstr ""
 
-#: ../src/Preferences.vala:65
+#: ../src/Preferences.vala:86
 msgid "Unable to retrieve system font setting"
 msgstr "Ezin izan da sistemaren letra-tipoaren ezarpena eskuratu"
 
@@ -388,74 +517,78 @@ msgstr "Ymodem"
 msgid "Zmodem"
 msgstr "Zmodem"
 
-#: ../src/SendProgressDialog.vala:41
+#: ../src/SendProgressDialog.vala:44
 msgid "Waiting for remote host"
 msgstr "Urruneko ostalariaren zain"
 
-#: ../src/SerialConnection.vala:43
+#: ../src/SerialConnection.vala:44
 msgid "CR+LF end"
 msgstr "CR+LF amaiera"
 
-#: ../src/SerialConnection.vala:44
+#: ../src/SerialConnection.vala:45
 msgid "CR end"
 msgstr "CR amaiera"
 
-#: ../src/SerialConnection.vala:45
+#: ../src/SerialConnection.vala:46
 msgid "LF end"
 msgstr "LF amaiera"
 
-#: ../src/SerialConnection.vala:46
+#: ../src/SerialConnection.vala:47
 msgid "TAB end"
 msgstr "TAB amaiera"
 
-#: ../src/SerialConnection.vala:47
+#: ../src/SerialConnection.vala:48
 msgid "ESC end"
 msgstr "ESC amaiera"
 
-#: ../src/SerialConnection.vala:48
+#: ../src/SerialConnection.vala:49
 msgid "No end"
 msgstr "Amaierarik ez"
 
-#: ../src/SerialConnection.vala:291
+#: ../src/SerialConnection.vala:362
 #, c-format
 msgid "TX: %lu, RX: %lu (%lu unprintable)"
 msgstr "TX: %lu, RX: %lu (%lu ez da inprimagarria)"
 
-#: ../src/SerialConnection.vala:293
+#: ../src/SerialConnection.vala:364
 #, c-format
 msgid "TX: %lu, RX: %lu"
 msgstr "TX: %lu, RX: %lu"
 
-#: ../src/SerialStreamRecorder.vala:29
+#: ../src/SerialStreamRecorder.vala:30
 msgid "Incoming"
 msgstr "Sarrerakoa"
 
-#: ../src/SerialStreamRecorder.vala:31
+#: ../src/SerialStreamRecorder.vala:32
 msgid "Incoming and Outgoing"
 msgstr "Sarrerakoa eta irteerakoa"
 
-#: ../src/SerialStreamRecorder.vala:57 ../src/SerialStreamRecorder.vala:68
-#: ../src/SerialStreamRecorder.vala:89
+#: ../src/SerialStreamRecorder.vala:61 ../src/SerialStreamRecorder.vala:72
+#: ../src/SerialStreamRecorder.vala:96
 #, c-format
 msgid "error: %s\n"
 msgstr "errorea: %s\n"
 
-#: ../src/SerialStreamRecorder.vala:98
+#: ../src/SerialStreamRecorder.vala:105
 #, c-format
 msgid "Unable to launch %s: %s"
 msgstr "Ezin da %s abiarazi: %s"
 
-#: ../src/SettingsDialog.vala:65
+#: ../src/SettingsDialog.vala:74
 msgid "Also known as RTS/CTS handshaking"
 msgstr "RTS/CTS esku emate gisa ere ezaguna"
 
-#: ../src/SettingsDialog.vala:68
+#: ../src/SettingsDialog.vala:77
 msgid "Also known as XON/XOFF handshaking"
 msgstr "XON/XOFF esku emate gisa ere ezaguna"
 
-#: ../src/SettingsDialog.vala:74
+#: ../src/SettingsDialog.vala:83
 msgid "Normally disabled"
 msgstr "Normalean desgaituta"
+
+#: ../src/SettingsDialog.vala:86
+msgid "Enable to automatically connect on startup or when a profile is loaded"
+msgstr "Gaitu abioan automatikoki edo profil bat kargatzen denean konektatzeko"
 
 #: ../src/Settings.vala:25
 msgid "None"
@@ -477,55 +610,58 @@ msgstr "Markatu"
 msgid "Space"
 msgstr "Zuriunea"
 
-#: ../src/Settings.vala:34
+#: ../src/Settings.vala:35
 msgid "Read and Write"
 msgstr "Idazteko eta irakurtzeko"
 
-#: ../src/Settings.vala:35
+#: ../src/Settings.vala:36
 msgid "Read Only"
 msgstr "Irakurtzeko soilik"
 
-#: ../src/Settings.vala:36
+#: ../src/Settings.vala:37
 msgid "Write Only"
 msgstr "Idazteko soilik"
 
 #. TRANSLATORS: first letter of "None", a serial port parity setting
-#: ../src/Settings.vala:89
+#: ../src/Settings.vala:97
 msgid "N"
-msgstr "I"
+msgstr "N"
 
 #. TRANSLATORS: first letter of "Odd", a serial port parity setting
-#: ../src/Settings.vala:93
+#: ../src/Settings.vala:101
 msgid "O"
 msgstr "O"
 
 #. TRANSLATORS: first letter of "Even", a serial port parity setting
-#: ../src/Settings.vala:97
+#: ../src/Settings.vala:105
 msgid "E"
 msgstr "E"
 
 #. TRANSLATORS: first letter of "Mark", a serial port parity setting
-#: ../src/Settings.vala:101
+#: ../src/Settings.vala:109
 msgid "M"
-msgstr "A"
+msgstr "M"
 
 #. TRANSLATORS: first letter of "Space", a serial port parity setting
-#: ../src/Settings.vala:105
+#: ../src/Settings.vala:113
 msgid "S"
 msgstr "S"
 
-#: ../src/Settings.vala:115
+#: ../src/Settings.vala:124
 msgid "OPEN"
 msgstr "IREKIA"
 
-#: ../src/Settings.vala:116
+#: ../src/Settings.vala:125
 msgid "CLOSED"
 msgstr "ITXIA"
 
 #: ../src/Szwrapper.vala:27
 msgid "None (straight binary)"
-msgstr ""
+msgstr "Bat ere ez (bitar zuzena)"
 
-#: ../src/Szwrapper.vala:185
+#: ../src/Szwrapper.vala:178
 msgid "canceled"
 msgstr "utzia"
+
+#~ msgid "_Help"
+#~ msgstr "_Laguntza"
