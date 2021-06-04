@@ -6,137 +6,243 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: moserial master\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=moserial&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-04-14 08:52+0000\n"
-"PO-Revision-Date: 2017-04-26 20:55+0700\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/moserial/issues\n"
+"POT-Creation-Date: 2021-01-26 14:31+0000\n"
+"PO-Revision-Date: 2021-06-04 09:34+0700\n"
+"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <gnome-l10n-id@googlegroups.com>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
-"X-Generator: Poedit 2.0\n"
+"X-Generator: Poedit 2.4.3\n"
 
 #: ../data/ui/mainwindow.ui.h:1 ../data/moserial.appdata.xml.in.h:1
 msgid "moserial"
 msgstr "moserial"
 
 #: ../data/ui/mainwindow.ui.h:2
-msgid "_File"
-msgstr "_Berkas"
+msgid "File"
+msgstr "Berkas"
 
 #: ../data/ui/mainwindow.ui.h:3
+msgid "Open Settings"
+msgstr "Buka Pengaturan"
+
+#: ../data/ui/mainwindow.ui.h:4
 msgid "Open _Recent"
 msgstr "Buka Te_rkini"
 
-#: ../data/ui/mainwindow.ui.h:4
-msgid "_Edit"
-msgstr "_Sunting"
-
 #: ../data/ui/mainwindow.ui.h:5
-msgid "_Help"
-msgstr "_Bantuan"
+msgid "Save Settings"
+msgstr "Simpan Pengaturan"
 
 #: ../data/ui/mainwindow.ui.h:6
-msgid "Connect"
-msgstr "Sambung"
+msgid "Save Settings As"
+msgstr "Simpan Setelan Sebagai"
 
 #: ../data/ui/mainwindow.ui.h:7
-msgid "Record"
-msgstr "Rekam"
+msgid "Quit"
+msgstr "Keluar"
 
 #: ../data/ui/mainwindow.ui.h:8
-msgid "Send File"
-msgstr "Kirim Berkas"
+msgid "Edit"
+msgstr "Sunting"
 
 #: ../data/ui/mainwindow.ui.h:9
-msgid "Receive File"
-msgstr "Terima Berkas"
+msgid "Cut"
+msgstr "Potong"
 
-#: ../data/ui/mainwindow.ui.h:10 ../data/ui/settings_dialog.ui.h:1
-msgid "Port Setup"
-msgstr "Siapkan Port"
+#: ../data/ui/mainwindow.ui.h:10
+msgid "Copy"
+msgstr "Salin"
 
-#: ../data/ui/mainwindow.ui.h:11 ../data/ui/preferences.ui.h:1
-msgid "Preferences"
-msgstr "Preferensi"
+#: ../data/ui/mainwindow.ui.h:11
+msgid "Paste"
+msgstr "Tempel"
 
 #: ../data/ui/mainwindow.ui.h:12
+msgid "Clear"
+msgstr "Bersihkan"
+
+#: ../data/ui/mainwindow.ui.h:13
+msgid "View"
+msgstr "Tilik"
+
+#: ../data/ui/mainwindow.ui.h:14
+msgid "Extra Controls"
+msgstr "Kontrol Ekstra"
+
+#: ../data/ui/mainwindow.ui.h:15
 msgid "Help"
 msgstr "Bantuan"
 
-#: ../data/ui/mainwindow.ui.h:13
+#: ../data/ui/mainwindow.ui.h:16
+msgid "About"
+msgstr "Ihwal"
+
+#: ../data/ui/mainwindow.ui.h:17
+msgid "Connect"
+msgstr "Sambung"
+
+#: ../data/ui/mainwindow.ui.h:18
+msgid "Record"
+msgstr "Rekam"
+
+#: ../data/ui/mainwindow.ui.h:19
+msgid "Send File"
+msgstr "Kirim Berkas"
+
+#: ../data/ui/mainwindow.ui.h:20
+msgid "Receive File"
+msgstr "Terima Berkas"
+
+#: ../data/ui/mainwindow.ui.h:21 ../data/ui/settings_dialog.ui.h:1
+msgid "Port Setup"
+msgstr "Siapkan Port"
+
+#: ../data/ui/mainwindow.ui.h:22 ../data/ui/preferences.ui.h:1
+msgid "Preferences"
+msgstr "Preferensi"
+
+#: ../data/ui/mainwindow.ui.h:23
+msgid "Shows RI input (Ring Indicator)"
+msgstr "Memperlihatkan masukan RI (Ring Indicator)"
+
+#: ../data/ui/mainwindow.ui.h:24
+msgid "RI"
+msgstr "RI"
+
+#: ../data/ui/mainwindow.ui.h:25
+msgid "Shows DSR input (Data Set Ready)"
+msgstr "Memperlihatkan masukan DSR (Data Set Ready)"
+
+#: ../data/ui/mainwindow.ui.h:26
+msgid "DSR"
+msgstr "DSR"
+
+#: ../data/ui/mainwindow.ui.h:27
+msgid "Shows CD input (Carrier Detect)"
+msgstr "Memperlihatkan masukan CD (Carrier Detect)"
+
+#: ../data/ui/mainwindow.ui.h:28
+msgid "CD"
+msgstr "CD"
+
+#: ../data/ui/mainwindow.ui.h:29
+msgid "Shows CTS input (Clear To Send)"
+msgstr "Memperlihatkan masukan CTS (Clear To Send)"
+
+#: ../data/ui/mainwindow.ui.h:30
+msgid "CTS"
+msgstr "CTS"
+
+#: ../data/ui/mainwindow.ui.h:31
 msgid "Received ASCII"
 msgstr "ASCII yang Diterima"
 
-#: ../data/ui/mainwindow.ui.h:14
+#: ../data/ui/mainwindow.ui.h:32
 msgid "Received HEX"
 msgstr "HEX yang Diterima"
 
-#: ../data/ui/mainwindow.ui.h:15
+#: ../data/ui/mainwindow.ui.h:33
+msgid "RTS"
+msgstr "RTS"
+
+#: ../data/ui/mainwindow.ui.h:34
+msgid "DTR"
+msgstr "DTR"
+
+#: ../data/ui/mainwindow.ui.h:35
 msgid "Sent ASCII"
 msgstr "ASCII yang Dikirim"
 
-#: ../data/ui/mainwindow.ui.h:16
+#: ../data/ui/mainwindow.ui.h:36
 msgid "Sent HEX"
 msgstr "HEX yang Dikirim"
 
-#: ../data/ui/mainwindow.ui.h:17 ../src/SerialStreamRecorder.vala:30
+#: ../data/ui/mainwindow.ui.h:37 ../src/SerialStreamRecorder.vala:31
 msgid "Outgoing"
 msgstr "Keluar"
 
-#: ../data/ui/mainwindow.ui.h:18
+#: ../data/ui/mainwindow.ui.h:38
 msgid "Send"
 msgstr "Kirim"
 
-#: ../data/ui/mainwindow.ui.h:19
+#: ../data/ui/mainwindow.ui.h:39
 msgid "Disconnect"
 msgstr "Putuskan"
 
-#: ../data/ui/mainwindow.ui.h:20
+#: ../data/ui/mainwindow.ui.h:40
 msgid "Stop Recording"
 msgstr "Berhenti Merekam"
 
-#: ../data/ui/preferences.ui.h:2
+#: ../data/ui/preferences.ui.h:2 ../data/ui/receive_progress.ui.h:2
+#: ../data/ui/send_progress_dialog.ui.h:2 ../data/ui/settings_dialog.ui.h:2
+msgid "Cancel"
+msgstr "Batal"
+
+#: ../data/ui/preferences.ui.h:3 ../data/ui/settings_dialog.ui.h:3
+#: ../data/ui/xmodem_filename_dialog.ui.h:1
+#| msgid "O"
+msgid "OK"
+msgstr "OK"
+
+#: ../data/ui/preferences.ui.h:4
 msgid "Font"
 msgstr "Fonta"
 
-#: ../data/ui/preferences.ui.h:3
-msgid "_Use the system fixed width font"
-msgstr "G_unakan fonta lebar tetap sistem"
+#: ../data/ui/preferences.ui.h:5
+msgid "Use the system fixed width font"
+msgstr "Gunakan fonta lebar tetap sistem"
 
-#: ../data/ui/preferences.ui.h:4
+#: ../data/ui/preferences.ui.h:6
 msgid "Display Font"
 msgstr "Fonta Tampilan"
 
-#: ../data/ui/preferences.ui.h:5
+#: ../data/ui/preferences.ui.h:7
 msgid "Font Color"
 msgstr "Warna Fonta"
 
-#: ../data/ui/preferences.ui.h:6
+#: ../data/ui/preferences.ui.h:8
 msgid "Background Color"
 msgstr "Warna Latar"
 
-#: ../data/ui/preferences.ui.h:7
+#: ../data/ui/preferences.ui.h:9
 msgid "Highlight Color"
 msgstr "Warna Sorot"
 
-#: ../data/ui/preferences.ui.h:8
+#: ../data/ui/preferences.ui.h:10
 msgid "Recording"
 msgstr "Merekam"
 
-#: ../data/ui/preferences.ui.h:9
-msgid "_Launch recorded files"
-msgstr "_Luncurkan berkas yang direkam"
+#: ../data/ui/preferences.ui.h:11
+msgid "Launch recorded files"
+msgstr "Luncurkan berkas yang direkam"
 
-#: ../data/ui/preferences.ui.h:10
+#: ../data/ui/preferences.ui.h:12
 msgid "Enable timeout after"
 msgstr "Fungsikan tenggat waktu setelah"
 
-#: ../data/ui/preferences.ui.h:11
+#: ../data/ui/preferences.ui.h:13
 msgid "seconds"
 msgstr "detik"
+
+#: ../data/ui/preferences.ui.h:14
+msgid "Use automatic timestamped filename"
+msgstr "Gunakan nama berkas yang otomatis distempel waktu"
+
+#: ../data/ui/preferences.ui.h:15
+msgid "In this folder"
+msgstr "Dalam folder ini"
+
+#: ../data/ui/preferences.ui.h:16
+msgid "With this extension"
+msgstr "Dengan ekstensi ini"
+
+#: ../data/ui/preferences.ui.h:17
+msgid "Direction"
+msgstr "Arah"
 
 #: ../data/ui/receive_chooser.ui.h:1
 msgid "Select Folder for Received Files"
@@ -166,55 +272,63 @@ msgstr "Pilih Berkas yang akan Dikirim"
 msgid "Send File Progress"
 msgstr "Kemajuan Pengirimin Berkas"
 
-#: ../data/ui/settings_dialog.ui.h:2
+#: ../data/ui/settings_dialog.ui.h:4
 msgid "Port Settings"
 msgstr "Pengaturan Port"
 
-#: ../data/ui/settings_dialog.ui.h:3
+#: ../data/ui/settings_dialog.ui.h:5
 msgid "Hardware"
 msgstr "Perangkat Keras"
 
-#: ../data/ui/settings_dialog.ui.h:4
+#: ../data/ui/settings_dialog.ui.h:6
 msgid "Software"
 msgstr "Perangkat Lunak"
 
-#: ../data/ui/settings_dialog.ui.h:5
-msgid "Access Mode"
-msgstr "Mode Akses"
-
-#: ../data/ui/settings_dialog.ui.h:6
-msgid "Handshake"
-msgstr "Jabat Tangan"
-
 #: ../data/ui/settings_dialog.ui.h:7
-msgid "Parity"
-msgstr "Parity"
-
-#: ../data/ui/settings_dialog.ui.h:8
-msgid "Stop Bits"
-msgstr "Stop Bit"
-
-#: ../data/ui/settings_dialog.ui.h:9
-msgid "Data Bits"
-msgstr "Data Bit"
-
-#: ../data/ui/settings_dialog.ui.h:10
-msgid "Baud Rate"
-msgstr "Baud Rate"
-
-#: ../data/ui/settings_dialog.ui.h:11
-msgid "Device"
-msgstr "Perangkat"
-
-#: ../data/ui/settings_dialog.ui.h:12
-msgid "Local Echo"
-msgstr "Local Echo"
-
-#: ../data/ui/settings_dialog.ui.h:13
 msgid "Echo received data"
 msgstr "Gemakan data yang diterima"
 
-#: ../data/ui/xmodem_filename_dialog.ui.h:1
+#: ../data/ui/settings_dialog.ui.h:8
+msgid "Device"
+msgstr "Perangkat"
+
+#: ../data/ui/settings_dialog.ui.h:9
+msgid "Baud Rate"
+msgstr "Baud Rate"
+
+#: ../data/ui/settings_dialog.ui.h:10
+msgid "Data Bits"
+msgstr "Data Bit"
+
+#: ../data/ui/settings_dialog.ui.h:11
+msgid "Stop Bits"
+msgstr "Stop Bit"
+
+#: ../data/ui/settings_dialog.ui.h:12
+msgid "Parity"
+msgstr "Parity"
+
+#: ../data/ui/settings_dialog.ui.h:13
+msgid "Handshake"
+msgstr "Jabat Tangan"
+
+#: ../data/ui/settings_dialog.ui.h:14
+msgid "Access Mode"
+msgstr "Mode Akses"
+
+#: ../data/ui/settings_dialog.ui.h:15
+msgid "Local Echo"
+msgstr "Local Echo"
+
+#: ../data/ui/settings_dialog.ui.h:16
+msgid "On Startup"
+msgstr "Saat Awal Mula"
+
+#: ../data/ui/settings_dialog.ui.h:17
+msgid "Connect immediately"
+msgstr "Hubungkan seketika"
+
+#: ../data/ui/xmodem_filename_dialog.ui.h:2
 msgid "Filename required for XMODEM"
 msgstr "Nama berkas diperlukan untuk XMODEM"
 
@@ -251,7 +365,7 @@ msgstr ""
 "punya profil agar dengan mudah bertukar antar konfigurasi untuk perangkat "
 "yang berbeda yang sedang berkomunikasi dengan Anda."
 
-#: ../src/InputParser.vala:44 ../src/InputParser.vala:54
+#: ../src/InputParser.vala:46 ../src/InputParser.vala:56
 msgid "Invalid Input"
 msgstr "Masukan Tidak Valid"
 
@@ -259,22 +373,22 @@ msgstr "Masukan Tidak Valid"
 msgid "Profile file to load"
 msgstr "Berkas profil yang akan dimuat"
 
-#: ../src/Main.vala:45
+#: ../src/Main.vala:48
 msgid "- moserial serial terminal"
 msgstr "- moserial terminal serial"
 
-#: ../src/Main.vala:50 ../src/Main.vala:58
+#: ../src/Main.vala:53 ../src/Main.vala:61
 #, c-format
 msgid "Run '%s --help' to see a full list of available command line options.\n"
 msgstr ""
 "Jalankan '%s --help' untuk melihat daftar lengkap opsi barsi perintah yang "
 "tersedia.\n"
 
-#: ../src/MainWindow.vala:30
+#: ../src/MainWindow.vala:31
 msgid "translator-credits"
-msgstr "Andika Triwidada <andika@gmail.com>, 2017"
+msgstr "Andika Triwidada <andika@gmail.com>, 2017, 2021."
 
-#: ../src/MainWindow.vala:32
+#: ../src/MainWindow.vala:33
 msgid ""
 "moserial is free software: you can redistribute it and/or modify it under "
 "the terms of the GNU General Public License as published by the Free "
@@ -286,7 +400,7 @@ msgstr ""
 "sebagaimana dipublikasikan oleh Free Software Foundation; baik versi 3 dari "
 "Lisensi, atau (terserah pilihan Anda) versi setelahnya.\n"
 
-#: ../src/MainWindow.vala:33
+#: ../src/MainWindow.vala:34
 msgid ""
 "moserial is distributed in the hope that it will be useful, but WITHOUT ANY "
 "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
@@ -298,7 +412,7 @@ msgstr ""
 "TERTENTU. Lihat GNU Lesser General Public License untuk rincian lebih "
 "lanjut.\n"
 
-#: ../src/MainWindow.vala:34
+#: ../src/MainWindow.vala:35
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "this program.  If not, see <http://www.gnu.org/licenses/>."
@@ -306,69 +420,85 @@ msgstr ""
 "Anda seharusnya menerima salinan dari GNU General Public License bersama "
 "dengan program ini. Jika tidak, lihat <http://www.gnu.org/licenses/>."
 
-#: ../src/MainWindow.vala:64
+#: ../src/MainWindow.vala:65
 msgid "ASCII"
 msgstr "ASCII"
 
-#: ../src/MainWindow.vala:64
+#: ../src/MainWindow.vala:65
 msgid "HEX"
 msgstr "HEX"
 
-#: ../src/MainWindow.vala:165
+#: ../src/MainWindow.vala:171
 msgid "Port configuration"
 msgstr "Konfigurasi port"
 
-#: ../src/MainWindow.vala:170
+#: ../src/MainWindow.vala:176
 msgid "Read the manual"
 msgstr "Bacalah manual"
 
-#: ../src/MainWindow.vala:180
+#: ../src/MainWindow.vala:185
 msgid "TX: 0, RX: 0"
 msgstr "TX: 0, RX: 0"
 
-#: ../src/MainWindow.vala:191
+#: ../src/MainWindow.vala:196
 msgid "Send a file"
 msgstr "Kirim sebuah berkas"
 
-#: ../src/MainWindow.vala:200
+#: ../src/MainWindow.vala:205
 msgid "Receive a file"
 msgstr "Terima sebuah berkas"
 
-#: ../src/MainWindow.vala:210
+#: ../src/MainWindow.vala:214
 msgid "Record sent and/or received data"
 msgstr "Rekam data yang terkirim dan/atau diterima"
 
-#: ../src/MainWindow.vala:221
+#: ../src/MainWindow.vala:225
 msgid "Other preferences"
 msgstr "Preferensi lain"
 
-#: ../src/MainWindow.vala:226
+#: ../src/MainWindow.vala:230
 msgid "Open/close port"
 msgstr "Buka/tutup port"
 
-#: ../src/MainWindow.vala:274
+#: ../src/MainWindow.vala:280
 msgid "Send the outgoing data now."
 msgstr "Kirim data keluar sekarang."
 
-#: ../src/MainWindow.vala:277
+#: ../src/MainWindow.vala:283
 msgid "Type outgoing data here. Press Enter or Send to send it."
 msgstr ""
 "Ketikkan data keluar di sini. Tekan Enter atau Kirim untuk mengirimnya."
 
-#: ../src/MainWindow.vala:564 ../src/Profile.vala:76 ../src/Profile.vala:107
+#: ../src/MainWindow.vala:328
+msgid "Shows and toggles the DTR output (Data Terminal Ready)"
+msgstr "Memperlihatkan dan menjungkitkan keluaran DTR (Data Terminal Ready)"
+
+#: ../src/MainWindow.vala:333
+msgid "Shows and toggles the RTS output (Request To Send)"
+msgstr "Memperlihatkan dan menjungkitkan keluaran RTS (Request To Send)"
+
+#: ../src/MainWindow.vala:338
+msgid "Clear incoming text box"
+msgstr "Menghapus kotak teks masuk"
+
+#: ../src/MainWindow.vala:343
+msgid "Clear outgoing text box"
+msgstr "Menghapus kotak teks keluar"
+
+#: ../src/MainWindow.vala:740 ../src/Profile.vala:113 ../src/Profile.vala:148
 msgid "Error: Could not open file"
 msgstr "Kesalahan: Tidak bisa membuka berkas"
 
-#: ../src/MainWindow.vala:642
+#: ../src/MainWindow.vala:877
 msgid "Error: Could not open device"
 msgstr "Kesalahan: Tidak bisa membuka perangkat"
 
-#: ../src/MainWindow.vala:764
+#: ../src/MainWindow.vala:1056
 #, c-format
 msgid "Unable to display help file: %s"
 msgstr "Tidak bisa menampilkan berkas bantuan: %s"
 
-#: ../src/MainWindow.vala:775
+#: ../src/MainWindow.vala:1068
 msgid ""
 "A serial terminal for the GNOME desktop, optimized for logging and file "
 "capture."
@@ -376,15 +506,11 @@ msgstr ""
 "Sebuah terminal serial untuk desktop GNOME, dioptimasi untuk penangkapan "
 "berkas dan log."
 
-#: ../src/MainWindow.vala:828
-msgid ""
-"You have changed your setting or preferences. Do you want to save these "
-"changes to the loaded profile?"
-msgstr ""
-"Anda telah mengubah preferensi atau pengaturan. Apakah hendak menyimpan "
-"perubahan ini ke profil yang dimuat?"
+#: ../src/MainWindow.vala:1128
+msgid "Save modified settings to the loaded profile?"
+msgstr "Simpan setelan yang dimodifikasi ke profil yang dimuat?"
 
-#: ../src/PreferencesDialog.vala:49
+#: ../src/PreferencesDialog.vala:56
 msgid ""
 "If this option is enabled, a recorded file will be opened immediately after "
 "it is saved, using the default application for the file type. The default "
@@ -394,7 +520,7 @@ msgstr ""
 "setelah itu disimpan, memakai aplikasi baku untuk tipe berkas itu. Aplikasi "
 "baku didefinisikan oleh lingkungan desktop."
 
-#: ../src/PreferencesDialog.vala:52
+#: ../src/PreferencesDialog.vala:59
 msgid ""
 "If this option is enabled, recording will be automatically stopped after an "
 "adjustable period of inactivity after receiving some data. Moserial will "
@@ -406,7 +532,7 @@ msgstr ""
 "data. Moserial akan menunggu selamanya untuk merekam byte data pertama "
 "sebelum mengaktifkan pewaktu ketidakaktifan."
 
-#: ../src/Preferences.vala:65
+#: ../src/Preferences.vala:86
 msgid "Unable to retrieve system font setting"
 msgstr "Tidak bisa mengambil pengaturan fonta sistem"
 
@@ -422,74 +548,80 @@ msgstr "Ymodem"
 msgid "Zmodem"
 msgstr "Zmodem"
 
-#: ../src/SendProgressDialog.vala:42
+#: ../src/SendProgressDialog.vala:44
 msgid "Waiting for remote host"
 msgstr "Menunggu host jauh"
 
-#: ../src/SerialConnection.vala:43
+#: ../src/SerialConnection.vala:44
 msgid "CR+LF end"
 msgstr "Akhir CR+LF"
 
-#: ../src/SerialConnection.vala:44
+#: ../src/SerialConnection.vala:45
 msgid "CR end"
 msgstr "Akhir CR"
 
-#: ../src/SerialConnection.vala:45
+#: ../src/SerialConnection.vala:46
 msgid "LF end"
 msgstr "Akhir LF"
 
-#: ../src/SerialConnection.vala:46
+#: ../src/SerialConnection.vala:47
 msgid "TAB end"
 msgstr "Akhir TAB"
 
-#: ../src/SerialConnection.vala:47
+#: ../src/SerialConnection.vala:48
 msgid "ESC end"
 msgstr "Akhir ESC"
 
-#: ../src/SerialConnection.vala:48
+#: ../src/SerialConnection.vala:49
 msgid "No end"
 msgstr "Tanpa akhiran"
 
-#: ../src/SerialConnection.vala:302
+#: ../src/SerialConnection.vala:362
 #, c-format
 msgid "TX: %lu, RX: %lu (%lu unprintable)"
 msgstr "TX: %lu, RX: %lu (%lu tak bisa dicetak)"
 
-#: ../src/SerialConnection.vala:304
+#: ../src/SerialConnection.vala:364
 #, c-format
 msgid "TX: %lu, RX: %lu"
 msgstr "TX: %lu, RX: %lu"
 
-#: ../src/SerialStreamRecorder.vala:29
+#: ../src/SerialStreamRecorder.vala:30
 msgid "Incoming"
 msgstr "Masuk"
 
-#: ../src/SerialStreamRecorder.vala:31
+#: ../src/SerialStreamRecorder.vala:32
 msgid "Incoming and Outgoing"
 msgstr "Masuk dan Keluar"
 
-#: ../src/SerialStreamRecorder.vala:57 ../src/SerialStreamRecorder.vala:68
-#: ../src/SerialStreamRecorder.vala:89
+#: ../src/SerialStreamRecorder.vala:61 ../src/SerialStreamRecorder.vala:72
+#: ../src/SerialStreamRecorder.vala:96
 #, c-format
 msgid "error: %s\n"
 msgstr "galat: %s\n"
 
-#: ../src/SerialStreamRecorder.vala:98
+#: ../src/SerialStreamRecorder.vala:105
 #, c-format
 msgid "Unable to launch %s: %s"
 msgstr "Tidak bisa meluncurkan %s: %s"
 
-#: ../src/SettingsDialog.vala:66
+#: ../src/SettingsDialog.vala:74
 msgid "Also known as RTS/CTS handshaking"
 msgstr "Juga dikenal sebagai jabat tangan RTS/CTS"
 
-#: ../src/SettingsDialog.vala:69
+#: ../src/SettingsDialog.vala:77
 msgid "Also known as XON/XOFF handshaking"
 msgstr "Juga dikenal sebagai jabat tangan XON/XOFF"
 
-#: ../src/SettingsDialog.vala:75
+#: ../src/SettingsDialog.vala:83
 msgid "Normally disabled"
 msgstr "Normalnya dinonaktifkan"
+
+#: ../src/SettingsDialog.vala:86
+msgid "Enable to automatically connect on startup or when a profile is loaded"
+msgstr ""
+"Aktifkan untuk tersambung secara otomatis pada saat mulai atau ketika profil "
+"dimuat"
 
 #: ../src/Settings.vala:25
 msgid "None"
@@ -511,48 +643,48 @@ msgstr "Mark"
 msgid "Space"
 msgstr "Space"
 
-#: ../src/Settings.vala:34
+#: ../src/Settings.vala:35
 msgid "Read and Write"
 msgstr "Baca dan Tulis"
 
-#: ../src/Settings.vala:35
+#: ../src/Settings.vala:36
 msgid "Read Only"
 msgstr "Hanya Baca"
 
-#: ../src/Settings.vala:36
+#: ../src/Settings.vala:37
 msgid "Write Only"
 msgstr "Hanya Tulis"
 
 #. TRANSLATORS: first letter of "None", a serial port parity setting
-#: ../src/Settings.vala:89
+#: ../src/Settings.vala:97
 msgid "N"
 msgstr "N"
 
 #. TRANSLATORS: first letter of "Odd", a serial port parity setting
-#: ../src/Settings.vala:93
+#: ../src/Settings.vala:101
 msgid "O"
 msgstr "O"
 
 #. TRANSLATORS: first letter of "Even", a serial port parity setting
-#: ../src/Settings.vala:97
+#: ../src/Settings.vala:105
 msgid "E"
 msgstr "E"
 
 #. TRANSLATORS: first letter of "Mark", a serial port parity setting
-#: ../src/Settings.vala:101
+#: ../src/Settings.vala:109
 msgid "M"
 msgstr "M"
 
 #. TRANSLATORS: first letter of "Space", a serial port parity setting
-#: ../src/Settings.vala:105
+#: ../src/Settings.vala:113
 msgid "S"
 msgstr "S"
 
-#: ../src/Settings.vala:115
+#: ../src/Settings.vala:124
 msgid "OPEN"
 msgstr "BUKA"
 
-#: ../src/Settings.vala:116
+#: ../src/Settings.vala:125
 msgid "CLOSED"
 msgstr "TERTUTUP"
 
@@ -560,6 +692,6 @@ msgstr "TERTUTUP"
 msgid "None (straight binary)"
 msgstr "Nihil (biner langsung)"
 
-#: ../src/Szwrapper.vala:185
+#: ../src/Szwrapper.vala:178
 msgid "canceled"
 msgstr "dibatalkan"
