@@ -22,10 +22,6 @@ modules:
     sources:
       - type: git
         url: https://gitlab.gnome.org/GNOME/moserial.git
-      - type: file
-        url: https://gitlab.gnome.org/GNOME/gnome-common/-/raw/3f52961bcc8828e33535466d60ca3edcdf5175c6/macros2/gnome-autogen.sh
-        sha256: c3406a48b0defd63d35f7f61850409ea75bee6d245526bcee901e35a69f5c22f
-        dest-filename: gnome-autogen.sh
     post-install:
       - mv /app/share/applications/moserial.desktop /app/share/applications/org.gnome.moserial.desktop
       - sed -i 's/Icon=/Icon=org.gnome./' /app/share/applications/org.gnome.moserial.desktop
