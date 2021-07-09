@@ -22,9 +22,6 @@ modules:
     sources:
       - type: git
         url: https://gitlab.gnome.org/GNOME/moserial.git
-      - type: shell
-        commands:
-          - sed -i 's/. gnome-autogen.sh/sh gnome-autogen.sh/' autogen.sh
       - type: file
         url: https://gitlab.gnome.org/GNOME/gnome-common/-/raw/3f52961bcc8828e33535466d60ca3edcdf5175c6/macros2/gnome-autogen.sh
         sha256: c3406a48b0defd63d35f7f61850409ea75bee6d245526bcee901e35a69f5c22f
