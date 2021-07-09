@@ -77,7 +77,7 @@ sudo make install
 #### Manually build
 
 ```
-git clone https://github.com/Mictronics/moserial
+git clone https://gitlab.gnome.org/GNOME/moserial.git
 cd moserial/
 ```
 On 32 bit systems:
