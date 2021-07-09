@@ -18,6 +18,12 @@ For more information see [GNOME wiki](https://wiki.gnome.org/Apps/Moserial).
 
 ### Flatpak
 
+Get the source code.
+```
+git clone --recursive https://gitlab.gnome.org/GNOME/moserial.git
+cd moserial
+```
+
 Add the Flathub repository.
 ```
 flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
