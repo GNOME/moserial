@@ -51,7 +51,7 @@ flatpak-builder --user --install --force-clean --repo=repo moserial org.gnome.mo
 
 Run the Flatpak.
 ```
-flatpak run org.gnome.moserial
+flatpak run org.gnome.Devel.moserial
 ```
 
 ### Build from Source
