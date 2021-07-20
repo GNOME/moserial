@@ -6,7 +6,7 @@ command: moserial
 tags:
   - nightly
 finish-args:
-  # Need access to serial devices connected to the host.
+  # moserial requires access to serial devices connected to the host.
   - --device=all
   - --filesystem=home
   - --socket=x11
