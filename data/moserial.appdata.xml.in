@@ -29,4 +29,9 @@
   </screenshots>
   <translation type="gettext">moserial</translation>
   <content_rating type="oars-1.1" />
+  <releases>
+    <release version="3.0.17" date="2021-07-23" />
+    <release version="3.0.16" date="2021-02-09" />
+    <release version="3.0.15" date="2021-01-27" />
+  </releases>
 </component>
