@@ -4,4 +4,4 @@
 srcdir=`dirname $0`
 test -z "$srcdir" && srcdir=.
 
-sh gnome-autogen.sh
+sh gnome-autogen.sh "$@"

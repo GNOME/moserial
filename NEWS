@@ -1,3 +1,13 @@
+Version 3.0.17
+--------------
+
+	* flatpak support added (Jordan Williams)
+	* remove blank MimeType line from desktop file
+	* updated Indonesian translation (Andika Triwidada)
+	* updated Basque translation (Asier Sarasua Garmendia)
+	* updated Turkish translation (Muhammet Kara)
+	* updated Hungarian translation (Balázs Úr)
+
 Version 3.0.16
 --------------
 
