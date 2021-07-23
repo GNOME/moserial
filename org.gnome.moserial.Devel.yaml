@@ -8,6 +8,7 @@ tags:
 finish-args:
   # moserial requires access to serial devices connected to the host.
   - --device=all
+  - --filesystem=xdg-documents
   - --share=ipc
   - --socket=wayland
   - --socket=fallback-x11
