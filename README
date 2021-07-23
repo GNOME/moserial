@@ -16,7 +16,47 @@ For more information see [GNOME wiki](https://wiki.gnome.org/Apps/Moserial).
 
 ## Build
 
-### Dependencies
+### Flatpak
+
+Get the source code.
+```
+git clone --recursive https://gitlab.gnome.org/GNOME/moserial.git
+cd moserial
+```
+
+Add the Flathub repository.
+```
+flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+```
+
+Add the GNOME Nightly repository.
+```
+flatpak remote-add --user --if-not-exists gnome-nightly https://nightly.gnome.org/gnome-nightly.flatpakrepo
+```
+
+Install the GNOME Platform and SDK.
+```
+flatpak install --user gnome-nightly org.gnome.Sdk//master org.gnome.Platform//master
+```
+
+Install Flatpak Builder.
+```
+sudo apt-get install flatpak-builder
+```
+
+Build the Flatpak.
+```
+flatpak-builder --user --install --force-clean --repo=repo moserial org.gnome.moserial.Devel.yaml
+```
+
+Run the Flatpak.
+```
+flatpak run org.gnome.moserial.Devel
+```
+
+### Build from Source
+
+#### Dependencies
 
 Install the following build dependencies:
 
@@ -34,10 +74,10 @@ make
 sudo make install
 ```
 
-### Manually build
+#### Manually build
 
 ```
-git clone https://github.com/Mictronics/moserial
+git clone https://gitlab.gnome.org/GNOME/moserial.git
 cd moserial/
 ```
 On 32 bit systems:
@@ -47,13 +87,13 @@ make
 ```
 On 64 bit systems:
 ```
-./autogen.sh --prefix=/usr --libdir '/usr/lib64' --build x86_64 
+./autogen.sh --prefix=/usr --libdir '/usr/lib64' --build x86_64
 make
 ```
 Optional:
 `sudo make install`
 
-### Build issues
+#### Build issues
 
 A. If you see this error:
    src/SerialConnection.c:31:21: fatal error: stropts.h: No such file or directory
