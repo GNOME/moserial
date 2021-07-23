@@ -9,8 +9,9 @@ finish-args:
   # moserial requires access to serial devices connected to the host.
   - --device=all
   - --filesystem=home
-  - --socket=x11
+  - --share=ipc
   - --socket=wayland
+  - --socket=fallback-x11
 cleanup:
   - /share/man
   - /share/aclocal
