@@ -34,6 +34,7 @@ modules:
     sources:
       - type: git
         path: .
+        branch: master
     post-install:
       - install -Dm644 -T /app/share/applications/moserial.desktop /app/share/applications/org.gnome.moserial.Devel.desktop
       - sed -i 's/Icon=moserial/Icon=org.gnome.moserial.Devel/' /app/share/applications/org.gnome.moserial.Devel.desktop
