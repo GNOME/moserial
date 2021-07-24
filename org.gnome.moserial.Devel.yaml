@@ -4,7 +4,11 @@ runtime-version: master
 sdk: org.gnome.Sdk
 command: moserial
 tags:
+  - devel
+  - development
   - nightly
+# todo Better distinguish between the release and development installations by using a dedicated icon to represent the development Flatpak instead of prefixing the name.
+desktop-file-name-prefix: "(Development) "
 finish-args:
   # moserial requires access to serial devices connected to the host.
   - --device=all
