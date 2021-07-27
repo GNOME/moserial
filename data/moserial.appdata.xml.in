@@ -24,8 +24,14 @@
   <url type="help">https://help.gnome.org/users/moserial/stable/</url>
   <screenshots>
     <screenshot type="default">
-      <image>https://wiki.gnome.org/moserial?action=AttachFile&amp;do=get&amp;target=main.png</image>
+      <image>https://wiki.gnome.org/Apps/Moserial?action=AttachFile&amp;do=get&amp;target=main.png</image>
     </screenshot>
   </screenshots>
   <translation type="gettext">moserial</translation>
+  <content_rating type="oars-1.1" />
+  <releases>
+    <release version="3.0.17" date="2021-07-23" />
+    <release version="3.0.16" date="2021-02-09" />
+    <release version="3.0.15" date="2021-01-27" />
+  </releases>
 </component>
