@@ -49,6 +49,10 @@ AC_CONFIG_FILES([
 	data/icons/Makefile
 	data/icons/48x48/Makefile
 	data/icons/48x48/apps/Makefile
+	data/icons/64x64/Makefile
+	data/icons/64x64/apps/Makefile
+	data/icons/128x128/Makefile
+	data/icons/128x128/apps/Makefile
 	doc/Makefile])
 
 AC_OUTPUT
