@@ -43,5 +43,7 @@ modules:
       - install -Dm644 -T /app/share/applications/moserial.desktop /app/share/applications/org.gnome.moserial.Devel.desktop
       - sed -i 's/Icon=moserial/Icon=org.gnome.moserial.Devel/' /app/share/applications/org.gnome.moserial.Devel.desktop
       - install -Dm644 -T /app/share/icons/hicolor/48x48/apps/moserial.png /app/share/icons/hicolor/48x48/apps/org.gnome.moserial.Devel.png
+      - install -Dm644 -T /app/share/icons/hicolor/64x64/apps/moserial.png /app/share/icons/hicolor/64x64/apps/org.gnome.moserial.Devel.png
+      - install -Dm644 -T /app/share/icons/hicolor/128x128/apps/moserial.png /app/share/icons/hicolor/128x128/apps/org.gnome.moserial.Devel.png
       - install -Dm644 -T /app/share/metainfo/moserial.appdata.xml /app/share/metainfo/org.gnome.moserial.Devel.appdata.xml
       - sed -i 's/moserial.desktop/org.gnome.moserial.Devel.desktop/' /app/share/metainfo/org.gnome.moserial.Devel.appdata.xml
