@@ -1,4 +1,4 @@
-AC_INIT([moserial],[3.0.18],[https://gitlab.gnome.org/GNOME/moserial/issues/])
+AC_INIT([moserial],[3.0.19],[https://gitlab.gnome.org/GNOME/moserial/issues/])
 dnl - also update data/moserial.appdata.xml.in
 
 AC_CONFIG_SRCDIR([Makefile.am])
