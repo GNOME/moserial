@@ -1,9 +1,9 @@
 themedir = $(datadir)/icons/hicolor
-size = 64x64
+size = scalable
 context = apps
 
 iconsdir = $(themedir)/$(size)/$(context)
 
-icons_DATA = moserial.png
+icons_DATA = moserial.svg
 
 EXTRA_DIST = $(icons_DATA)
