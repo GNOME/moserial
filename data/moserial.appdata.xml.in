@@ -30,11 +30,48 @@
   <translation type="gettext">moserial</translation>
   <content_rating type="oars-1.1" />
   <releases>
-    <release version="3.0.20" date="2021-07-28" />
-    <release version="3.0.19" date="2021-07-27" />
-    <release version="3.0.18" date="2021-07-27" />
-    <release version="3.0.17" date="2021-07-23" />
-    <release version="3.0.16" date="2021-02-09" />
-    <release version="3.0.15" date="2021-01-27" />
+    <release version="3.0.20" date="2021-07-28">
+    <description>
+        <p>
+            This release switches to a much cleaner, scalable version of the desktop icon!
+        </p>
+      </description>
+    </release>
+    <release version="3.0.19" date="2021-07-27">
+    <description>
+        <p>
+            This is the first release available as a Flatpak on Flathub!
+            This is a minor release which adds both a 64x64 and a 128x128 variant of the desktop icon to meet Flathub's icon requirements.
+        </p>
+      </description>
+    </release>
+    <release version="3.0.18" date="2021-07-27">
+    <description>
+        <p>
+            A minor release with refinements of the Flatpak.
+        </p>
+      </description>
+    </release>
+    <release version="3.0.17" date="2021-07-23">
+    <description>
+        <p>
+            A minor release including initial Flatpak support and updated translations.
+        </p>
+      </description>
+    </release>
+    <release version="3.0.16" date="2021-02-09">
+    <description>
+        <p>
+            This release adds missing accelerator keys and updated translations.
+        </p>
+      </description>
+    </release>
+    <release version="3.0.15" date="2021-01-27">
+    <description>
+        <p>
+            A small release with a new option to connect automatically on startup or profile load plus updated translations.
+        </p>
+      </description>
+    </release>
   </releases>
 </component>
