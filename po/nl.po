@@ -1,0 +1,703 @@
+# Dutch translation for moserial.
+# Copyright (C) 2021 moserial's COPYRIGHT HOLDER
+# This file is distributed under the same license as the moserial package.
+# Nathan Follens <nfollens@gnome.org>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: moserial master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/moserial/issues\n"
+"POT-Creation-Date: 2021-09-06 12:54+0000\n"
+"PO-Revision-Date: 2021-09-07 23:01+0200\n"
+"Language-Team: Dutch <gnome-nl-list@gnome.org>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: Nathan Follens <nfollens@gnome.org>\n"
+"X-Generator: Poedit 3.0\n"
+
+#: ../data/ui/mainwindow.ui.h:1 ../data/moserial.appdata.xml.in.h:1
+msgid "moserial"
+msgstr "moserial"
+
+#: ../data/ui/mainwindow.ui.h:2
+msgid "File"
+msgstr "Bestand"
+
+#: ../data/ui/mainwindow.ui.h:3
+msgid "Open Settings"
+msgstr "Instellingen openen"
+
+# Recente wat? - Nathan
+#: ../data/ui/mainwindow.ui.h:4
+msgid "Open _Recent"
+msgstr "_Recente openen"
+
+#: ../data/ui/mainwindow.ui.h:5
+msgid "Save Settings"
+msgstr "Instellingen opslaan"
+
+#: ../data/ui/mainwindow.ui.h:6
+msgid "Save Settings As"
+msgstr "Instellingen opslaan als"
+
+#: ../data/ui/mainwindow.ui.h:7
+msgid "Quit"
+msgstr "Afsluiten"
+
+#: ../data/ui/mainwindow.ui.h:8
+msgid "Edit"
+msgstr "Bewerken"
+
+#: ../data/ui/mainwindow.ui.h:9
+msgid "Cut"
+msgstr "Knippen"
+
+#: ../data/ui/mainwindow.ui.h:10
+msgid "Copy"
+msgstr "Kopiëren"
+
+#: ../data/ui/mainwindow.ui.h:11
+msgid "Paste"
+msgstr "Plakken"
+
+#: ../data/ui/mainwindow.ui.h:12
+msgid "Clear"
+msgstr "Wissen"
+
+#: ../data/ui/mainwindow.ui.h:13
+msgid "View"
+msgstr "Weergave"
+
+#: ../data/ui/mainwindow.ui.h:14
+msgid "Extra Controls"
+msgstr "Extra besturing"
+
+#: ../data/ui/mainwindow.ui.h:15
+msgid "Help"
+msgstr "Hulp"
+
+#: ../data/ui/mainwindow.ui.h:16
+msgid "About"
+msgstr "Info"
+
+#: ../data/ui/mainwindow.ui.h:17
+msgid "Connect"
+msgstr "Verbinden"
+
+#: ../data/ui/mainwindow.ui.h:18
+msgid "Record"
+msgstr "Opnemen"
+
+#: ../data/ui/mainwindow.ui.h:19
+msgid "Send File"
+msgstr "Bestand verzenden"
+
+#: ../data/ui/mainwindow.ui.h:20
+msgid "Receive File"
+msgstr "Bestand ontvangen"
+
+#: ../data/ui/mainwindow.ui.h:21 ../data/ui/settings_dialog.ui.h:1
+msgid "Port Setup"
+msgstr "Poortinstellingen"
+
+#: ../data/ui/mainwindow.ui.h:22 ../data/ui/preferences.ui.h:1
+msgid "Preferences"
+msgstr "Voorkeuren"
+
+#: ../data/ui/mainwindow.ui.h:23
+msgid "Shows RI input (Ring Indicator)"
+msgstr "Toont RI-invoer (Ring Indicator)"
+
+#: ../data/ui/mainwindow.ui.h:24
+msgid "RI"
+msgstr "RI"
+
+#: ../data/ui/mainwindow.ui.h:25
+msgid "Shows DSR input (Data Set Ready)"
+msgstr "Toont DSR-invoer (Data Set Ready)"
+
+#: ../data/ui/mainwindow.ui.h:26
+msgid "DSR"
+msgstr "DSR"
+
+#: ../data/ui/mainwindow.ui.h:27
+msgid "Shows CD input (Carrier Detect)"
+msgstr "Toont CD-invoer (Carrier Detect)"
+
+#: ../data/ui/mainwindow.ui.h:28
+msgid "CD"
+msgstr "CD"
+
+#: ../data/ui/mainwindow.ui.h:29
+msgid "Shows CTS input (Clear To Send)"
+msgstr "Toont CTS-invoer (Clear To Send)"
+
+#: ../data/ui/mainwindow.ui.h:30
+msgid "CTS"
+msgstr "CTS"
+
+#: ../data/ui/mainwindow.ui.h:31
+msgid "Received ASCII"
+msgstr "ASCII ontvangen"
+
+#: ../data/ui/mainwindow.ui.h:32
+msgid "Received HEX"
+msgstr "HEX ontvangen"
+
+#: ../data/ui/mainwindow.ui.h:33
+msgid "RTS"
+msgstr "RTS"
+
+#: ../data/ui/mainwindow.ui.h:34
+msgid "DTR"
+msgstr "DTR"
+
+#: ../data/ui/mainwindow.ui.h:35
+msgid "Sent ASCII"
+msgstr "ASCII verzonden"
+
+#: ../data/ui/mainwindow.ui.h:36
+msgid "Sent HEX"
+msgstr "HEX verzonden"
+
+#: ../data/ui/mainwindow.ui.h:37 ../src/SerialStreamRecorder.vala:31
+msgid "Outgoing"
+msgstr "Uitgaand"
+
+#: ../data/ui/mainwindow.ui.h:38
+msgid "Send"
+msgstr "Verzenden"
+
+#: ../data/ui/mainwindow.ui.h:39
+msgid "Disconnect"
+msgstr "Verbreken"
+
+#: ../data/ui/mainwindow.ui.h:40
+msgid "Stop Recording"
+msgstr "Opname stoppen"
+
+#: ../data/ui/preferences.ui.h:2 ../data/ui/receive_progress.ui.h:2
+#: ../data/ui/send_progress_dialog.ui.h:2 ../data/ui/settings_dialog.ui.h:2
+msgid "Cancel"
+msgstr "Annuleren"
+
+#: ../data/ui/preferences.ui.h:3 ../data/ui/settings_dialog.ui.h:3
+#: ../data/ui/xmodem_filename_dialog.ui.h:1
+msgid "OK"
+msgstr "Oké"
+
+#: ../data/ui/preferences.ui.h:4
+msgid "Font"
+msgstr "Lettertype"
+
+#: ../data/ui/preferences.ui.h:5
+msgid "Use the system fixed width font"
+msgstr "Het lettertype met vaste breedte van het systeem gebruiken"
+
+#: ../data/ui/preferences.ui.h:6
+msgid "Display Font"
+msgstr "Weergavelettertype"
+
+#: ../data/ui/preferences.ui.h:7
+msgid "Font Color"
+msgstr "Letterkleur"
+
+#: ../data/ui/preferences.ui.h:8
+msgid "Background Color"
+msgstr "Achtergrondkleur"
+
+#: ../data/ui/preferences.ui.h:9
+msgid "Highlight Color"
+msgstr "Markeringskleur"
+
+#: ../data/ui/preferences.ui.h:10
+msgid "Recording"
+msgstr "Opnemen"
+
+#: ../data/ui/preferences.ui.h:11
+msgid "Launch recorded files"
+msgstr "Opgenomen bestanden uitvoeren"
+
+#: ../data/ui/preferences.ui.h:12
+msgid "Enable timeout after"
+msgstr "Time-out inschakelen na"
+
+#: ../data/ui/preferences.ui.h:13
+msgid "seconds"
+msgstr "seconden"
+
+#: ../data/ui/preferences.ui.h:14
+msgid "Use automatic timestamped filename"
+msgstr "Bestandsnamen automatische tijdsstempels geven"
+
+#: ../data/ui/preferences.ui.h:15
+msgid "In this folder"
+msgstr "In deze map"
+
+#: ../data/ui/preferences.ui.h:16
+msgid "With this extension"
+msgstr "Met deze extensie"
+
+#: ../data/ui/preferences.ui.h:17
+msgid "Direction"
+msgstr "Richting"
+
+#: ../data/ui/receive_chooser.ui.h:1
+msgid "Select Folder for Received Files"
+msgstr "Selecteer map voor ontvangen bestanden"
+
+#: ../data/ui/receive_chooser.ui.h:2 ../data/ui/send_chooser_dialog.ui.h:2
+msgid "Error Correction Protocol"
+msgstr "Foutcorrectieprotocol"
+
+#: ../data/ui/receive_progress.ui.h:1
+msgid "Receive File Progress"
+msgstr "Voortgang van ontvangst van bestand"
+
+#: ../data/ui/record_dialog.ui.h:1
+msgid "Record Incoming and/or Outgoing Data"
+msgstr "Inkomende en/of uitgaande gegevens opnemen"
+
+#: ../data/ui/record_dialog.ui.h:2
+msgid "Stream to record"
+msgstr "Stream om op te nemen"
+
+#: ../data/ui/send_chooser_dialog.ui.h:1
+msgid "Select File to Send"
+msgstr "Selecteer bestand om te verzenden"
+
+#: ../data/ui/send_progress_dialog.ui.h:1
+msgid "Send File Progress"
+msgstr "Voortgang van verzending van bestand"
+
+#: ../data/ui/settings_dialog.ui.h:4
+msgid "Port Settings"
+msgstr "Poortinstellingen"
+
+#: ../data/ui/settings_dialog.ui.h:5
+msgid "Hardware"
+msgstr "Hardware"
+
+#: ../data/ui/settings_dialog.ui.h:6
+msgid "Software"
+msgstr "Software"
+
+#: ../data/ui/settings_dialog.ui.h:7
+msgid "Echo received data"
+msgstr "Ontvangen gegevens echoën"
+
+#: ../data/ui/settings_dialog.ui.h:8
+msgid "Device"
+msgstr "Apparaat"
+
+#: ../data/ui/settings_dialog.ui.h:9
+msgid "Baud Rate"
+msgstr "Baud-snelheid"
+
+#: ../data/ui/settings_dialog.ui.h:10
+msgid "Data Bits"
+msgstr "Databits"
+
+#: ../data/ui/settings_dialog.ui.h:11
+msgid "Stop Bits"
+msgstr "Stopbits"
+
+#: ../data/ui/settings_dialog.ui.h:12
+msgid "Parity"
+msgstr "Pariteit"
+
+#: ../data/ui/settings_dialog.ui.h:13
+msgid "Handshake"
+msgstr "Handshake"
+
+#: ../data/ui/settings_dialog.ui.h:14
+msgid "Access Mode"
+msgstr "Toegangsmodus"
+
+#: ../data/ui/settings_dialog.ui.h:15
+msgid "Local Echo"
+msgstr "Lokale echo"
+
+#: ../data/ui/settings_dialog.ui.h:16
+msgid "On Startup"
+msgstr "Bij opstarten"
+
+#: ../data/ui/settings_dialog.ui.h:17
+msgid "Connect immediately"
+msgstr "Onmiddellijk verbinden"
+
+#: ../data/ui/xmodem_filename_dialog.ui.h:2
+msgid "Filename required for XMODEM"
+msgstr "Bestandsnaam vereist voor XMODEM"
+
+#: ../data/moserial.desktop.in.h:1
+msgid "moserial Terminal"
+msgstr "moserial Terminal"
+
+#: ../data/moserial.desktop.in.h:2
+msgid "Serial Terminal"
+msgstr "Seriële terminal"
+
+#: ../data/moserial.desktop.in.h:3
+msgid "A serial terminal optimized for logging and file capture"
+msgstr "Een seriële terminal geoptimaliseerd voor loggen en bestandsopname"
+
+#: ../data/moserial.appdata.xml.in.h:2
+msgid "Serial terminal"
+msgstr "Seriële terminal"
+
+#: ../data/moserial.appdata.xml.in.h:3
+msgid ""
+"Moserial is a serial terminal used for interacting with serial consoles and "
+"embedded devices. It supports the view of incoming and outgoing data in both "
+"ASCII and hexadecimal formats with the option to log this data. It also "
+"supports sending and receiving of x, y, and z-modem files, and has profiles "
+"to easily switch between configurations for different devices you are "
+"communicating with."
+msgstr ""
+"Moserial is een seriële terminal gemaakt om met seriële consoles en "
+"ingebedde apparaten te interageren. Het ondersteunt de weergave van "
+"inkomende en uitgaande gegevens in zowel ASCII- als hexadecimale formaten, "
+"met de mogelijkheid om deze gegevens te loggen. Het ondersteunt ook het "
+"verzenden en ontvangen van x-, y- en z-modembestanden, en beschikt over "
+"profielen om eenvoudig te wisselen tussen configuraties voor de "
+"verschillende apparaten waarmee u communiceert."
+
+#: ../src/InputParser.vala:46 ../src/InputParser.vala:56
+msgid "Invalid Input"
+msgstr "Ongeldige invoer"
+
+#: ../src/Main.vala:26
+msgid "Profile file to load"
+msgstr "Profielbestand om te laden"
+
+#: ../src/Main.vala:48
+msgid "- moserial serial terminal"
+msgstr "- moserial seriële terminal"
+
+#: ../src/Main.vala:53 ../src/Main.vala:61
+#, c-format
+msgid "Run '%s --help' to see a full list of available command line options.\n"
+msgstr ""
+"Voer `%s --help` uit voor een volledige lijst met beschikbare "
+"opdrachtregelopties.\n"
+
+#: ../src/MainWindow.vala:31
+msgid "translator-credits"
+msgstr ""
+"Nathan Follens <nfollens@gnome.org>\n"
+"\n"
+"Meer info over Gnome-NL https://nl.gnome.org"
+
+#: ../src/MainWindow.vala:33
+msgid ""
+"moserial is free software: you can redistribute it and/or modify it under "
+"the terms of the GNU General Public License as published by the Free "
+"Software Foundation, either version 3 of the License, or (at your option) "
+"any later version.\n"
+msgstr ""
+"moserial is vrije software; u mag het herdistribueren en/of aanpassen onder "
+"de voorwaarden van de GNU General Public License zoals die gepubliceerd is "
+"door de Free Software Foundation; ofwel versie 3 van de licentie of (zo u "
+"wilt) een latere versie.\n"
+
+#: ../src/MainWindow.vala:34
+msgid ""
+"moserial is distributed in the hope that it will be useful, but WITHOUT ANY "
+"WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
+"FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
+"details.\n"
+msgstr ""
+"moserial wordt gedistribueerd in de hoop dat het nuttig zal zijn, maar "
+"ZONDER ENIGE GARANTIE; zonder zelfs de impliciete garantie van "
+"VERKOOPBAARHEID of GESCHIKTHEID VOOR EEN BEPAALD DOEL. Bekijk de GNU General "
+"Public License voor meer informatie.\n"
+
+#: ../src/MainWindow.vala:35
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"this program.  If not, see <http://www.gnu.org/licenses/>."
+msgstr ""
+"U zou bij dit programma een exemplaar van de GNU General Public License "
+"moeten hebben ontvangen. Indien dat niet zo is, zie <http://www.gnu.org/"
+"licenses/>."
+
+#: ../src/MainWindow.vala:65
+msgid "ASCII"
+msgstr "ASCII"
+
+#: ../src/MainWindow.vala:65
+msgid "HEX"
+msgstr "HEX"
+
+#: ../src/MainWindow.vala:171
+msgid "Port configuration"
+msgstr "Poortconfiguratie"
+
+#: ../src/MainWindow.vala:176
+msgid "Read the manual"
+msgstr "Lees de handleiding"
+
+#: ../src/MainWindow.vala:185
+msgid "TX: 0, RX: 0"
+msgstr "TX: 0, RX: 0"
+
+#: ../src/MainWindow.vala:196
+msgid "Send a file"
+msgstr "Verzend een bestand"
+
+#: ../src/MainWindow.vala:205
+msgid "Receive a file"
+msgstr "Ontvang een bestand"
+
+#: ../src/MainWindow.vala:214
+msgid "Record sent and/or received data"
+msgstr "Neem verzonden en/of ontvangen gegevens op"
+
+#: ../src/MainWindow.vala:225
+msgid "Other preferences"
+msgstr "Overige voorkeuren"
+
+#: ../src/MainWindow.vala:230
+msgid "Open/close port"
+msgstr "Poort openen/sluiten"
+
+#: ../src/MainWindow.vala:280
+msgid "Send the outgoing data now."
+msgstr "Verzend nu de uitgaande gegevens."
+
+#: ../src/MainWindow.vala:283
+msgid "Type outgoing data here. Press Enter or Send to send it."
+msgstr ""
+"Voer de uitgaande gegevens hier in. Druk op Enter of Verzenden om ze te "
+"verzenden."
+
+#: ../src/MainWindow.vala:328
+msgid "Shows and toggles the DTR output (Data Terminal Ready)"
+msgstr "Toont en schakelt de DTR-uitvoer (Data Terminal Ready) om"
+
+#: ../src/MainWindow.vala:333
+msgid "Shows and toggles the RTS output (Request To Send)"
+msgstr "Toont en schakelt de RTS-uitvoer (Request To Send) om"
+
+#: ../src/MainWindow.vala:338
+msgid "Clear incoming text box"
+msgstr "Inkomendetekstvak wissen"
+
+#: ../src/MainWindow.vala:343
+msgid "Clear outgoing text box"
+msgstr "Uitgaandetekstvak wissen"
+
+#: ../src/MainWindow.vala:740 ../src/Profile.vala:113 ../src/Profile.vala:148
+msgid "Error: Could not open file"
+msgstr "Fout: kon bestand niet openen"
+
+#: ../src/MainWindow.vala:877
+msgid "Error: Could not open device"
+msgstr "Fout: kon apparaat niet openen"
+
+#: ../src/MainWindow.vala:1059
+#, c-format
+msgid "Unable to display help file: %s"
+msgstr "Kan hulpbestand niet weergeven: %s"
+
+#: ../src/MainWindow.vala:1071
+msgid ""
+"A serial terminal for the GNOME desktop, optimized for logging and file "
+"capture."
+msgstr ""
+"Een seriële terminal voor het Gnome-bureaublad, geoptimaliseerd voor loggen "
+"en bestandsopname."
+
+#: ../src/MainWindow.vala:1131
+msgid "Save modified settings to the loaded profile?"
+msgstr "Gewijzigde instellingen opslaan naar het geladen profiel?"
+
+#: ../src/PreferencesDialog.vala:56
+msgid ""
+"If this option is enabled, a recorded file will be opened immediately after "
+"it is saved, using the default application for the file type. The default "
+"application is defined by the desktop environment."
+msgstr ""
+"Met deze optie ingeschakeld wordt een opgenomen bestand onmiddellijk na het "
+"opslaan geopend met de standaardtoepassing voor het bestandstype. De "
+"standaardtoepassing wordt bepaald door de bureaubladomgeving."
+
+#: ../src/PreferencesDialog.vala:59
+msgid ""
+"If this option is enabled, recording will be automatically stopped after an "
+"adjustable period of inactivity after receiving some data. Moserial will "
+"wait indefinitely to record the first data byte before activating the "
+"inactivity timer."
+msgstr ""
+"Met deze optie ingeschakeld wordt een opname automatisch stopgezet na een "
+"aanpasbare periode van inactiviteit na het ontvangen van gegevens. Moserial "
+"zal blijven wachten om de eerste gegevensbyte op te nemen vooraleer het de "
+"inactiviteitstimer activeert."
+
+#: ../src/Preferences.vala:86
+msgid "Unable to retrieve system font setting"
+msgstr "Kan systeemlettertypeinstelling niet ophalen"
+
+#: ../src/Rzwrapper.vala:24 ../src/Szwrapper.vala:24
+msgid "Xmodem"
+msgstr "Xmodem"
+
+#: ../src/Rzwrapper.vala:25 ../src/Szwrapper.vala:25
+msgid "Ymodem"
+msgstr "Ymodem"
+
+#: ../src/Rzwrapper.vala:26 ../src/Szwrapper.vala:26
+msgid "Zmodem"
+msgstr "Zmodem"
+
+#: ../src/SendProgressDialog.vala:44
+msgid "Waiting for remote host"
+msgstr "Wachten op externe host"
+
+#: ../src/SerialConnection.vala:44
+msgid "CR+LF end"
+msgstr "CR+LF einde"
+
+#: ../src/SerialConnection.vala:45
+msgid "CR end"
+msgstr "CR einde"
+
+#: ../src/SerialConnection.vala:46
+msgid "LF end"
+msgstr "LF einde"
+
+#: ../src/SerialConnection.vala:47
+msgid "TAB end"
+msgstr "TAB einde"
+
+#: ../src/SerialConnection.vala:48
+msgid "ESC end"
+msgstr "ESC einde"
+
+#: ../src/SerialConnection.vala:49
+msgid "No end"
+msgstr "Geen einde"
+
+#: ../src/SerialConnection.vala:362
+#, c-format
+msgid "TX: %lu, RX: %lu (%lu unprintable)"
+msgstr "TX: %lu, RX: %lu (%lu niet-printbaar)"
+
+#: ../src/SerialConnection.vala:364
+#, c-format
+msgid "TX: %lu, RX: %lu"
+msgstr "TX: %lu, RX: %lu"
+
+#: ../src/SerialStreamRecorder.vala:30
+msgid "Incoming"
+msgstr "Inkomend"
+
+#: ../src/SerialStreamRecorder.vala:32
+msgid "Incoming and Outgoing"
+msgstr "Inkomend en uitgaand"
+
+#: ../src/SerialStreamRecorder.vala:61 ../src/SerialStreamRecorder.vala:72
+#: ../src/SerialStreamRecorder.vala:96
+#, c-format
+msgid "error: %s\n"
+msgstr "fout: %s\n"
+
+#: ../src/SerialStreamRecorder.vala:105
+#, c-format
+msgid "Unable to launch %s: %s"
+msgstr "Kan %s niet starten: %s"
+
+#: ../src/SettingsDialog.vala:74
+msgid "Also known as RTS/CTS handshaking"
+msgstr "Ook bekend als RTS/CTS-handshaken"
+
+#: ../src/SettingsDialog.vala:77
+msgid "Also known as XON/XOFF handshaking"
+msgstr "Ook bekend als XON/XOFF-handshaken"
+
+#: ../src/SettingsDialog.vala:83
+msgid "Normally disabled"
+msgstr "Normaal gezien uitgeschakeld"
+
+#: ../src/SettingsDialog.vala:86
+msgid "Enable to automatically connect on startup or when a profile is loaded"
+msgstr ""
+"Schakel dit in om bij opstarten of wanneer een profiel geladen wordt "
+"automatisch te verbinden"
+
+#: ../src/Settings.vala:25
+msgid "None"
+msgstr "Geen"
+
+#: ../src/Settings.vala:26
+msgid "Odd"
+msgstr "Oneven"
+
+#: ../src/Settings.vala:27
+msgid "Even"
+msgstr "Even"
+
+#: ../src/Settings.vala:28
+msgid "Mark"
+msgstr "Mark"
+
+#: ../src/Settings.vala:29
+msgid "Space"
+msgstr "Space"
+
+#: ../src/Settings.vala:35
+msgid "Read and Write"
+msgstr "Lezen en schrijven"
+
+#: ../src/Settings.vala:36
+msgid "Read Only"
+msgstr "Alleen-lezen"
+
+#: ../src/Settings.vala:37
+msgid "Write Only"
+msgstr "Alleen-schrijven"
+
+#. TRANSLATORS: first letter of "None", a serial port parity setting
+#: ../src/Settings.vala:97
+msgid "N"
+msgstr "N"
+
+#. TRANSLATORS: first letter of "Odd", a serial port parity setting
+#: ../src/Settings.vala:101
+msgid "O"
+msgstr "O"
+
+#. TRANSLATORS: first letter of "Even", a serial port parity setting
+#: ../src/Settings.vala:105
+msgid "E"
+msgstr "E"
+
+#. TRANSLATORS: first letter of "Mark", a serial port parity setting
+#: ../src/Settings.vala:109
+msgid "M"
+msgstr "M"
+
+#. TRANSLATORS: first letter of "Space", a serial port parity setting
+#: ../src/Settings.vala:113
+msgid "S"
+msgstr "S"
+
+#: ../src/Settings.vala:124
+msgid "OPEN"
+msgstr "OPEN"
+
+#: ../src/Settings.vala:125
+msgid "CLOSED"
+msgstr "GESLOTEN"
+
+#: ../src/Szwrapper.vala:27
+msgid "None (straight binary)"
+msgstr "Geen (rechtstreekse binaire gegevens)"
+
+#: ../src/Szwrapper.vala:178
+msgid "canceled"
+msgstr "geannuleerd"
