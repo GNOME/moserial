@@ -5,145 +5,257 @@
 # Alan Mortensen <alanmortensen.am@gmail.com>, 2017.
 # Korrekturlæsning Kenneth Nielsen, 2010.
 # Korrekturlæsning Nicky Thomassen, 2010.
+# scootergrisen, 2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: moserial master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=moserial&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2015-11-10 14:28+0000\n"
-"PO-Revision-Date: 2017-01-14 11:45+0100\n"
-"Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
-"Language-Team: Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/moserial/issues\n"
+"POT-Creation-Date: 2021-01-26 14:31+0000\n"
+"PO-Revision-Date: 2021-04-21 14:03+0200\n"
+"Last-Translator: scootergrisen\n"
+"Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.7.1\n"
 
-#: ../data/ui/mainwindow.ui.h:1
+#: ../data/ui/mainwindow.ui.h:1 ../data/moserial.appdata.xml.in.h:1
 msgid "moserial"
 msgstr "moserial"
 
 #: ../data/ui/mainwindow.ui.h:2
-msgid "_File"
-msgstr "_Fil"
+#| msgid "_File"
+msgid "File"
+msgstr "Fil"
 
 #: ../data/ui/mainwindow.ui.h:3
+#| msgid "Port Settings"
+msgid "Open Settings"
+msgstr "Åbn indstillinger"
+
+#: ../data/ui/mainwindow.ui.h:4
 msgid "Open _Recent"
 msgstr "Åbn _seneste"
 
-#: ../data/ui/mainwindow.ui.h:4
-msgid "_Edit"
-msgstr "_Rediger"
-
 #: ../data/ui/mainwindow.ui.h:5
-msgid "_Help"
-msgstr "_Hjælp"
+#| msgid "Port Settings"
+msgid "Save Settings"
+msgstr "Gem indstillinger"
 
 #: ../data/ui/mainwindow.ui.h:6
-msgid "Connect"
-msgstr "Forbind"
+#| msgid "Port Settings"
+msgid "Save Settings As"
+msgstr "Gem indstillinger som"
 
 #: ../data/ui/mainwindow.ui.h:7
-msgid "Record"
-msgstr "Optag"
+msgid "Quit"
+msgstr "Afslut"
 
 #: ../data/ui/mainwindow.ui.h:8
-msgid "Send File"
-msgstr "Send fil"
+#| msgid "_Edit"
+msgid "Edit"
+msgstr "Rediger"
 
-# Modtagelsesfil eller Modtag fil.
-# fejlrapport.
 #: ../data/ui/mainwindow.ui.h:9
-msgid "Receive File"
-msgstr "Modtagelsesfil"
+msgid "Cut"
+msgstr "Klip"
 
-#: ../data/ui/mainwindow.ui.h:10 ../data/ui/settings_dialog.ui.h:1
-msgid "Port Setup"
-msgstr "Portopsætning"
+#: ../data/ui/mainwindow.ui.h:10
+msgid "Copy"
+msgstr "Kopiér"
 
-#: ../data/ui/mainwindow.ui.h:11 ../data/ui/preferences.ui.h:1
-msgid "Preferences"
-msgstr "Indstillinger"
+#: ../data/ui/mainwindow.ui.h:11
+msgid "Paste"
+msgstr "Indsæt"
 
 #: ../data/ui/mainwindow.ui.h:12
+msgid "Clear"
+msgstr "Ryd"
+
+#: ../data/ui/mainwindow.ui.h:13
+msgid "View"
+msgstr "Vis"
+
+# scootergrisen: fra gennemlæsning: kontrolelementer er nok bedre
+#: ../data/ui/mainwindow.ui.h:14
+msgid "Extra Controls"
+msgstr "Ekstra styringer"
+
+#: ../data/ui/mainwindow.ui.h:15
 msgid "Help"
 msgstr "Hjælp"
 
-#: ../data/ui/mainwindow.ui.h:13
+#: ../data/ui/mainwindow.ui.h:16
+msgid "About"
+msgstr "Om"
+
+#: ../data/ui/mainwindow.ui.h:17
+msgid "Connect"
+msgstr "Forbind"
+
+#: ../data/ui/mainwindow.ui.h:18
+msgid "Record"
+msgstr "Optag"
+
+#: ../data/ui/mainwindow.ui.h:19
+msgid "Send File"
+msgstr "Send fil"
+
+#: ../data/ui/mainwindow.ui.h:20
+msgid "Receive File"
+msgstr "Modtag fil"
+
+#: ../data/ui/mainwindow.ui.h:21 ../data/ui/settings_dialog.ui.h:1
+msgid "Port Setup"
+msgstr "Portopsætning"
+
+#: ../data/ui/mainwindow.ui.h:22 ../data/ui/preferences.ui.h:1
+msgid "Preferences"
+msgstr "Indstillinger"
+
+#: ../data/ui/mainwindow.ui.h:23
+msgid "Shows RI input (Ring Indicator)"
+msgstr "Viser RI-input (Ring Indicator)"
+
+#: ../data/ui/mainwindow.ui.h:24
+msgid "RI"
+msgstr "RI"
+
+#: ../data/ui/mainwindow.ui.h:25
+msgid "Shows DSR input (Data Set Ready)"
+msgstr "Viser DSR-input (Data Set Ready)"
+
+#: ../data/ui/mainwindow.ui.h:26
+msgid "DSR"
+msgstr "DSR"
+
+#: ../data/ui/mainwindow.ui.h:27
+msgid "Shows CD input (Carrier Detect)"
+msgstr "Viser CD-input (Carrier Detect)"
+
+#: ../data/ui/mainwindow.ui.h:28
+msgid "CD"
+msgstr "CD"
+
+#: ../data/ui/mainwindow.ui.h:29
+msgid "Shows CTS input (Clear To Send)"
+msgstr "Viser CTS-input (Clear To Send)"
+
+#: ../data/ui/mainwindow.ui.h:30
+msgid "CTS"
+msgstr "CTS"
+
+#: ../data/ui/mainwindow.ui.h:31
 msgid "Received ASCII"
 msgstr "Modtaget ASCII"
 
-#: ../data/ui/mainwindow.ui.h:14
+#: ../data/ui/mainwindow.ui.h:32
 msgid "Received HEX"
 msgstr "Modtaget HEX"
 
-#: ../data/ui/mainwindow.ui.h:15
+#: ../data/ui/mainwindow.ui.h:33
+msgid "RTS"
+msgstr "RTS"
+
+#: ../data/ui/mainwindow.ui.h:34
+msgid "DTR"
+msgstr "DTR"
+
+#: ../data/ui/mainwindow.ui.h:35
 msgid "Sent ASCII"
 msgstr "Sendt ASCII"
 
-#: ../data/ui/mainwindow.ui.h:16
+#: ../data/ui/mainwindow.ui.h:36
 msgid "Sent HEX"
 msgstr "Sendt HEX"
 
-#: ../data/ui/mainwindow.ui.h:17 ../src/SerialStreamRecorder.vala:30
+#: ../data/ui/mainwindow.ui.h:37 ../src/SerialStreamRecorder.vala:31
 msgid "Outgoing"
 msgstr "Udgående"
 
-#: ../data/ui/mainwindow.ui.h:18
+#: ../data/ui/mainwindow.ui.h:38
 msgid "Send"
 msgstr "Send"
 
-#: ../data/ui/mainwindow.ui.h:19
+#: ../data/ui/mainwindow.ui.h:39
 msgid "Disconnect"
 msgstr "Afbryd"
 
-#: ../data/ui/mainwindow.ui.h:20
+#: ../data/ui/mainwindow.ui.h:40
 msgid "Stop Recording"
 msgstr "Stop optagelse"
 
-#: ../data/ui/preferences.ui.h:2
+#: ../data/ui/preferences.ui.h:2 ../data/ui/receive_progress.ui.h:2
+#: ../data/ui/send_progress_dialog.ui.h:2 ../data/ui/settings_dialog.ui.h:2
+#| msgid "canceled"
+msgid "Cancel"
+msgstr "Annuller"
+
+#: ../data/ui/preferences.ui.h:3 ../data/ui/settings_dialog.ui.h:3
+#: ../data/ui/xmodem_filename_dialog.ui.h:1
+#| msgid "O"
+msgid "OK"
+msgstr "OK"
+
+#: ../data/ui/preferences.ui.h:4
 msgid "Font"
 msgstr "Skrifttype"
 
-#: ../data/ui/preferences.ui.h:3
-msgid "_Use the system fixed width font"
-msgstr "_Brug systemskrifttypen med fast bredde"
+#: ../data/ui/preferences.ui.h:5
+#| msgid "_Use the system fixed width font"
+msgid "Use the system fixed width font"
+msgstr "Brug systemets skrifttype med fast bredde"
 
-#: ../data/ui/preferences.ui.h:4
+#: ../data/ui/preferences.ui.h:6
 msgid "Display Font"
 msgstr "Tekstskrifttype"
 
-#: ../data/ui/preferences.ui.h:5
+#: ../data/ui/preferences.ui.h:7
 msgid "Font Color"
 msgstr "Skrifttypefarve"
 
-#: ../data/ui/preferences.ui.h:6
+#: ../data/ui/preferences.ui.h:8
 msgid "Background Color"
 msgstr "Baggrundsfarve"
 
-# måske fremhæv farve
-#: ../data/ui/preferences.ui.h:7
+#: ../data/ui/preferences.ui.h:9
 msgid "Highlight Color"
 msgstr "Fremhævningsfarve"
 
-#: ../data/ui/preferences.ui.h:8
+#: ../data/ui/preferences.ui.h:10
 msgid "Recording"
 msgstr "Optagelse"
 
-#: ../data/ui/preferences.ui.h:9
-msgid "_Launch recorded files"
-msgstr "_Start optagede filer"
-
-#: ../data/ui/preferences.ui.h:10
-msgid "Enable timeout after"
-msgstr "Slå tidsudløb til efter"
-
 #: ../data/ui/preferences.ui.h:11
+#| msgid "_Launch recorded files"
+msgid "Launch recorded files"
+msgstr "Start optagede filer"
+
+#: ../data/ui/preferences.ui.h:12
+msgid "Enable timeout after"
+msgstr "Aktivér tidsudløb til efter"
+
+#: ../data/ui/preferences.ui.h:13
 msgid "seconds"
 msgstr "sekunder"
+
+#: ../data/ui/preferences.ui.h:14
+msgid "Use automatic timestamped filename"
+msgstr "Brug filnavn med automatisk tidsstempel"
+
+#: ../data/ui/preferences.ui.h:15
+msgid "In this folder"
+msgstr "I denne mappe"
+
+#: ../data/ui/preferences.ui.h:16
+msgid "With this extension"
+msgstr "Med denne endelse"
+
+#: ../data/ui/preferences.ui.h:17
+msgid "Direction"
+msgstr "Retning"
 
 #: ../data/ui/receive_chooser.ui.h:1
 msgid "Select Folder for Received Files"
@@ -153,10 +265,9 @@ msgstr "Vælg mappe for modtagne filer"
 msgid "Error Correction Protocol"
 msgstr "Protokol for fejlkorrektion"
 
-# Status for filmodtagelse
 #: ../data/ui/receive_progress.ui.h:1
 msgid "Receive File Progress"
-msgstr "Status på modtagelsesfil"
+msgstr "Status for modtag fil"
 
 #: ../data/ui/record_dialog.ui.h:1
 msgid "Record Incoming and/or Outgoing Data"
@@ -174,58 +285,63 @@ msgstr "Vælg fil der skal sendes"
 msgid "Send File Progress"
 msgstr "Status for send fil"
 
-#: ../data/ui/settings_dialog.ui.h:2
+#: ../data/ui/settings_dialog.ui.h:4
 msgid "Port Settings"
 msgstr "Portopsætning"
 
-#: ../data/ui/settings_dialog.ui.h:3
+#: ../data/ui/settings_dialog.ui.h:5
 msgid "Hardware"
 msgstr "Hardware"
 
-#: ../data/ui/settings_dialog.ui.h:4
+#: ../data/ui/settings_dialog.ui.h:6
 msgid "Software"
 msgstr "Software"
 
-#: ../data/ui/settings_dialog.ui.h:5
-msgid "Access Mode"
-msgstr "Adgangstilstand"
-
-#: ../data/ui/settings_dialog.ui.h:6
-msgid "Handshake"
-msgstr "Håndtryk"
-
 #: ../data/ui/settings_dialog.ui.h:7
-msgid "Parity"
-msgstr "Paritet"
+msgid "Echo received data"
+msgstr "Ekko modtaget data"
 
-# Stop bits er så vidt jeg ved noget der indikerer at en transmission er
-# overstået, jeg vil derfor mene at der er tale om "Stopbit"
 #: ../data/ui/settings_dialog.ui.h:8
-msgid "Stop Bits"
-msgstr "Stopbit"
-
-#: ../data/ui/settings_dialog.ui.h:9
-msgid "Data Bits"
-msgstr "Databit"
-
-#: ../data/ui/settings_dialog.ui.h:10
-msgid "Baud Rate"
-msgstr "Baudrate"
-
-#: ../data/ui/settings_dialog.ui.h:11
 msgid "Device"
 msgstr "Enhed"
 
+#: ../data/ui/settings_dialog.ui.h:9
+msgid "Baud Rate"
+msgstr "Baudhastighed"
+
+#: ../data/ui/settings_dialog.ui.h:10
+msgid "Data Bits"
+msgstr "Databit"
+
+#: ../data/ui/settings_dialog.ui.h:11
+msgid "Stop Bits"
+msgstr "Stopbit"
+
 #: ../data/ui/settings_dialog.ui.h:12
+msgid "Parity"
+msgstr "Paritet"
+
+#: ../data/ui/settings_dialog.ui.h:13
+msgid "Handshake"
+msgstr "Håndtryk"
+
+#: ../data/ui/settings_dialog.ui.h:14
+msgid "Access Mode"
+msgstr "Adgangstilstand"
+
+#: ../data/ui/settings_dialog.ui.h:15
 msgid "Local Echo"
 msgstr "Lokalt ekko"
 
-# Måske Ekko-modtaget data
-#: ../data/ui/settings_dialog.ui.h:13
-msgid "Echo received data"
-msgstr "Data modtaget med ekko"
+#: ../data/ui/settings_dialog.ui.h:16
+msgid "On Startup"
+msgstr "Under opstart"
 
-#: ../data/ui/xmodem_filename_dialog.ui.h:1
+#: ../data/ui/settings_dialog.ui.h:17
+msgid "Connect immediately"
+msgstr "Forbind straks"
+
+#: ../data/ui/xmodem_filename_dialog.ui.h:2
 msgid "Filename required for XMODEM"
 msgstr "Filnavn krævet for XMODEM"
 
@@ -241,11 +357,11 @@ msgstr "Seriel terminal"
 msgid "A serial terminal optimized for logging and file capture"
 msgstr "En seriel terminal optimeret til logning og filoptagelse"
 
-#: ../data/moserial.appdata.xml.in.h:1
+#: ../data/moserial.appdata.xml.in.h:2
 msgid "Serial terminal"
 msgstr "Seriel terminal"
 
-#: ../data/moserial.appdata.xml.in.h:2
+#: ../data/moserial.appdata.xml.in.h:3
 msgid ""
 "Moserial is a serial terminal used for interacting with serial consoles and "
 "embedded devices. It supports the view of incoming and outgoing data in both "
@@ -255,13 +371,13 @@ msgid ""
 "communicating with."
 msgstr ""
 "Moserial er en seriel terminal til at interagere med serielle konsoller og "
-"indlejrede enheder. Moserial understøtter visning af ind- og udgående data i både "
-"ASCII- og hexadecimalformat med muligheden for at logge disse data. Det "
+"indlejrede enheder. Moserial understøtter visning af ind- og udgående data i "
+"både ASCII- og hexadecimalformat med muligheden for at logge disse data. Det "
 "understøtter også afsending og modtagelse af x, y og z-modemfiler og har "
 "profiler, så man nemt kan skifte mellem konfigurationer for de forskellige "
 "enheder, man kommunikerer med."
 
-#: ../src/InputParser.vala:44 ../src/InputParser.vala:54
+#: ../src/InputParser.vala:46 ../src/InputParser.vala:56
 msgid "Invalid Input"
 msgstr "Ugyldige inddata"
 
@@ -269,27 +385,29 @@ msgstr "Ugyldige inddata"
 msgid "Profile file to load"
 msgstr "Profilfil der skal indlæses"
 
-#: ../src/Main.vala:45
+#: ../src/Main.vala:48
 msgid "- moserial serial terminal"
 msgstr "- moserials serielle terminal"
 
-#: ../src/Main.vala:50 ../src/Main.vala:58
+#: ../src/Main.vala:53 ../src/Main.vala:61
 #, c-format
 msgid "Run '%s --help' to see a full list of available command line options.\n"
 msgstr ""
 "Kør '%s --help' for at se en fuldstændig liste over tilgængelige tilvalg for "
 "kommandolinjen.\n"
 
-#: ../src/MainWindow.vala:30
+#: ../src/MainWindow.vala:31
 msgid "translator-credits"
 msgstr ""
 "Joe Hansen, 2009, 2010, 2012.\n"
 "Alan Mortensen, 2017.\n"
+"scootergrisen\n"
 "\n"
-"Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
-"Mere info: http://www.dansk-gruppen.dk"
+"Dansk-gruppen\n"
+"Websted http://dansk-gruppen.dk\n"
+"E-mail <dansk@dansk-gruppen.dk>"
 
-#: ../src/MainWindow.vala:32
+#: ../src/MainWindow.vala:33
 msgid ""
 "moserial is free software: you can redistribute it and/or modify it under "
 "the terms of the GNU General Public License as published by the Free "
@@ -301,7 +419,7 @@ msgstr ""
 "Free Software Foundation. Enten version 3 af licensen eller (efter eget "
 "valg) enhver senere version.\n"
 
-#: ../src/MainWindow.vala:33
+#: ../src/MainWindow.vala:34
 msgid ""
 "moserial is distributed in the hope that it will be useful, but WITHOUT ANY "
 "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
@@ -313,7 +431,7 @@ msgstr ""
 "eller EGNETHED TIL ET BESTEMT FORMÅL. Yderligere detaljer kan læses i GNU "
 "General Public License.\n"
 
-#: ../src/MainWindow.vala:34
+#: ../src/MainWindow.vala:35
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "this program.  If not, see <http://www.gnu.org/licenses/>."
@@ -321,69 +439,84 @@ msgstr ""
 "Du bør have modtaget en kopi af GNU General Public License sammen med dette "
 "program. Hvis ikke, så se <http://www.gnu.org/licenses/>."
 
-#: ../src/MainWindow.vala:64
+#: ../src/MainWindow.vala:65
 msgid "ASCII"
 msgstr "ASCII"
 
-#: ../src/MainWindow.vala:64
+#: ../src/MainWindow.vala:65
 msgid "HEX"
 msgstr "HEX"
 
-#: ../src/MainWindow.vala:165
+#: ../src/MainWindow.vala:171
 msgid "Port configuration"
 msgstr "Portkonfiguration"
 
-#: ../src/MainWindow.vala:170
+#: ../src/MainWindow.vala:176
 msgid "Read the manual"
 msgstr "Læs manualen"
 
-#: ../src/MainWindow.vala:180
+#: ../src/MainWindow.vala:185
 msgid "TX: 0, RX: 0"
 msgstr "TX: 0, RX: 0"
 
-#: ../src/MainWindow.vala:191
+#: ../src/MainWindow.vala:196
 msgid "Send a file"
 msgstr "Send en fil"
 
-# Gætter på imperativ, 'Modtag en..' jf. senere 'Send en fil'
-#: ../src/MainWindow.vala:200
+#: ../src/MainWindow.vala:205
 msgid "Receive a file"
 msgstr "Modtag en fil"
 
-#: ../src/MainWindow.vala:210
+#: ../src/MainWindow.vala:214
 msgid "Record sent and/or received data"
 msgstr "Optag sendte og/eller modtagne data"
 
-#: ../src/MainWindow.vala:221
+#: ../src/MainWindow.vala:225
 msgid "Other preferences"
 msgstr "Andre indstillinger"
 
-#: ../src/MainWindow.vala:226
+#: ../src/MainWindow.vala:230
 msgid "Open/close port"
 msgstr "Åbn/luk port"
 
-#: ../src/MainWindow.vala:274
+#: ../src/MainWindow.vala:280
 msgid "Send the outgoing data now."
 msgstr "Send de udgående data nu."
 
-#: ../src/MainWindow.vala:277
+#: ../src/MainWindow.vala:283
 msgid "Type outgoing data here. Press Enter or Send to send it."
 msgstr "Indtast udgående data her. Tryk retur eller send for at sende dem."
 
-#: ../src/MainWindow.vala:564 ../src/Profile.vala:76 ../src/Profile.vala:107
+#: ../src/MainWindow.vala:328
+msgid "Shows and toggles the DTR output (Data Terminal Ready)"
+msgstr "Viser og slår DTR-output til/fra (Data Terminal Ready)"
+
+#: ../src/MainWindow.vala:333
+msgid "Shows and toggles the RTS output (Request To Send)"
+msgstr "Viser og slår RTS-output til/fra (Request To Send)"
+
+#: ../src/MainWindow.vala:338
+msgid "Clear incoming text box"
+msgstr "Ryd indgående tekstboks"
+
+#: ../src/MainWindow.vala:343
+msgid "Clear outgoing text box"
+msgstr "Ryd udgående tekstboks"
+
+#: ../src/MainWindow.vala:740 ../src/Profile.vala:113 ../src/Profile.vala:148
 msgid "Error: Could not open file"
 msgstr "Fejl: Kunne ikke åbne fil"
 
-#: ../src/MainWindow.vala:642
+#: ../src/MainWindow.vala:877
 msgid "Error: Could not open device"
 msgstr "Fejl: Kunne ikke åbne enhed"
 
-#: ../src/MainWindow.vala:764
+#: ../src/MainWindow.vala:1056
 #, c-format
 msgid "Unable to display help file: %s"
 msgstr "Kunne ikke vise hjælpfil: %s"
 
-#: ../src/MainWindow.vala:775
+#: ../src/MainWindow.vala:1068
 msgid ""
 "A serial terminal for the GNOME desktop, optimized for logging and file "
 "capture."
@@ -391,15 +524,11 @@ msgstr ""
 "En seriel terminal til skrivebordsmiljøet GNOME, optimeret til logning og "
 "filoptagelse."
 
-#: ../src/MainWindow.vala:828
-msgid ""
-"You have changed your setting or preferences. Do you want to save these "
-"changes to the loaded profile?"
-msgstr ""
-"Du har ændret din opsætning eller indstillinger. Ønsker du at gemme disse "
-"ændringer i den indlæste profil?"
+#: ../src/MainWindow.vala:1128
+msgid "Save modified settings to the loaded profile?"
+msgstr "Gem ændrede indstillinger til den indlæste profil?"
 
-#: ../src/PreferencesDialog.vala:49
+#: ../src/PreferencesDialog.vala:56
 msgid ""
 "If this option is enabled, a recorded file will be opened immediately after "
 "it is saved, using the default application for the file type. The default "
@@ -409,8 +538,7 @@ msgstr ""
 "efter, den er gemt, med brug af standardprogrammet for den filtype. "
 "Standardprogrammet er defineret af skrivebordsmiljøet."
 
-# inaktivitetsfunktionen, inaktivitetstimeren, tidstagning af inaktivitet
-#: ../src/PreferencesDialog.vala:52
+#: ../src/PreferencesDialog.vala:59
 msgid ""
 "If this option is enabled, recording will be automatically stopped after an "
 "adjustable period of inactivity after receiving some data. Moserial will "
@@ -420,9 +548,9 @@ msgstr ""
 "Hvis dette tilvalg er aktiveret, vil optagelse automatisk blive stoppet "
 "efter en periode, der kan justeres, uden aktivitet, når der er modtaget "
 "nogle data. Det vil sige, at moserial vil vente uendeligt på de første "
-"databit, før programmet aktiverer inaktivitetsfunktionen."
+"databit, før programmet aktiverer inaktivitetstimeren."
 
-#: ../src/Preferences.vala:65
+#: ../src/Preferences.vala:86
 msgid "Unable to retrieve system font setting"
 msgstr "Kunne ikke indhente systemets skriftindstilling"
 
@@ -438,78 +566,81 @@ msgstr "Ymodem"
 msgid "Zmodem"
 msgstr "Zmodem"
 
-#: ../src/SendProgressDialog.vala:42
+#: ../src/SendProgressDialog.vala:44
 msgid "Waiting for remote host"
 msgstr "Venter på ekstern vært"
 
-#: ../src/SerialConnection.vala:43
-msgid "CR+LF end"
-msgstr "CR+LF end"
-
 #: ../src/SerialConnection.vala:44
-msgid "CR end"
-msgstr "CR end"
+msgid "CR+LF end"
+msgstr "CR+LF-afslutning"
 
 #: ../src/SerialConnection.vala:45
-msgid "LF end"
-msgstr "LF end"
+msgid "CR end"
+msgstr "CR-afslutning"
 
 #: ../src/SerialConnection.vala:46
-msgid "TAB end"
-msgstr "TAB end"
+msgid "LF end"
+msgstr "LF-afslutning"
 
 #: ../src/SerialConnection.vala:47
-msgid "ESC end"
-msgstr "ESC end"
+msgid "TAB end"
+msgstr "TAB-afslutning"
 
 #: ../src/SerialConnection.vala:48
-msgid "No end"
-msgstr "Ingen end"
+msgid "ESC end"
+msgstr "ESC-afslutning"
 
-#: ../src/SerialConnection.vala:302
+#: ../src/SerialConnection.vala:49
+msgid "No end"
+msgstr "Ingen afslutning"
+
+#: ../src/SerialConnection.vala:362
 #, c-format
 msgid "TX: %lu, RX: %lu (%lu unprintable)"
 msgstr "TX: %lu, RX: %lu (%lu kan ikke udskrives)"
 
-#: ../src/SerialConnection.vala:304
+#: ../src/SerialConnection.vala:364
 #, c-format
 msgid "TX: %lu, RX: %lu"
 msgstr "TX: %lu, RX: %lu"
 
-#: ../src/SerialStreamRecorder.vala:29
+#: ../src/SerialStreamRecorder.vala:30
 msgid "Incoming"
 msgstr "Indgående"
 
-#: ../src/SerialStreamRecorder.vala:31
+#: ../src/SerialStreamRecorder.vala:32
 msgid "Incoming and Outgoing"
 msgstr "Indgående og udgående"
 
-#: ../src/SerialStreamRecorder.vala:57 ../src/SerialStreamRecorder.vala:68
-#: ../src/SerialStreamRecorder.vala:89
+#: ../src/SerialStreamRecorder.vala:61 ../src/SerialStreamRecorder.vala:72
+#: ../src/SerialStreamRecorder.vala:96
 #, c-format
 msgid "error: %s\n"
 msgstr "fejl: %s\n"
 
-#: ../src/SerialStreamRecorder.vala:98
+#: ../src/SerialStreamRecorder.vala:105
 #, c-format
 msgid "Unable to launch %s: %s"
 msgstr "Kan ikke starte %s: %s"
 
-#: ../src/SettingsDialog.vala:66
+#: ../src/SettingsDialog.vala:74
 msgid "Also known as RTS/CTS handshaking"
 msgstr "Også kendt som RTS/CTS-håndtryk"
 
-#: ../src/SettingsDialog.vala:69
+#: ../src/SettingsDialog.vala:77
 msgid "Also known as XON/XOFF handshaking"
 msgstr "Også kendt som XON/XOFF-håndtryk"
 
-#: ../src/SettingsDialog.vala:75
+#: ../src/SettingsDialog.vala:83
 msgid "Normally disabled"
 msgstr "Normalt deaktiveret"
 
-# Er det bedre at lade dem her være uoversatte?
-# Det er i en glade-fil, som burges af gconf, så ja, jeg ville lade dem
-# være uoversat
+#: ../src/SettingsDialog.vala:86
+msgid "Enable to automatically connect on startup or when a profile is loaded"
+msgstr ""
+"Aktivér for automatisk at oprette forbindelse under opstart, når en profil "
+"er indlæst"
+
 #: ../src/Settings.vala:25
 msgid "None"
 msgstr "None"
@@ -530,55 +661,48 @@ msgstr "Mark"
 msgid "Space"
 msgstr "Space"
 
-# kan ikke rigtig få Skrivebeskyttet til at passe ind her.
-#: ../src/Settings.vala:34
+#: ../src/Settings.vala:35
 msgid "Read and Write"
 msgstr "Læs og skriv"
 
-#: ../src/Settings.vala:35
+#: ../src/Settings.vala:36
 msgid "Read Only"
 msgstr "Kun læs"
 
-#: ../src/Settings.vala:36
+#: ../src/Settings.vala:37
 msgid "Write Only"
 msgstr "Kun skriv"
 
-# msgstr "I"
 #. TRANSLATORS: first letter of "None", a serial port parity setting
-#: ../src/Settings.vala:89
+#: ../src/Settings.vala:97
 msgid "N"
 msgstr "N"
 
-# msgstr "B"
 #. TRANSLATORS: first letter of "Odd", a serial port parity setting
-#: ../src/Settings.vala:93
+#: ../src/Settings.vala:101
 msgid "O"
 msgstr "O"
 
-# msgstr "L"
 #. TRANSLATORS: first letter of "Even", a serial port parity setting
-#: ../src/Settings.vala:97
+#: ../src/Settings.vala:105
 msgid "E"
 msgstr "E"
 
-# mark oversat som mærke (derfor Mæ)
-# msgstr "Mæ"
 #. TRANSLATORS: first letter of "Mark", a serial port parity setting
-#: ../src/Settings.vala:101
+#: ../src/Settings.vala:109
 msgid "M"
 msgstr "M"
 
-# msgstr "Me"
 #. TRANSLATORS: first letter of "Space", a serial port parity setting
-#: ../src/Settings.vala:105
+#: ../src/Settings.vala:113
 msgid "S"
 msgstr "S"
 
-#: ../src/Settings.vala:115
+#: ../src/Settings.vala:124
 msgid "OPEN"
 msgstr "ÅBEN"
 
-#: ../src/Settings.vala:116
+#: ../src/Settings.vala:125
 msgid "CLOSED"
 msgstr "LUKKET"
 
@@ -586,13 +710,6 @@ msgstr "LUKKET"
 msgid "None (straight binary)"
 msgstr "None (straight binary)"
 
-#: ../src/Szwrapper.vala:185
+#: ../src/Szwrapper.vala:178
 msgid "canceled"
 msgstr "afbrudt"
-
-#~ msgid ""
-#~ "Failed to load UI\n"
-#~ "%s"
-#~ msgstr ""
-#~ "Kunne ikke indlæse UI\n"
-#~ "%s"
