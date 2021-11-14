@@ -521,11 +521,11 @@ msgstr "segons"
 #: ../data/moserial.desktop.in.h:1
 msgid "A serial terminal optimized for logging and file capture"
 msgstr ""
-"Un terminal sèrie optimitzat per a l'enregistrament i la captura de fitxers"
+"Un terminal en sèrie optimitzat per a l'enregistrament i la captura de fitxers"
 
 #: ../data/moserial.desktop.in.h:2
 msgid "Serial Terminal"
-msgstr "Terminal sèrie"
+msgstr "Terminal en sèrie"
 
 #: ../data/moserial.desktop.in.h:3
 msgid "moserial Terminal"
@@ -556,7 +556,7 @@ msgid ""
 msgstr ""
 "El moserial es distribueix amb l'expectativa que serà útil, però SENSE CAP "
 "GARANTIA; ni tan sols la garantia implícita de COMERCIABILITAT o ADEQUACIÓ "
-"PER UN PROPÒSIT PARTICULAR. Vegeu la Llicència Pública General GNU per "
+"PER UN PROPÒSIT PARTICULAR. Vegeu la Llicència Pública General GNU per a "
 "obtenir-ne més detalls.\n"
 
 #: ../src/MainWindow.vala:15
@@ -592,7 +592,7 @@ msgid ""
 "A serial terminal for the GNOME desktop, optimized for logging and file "
 "capture."
 msgstr ""
-"Un terminal sèrie per a l'escriptori GNOME, optimitzat per a "
+"Un terminal en sèrie per a l'escriptori GNOME, optimitzat per a "
 "l'enregistrament i la captura de fitxers."
 
 #: ../src/MainWindow.vala:734
@@ -656,7 +656,7 @@ msgstr ""
 
 #: ../src/Main.vala:33
 msgid "- moserial serial terminal"
-msgstr "- terminal sèrie moserial"
+msgstr "- terminal en sèrie moserial"
 
 #: ../src/Main.vala:38 ../src/Main.vala:46
 #, c-format
