@@ -45,4 +45,5 @@ doc/*.omf
 debian/*
 config.sub.dh-orig
 config.guess.dh-orig
-
+.flatpak-builder/
+repo/
