@@ -30,6 +30,14 @@
   <translation type="gettext">moserial</translation>
   <content_rating type="oars-1.1" />
   <releases>
+    <release version="3.0.21" date="2021-11-26">
+    <description>
+        <p>
+	    Adds pseudo-terminal support and updated translations.
+        </p>
+      </description>
+    </release>
+
     <release version="3.0.20" date="2021-07-28">
     <description>
         <p>

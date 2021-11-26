@@ -1,3 +1,15 @@
+Version 3.0.21
+--------------
+
+	* added support for pseudoterminals (e.g. /dev/pts/3, Luca Errani)
+	* added release notes to the AppData file (Jordan Williams)
+	* updated Spanish translation (Daniel Mustieles García)
+	* updated Catalan translation (Jordi Mas)
+	* updated German translation (Philipp Kiemle)
+	* added Dutch translation (Nathan Follens)
+	* updated Danish translation (Ask Hjorth Larsen)
+	* updated Czech translation (Marek Černocký)
+
 Version 3.0.20
 --------------
 
