@@ -2,13 +2,13 @@
 # Copyright (C) 2019 moserial's COPYRIGHT HOLDER
 # This file is distributed under the same license as the moserial package.
 #
-# Asier Sarasua Garmendia <asiersarasua@ni.eus>, 2021.
+# Asier Sarasua Garmendia <asiersarasua@ni.eus>, 2021, 2022.
 #
 msgid ""
 msgstr "Project-Id-Version: moserial master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/moserial/issues\n"
-"POT-Creation-Date: 2021-01-26 14:31+0000\n"
-"PO-Revision-Date: 2021-04-06 10:00+0100\n"
+"POT-Creation-Date: 2021-04-06 19:32+0000\n"
+"PO-Revision-Date: 2022-03-26 10:00+0100\n"
 "Last-Translator: Asier Sarasua Garmendia <asiersarasua@ni.eus>\n"
 "Language-Team: Basque <librezale@librezale.eus>\n"
 "Language: eu\n"
@@ -354,7 +354,7 @@ msgid ""
 "supports sending and receiving of x, y, and z-modem files, and has profiles "
 "to easily switch between configurations for different devices you are "
 "communicating with."
-msgstr ""
+msgstr "Moserial serieko kontsolekin eta gailu kapsulatuekin lan egiteko serieko terminal bat da. Sartzen eta irteten diren datuen ikuspegia onartzen du, bai ASCII formatuan bai hamaseitarrean, eta datuak erregistratzeko aukera ematen du. x, y eta z-modem fitxategiak bidaltzeko eta jasotzeko ere balio du, eta komunikazioa ezarri den gailu desberdinen konfigurazioen artean erraz aldatzeko profilak ditu."
 
 #: ../src/InputParser.vala:46 ../src/InputParser.vala:56
 msgid "Invalid Input"
@@ -471,18 +471,18 @@ msgstr "Errora: ezin da fitxategia ireki"
 msgid "Error: Could not open device"
 msgstr "Errorea: Ezin da gailua ireki"
 
-#: ../src/MainWindow.vala:1056
+#: ../src/MainWindow.vala:1059
 #, c-format
 msgid "Unable to display help file: %s"
 msgstr "Ezin izan da laguntza-fitxategia bistaratu: %s"
 
-#: ../src/MainWindow.vala:1068
+#: ../src/MainWindow.vala:1071
 msgid ""
 "A serial terminal for the GNOME desktop, optimized for logging and file "
 "capture."
 msgstr "Egunkarian idazteko eta fitxategiak kapturatzeko optimizatutako serieko terminala GNOME mahaigainerako."
 
-#: ../src/MainWindow.vala:1128
+#: ../src/MainWindow.vala:1131
 msgid "Save modified settings to the loaded profile?"
 msgstr "Gorde aldatutako ezarpenak kargatutako profilean?"
 
@@ -499,7 +499,7 @@ msgid ""
 "adjustable period of inactivity after receiving some data. Moserial will "
 "wait indefinitely to record the first data byte before activating the "
 "inactivity timer."
-msgstr ""
+msgstr "Aukera hau gaituta badago, grabazioa automatikoki geldituko da datuak jaso ondoren aktibitaterik gabeko tarte bat badago. Tartearen iraupena doitu egin daiteke. Moserial aplikazioak denbora-mugarik gabe itxarongo du lehen datu-bytea grabatzeko, aktibitaterik gabeko tenporizadorea aktibatu aurretik."
 
 #: ../src/Preferences.vala:86
 msgid "Unable to retrieve system font setting"
