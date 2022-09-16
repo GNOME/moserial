@@ -3,144 +3,254 @@
 # This file is distributed under the same license as the moserial package.
 # 玉堂白鹤 <yjwork.xfce@gmail.com>, 2010, 2013.
 # YunQiang Su <wzssyqa@gmail.com>, 2010.
+# Boyuan Yang <073plan@gmail.com>, 2020.
+# Zhou Nan <zhounan@nfschina.com>, 2021.
+# lumingzh <lumingzh@qq.com>, 2022.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: moserial master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/moserial/issues\n"
-"POT-Creation-Date: 2018-06-10 17:52+0000\n"
-"PO-Revision-Date: 2020-09-02 22:00-0400\n"
-"Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
-"Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
+"POT-Creation-Date: 2022-05-30 22:06+0000\n"
+"PO-Revision-Date: 2022-09-14 19:15+0800\n"
+"Last-Translator: lumingzh <lumingzh@qq.com>\n"
+"Language-Team: Chinese - China <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.1\n"
+"X-Generator: Gtranslator 42.0\n"
+"Plural-Forms: nplurals=1; plural=0\n"
 
 #: ../data/ui/mainwindow.ui.h:1 ../data/moserial.appdata.xml.in.h:1
 msgid "moserial"
 msgstr "moserial"
 
 #: ../data/ui/mainwindow.ui.h:2
-msgid "_File"
-msgstr "文件(_F)"
+msgid "File"
+msgstr "文件"
 
 #: ../data/ui/mainwindow.ui.h:3
-msgid "Open _Recent"
-msgstr "打开最近文件(_R)"
+msgid "Open Settings"
+msgstr "打开设置"
 
 #: ../data/ui/mainwindow.ui.h:4
-msgid "_Edit"
-msgstr "编辑(_E)"
+msgid "Open _Recent"
+msgstr "最近打开(_R)"
 
 #: ../data/ui/mainwindow.ui.h:5
-msgid "_Help"
-msgstr "帮助(_H)"
+msgid "Save Settings"
+msgstr "保存设置"
 
 #: ../data/ui/mainwindow.ui.h:6
-msgid "Connect"
-msgstr "连接"
+msgid "Save Settings As"
+msgstr "另存设置为"
 
 #: ../data/ui/mainwindow.ui.h:7
-msgid "Record"
-msgstr "记录"
+msgid "Quit"
+msgstr "退出"
 
 #: ../data/ui/mainwindow.ui.h:8
-msgid "Send File"
-msgstr "发送文件"
+msgid "Edit"
+msgstr "编辑"
 
 #: ../data/ui/mainwindow.ui.h:9
-msgid "Receive File"
-msgstr "接收文件"
+msgid "Cut"
+msgstr "剪切"
 
-#: ../data/ui/mainwindow.ui.h:10 ../data/ui/settings_dialog.ui.h:1
-msgid "Port Setup"
-msgstr "端口设置"
+#: ../data/ui/mainwindow.ui.h:10
+msgid "Copy"
+msgstr "复制"
 
-#: ../data/ui/mainwindow.ui.h:11 ../data/ui/preferences.ui.h:1
-msgid "Preferences"
-msgstr "首选项"
+#: ../data/ui/mainwindow.ui.h:11
+msgid "Paste"
+msgstr "粘贴"
 
 #: ../data/ui/mainwindow.ui.h:12
+msgid "Clear"
+msgstr "清空"
+
+#: ../data/ui/mainwindow.ui.h:13
+msgid "View"
+msgstr "视图"
+
+#: ../data/ui/mainwindow.ui.h:14
+msgid "Extra Controls"
+msgstr "额外控制"
+
+#: ../data/ui/mainwindow.ui.h:15
 msgid "Help"
 msgstr "帮助"
 
-#: ../data/ui/mainwindow.ui.h:13
+#: ../data/ui/mainwindow.ui.h:16
+msgid "About"
+msgstr "关于"
+
+#: ../data/ui/mainwindow.ui.h:17
+msgid "Connect"
+msgstr "连接"
+
+#: ../data/ui/mainwindow.ui.h:18
+msgid "Record"
+msgstr "记录"
+
+#: ../data/ui/mainwindow.ui.h:19
+msgid "Send File"
+msgstr "发送文件"
+
+#: ../data/ui/mainwindow.ui.h:20
+msgid "Receive File"
+msgstr "接收文件"
+
+#: ../data/ui/mainwindow.ui.h:21 ../data/ui/settings_dialog.ui.h:1
+msgid "Port Setup"
+msgstr "端口设置"
+
+#: ../data/ui/mainwindow.ui.h:22 ../data/ui/preferences.ui.h:1
+msgid "Preferences"
+msgstr "首选项"
+
+#: ../data/ui/mainwindow.ui.h:23
+msgid "Shows RI input (Ring Indicator)"
+msgstr "显示 RI 输入（铃声指示器）"
+
+#: ../data/ui/mainwindow.ui.h:24
+msgid "RI"
+msgstr "RI"
+
+#: ../data/ui/mainwindow.ui.h:25
+msgid "Shows DSR input (Data Set Ready)"
+msgstr "显示 DSR 输入（数据集就绪）"
+
+#: ../data/ui/mainwindow.ui.h:26
+msgid "DSR"
+msgstr "DSR"
+
+#: ../data/ui/mainwindow.ui.h:27
+msgid "Shows CD input (Carrier Detect)"
+msgstr "显示 CD 输入（载波检测）"
+
+#: ../data/ui/mainwindow.ui.h:28
+msgid "CD"
+msgstr "CD"
+
+#: ../data/ui/mainwindow.ui.h:29
+msgid "Shows CTS input (Clear To Send)"
+msgstr "显示 CTS 输入（允许发送）"
+
+#: ../data/ui/mainwindow.ui.h:30
+msgid "CTS"
+msgstr "CTS"
+
+#: ../data/ui/mainwindow.ui.h:31
 msgid "Received ASCII"
 msgstr "接收的 ASCII"
 
-#: ../data/ui/mainwindow.ui.h:14
+#: ../data/ui/mainwindow.ui.h:32
 msgid "Received HEX"
 msgstr "接收的 HEX"
 
-#: ../data/ui/mainwindow.ui.h:15
+#: ../data/ui/mainwindow.ui.h:33
+msgid "RTS"
+msgstr "RTS"
+
+#: ../data/ui/mainwindow.ui.h:34
+msgid "DTR"
+msgstr "DTR"
+
+#: ../data/ui/mainwindow.ui.h:35
 msgid "Sent ASCII"
 msgstr "发送的 ASCII"
 
-#: ../data/ui/mainwindow.ui.h:16
+#: ../data/ui/mainwindow.ui.h:36
 msgid "Sent HEX"
 msgstr "发送的 HEX"
 
-#: ../data/ui/mainwindow.ui.h:17 ../src/SerialStreamRecorder.vala:30
+#: ../data/ui/mainwindow.ui.h:37 ../src/SerialStreamRecorder.vala:31
 msgid "Outgoing"
-msgstr "上传"
+msgstr "传出"
 
-#: ../data/ui/mainwindow.ui.h:18
+#: ../data/ui/mainwindow.ui.h:38
 msgid "Send"
 msgstr "发送"
 
-#: ../data/ui/mainwindow.ui.h:19
+#: ../data/ui/mainwindow.ui.h:39
 msgid "Disconnect"
 msgstr "断开"
 
-#: ../data/ui/mainwindow.ui.h:20
+#: ../data/ui/mainwindow.ui.h:40
 msgid "Stop Recording"
 msgstr "停止记录"
 
-#: ../data/ui/preferences.ui.h:2
+#: ../data/ui/preferences.ui.h:2 ../data/ui/receive_progress.ui.h:2
+#: ../data/ui/send_progress_dialog.ui.h:2 ../data/ui/settings_dialog.ui.h:2
+msgid "Cancel"
+msgstr "取消"
+
+#: ../data/ui/preferences.ui.h:3 ../data/ui/settings_dialog.ui.h:3
+#: ../data/ui/xmodem_filename_dialog.ui.h:1
+msgid "OK"
+msgstr "确定"
+
+#: ../data/ui/preferences.ui.h:4
 msgid "Font"
 msgstr "字体"
 
-#: ../data/ui/preferences.ui.h:3
-msgid "_Use the system fixed width font"
-msgstr "使用系统的等宽字体(_U)"
+#: ../data/ui/preferences.ui.h:5
+msgid "Use the system fixed width font"
+msgstr "使用系统固定宽度的字体"
 
-#: ../data/ui/preferences.ui.h:4
+#: ../data/ui/preferences.ui.h:6
 msgid "Display Font"
 msgstr "显示字体"
 
-#: ../data/ui/preferences.ui.h:5
+#: ../data/ui/preferences.ui.h:7
 msgid "Font Color"
 msgstr "字体颜色"
 
-#: ../data/ui/preferences.ui.h:6
+#: ../data/ui/preferences.ui.h:8
 msgid "Background Color"
 msgstr "背景颜色"
 
-#: ../data/ui/preferences.ui.h:7
+#: ../data/ui/preferences.ui.h:9
 msgid "Highlight Color"
 msgstr "高亮颜色"
 
-#: ../data/ui/preferences.ui.h:8
+#: ../data/ui/preferences.ui.h:10
 msgid "Recording"
 msgstr "记录"
 
-#: ../data/ui/preferences.ui.h:9
-msgid "_Launch recorded files"
-msgstr "打开记录的文件(_L)"
-
-#: ../data/ui/preferences.ui.h:10
-msgid "Enable timeout after"
-msgstr "启用超时，时限"
-
 #: ../data/ui/preferences.ui.h:11
+msgid "Launch recorded files"
+msgstr "启动记录的文件"
+
+#: ../data/ui/preferences.ui.h:12
+msgid "Enable timeout after"
+msgstr "启用超时"
+
+#: ../data/ui/preferences.ui.h:13
 msgid "seconds"
 msgstr "秒"
 
+#: ../data/ui/preferences.ui.h:14
+msgid "Use automatic timestamped filename"
+msgstr "使用自动时间戳文件名"
+
+#: ../data/ui/preferences.ui.h:15
+msgid "In this folder"
+msgstr "在该文件夹中"
+
+#: ../data/ui/preferences.ui.h:16
+msgid "With this extension"
+msgstr "使用这个扩展"
+
+#: ../data/ui/preferences.ui.h:17
+msgid "Direction"
+msgstr "方向"
+
 #: ../data/ui/receive_chooser.ui.h:1
 msgid "Select Folder for Received Files"
-msgstr "选择接收文件的目录"
+msgstr "选择接收文件的文件夹"
 
 #: ../data/ui/receive_chooser.ui.h:2 ../data/ui/send_chooser_dialog.ui.h:2
 msgid "Error Correction Protocol"
@@ -166,55 +276,63 @@ msgstr "选择要发送的文件"
 msgid "Send File Progress"
 msgstr "发送文件进度"
 
-#: ../data/ui/settings_dialog.ui.h:2
+#: ../data/ui/settings_dialog.ui.h:4
 msgid "Port Settings"
 msgstr "端口设置"
 
-#: ../data/ui/settings_dialog.ui.h:3
+#: ../data/ui/settings_dialog.ui.h:5
 msgid "Hardware"
 msgstr "硬件"
 
-#: ../data/ui/settings_dialog.ui.h:4
+#: ../data/ui/settings_dialog.ui.h:6
 msgid "Software"
 msgstr "软件"
 
-#: ../data/ui/settings_dialog.ui.h:5
-msgid "Access Mode"
-msgstr "访问模式"
-
-#: ../data/ui/settings_dialog.ui.h:6
-msgid "Handshake"
-msgstr "握手"
-
 #: ../data/ui/settings_dialog.ui.h:7
-msgid "Parity"
-msgstr "奇偶校验"
-
-#: ../data/ui/settings_dialog.ui.h:8
-msgid "Stop Bits"
-msgstr "停止位"
-
-#: ../data/ui/settings_dialog.ui.h:9
-msgid "Data Bits"
-msgstr "数据位"
-
-#: ../data/ui/settings_dialog.ui.h:10
-msgid "Baud Rate"
-msgstr "波特率"
-
-#: ../data/ui/settings_dialog.ui.h:11
-msgid "Device"
-msgstr "设备"
-
-#: ../data/ui/settings_dialog.ui.h:12
-msgid "Local Echo"
-msgstr "本地回显"
-
-#: ../data/ui/settings_dialog.ui.h:13
 msgid "Echo received data"
 msgstr "回显接收的数据"
 
-#: ../data/ui/xmodem_filename_dialog.ui.h:1
+#: ../data/ui/settings_dialog.ui.h:8
+msgid "Device"
+msgstr "设备"
+
+#: ../data/ui/settings_dialog.ui.h:9
+msgid "Baud Rate"
+msgstr "波特率"
+
+#: ../data/ui/settings_dialog.ui.h:10
+msgid "Data Bits"
+msgstr "数据位"
+
+#: ../data/ui/settings_dialog.ui.h:11
+msgid "Stop Bits"
+msgstr "停止位"
+
+#: ../data/ui/settings_dialog.ui.h:12
+msgid "Parity"
+msgstr "奇偶校验"
+
+#: ../data/ui/settings_dialog.ui.h:13
+msgid "Handshake"
+msgstr "握手"
+
+#: ../data/ui/settings_dialog.ui.h:14
+msgid "Access Mode"
+msgstr "访问模式"
+
+#: ../data/ui/settings_dialog.ui.h:15
+msgid "Local Echo"
+msgstr "本地回显"
+
+#: ../data/ui/settings_dialog.ui.h:16
+msgid "On Startup"
+msgstr "在启动时"
+
+#: ../data/ui/settings_dialog.ui.h:17
+msgid "Connect immediately"
+msgstr "立即连接"
+
+#: ../data/ui/xmodem_filename_dialog.ui.h:2
 msgid "Filename required for XMODEM"
 msgstr "XMODEM 要求有文件名"
 
@@ -248,7 +366,7 @@ msgstr ""
 "送和接收 x, y, z-modem 文件, 并且您可以设置配置文件, 这样您可以轻松地在不同的"
 "设备之间切换。"
 
-#: ../src/InputParser.vala:44 ../src/InputParser.vala:54
+#: ../src/InputParser.vala:46 ../src/InputParser.vala:56
 msgid "Invalid Input"
 msgstr "无效的输入"
 
@@ -256,22 +374,23 @@ msgstr "无效的输入"
 msgid "Profile file to load"
 msgstr "加载的配置文件"
 
-#: ../src/Main.vala:45
+#: ../src/Main.vala:48
 msgid "- moserial serial terminal"
 msgstr "- moserial 串行终端"
 
-#: ../src/Main.vala:50 ../src/Main.vala:58
+#: ../src/Main.vala:53 ../src/Main.vala:61
 #, c-format
 msgid "Run '%s --help' to see a full list of available command line options.\n"
-msgstr "运行 '%s --help' 可以查看完整的命令选项。\n"
+msgstr "运行 '%s --help' 可以查看完整的可用命令行选项。\n"
 
-#: ../src/MainWindow.vala:30
+#: ../src/MainWindow.vala:31
 msgid "translator-credits"
 msgstr ""
 "玉堂白鹤 <yjwork.xfce@gmail.com>, 2010, 2013\n"
-"YunQiang Su <wzssyqa@gmail.com>, 2010"
+"YunQiang Su <wzssyqa@gmail.com>, 2010\n"
+"lumingzh <lumingzh@qq.com>, 2022"
 
-#: ../src/MainWindow.vala:32
+#: ../src/MainWindow.vala:33
 msgid ""
 "moserial is free software: you can redistribute it and/or modify it under "
 "the terms of the GNU General Public License as published by the Free "
@@ -281,7 +400,7 @@ msgstr ""
 "moserial 是自由软件；您可以按照自由软件基金会所发表的 GNU GPL 协议自由发放和/"
 "或修改它；GPL 协议应该采用第三版或以后的任何版本。\n"
 
-#: ../src/MainWindow.vala:33
+#: ../src/MainWindow.vala:34
 msgid ""
 "moserial is distributed in the hope that it will be useful, but WITHOUT ANY "
 "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
@@ -292,88 +411,102 @@ msgstr ""
 "用它所造成的任何直接或间接后果都不承担任何责任。请参看GNU GPL 协议中的细"
 "节。\n"
 
-#: ../src/MainWindow.vala:34
+#: ../src/MainWindow.vala:35
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "this program.  If not, see <http://www.gnu.org/licenses/>."
 msgstr ""
-"您应该在收到 Nautilus 的同时收到了 GNU GPL 协议的副本；如果您没有收到的话，请"
-"访问 <http://www.gnu.org/licenses/>。"
+"您应该收到该程序附带的 GNU 通用公共许可证的副本。如果没有的话，请参阅 "
+"<http://www.gnu.org/licenses/>。"
 
-#: ../src/MainWindow.vala:64
+#: ../src/MainWindow.vala:65
 msgid "ASCII"
 msgstr "ASCII"
 
-#: ../src/MainWindow.vala:64
+#: ../src/MainWindow.vala:65
 msgid "HEX"
 msgstr "HEX"
 
-#: ../src/MainWindow.vala:164
+#: ../src/MainWindow.vala:171
 msgid "Port configuration"
 msgstr "端口配置"
 
-#: ../src/MainWindow.vala:169
+#: ../src/MainWindow.vala:176
 msgid "Read the manual"
 msgstr "阅读手册"
 
-#: ../src/MainWindow.vala:179
+#: ../src/MainWindow.vala:185
 msgid "TX: 0, RX: 0"
 msgstr "发送：0，接收：0"
 
-#: ../src/MainWindow.vala:190
+#: ../src/MainWindow.vala:196
 msgid "Send a file"
-msgstr "发送一个文件"
+msgstr "发送文件"
 
-#: ../src/MainWindow.vala:199
+#: ../src/MainWindow.vala:205
 msgid "Receive a file"
-msgstr "接收一个文件"
+msgstr "接收文件"
 
-#: ../src/MainWindow.vala:209
+#: ../src/MainWindow.vala:214
 msgid "Record sent and/or received data"
-msgstr "记录发送接收数据"
-
-#: ../src/MainWindow.vala:220
-msgid "Other preferences"
-msgstr "其他属性"
+msgstr "记录发送/接收的数据"
 
 #: ../src/MainWindow.vala:225
+msgid "Other preferences"
+msgstr "其他首选项"
+
+#: ../src/MainWindow.vala:230
 msgid "Open/close port"
 msgstr "打开/关闭端口"
 
-#: ../src/MainWindow.vala:273
+#: ../src/MainWindow.vala:280
 msgid "Send the outgoing data now."
-msgstr "现在发送输出栏数据。"
+msgstr "现在发送传出数据。"
 
-#: ../src/MainWindow.vala:276
+#: ../src/MainWindow.vala:283
 msgid "Type outgoing data here. Press Enter or Send to send it."
-msgstr "在这里显示输出的数据。按回车或发送键发送数据。"
+msgstr "在这里键入传出的数据。按回车或发送键发送数据。"
 
-#: ../src/MainWindow.vala:559 ../src/Profile.vala:76 ../src/Profile.vala:107
+#: ../src/MainWindow.vala:328
+msgid "Shows and toggles the DTR output (Data Terminal Ready)"
+msgstr "显示和切换 DTR 输出（数据终端就绪）"
+
+#: ../src/MainWindow.vala:333
+msgid "Shows and toggles the RTS output (Request To Send)"
+msgstr "显示和切换 RTS 输出（请求发送）"
+
+#: ../src/MainWindow.vala:338
+msgid "Clear incoming text box"
+msgstr "清空传入文本框"
+
+#: ../src/MainWindow.vala:343
+msgid "Clear outgoing text box"
+msgstr "清空传出文本框"
+
+#: ../src/MainWindow.vala:740 ../src/Profile.vala:113 ../src/Profile.vala:148
 msgid "Error: Could not open file"
-msgstr "错误，不能打开文件"
+msgstr "错误：无法打开文件"
 
-#: ../src/MainWindow.vala:637
+#: ../src/MainWindow.vala:877
 msgid "Error: Could not open device"
-msgstr "错误：不能打开设备"
+msgstr "错误：无法打开设备"
 
-#: ../src/MainWindow.vala:759
+#: ../src/MainWindow.vala:1059
 #, c-format
 msgid "Unable to display help file: %s"
 msgstr "不能显示帮助文件：%s"
 
-#: ../src/MainWindow.vala:770
+#: ../src/MainWindow.vala:1071
 msgid ""
 "A serial terminal for the GNOME desktop, optimized for logging and file "
 "capture."
-msgstr "GNOME桌面环境的串行终端，优化记录与文件捕获。"
+msgstr "GNOME 桌面的串行终端，优化记录与文件捕获。"
 
-#: ../src/MainWindow.vala:823
-msgid ""
-"You have changed your setting or preferences. Do you want to save these "
-"changes to the loaded profile?"
-msgstr "您已经更改了设置。您想要保存它到引导配置文件吗？"
+#: ../src/MainWindow.vala:1131
+msgid "Save modified settings to the loaded profile?"
+msgstr "将修改的设置保存到已加载的配置文件吗？"
 
-#: ../src/PreferencesDialog.vala:48
+#: ../src/PreferencesDialog.vala:56
 msgid ""
 "If this option is enabled, a recorded file will be opened immediately after "
 "it is saved, using the default application for the file type. The default "
@@ -382,7 +515,7 @@ msgstr ""
 "如果勾选该选项，记录文件将在保存后立即使用默认程序打开。默认的应用程序由桌面"
 "环境指定。"
 
-#: ../src/PreferencesDialog.vala:51
+#: ../src/PreferencesDialog.vala:59
 msgid ""
 "If this option is enabled, recording will be automatically stopped after an "
 "adjustable period of inactivity after receiving some data. Moserial will "
@@ -392,7 +525,7 @@ msgstr ""
 "如果启用这个选项，接收到数据后一段时间不活动后将自动停止记录，时间是可以配置"
 "的。同时，moserial 在激活不活动计时器之前无限期等待记录第一个数据字节。"
 
-#: ../src/Preferences.vala:65
+#: ../src/Preferences.vala:86
 msgid "Unable to retrieve system font setting"
 msgstr "无法获取系统字体设置"
 
@@ -408,74 +541,78 @@ msgstr "Ymodem"
 msgid "Zmodem"
 msgstr "Zmodem"
 
-#: ../src/SendProgressDialog.vala:41
+#: ../src/SendProgressDialog.vala:44
 msgid "Waiting for remote host"
 msgstr "等待远程主机"
 
-#: ../src/SerialConnection.vala:43
+#: ../src/SerialConnection.vala:44
 msgid "CR+LF end"
 msgstr "CR+LF 结束"
 
-#: ../src/SerialConnection.vala:44
+#: ../src/SerialConnection.vala:45
 msgid "CR end"
 msgstr "CR 结束"
 
-#: ../src/SerialConnection.vala:45
+#: ../src/SerialConnection.vala:46
 msgid "LF end"
 msgstr "LF 结束"
 
-#: ../src/SerialConnection.vala:46
+#: ../src/SerialConnection.vala:47
 msgid "TAB end"
 msgstr "TAB 结束"
 
-#: ../src/SerialConnection.vala:47
+#: ../src/SerialConnection.vala:48
 msgid "ESC end"
 msgstr "ESC 结束"
 
-#: ../src/SerialConnection.vala:48
+#: ../src/SerialConnection.vala:49
 msgid "No end"
 msgstr "不结束"
 
-#: ../src/SerialConnection.vala:291
+#: ../src/SerialConnection.vala:362
 #, c-format
 msgid "TX: %lu, RX: %lu (%lu unprintable)"
 msgstr "发送：%lu，接收：%lu (%lu 无法显示)"
 
-#: ../src/SerialConnection.vala:293
+#: ../src/SerialConnection.vala:364
 #, c-format
 msgid "TX: %lu, RX: %lu"
 msgstr "发送：%lu，接收：%lu"
 
-#: ../src/SerialStreamRecorder.vala:29
+#: ../src/SerialStreamRecorder.vala:30
 msgid "Incoming"
 msgstr "传入"
 
-#: ../src/SerialStreamRecorder.vala:31
+#: ../src/SerialStreamRecorder.vala:32
 msgid "Incoming and Outgoing"
 msgstr "传入和传出"
 
-#: ../src/SerialStreamRecorder.vala:57 ../src/SerialStreamRecorder.vala:68
-#: ../src/SerialStreamRecorder.vala:89
+#: ../src/SerialStreamRecorder.vala:61 ../src/SerialStreamRecorder.vala:72
+#: ../src/SerialStreamRecorder.vala:96
 #, c-format
 msgid "error: %s\n"
-msgstr "错误： %s\n"
+msgstr "错误：%s\n"
 
-#: ../src/SerialStreamRecorder.vala:98
+#: ../src/SerialStreamRecorder.vala:105
 #, c-format
 msgid "Unable to launch %s: %s"
-msgstr "无法启动 %s: %s"
+msgstr "无法启动 %s：%s"
 
-#: ../src/SettingsDialog.vala:65
+#: ../src/SettingsDialog.vala:74
 msgid "Also known as RTS/CTS handshaking"
 msgstr "也称为 RTS/CTS 握手"
 
-#: ../src/SettingsDialog.vala:68
+#: ../src/SettingsDialog.vala:77
 msgid "Also known as XON/XOFF handshaking"
 msgstr "也称为 XON/XOFF"
 
-#: ../src/SettingsDialog.vala:74
+#: ../src/SettingsDialog.vala:83
 msgid "Normally disabled"
 msgstr "通常禁用"
+
+#: ../src/SettingsDialog.vala:86
+msgid "Enable to automatically connect on startup or when a profile is loaded"
+msgstr "启用在启动时或加载配置文件时自动连接"
 
 #: ../src/Settings.vala:25
 msgid "None"
@@ -483,11 +620,11 @@ msgstr "无"
 
 #: ../src/Settings.vala:26
 msgid "Odd"
-msgstr "奇校验"
+msgstr "奇数"
 
 #: ../src/Settings.vala:27
 msgid "Even"
-msgstr "偶校验"
+msgstr "偶数"
 
 #: ../src/Settings.vala:28
 msgid "Mark"
@@ -497,58 +634,66 @@ msgstr "标记"
 msgid "Space"
 msgstr "空格"
 
-#: ../src/Settings.vala:34
+#: ../src/Settings.vala:35
 msgid "Read and Write"
 msgstr "读写"
 
-#: ../src/Settings.vala:35
+#: ../src/Settings.vala:36
 msgid "Read Only"
 msgstr "只读"
 
-#: ../src/Settings.vala:36
+#: ../src/Settings.vala:37
 msgid "Write Only"
 msgstr "只写"
 
 #. TRANSLATORS: first letter of "None", a serial port parity setting
-#: ../src/Settings.vala:89
+#: ../src/Settings.vala:97
 msgid "N"
 msgstr "N"
 
 #. TRANSLATORS: first letter of "Odd", a serial port parity setting
-#: ../src/Settings.vala:93
+#: ../src/Settings.vala:101
 msgid "O"
 msgstr "O"
 
 #. TRANSLATORS: first letter of "Even", a serial port parity setting
-#: ../src/Settings.vala:97
+#: ../src/Settings.vala:105
 msgid "E"
 msgstr "E"
 
 #. TRANSLATORS: first letter of "Mark", a serial port parity setting
-#: ../src/Settings.vala:101
+#: ../src/Settings.vala:109
 msgid "M"
 msgstr "M"
 
 #. TRANSLATORS: first letter of "Space", a serial port parity setting
-#: ../src/Settings.vala:105
+#: ../src/Settings.vala:113
 msgid "S"
 msgstr "S"
 
-#: ../src/Settings.vala:115
+#: ../src/Settings.vala:124
 msgid "OPEN"
-msgstr "连接"
+msgstr "打开"
 
-#: ../src/Settings.vala:116
+#: ../src/Settings.vala:125
 msgid "CLOSED"
-msgstr "断开"
+msgstr "已关闭"
 
 #: ../src/Szwrapper.vala:27
 msgid "None (straight binary)"
-msgstr "None (straight binary)"
+msgstr "无（标准二进制）"
 
-#: ../src/Szwrapper.vala:185
+#: ../src/Szwrapper.vala:178
 msgid "canceled"
-msgstr "取消"
+msgstr "已取消"
+
+#~ msgid "_Help"
+#~ msgstr "帮助(_H)"
+
+#~ msgid ""
+#~ "You have changed your setting or preferences. Do you want to save these "
+#~ "changes to the loaded profile?"
+#~ msgstr "您已经更改了设置。您想要保存它到引导配置文件吗？"
 
 #~ msgid ""
 #~ "Failed to load UI\n"
@@ -677,9 +822,6 @@ msgstr "取消"
 #~ "只读\n"
 #~ "只写"
 
-#~ msgid "Save Settings _As"
-#~ msgstr "保存设置为(_A)"
-
 #~ msgid ""
 #~ "Xmodem\n"
 #~ "Ymodem\n"
@@ -691,12 +833,6 @@ msgstr "取消"
 
 #~ msgid "_Contents"
 #~ msgstr "内容(_C)"
-
-#~ msgid "_Open Settings"
-#~ msgstr "打开设置(_O)"
-
-#~ msgid "_Save Settings"
-#~ msgstr "保存设置(_S)"
 
 #~ msgid "Can't display a clickable URL: %s"
 #~ msgstr "无法显示可点击的 URL：%s"
