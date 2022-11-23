@@ -1,0 +1,665 @@
+# Georgian translation for moserial.
+# Copyright (C) 2022 moserial's COPYRIGHT HOLDER
+# This file is distributed under the same license as the moserial package.
+# NorwayFun <temuri.doghonadze@gmail.com>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: moserial master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/moserial/issues\n"
+"POT-Creation-Date: 2022-09-22 10:54+0000\n"
+"PO-Revision-Date: 2022-11-23 03:07+0100\n"
+"Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
+"Language-Team: Georgian <ka@li.org>\n"
+"Language: ka\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.2\n"
+
+#: ../data/ui/mainwindow.ui.h:1 ../data/moserial.appdata.xml.in.h:1
+msgid "moserial"
+msgstr "moserial"
+
+#: ../data/ui/mainwindow.ui.h:2
+msgid "File"
+msgstr "ფაილი"
+
+#: ../data/ui/mainwindow.ui.h:3
+msgid "Open Settings"
+msgstr "პარამეტრების გახსნა"
+
+#: ../data/ui/mainwindow.ui.h:4
+msgid "Open _Recent"
+msgstr "ბოლოს გახსნილი ფაილი"
+
+#: ../data/ui/mainwindow.ui.h:5
+msgid "Save Settings"
+msgstr "პარამეტრების შენახვა"
+
+#: ../data/ui/mainwindow.ui.h:6
+msgid "Save Settings As"
+msgstr "პარამეტრების შენახვა, rogorc"
+
+#: ../data/ui/mainwindow.ui.h:7
+msgid "Quit"
+msgstr "&გასვლა"
+
+#: ../data/ui/mainwindow.ui.h:8
+msgid "Edit"
+msgstr "ჩასწორება"
+
+#: ../data/ui/mainwindow.ui.h:9
+msgid "Cut"
+msgstr "ამოჭრა"
+
+#: ../data/ui/mainwindow.ui.h:10
+msgid "Copy"
+msgstr "კოპირება"
+
+#: ../data/ui/mainwindow.ui.h:11
+msgid "Paste"
+msgstr "ჩასმა"
+
+#: ../data/ui/mainwindow.ui.h:12
+msgid "Clear"
+msgstr "გაწმენდა"
+
+#: ../data/ui/mainwindow.ui.h:13
+msgid "View"
+msgstr "ნახვა"
+
+#: ../data/ui/mainwindow.ui.h:14
+msgid "Extra Controls"
+msgstr "დამატებითი კონტროლი"
+
+#: ../data/ui/mainwindow.ui.h:15
+msgid "Help"
+msgstr "დახმარება"
+
+#: ../data/ui/mainwindow.ui.h:16
+msgid "About"
+msgstr "შესახებ"
+
+#: ../data/ui/mainwindow.ui.h:17
+msgid "Connect"
+msgstr "დაკავშირება"
+
+#: ../data/ui/mainwindow.ui.h:18
+msgid "Record"
+msgstr "ჩაწერა"
+
+#: ../data/ui/mainwindow.ui.h:19
+msgid "Send File"
+msgstr "ფაილის გაგზავნა"
+
+#: ../data/ui/mainwindow.ui.h:20
+msgid "Receive File"
+msgstr "ფაილის მიღება"
+
+#: ../data/ui/mainwindow.ui.h:21 ../data/ui/settings_dialog.ui.h:1
+msgid "Port Setup"
+msgstr "პორტის morgeba"
+
+#: ../data/ui/mainwindow.ui.h:22 ../data/ui/preferences.ui.h:1
+msgid "Preferences"
+msgstr "პარამეტრები"
+
+#: ../data/ui/mainwindow.ui.h:23
+msgid "Shows RI input (Ring Indicator)"
+msgstr "RI შეყვანის ჩვენება (Ring Indicator)"
+
+#: ../data/ui/mainwindow.ui.h:24
+msgid "RI"
+msgstr "RI"
+
+#: ../data/ui/mainwindow.ui.h:25
+msgid "Shows DSR input (Data Set Ready)"
+msgstr "SDR შეყვანის ჩვენება (Data Set Ready)"
+
+#: ../data/ui/mainwindow.ui.h:26
+msgid "DSR"
+msgstr "DSR"
+
+#: ../data/ui/mainwindow.ui.h:27
+msgid "Shows CD input (Carrier Detect)"
+msgstr "CD შეყვანის ჩვენება (Carrier Detect)"
+
+#: ../data/ui/mainwindow.ui.h:28
+msgid "CD"
+msgstr "CD"
+
+#: ../data/ui/mainwindow.ui.h:29
+msgid "Shows CTS input (Clear To Send)"
+msgstr "CTS შეყვანის ჩვენება (Clear To Send)"
+
+#: ../data/ui/mainwindow.ui.h:30
+msgid "CTS"
+msgstr "CTS"
+
+#: ../data/ui/mainwindow.ui.h:31
+msgid "Received ASCII"
+msgstr "მიღებული ASCII"
+
+#: ../data/ui/mainwindow.ui.h:32
+msgid "Received HEX"
+msgstr "მიღებული HEX"
+
+#: ../data/ui/mainwindow.ui.h:33
+msgid "RTS"
+msgstr "RTS"
+
+#: ../data/ui/mainwindow.ui.h:34
+msgid "DTR"
+msgstr "DTR"
+
+#: ../data/ui/mainwindow.ui.h:35
+msgid "Sent ASCII"
+msgstr "გაგზავნილი ASCII"
+
+#: ../data/ui/mainwindow.ui.h:36
+msgid "Sent HEX"
+msgstr "გაგზავნილი HEX"
+
+#: ../data/ui/mainwindow.ui.h:37 ../src/SerialStreamRecorder.vala:31
+msgid "Outgoing"
+msgstr "გამავალი"
+
+#: ../data/ui/mainwindow.ui.h:38
+msgid "Send"
+msgstr "გაგზავნა"
+
+#: ../data/ui/mainwindow.ui.h:39
+msgid "Disconnect"
+msgstr "გათიშვა"
+
+#: ../data/ui/mainwindow.ui.h:40
+msgid "Stop Recording"
+msgstr "ჩაწერის გაჩერება"
+
+#: ../data/ui/preferences.ui.h:2 ../data/ui/receive_progress.ui.h:2
+#: ../data/ui/send_progress_dialog.ui.h:2 ../data/ui/settings_dialog.ui.h:2
+msgid "Cancel"
+msgstr "გაუქმენა"
+
+#: ../data/ui/preferences.ui.h:3 ../data/ui/settings_dialog.ui.h:3
+#: ../data/ui/xmodem_filename_dialog.ui.h:1
+msgid "OK"
+msgstr "დიახ"
+
+#: ../data/ui/preferences.ui.h:4
+msgid "Font"
+msgstr "ფონტი"
+
+#: ../data/ui/preferences.ui.h:5
+msgid "Use the system fixed width font"
+msgstr "სისტემური ფიქსირებული სიგანის მქონე ფონტის გამოყენება"
+
+#: ../data/ui/preferences.ui.h:6
+msgid "Display Font"
+msgstr "ჩვენების ფონტი"
+
+#: ../data/ui/preferences.ui.h:7
+msgid "Font Color"
+msgstr "ფონტის ფერი"
+
+#: ../data/ui/preferences.ui.h:8
+msgid "Background Color"
+msgstr "ფონის ფერი"
+
+#: ../data/ui/preferences.ui.h:9
+msgid "Highlight Color"
+msgstr "გამოკვეთის ფერი"
+
+#: ../data/ui/preferences.ui.h:10
+msgid "Recording"
+msgstr "ჩაწერა"
+
+#: ../data/ui/preferences.ui.h:11
+msgid "Launch recorded files"
+msgstr "ჩაწერილი ფაილების გაშვება"
+
+#: ../data/ui/preferences.ui.h:12
+msgid "Enable timeout after"
+msgstr "მომდევნო დროის ჩართვა"
+
+#: ../data/ui/preferences.ui.h:13
+msgid "seconds"
+msgstr "წამი"
+
+#: ../data/ui/preferences.ui.h:14
+msgid "Use automatic timestamped filename"
+msgstr "ავტომატურად დროით დაშტამპული ფაილის სახელის გამოყენება"
+
+#: ../data/ui/preferences.ui.h:15
+msgid "In this folder"
+msgstr "ამ საქაღალდეში"
+
+#: ../data/ui/preferences.ui.h:16
+msgid "With this extension"
+msgstr "ამ გაფართოებით"
+
+#: ../data/ui/preferences.ui.h:17
+msgid "Direction"
+msgstr "მიმართულება"
+
+#: ../data/ui/receive_chooser.ui.h:1
+msgid "Select Folder for Received Files"
+msgstr "აირჩიეთ საქაღალდე მიღებული ფაილებისთვის"
+
+#: ../data/ui/receive_chooser.ui.h:2 ../data/ui/send_chooser_dialog.ui.h:2
+msgid "Error Correction Protocol"
+msgstr "შეცდომების გასწორების პროტოკოლი"
+
+#: ../data/ui/receive_progress.ui.h:1
+msgid "Receive File Progress"
+msgstr "მიმდინარეობს ფაილის მიღება"
+
+#: ../data/ui/record_dialog.ui.h:1
+msgid "Record Incoming and/or Outgoing Data"
+msgstr "შემომავალ ან/და გამავალი მონაცემების ჩასწერა"
+
+#: ../data/ui/record_dialog.ui.h:2
+msgid "Stream to record"
+msgstr "ჩასაწერი ნაკადი"
+
+#: ../data/ui/send_chooser_dialog.ui.h:1
+msgid "Select File to Send"
+msgstr "აირჩიეთ გასაგზავნი ფაილი"
+
+#: ../data/ui/send_progress_dialog.ui.h:1
+msgid "Send File Progress"
+msgstr "მიმდინარეობს ფაილის გაგზავნა"
+
+#: ../data/ui/settings_dialog.ui.h:4
+msgid "Port Settings"
+msgstr "პორტის მორგება"
+
+#: ../data/ui/settings_dialog.ui.h:5
+msgid "Hardware"
+msgstr "აპარატურა"
+
+#: ../data/ui/settings_dialog.ui.h:6
+msgid "Software"
+msgstr "პროგრამები"
+
+#: ../data/ui/settings_dialog.ui.h:7
+msgid "Echo received data"
+msgstr "მიღებული მონაცემების გამოტანა"
+
+#: ../data/ui/settings_dialog.ui.h:8
+msgid "Device"
+msgstr "მოწყობილობა"
+
+#: ../data/ui/settings_dialog.ui.h:9
+msgid "Baud Rate"
+msgstr "ბოდების სიჩქარე"
+
+#: ../data/ui/settings_dialog.ui.h:10
+msgid "Data Bits"
+msgstr "მონაცემების ბიტები"
+
+#: ../data/ui/settings_dialog.ui.h:11
+msgid "Stop Bits"
+msgstr "სტოპ ბიტები"
+
+#: ../data/ui/settings_dialog.ui.h:12
+msgid "Parity"
+msgstr "პარიტეტი"
+
+#: ../data/ui/settings_dialog.ui.h:13
+msgid "Handshake"
+msgstr "ხელის ჩამორთმევა"
+
+#: ../data/ui/settings_dialog.ui.h:14
+msgid "Access Mode"
+msgstr "წვდომის რეჟიმი"
+
+#: ../data/ui/settings_dialog.ui.h:15
+msgid "Local Echo"
+msgstr "ლოკალური ექო"
+
+#: ../data/ui/settings_dialog.ui.h:16
+msgid "On Startup"
+msgstr "გაშვებისას"
+
+#: ../data/ui/settings_dialog.ui.h:17
+msgid "Connect immediately"
+msgstr "დაუყოვნებლივ დაკავშირება"
+
+#: ../data/ui/xmodem_filename_dialog.ui.h:2
+msgid "Filename required for XMODEM"
+msgstr "XMODEM-სთვის ფაილის სახელის მითითება აუცილებელია"
+
+#: ../data/moserial.desktop.in.h:1
+msgid "moserial Terminal"
+msgstr "moserial -ის ტერმინალი"
+
+#: ../data/moserial.desktop.in.h:2
+msgid "Serial Terminal"
+msgstr "სერიული ტერმინალი"
+
+#: ../data/moserial.desktop.in.h:3
+msgid "A serial terminal optimized for logging and file capture"
+msgstr "ჟურნალისა და ფაილების ჩაწერაზე ოპტიმიზირებული სერიული ტერმინალი"
+
+#: ../data/moserial.appdata.xml.in.h:2
+msgid "Serial terminal"
+msgstr "სერიული ტერმინალი"
+
+#: ../data/moserial.appdata.xml.in.h:3
+msgid ""
+"Moserial is a serial terminal used for interacting with serial consoles and "
+"embedded devices. It supports the view of incoming and outgoing data in both "
+"ASCII and hexadecimal formats with the option to log this data. It also "
+"supports sending and receiving of x, y, and z-modem files, and has profiles "
+"to easily switch between configurations for different devices you are "
+"communicating with."
+msgstr ""
+
+#: ../src/InputParser.vala:46 ../src/InputParser.vala:56
+msgid "Invalid Input"
+msgstr "არასწორი შეყვანა"
+
+#: ../src/Main.vala:26
+msgid "Profile file to load"
+msgstr "ჩასატვირთი პროფილის ფაილი"
+
+#: ../src/Main.vala:48
+msgid "- moserial serial terminal"
+msgstr "- moserial -ის სერიული ტერმინალი"
+
+#: ../src/Main.vala:53 ../src/Main.vala:61
+#, c-format
+msgid "Run '%s --help' to see a full list of available command line options.\n"
+msgstr ""
+
+#: ../src/MainWindow.vala:31
+msgid "translator-credits"
+msgstr "თემური დოღონაძე"
+
+#: ../src/MainWindow.vala:33
+msgid ""
+"moserial is free software: you can redistribute it and/or modify it under "
+"the terms of the GNU General Public License as published by the Free "
+"Software Foundation, either version 3 of the License, or (at your option) "
+"any later version.\n"
+msgstr ""
+
+#: ../src/MainWindow.vala:34
+msgid ""
+"moserial is distributed in the hope that it will be useful, but WITHOUT ANY "
+"WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
+"FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
+"details.\n"
+msgstr ""
+
+#: ../src/MainWindow.vala:35
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"this program.  If not, see <http://www.gnu.org/licenses/>."
+msgstr ""
+
+#: ../src/MainWindow.vala:65
+msgid "ASCII"
+msgstr "ASCII"
+
+#: ../src/MainWindow.vala:65
+msgid "HEX"
+msgstr "HEX"
+
+#: ../src/MainWindow.vala:171
+msgid "Port configuration"
+msgstr "პორტის მორგება"
+
+#: ../src/MainWindow.vala:176
+msgid "Read the manual"
+msgstr "სახელმძღვანელოს წაკითხვა"
+
+#: ../src/MainWindow.vala:185
+msgid "TX: 0, RX: 0"
+msgstr "TX: 0, RX: 0"
+
+#: ../src/MainWindow.vala:196
+msgid "Send a file"
+msgstr "ფაილის გაგზავნა"
+
+#: ../src/MainWindow.vala:205
+msgid "Receive a file"
+msgstr "ფაილის მიღება"
+
+#: ../src/MainWindow.vala:214
+msgid "Record sent and/or received data"
+msgstr "გაგზავნი ან/და მიღებული მონაცემების ჩაწერა"
+
+#: ../src/MainWindow.vala:225
+msgid "Other preferences"
+msgstr "დამატებითი პარამეტრები"
+
+#: ../src/MainWindow.vala:230
+msgid "Open/close port"
+msgstr "პორტის გახსნა/დახურვა"
+
+#: ../src/MainWindow.vala:280
+msgid "Send the outgoing data now."
+msgstr "გამავალი მონაცემების ახლა გაგზავნა."
+
+#: ../src/MainWindow.vala:283
+msgid "Type outgoing data here. Press Enter or Send to send it."
+msgstr ""
+
+#: ../src/MainWindow.vala:328
+msgid "Shows and toggles the DTR output (Data Terminal Ready)"
+msgstr ""
+
+#: ../src/MainWindow.vala:333
+msgid "Shows and toggles the RTS output (Request To Send)"
+msgstr ""
+
+#: ../src/MainWindow.vala:338
+msgid "Clear incoming text box"
+msgstr "შემომავალი ტექსტის ყუთის გასუფთავება"
+
+#: ../src/MainWindow.vala:343
+msgid "Clear outgoing text box"
+msgstr "გამავალი ტექსტის ყუთის გასუფთავება"
+
+#: ../src/MainWindow.vala:740 ../src/Profile.vala:113 ../src/Profile.vala:148
+msgid "Error: Could not open file"
+msgstr "შეცდომა: ფაილის გახსნა შეუძლებელია"
+
+#: ../src/MainWindow.vala:877
+msgid "Error: Could not open device"
+msgstr "შეცდომა: მოწყობლობის გახსნა შეუძლებელია"
+
+#: ../src/MainWindow.vala:1059
+#, c-format
+msgid "Unable to display help file: %s"
+msgstr "დამხმარების ფაილის ჩვენების შეცდომა: %s"
+
+#: ../src/MainWindow.vala:1071
+msgid ""
+"A serial terminal for the GNOME desktop, optimized for logging and file "
+"capture."
+msgstr ""
+
+#: ../src/MainWindow.vala:1131
+msgid "Save modified settings to the loaded profile?"
+msgstr "შევინახო ჩატვირთული პროფილის შეცვლილი პარამეტრები?"
+
+#: ../src/PreferencesDialog.vala:56
+msgid ""
+"If this option is enabled, a recorded file will be opened immediately after "
+"it is saved, using the default application for the file type. The default "
+"application is defined by the desktop environment."
+msgstr ""
+
+#: ../src/PreferencesDialog.vala:59
+msgid ""
+"If this option is enabled, recording will be automatically stopped after an "
+"adjustable period of inactivity after receiving some data. Moserial will "
+"wait indefinitely to record the first data byte before activating the "
+"inactivity timer."
+msgstr ""
+
+#: ../src/Preferences.vala:86
+msgid "Unable to retrieve system font setting"
+msgstr "სისტემური ფონტის მორგების მიღების შეცდომა"
+
+#: ../src/Rzwrapper.vala:24 ../src/Szwrapper.vala:24
+msgid "Xmodem"
+msgstr "Xmodem"
+
+#: ../src/Rzwrapper.vala:25 ../src/Szwrapper.vala:25
+msgid "Ymodem"
+msgstr "Ymodem"
+
+#: ../src/Rzwrapper.vala:26 ../src/Szwrapper.vala:26
+msgid "Zmodem"
+msgstr "Zmodem"
+
+#: ../src/SendProgressDialog.vala:44
+msgid "Waiting for remote host"
+msgstr "დაშორებული ჰოსტის მოლოდინი"
+
+#: ../src/SerialConnection.vala:44
+msgid "CR+LF end"
+msgstr "CR+LF დასრულება"
+
+#: ../src/SerialConnection.vala:45
+msgid "CR end"
+msgstr "CR დასრულება"
+
+#: ../src/SerialConnection.vala:46
+msgid "LF end"
+msgstr "LF დასრულება"
+
+#: ../src/SerialConnection.vala:47
+msgid "TAB end"
+msgstr "TAB დასრულება"
+
+#: ../src/SerialConnection.vala:48
+msgid "ESC end"
+msgstr "ESC დასრულება"
+
+#: ../src/SerialConnection.vala:49
+msgid "No end"
+msgstr "დასრულების გარეშე"
+
+#: ../src/SerialConnection.vala:362
+#, c-format
+msgid "TX: %lu, RX: %lu (%lu unprintable)"
+msgstr "TX: %lu, RX: %lu (%lu არადაბეჭდვადი)"
+
+#: ../src/SerialConnection.vala:364
+#, c-format
+msgid "TX: %lu, RX: %lu"
+msgstr "TX: %lu, RX: %lu"
+
+#: ../src/SerialStreamRecorder.vala:30
+msgid "Incoming"
+msgstr "შემომავალი"
+
+#: ../src/SerialStreamRecorder.vala:32
+msgid "Incoming and Outgoing"
+msgstr "შემომავალი და გამავალი"
+
+#: ../src/SerialStreamRecorder.vala:61 ../src/SerialStreamRecorder.vala:72
+#: ../src/SerialStreamRecorder.vala:96
+#, c-format
+msgid "error: %s\n"
+msgstr "შეცდომა: %s\n"
+
+#: ../src/SerialStreamRecorder.vala:105
+#, c-format
+msgid "Unable to launch %s: %s"
+msgstr "შეუძლებელია გაშვება %s: %s"
+
+#: ../src/SettingsDialog.vala:74
+msgid "Also known as RTS/CTS handshaking"
+msgstr ""
+
+#: ../src/SettingsDialog.vala:77
+msgid "Also known as XON/XOFF handshaking"
+msgstr ""
+
+#: ../src/SettingsDialog.vala:83
+msgid "Normally disabled"
+msgstr "ჩვეულებრივ გამორთულია"
+
+#: ../src/SettingsDialog.vala:86
+msgid "Enable to automatically connect on startup or when a profile is loaded"
+msgstr ""
+
+#: ../src/Settings.vala:25
+msgid "None"
+msgstr "არაფერი"
+
+#: ../src/Settings.vala:26
+msgid "Odd"
+msgstr "კენტი"
+
+#: ../src/Settings.vala:27
+msgid "Even"
+msgstr "ლუწი"
+
+#: ../src/Settings.vala:28
+msgid "Mark"
+msgstr "დანიშვნა"
+
+#: ../src/Settings.vala:29
+msgid "Space"
+msgstr "გამოტოვება"
+
+#: ../src/Settings.vala:35
+msgid "Read and Write"
+msgstr "კითხვა და ჩაწერა"
+
+#: ../src/Settings.vala:36
+msgid "Read Only"
+msgstr "მხოლოდ-კითხვადი"
+
+#: ../src/Settings.vala:37
+msgid "Write Only"
+msgstr "მხოლოდ-ჩაწერადი"
+
+#. TRANSLATORS: first letter of "None", a serial port parity setting
+#: ../src/Settings.vala:97
+msgid "N"
+msgstr "ჩრდ"
+
+#. TRANSLATORS: first letter of "Odd", a serial port parity setting
+#: ../src/Settings.vala:101
+msgid "O"
+msgstr "O"
+
+#. TRANSLATORS: first letter of "Even", a serial port parity setting
+#: ../src/Settings.vala:105
+msgid "E"
+msgstr "E"
+
+#. TRANSLATORS: first letter of "Mark", a serial port parity setting
+#: ../src/Settings.vala:109
+msgid "M"
+msgstr "მეგა"
+
+#. TRANSLATORS: first letter of "Space", a serial port parity setting
+#: ../src/Settings.vala:113
+msgid "S"
+msgstr "S"
+
+#: ../src/Settings.vala:124
+msgid "OPEN"
+msgstr "გახსნა"
+
+#: ../src/Settings.vala:125
+msgid "CLOSED"
+msgstr "დახურულია"
+
+#: ../src/Szwrapper.vala:27
+msgid "None (straight binary)"
+msgstr "არაფერი (უბრალოდ ბინარული)"
+
+#: ../src/Szwrapper.vala:178
+msgid "canceled"
+msgstr "canceled"
