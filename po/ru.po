@@ -1,0 +1,699 @@
+# Russian translation for moserial.
+# Copyright (C) 2023 moserial's COPYRIGHT HOLDER
+# This file is distributed under the same license as the moserial package.
+# Sergej A. <asvmail.as@gmail.com>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: moserial master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/moserial/issues\n"
+"POT-Creation-Date: 2023-03-09 10:19+0000\n"
+"PO-Revision-Date: 2023-05-09 18:45+1000\n"
+"Last-Translator: Ser82-png <asvmail.as@gmail.com>\n"
+"Language-Team: Russian <ru@li.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#: ../data/ui/mainwindow.ui.h:1 ../data/moserial.appdata.xml.in.h:1
+msgid "moserial"
+msgstr "moserial"
+
+#: ../data/ui/mainwindow.ui.h:2
+msgid "File"
+msgstr "Файл"
+
+#: ../data/ui/mainwindow.ui.h:3
+msgid "Open Settings"
+msgstr "Открыть настройки"
+
+#: ../data/ui/mainwindow.ui.h:4
+msgid "Open _Recent"
+msgstr "Открыть _недавние"
+
+#: ../data/ui/mainwindow.ui.h:5
+msgid "Save Settings"
+msgstr "Сохранить настройки"
+
+#: ../data/ui/mainwindow.ui.h:6
+msgid "Save Settings As"
+msgstr "Сохранить настройки как"
+
+#: ../data/ui/mainwindow.ui.h:7
+msgid "Quit"
+msgstr "Выйти"
+
+#: ../data/ui/mainwindow.ui.h:8
+msgid "Edit"
+msgstr "Правка"
+
+#: ../data/ui/mainwindow.ui.h:9
+msgid "Cut"
+msgstr "Вырезать"
+
+#: ../data/ui/mainwindow.ui.h:10
+msgid "Copy"
+msgstr "Копировать"
+
+#: ../data/ui/mainwindow.ui.h:11
+msgid "Paste"
+msgstr "Вставить"
+
+#: ../data/ui/mainwindow.ui.h:12
+msgid "Clear"
+msgstr "Очистить"
+
+#: ../data/ui/mainwindow.ui.h:13
+msgid "View"
+msgstr "Вид"
+
+#: ../data/ui/mainwindow.ui.h:14
+msgid "Extra Controls"
+msgstr "Дополнительное управление"
+
+#: ../data/ui/mainwindow.ui.h:15
+msgid "Help"
+msgstr "Справка"
+
+#: ../data/ui/mainwindow.ui.h:16
+msgid "About"
+msgstr "О приложении"
+
+#: ../data/ui/mainwindow.ui.h:17
+msgid "Connect"
+msgstr "Соединиться"
+
+#: ../data/ui/mainwindow.ui.h:18
+msgid "Record"
+msgstr "Записать"
+
+#: ../data/ui/mainwindow.ui.h:19
+msgid "Send File"
+msgstr "Отправить файл"
+
+#: ../data/ui/mainwindow.ui.h:20
+msgid "Receive File"
+msgstr "Получить файл"
+
+#: ../data/ui/mainwindow.ui.h:21 ../data/ui/settings_dialog.ui.h:1
+msgid "Port Setup"
+msgstr "Настройка порта"
+
+#: ../data/ui/mainwindow.ui.h:22 ../data/ui/preferences.ui.h:1
+msgid "Preferences"
+msgstr "Параметры"
+
+#: ../data/ui/mainwindow.ui.h:23
+msgid "Shows RI input (Ring Indicator)"
+msgstr "Показывает вход RI (Ring Indicator)"
+
+#: ../data/ui/mainwindow.ui.h:24
+msgid "RI"
+msgstr "RI"
+
+#: ../data/ui/mainwindow.ui.h:25
+msgid "Shows DSR input (Data Set Ready)"
+msgstr "Показывает вход DSR (Data Set Ready)"
+
+#: ../data/ui/mainwindow.ui.h:26
+msgid "DSR"
+msgstr "DSR"
+
+#: ../data/ui/mainwindow.ui.h:27
+msgid "Shows CD input (Carrier Detect)"
+msgstr "Показывает вход CD (Carrier Detect)"
+
+#: ../data/ui/mainwindow.ui.h:28
+msgid "CD"
+msgstr "CD"
+
+#: ../data/ui/mainwindow.ui.h:29
+msgid "Shows CTS input (Clear To Send)"
+msgstr "Показывает вход CTS (Clear To Send)"
+
+#: ../data/ui/mainwindow.ui.h:30
+msgid "CTS"
+msgstr "CTS"
+
+#: ../data/ui/mainwindow.ui.h:31
+msgid "Received ASCII"
+msgstr "Получено ASCII"
+
+#: ../data/ui/mainwindow.ui.h:32
+msgid "Received HEX"
+msgstr "Получено HEX"
+
+#: ../data/ui/mainwindow.ui.h:33
+msgid "RTS"
+msgstr "RTS"
+
+#: ../data/ui/mainwindow.ui.h:34
+msgid "DTR"
+msgstr "DTR"
+
+#: ../data/ui/mainwindow.ui.h:35
+msgid "Sent ASCII"
+msgstr "Отправить ASCII"
+
+#: ../data/ui/mainwindow.ui.h:36
+msgid "Sent HEX"
+msgstr "Отправить HEX"
+
+#: ../data/ui/mainwindow.ui.h:37 ../src/SerialStreamRecorder.vala:31
+msgid "Outgoing"
+msgstr "Исходящие"
+
+#: ../data/ui/mainwindow.ui.h:38
+msgid "Send"
+msgstr "Отправить"
+
+#: ../data/ui/mainwindow.ui.h:39
+msgid "Disconnect"
+msgstr "Отключить"
+
+#: ../data/ui/mainwindow.ui.h:40
+msgid "Stop Recording"
+msgstr "Остановить запись"
+
+#: ../data/ui/preferences.ui.h:2 ../data/ui/receive_progress.ui.h:2
+#: ../data/ui/send_progress_dialog.ui.h:2 ../data/ui/settings_dialog.ui.h:2
+msgid "Cancel"
+msgstr "Отменить"
+
+#: ../data/ui/preferences.ui.h:3 ../data/ui/settings_dialog.ui.h:3
+#: ../data/ui/xmodem_filename_dialog.ui.h:1
+msgid "OK"
+msgstr "ОК"
+
+#: ../data/ui/preferences.ui.h:4
+msgid "Font"
+msgstr "Шрифт"
+
+#: ../data/ui/preferences.ui.h:5
+msgid "Use the system fixed width font"
+msgstr "Использовать системный моноширинный шрифт"
+
+#: ../data/ui/preferences.ui.h:6
+msgid "Display Font"
+msgstr "Отображаемый шрифт"
+
+#: ../data/ui/preferences.ui.h:7
+msgid "Font Color"
+msgstr "Цвет шрифта"
+
+#: ../data/ui/preferences.ui.h:8
+msgid "Background Color"
+msgstr "Цвет фона"
+
+#: ../data/ui/preferences.ui.h:9
+msgid "Highlight Color"
+msgstr "Цвет выделения"
+
+#: ../data/ui/preferences.ui.h:10
+msgid "Recording"
+msgstr "Запись"
+
+#: ../data/ui/preferences.ui.h:11
+msgid "Launch recorded files"
+msgstr "Запустить записанные файлы"
+
+#: ../data/ui/preferences.ui.h:12
+msgid "Enable timeout after"
+msgstr "Время ожидания"
+
+#: ../data/ui/preferences.ui.h:13
+msgid "seconds"
+msgstr "секунд"
+
+#: ../data/ui/preferences.ui.h:14
+msgid "Use automatic timestamped filename"
+msgstr "Использовать название файла с автоматической временной меткой"
+
+#: ../data/ui/preferences.ui.h:15
+msgid "In this folder"
+msgstr "В этой папке"
+
+#: ../data/ui/preferences.ui.h:16
+msgid "With this extension"
+msgstr "С этим расширением"
+
+#: ../data/ui/preferences.ui.h:17
+msgid "Direction"
+msgstr "Направление"
+
+#: ../data/ui/receive_chooser.ui.h:1
+msgid "Select Folder for Received Files"
+msgstr "Выберите папку для полученных файлов"
+
+#: ../data/ui/receive_chooser.ui.h:2 ../data/ui/send_chooser_dialog.ui.h:2
+msgid "Error Correction Protocol"
+msgstr "Протокол устранения ошибок"
+
+#: ../data/ui/receive_progress.ui.h:1
+msgid "Receive File Progress"
+msgstr "Прогресс в получении файла"
+
+#: ../data/ui/record_dialog.ui.h:1
+msgid "Record Incoming and/or Outgoing Data"
+msgstr "Запись входящих и/или исходящих данных"
+
+#: ../data/ui/record_dialog.ui.h:2
+msgid "Stream to record"
+msgstr "Поток данных для записи"
+
+#: ../data/ui/send_chooser_dialog.ui.h:1
+msgid "Select File to Send"
+msgstr "Выбрать файл для отправки"
+
+#: ../data/ui/send_progress_dialog.ui.h:1
+msgid "Send File Progress"
+msgstr "Прогресс в отправке файла"
+
+#: ../data/ui/settings_dialog.ui.h:4
+msgid "Port Settings"
+msgstr "Настройки порта"
+
+#: ../data/ui/settings_dialog.ui.h:5
+msgid "Hardware"
+msgstr "Аппаратное обеспечение"
+
+#: ../data/ui/settings_dialog.ui.h:6
+msgid "Software"
+msgstr "Программное обеспечение"
+
+#: ../data/ui/settings_dialog.ui.h:7
+msgid "Echo received data"
+msgstr "Эхо полученных данных"
+
+#: ../data/ui/settings_dialog.ui.h:8
+msgid "Device"
+msgstr "Устройство"
+
+#: ../data/ui/settings_dialog.ui.h:9
+msgid "Baud Rate"
+msgstr "Скорость передачи (в бодах)"
+
+#: ../data/ui/settings_dialog.ui.h:10
+msgid "Data Bits"
+msgstr "Биты данных"
+
+#: ../data/ui/settings_dialog.ui.h:11
+msgid "Stop Bits"
+msgstr "Стоповые биты"
+
+#: ../data/ui/settings_dialog.ui.h:12
+msgid "Parity"
+msgstr "Чётность"
+
+#: ../data/ui/settings_dialog.ui.h:13
+msgid "Handshake"
+msgstr "Рукопожатие"
+
+#: ../data/ui/settings_dialog.ui.h:14
+msgid "Access Mode"
+msgstr "Режим доступа"
+
+#: ../data/ui/settings_dialog.ui.h:15
+msgid "Local Echo"
+msgstr "Локальный эхо-контроль"
+
+#: ../data/ui/settings_dialog.ui.h:16
+msgid "On Startup"
+msgstr "При запуске"
+
+#: ../data/ui/settings_dialog.ui.h:17
+msgid "Connect immediately"
+msgstr "Подключиться немедленно"
+
+#: ../data/ui/xmodem_filename_dialog.ui.h:2
+msgid "Filename required for XMODEM"
+msgstr "Название файла, необходимое для XMODEM"
+
+#: ../data/moserial.desktop.in.h:1
+msgid "moserial Terminal"
+msgstr "Терминал moserial"
+
+#: ../data/moserial.desktop.in.h:2
+msgid "Serial Terminal"
+msgstr "Последовательный терминал"
+
+#: ../data/moserial.desktop.in.h:3
+msgid "A serial terminal optimized for logging and file capture"
+msgstr ""
+"Последовательный терминал, оптимизированный для ведения журнала и захвата "
+"файлов"
+
+#: ../data/moserial.appdata.xml.in.h:2
+msgid "Serial terminal"
+msgstr "Последовательный терминал"
+
+#: ../data/moserial.appdata.xml.in.h:3
+msgid ""
+"Moserial is a serial terminal used for interacting with serial consoles and "
+"embedded devices. It supports the view of incoming and outgoing data in both "
+"ASCII and hexadecimal formats with the option to log this data. It also "
+"supports sending and receiving of x, y, and z-modem files, and has profiles "
+"to easily switch between configurations for different devices you are "
+"communicating with."
+msgstr ""
+"Moserial - это последовательный терминал, используемый для взаимодействия с "
+"последовательными консолями и встроенными устройствами. Он поддерживает "
+"просмотр входящих и исходящих данных как в ASCII, так и в шестнадцатеричном "
+"форматах с возможностью регистрации этих данных. Он поддерживает отправку и "
+"получение файлов x-, y- и z-модемов, а также профили для простого "
+"переключения между конфигурациями для различных устройств, с которыми вы "
+"обмениваетесь данными."
+
+#: ../src/InputParser.vala:46 ../src/InputParser.vala:56
+msgid "Invalid Input"
+msgstr "Недопустимые входные данные"
+
+#: ../src/Main.vala:26
+msgid "Profile file to load"
+msgstr "Файл профиля для загрузки"
+
+#: ../src/Main.vala:48
+msgid "- moserial serial terminal"
+msgstr "- последовательный терминал moserial"
+
+#: ../src/Main.vala:53 ../src/Main.vala:61
+#, c-format
+msgid "Run '%s --help' to see a full list of available command line options.\n"
+msgstr ""
+"Запустите «%s --help» для вывода полного списка доступных параметров "
+"командной строки.\n"
+
+#: ../src/MainWindow.vala:31
+msgid "translator-credits"
+msgstr "Ser82-png <asvmail.as@gmail.com>, 2023"
+
+#: ../src/MainWindow.vala:33
+msgid ""
+"moserial is free software: you can redistribute it and/or modify it under "
+"the terms of the GNU General Public License as published by the Free "
+"Software Foundation, either version 3 of the License, or (at your option) "
+"any later version.\n"
+msgstr ""
+"moserial — свободное программное обеспечение; вы можете распространять и/или "
+"изменять его на условиях лицензии GNU General Public License, опубликованной "
+"Фондом свободного программного обеспечения; либо версии 3 этой лицензии, "
+"либо (по вашему выбору) любой более поздней версии.\n"
+
+#: ../src/MainWindow.vala:34
+msgid ""
+"moserial is distributed in the hope that it will be useful, but WITHOUT ANY "
+"WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
+"FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
+"details.\n"
+msgstr ""
+"moserial распространяется в надежде, что будет полезен, но БЕЗО ВСЯКИХ "
+"ГАРАНТИЙ; даже без неявной гарантии ТОВАРНОГО ВИДА или ПРИГОДНОСТИ ДЛЯ "
+"ОПРЕДЕЛЁННЫХ ЦЕЛЕЙ.  Подробнее смотрите в GNU General Public License .\n"
+
+#: ../src/MainWindow.vala:35
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"this program.  If not, see <http://www.gnu.org/licenses/>."
+msgstr ""
+"Вы должны были получить копию Стандартной общественной лицензии GNU вместе с "
+"этой программой.  Если это не так, см. <http://www.gnu.org/licenses/>."
+
+#: ../src/MainWindow.vala:65
+msgid "ASCII"
+msgstr "ASCII"
+
+#: ../src/MainWindow.vala:65
+msgid "HEX"
+msgstr "HEX"
+
+#: ../src/MainWindow.vala:171
+msgid "Port configuration"
+msgstr "Конфигурация порта"
+
+#: ../src/MainWindow.vala:176
+msgid "Read the manual"
+msgstr "Прочитать руководство"
+
+#: ../src/MainWindow.vala:185
+msgid "TX: 0, RX: 0"
+msgstr "TX: 0, RX: 0"
+
+#: ../src/MainWindow.vala:196
+msgid "Send a file"
+msgstr "Отправить файл"
+
+#: ../src/MainWindow.vala:205
+msgid "Receive a file"
+msgstr "Получить файл"
+
+#: ../src/MainWindow.vala:214
+msgid "Record sent and/or received data"
+msgstr "Записывать отправленные и/или полученные данные"
+
+#: ../src/MainWindow.vala:225
+msgid "Other preferences"
+msgstr "Прочие параметры"
+
+#: ../src/MainWindow.vala:230
+msgid "Open/close port"
+msgstr "Открыть/Закрыть порт"
+
+#: ../src/MainWindow.vala:280
+msgid "Send the outgoing data now."
+msgstr "Отправить исходящие данные прямо сейчас."
+
+#: ../src/MainWindow.vala:283
+msgid "Type outgoing data here. Press Enter or Send to send it."
+msgstr ""
+"Введите здесь исходящие данные. Для отправки их нажмите Enter или "
+"«Отправить»."
+
+#: ../src/MainWindow.vala:328
+msgid "Shows and toggles the DTR output (Data Terminal Ready)"
+msgstr "Показывает и переключает выход DTR (готовность терминала данных)"
+
+#: ../src/MainWindow.vala:333
+msgid "Shows and toggles the RTS output (Request To Send)"
+msgstr "Показывает и переключает выход RTS (запрос на отправку)"
+
+#: ../src/MainWindow.vala:338
+msgid "Clear incoming text box"
+msgstr "Очистить текстовое поле входящих сообщений"
+
+#: ../src/MainWindow.vala:343
+msgid "Clear outgoing text box"
+msgstr "Очистить текстовое поле исходящих сообщений"
+
+#: ../src/MainWindow.vala:740 ../src/Profile.vala:113 ../src/Profile.vala:148
+msgid "Error: Could not open file"
+msgstr "Ошибка: не удалось открыть файл"
+
+#: ../src/MainWindow.vala:877
+msgid "Error: Could not open device"
+msgstr "Ошибка: Не удалось открыть устройство"
+
+#: ../src/MainWindow.vala:1059
+#, c-format
+msgid "Unable to display help file: %s"
+msgstr "Не удалось открыть файл справки: %s"
+
+#: ../src/MainWindow.vala:1071
+msgid ""
+"A serial terminal for the GNOME desktop, optimized for logging and file "
+"capture."
+msgstr ""
+"Последовательный терминал для рабочего стола GNOME, оптимизированный для "
+"ведения журнала и захвата файлов."
+
+#: ../src/MainWindow.vala:1131
+msgid "Save modified settings to the loaded profile?"
+msgstr "Сохранить измененные настройки в загруженном профиле?"
+
+#: ../src/PreferencesDialog.vala:56
+msgid ""
+"If this option is enabled, a recorded file will be opened immediately after "
+"it is saved, using the default application for the file type. The default "
+"application is defined by the desktop environment."
+msgstr ""
+"Если этот параметр включён, записанный файл будет открыт сразу после его "
+"сохранения с использованием приложения по умолчанию для данного типа файла. "
+"Приложение по умолчанию определяется средой рабочего стола."
+
+#: ../src/PreferencesDialog.vala:59
+msgid ""
+"If this option is enabled, recording will be automatically stopped after an "
+"adjustable period of inactivity after receiving some data. Moserial will "
+"wait indefinitely to record the first data byte before activating the "
+"inactivity timer."
+msgstr ""
+"Если этот параметр включён, запись будет автоматически остановлена после "
+"указанного периода бездействия после получения каких-либо данных. Moserial "
+"будет ожидать в течение неограниченного периода времени записи первого байта "
+"данных, прежде чем активировать таймер бездействия."
+
+#: ../src/Preferences.vala:86
+msgid "Unable to retrieve system font setting"
+msgstr "Не удалось получить настройки системного шрифта"
+
+#: ../src/Rzwrapper.vala:24 ../src/Szwrapper.vala:24
+msgid "Xmodem"
+msgstr "X-модем"
+
+#: ../src/Rzwrapper.vala:25 ../src/Szwrapper.vala:25
+msgid "Ymodem"
+msgstr "Y-модем"
+
+#: ../src/Rzwrapper.vala:26 ../src/Szwrapper.vala:26
+msgid "Zmodem"
+msgstr "Z-модем"
+
+#: ../src/SendProgressDialog.vala:44
+msgid "Waiting for remote host"
+msgstr "Ожидание удаленного хоста"
+
+#: ../src/SerialConnection.vala:44
+msgid "CR+LF end"
+msgstr "Завершение CR+LF"
+
+#: ../src/SerialConnection.vala:45
+msgid "CR end"
+msgstr "Завершение CR"
+
+#: ../src/SerialConnection.vala:46
+msgid "LF end"
+msgstr "Завершение LF"
+
+#: ../src/SerialConnection.vala:47
+msgid "TAB end"
+msgstr "Завершение TAB"
+
+#: ../src/SerialConnection.vala:48
+msgid "ESC end"
+msgstr "Завершение ESC"
+
+#: ../src/SerialConnection.vala:49
+msgid "No end"
+msgstr "Без завершения"
+
+#: ../src/SerialConnection.vala:362
+#, c-format
+msgid "TX: %lu, RX: %lu (%lu unprintable)"
+msgstr "TX: %lu, RX: %lu (непригодных для печати %lu)"
+
+#: ../src/SerialConnection.vala:364
+#, c-format
+msgid "TX: %lu, RX: %lu"
+msgstr "TX: %lu, RX: %lu"
+
+#: ../src/SerialStreamRecorder.vala:30
+msgid "Incoming"
+msgstr "Входящий"
+
+#: ../src/SerialStreamRecorder.vala:32
+msgid "Incoming and Outgoing"
+msgstr "Входящий и Исходящий"
+
+#: ../src/SerialStreamRecorder.vala:61 ../src/SerialStreamRecorder.vala:72
+#: ../src/SerialStreamRecorder.vala:96
+#, c-format
+msgid "error: %s\n"
+msgstr "ошибка: %s\n"
+
+#: ../src/SerialStreamRecorder.vala:105
+#, c-format
+msgid "Unable to launch %s: %s"
+msgstr "Не удалось запустить %s: %s"
+
+#: ../src/SettingsDialog.vala:74
+msgid "Also known as RTS/CTS handshaking"
+msgstr "Также известен как рукопожатие RTS/CTS"
+
+#: ../src/SettingsDialog.vala:77
+msgid "Also known as XON/XOFF handshaking"
+msgstr "Также известен как рукопожатие XON/XOFF"
+
+#: ../src/SettingsDialog.vala:83
+msgid "Normally disabled"
+msgstr "Обычно отключено"
+
+#: ../src/SettingsDialog.vala:86
+msgid "Enable to automatically connect on startup or when a profile is loaded"
+msgstr ""
+"Включите автоматическое подключение при запуске или при загрузке профиля"
+
+#: ../src/Settings.vala:25
+msgid "None"
+msgstr "None"
+
+#: ../src/Settings.vala:26
+msgid "Odd"
+msgstr "Odd"
+
+#: ../src/Settings.vala:27
+msgid "Even"
+msgstr "Even"
+
+#: ../src/Settings.vala:28
+msgid "Mark"
+msgstr "Mark"
+
+#: ../src/Settings.vala:29
+msgid "Space"
+msgstr "Space"
+
+#: ../src/Settings.vala:35
+msgid "Read and Write"
+msgstr "Чтение и запись"
+
+#: ../src/Settings.vala:36
+msgid "Read Only"
+msgstr "Только чтение"
+
+#: ../src/Settings.vala:37
+msgid "Write Only"
+msgstr "Только запись"
+
+#. TRANSLATORS: first letter of "None", a serial port parity setting
+#: ../src/Settings.vala:97
+msgid "N"
+msgstr "N"
+
+#. TRANSLATORS: first letter of "Odd", a serial port parity setting
+#: ../src/Settings.vala:101
+msgid "O"
+msgstr "O"
+
+#. TRANSLATORS: first letter of "Even", a serial port parity setting
+#: ../src/Settings.vala:105
+msgid "E"
+msgstr "E"
+
+#. TRANSLATORS: first letter of "Mark", a serial port parity setting
+#: ../src/Settings.vala:109
+msgid "M"
+msgstr "M"
+
+#. TRANSLATORS: first letter of "Space", a serial port parity setting
+#: ../src/Settings.vala:113
+msgid "S"
+msgstr "S"
+
+#: ../src/Settings.vala:124
+msgid "OPEN"
+msgstr "ОТКРЫТО"
+
+#: ../src/Settings.vala:125
+msgid "CLOSED"
+msgstr "ЗАКРЫТО"
+
+#: ../src/Szwrapper.vala:27
+msgid "None (straight binary)"
+msgstr "Нет (простой двоичный)"
+
+#: ../src/Szwrapper.vala:178
+msgid "canceled"
+msgstr "отменено"
