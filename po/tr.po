@@ -1,19 +1,19 @@
 # Turkish translation for moserial.
-# Copyright (C) 2019 moserial's COPYRIGHT HOLDER
+# Copyright (C) 2019-2023 moserial's COPYRIGHT HOLDER
 # This file is distributed under the same license as the moserial package.
 #
 # Muhammet Kara <muhammetk@gmail.com>, 2021.
 # Emin Tufan Çetin <etcetin@gmail.com>, 2019, 2022.
-# Sabri Ünal <libreajans@gmail.com>, 2019, 2022.
+# Sabri Ünal <libreajans@gmail.com>, 2019, 2022, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: moserial master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/moserial/issues\n"
-"POT-Creation-Date: 2022-03-27 12:03+0000\n"
+"POT-Creation-Date: 2023-03-09 10:19+0000\n"
 "PO-Revision-Date: 2022-05-31 01:03+0300\n"
 "Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
-"Language-Team: Turkish <gnometurk@gnome.org>\n"
+"Language-Team: Turkish <takim@gnome.org.tr>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -51,7 +51,7 @@ msgstr "Kapat"
 
 #: ../data/ui/mainwindow.ui.h:8
 msgid "Edit"
-msgstr "Düzenle"
+msgstr "Düzenle"
 
 #: ../data/ui/mainwindow.ui.h:9
 msgid "Cut"
@@ -87,7 +87,7 @@ msgstr "Hakkında"
 
 #: ../data/ui/mainwindow.ui.h:17
 msgid "Connect"
-msgstr "Bağlan"
+msgstr "Bağlan"
 
 #: ../data/ui/mainwindow.ui.h:18
 msgid "Record"
@@ -481,8 +481,7 @@ msgstr ""
 
 #: ../src/MainWindow.vala:333
 msgid "Shows and toggles the RTS output (Request To Send)"
-msgstr ""
-"RTS çıktısını gösterir ve değiştirir (Request To Send/Gönderim İstemi)"
+msgstr "RTS çıktısını gösterir ve değiştirir (Request To Send/Gönderim İstemi)"
 
 #: ../src/MainWindow.vala:338
 msgid "Clear incoming text box"
@@ -701,13 +700,3 @@ msgstr "Hiçbiri (direk ikilik)"
 #: ../src/Szwrapper.vala:178
 msgid "canceled"
 msgstr "iptal edildi"
-
-#~ msgid "_Help"
-#~ msgstr "_Yardım"
-
-#~ msgid ""
-#~ "You have changed your setting or preferences. Do you want to save these "
-#~ "changes to the loaded profile?"
-#~ msgstr ""
-#~ "Ayar veya tercihlerinizi değiştirdiniz. Bu değişiklikleri yüklü profile "
-#~ "kaydetmek ister misiniz?"
