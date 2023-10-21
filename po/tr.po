@@ -10,16 +10,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: moserial master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/moserial/issues\n"
-"POT-Creation-Date: 2023-03-09 10:19+0000\n"
-"PO-Revision-Date: 2022-05-31 01:03+0300\n"
-"Last-Translator: Emin Tufan Çetin <etcetin@gmail.com>\n"
+"POT-Creation-Date: 2023-05-26 23:09+0000\n"
+"PO-Revision-Date: 2023-10-17 13:51+0300\n"
+"Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <takim@gnome.org.tr>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.4\n"
 
 #: ../data/ui/mainwindow.ui.h:1 ../data/moserial.appdata.xml.in.h:1
 msgid "moserial"
@@ -184,7 +184,7 @@ msgstr "Kaydetmeyi Durdur"
 #: ../data/ui/preferences.ui.h:2 ../data/ui/receive_progress.ui.h:2
 #: ../data/ui/send_progress_dialog.ui.h:2 ../data/ui/settings_dialog.ui.h:2
 msgid "Cancel"
-msgstr "Vazgeç"
+msgstr "İptal"
 
 #: ../data/ui/preferences.ui.h:3 ../data/ui/settings_dialog.ui.h:3
 #: ../data/ui/xmodem_filename_dialog.ui.h:1
