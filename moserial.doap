@@ -8,7 +8,7 @@
   <shortdesc xml:lang="en">Serial terminal for hardware hackers</shortdesc>
   <description>moserial is a clean, friendly gtk-based serial terminal for the gnome desktop, intended for hardware hackers.</description>
   <homepage rdf:resource="https://wiki.gnome.org/Apps/Moserial" />
-  <mailing-list rdf:resource="http://mail.gnome.org/mailman/listinfo/desktop-devel-list" />
+  <mailing-list rdf:resource="https://discourse.gnome.org/" />
   <download-page rdf:resource="https://download.gnome.org/sources/moserial/"/>
   <bug-database rdf:resource="https://gitlab.gnome.org/GNOME/moserial/issues/" />
 
