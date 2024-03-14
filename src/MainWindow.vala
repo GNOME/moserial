@@ -1074,8 +1074,8 @@ font-weight:
                            "logo-icon-name", "moserial",
                            "wrap-license", true,
                            "license", license_trans,
-                           "website", "http://live.gnome.org/moserial",
-                           "website_label", "http://live.gnome.org/moserial",
+                           "website", "https://wiki.gnome.org/Apps/Moserial",
+                           "website_label", "https://wiki.gnome.org/Apps/Moserial",
                            null);
     }
 
