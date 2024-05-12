@@ -1,0 +1,685 @@
+# Hindi translation for moserial.
+# Copyright (C) 2024 moserial's COPYRIGHT HOLDER
+# This file is distributed under the same license as the moserial package.
+# Scrambled777 <weblate.scrambled777@simplelogin.com>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: moserial master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/moserial/issues/\n"
+"POT-Creation-Date: 2024-03-16 05:55+0000\n"
+"PO-Revision-Date: 2024-04-25 16:44+0530\n"
+"Last-Translator: Scrambled777 <weblate.scrambled777@simplelogin.com>\n"
+"Language-Team: Hindi\n"
+"Language: hi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Gtranslator 46.1\n"
+
+#: ../data/ui/mainwindow.ui.h:1 ../data/moserial.appdata.xml.in.h:1
+msgid "moserial"
+msgstr "moserial"
+
+#: ../data/ui/mainwindow.ui.h:2
+msgid "File"
+msgstr "फाइल"
+
+#: ../data/ui/mainwindow.ui.h:3
+msgid "Open Settings"
+msgstr "सेटिंग्स खोलें"
+
+#: ../data/ui/mainwindow.ui.h:4
+msgid "Open _Recent"
+msgstr "हालिया खोलें (_R)"
+
+#: ../data/ui/mainwindow.ui.h:5
+msgid "Save Settings"
+msgstr "सेटिंग्स सहेजें"
+
+#: ../data/ui/mainwindow.ui.h:6
+msgid "Save Settings As"
+msgstr "सेटिंग्स ऐसे सहेजें"
+
+#: ../data/ui/mainwindow.ui.h:7
+msgid "Quit"
+msgstr "बंद करें"
+
+#: ../data/ui/mainwindow.ui.h:8
+msgid "Edit"
+msgstr "संपादित करें"
+
+#: ../data/ui/mainwindow.ui.h:9
+msgid "Cut"
+msgstr "काटें"
+
+#: ../data/ui/mainwindow.ui.h:10
+msgid "Copy"
+msgstr "कॉपी"
+
+#: ../data/ui/mainwindow.ui.h:11
+msgid "Paste"
+msgstr "पेस्ट"
+
+#: ../data/ui/mainwindow.ui.h:12
+msgid "Clear"
+msgstr "साफ करें"
+
+#: ../data/ui/mainwindow.ui.h:13
+msgid "View"
+msgstr "देखें"
+
+#: ../data/ui/mainwindow.ui.h:14
+msgid "Extra Controls"
+msgstr "अतिरिक्त नियंत्रण"
+
+#: ../data/ui/mainwindow.ui.h:15
+msgid "Help"
+msgstr "सहायता"
+
+#: ../data/ui/mainwindow.ui.h:16
+msgid "About"
+msgstr "moserial के बारे में"
+
+#: ../data/ui/mainwindow.ui.h:17
+msgid "Connect"
+msgstr "जुड़ें"
+
+#: ../data/ui/mainwindow.ui.h:18
+msgid "Record"
+msgstr "रिकार्ड"
+
+#: ../data/ui/mainwindow.ui.h:19
+msgid "Send File"
+msgstr "फाइल भेजें"
+
+#: ../data/ui/mainwindow.ui.h:20
+msgid "Receive File"
+msgstr "फाइल प्राप्त करें"
+
+#: ../data/ui/mainwindow.ui.h:21 ../data/ui/settings_dialog.ui.h:1
+msgid "Port Setup"
+msgstr "पोर्ट सेटअप"
+
+#: ../data/ui/mainwindow.ui.h:22 ../data/ui/preferences.ui.h:1
+msgid "Preferences"
+msgstr "प्राथमिकताएं"
+
+#: ../data/ui/mainwindow.ui.h:23
+msgid "Shows RI input (Ring Indicator)"
+msgstr "RI इनपुट दिखाता है (रिंग इंडिकेटर)"
+
+#: ../data/ui/mainwindow.ui.h:24
+msgid "RI"
+msgstr "RI"
+
+#: ../data/ui/mainwindow.ui.h:25
+msgid "Shows DSR input (Data Set Ready)"
+msgstr "DSR इनपुट दिखाता है (डेटा सेट रेडी)"
+
+#: ../data/ui/mainwindow.ui.h:26
+msgid "DSR"
+msgstr "DSR"
+
+#: ../data/ui/mainwindow.ui.h:27
+msgid "Shows CD input (Carrier Detect)"
+msgstr "CD इनपुट दिखाता है (कैरियर डिटेक्ट)"
+
+#: ../data/ui/mainwindow.ui.h:28
+msgid "CD"
+msgstr "CD"
+
+#: ../data/ui/mainwindow.ui.h:29
+msgid "Shows CTS input (Clear To Send)"
+msgstr "CTS इनपुट दिखाता है (क्लियर टू सेंड)"
+
+#: ../data/ui/mainwindow.ui.h:30
+msgid "CTS"
+msgstr "CTS"
+
+#: ../data/ui/mainwindow.ui.h:31
+msgid "Received ASCII"
+msgstr "प्राप्त हुई ASCII"
+
+#: ../data/ui/mainwindow.ui.h:32
+msgid "Received HEX"
+msgstr "प्राप्त हुआ HEX"
+
+#: ../data/ui/mainwindow.ui.h:33
+msgid "RTS"
+msgstr "RTS"
+
+#: ../data/ui/mainwindow.ui.h:34
+msgid "DTR"
+msgstr "DTR"
+
+#: ../data/ui/mainwindow.ui.h:35
+msgid "Sent ASCII"
+msgstr "भेजी गई ASCII"
+
+#: ../data/ui/mainwindow.ui.h:36
+msgid "Sent HEX"
+msgstr "भेजा गया HEX"
+
+#: ../data/ui/mainwindow.ui.h:37 ../src/SerialStreamRecorder.vala:31
+msgid "Outgoing"
+msgstr "जावक"
+
+#: ../data/ui/mainwindow.ui.h:38
+msgid "Send"
+msgstr "भेजें"
+
+#: ../data/ui/mainwindow.ui.h:39
+msgid "Disconnect"
+msgstr "डिस्कनेक्ट"
+
+#: ../data/ui/mainwindow.ui.h:40
+msgid "Stop Recording"
+msgstr "रिकॉर्डिंग बंद करें"
+
+#: ../data/ui/preferences.ui.h:2 ../data/ui/receive_progress.ui.h:2
+#: ../data/ui/send_progress_dialog.ui.h:2 ../data/ui/settings_dialog.ui.h:2
+msgid "Cancel"
+msgstr "रद्द करें"
+
+#: ../data/ui/preferences.ui.h:3 ../data/ui/settings_dialog.ui.h:3
+#: ../data/ui/xmodem_filename_dialog.ui.h:1
+msgid "OK"
+msgstr "ठीक है"
+
+#: ../data/ui/preferences.ui.h:4
+msgid "Font"
+msgstr "फॉन्ट"
+
+#: ../data/ui/preferences.ui.h:5
+msgid "Use the system fixed width font"
+msgstr "सिस्टम द्वारा निश्चित चौड़ाई फॉन्ट का उपयोग करें"
+
+#: ../data/ui/preferences.ui.h:6
+msgid "Display Font"
+msgstr "प्रदर्शन फॉन्ट"
+
+#: ../data/ui/preferences.ui.h:7
+msgid "Font Color"
+msgstr "फॉन्ट का रंग"
+
+#: ../data/ui/preferences.ui.h:8
+msgid "Background Color"
+msgstr "पृष्ठभूमि का रंग"
+
+#: ../data/ui/preferences.ui.h:9
+msgid "Highlight Color"
+msgstr "रंग हाइलाइट करें"
+
+#: ../data/ui/preferences.ui.h:10
+msgid "Recording"
+msgstr "रिकॉर्डिंग"
+
+#: ../data/ui/preferences.ui.h:11
+msgid "Launch recorded files"
+msgstr "रिकार्ड की गई फाइलें लॉन्च करें"
+
+#: ../data/ui/preferences.ui.h:12
+msgid "Enable timeout after"
+msgstr "इसके बाद टाइमआउट सक्षम करें"
+
+#: ../data/ui/preferences.ui.h:13
+msgid "seconds"
+msgstr "सेकंड"
+
+#: ../data/ui/preferences.ui.h:14
+msgid "Use automatic timestamped filename"
+msgstr "प्रयुक्त स्वचालित टाइमस्टैम्प फाइल नाम"
+
+#: ../data/ui/preferences.ui.h:15
+msgid "In this folder"
+msgstr "इस फोल्डर में"
+
+#: ../data/ui/preferences.ui.h:16
+msgid "With this extension"
+msgstr "इस विस्तार के साथ"
+
+#: ../data/ui/preferences.ui.h:17
+msgid "Direction"
+msgstr "दिशा"
+
+#: ../data/ui/receive_chooser.ui.h:1
+msgid "Select Folder for Received Files"
+msgstr "प्राप्त फाइलों के लिए फोल्डर चुनें"
+
+#: ../data/ui/receive_chooser.ui.h:2 ../data/ui/send_chooser_dialog.ui.h:2
+msgid "Error Correction Protocol"
+msgstr "त्रुटि संशोधन प्रोटोकॉल"
+
+#: ../data/ui/receive_progress.ui.h:1
+msgid "Receive File Progress"
+msgstr "प्राप्त फाइल की प्रगति"
+
+#: ../data/ui/record_dialog.ui.h:1
+msgid "Record Incoming and/or Outgoing Data"
+msgstr "आवक और/या जावक डेटा रिकॉर्ड करें"
+
+#: ../data/ui/record_dialog.ui.h:2
+msgid "Stream to record"
+msgstr "रिकार्ड करने के लिए स्ट्रीम"
+
+#: ../data/ui/send_chooser_dialog.ui.h:1
+msgid "Select File to Send"
+msgstr "भेजने के लिए फाइल चुनें"
+
+#: ../data/ui/send_progress_dialog.ui.h:1
+msgid "Send File Progress"
+msgstr "फाइल भेजने की प्रगति"
+
+#: ../data/ui/settings_dialog.ui.h:4
+msgid "Port Settings"
+msgstr "पोर्ट सेटिंग्स"
+
+#: ../data/ui/settings_dialog.ui.h:5
+msgid "Hardware"
+msgstr "हार्डवेयर"
+
+#: ../data/ui/settings_dialog.ui.h:6
+msgid "Software"
+msgstr "सॉफ्टवेयर"
+
+#: ../data/ui/settings_dialog.ui.h:7
+msgid "Echo received data"
+msgstr "प्राप्त डेटा को प्रतिध्वनित करें"
+
+#: ../data/ui/settings_dialog.ui.h:8
+msgid "Device"
+msgstr "उपकरण"
+
+#: ../data/ui/settings_dialog.ui.h:9
+msgid "Baud Rate"
+msgstr "बॉड दर"
+
+#: ../data/ui/settings_dialog.ui.h:10
+msgid "Data Bits"
+msgstr "डेटा बिट्स"
+
+#: ../data/ui/settings_dialog.ui.h:11
+msgid "Stop Bits"
+msgstr "स्टॉप बिट्स"
+
+#: ../data/ui/settings_dialog.ui.h:12
+msgid "Parity"
+msgstr "समता"
+
+#: ../data/ui/settings_dialog.ui.h:13
+msgid "Handshake"
+msgstr "हैंडशेक"
+
+#: ../data/ui/settings_dialog.ui.h:14
+msgid "Access Mode"
+msgstr "पहुंच मोड"
+
+#: ../data/ui/settings_dialog.ui.h:15
+msgid "Local Echo"
+msgstr "स्थानीय प्रतिध्वनि"
+
+#: ../data/ui/settings_dialog.ui.h:16
+msgid "On Startup"
+msgstr "स्टार्टअप पर"
+
+#: ../data/ui/settings_dialog.ui.h:17
+msgid "Connect immediately"
+msgstr "तुरंत जुड़ें"
+
+#: ../data/ui/xmodem_filename_dialog.ui.h:2
+msgid "Filename required for XMODEM"
+msgstr "XMODEM के लिए फाइल नाम आवश्यक है"
+
+#: ../data/moserial.desktop.in.h:1
+msgid "moserial Terminal"
+msgstr "moserial टर्मिनल"
+
+#: ../data/moserial.desktop.in.h:2
+msgid "Serial Terminal"
+msgstr "सीरियल टर्मिनल"
+
+#: ../data/moserial.desktop.in.h:3
+msgid "A serial terminal optimized for logging and file capture"
+msgstr "लॉगिंग और फाइल कैप्चर के लिए अनुकूलित एक सीरियल टर्मिनल"
+
+#: ../data/moserial.appdata.xml.in.h:2
+msgid "Serial terminal"
+msgstr "सीरियल टर्मिनल"
+
+#: ../data/moserial.appdata.xml.in.h:3
+msgid ""
+"Moserial is a serial terminal used for interacting with serial consoles and "
+"embedded devices. It supports the view of incoming and outgoing data in both "
+"ASCII and hexadecimal formats with the option to log this data. It also "
+"supports sending and receiving of x, y, and z-modem files, and has profiles "
+"to easily switch between configurations for different devices you are "
+"communicating with."
+msgstr ""
+"Moserial एक सीरियल टर्मिनल है जिसका उपयोग सीरियल कंसोल और अंतर्निहित उपकरण के साथ "
+"परस्पर करने के लिए किया जाता है। यह इस डेटा को लॉग करने के विकल्प के साथ ASCII और "
+"हेक्साडेसिमल दोनों प्रारूपों में आवक और जावक डेटा के दृश्य का समर्थन करता है। यह x, y, और z-"
+"modem फाइलों को भेजने और प्राप्त करने का भी समर्थन करता है, और आपके साथ संचार कर रहे "
+"विभिन्न उपकरणों के लिए विन्यास के बीच आसानी से बदलने के लिए प्रोफाइल है।"
+
+#: ../src/InputParser.vala:46 ../src/InputParser.vala:56
+msgid "Invalid Input"
+msgstr "अमान्य इनपुट"
+
+#: ../src/Main.vala:26
+msgid "Profile file to load"
+msgstr "लोड करने के लिए प्रोफाइल फाइल"
+
+#: ../src/Main.vala:48
+msgid "- moserial serial terminal"
+msgstr "- moserial सीरियल टर्मिनल"
+
+#: ../src/Main.vala:53 ../src/Main.vala:61
+#, c-format
+msgid "Run '%s --help' to see a full list of available command line options.\n"
+msgstr "उपलब्ध कमांड लाइन विकल्पों की पूरी सूची देखने के लिए '%s --help' चलाएं।\n"
+
+#: ../src/MainWindow.vala:31
+msgid "translator-credits"
+msgstr "Scrambled777 <weblate.scrambled777@simplelogin.com>"
+
+#: ../src/MainWindow.vala:33
+msgid ""
+"moserial is free software: you can redistribute it and/or modify it under "
+"the terms of the GNU General Public License as published by the Free "
+"Software Foundation, either version 3 of the License, or (at your option) "
+"any later version.\n"
+msgstr ""
+"moserial मुफ्त सॉफ्टवेयर है: आप इसे GNU जनरल पब्लिक लाइसेंस की शर्तों के तहत पुनर्वितरित "
+"और/या संशोधित कर सकते हैं, जैसा कि फ्री सॉफ्टवेयर फाउंडेशन द्वारा प्रकाशित किया गया है, "
+"या तो लाइसेंस का संस्करण 3, या (आपके विकल्प पर) कोई भी बाद का संस्करण।\n"
+
+#: ../src/MainWindow.vala:34
+msgid ""
+"moserial is distributed in the hope that it will be useful, but WITHOUT ANY "
+"WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
+"FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
+"details.\n"
+msgstr ""
+"moserial इस उम्मीद में वितरित किया जाता है कि यह उपयोगी होगा, लेकिन बिना किसी "
+"वारंटी के; किसी विशेष उद्देश्य के लिए व्यापारिकता या उपयुक्तता की निहित वारंटी के बिना "
+"भी। अधिक विवरण के लिए GNU जनरल पब्लिक लाइसेंस देखें।\n"
+
+#: ../src/MainWindow.vala:35
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"this program.  If not, see <http://www.gnu.org/licenses/>."
+msgstr ""
+"आपको इस कार्यक्रम के साथ GNU जनरल पब्लिक लाइसेंस की एक प्रति प्राप्त होनी चाहिए। यदि "
+"नहीं, तो <http://www.gnu.org/licenses/> देखें।"
+
+#: ../src/MainWindow.vala:65
+msgid "ASCII"
+msgstr "ASCII"
+
+#: ../src/MainWindow.vala:65
+msgid "HEX"
+msgstr "HEX"
+
+#: ../src/MainWindow.vala:171
+msgid "Port configuration"
+msgstr "पोर्ट विन्यास"
+
+#: ../src/MainWindow.vala:176
+msgid "Read the manual"
+msgstr "नियमावली पढ़ें"
+
+#: ../src/MainWindow.vala:185
+msgid "TX: 0, RX: 0"
+msgstr "TX: 0, RX: 0"
+
+#: ../src/MainWindow.vala:196
+msgid "Send a file"
+msgstr "एक फाइल भेजें"
+
+#: ../src/MainWindow.vala:205
+msgid "Receive a file"
+msgstr "एक फाइल प्राप्त करें"
+
+#: ../src/MainWindow.vala:214
+msgid "Record sent and/or received data"
+msgstr "भेजे गए और/या प्राप्त डेटा को रिकॉर्ड करें"
+
+#: ../src/MainWindow.vala:225
+msgid "Other preferences"
+msgstr "अन्य प्राथमिकताएं"
+
+#: ../src/MainWindow.vala:230
+msgid "Open/close port"
+msgstr "पोर्ट खोलें/बंद करें"
+
+#: ../src/MainWindow.vala:280
+msgid "Send the outgoing data now."
+msgstr "अभी जावक डेटा भेजें।"
+
+#: ../src/MainWindow.vala:283
+msgid "Type outgoing data here. Press Enter or Send to send it."
+msgstr "यहां जावक डेटा टाइप करें। इसे भेजने के लिए Enter या Send दबाएं।"
+
+#: ../src/MainWindow.vala:328
+msgid "Shows and toggles the DTR output (Data Terminal Ready)"
+msgstr "DTR आउटपुट दिखाता है और टॉगल करता है (डेटा टर्मिनल रेडी)"
+
+#: ../src/MainWindow.vala:333
+msgid "Shows and toggles the RTS output (Request To Send)"
+msgstr "RTS आउटपुट दिखाता है और टॉगल करता है (रिक्वेस्ट टू सेंड)"
+
+#: ../src/MainWindow.vala:338
+msgid "Clear incoming text box"
+msgstr "आवक पाठ बॉक्स को साफ करें"
+
+#: ../src/MainWindow.vala:343
+msgid "Clear outgoing text box"
+msgstr "जावक पाठ बॉक्स साफ करें"
+
+#: ../src/MainWindow.vala:740 ../src/Profile.vala:113 ../src/Profile.vala:148
+msgid "Error: Could not open file"
+msgstr "त्रुटि: फाइल नहीं खुल सकी"
+
+#: ../src/MainWindow.vala:877
+msgid "Error: Could not open device"
+msgstr "त्रुटि: उपकरण नहीं खुल सका"
+
+#: ../src/MainWindow.vala:1059
+#, c-format
+msgid "Unable to display help file: %s"
+msgstr "सहायता फाइल प्रदर्शित करने में असमर्थ: %s"
+
+#: ../src/MainWindow.vala:1071
+msgid ""
+"A serial terminal for the GNOME desktop, optimized for logging and file "
+"capture."
+msgstr "GNOME डेस्कटॉप के लिए एक सीरियल टर्मिनल, लॉगिंग और फाइल कैप्चर के लिए अनुकूलित।"
+
+#: ../src/MainWindow.vala:1131
+msgid "Save modified settings to the loaded profile?"
+msgstr "संशोधित सेटिंग्स को लोड की गई प्रोफाइल में सहेजें?"
+
+#: ../src/PreferencesDialog.vala:56
+msgid ""
+"If this option is enabled, a recorded file will be opened immediately after "
+"it is saved, using the default application for the file type. The default "
+"application is defined by the desktop environment."
+msgstr ""
+"यदि यह विकल्प सक्षम है, तो फाइल प्रकार के लिए तयशुदा अनुप्रयोग का उपयोग करके, रिकॉर्ड "
+"की गई फाइल सहेजे जाने के तुरंत बाद खोली जाएगी। तयशुदा अनुप्रयोग को डेस्कटॉप वातावरण "
+"द्वारा परिभाषित किया गया है।"
+
+#: ../src/PreferencesDialog.vala:59
+msgid ""
+"If this option is enabled, recording will be automatically stopped after an "
+"adjustable period of inactivity after receiving some data. Moserial will "
+"wait indefinitely to record the first data byte before activating the "
+"inactivity timer."
+msgstr ""
+"यदि यह विकल्प सक्षम है, तो कुछ डेटा प्राप्त करने के बाद निष्क्रियता की एक समायोज्य अवधि "
+"के बाद रिकॉर्डिंग स्वचालित रूप से बंद हो जाएगी। निष्क्रियता टाइमर को सक्रिय करने से पहले "
+"Moserial पहले डेटा बाइट को रिकॉर्ड करने के लिए अनिश्चित काल तक प्रतीक्षा करेगा।"
+
+#: ../src/Preferences.vala:86
+msgid "Unable to retrieve system font setting"
+msgstr "सिस्टम फॉन्ट सेटिंग पुनर्प्राप्त करने में असमर्थ"
+
+#: ../src/Rzwrapper.vala:24 ../src/Szwrapper.vala:24
+msgid "Xmodem"
+msgstr "Xmodem"
+
+#: ../src/Rzwrapper.vala:25 ../src/Szwrapper.vala:25
+msgid "Ymodem"
+msgstr "Ymodem"
+
+#: ../src/Rzwrapper.vala:26 ../src/Szwrapper.vala:26
+msgid "Zmodem"
+msgstr "Zmodem"
+
+#: ../src/SendProgressDialog.vala:44
+msgid "Waiting for remote host"
+msgstr "रिमोट होस्ट की प्रतीक्षा की जा रही है"
+
+#: ../src/SerialConnection.vala:44
+msgid "CR+LF end"
+msgstr "CR+LF अंत"
+
+#: ../src/SerialConnection.vala:45
+msgid "CR end"
+msgstr "CR अंत"
+
+#: ../src/SerialConnection.vala:46
+msgid "LF end"
+msgstr "LF अंत"
+
+#: ../src/SerialConnection.vala:47
+msgid "TAB end"
+msgstr "TAB अंत"
+
+#: ../src/SerialConnection.vala:48
+msgid "ESC end"
+msgstr "ESC अंत"
+
+#: ../src/SerialConnection.vala:49
+msgid "No end"
+msgstr "कोई अंत नहीं"
+
+#: ../src/SerialConnection.vala:362
+#, c-format
+msgid "TX: %lu, RX: %lu (%lu unprintable)"
+msgstr "TX: %lu, RX: %lu (%lu अमुद्रणीय)"
+
+#: ../src/SerialConnection.vala:364
+#, c-format
+msgid "TX: %lu, RX: %lu"
+msgstr "TX: %lu, RX: %lu"
+
+#: ../src/SerialStreamRecorder.vala:30
+msgid "Incoming"
+msgstr "आवक"
+
+#: ../src/SerialStreamRecorder.vala:32
+msgid "Incoming and Outgoing"
+msgstr "आवक और जावक"
+
+#: ../src/SerialStreamRecorder.vala:61 ../src/SerialStreamRecorder.vala:72
+#: ../src/SerialStreamRecorder.vala:96
+#, c-format
+msgid "error: %s\n"
+msgstr "त्रुटि: %s\n"
+
+#: ../src/SerialStreamRecorder.vala:105
+#, c-format
+msgid "Unable to launch %s: %s"
+msgstr "%s को लॉन्च करने में असमर्थ: %s"
+
+#: ../src/SettingsDialog.vala:74
+msgid "Also known as RTS/CTS handshaking"
+msgstr "इसे RTS/CTS हैंडशेकिंग के रूप में भी जाना जाता है"
+
+#: ../src/SettingsDialog.vala:77
+msgid "Also known as XON/XOFF handshaking"
+msgstr "इसे XON/XOFF हैंडशेकिंग के रूप में भी जाना जाता है"
+
+#: ../src/SettingsDialog.vala:83
+msgid "Normally disabled"
+msgstr "सामान्यतः अक्षम"
+
+#: ../src/SettingsDialog.vala:86
+msgid "Enable to automatically connect on startup or when a profile is loaded"
+msgstr "स्टार्टअप पर या प्रोफाइल लोड होने पर स्वचालित रूप से कनेक्ट करने में सक्षम करें"
+
+#: ../src/Settings.vala:25
+msgid "None"
+msgstr "कोई नहीं"
+
+#: ../src/Settings.vala:26
+msgid "Odd"
+msgstr "विषम"
+
+#: ../src/Settings.vala:27
+msgid "Even"
+msgstr "सम"
+
+#: ../src/Settings.vala:28
+msgid "Mark"
+msgstr "निशान"
+
+#: ../src/Settings.vala:29
+msgid "Space"
+msgstr "जगह"
+
+#: ../src/Settings.vala:35
+msgid "Read and Write"
+msgstr "पढ़ें और लिखें"
+
+#: ../src/Settings.vala:36
+msgid "Read Only"
+msgstr "केवल पढें"
+
+#: ../src/Settings.vala:37
+msgid "Write Only"
+msgstr "केवल लिखें"
+
+#. TRANSLATORS: first letter of "None", a serial port parity setting
+#: ../src/Settings.vala:97
+msgid "N"
+msgstr "को"
+
+#. TRANSLATORS: first letter of "Odd", a serial port parity setting
+#: ../src/Settings.vala:101
+msgid "O"
+msgstr "वि"
+
+#. TRANSLATORS: first letter of "Even", a serial port parity setting
+#: ../src/Settings.vala:105
+msgid "E"
+msgstr "स"
+
+#. TRANSLATORS: first letter of "Mark", a serial port parity setting
+#: ../src/Settings.vala:109
+msgid "M"
+msgstr "नि"
+
+#. TRANSLATORS: first letter of "Space", a serial port parity setting
+#: ../src/Settings.vala:113
+msgid "S"
+msgstr "ज"
+
+#: ../src/Settings.vala:124
+msgid "OPEN"
+msgstr "खोलें"
+
+#: ../src/Settings.vala:125
+msgid "CLOSED"
+msgstr "बंद किया गया"
+
+#: ../src/Szwrapper.vala:27
+msgid "None (straight binary)"
+msgstr "कोई नहीं (मानक बाइनरी)"
+
+#: ../src/Szwrapper.vala:178
+msgid "canceled"
+msgstr "रद्द"
